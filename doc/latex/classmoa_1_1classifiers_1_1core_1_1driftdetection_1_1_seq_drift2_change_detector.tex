@@ -1,0 +1,157 @@
+\hypertarget{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_seq_drift2_change_detector}{}\doxysection{moa.\+classifiers.\+core.\+driftdetection.\+Seq\+Drift2\+Change\+Detector Class Reference}
+\label{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_seq_drift2_change_detector}\index{moa.classifiers.core.driftdetection.SeqDrift2ChangeDetector@{moa.classifiers.core.driftdetection.SeqDrift2ChangeDetector}}
+
+
+Inheritance diagram for moa.\+classifiers.\+core.\+driftdetection.\+Seq\+Drift2\+Change\+Detector\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+classifiers.\+core.\+driftdetection.\+Seq\+Drift2\+Change\+Detector\+:
+% FIG 1
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_seq_drift2_change_detector_1_1_block}{Block}}
+\item 
+class \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_seq_drift2_change_detector_1_1_repository}{Repository}}
+\item 
+class \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_seq_drift2_change_detector_1_1_reservoir}{Reservoir}}
+\item 
+class \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_seq_drift2_change_detector_1_1_seq_drift2}{Seq\+Drift2}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_seq_drift2_change_detector_a9146532673d7767f0b22a34c74eb0d39}{input}} (double input\+Value)
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_seq_drift2_change_detector_a09de0c1b8e44baf9514f5cdd218b0404}{reset\+Learning}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_seq_drift2_change_detector_aa7096c3625df72e6c23a88006e5f9a39}{get\+Description}} (String\+Builder sb, int indent)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} {\bfseries delta\+Seq\+Drift2\+Option}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_seq_drift2_change_detector_ae898696a76c8fe7e1d9ae1308e34e8a0}\label{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_seq_drift2_change_detector_ae898696a76c8fe7e1d9ae1308e34e8a0}} 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries block\+Seq\+Drift2\+Option} = new \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}}(\char`\"{}block\+Seq\+Drift2\+Option\char`\"{},\textquotesingle{}b\textquotesingle{},\char`\"{}Block size of \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_seq_drift2_change_detector_1_1_seq_drift2}{Seq\+Drift2}} change detector\char`\"{}, 200, 100, 10000)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_seq_drift2_change_detector_ae6af949bf80f2b92f154191acbc905c8}{prepare\+For\+Use\+Impl}} (\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}} monitor, \mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}} repository)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_seq_drift2_change_detector_a130bd20fe3bdce169d6ad87d5fd9703c}\label{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_seq_drift2_change_detector_a130bd20fe3bdce169d6ad87d5fd9703c}} 
+\mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_seq_drift2_change_detector_1_1_seq_drift2}{Seq\+Drift2}} {\bfseries seqdrift}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Seq\+Drift\+Change\+Detector.\+java. This extends Abstract Change Detector as required by M\+OA.
+
+Pears, R., Sakthithasan, S., \& Koh, Y. (2014). Detecting concept change in dynamic data streams. Machine Learning, 97(3), 259-\/293. doi\+:10.\+1007/s10994-\/013-\/5433-\/9
+
+\begin{DoxyAuthor}{Author}
+Sakthithasan Sripirakas sripirakas363 at yahoo dot com 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+7 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_seq_drift2_change_detector_aa7096c3625df72e6c23a88006e5f9a39}\label{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_seq_drift2_change_detector_aa7096c3625df72e6c23a88006e5f9a39}} 
+\index{moa.classifiers.core.driftdetection.SeqDrift2ChangeDetector@{moa.classifiers.core.driftdetection.SeqDrift2ChangeDetector}!getDescription@{getDescription}}
+\index{getDescription@{getDescription}!moa.classifiers.core.driftdetection.SeqDrift2ChangeDetector@{moa.classifiers.core.driftdetection.SeqDrift2ChangeDetector}}
+\doxysubsubsection{\texorpdfstring{getDescription()}{getDescription()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+core.\+driftdetection.\+Seq\+Drift2\+Change\+Detector.\+get\+Description (\begin{DoxyParamCaption}\item[{String\+Builder}]{sb,  }\item[{int}]{indent }\end{DoxyParamCaption})}
+
+Returns a string representation of the model.
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & the stringbuilder to add the description \\
+\hline
+{\em indent} & the number of characters to indent \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_abstract_change_detector_a111e2c5e7c7809001e0fd66f71c49853}{moa.\+classifiers.\+core.\+driftdetection.\+Abstract\+Change\+Detector}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_seq_drift2_change_detector_a9146532673d7767f0b22a34c74eb0d39}\label{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_seq_drift2_change_detector_a9146532673d7767f0b22a34c74eb0d39}} 
+\index{moa.classifiers.core.driftdetection.SeqDrift2ChangeDetector@{moa.classifiers.core.driftdetection.SeqDrift2ChangeDetector}!input@{input}}
+\index{input@{input}!moa.classifiers.core.driftdetection.SeqDrift2ChangeDetector@{moa.classifiers.core.driftdetection.SeqDrift2ChangeDetector}}
+\doxysubsubsection{\texorpdfstring{input()}{input()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+core.\+driftdetection.\+Seq\+Drift2\+Change\+Detector.\+input (\begin{DoxyParamCaption}\item[{double}]{input\+Value }\end{DoxyParamCaption})}
+
+Adding a numeric value to the change detector$<$br$>$~\newline
+
+
+The output of the change detector is modified after the insertion of a new item inside.
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Value} & the number to insert into the change detector \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_abstract_change_detector_abbc8e51592cab2d77a90092030124fd6}{moa.\+classifiers.\+core.\+driftdetection.\+Abstract\+Change\+Detector}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_seq_drift2_change_detector_ae6af949bf80f2b92f154191acbc905c8}\label{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_seq_drift2_change_detector_ae6af949bf80f2b92f154191acbc905c8}} 
+\index{moa.classifiers.core.driftdetection.SeqDrift2ChangeDetector@{moa.classifiers.core.driftdetection.SeqDrift2ChangeDetector}!prepareForUseImpl@{prepareForUseImpl}}
+\index{prepareForUseImpl@{prepareForUseImpl}!moa.classifiers.core.driftdetection.SeqDrift2ChangeDetector@{moa.classifiers.core.driftdetection.SeqDrift2ChangeDetector}}
+\doxysubsubsection{\texorpdfstring{prepareForUseImpl()}{prepareForUseImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+core.\+driftdetection.\+Seq\+Drift2\+Change\+Detector.\+prepare\+For\+Use\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}}}]{monitor,  }\item[{\mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}}}]{repository }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+This method describes the implementation of how to prepare this object for use. All classes that extends this class have to implement {\ttfamily prepare\+For\+Use\+Impl} and not {\ttfamily prepare\+For\+Use} since {\ttfamily prepare\+For\+Use} calls {\ttfamily prepare\+For\+Use\+Impl}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em monitor} & the Task\+Monitor to use \\
+\hline
+{\em repository} & the Object\+Repository to use \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1options_1_1_abstract_option_handler_ad0e9c7d4b0e2b185749f36ce28540efb}{moa.\+options.\+Abstract\+Option\+Handler}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_seq_drift2_change_detector_a09de0c1b8e44baf9514f5cdd218b0404}\label{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_seq_drift2_change_detector_a09de0c1b8e44baf9514f5cdd218b0404}} 
+\index{moa.classifiers.core.driftdetection.SeqDrift2ChangeDetector@{moa.classifiers.core.driftdetection.SeqDrift2ChangeDetector}!resetLearning@{resetLearning}}
+\index{resetLearning@{resetLearning}!moa.classifiers.core.driftdetection.SeqDrift2ChangeDetector@{moa.classifiers.core.driftdetection.SeqDrift2ChangeDetector}}
+\doxysubsubsection{\texorpdfstring{resetLearning()}{resetLearning()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+core.\+driftdetection.\+Seq\+Drift2\+Change\+Detector.\+reset\+Learning (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Resets this change detector. It must be similar to starting a new change detector from scratch. 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_abstract_change_detector_a71b1c7d69b0809172e464cfa243d8cc4}{moa.\+classifiers.\+core.\+driftdetection.\+Abstract\+Change\+Detector}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_seq_drift2_change_detector_a901deb6561bc3de2f6cd518502ee6131}\label{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_seq_drift2_change_detector_a901deb6561bc3de2f6cd518502ee6131}} 
+\index{moa.classifiers.core.driftdetection.SeqDrift2ChangeDetector@{moa.classifiers.core.driftdetection.SeqDrift2ChangeDetector}!deltaSeqDrift2Option@{deltaSeqDrift2Option}}
+\index{deltaSeqDrift2Option@{deltaSeqDrift2Option}!moa.classifiers.core.driftdetection.SeqDrift2ChangeDetector@{moa.classifiers.core.driftdetection.SeqDrift2ChangeDetector}}
+\doxysubsubsection{\texorpdfstring{deltaSeqDrift2Option}{deltaSeqDrift2Option}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} moa.\+classifiers.\+core.\+driftdetection.\+Seq\+Drift2\+Change\+Detector.\+delta\+Seq\+Drift2\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FloatOption(\textcolor{stringliteral}{"deltaSeq2Drift"}, \textcolor{charliteral}{'d'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Delta of SeqDrift2 change detection"},0.01, 0.0, 1.0)}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/classifiers/core/driftdetection/Seq\+Drift2\+Change\+Detector.\+java\end{DoxyCompactItemize}

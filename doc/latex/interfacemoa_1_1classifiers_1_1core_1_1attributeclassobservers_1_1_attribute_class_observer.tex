@@ -1,0 +1,113 @@
+\hypertarget{interfacemoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_attribute_class_observer}{}\doxysection{moa.\+classifiers.\+core.\+attributeclassobservers.\+Attribute\+Class\+Observer Interface Reference}
+\label{interfacemoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_attribute_class_observer}\index{moa.classifiers.core.attributeclassobservers.AttributeClassObserver@{moa.classifiers.core.attributeclassobservers.AttributeClassObserver}}
+
+
+Inheritance diagram for moa.\+classifiers.\+core.\+attributeclassobservers.\+Attribute\+Class\+Observer\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+classifiers.\+core.\+attributeclassobservers.\+Attribute\+Class\+Observer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interfacemoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_attribute_class_observer_adeb638c64bb2dad4266a7db241398bf5}{observe\+Attribute\+Class}} (double att\+Val, int class\+Val, double weight)
+\item 
+double \mbox{\hyperlink{interfacemoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_attribute_class_observer_af4e7cc0d1cd75c196f00b09c2c4d5458}{probability\+Of\+Attribute\+Value\+Given\+Class}} (double att\+Val, int class\+Val)
+\item 
+\mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1_attribute_split_suggestion}{Attribute\+Split\+Suggestion}} \mbox{\hyperlink{interfacemoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_attribute_class_observer_a989571adba7ae36c8bda51b2d6f87b5b}{get\+Best\+Evaluated\+Split\+Suggestion}} (\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1core_1_1splitcriteria_1_1_split_criterion}{Split\+Criterion}} criterion, double\mbox{[}$\,$\mbox{]} pre\+Split\+Dist, int att\+Index, boolean binary\+Only)
+\item 
+\mbox{\Hypertarget{interfacemoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_attribute_class_observer_a09a29112a6e475e07a2c16568119050a}\label{interfacemoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_attribute_class_observer_a09a29112a6e475e07a2c16568119050a}} 
+void {\bfseries observe\+Attribute\+Target} (double att\+Val, double target)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface for observing the class data distribution for an attribute. This observer monitors the class distribution of a given attribute. Used in naive Bayes and decision trees to monitor data statistics on leaves.
+
+\begin{DoxyAuthor}{Author}
+Richard Kirkby (\href{mailto:rkirkby@cs.waikato.ac.nz}{\texttt{ rkirkby@cs.\+waikato.\+ac.\+nz}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+7 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interfacemoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_attribute_class_observer_a989571adba7ae36c8bda51b2d6f87b5b}\label{interfacemoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_attribute_class_observer_a989571adba7ae36c8bda51b2d6f87b5b}} 
+\index{moa.classifiers.core.attributeclassobservers.AttributeClassObserver@{moa.classifiers.core.attributeclassobservers.AttributeClassObserver}!getBestEvaluatedSplitSuggestion@{getBestEvaluatedSplitSuggestion}}
+\index{getBestEvaluatedSplitSuggestion@{getBestEvaluatedSplitSuggestion}!moa.classifiers.core.attributeclassobservers.AttributeClassObserver@{moa.classifiers.core.attributeclassobservers.AttributeClassObserver}}
+\doxysubsubsection{\texorpdfstring{getBestEvaluatedSplitSuggestion()}{getBestEvaluatedSplitSuggestion()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1_attribute_split_suggestion}{Attribute\+Split\+Suggestion}} moa.\+classifiers.\+core.\+attributeclassobservers.\+Attribute\+Class\+Observer.\+get\+Best\+Evaluated\+Split\+Suggestion (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1core_1_1splitcriteria_1_1_split_criterion}{Split\+Criterion}}}]{criterion,  }\item[{double\mbox{[}$\,$\mbox{]}}]{pre\+Split\+Dist,  }\item[{int}]{att\+Index,  }\item[{boolean}]{binary\+Only }\end{DoxyParamCaption})}
+
+Gets the best split suggestion given a criterion and a class distribution
+
+
+\begin{DoxyParams}{Parameters}
+{\em criterion} & the split criterion to use \\
+\hline
+{\em pre\+Split\+Dist} & the class distribution before the split \\
+\hline
+{\em att\+Index} & the attribute index \\
+\hline
+{\em binary\+Only} & true to use binary splits \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+suggestion of best attribute split 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem_v_f_m_l_numeric_attribute_class_observer_a86be19b340c62fbcd952760a6e4af9b6}{moa.\+classifiers.\+trees.\+iadem.\+Iadem\+V\+F\+M\+L\+Numeric\+Attribute\+Class\+Observer}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_v_f_m_l_numeric_attribute_class_observer_af23c6fe77a513e13ab29d891b4c1d63f}{moa.\+classifiers.\+core.\+attributeclassobservers.\+V\+F\+M\+L\+Numeric\+Attribute\+Class\+Observer}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_f_i_m_t_d_d_numeric_attribute_class_observer_a2ae74d10f0af25fcfa2e816e311e9623}{moa.\+classifiers.\+core.\+attributeclassobservers.\+F\+I\+M\+T\+D\+D\+Numeric\+Attribute\+Class\+Observer}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_binary_tree_numeric_attribute_class_observer_regression_afc1015100b991928eb043cfe6bb4ddd0}{moa.\+classifiers.\+core.\+attributeclassobservers.\+Binary\+Tree\+Numeric\+Attribute\+Class\+Observer\+Regression}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_binary_tree_numeric_attribute_class_observer_a277b0eaa682a243ad4d97075ad8a4691}{moa.\+classifiers.\+core.\+attributeclassobservers.\+Binary\+Tree\+Numeric\+Attribute\+Class\+Observer}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_gaussian_numeric_attribute_class_observer_a34446fa2c3deac589b3c813610bb746d}{moa.\+classifiers.\+core.\+attributeclassobservers.\+Gaussian\+Numeric\+Attribute\+Class\+Observer}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_nominal_attribute_class_observer_accec1054970c8656dd8b85da0c45973d}{moa.\+classifiers.\+core.\+attributeclassobservers.\+Nominal\+Attribute\+Class\+Observer}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_greenwald_khanna_numeric_attribute_class_observer_a5e43b97b26839f07870b05a20dd18221}{moa.\+classifiers.\+core.\+attributeclassobservers.\+Greenwald\+Khanna\+Numeric\+Attribute\+Class\+Observer}}, and \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_null_attribute_class_observer_a56107073f6566faaf1b66041aee109a4}{moa.\+classifiers.\+core.\+attributeclassobservers.\+Null\+Attribute\+Class\+Observer}}.
+
+\mbox{\Hypertarget{interfacemoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_attribute_class_observer_adeb638c64bb2dad4266a7db241398bf5}\label{interfacemoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_attribute_class_observer_adeb638c64bb2dad4266a7db241398bf5}} 
+\index{moa.classifiers.core.attributeclassobservers.AttributeClassObserver@{moa.classifiers.core.attributeclassobservers.AttributeClassObserver}!observeAttributeClass@{observeAttributeClass}}
+\index{observeAttributeClass@{observeAttributeClass}!moa.classifiers.core.attributeclassobservers.AttributeClassObserver@{moa.classifiers.core.attributeclassobservers.AttributeClassObserver}}
+\doxysubsubsection{\texorpdfstring{observeAttributeClass()}{observeAttributeClass()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+core.\+attributeclassobservers.\+Attribute\+Class\+Observer.\+observe\+Attribute\+Class (\begin{DoxyParamCaption}\item[{double}]{att\+Val,  }\item[{int}]{class\+Val,  }\item[{double}]{weight }\end{DoxyParamCaption})}
+
+Updates statistics of this observer given an attribute value, a class and the weight of the instance observed
+
+
+\begin{DoxyParams}{Parameters}
+{\em att\+Val} & the value of the attribute \\
+\hline
+{\em class\+Val} & the class \\
+\hline
+{\em weight} & the weight of the instance \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_binary_tree_numeric_attribute_class_observer_regression_ab42fdd52f1f21027d84050f5aa2ed3fa}{moa.\+classifiers.\+core.\+attributeclassobservers.\+Binary\+Tree\+Numeric\+Attribute\+Class\+Observer\+Regression}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem_v_f_m_l_numeric_attribute_class_observer_a3eb57c58ee9f0f16573f8f60a4a10471}{moa.\+classifiers.\+trees.\+iadem.\+Iadem\+V\+F\+M\+L\+Numeric\+Attribute\+Class\+Observer}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_binary_tree_numeric_attribute_class_observer_ab73896e14e35fcb9349fc91bd6137ba5}{moa.\+classifiers.\+core.\+attributeclassobservers.\+Binary\+Tree\+Numeric\+Attribute\+Class\+Observer}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_v_f_m_l_numeric_attribute_class_observer_a6dc9db81d435e3d4f930f51b8b0c2642}{moa.\+classifiers.\+core.\+attributeclassobservers.\+V\+F\+M\+L\+Numeric\+Attribute\+Class\+Observer}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_gaussian_numeric_attribute_class_observer_a7b9ebf9afb27c2982f7f8c8513190c9f}{moa.\+classifiers.\+core.\+attributeclassobservers.\+Gaussian\+Numeric\+Attribute\+Class\+Observer}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_nominal_attribute_class_observer_a4903ca652c16f176db1ebdb2a5ac683c}{moa.\+classifiers.\+core.\+attributeclassobservers.\+Nominal\+Attribute\+Class\+Observer}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_greenwald_khanna_numeric_attribute_class_observer_a741593d047a57a17513f11d9d4819687}{moa.\+classifiers.\+core.\+attributeclassobservers.\+Greenwald\+Khanna\+Numeric\+Attribute\+Class\+Observer}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem_greenwald_khanna_numeric_attribute_class_observer_a4353efe5e7b66197556b58dc58e125b5}{moa.\+classifiers.\+trees.\+iadem.\+Iadem\+Greenwald\+Khanna\+Numeric\+Attribute\+Class\+Observer}}, and \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_null_attribute_class_observer_ae9f8250328ce1cd226969fd5424245d1}{moa.\+classifiers.\+core.\+attributeclassobservers.\+Null\+Attribute\+Class\+Observer}}.
+
+\mbox{\Hypertarget{interfacemoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_attribute_class_observer_af4e7cc0d1cd75c196f00b09c2c4d5458}\label{interfacemoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_attribute_class_observer_af4e7cc0d1cd75c196f00b09c2c4d5458}} 
+\index{moa.classifiers.core.attributeclassobservers.AttributeClassObserver@{moa.classifiers.core.attributeclassobservers.AttributeClassObserver}!probabilityOfAttributeValueGivenClass@{probabilityOfAttributeValueGivenClass}}
+\index{probabilityOfAttributeValueGivenClass@{probabilityOfAttributeValueGivenClass}!moa.classifiers.core.attributeclassobservers.AttributeClassObserver@{moa.classifiers.core.attributeclassobservers.AttributeClassObserver}}
+\doxysubsubsection{\texorpdfstring{probabilityOfAttributeValueGivenClass()}{probabilityOfAttributeValueGivenClass()}}
+{\footnotesize\ttfamily double moa.\+classifiers.\+core.\+attributeclassobservers.\+Attribute\+Class\+Observer.\+probability\+Of\+Attribute\+Value\+Given\+Class (\begin{DoxyParamCaption}\item[{double}]{att\+Val,  }\item[{int}]{class\+Val }\end{DoxyParamCaption})}
+
+Gets the probability for an attribute value given a class
+
+
+\begin{DoxyParams}{Parameters}
+{\em att\+Val} & the attribute value \\
+\hline
+{\em class\+Val} & the class \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+probability for an attribute value given a class 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem_v_f_m_l_numeric_attribute_class_observer_a5fca11c7f74b3631bad7654f4380689f}{moa.\+classifiers.\+trees.\+iadem.\+Iadem\+V\+F\+M\+L\+Numeric\+Attribute\+Class\+Observer}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_v_f_m_l_numeric_attribute_class_observer_abef6f07967245a7b840729b448959c1d}{moa.\+classifiers.\+core.\+attributeclassobservers.\+V\+F\+M\+L\+Numeric\+Attribute\+Class\+Observer}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_f_i_m_t_d_d_numeric_attribute_class_observer_a94e818aa0bb54e4824d7f5237166d131}{moa.\+classifiers.\+core.\+attributeclassobservers.\+F\+I\+M\+T\+D\+D\+Numeric\+Attribute\+Class\+Observer}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_binary_tree_numeric_attribute_class_observer_regression_a67a3df2f17b8b895fa428fbaa0b8799e}{moa.\+classifiers.\+core.\+attributeclassobservers.\+Binary\+Tree\+Numeric\+Attribute\+Class\+Observer\+Regression}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_binary_tree_numeric_attribute_class_observer_af876ca88dfb73720347f9aa7409d0e29}{moa.\+classifiers.\+core.\+attributeclassobservers.\+Binary\+Tree\+Numeric\+Attribute\+Class\+Observer}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_gaussian_numeric_attribute_class_observer_a526714101e6ec0e9b11b69ee8f99b131}{moa.\+classifiers.\+core.\+attributeclassobservers.\+Gaussian\+Numeric\+Attribute\+Class\+Observer}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_nominal_attribute_class_observer_a2a9d4fc5c060cb65f5b964de29ed75a1}{moa.\+classifiers.\+core.\+attributeclassobservers.\+Nominal\+Attribute\+Class\+Observer}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_greenwald_khanna_numeric_attribute_class_observer_a3a6c86556f898173bae89d243aba450e}{moa.\+classifiers.\+core.\+attributeclassobservers.\+Greenwald\+Khanna\+Numeric\+Attribute\+Class\+Observer}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem_greenwald_khanna_numeric_attribute_class_observer_ad55ecfeb0dacc95990c445ca38349dbd}{moa.\+classifiers.\+trees.\+iadem.\+Iadem\+Greenwald\+Khanna\+Numeric\+Attribute\+Class\+Observer}}, and \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_null_attribute_class_observer_a8a35133598ba630696297dd4db6e8905}{moa.\+classifiers.\+core.\+attributeclassobservers.\+Null\+Attribute\+Class\+Observer}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/classifiers/core/attributeclassobservers/Attribute\+Class\+Observer.\+java\end{DoxyCompactItemize}

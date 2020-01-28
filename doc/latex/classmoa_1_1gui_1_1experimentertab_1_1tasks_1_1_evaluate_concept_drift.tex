@@ -1,0 +1,162 @@
+\hypertarget{classmoa_1_1gui_1_1experimentertab_1_1tasks_1_1_evaluate_concept_drift}{}\doxysection{moa.\+gui.\+experimentertab.\+tasks.\+Evaluate\+Concept\+Drift Class Reference}
+\label{classmoa_1_1gui_1_1experimentertab_1_1tasks_1_1_evaluate_concept_drift}\index{moa.gui.experimentertab.tasks.EvaluateConceptDrift@{moa.gui.experimentertab.tasks.EvaluateConceptDrift}}
+
+
+Inheritance diagram for moa.\+gui.\+experimentertab.\+tasks.\+Evaluate\+Concept\+Drift\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+gui.\+experimentertab.\+tasks.\+Evaluate\+Concept\+Drift\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classmoa_1_1gui_1_1experimentertab_1_1tasks_1_1_evaluate_concept_drift_aea4e76fa054bd81ce9071bd3ed5863c3}{get\+Purpose\+String}} ()
+\item 
+Class$<$?$>$ \mbox{\hyperlink{classmoa_1_1gui_1_1experimentertab_1_1tasks_1_1_evaluate_concept_drift_a0a2fb262b763fdf56dfe173d3b0ea946}{get\+Task\+Result\+Type}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} {\bfseries evaluator\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries instance\+Limit\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries time\+Limit\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries sample\+Frequency\+Option}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Object \mbox{\hyperlink{classmoa_1_1gui_1_1experimentertab_1_1tasks_1_1_evaluate_concept_drift_ad1fe389977b7548bcbb1807b194a1a27}{do\+Task\+Impl}} (\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}} monitor, \mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}} repository)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Task for evaluating a classifier on a stream by testing then training with each example in sequence.
+
+\begin{DoxyAuthor}{Author}
+Richard Kirkby (\href{mailto:rkirkby@cs.waikato.ac.nz}{\texttt{ rkirkby@cs.\+waikato.\+ac.\+nz}}) 
+
+Albert Bifet (abifet at cs dot waikato dot ac dot nz) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+7 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1gui_1_1experimentertab_1_1tasks_1_1_evaluate_concept_drift_ad1fe389977b7548bcbb1807b194a1a27}\label{classmoa_1_1gui_1_1experimentertab_1_1tasks_1_1_evaluate_concept_drift_ad1fe389977b7548bcbb1807b194a1a27}} 
+\index{moa.gui.experimentertab.tasks.EvaluateConceptDrift@{moa.gui.experimentertab.tasks.EvaluateConceptDrift}!doTaskImpl@{doTaskImpl}}
+\index{doTaskImpl@{doTaskImpl}!moa.gui.experimentertab.tasks.EvaluateConceptDrift@{moa.gui.experimentertab.tasks.EvaluateConceptDrift}}
+\doxysubsubsection{\texorpdfstring{doTaskImpl()}{doTaskImpl()}}
+{\footnotesize\ttfamily Object moa.\+gui.\+experimentertab.\+tasks.\+Evaluate\+Concept\+Drift.\+do\+Task\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}}}]{monitor,  }\item[{\mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}}}]{repository }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+This method performs this task. {\ttfamily Abstract\+Task} implements {\ttfamily do\+Task} so all its extensions only need to implement {\ttfamily do\+Task\+Impl}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em monitor} & the Task\+Monitor to use \\
+\hline
+{\em repository} & the Object\+Repository to use \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an object with the result of this task 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1tasks_1_1_abstract_task_aec310a468681643a80a74733c53a09b5}{moa.\+tasks.\+Abstract\+Task}}.
+
+\mbox{\Hypertarget{classmoa_1_1gui_1_1experimentertab_1_1tasks_1_1_evaluate_concept_drift_aea4e76fa054bd81ce9071bd3ed5863c3}\label{classmoa_1_1gui_1_1experimentertab_1_1tasks_1_1_evaluate_concept_drift_aea4e76fa054bd81ce9071bd3ed5863c3}} 
+\index{moa.gui.experimentertab.tasks.EvaluateConceptDrift@{moa.gui.experimentertab.tasks.EvaluateConceptDrift}!getPurposeString@{getPurposeString}}
+\index{getPurposeString@{getPurposeString}!moa.gui.experimentertab.tasks.EvaluateConceptDrift@{moa.gui.experimentertab.tasks.EvaluateConceptDrift}}
+\doxysubsubsection{\texorpdfstring{getPurposeString()}{getPurposeString()}}
+{\footnotesize\ttfamily String moa.\+gui.\+experimentertab.\+tasks.\+Evaluate\+Concept\+Drift.\+get\+Purpose\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Options to handle Dictionary with option texts and objects 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1options_1_1_abstract_option_handler_abc8df69aea27ef85060557a9e918b2ca}{moa.\+options.\+Abstract\+Option\+Handler}}.
+
+\mbox{\Hypertarget{classmoa_1_1gui_1_1experimentertab_1_1tasks_1_1_evaluate_concept_drift_a0a2fb262b763fdf56dfe173d3b0ea946}\label{classmoa_1_1gui_1_1experimentertab_1_1tasks_1_1_evaluate_concept_drift_a0a2fb262b763fdf56dfe173d3b0ea946}} 
+\index{moa.gui.experimentertab.tasks.EvaluateConceptDrift@{moa.gui.experimentertab.tasks.EvaluateConceptDrift}!getTaskResultType@{getTaskResultType}}
+\index{getTaskResultType@{getTaskResultType}!moa.gui.experimentertab.tasks.EvaluateConceptDrift@{moa.gui.experimentertab.tasks.EvaluateConceptDrift}}
+\doxysubsubsection{\texorpdfstring{getTaskResultType()}{getTaskResultType()}}
+{\footnotesize\ttfamily Class$<$?$>$ moa.\+gui.\+experimentertab.\+tasks.\+Evaluate\+Concept\+Drift.\+get\+Task\+Result\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the result type of this task. Tasks can return Learning\+Curve, Learning\+Evaluation, Classifier, String, Instances..
+
+\begin{DoxyReturn}{Returns}
+a class object of the result of this task 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_a568100cd931416820d1bcc81032301f6}{moa.\+tasks.\+Task}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmoa_1_1gui_1_1experimentertab_1_1tasks_1_1_evaluate_concept_drift_ab79ef6a0d2c07945cbca6d830be533f3}\label{classmoa_1_1gui_1_1experimentertab_1_1tasks_1_1_evaluate_concept_drift_ab79ef6a0d2c07945cbca6d830be533f3}} 
+\index{moa.gui.experimentertab.tasks.EvaluateConceptDrift@{moa.gui.experimentertab.tasks.EvaluateConceptDrift}!evaluatorOption@{evaluatorOption}}
+\index{evaluatorOption@{evaluatorOption}!moa.gui.experimentertab.tasks.EvaluateConceptDrift@{moa.gui.experimentertab.tasks.EvaluateConceptDrift}}
+\doxysubsubsection{\texorpdfstring{evaluatorOption}{evaluatorOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} moa.\+gui.\+experimentertab.\+tasks.\+Evaluate\+Concept\+Drift.\+evaluator\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} ClassOption(\textcolor{stringliteral}{"evaluator"}, \textcolor{charliteral}{'e'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Classification performance evaluation method."},}
+\DoxyCodeLine{            LearningPerformanceEvaluator.class,}
+\DoxyCodeLine{            \textcolor{stringliteral}{"BasicConceptDriftPerformanceEvaluator"})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1gui_1_1experimentertab_1_1tasks_1_1_evaluate_concept_drift_a0215c239b8e6ccbd0fd4c8e954ffa60e}\label{classmoa_1_1gui_1_1experimentertab_1_1tasks_1_1_evaluate_concept_drift_a0215c239b8e6ccbd0fd4c8e954ffa60e}} 
+\index{moa.gui.experimentertab.tasks.EvaluateConceptDrift@{moa.gui.experimentertab.tasks.EvaluateConceptDrift}!instanceLimitOption@{instanceLimitOption}}
+\index{instanceLimitOption@{instanceLimitOption}!moa.gui.experimentertab.tasks.EvaluateConceptDrift@{moa.gui.experimentertab.tasks.EvaluateConceptDrift}}
+\doxysubsubsection{\texorpdfstring{instanceLimitOption}{instanceLimitOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+gui.\+experimentertab.\+tasks.\+Evaluate\+Concept\+Drift.\+instance\+Limit\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(\textcolor{stringliteral}{"instanceLimit"}, \textcolor{charliteral}{'i'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Maximum number of instances to test/train on  (-\/1 = no limit)."},}
+\DoxyCodeLine{            1000, -\/1, Integer.MAX\_VALUE)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1gui_1_1experimentertab_1_1tasks_1_1_evaluate_concept_drift_a6f0d19db80c6e5bab3f68ef5396a01f1}\label{classmoa_1_1gui_1_1experimentertab_1_1tasks_1_1_evaluate_concept_drift_a6f0d19db80c6e5bab3f68ef5396a01f1}} 
+\index{moa.gui.experimentertab.tasks.EvaluateConceptDrift@{moa.gui.experimentertab.tasks.EvaluateConceptDrift}!sampleFrequencyOption@{sampleFrequencyOption}}
+\index{sampleFrequencyOption@{sampleFrequencyOption}!moa.gui.experimentertab.tasks.EvaluateConceptDrift@{moa.gui.experimentertab.tasks.EvaluateConceptDrift}}
+\doxysubsubsection{\texorpdfstring{sampleFrequencyOption}{sampleFrequencyOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+gui.\+experimentertab.\+tasks.\+Evaluate\+Concept\+Drift.\+sample\+Frequency\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(\textcolor{stringliteral}{"sampleFrequency"},}
+\DoxyCodeLine{            \textcolor{charliteral}{'f'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"How many instances between samples of the learning performance."},}
+\DoxyCodeLine{            10, 0, Integer.MAX\_VALUE)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1gui_1_1experimentertab_1_1tasks_1_1_evaluate_concept_drift_abbb5655298806428b3741bf0467b2dfa}\label{classmoa_1_1gui_1_1experimentertab_1_1tasks_1_1_evaluate_concept_drift_abbb5655298806428b3741bf0467b2dfa}} 
+\index{moa.gui.experimentertab.tasks.EvaluateConceptDrift@{moa.gui.experimentertab.tasks.EvaluateConceptDrift}!timeLimitOption@{timeLimitOption}}
+\index{timeLimitOption@{timeLimitOption}!moa.gui.experimentertab.tasks.EvaluateConceptDrift@{moa.gui.experimentertab.tasks.EvaluateConceptDrift}}
+\doxysubsubsection{\texorpdfstring{timeLimitOption}{timeLimitOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+gui.\+experimentertab.\+tasks.\+Evaluate\+Concept\+Drift.\+time\+Limit\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(\textcolor{stringliteral}{"timeLimit"}, \textcolor{charliteral}{'t'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Maximum number of seconds to test/train for (-\/1 = no limit)."}, -\/1,}
+\DoxyCodeLine{            -\/1, Integer.MAX\_VALUE)}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/gui/experimentertab/tasks/Evaluate\+Concept\+Drift.\+java\end{DoxyCompactItemize}

@@ -1,0 +1,151 @@
+\hypertarget{classmoa_1_1classifiers_1_1rules_1_1core_1_1_rule}{}\doxysection{moa.\+classifiers.\+rules.\+core.\+Rule Class Reference}
+\label{classmoa_1_1classifiers_1_1rules_1_1core_1_1_rule}\index{moa.classifiers.rules.core.Rule@{moa.classifiers.rules.core.Rule}}
+
+
+Inheritance diagram for moa.\+classifiers.\+rules.\+core.\+Rule\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+classifiers.\+rules.\+core.\+Rule\+:
+% FIG 1
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Builder}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1core_1_1_rule_aefeb2b58a156f5f158069bf297f254a3}\label{classmoa_1_1classifiers_1_1rules_1_1core_1_1_rule_aefeb2b58a156f5f158069bf297f254a3}} 
+int {\bfseries get\+Rule\+Number\+ID} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1core_1_1_rule_ac1edea6b4b4c82f91daec8bd9a60aa46}\label{classmoa_1_1classifiers_1_1rules_1_1core_1_1_rule_ac1edea6b4b4c82f91daec8bd9a60aa46}} 
+void {\bfseries set\+Rule\+Number\+ID} (int rule\+Number\+ID)
+\item 
+\mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1core_1_1_rule_active_learning_node}{Rule\+Active\+Learning\+Node}} \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1core_1_1_rule_a3e717635dd275520d83831dadcb00a5b}{get\+Learning\+Node}} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1core_1_1_rule_af0a2f9f16b9af205790342725b29d997}\label{classmoa_1_1classifiers_1_1rules_1_1core_1_1_rule_af0a2f9f16b9af205790342725b29d997}} 
+void {\bfseries set\+Learning\+Node} (\mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1core_1_1_rule_active_learning_node}{Rule\+Active\+Learning\+Node}} learning\+Node)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1core_1_1_rule_abd3ff65e77cfddae3df5c9634e4dc7bd}\label{classmoa_1_1classifiers_1_1rules_1_1core_1_1_rule_abd3ff65e77cfddae3df5c9634e4dc7bd}} 
+List$<$ \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1core_1_1_rule_split_node}{Rule\+Split\+Node}} $>$ {\bfseries get\+Node\+List} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1core_1_1_rule_a02c17d0af98e02ee7d16f1a800c9f095}\label{classmoa_1_1classifiers_1_1rules_1_1core_1_1_rule_a02c17d0af98e02ee7d16f1a800c9f095}} 
+long {\bfseries get\+Instances\+Seen} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1core_1_1_rule_a6a7760800d1ec09a16ea8cc024892943}\label{classmoa_1_1classifiers_1_1rules_1_1core_1_1_rule_a6a7760800d1ec09a16ea8cc024892943}} 
+void {\bfseries set\+Node\+List} (List$<$ \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1core_1_1_rule_split_node}{Rule\+Split\+Node}} $>$ node\+List)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1core_1_1_rule_aac1beb99c563a6ecee011b84eedda16b}\label{classmoa_1_1classifiers_1_1rules_1_1core_1_1_rule_aac1beb99c563a6ecee011b84eedda16b}} 
+{\bfseries Rule} (Builder builder)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1core_1_1_rule_a52f97ddb1fd6180be02efe4c61c03869}\label{classmoa_1_1classifiers_1_1rules_1_1core_1_1_rule_a52f97ddb1fd6180be02efe4c61c03869}} 
+boolean {\bfseries is\+Covering} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst)
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1core_1_1_rule_ac4bc59f7729e025554616ed34ac4276f}{get\+Description}} (String\+Builder sb, int indent)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1core_1_1_rule_a2572d2435e81eef1d85b7df97e04e4ee}\label{classmoa_1_1classifiers_1_1rules_1_1core_1_1_rule_a2572d2435e81eef1d85b7df97e04e4ee}} 
+void {\bfseries update\+Statistics} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} instance)
+\item 
+boolean \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1core_1_1_rule_a3682da48645e1eedefe7f4f54eaabbe0}{try\+To\+Expand}} (double split\+Confidence, double tie\+Threshold)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1core_1_1_rule_a9cb43ab6207432da1bba0591ce3867b1}\label{classmoa_1_1classifiers_1_1rules_1_1core_1_1_rule_a9cb43ab6207432da1bba0591ce3867b1}} 
+void {\bfseries split} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1core_1_1_rule_a76a42bfd08404445aee581c73687fe11}\label{classmoa_1_1classifiers_1_1rules_1_1core_1_1_rule_a76a42bfd08404445aee581c73687fe11}} 
+double\mbox{[}$\,$\mbox{]} {\bfseries statistics\+Other\+Branch\+Split} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1core_1_1_rule_a5c7eaaf9fc1dc21b29bd8281523d24eb}\label{classmoa_1_1classifiers_1_1rules_1_1core_1_1_rule_a5c7eaaf9fc1dc21b29bd8281523d24eb}} 
+String {\bfseries print\+Rule} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1core_1_1_rule_a220ca569d98bfbe716c8933482e476ac}\label{classmoa_1_1classifiers_1_1rules_1_1core_1_1_rule_a220ca569d98bfbe716c8933482e476ac}} 
+boolean {\bfseries is\+Anomaly} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} instance, double uni\+Variate\+Anomaly\+Probability\+Threshold, double multi\+Variate\+Anomaly\+Probability\+Threshold, int number\+Of\+Instancees\+For\+Anomaly)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1core_1_1_rule_a913ed1eaaeb47481c47d3cc8f4c447a5}\label{classmoa_1_1classifiers_1_1rules_1_1core_1_1_rule_a913ed1eaaeb47481c47d3cc8f4c447a5}} 
+double {\bfseries compute\+Error} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} instance)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1core_1_1_rule_ac219c400477a6d3ee5f7339f4d5fb4b6}\label{classmoa_1_1classifiers_1_1rules_1_1core_1_1_rule_ac219c400477a6d3ee5f7339f4d5fb4b6}} 
+boolean {\bfseries update\+Page\+Hinckley\+Test} (double error)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1core_1_1_rule_ab527bc8eb88ef3f9b908679289a739d5}\label{classmoa_1_1classifiers_1_1rules_1_1core_1_1_rule_ab527bc8eb88ef3f9b908679289a739d5}} 
+double\mbox{[}$\,$\mbox{]} {\bfseries get\+Prediction} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} instance, int mode)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1core_1_1_rule_a074b484603e986688d8b3f7d0174c9be}\label{classmoa_1_1classifiers_1_1rules_1_1core_1_1_rule_a074b484603e986688d8b3f7d0174c9be}} 
+double\mbox{[}$\,$\mbox{]} {\bfseries get\+Prediction} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} instance)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1core_1_1_rule_ac87321dcb367f425d5294d2424ac3b5d}\label{classmoa_1_1classifiers_1_1rules_1_1core_1_1_rule_ac87321dcb367f425d5294d2424ac3b5d}} 
+Builder {\bfseries get\+Builder} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1core_1_1_rule_a342d90a0f80e4889b9372b769e00d8e2}\label{classmoa_1_1classifiers_1_1rules_1_1core_1_1_rule_a342d90a0f80e4889b9372b769e00d8e2}} 
+void {\bfseries set\+Builder} (Builder builder)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1core_1_1_rule_afe3568b227b1684756cb89ead5510c4e}\label{classmoa_1_1classifiers_1_1rules_1_1core_1_1_rule_afe3568b227b1684756cb89ead5510c4e}} 
+double {\bfseries get\+Current\+Error} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1core_1_1_rule_a4f1086635a0d0fce66288a3ba02cdfc4}\label{classmoa_1_1classifiers_1_1rules_1_1core_1_1_rule_a4f1086635a0d0fce66288a3ba02cdfc4}} 
+void {\bfseries debug} (String string, int level)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1core_1_1_rule_ace8cd8ef69616ef5ccdbfcc07940a006}\label{classmoa_1_1classifiers_1_1rules_1_1core_1_1_rule_ace8cd8ef69616ef5ccdbfcc07940a006}} 
+List$<$ \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1core_1_1_rule_split_node}{Rule\+Split\+Node}} $>$ {\bfseries node\+List} = new Linked\+List$<$\mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1core_1_1_rule_split_node}{Rule\+Split\+Node}}$>$()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1core_1_1_rule_a52b72d97253623adf8aed0a5313855d9}\label{classmoa_1_1classifiers_1_1rules_1_1core_1_1_rule_a52b72d97253623adf8aed0a5313855d9}} 
+\mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1core_1_1_rule_active_learning_node}{Rule\+Active\+Learning\+Node}} {\bfseries learning\+Node}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1core_1_1_rule_a475beef009c10738b60b1bcfcd6d3c3b}\label{classmoa_1_1classifiers_1_1rules_1_1core_1_1_rule_a475beef009c10738b60b1bcfcd6d3c3b}} 
+int {\bfseries rule\+Number\+ID}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1core_1_1_rule_aa78e0f8d68dc63fc5e60731db3f3f742}\label{classmoa_1_1classifiers_1_1rules_1_1core_1_1_rule_aa78e0f8d68dc63fc5e60731db3f3f742}} 
+\mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1_abstract_a_m_rules}{Abstract\+A\+M\+Rules}} {\bfseries am\+Rules}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1core_1_1_rule_ac4bc59f7729e025554616ed34ac4276f}\label{classmoa_1_1classifiers_1_1rules_1_1core_1_1_rule_ac4bc59f7729e025554616ed34ac4276f}} 
+\index{moa.classifiers.rules.core.Rule@{moa.classifiers.rules.core.Rule}!getDescription@{getDescription}}
+\index{getDescription@{getDescription}!moa.classifiers.rules.core.Rule@{moa.classifiers.rules.core.Rule}}
+\doxysubsubsection{\texorpdfstring{getDescription()}{getDescription()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+rules.\+core.\+Rule.\+get\+Description (\begin{DoxyParamCaption}\item[{String\+Builder}]{sb,  }\item[{int}]{indent }\end{DoxyParamCaption})}
+
+M\+OA G\+UI output 
+
+Implements \mbox{\hyperlink{interfacemoa_1_1_m_o_a_object_afdaf5098f1fe6c852018ce64c28e17f5}{moa.\+M\+O\+A\+Object}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1core_1_1_rule_a3e717635dd275520d83831dadcb00a5b}\label{classmoa_1_1classifiers_1_1rules_1_1core_1_1_rule_a3e717635dd275520d83831dadcb00a5b}} 
+\index{moa.classifiers.rules.core.Rule@{moa.classifiers.rules.core.Rule}!getLearningNode@{getLearningNode}}
+\index{getLearningNode@{getLearningNode}!moa.classifiers.rules.core.Rule@{moa.classifiers.rules.core.Rule}}
+\doxysubsubsection{\texorpdfstring{getLearningNode()}{getLearningNode()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1core_1_1_rule_active_learning_node}{Rule\+Active\+Learning\+Node}} moa.\+classifiers.\+rules.\+core.\+Rule.\+get\+Learning\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+get\+Learning\+Node Method This is the way to pass info for other classes. Implements \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1core_1_1_rule_a3e717635dd275520d83831dadcb00a5b}{get\+Learning\+Node()}} in class \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1core_1_1_rule_active_learning_node}{Rule\+Active\+Learning\+Node}}
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1core_1_1_rule_a3682da48645e1eedefe7f4f54eaabbe0}\label{classmoa_1_1classifiers_1_1rules_1_1core_1_1_rule_a3682da48645e1eedefe7f4f54eaabbe0}} 
+\index{moa.classifiers.rules.core.Rule@{moa.classifiers.rules.core.Rule}!tryToExpand@{tryToExpand}}
+\index{tryToExpand@{tryToExpand}!moa.classifiers.rules.core.Rule@{moa.classifiers.rules.core.Rule}}
+\doxysubsubsection{\texorpdfstring{tryToExpand()}{tryToExpand()}}
+{\footnotesize\ttfamily boolean moa.\+classifiers.\+rules.\+core.\+Rule.\+try\+To\+Expand (\begin{DoxyParamCaption}\item[{double}]{split\+Confidence,  }\item[{double}]{tie\+Threshold }\end{DoxyParamCaption})}
+
+Try to Expand method. 
+\begin{DoxyParams}{Parameters}
+{\em split\+Confidence} & \\
+\hline
+{\em tie\+Threshold} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/classifiers/rules/core/Rule.\+java\end{DoxyCompactItemize}

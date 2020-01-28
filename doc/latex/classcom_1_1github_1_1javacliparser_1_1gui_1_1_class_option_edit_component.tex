@@ -1,0 +1,161 @@
+\hypertarget{classcom_1_1github_1_1javacliparser_1_1gui_1_1_class_option_edit_component}{}\doxysection{com.\+github.\+javacliparser.\+gui.\+Class\+Option\+Edit\+Component Class Reference}
+\label{classcom_1_1github_1_1javacliparser_1_1gui_1_1_class_option_edit_component}\index{com.github.javacliparser.gui.ClassOptionEditComponent@{com.github.javacliparser.gui.ClassOptionEditComponent}}
+
+
+Inheritance diagram for com.\+github.\+javacliparser.\+gui.\+Class\+Option\+Edit\+Component\+:
+% FIG 0
+
+
+Collaboration diagram for com.\+github.\+javacliparser.\+gui.\+Class\+Option\+Edit\+Component\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1github_1_1javacliparser_1_1gui_1_1_class_option_edit_component_a4841bc576805d60af771558254c773af}\label{classcom_1_1github_1_1javacliparser_1_1gui_1_1_class_option_edit_component_a4841bc576805d60af771558254c773af}} 
+{\bfseries Class\+Option\+Edit\+Component} (\mbox{\hyperlink{interfacecom_1_1github_1_1javacliparser_1_1_option}{Option}} opt)
+\item 
+void \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1gui_1_1_class_option_edit_component_a6e6f85b395892a003a6236a98c683b06}{apply\+State}} ()
+\item 
+\mbox{\hyperlink{interfacecom_1_1github_1_1javacliparser_1_1_option}{Option}} \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1gui_1_1_class_option_edit_component_af97c9116ec59702a476cc1dd972ff323}{get\+Edited\+Option}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1gui_1_1_class_option_edit_component_ac809e57c0fbae5e0ed9502af278e922c}{set\+Edit\+State}} (String cli\+String)
+\item 
+\mbox{\Hypertarget{classcom_1_1github_1_1javacliparser_1_1gui_1_1_class_option_edit_component_a8f3c75c4645743350a856ef41f38c042}\label{classcom_1_1github_1_1javacliparser_1_1gui_1_1_class_option_edit_component_a8f3c75c4645743350a856ef41f38c042}} 
+void {\bfseries edit\+Object} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1gui_1_1_class_option_edit_component_a209254f3e4b8326910428c82ddae1fdd}{add\+Change\+Listener}} (Change\+Listener l)
+\item 
+void \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1gui_1_1_class_option_edit_component_ab49474897c700c00f0dec02635d932f4}{remove\+Change\+Listener}} (Change\+Listener l)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1gui_1_1_class_option_edit_component_a41b46a5452fc9ba9b3a26ba41ff91f31}{notify\+Change\+Listeners}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1github_1_1javacliparser_1_1gui_1_1_class_option_edit_component_ac0a962ccc1eb984f5682a4263e4bfbde}\label{classcom_1_1github_1_1javacliparser_1_1gui_1_1_class_option_edit_component_ac0a962ccc1eb984f5682a4263e4bfbde}} 
+\mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} {\bfseries edited\+Option}
+\item 
+\mbox{\Hypertarget{classcom_1_1github_1_1javacliparser_1_1gui_1_1_class_option_edit_component_a4dd31ca8f673fcaa0ab48dd2b5a85ed7}\label{classcom_1_1github_1_1javacliparser_1_1gui_1_1_class_option_edit_component_a4dd31ca8f673fcaa0ab48dd2b5a85ed7}} 
+J\+Text\+Field {\bfseries text\+Field} = new J\+Text\+Field()
+\item 
+\mbox{\Hypertarget{classcom_1_1github_1_1javacliparser_1_1gui_1_1_class_option_edit_component_a1bd540fc0f4b97b4f9fcc69de224951d}\label{classcom_1_1github_1_1javacliparser_1_1gui_1_1_class_option_edit_component_a1bd540fc0f4b97b4f9fcc69de224951d}} 
+J\+Button {\bfseries edit\+Button} = new J\+Button(\char`\"{}Edit\char`\"{})
+\item 
+boolean \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1gui_1_1_class_option_edit_component_aef024b76df5b2cca62c2b22927069ae8}{mid\+Update}} = false
+\item 
+Hash\+Set$<$ Change\+Listener $>$ \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1gui_1_1_class_option_edit_component_a96faba5588ad94b99435145545e8d146}{change\+Listeners}} = new Hash\+Set$<$Change\+Listener$>$()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An \mbox{\hyperlink{interfacecom_1_1github_1_1javacliparser_1_1gui_1_1_option_edit_component}{Option\+Edit\+Component}} that lets the user edit a class option.
+
+\begin{DoxyAuthor}{Author}
+Richard Kirkby (\href{mailto:rkirkby@cs.waikato.ac.nz}{\texttt{ rkirkby@cs.\+waikato.\+ac.\+nz}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+7 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1github_1_1javacliparser_1_1gui_1_1_class_option_edit_component_a209254f3e4b8326910428c82ddae1fdd}\label{classcom_1_1github_1_1javacliparser_1_1gui_1_1_class_option_edit_component_a209254f3e4b8326910428c82ddae1fdd}} 
+\index{com.github.javacliparser.gui.ClassOptionEditComponent@{com.github.javacliparser.gui.ClassOptionEditComponent}!addChangeListener@{addChangeListener}}
+\index{addChangeListener@{addChangeListener}!com.github.javacliparser.gui.ClassOptionEditComponent@{com.github.javacliparser.gui.ClassOptionEditComponent}}
+\doxysubsubsection{\texorpdfstring{addChangeListener()}{addChangeListener()}}
+{\footnotesize\ttfamily void com.\+github.\+javacliparser.\+gui.\+Class\+Option\+Edit\+Component.\+add\+Change\+Listener (\begin{DoxyParamCaption}\item[{Change\+Listener}]{l }\end{DoxyParamCaption})}
+
+Adds the listener to the internal set of listeners. Gets notified when the option string changes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em l} & the listener to add \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcom_1_1github_1_1javacliparser_1_1gui_1_1_class_option_edit_component_a6e6f85b395892a003a6236a98c683b06}\label{classcom_1_1github_1_1javacliparser_1_1gui_1_1_class_option_edit_component_a6e6f85b395892a003a6236a98c683b06}} 
+\index{com.github.javacliparser.gui.ClassOptionEditComponent@{com.github.javacliparser.gui.ClassOptionEditComponent}!applyState@{applyState}}
+\index{applyState@{applyState}!com.github.javacliparser.gui.ClassOptionEditComponent@{com.github.javacliparser.gui.ClassOptionEditComponent}}
+\doxysubsubsection{\texorpdfstring{applyState()}{applyState()}}
+{\footnotesize\ttfamily void com.\+github.\+javacliparser.\+gui.\+Class\+Option\+Edit\+Component.\+apply\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This method applies the state 
+
+Implements \mbox{\hyperlink{interfacecom_1_1github_1_1javacliparser_1_1gui_1_1_option_edit_component_a983ab8cd2ca342ab27607fd480028229}{com.\+github.\+javacliparser.\+gui.\+Option\+Edit\+Component}}.
+
+\mbox{\Hypertarget{classcom_1_1github_1_1javacliparser_1_1gui_1_1_class_option_edit_component_af97c9116ec59702a476cc1dd972ff323}\label{classcom_1_1github_1_1javacliparser_1_1gui_1_1_class_option_edit_component_af97c9116ec59702a476cc1dd972ff323}} 
+\index{com.github.javacliparser.gui.ClassOptionEditComponent@{com.github.javacliparser.gui.ClassOptionEditComponent}!getEditedOption@{getEditedOption}}
+\index{getEditedOption@{getEditedOption}!com.github.javacliparser.gui.ClassOptionEditComponent@{com.github.javacliparser.gui.ClassOptionEditComponent}}
+\doxysubsubsection{\texorpdfstring{getEditedOption()}{getEditedOption()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1github_1_1javacliparser_1_1_option}{Option}} com.\+github.\+javacliparser.\+gui.\+Class\+Option\+Edit\+Component.\+get\+Edited\+Option (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the option of this component
+
+\begin{DoxyReturn}{Returns}
+the option of this component 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1github_1_1javacliparser_1_1gui_1_1_option_edit_component_aa5f075d9e8a01d2cbe5b6e01399ff24e}{com.\+github.\+javacliparser.\+gui.\+Option\+Edit\+Component}}.
+
+\mbox{\Hypertarget{classcom_1_1github_1_1javacliparser_1_1gui_1_1_class_option_edit_component_a41b46a5452fc9ba9b3a26ba41ff91f31}\label{classcom_1_1github_1_1javacliparser_1_1gui_1_1_class_option_edit_component_a41b46a5452fc9ba9b3a26ba41ff91f31}} 
+\index{com.github.javacliparser.gui.ClassOptionEditComponent@{com.github.javacliparser.gui.ClassOptionEditComponent}!notifyChangeListeners@{notifyChangeListeners}}
+\index{notifyChangeListeners@{notifyChangeListeners}!com.github.javacliparser.gui.ClassOptionEditComponent@{com.github.javacliparser.gui.ClassOptionEditComponent}}
+\doxysubsubsection{\texorpdfstring{notifyChangeListeners()}{notifyChangeListeners()}}
+{\footnotesize\ttfamily void com.\+github.\+javacliparser.\+gui.\+Class\+Option\+Edit\+Component.\+notify\+Change\+Listeners (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Notifies all registered change listeners that the options have changed. \mbox{\Hypertarget{classcom_1_1github_1_1javacliparser_1_1gui_1_1_class_option_edit_component_ab49474897c700c00f0dec02635d932f4}\label{classcom_1_1github_1_1javacliparser_1_1gui_1_1_class_option_edit_component_ab49474897c700c00f0dec02635d932f4}} 
+\index{com.github.javacliparser.gui.ClassOptionEditComponent@{com.github.javacliparser.gui.ClassOptionEditComponent}!removeChangeListener@{removeChangeListener}}
+\index{removeChangeListener@{removeChangeListener}!com.github.javacliparser.gui.ClassOptionEditComponent@{com.github.javacliparser.gui.ClassOptionEditComponent}}
+\doxysubsubsection{\texorpdfstring{removeChangeListener()}{removeChangeListener()}}
+{\footnotesize\ttfamily void com.\+github.\+javacliparser.\+gui.\+Class\+Option\+Edit\+Component.\+remove\+Change\+Listener (\begin{DoxyParamCaption}\item[{Change\+Listener}]{l }\end{DoxyParamCaption})}
+
+Removes the listener from the internal set of listeners.
+
+
+\begin{DoxyParams}{Parameters}
+{\em l} & the listener to remove \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcom_1_1github_1_1javacliparser_1_1gui_1_1_class_option_edit_component_ac809e57c0fbae5e0ed9502af278e922c}\label{classcom_1_1github_1_1javacliparser_1_1gui_1_1_class_option_edit_component_ac809e57c0fbae5e0ed9502af278e922c}} 
+\index{com.github.javacliparser.gui.ClassOptionEditComponent@{com.github.javacliparser.gui.ClassOptionEditComponent}!setEditState@{setEditState}}
+\index{setEditState@{setEditState}!com.github.javacliparser.gui.ClassOptionEditComponent@{com.github.javacliparser.gui.ClassOptionEditComponent}}
+\doxysubsubsection{\texorpdfstring{setEditState()}{setEditState()}}
+{\footnotesize\ttfamily void com.\+github.\+javacliparser.\+gui.\+Class\+Option\+Edit\+Component.\+set\+Edit\+State (\begin{DoxyParamCaption}\item[{String}]{cli\+String }\end{DoxyParamCaption})}
+
+Sets the state of the component
+
+
+\begin{DoxyParams}{Parameters}
+{\em cli\+String} & the state of the component \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1github_1_1javacliparser_1_1gui_1_1_option_edit_component_a0534aa5e2ec9142d6917dc2e81b035a4}{com.\+github.\+javacliparser.\+gui.\+Option\+Edit\+Component}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classcom_1_1github_1_1javacliparser_1_1gui_1_1_class_option_edit_component_a96faba5588ad94b99435145545e8d146}\label{classcom_1_1github_1_1javacliparser_1_1gui_1_1_class_option_edit_component_a96faba5588ad94b99435145545e8d146}} 
+\index{com.github.javacliparser.gui.ClassOptionEditComponent@{com.github.javacliparser.gui.ClassOptionEditComponent}!changeListeners@{changeListeners}}
+\index{changeListeners@{changeListeners}!com.github.javacliparser.gui.ClassOptionEditComponent@{com.github.javacliparser.gui.ClassOptionEditComponent}}
+\doxysubsubsection{\texorpdfstring{changeListeners}{changeListeners}}
+{\footnotesize\ttfamily Hash\+Set$<$Change\+Listener$>$ com.\+github.\+javacliparser.\+gui.\+Class\+Option\+Edit\+Component.\+change\+Listeners = new Hash\+Set$<$Change\+Listener$>$()\hspace{0.3cm}{\ttfamily [protected]}}
+
+listeners that listen to changes to the chosen option. \mbox{\Hypertarget{classcom_1_1github_1_1javacliparser_1_1gui_1_1_class_option_edit_component_aef024b76df5b2cca62c2b22927069ae8}\label{classcom_1_1github_1_1javacliparser_1_1gui_1_1_class_option_edit_component_aef024b76df5b2cca62c2b22927069ae8}} 
+\index{com.github.javacliparser.gui.ClassOptionEditComponent@{com.github.javacliparser.gui.ClassOptionEditComponent}!midUpdate@{midUpdate}}
+\index{midUpdate@{midUpdate}!com.github.javacliparser.gui.ClassOptionEditComponent@{com.github.javacliparser.gui.ClassOptionEditComponent}}
+\doxysubsubsection{\texorpdfstring{midUpdate}{midUpdate}}
+{\footnotesize\ttfamily boolean com.\+github.\+javacliparser.\+gui.\+Class\+Option\+Edit\+Component.\+mid\+Update = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+Flag that says the text field is in the middle of an update operation. This is to prevent two change notifications from going out when the update is implemented as a remove followed by an insert. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/com/github/javacliparser/gui/Class\+Option\+Edit\+Component.\+java\end{DoxyCompactItemize}

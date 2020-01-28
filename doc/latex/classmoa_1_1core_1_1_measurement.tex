@@ -1,0 +1,86 @@
+\hypertarget{classmoa_1_1core_1_1_measurement}{}\doxysection{moa.\+core.\+Measurement Class Reference}
+\label{classmoa_1_1core_1_1_measurement}\index{moa.core.Measurement@{moa.core.Measurement}}
+
+
+Inheritance diagram for moa.\+core.\+Measurement\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+core.\+Measurement\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1core_1_1_measurement_a9d375b1ab829bd4f3e7e179aa620e644}\label{classmoa_1_1core_1_1_measurement_a9d375b1ab829bd4f3e7e179aa620e644}} 
+{\bfseries Measurement} (String name, double value)
+\item 
+\mbox{\Hypertarget{classmoa_1_1core_1_1_measurement_a7172ce7650be6b66ce38f2fda6356035}\label{classmoa_1_1core_1_1_measurement_a7172ce7650be6b66ce38f2fda6356035}} 
+String {\bfseries get\+Name} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1core_1_1_measurement_ad41c47748a7d029814c61802898d1e0e}\label{classmoa_1_1core_1_1_measurement_ad41c47748a7d029814c61802898d1e0e}} 
+double {\bfseries get\+Value} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1core_1_1_measurement_a68a6bdb503cc16f138766f7ba6bd068c}{get\+Description}} (String\+Builder sb, int indent)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1core_1_1_measurement_a17f8534853faa467f92e84622e636c26}\label{classmoa_1_1core_1_1_measurement_a17f8534853faa467f92e84622e636c26}} 
+static \mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}} {\bfseries get\+Measurement\+Named} (String name, \mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}}\mbox{[}$\,$\mbox{]} measurements)
+\item 
+\mbox{\Hypertarget{classmoa_1_1core_1_1_measurement_aee73db2b231d77f5142f5a4352a38da9}\label{classmoa_1_1core_1_1_measurement_aee73db2b231d77f5142f5a4352a38da9}} 
+static void {\bfseries get\+Measurements\+Description} (\mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}}\mbox{[}$\,$\mbox{]} measurements, String\+Builder out, int indent)
+\item 
+\mbox{\Hypertarget{classmoa_1_1core_1_1_measurement_ac75d28907d493d2ebeb5e308968e157c}\label{classmoa_1_1core_1_1_measurement_ac75d28907d493d2ebeb5e308968e157c}} 
+static \mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}}\mbox{[}$\,$\mbox{]} {\bfseries average\+Measurements} (\mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} to\+Average)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1core_1_1_measurement_a09dc1ee0d1bb4ffb6fc8c925e01ee221}\label{classmoa_1_1core_1_1_measurement_a09dc1ee0d1bb4ffb6fc8c925e01ee221}} 
+String {\bfseries name}
+\item 
+\mbox{\Hypertarget{classmoa_1_1core_1_1_measurement_a413ba371bf03d7a4cea714e80bcf8061}\label{classmoa_1_1core_1_1_measurement_a413ba371bf03d7a4cea714e80bcf8061}} 
+double {\bfseries value}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class for storing an evaluation measurement.
+
+\begin{DoxyAuthor}{Author}
+Richard Kirkby (\href{mailto:rkirkby@cs.waikato.ac.nz}{\texttt{ rkirkby@cs.\+waikato.\+ac.\+nz}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+7 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1core_1_1_measurement_a68a6bdb503cc16f138766f7ba6bd068c}\label{classmoa_1_1core_1_1_measurement_a68a6bdb503cc16f138766f7ba6bd068c}} 
+\index{moa.core.Measurement@{moa.core.Measurement}!getDescription@{getDescription}}
+\index{getDescription@{getDescription}!moa.core.Measurement@{moa.core.Measurement}}
+\doxysubsubsection{\texorpdfstring{getDescription()}{getDescription()}}
+{\footnotesize\ttfamily void moa.\+core.\+Measurement.\+get\+Description (\begin{DoxyParamCaption}\item[{String\+Builder}]{sb,  }\item[{int}]{indent }\end{DoxyParamCaption})}
+
+Returns a string representation of this object. Used in {\ttfamily \mbox{\hyperlink{classmoa_1_1_abstract_m_o_a_object_ac686fd3b07c734cf21f1894376fe402d}{Abstract\+M\+O\+A\+Object.\+to\+String}}} to give a string representation of the object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sb} & the stringbuilder to add the description \\
+\hline
+{\em indent} & the number of characters to indent \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1_m_o_a_object_afdaf5098f1fe6c852018ce64c28e17f5}{moa.\+M\+O\+A\+Object}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/core/Measurement.\+java\end{DoxyCompactItemize}

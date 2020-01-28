@@ -1,0 +1,24 @@
+digraph "moa.clusterers.outliers.Angiulli.ISBIndex"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="moa.clusterers.outliers.\lAngiulli.ISBIndex",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" mapNodes" ];
+  Node2 [label="Map\< Integer, Set\<\l ISBNode \> \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" mtree" ];
+  Node3 [label="moa.clusterers.outliers.\lAngiulli.MyMTree",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="moa::clusterers::outliers\l::utils::mtree::MTree\<\l StreamObj \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classmoa_1_1clusterers_1_1outliers_1_1utils_1_1mtree_1_1_m_tree.html",tooltip=" "];
+  Node5 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" root" ];
+  Node5 [label="moa.clusterers.outliers.utils.mtree.\lMTree\< DATA \>.Node",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node6 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="moa::clusterers::outliers\l::utils::mtree::MTree\<\l DATA \>::IndexItem",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node7 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" rootness" ];
+  Node7 [label="moa.clusterers.outliers.utils.mtree.\lMTree\< DATA \>.Rootness",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node8 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" children" ];
+  Node8 [label="Map\< DATA, IndexItem \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node9 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" distanceFunction" ];
+  Node9 [label="moa.clusterers.outliers.utils.mtree.\lDistanceFunction\<? super DATA \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interfacemoa_1_1clusterers_1_1outliers_1_1utils_1_1mtree_1_1_distance_function.html",tooltip=" "];
+}

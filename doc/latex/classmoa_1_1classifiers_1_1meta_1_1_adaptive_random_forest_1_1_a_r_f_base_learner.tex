@@ -1,0 +1,112 @@
+\hypertarget{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_1_1_a_r_f_base_learner}{}\doxysection{moa.\+classifiers.\+meta.\+Adaptive\+Random\+Forest.\+A\+R\+F\+Base\+Learner Class Reference}
+\label{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_1_1_a_r_f_base_learner}\index{moa.classifiers.meta.AdaptiveRandomForest.ARFBaseLearner@{moa.classifiers.meta.AdaptiveRandomForest.ARFBaseLearner}}
+
+
+Inheritance diagram for moa.\+classifiers.\+meta.\+Adaptive\+Random\+Forest.\+A\+R\+F\+Base\+Learner\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+classifiers.\+meta.\+Adaptive\+Random\+Forest.\+A\+R\+F\+Base\+Learner\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_1_1_a_r_f_base_learner_a05d3347b04847619513c027056848884}\label{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_1_1_a_r_f_base_learner_a05d3347b04847619513c027056848884}} 
+{\bfseries A\+R\+F\+Base\+Learner} (int index\+Original, \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1_a_r_f_hoeffding_tree}{A\+R\+F\+Hoeffding\+Tree}} instantiated\+Classifier, \mbox{\hyperlink{classmoa_1_1evaluation_1_1_basic_classification_performance_evaluator}{Basic\+Classification\+Performance\+Evaluator}} evaluator\+Instantiated, long instances\+Seen, boolean use\+Bkg\+Learner, boolean use\+Drift\+Detector, \mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} drift\+Option, \mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} warning\+Option, boolean is\+Background\+Learner)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_1_1_a_r_f_base_learner_a813b61f96a9890d3a0c683000c77d3f7}\label{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_1_1_a_r_f_base_learner_a813b61f96a9890d3a0c683000c77d3f7}} 
+void {\bfseries reset} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_1_1_a_r_f_base_learner_afe004e690ab5687ce14d2afee9d824db}\label{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_1_1_a_r_f_base_learner_afe004e690ab5687ce14d2afee9d824db}} 
+void {\bfseries train\+On\+Instance} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} instance, double weight, long instances\+Seen)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_1_1_a_r_f_base_learner_a8103a3cc8f8483f92849e9896fc076e5}\label{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_1_1_a_r_f_base_learner_a8103a3cc8f8483f92849e9896fc076e5}} 
+double\mbox{[}$\,$\mbox{]} {\bfseries get\+Votes\+For\+Instance} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} instance)
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_1_1_a_r_f_base_learner_a1ec2e7e709f2a45c1e02ca852efb5297}{get\+Description}} (String\+Builder sb, int indent)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_1_1_a_r_f_base_learner_a0c0e953aca9839fa173673630f41fca9}\label{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_1_1_a_r_f_base_learner_a0c0e953aca9839fa173673630f41fca9}} 
+int {\bfseries index\+Original}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_1_1_a_r_f_base_learner_a998e1a5a756e16a3d23e03a5b78e1444}\label{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_1_1_a_r_f_base_learner_a998e1a5a756e16a3d23e03a5b78e1444}} 
+long {\bfseries created\+On}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_1_1_a_r_f_base_learner_ae633debe6a86caffb1c0c76cb2f8625e}\label{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_1_1_a_r_f_base_learner_ae633debe6a86caffb1c0c76cb2f8625e}} 
+long {\bfseries last\+Drift\+On}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_1_1_a_r_f_base_learner_aa18f3955079b7436405256b6953c4d46}\label{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_1_1_a_r_f_base_learner_aa18f3955079b7436405256b6953c4d46}} 
+long {\bfseries last\+Warning\+On}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_1_1_a_r_f_base_learner_aaec04b11a80a9a814b483c93ae70668f}\label{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_1_1_a_r_f_base_learner_aaec04b11a80a9a814b483c93ae70668f}} 
+\mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1_a_r_f_hoeffding_tree}{A\+R\+F\+Hoeffding\+Tree}} {\bfseries classifier}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_1_1_a_r_f_base_learner_aec3bde54f46ca1188b33746015c7328e}\label{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_1_1_a_r_f_base_learner_aec3bde54f46ca1188b33746015c7328e}} 
+boolean {\bfseries is\+Background\+Learner}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_1_1_a_r_f_base_learner_acd1ec292a94328a6d60dee1d76d4c192}\label{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_1_1_a_r_f_base_learner_acd1ec292a94328a6d60dee1d76d4c192}} 
+boolean {\bfseries use\+Bkg\+Learner}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_1_1_a_r_f_base_learner_a30e27665b3132401ade550cea4739192}\label{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_1_1_a_r_f_base_learner_a30e27665b3132401ade550cea4739192}} 
+boolean {\bfseries use\+Drift\+Detector}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_1_1_a_r_f_base_learner_a53623cf1d94abd20d2da42ed7de53de7}\label{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_1_1_a_r_f_base_learner_a53623cf1d94abd20d2da42ed7de53de7}} 
+\mbox{\hyperlink{classmoa_1_1evaluation_1_1_basic_classification_performance_evaluator}{Basic\+Classification\+Performance\+Evaluator}} {\bfseries evaluator}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_1_1_a_r_f_base_learner_ae72688ff945bc14caff5c09229fb6c85}\label{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_1_1_a_r_f_base_learner_ae72688ff945bc14caff5c09229fb6c85}} 
+\mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} {\bfseries drift\+Option}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_1_1_a_r_f_base_learner_af8c86298b81eff56e2341dc1bf445a13}\label{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_1_1_a_r_f_base_learner_af8c86298b81eff56e2341dc1bf445a13}} 
+\mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} {\bfseries warning\+Option}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_1_1_a_r_f_base_learner_acf849ca4341d5f2a065c8644a77444ad}\label{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_1_1_a_r_f_base_learner_acf849ca4341d5f2a065c8644a77444ad}} 
+\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1core_1_1driftdetection_1_1_change_detector}{Change\+Detector}} {\bfseries drift\+Detection\+Method}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_1_1_a_r_f_base_learner_a68ca6648795ff6d6a7f5f760e4d796ec}\label{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_1_1_a_r_f_base_learner_a68ca6648795ff6d6a7f5f760e4d796ec}} 
+\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1core_1_1driftdetection_1_1_change_detector}{Change\+Detector}} {\bfseries warning\+Detection\+Method}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_1_1_a_r_f_base_learner_a564e99c9cebb2d98602e88bcb00a3a61}\label{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_1_1_a_r_f_base_learner_a564e99c9cebb2d98602e88bcb00a3a61}} 
+\mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_1_1_a_r_f_base_learner}{A\+R\+F\+Base\+Learner}} {\bfseries bkg\+Learner}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_1_1_a_r_f_base_learner_af2c6eda208bc4ec19eb3d5d8d998c868}\label{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_1_1_a_r_f_base_learner_af2c6eda208bc4ec19eb3d5d8d998c868}} 
+int {\bfseries number\+Of\+Drifts\+Detected}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_1_1_a_r_f_base_learner_a7b4d501d350ed4389181d4dfd6ae9092}\label{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_1_1_a_r_f_base_learner_a7b4d501d350ed4389181d4dfd6ae9092}} 
+int {\bfseries number\+Of\+Warnings\+Detected}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Inner class that represents a single tree member of the forest. It contains some analysis information, such as the number\+Of\+Drifts\+Detected, 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_1_1_a_r_f_base_learner_a1ec2e7e709f2a45c1e02ca852efb5297}\label{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_1_1_a_r_f_base_learner_a1ec2e7e709f2a45c1e02ca852efb5297}} 
+\index{moa.classifiers.meta.AdaptiveRandomForest.ARFBaseLearner@{moa.classifiers.meta.AdaptiveRandomForest.ARFBaseLearner}!getDescription@{getDescription}}
+\index{getDescription@{getDescription}!moa.classifiers.meta.AdaptiveRandomForest.ARFBaseLearner@{moa.classifiers.meta.AdaptiveRandomForest.ARFBaseLearner}}
+\doxysubsubsection{\texorpdfstring{getDescription()}{getDescription()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+meta.\+Adaptive\+Random\+Forest.\+A\+R\+F\+Base\+Learner.\+get\+Description (\begin{DoxyParamCaption}\item[{String\+Builder}]{sb,  }\item[{int}]{indent }\end{DoxyParamCaption})}
+
+Returns a string representation of this object. Used in {\ttfamily \mbox{\hyperlink{classmoa_1_1_abstract_m_o_a_object_ac686fd3b07c734cf21f1894376fe402d}{Abstract\+M\+O\+A\+Object.\+to\+String}}} to give a string representation of the object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sb} & the stringbuilder to add the description \\
+\hline
+{\em indent} & the number of characters to indent \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1_m_o_a_object_afdaf5098f1fe6c852018ce64c28e17f5}{moa.\+M\+O\+A\+Object}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/classifiers/meta/Adaptive\+Random\+Forest.\+java\end{DoxyCompactItemize}

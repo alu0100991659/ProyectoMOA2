@@ -1,0 +1,139 @@
+\hypertarget{classmoa_1_1streams_1_1generators_1_1_l_e_d_generator_drift}{}\doxysection{moa.\+streams.\+generators.\+L\+E\+D\+Generator\+Drift Class Reference}
+\label{classmoa_1_1streams_1_1generators_1_1_l_e_d_generator_drift}\index{moa.streams.generators.LEDGeneratorDrift@{moa.streams.generators.LEDGeneratorDrift}}
+
+
+Inheritance diagram for moa.\+streams.\+generators.\+L\+E\+D\+Generator\+Drift\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+streams.\+generators.\+L\+E\+D\+Generator\+Drift\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classmoa_1_1streams_1_1generators_1_1_l_e_d_generator_drift_ac0c5d7d1a8afeb59e3f32e7672e40f66}{get\+Purpose\+String}} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1generators_1_1_l_e_d_generator_drift_ab94bc08ac4623bb04da846d742872e9c}\label{classmoa_1_1streams_1_1generators_1_1_l_e_d_generator_drift_ab94bc08ac4623bb04da846d742872e9c}} 
+\mbox{\hyperlink{classmoa_1_1core_1_1_instance_example}{Instance\+Example}} {\bfseries next\+Instance} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1streams_1_1generators_1_1_l_e_d_generator_drift_acd29b0ffaf4316eb5a49115882ae3a68}{get\+Description}} (String\+Builder sb, int indent)
+\item 
+\mbox{\hyperlink{classmoa_1_1capabilities_1_1_immutable_capabilities}{Immutable\+Capabilities}} \mbox{\hyperlink{classmoa_1_1streams_1_1generators_1_1_l_e_d_generator_drift_ae166cc242a978e68d6d0c6fe478143fb}{define\+Immutable\+Capabilities}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries number\+Attributes\+Drift\+Option}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classmoa_1_1streams_1_1generators_1_1_l_e_d_generator_drift_af56fd2d83859b989ce5a31accf153cf3}{prepare\+For\+Use\+Impl}} (\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}} monitor, \mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}} repository)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1generators_1_1_l_e_d_generator_drift_a7c7e1064744c979a4ee6c3e84c506178}\label{classmoa_1_1streams_1_1generators_1_1_l_e_d_generator_drift_a7c7e1064744c979a4ee6c3e84c506178}} 
+int\mbox{[}$\,$\mbox{]} {\bfseries number\+Attribute}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Stream generator for the problem of predicting the digit displayed on a 7-\/segment L\+ED display with drift.
+
+\begin{DoxyAuthor}{Author}
+Albert Bifet (abifet at cs dot waikato dot ac dot nz) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+7 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1streams_1_1generators_1_1_l_e_d_generator_drift_ae166cc242a978e68d6d0c6fe478143fb}\label{classmoa_1_1streams_1_1generators_1_1_l_e_d_generator_drift_ae166cc242a978e68d6d0c6fe478143fb}} 
+\index{moa.streams.generators.LEDGeneratorDrift@{moa.streams.generators.LEDGeneratorDrift}!defineImmutableCapabilities@{defineImmutableCapabilities}}
+\index{defineImmutableCapabilities@{defineImmutableCapabilities}!moa.streams.generators.LEDGeneratorDrift@{moa.streams.generators.LEDGeneratorDrift}}
+\doxysubsubsection{\texorpdfstring{defineImmutableCapabilities()}{defineImmutableCapabilities()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1capabilities_1_1_immutable_capabilities}{Immutable\+Capabilities}} moa.\+streams.\+generators.\+L\+E\+D\+Generator\+Drift.\+define\+Immutable\+Capabilities (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Defines the set of capabilities the object has. Should be overridden if the object\textquotesingle{}s capabilities do not change.
+
+\begin{DoxyReturn}{Returns}
+The capabilities of the object. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1streams_1_1generators_1_1_l_e_d_generator_a3598d07a6cad765626c5d4089ab2bb65}{moa.\+streams.\+generators.\+L\+E\+D\+Generator}}.
+
+\mbox{\Hypertarget{classmoa_1_1streams_1_1generators_1_1_l_e_d_generator_drift_acd29b0ffaf4316eb5a49115882ae3a68}\label{classmoa_1_1streams_1_1generators_1_1_l_e_d_generator_drift_acd29b0ffaf4316eb5a49115882ae3a68}} 
+\index{moa.streams.generators.LEDGeneratorDrift@{moa.streams.generators.LEDGeneratorDrift}!getDescription@{getDescription}}
+\index{getDescription@{getDescription}!moa.streams.generators.LEDGeneratorDrift@{moa.streams.generators.LEDGeneratorDrift}}
+\doxysubsubsection{\texorpdfstring{getDescription()}{getDescription()}}
+{\footnotesize\ttfamily void moa.\+streams.\+generators.\+L\+E\+D\+Generator\+Drift.\+get\+Description (\begin{DoxyParamCaption}\item[{String\+Builder}]{sb,  }\item[{int}]{indent }\end{DoxyParamCaption})}
+
+Returns a string representation of this object. Used in {\ttfamily \mbox{\hyperlink{classmoa_1_1_abstract_m_o_a_object_ac686fd3b07c734cf21f1894376fe402d}{Abstract\+M\+O\+A\+Object.\+to\+String}}} to give a string representation of the object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sb} & the stringbuilder to add the description \\
+\hline
+{\em indent} & the number of characters to indent \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1streams_1_1generators_1_1_l_e_d_generator_a4f8f648c55f58d2ef2d945530985319b}{moa.\+streams.\+generators.\+L\+E\+D\+Generator}}.
+
+\mbox{\Hypertarget{classmoa_1_1streams_1_1generators_1_1_l_e_d_generator_drift_ac0c5d7d1a8afeb59e3f32e7672e40f66}\label{classmoa_1_1streams_1_1generators_1_1_l_e_d_generator_drift_ac0c5d7d1a8afeb59e3f32e7672e40f66}} 
+\index{moa.streams.generators.LEDGeneratorDrift@{moa.streams.generators.LEDGeneratorDrift}!getPurposeString@{getPurposeString}}
+\index{getPurposeString@{getPurposeString}!moa.streams.generators.LEDGeneratorDrift@{moa.streams.generators.LEDGeneratorDrift}}
+\doxysubsubsection{\texorpdfstring{getPurposeString()}{getPurposeString()}}
+{\footnotesize\ttfamily String moa.\+streams.\+generators.\+L\+E\+D\+Generator\+Drift.\+get\+Purpose\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Options to handle Dictionary with option texts and objects 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1streams_1_1generators_1_1_l_e_d_generator_adf98dd18a6df288325dfb5c782c7cac2}{moa.\+streams.\+generators.\+L\+E\+D\+Generator}}.
+
+\mbox{\Hypertarget{classmoa_1_1streams_1_1generators_1_1_l_e_d_generator_drift_af56fd2d83859b989ce5a31accf153cf3}\label{classmoa_1_1streams_1_1generators_1_1_l_e_d_generator_drift_af56fd2d83859b989ce5a31accf153cf3}} 
+\index{moa.streams.generators.LEDGeneratorDrift@{moa.streams.generators.LEDGeneratorDrift}!prepareForUseImpl@{prepareForUseImpl}}
+\index{prepareForUseImpl@{prepareForUseImpl}!moa.streams.generators.LEDGeneratorDrift@{moa.streams.generators.LEDGeneratorDrift}}
+\doxysubsubsection{\texorpdfstring{prepareForUseImpl()}{prepareForUseImpl()}}
+{\footnotesize\ttfamily void moa.\+streams.\+generators.\+L\+E\+D\+Generator\+Drift.\+prepare\+For\+Use\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}}}]{monitor,  }\item[{\mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}}}]{repository }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+This method describes the implementation of how to prepare this object for use. All classes that extends this class have to implement {\ttfamily prepare\+For\+Use\+Impl} and not {\ttfamily prepare\+For\+Use} since {\ttfamily prepare\+For\+Use} calls {\ttfamily prepare\+For\+Use\+Impl}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em monitor} & the Task\+Monitor to use \\
+\hline
+{\em repository} & the Object\+Repository to use \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1streams_1_1generators_1_1_l_e_d_generator_ad67d5071b379d3a19bf2c47fd23a00ce}{moa.\+streams.\+generators.\+L\+E\+D\+Generator}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmoa_1_1streams_1_1generators_1_1_l_e_d_generator_drift_a512cfcc98e7957aea255423587060d7a}\label{classmoa_1_1streams_1_1generators_1_1_l_e_d_generator_drift_a512cfcc98e7957aea255423587060d7a}} 
+\index{moa.streams.generators.LEDGeneratorDrift@{moa.streams.generators.LEDGeneratorDrift}!numberAttributesDriftOption@{numberAttributesDriftOption}}
+\index{numberAttributesDriftOption@{numberAttributesDriftOption}!moa.streams.generators.LEDGeneratorDrift@{moa.streams.generators.LEDGeneratorDrift}}
+\doxysubsubsection{\texorpdfstring{numberAttributesDriftOption}{numberAttributesDriftOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+streams.\+generators.\+L\+E\+D\+Generator\+Drift.\+number\+Attributes\+Drift\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(\textcolor{stringliteral}{"numberAttributesDrift"},}
+\DoxyCodeLine{            \textcolor{charliteral}{'d'}, \textcolor{stringliteral}{"Number of attributes with drift."}, 1, 0, 7)}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/streams/generators/L\+E\+D\+Generator\+Drift.\+java\end{DoxyCompactItemize}

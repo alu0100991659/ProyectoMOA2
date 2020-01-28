@@ -1,0 +1,117 @@
+\hypertarget{classmoa_1_1streams_1_1filters_1_1_abstract_multi_label_stream_filter}{}\doxysection{moa.\+streams.\+filters.\+Abstract\+Multi\+Label\+Stream\+Filter Class Reference}
+\label{classmoa_1_1streams_1_1filters_1_1_abstract_multi_label_stream_filter}\index{moa.streams.filters.AbstractMultiLabelStreamFilter@{moa.streams.filters.AbstractMultiLabelStreamFilter}}
+
+
+Inheritance diagram for moa.\+streams.\+filters.\+Abstract\+Multi\+Label\+Stream\+Filter\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+streams.\+filters.\+Abstract\+Multi\+Label\+Stream\+Filter\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classmoa_1_1streams_1_1filters_1_1_abstract_multi_label_stream_filter_addf61f920b5bfefd31a13c2dc56c753e}{set\+Input\+Stream}} (\mbox{\hyperlink{interfacemoa_1_1streams_1_1_example_stream}{Example\+Stream}}$<$ \mbox{\hyperlink{interfacemoa_1_1core_1_1_example}{Example}}$<$ \mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} $>$$>$ stream)
+\item 
+void \mbox{\hyperlink{classmoa_1_1streams_1_1filters_1_1_abstract_multi_label_stream_filter_ae7414dad91e4c38508659da6d20487b8}{prepare\+For\+Use\+Impl}} (\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}} monitor, \mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}} repository)
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1filters_1_1_abstract_multi_label_stream_filter_a5c5608fc97253911c5e22c897b0a822c}\label{classmoa_1_1streams_1_1filters_1_1_abstract_multi_label_stream_filter_a5c5608fc97253911c5e22c897b0a822c}} 
+long {\bfseries estimated\+Remaining\+Instances} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1filters_1_1_abstract_multi_label_stream_filter_acacd8072713c49ea60b4af7bded6e391}\label{classmoa_1_1streams_1_1filters_1_1_abstract_multi_label_stream_filter_acacd8072713c49ea60b4af7bded6e391}} 
+boolean {\bfseries has\+More\+Instances} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1filters_1_1_abstract_multi_label_stream_filter_afe54f92780cb8683ec5f88b77f2b7e1b}\label{classmoa_1_1streams_1_1filters_1_1_abstract_multi_label_stream_filter_afe54f92780cb8683ec5f88b77f2b7e1b}} 
+boolean {\bfseries is\+Restartable} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1filters_1_1_abstract_multi_label_stream_filter_abfc8f0a7567a9cb07e990f01d440fc9a}\label{classmoa_1_1streams_1_1filters_1_1_abstract_multi_label_stream_filter_abfc8f0a7567a9cb07e990f01d440fc9a}} 
+void {\bfseries restart} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract void \mbox{\hyperlink{classmoa_1_1streams_1_1filters_1_1_abstract_multi_label_stream_filter_a5b2ea7ada9e6e6e2d9bb6997db3d895e}{restart\+Impl}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interfacemoa_1_1streams_1_1_example_stream}{Example\+Stream}}$<$ \mbox{\hyperlink{interfacemoa_1_1core_1_1_example}{Example}}$<$ \mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} $>$ $>$ \mbox{\hyperlink{classmoa_1_1streams_1_1filters_1_1_abstract_multi_label_stream_filter_a7ccbe8efb86180072cd5abf210a752d1}{input\+Stream}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Abstract Stream Filter.
+
+\begin{DoxyAuthor}{Author}
+Richard Kirkby (\href{mailto:rkirkby@cs.waikato.ac.nz}{\texttt{ rkirkby@cs.\+waikato.\+ac.\+nz}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+7 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1streams_1_1filters_1_1_abstract_multi_label_stream_filter_ae7414dad91e4c38508659da6d20487b8}\label{classmoa_1_1streams_1_1filters_1_1_abstract_multi_label_stream_filter_ae7414dad91e4c38508659da6d20487b8}} 
+\index{moa.streams.filters.AbstractMultiLabelStreamFilter@{moa.streams.filters.AbstractMultiLabelStreamFilter}!prepareForUseImpl@{prepareForUseImpl}}
+\index{prepareForUseImpl@{prepareForUseImpl}!moa.streams.filters.AbstractMultiLabelStreamFilter@{moa.streams.filters.AbstractMultiLabelStreamFilter}}
+\doxysubsubsection{\texorpdfstring{prepareForUseImpl()}{prepareForUseImpl()}}
+{\footnotesize\ttfamily void moa.\+streams.\+filters.\+Abstract\+Multi\+Label\+Stream\+Filter.\+prepare\+For\+Use\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}}}]{monitor,  }\item[{\mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}}}]{repository }\end{DoxyParamCaption})}
+
+This method describes the implementation of how to prepare this object for use. All classes that extends this class have to implement {\ttfamily prepare\+For\+Use\+Impl} and not {\ttfamily prepare\+For\+Use} since {\ttfamily prepare\+For\+Use} calls {\ttfamily prepare\+For\+Use\+Impl}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em monitor} & the Task\+Monitor to use \\
+\hline
+{\em repository} & the Object\+Repository to use \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1options_1_1_abstract_option_handler_ad0e9c7d4b0e2b185749f36ce28540efb}{moa.\+options.\+Abstract\+Option\+Handler}}.
+
+\mbox{\Hypertarget{classmoa_1_1streams_1_1filters_1_1_abstract_multi_label_stream_filter_a5b2ea7ada9e6e6e2d9bb6997db3d895e}\label{classmoa_1_1streams_1_1filters_1_1_abstract_multi_label_stream_filter_a5b2ea7ada9e6e6e2d9bb6997db3d895e}} 
+\index{moa.streams.filters.AbstractMultiLabelStreamFilter@{moa.streams.filters.AbstractMultiLabelStreamFilter}!restartImpl@{restartImpl}}
+\index{restartImpl@{restartImpl}!moa.streams.filters.AbstractMultiLabelStreamFilter@{moa.streams.filters.AbstractMultiLabelStreamFilter}}
+\doxysubsubsection{\texorpdfstring{restartImpl()}{restartImpl()}}
+{\footnotesize\ttfamily abstract void moa.\+streams.\+filters.\+Abstract\+Multi\+Label\+Stream\+Filter.\+restart\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}, {\ttfamily [protected]}}
+
+Restarts this filter. All instances that extends from {\ttfamily \mbox{\hyperlink{classmoa_1_1streams_1_1filters_1_1_abstract_stream_filter}{Abstract\+Stream\+Filter}}} must implement {\ttfamily restart\+Impl}. {\ttfamily restart} uses {\ttfamily restart\+Impl} in {\ttfamily \mbox{\hyperlink{classmoa_1_1streams_1_1filters_1_1_abstract_stream_filter}{Abstract\+Stream\+Filter}}}. 
+
+Reimplemented in \mbox{\hyperlink{classmoa_1_1streams_1_1filters_1_1_select_attributes_filter_a2cc235807c83e525f5c1a486237e3315}{moa.\+streams.\+filters.\+Select\+Attributes\+Filter}}.
+
+\mbox{\Hypertarget{classmoa_1_1streams_1_1filters_1_1_abstract_multi_label_stream_filter_addf61f920b5bfefd31a13c2dc56c753e}\label{classmoa_1_1streams_1_1filters_1_1_abstract_multi_label_stream_filter_addf61f920b5bfefd31a13c2dc56c753e}} 
+\index{moa.streams.filters.AbstractMultiLabelStreamFilter@{moa.streams.filters.AbstractMultiLabelStreamFilter}!setInputStream@{setInputStream}}
+\index{setInputStream@{setInputStream}!moa.streams.filters.AbstractMultiLabelStreamFilter@{moa.streams.filters.AbstractMultiLabelStreamFilter}}
+\doxysubsubsection{\texorpdfstring{setInputStream()}{setInputStream()}}
+{\footnotesize\ttfamily void moa.\+streams.\+filters.\+Abstract\+Multi\+Label\+Stream\+Filter.\+set\+Input\+Stream (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacemoa_1_1streams_1_1_example_stream}{Example\+Stream}}$<$ \mbox{\hyperlink{interfacemoa_1_1core_1_1_example}{Example}}$<$ \mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} $>$$>$}]{stream }\end{DoxyParamCaption})}
+
+Sets the input stream to the filter
+
+
+\begin{DoxyParams}{Parameters}
+{\em stream} & the input stream to the filter \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1streams_1_1filters_1_1_multi_label_stream_filter_a8e67689945440fc9e25ba5a40e0deada}{moa.\+streams.\+filters.\+Multi\+Label\+Stream\+Filter}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmoa_1_1streams_1_1filters_1_1_abstract_multi_label_stream_filter_a7ccbe8efb86180072cd5abf210a752d1}\label{classmoa_1_1streams_1_1filters_1_1_abstract_multi_label_stream_filter_a7ccbe8efb86180072cd5abf210a752d1}} 
+\index{moa.streams.filters.AbstractMultiLabelStreamFilter@{moa.streams.filters.AbstractMultiLabelStreamFilter}!inputStream@{inputStream}}
+\index{inputStream@{inputStream}!moa.streams.filters.AbstractMultiLabelStreamFilter@{moa.streams.filters.AbstractMultiLabelStreamFilter}}
+\doxysubsubsection{\texorpdfstring{inputStream}{inputStream}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacemoa_1_1streams_1_1_example_stream}{Example\+Stream}}$<$\mbox{\hyperlink{interfacemoa_1_1core_1_1_example}{Example}}$<$\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}$>$ $>$ moa.\+streams.\+filters.\+Abstract\+Multi\+Label\+Stream\+Filter.\+input\+Stream\hspace{0.3cm}{\ttfamily [protected]}}
+
+The input stream to this filter. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/streams/filters/Abstract\+Multi\+Label\+Stream\+Filter.\+java\end{DoxyCompactItemize}

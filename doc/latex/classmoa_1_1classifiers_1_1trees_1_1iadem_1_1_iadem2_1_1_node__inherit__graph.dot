@@ -1,0 +1,40 @@
+digraph "moa.classifiers.trees.iadem.Iadem2.Node"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="moa.classifiers.trees.iadem.\lIadem2.Node",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Serializable",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="moa.classifiers.trees.iadem.\lIadem2.LeafNode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_1_1_leaf_node.html",tooltip=" "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="moa.classifiers.trees.iadem.\lIadem2.LeafNodeNB",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_1_1_leaf_node_n_b.html",tooltip=" "];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="moa.classifiers.trees.iadem.\lIadem2.LeafNodeNBKirkby",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_1_1_leaf_node_n_b_kirkby.html",tooltip=" "];
+  Node4 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="moa.classifiers.trees.iadem.\lIadem2.LeafNodeWeightedVote",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_1_1_leaf_node_weighted_vote.html",tooltip=" "];
+  Node3 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="moa.classifiers.trees.iadem.\lIadem3.AdaptiveLeafNode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_1_1_adaptive_leaf_node.html",tooltip=" "];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="moa.classifiers.trees.iadem.\lIadem3.AdaptiveLeafNodeNB",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_1_1_adaptive_leaf_node_n_b.html",tooltip=" "];
+  Node8 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="moa.classifiers.trees.iadem.\lIadem3.AdaptiveLeafNodeNBAdaptive",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_1_1_adaptive_leaf_node_n_b_adaptive.html",tooltip=" "];
+  Node9 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="moa.classifiers.trees.iadem.\lIadem3.AdaptiveLeafNodeWeightedVote",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_1_1_adaptive_leaf_node_weighted_vote.html",tooltip=" "];
+  Node8 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node11 [label="moa.classifiers.trees.iadem.\lIadem3.AdaptiveLeafNodeNBKirkby",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_1_1_adaptive_leaf_node_n_b_kirkby.html",tooltip=" "];
+  Node1 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node12 [label="moa.classifiers.trees.iadem.\lIadem2.SplitNode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_1_1_split_node.html",tooltip=" "];
+  Node1 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node13 [label="moa.classifiers.trees.iadem.\lIadem2.VirtualNode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_1_1_virtual_node.html",tooltip=" "];
+  Node13 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node14 [label="moa.classifiers.trees.iadem.\lIadem2.NominalVirtualNode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_1_1_nominal_virtual_node.html",tooltip=" "];
+  Node14 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node15 [label="moa.classifiers.trees.iadem.\lIadem3.AdaptiveNominalVirtualNode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_1_1_adaptive_nominal_virtual_node.html",tooltip=" "];
+  Node13 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node16 [label="moa.classifiers.trees.iadem.\lIadem2.NumericVirtualNode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_1_1_numeric_virtual_node.html",tooltip=" "];
+  Node16 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node17 [label="moa.classifiers.trees.iadem.\lIadem3.AdaptiveNumericVirtualNode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_1_1_adaptive_numeric_virtual_node.html",tooltip=" "];
+}

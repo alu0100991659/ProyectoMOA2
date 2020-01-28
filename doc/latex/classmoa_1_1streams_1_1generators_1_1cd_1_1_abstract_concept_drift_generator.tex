@@ -1,0 +1,176 @@
+\hypertarget{classmoa_1_1streams_1_1generators_1_1cd_1_1_abstract_concept_drift_generator}{}\doxysection{moa.\+streams.\+generators.\+cd.\+Abstract\+Concept\+Drift\+Generator Class Reference}
+\label{classmoa_1_1streams_1_1generators_1_1cd_1_1_abstract_concept_drift_generator}\index{moa.streams.generators.cd.AbstractConceptDriftGenerator@{moa.streams.generators.cd.AbstractConceptDriftGenerator}}
+
+
+Inheritance diagram for moa.\+streams.\+generators.\+cd.\+Abstract\+Concept\+Drift\+Generator\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+streams.\+generators.\+cd.\+Abstract\+Concept\+Drift\+Generator\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classmoa_1_1streams_1_1generators_1_1cd_1_1_abstract_concept_drift_generator_abf13d9477e1e59b357f1969110968e65}{get\+Purpose\+String}} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1generators_1_1cd_1_1_abstract_concept_drift_generator_a72ab970cee1c3d6a9e22792321d5a864}\label{classmoa_1_1streams_1_1generators_1_1cd_1_1_abstract_concept_drift_generator_a72ab970cee1c3d6a9e22792321d5a864}} 
+Array\+List$<$ \mbox{\hyperlink{classmoa_1_1streams_1_1clustering_1_1_cluster_event}{Cluster\+Event}} $>$ {\bfseries get\+Events\+List} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1generators_1_1cd_1_1_abstract_concept_drift_generator_ac129ef793d976338b3c63018764a67de}\label{classmoa_1_1streams_1_1generators_1_1cd_1_1_abstract_concept_drift_generator_ac129ef793d976338b3c63018764a67de}} 
+long {\bfseries estimated\+Remaining\+Instances} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1generators_1_1cd_1_1_abstract_concept_drift_generator_ae6d8ac30f8925f097ef2b79318fa8a3a}\label{classmoa_1_1streams_1_1generators_1_1cd_1_1_abstract_concept_drift_generator_ae6d8ac30f8925f097ef2b79318fa8a3a}} 
+\mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instances_header}{Instances\+Header}} {\bfseries get\+Header} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1generators_1_1cd_1_1_abstract_concept_drift_generator_afac64944dcb3df9fddf39ad3344f1257}\label{classmoa_1_1streams_1_1generators_1_1cd_1_1_abstract_concept_drift_generator_afac64944dcb3df9fddf39ad3344f1257}} 
+boolean {\bfseries has\+More\+Instances} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1generators_1_1cd_1_1_abstract_concept_drift_generator_a75ad02eba072bea5020e03df26207b9d}\label{classmoa_1_1streams_1_1generators_1_1cd_1_1_abstract_concept_drift_generator_a75ad02eba072bea5020e03df26207b9d}} 
+boolean {\bfseries is\+Restartable} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1generators_1_1cd_1_1_abstract_concept_drift_generator_ad3bb3b919f2fd04e9583c79e208a8637}\label{classmoa_1_1streams_1_1generators_1_1cd_1_1_abstract_concept_drift_generator_ad3bb3b919f2fd04e9583c79e208a8637}} 
+boolean {\bfseries get\+Change} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1generators_1_1cd_1_1_abstract_concept_drift_generator_aede361cb73de920d12e331343936e8f8}\label{classmoa_1_1streams_1_1generators_1_1cd_1_1_abstract_concept_drift_generator_aede361cb73de920d12e331343936e8f8}} 
+\mbox{\hyperlink{classmoa_1_1core_1_1_instance_example}{Instance\+Example}} {\bfseries next\+Instance} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1generators_1_1cd_1_1_abstract_concept_drift_generator_a5897b9f2a2c6c6e86d230ed0c2326b37}\label{classmoa_1_1streams_1_1generators_1_1cd_1_1_abstract_concept_drift_generator_a5897b9f2a2c6c6e86d230ed0c2326b37}} 
+void {\bfseries restart} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1streams_1_1generators_1_1cd_1_1_abstract_concept_drift_generator_aa24620cce794f345b8d7f1fbbe959eaa}{get\+Description}} (String\+Builder sb, int indent)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries instance\+Random\+Seed\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_flag_option}{Flag\+Option}} {\bfseries not\+Binary\+Stream\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries num\+Instances\+Concept\+Option}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classmoa_1_1streams_1_1generators_1_1cd_1_1_abstract_concept_drift_generator_aad9b28c909c8fff58ca191e3cfbd1b76}{prepare\+For\+Use\+Impl}} (\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}} monitor, \mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}} repository)
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1generators_1_1cd_1_1_abstract_concept_drift_generator_a325320142fff57ed891f12482dca2ee8}\label{classmoa_1_1streams_1_1generators_1_1cd_1_1_abstract_concept_drift_generator_a325320142fff57ed891f12482dca2ee8}} 
+abstract double {\bfseries next\+Value} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1generators_1_1cd_1_1_abstract_concept_drift_generator_a45b7b1a1bee448993188dfa6b0e169ae}\label{classmoa_1_1streams_1_1generators_1_1cd_1_1_abstract_concept_drift_generator_a45b7b1a1bee448993188dfa6b0e169ae}} 
+Array\+List$<$ \mbox{\hyperlink{classmoa_1_1streams_1_1clustering_1_1_cluster_event}{Cluster\+Event}} $>$ {\bfseries cluster\+Events}
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1generators_1_1cd_1_1_abstract_concept_drift_generator_a26592aef695cc85064a9ab8c78796750}\label{classmoa_1_1streams_1_1generators_1_1cd_1_1_abstract_concept_drift_generator_a26592aef695cc85064a9ab8c78796750}} 
+\mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instances_header}{Instances\+Header}} {\bfseries stream\+Header}
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1generators_1_1cd_1_1_abstract_concept_drift_generator_a3f140ff6410afb2070035ad6ff54c2af}\label{classmoa_1_1streams_1_1generators_1_1cd_1_1_abstract_concept_drift_generator_a3f140ff6410afb2070035ad6ff54c2af}} 
+Random {\bfseries instance\+Random}
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1generators_1_1cd_1_1_abstract_concept_drift_generator_a6e6ed224136ccb4a4295082cf62e1114}\label{classmoa_1_1streams_1_1generators_1_1cd_1_1_abstract_concept_drift_generator_a6e6ed224136ccb4a4295082cf62e1114}} 
+int {\bfseries period}
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1generators_1_1cd_1_1_abstract_concept_drift_generator_a09eac980b1b90f0f75725c049a423371}\label{classmoa_1_1streams_1_1generators_1_1cd_1_1_abstract_concept_drift_generator_a09eac980b1b90f0f75725c049a423371}} 
+int {\bfseries num\+Instances}
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1generators_1_1cd_1_1_abstract_concept_drift_generator_a0151195c2557c31590a709957cdf1dc5}\label{classmoa_1_1streams_1_1generators_1_1cd_1_1_abstract_concept_drift_generator_a0151195c2557c31590a709957cdf1dc5}} 
+boolean {\bfseries change}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1streams_1_1generators_1_1cd_1_1_abstract_concept_drift_generator_aa24620cce794f345b8d7f1fbbe959eaa}\label{classmoa_1_1streams_1_1generators_1_1cd_1_1_abstract_concept_drift_generator_aa24620cce794f345b8d7f1fbbe959eaa}} 
+\index{moa.streams.generators.cd.AbstractConceptDriftGenerator@{moa.streams.generators.cd.AbstractConceptDriftGenerator}!getDescription@{getDescription}}
+\index{getDescription@{getDescription}!moa.streams.generators.cd.AbstractConceptDriftGenerator@{moa.streams.generators.cd.AbstractConceptDriftGenerator}}
+\doxysubsubsection{\texorpdfstring{getDescription()}{getDescription()}}
+{\footnotesize\ttfamily void moa.\+streams.\+generators.\+cd.\+Abstract\+Concept\+Drift\+Generator.\+get\+Description (\begin{DoxyParamCaption}\item[{String\+Builder}]{sb,  }\item[{int}]{indent }\end{DoxyParamCaption})}
+
+Returns a string representation of this object. Used in {\ttfamily \mbox{\hyperlink{classmoa_1_1_abstract_m_o_a_object_ac686fd3b07c734cf21f1894376fe402d}{Abstract\+M\+O\+A\+Object.\+to\+String}}} to give a string representation of the object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sb} & the stringbuilder to add the description \\
+\hline
+{\em indent} & the number of characters to indent \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1_m_o_a_object_afdaf5098f1fe6c852018ce64c28e17f5}{moa.\+M\+O\+A\+Object}}.
+
+\mbox{\Hypertarget{classmoa_1_1streams_1_1generators_1_1cd_1_1_abstract_concept_drift_generator_abf13d9477e1e59b357f1969110968e65}\label{classmoa_1_1streams_1_1generators_1_1cd_1_1_abstract_concept_drift_generator_abf13d9477e1e59b357f1969110968e65}} 
+\index{moa.streams.generators.cd.AbstractConceptDriftGenerator@{moa.streams.generators.cd.AbstractConceptDriftGenerator}!getPurposeString@{getPurposeString}}
+\index{getPurposeString@{getPurposeString}!moa.streams.generators.cd.AbstractConceptDriftGenerator@{moa.streams.generators.cd.AbstractConceptDriftGenerator}}
+\doxysubsubsection{\texorpdfstring{getPurposeString()}{getPurposeString()}}
+{\footnotesize\ttfamily String moa.\+streams.\+generators.\+cd.\+Abstract\+Concept\+Drift\+Generator.\+get\+Purpose\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Options to handle Dictionary with option texts and objects 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1options_1_1_abstract_option_handler_abc8df69aea27ef85060557a9e918b2ca}{moa.\+options.\+Abstract\+Option\+Handler}}.
+
+\mbox{\Hypertarget{classmoa_1_1streams_1_1generators_1_1cd_1_1_abstract_concept_drift_generator_aad9b28c909c8fff58ca191e3cfbd1b76}\label{classmoa_1_1streams_1_1generators_1_1cd_1_1_abstract_concept_drift_generator_aad9b28c909c8fff58ca191e3cfbd1b76}} 
+\index{moa.streams.generators.cd.AbstractConceptDriftGenerator@{moa.streams.generators.cd.AbstractConceptDriftGenerator}!prepareForUseImpl@{prepareForUseImpl}}
+\index{prepareForUseImpl@{prepareForUseImpl}!moa.streams.generators.cd.AbstractConceptDriftGenerator@{moa.streams.generators.cd.AbstractConceptDriftGenerator}}
+\doxysubsubsection{\texorpdfstring{prepareForUseImpl()}{prepareForUseImpl()}}
+{\footnotesize\ttfamily void moa.\+streams.\+generators.\+cd.\+Abstract\+Concept\+Drift\+Generator.\+prepare\+For\+Use\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}}}]{monitor,  }\item[{\mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}}}]{repository }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+This method describes the implementation of how to prepare this object for use. All classes that extends this class have to implement {\ttfamily prepare\+For\+Use\+Impl} and not {\ttfamily prepare\+For\+Use} since {\ttfamily prepare\+For\+Use} calls {\ttfamily prepare\+For\+Use\+Impl}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em monitor} & the Task\+Monitor to use \\
+\hline
+{\em repository} & the Object\+Repository to use \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1options_1_1_abstract_option_handler_ad0e9c7d4b0e2b185749f36ce28540efb}{moa.\+options.\+Abstract\+Option\+Handler}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmoa_1_1streams_1_1generators_1_1cd_1_1_abstract_concept_drift_generator_a7f47627aad89cc4aeeca49df0c0847ba}\label{classmoa_1_1streams_1_1generators_1_1cd_1_1_abstract_concept_drift_generator_a7f47627aad89cc4aeeca49df0c0847ba}} 
+\index{moa.streams.generators.cd.AbstractConceptDriftGenerator@{moa.streams.generators.cd.AbstractConceptDriftGenerator}!instanceRandomSeedOption@{instanceRandomSeedOption}}
+\index{instanceRandomSeedOption@{instanceRandomSeedOption}!moa.streams.generators.cd.AbstractConceptDriftGenerator@{moa.streams.generators.cd.AbstractConceptDriftGenerator}}
+\doxysubsubsection{\texorpdfstring{instanceRandomSeedOption}{instanceRandomSeedOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+streams.\+generators.\+cd.\+Abstract\+Concept\+Drift\+Generator.\+instance\+Random\+Seed\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(}
+\DoxyCodeLine{            \textcolor{stringliteral}{"instanceRandomSeed"}, \textcolor{charliteral}{'i'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Seed for random generation of instances."}, 1)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1streams_1_1generators_1_1cd_1_1_abstract_concept_drift_generator_a8956aad54ea2447277782332de391c77}\label{classmoa_1_1streams_1_1generators_1_1cd_1_1_abstract_concept_drift_generator_a8956aad54ea2447277782332de391c77}} 
+\index{moa.streams.generators.cd.AbstractConceptDriftGenerator@{moa.streams.generators.cd.AbstractConceptDriftGenerator}!notBinaryStreamOption@{notBinaryStreamOption}}
+\index{notBinaryStreamOption@{notBinaryStreamOption}!moa.streams.generators.cd.AbstractConceptDriftGenerator@{moa.streams.generators.cd.AbstractConceptDriftGenerator}}
+\doxysubsubsection{\texorpdfstring{notBinaryStreamOption}{notBinaryStreamOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_flag_option}{Flag\+Option}} moa.\+streams.\+generators.\+cd.\+Abstract\+Concept\+Drift\+Generator.\+not\+Binary\+Stream\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FlagOption(\textcolor{stringliteral}{"notBinaryStream"},}
+\DoxyCodeLine{            \textcolor{charliteral}{'b'}, \textcolor{stringliteral}{"Don't convert to a binary stream of 0 and 1."})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1streams_1_1generators_1_1cd_1_1_abstract_concept_drift_generator_ad35d2fac0dc8641c90f81c0708e78b9f}\label{classmoa_1_1streams_1_1generators_1_1cd_1_1_abstract_concept_drift_generator_ad35d2fac0dc8641c90f81c0708e78b9f}} 
+\index{moa.streams.generators.cd.AbstractConceptDriftGenerator@{moa.streams.generators.cd.AbstractConceptDriftGenerator}!numInstancesConceptOption@{numInstancesConceptOption}}
+\index{numInstancesConceptOption@{numInstancesConceptOption}!moa.streams.generators.cd.AbstractConceptDriftGenerator@{moa.streams.generators.cd.AbstractConceptDriftGenerator}}
+\doxysubsubsection{\texorpdfstring{numInstancesConceptOption}{numInstancesConceptOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+streams.\+generators.\+cd.\+Abstract\+Concept\+Drift\+Generator.\+num\+Instances\+Concept\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(\textcolor{stringliteral}{"numInstancesConcept"}, \textcolor{charliteral}{'p'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"The number of instances for each concept."}, 500, 0, Integer.MAX\_VALUE)}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/streams/generators/cd/Abstract\+Concept\+Drift\+Generator.\+java\end{DoxyCompactItemize}

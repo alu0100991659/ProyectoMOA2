@@ -1,0 +1,16 @@
+digraph "moa.gui.experimentertab.AnalyzeTab"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="moa.gui.experimentertab.\lAnalyzeTab",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="javax::swing::JPanel",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" pvalues" ];
+  Node3 [label="ArrayList\< moa.gui.experimentertab.statisticaltests.\lPValuePerTwoAlgorithm \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" rf" ];
+  Node4 [label="moa.gui.experimentertab.\lReadFile",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classmoa_1_1gui_1_1experimentertab_1_1_read_file.html",tooltip=" "];
+  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" rank" ];
+  Node5 [label="ArrayList\< moa.gui.experimentertab.statisticaltests.\lRankPerAlgorithm \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+}

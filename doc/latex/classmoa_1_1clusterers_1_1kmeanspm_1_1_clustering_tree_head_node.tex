@@ -1,0 +1,115 @@
+\hypertarget{classmoa_1_1clusterers_1_1kmeanspm_1_1_clustering_tree_head_node}{}\doxysection{moa.\+clusterers.\+kmeanspm.\+Clustering\+Tree\+Head\+Node Class Reference}
+\label{classmoa_1_1clusterers_1_1kmeanspm_1_1_clustering_tree_head_node}\index{moa.clusterers.kmeanspm.ClusteringTreeHeadNode@{moa.clusterers.kmeanspm.ClusteringTreeHeadNode}}
+
+
+Inheritance diagram for moa.\+clusterers.\+kmeanspm.\+Clustering\+Tree\+Head\+Node\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+clusterers.\+kmeanspm.\+Clustering\+Tree\+Head\+Node\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1clusterers_1_1kmeanspm_1_1_clustering_tree_head_node_a4af7c440b9235ddc23d23e2e079956c8}{Clustering\+Tree\+Head\+Node}} (double\mbox{[}$\,$\mbox{]} center, \mbox{\hyperlink{classmoa_1_1clusterers_1_1kmeanspm_1_1_clustering_feature}{Clustering\+Feature}} cf, int dimension, int num\+Projections, int hash\+Size, Random random)
+\item 
+\mbox{\hyperlink{classmoa_1_1clusterers_1_1kmeanspm_1_1_clustering_tree_node}{Clustering\+Tree\+Node}} \mbox{\hyperlink{classmoa_1_1clusterers_1_1kmeanspm_1_1_clustering_tree_head_node_a517f49ba7f366d470f2da7d81e1f862e}{nearest\+Child}} (double\mbox{[}$\,$\mbox{]} pointA)
+\item 
+boolean \mbox{\hyperlink{classmoa_1_1clusterers_1_1kmeanspm_1_1_clustering_tree_head_node_a3af6f463169f545fecb39e25fbea332f}{add\+Child}} (\mbox{\hyperlink{classmoa_1_1clusterers_1_1kmeanspm_1_1_clustering_tree_node}{Clustering\+Tree\+Node}} e)
+\item 
+void \mbox{\hyperlink{classmoa_1_1clusterers_1_1kmeanspm_1_1_clustering_tree_head_node_a02e377e0914710aa57531d92bb1dd421}{clear\+Children}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Provides a \mbox{\hyperlink{classmoa_1_1clusterers_1_1kmeanspm_1_1_clustering_tree_node}{Clustering\+Tree\+Node}} with an extended nearest neighbor search in the root.
+
+Citation\+: Hendrik Fichtenberger, Marc Gillé, Melanie Schmidt, Chris Schwiegelshohn, Christian Sohler\+: \mbox{\hyperlink{classmoa_1_1clusterers_1_1kmeanspm_1_1_b_i_c_o}{B\+I\+CO}}\+: B\+I\+R\+CH Meets Coresets for k-\/\+Means Clustering. E\+SA 2013\+: 481-\/492 (2013) \href{http://ls2-www.cs.tu-dortmund.de/bico/}{\texttt{ http\+://ls2-\/www.\+cs.\+tu-\/dortmund.\+de/bico/}} 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmoa_1_1clusterers_1_1kmeanspm_1_1_clustering_tree_head_node_a4af7c440b9235ddc23d23e2e079956c8}\label{classmoa_1_1clusterers_1_1kmeanspm_1_1_clustering_tree_head_node_a4af7c440b9235ddc23d23e2e079956c8}} 
+\index{moa.clusterers.kmeanspm.ClusteringTreeHeadNode@{moa.clusterers.kmeanspm.ClusteringTreeHeadNode}!ClusteringTreeHeadNode@{ClusteringTreeHeadNode}}
+\index{ClusteringTreeHeadNode@{ClusteringTreeHeadNode}!moa.clusterers.kmeanspm.ClusteringTreeHeadNode@{moa.clusterers.kmeanspm.ClusteringTreeHeadNode}}
+\doxysubsubsection{\texorpdfstring{ClusteringTreeHeadNode()}{ClusteringTreeHeadNode()}}
+{\footnotesize\ttfamily moa.\+clusterers.\+kmeanspm.\+Clustering\+Tree\+Head\+Node.\+Clustering\+Tree\+Head\+Node (\begin{DoxyParamCaption}\item[{double\mbox{[}$\,$\mbox{]}}]{center,  }\item[{\mbox{\hyperlink{classmoa_1_1clusterers_1_1kmeanspm_1_1_clustering_feature}{Clustering\+Feature}}}]{cf,  }\item[{int}]{dimension,  }\item[{int}]{num\+Projections,  }\item[{int}]{hash\+Size,  }\item[{Random}]{random }\end{DoxyParamCaption})}
+
+Creates a \mbox{\hyperlink{classmoa_1_1clusterers_1_1kmeanspm_1_1_clustering_tree_node}{Clustering\+Tree\+Node}} with an extended nearest neighbor search in the root.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dimension} & the number of dimensions of the points \\
+\hline
+{\em num\+Projections} & the number of projections to use for the nearest neighbor search \\
+\hline
+{\em hash\+Size} & size of the hash function (must be smaller than 31) \\
+\hline
+{\em random} & instance to generate a stream of pseudorandom numbers \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1clusterers_1_1kmeanspm_1_1_clustering_tree_head_node_a3af6f463169f545fecb39e25fbea332f}\label{classmoa_1_1clusterers_1_1kmeanspm_1_1_clustering_tree_head_node_a3af6f463169f545fecb39e25fbea332f}} 
+\index{moa.clusterers.kmeanspm.ClusteringTreeHeadNode@{moa.clusterers.kmeanspm.ClusteringTreeHeadNode}!addChild@{addChild}}
+\index{addChild@{addChild}!moa.clusterers.kmeanspm.ClusteringTreeHeadNode@{moa.clusterers.kmeanspm.ClusteringTreeHeadNode}}
+\doxysubsubsection{\texorpdfstring{addChild()}{addChild()}}
+{\footnotesize\ttfamily boolean moa.\+clusterers.\+kmeanspm.\+Clustering\+Tree\+Head\+Node.\+add\+Child (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmoa_1_1clusterers_1_1kmeanspm_1_1_clustering_tree_node}{Clustering\+Tree\+Node}}}]{e }\end{DoxyParamCaption})}
+
+Adds a child node.
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & the child node to add \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+java.\+util.\+List\+::add(java.\+lang.\+Object) 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1clusterers_1_1kmeanspm_1_1_clustering_tree_node_a5fcbdb67889b891b5b4b4bc46e75775a}{moa.\+clusterers.\+kmeanspm.\+Clustering\+Tree\+Node}}.
+
+\mbox{\Hypertarget{classmoa_1_1clusterers_1_1kmeanspm_1_1_clustering_tree_head_node_a02e377e0914710aa57531d92bb1dd421}\label{classmoa_1_1clusterers_1_1kmeanspm_1_1_clustering_tree_head_node_a02e377e0914710aa57531d92bb1dd421}} 
+\index{moa.clusterers.kmeanspm.ClusteringTreeHeadNode@{moa.clusterers.kmeanspm.ClusteringTreeHeadNode}!clearChildren@{clearChildren}}
+\index{clearChildren@{clearChildren}!moa.clusterers.kmeanspm.ClusteringTreeHeadNode@{moa.clusterers.kmeanspm.ClusteringTreeHeadNode}}
+\doxysubsubsection{\texorpdfstring{clearChildren()}{clearChildren()}}
+{\footnotesize\ttfamily void moa.\+clusterers.\+kmeanspm.\+Clustering\+Tree\+Head\+Node.\+clear\+Children (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Removes all children nodes.
+
+\begin{DoxySeeAlso}{See also}
+java.\+util.\+List\+::clear() 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1clusterers_1_1kmeanspm_1_1_clustering_tree_node_af60f5322589bedd3c530f5d997311984}{moa.\+clusterers.\+kmeanspm.\+Clustering\+Tree\+Node}}.
+
+\mbox{\Hypertarget{classmoa_1_1clusterers_1_1kmeanspm_1_1_clustering_tree_head_node_a517f49ba7f366d470f2da7d81e1f862e}\label{classmoa_1_1clusterers_1_1kmeanspm_1_1_clustering_tree_head_node_a517f49ba7f366d470f2da7d81e1f862e}} 
+\index{moa.clusterers.kmeanspm.ClusteringTreeHeadNode@{moa.clusterers.kmeanspm.ClusteringTreeHeadNode}!nearestChild@{nearestChild}}
+\index{nearestChild@{nearestChild}!moa.clusterers.kmeanspm.ClusteringTreeHeadNode@{moa.clusterers.kmeanspm.ClusteringTreeHeadNode}}
+\doxysubsubsection{\texorpdfstring{nearestChild()}{nearestChild()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1clusterers_1_1kmeanspm_1_1_clustering_tree_node}{Clustering\+Tree\+Node}} moa.\+clusterers.\+kmeanspm.\+Clustering\+Tree\+Head\+Node.\+nearest\+Child (\begin{DoxyParamCaption}\item[{double\mbox{[}$\,$\mbox{]}}]{pointA }\end{DoxyParamCaption})}
+
+Searches for the nearest child node by comparing each representation.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pointA} & to find the nearest child for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the child node which is the nearest 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1clusterers_1_1kmeanspm_1_1_clustering_tree_node_a5813454e3428f8c17b97786236f9fd1f}{moa.\+clusterers.\+kmeanspm.\+Clustering\+Tree\+Node}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/clusterers/kmeanspm/Clustering\+Tree\+Head\+Node.\+java\end{DoxyCompactItemize}

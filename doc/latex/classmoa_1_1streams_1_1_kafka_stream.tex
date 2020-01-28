@@ -1,0 +1,273 @@
+\hypertarget{classmoa_1_1streams_1_1_kafka_stream}{}\doxysection{moa.\+streams.\+Kafka\+Stream Class Reference}
+\label{classmoa_1_1streams_1_1_kafka_stream}\index{moa.streams.KafkaStream@{moa.streams.KafkaStream}}
+
+
+Inheritance diagram for moa.\+streams.\+Kafka\+Stream\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+streams.\+Kafka\+Stream\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classmoa_1_1streams_1_1_kafka_stream_ab990aedab8ecd04aa2150a42da0ff899}{get\+Purpose\+String}} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_kafka_stream_a75918782aa26c2e56f742b0f18a553cd}\label{classmoa_1_1streams_1_1_kafka_stream_a75918782aa26c2e56f742b0f18a553cd}} 
+\mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instances_header}{Instances\+Header}} {\bfseries get\+Header} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_kafka_stream_a890a2d793d8f6dbb8f967f3f84dc2831}\label{classmoa_1_1streams_1_1_kafka_stream_a890a2d793d8f6dbb8f967f3f84dc2831}} 
+long {\bfseries estimated\+Remaining\+Instances} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_kafka_stream_a3bb2a91bfe23a4640ec3de5a2cb974ca}\label{classmoa_1_1streams_1_1_kafka_stream_a3bb2a91bfe23a4640ec3de5a2cb974ca}} 
+boolean {\bfseries has\+More\+Instances} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_kafka_stream_a872b4c9cb4010af984102a747b4937d1}\label{classmoa_1_1streams_1_1_kafka_stream_a872b4c9cb4010af984102a747b4937d1}} 
+\mbox{\hyperlink{interfacemoa_1_1core_1_1_example}{Example}}$<$ \mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} $>$ {\bfseries next\+Instance} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_kafka_stream_a75c99dd557a5695d4f7c91fdef326fc9}\label{classmoa_1_1streams_1_1_kafka_stream_a75c99dd557a5695d4f7c91fdef326fc9}} 
+boolean {\bfseries is\+Restartable} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_kafka_stream_aa87075b5aece973cfa11c92d734443a9}\label{classmoa_1_1streams_1_1_kafka_stream_aa87075b5aece973cfa11c92d734443a9}} 
+void {\bfseries restart} ()
+\item 
+\mbox{\hyperlink{classmoa_1_1capabilities_1_1_immutable_capabilities}{Immutable\+Capabilities}} \mbox{\hyperlink{classmoa_1_1streams_1_1_kafka_stream_aaf7f79c427243b5ede6c91b1b172981d}{define\+Immutable\+Capabilities}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1streams_1_1_kafka_stream_abb3ccc05cc97f41720f7ae5dfef81159}{get\+Description}} (String\+Builder sb, int indent)
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_kafka_stream_a42fd899342a3a1dd2dc38c0d4cabb6bf}\label{classmoa_1_1streams_1_1_kafka_stream_a42fd899342a3a1dd2dc38c0d4cabb6bf}} 
+void {\bfseries close} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_string_option}{String\+Option}} {\bfseries topic\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_string_option}{String\+Option}} {\bfseries host\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_string_option}{String\+Option}} {\bfseries port\+Option}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_kafka_stream_a60e828455a244c055b44c846371543f0}\label{classmoa_1_1streams_1_1_kafka_stream_a60e828455a244c055b44c846371543f0}} 
+static final Duration {\bfseries W\+A\+I\+T\+\_\+\+A\+S\+\_\+\+L\+O\+N\+G\+\_\+\+A\+S\+\_\+\+P\+O\+S\+S\+I\+B\+LE} = Duration.\+of\+Millis(Long.\+M\+A\+X\+\_\+\+V\+A\+L\+UE)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classmoa_1_1streams_1_1_kafka_stream_a344a8636c8194c0a271a0c142ad802a5}{prepare\+For\+Use\+Impl}} (\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}} monitor, \mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}} repository)
+\item 
+void \mbox{\hyperlink{classmoa_1_1streams_1_1_kafka_stream_a431f50050a74b9178994c3311b4667b6}{establish\+Consumer}} ()
+\item 
+Map$<$ String, Object $>$ \mbox{\hyperlink{classmoa_1_1streams_1_1_kafka_stream_a939d9bb1141a18cf91dfd3cbd35ec164}{create\+Consumer\+Configuration}} ()
+\item 
+String \mbox{\hyperlink{classmoa_1_1streams_1_1_kafka_stream_ab53d04f6bd65b271529b3d1da8a1175c}{broker}} ()
+\item 
+String \mbox{\hyperlink{classmoa_1_1streams_1_1_kafka_stream_ae30ae07a00a7ed94b943f3b67ba09629}{unique\+Group\+I\+D\+String}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1streams_1_1_kafka_stream_a6f800d5a565424277f7d7171cb584059}{restart\+Consumer}} ()
+\item 
+List$<$ Topic\+Partition $>$ \mbox{\hyperlink{classmoa_1_1streams_1_1_kafka_stream_a6d2ba6d1f29109fbe647ce210249e676}{get\+Partitions}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1streams_1_1_kafka_stream_a2aa49b4168b3e3e28ebf7d913ee6ffb9}{fill\+Buffer\+If\+Necessary}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1streams_1_1_kafka_stream_a1c8b1d2f02d06eb504fc31fc71ed0cba}{cache\+Header\+If\+Necessary}} ()
+\item 
+boolean \mbox{\hyperlink{classmoa_1_1streams_1_1_kafka_stream_a0293f425838d6427f049955419d6b335}{buffer\+Is\+Empty}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_kafka_stream_ade425e2eb46fc58d5348d02edc8c3899}\label{classmoa_1_1streams_1_1_kafka_stream_ade425e2eb46fc58d5348d02edc8c3899}} 
+transient Kafka\+Consumer$<$ Long, \mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} $>$ {\bfseries m\+\_\+\+Consumer} = null
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_kafka_stream_a1072b49fe33524a61f3d7cbfb4700ba2}\label{classmoa_1_1streams_1_1_kafka_stream_a1072b49fe33524a61f3d7cbfb4700ba2}} 
+transient Queue$<$ \mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} $>$ {\bfseries m\+\_\+\+Instance\+Buffer} = null
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_kafka_stream_ae17bd5314840402895ef6ac89aecc8c3}\label{classmoa_1_1streams_1_1_kafka_stream_ae17bd5314840402895ef6ac89aecc8c3}} 
+transient boolean {\bfseries m\+\_\+\+End\+Of\+Stream\+Reached} = false
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_kafka_stream_ab77bf32d461c1fdd5198715922335ac6}\label{classmoa_1_1streams_1_1_kafka_stream_ab77bf32d461c1fdd5198715922335ac6}} 
+transient \mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instances_header}{Instances\+Header}} {\bfseries m\+\_\+\+Header} = null
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Instance stream which consumes instances from a Kafka topic.
+
+Assumptions\+:
+\begin{DoxyItemize}
+\item The ordering of the instances in the topic is unimportant, or if it is important, it is ensured by a topic with only one partition.
+\item The stream is considered ended when a record with a null value is found.
+\item The serialised form of the instances is using Java\textquotesingle{}s own serialisation tools (i.\+e. \mbox{\hyperlink{classmoa_1_1streams_1_1_object_serializer}{Object\+Serializer}}).
+\end{DoxyItemize}
+
+\begin{DoxyAuthor}{Author}
+Corey Sterling (csterlin at waikato dot ac dot nz) 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_kafka_stream_ab53d04f6bd65b271529b3d1da8a1175c}\label{classmoa_1_1streams_1_1_kafka_stream_ab53d04f6bd65b271529b3d1da8a1175c}} 
+\index{moa.streams.KafkaStream@{moa.streams.KafkaStream}!broker@{broker}}
+\index{broker@{broker}!moa.streams.KafkaStream@{moa.streams.KafkaStream}}
+\doxysubsubsection{\texorpdfstring{broker()}{broker()}}
+{\footnotesize\ttfamily String moa.\+streams.\+Kafka\+Stream.\+broker (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Gets the Kafka broker to connect to. \mbox{\Hypertarget{classmoa_1_1streams_1_1_kafka_stream_a0293f425838d6427f049955419d6b335}\label{classmoa_1_1streams_1_1_kafka_stream_a0293f425838d6427f049955419d6b335}} 
+\index{moa.streams.KafkaStream@{moa.streams.KafkaStream}!bufferIsEmpty@{bufferIsEmpty}}
+\index{bufferIsEmpty@{bufferIsEmpty}!moa.streams.KafkaStream@{moa.streams.KafkaStream}}
+\doxysubsubsection{\texorpdfstring{bufferIsEmpty()}{bufferIsEmpty()}}
+{\footnotesize\ttfamily boolean moa.\+streams.\+Kafka\+Stream.\+buffer\+Is\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Whether the instance buffer is empty. \mbox{\Hypertarget{classmoa_1_1streams_1_1_kafka_stream_a1c8b1d2f02d06eb504fc31fc71ed0cba}\label{classmoa_1_1streams_1_1_kafka_stream_a1c8b1d2f02d06eb504fc31fc71ed0cba}} 
+\index{moa.streams.KafkaStream@{moa.streams.KafkaStream}!cacheHeaderIfNecessary@{cacheHeaderIfNecessary}}
+\index{cacheHeaderIfNecessary@{cacheHeaderIfNecessary}!moa.streams.KafkaStream@{moa.streams.KafkaStream}}
+\doxysubsubsection{\texorpdfstring{cacheHeaderIfNecessary()}{cacheHeaderIfNecessary()}}
+{\footnotesize\ttfamily void moa.\+streams.\+Kafka\+Stream.\+cache\+Header\+If\+Necessary (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Caches the header for these instances if it hasn\textquotesingle{}t already. \mbox{\Hypertarget{classmoa_1_1streams_1_1_kafka_stream_a939d9bb1141a18cf91dfd3cbd35ec164}\label{classmoa_1_1streams_1_1_kafka_stream_a939d9bb1141a18cf91dfd3cbd35ec164}} 
+\index{moa.streams.KafkaStream@{moa.streams.KafkaStream}!createConsumerConfiguration@{createConsumerConfiguration}}
+\index{createConsumerConfiguration@{createConsumerConfiguration}!moa.streams.KafkaStream@{moa.streams.KafkaStream}}
+\doxysubsubsection{\texorpdfstring{createConsumerConfiguration()}{createConsumerConfiguration()}}
+{\footnotesize\ttfamily Map$<$String, Object$>$ moa.\+streams.\+Kafka\+Stream.\+create\+Consumer\+Configuration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Creates the configuration for the Kafka consumer. \mbox{\Hypertarget{classmoa_1_1streams_1_1_kafka_stream_aaf7f79c427243b5ede6c91b1b172981d}\label{classmoa_1_1streams_1_1_kafka_stream_aaf7f79c427243b5ede6c91b1b172981d}} 
+\index{moa.streams.KafkaStream@{moa.streams.KafkaStream}!defineImmutableCapabilities@{defineImmutableCapabilities}}
+\index{defineImmutableCapabilities@{defineImmutableCapabilities}!moa.streams.KafkaStream@{moa.streams.KafkaStream}}
+\doxysubsubsection{\texorpdfstring{defineImmutableCapabilities()}{defineImmutableCapabilities()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1capabilities_1_1_immutable_capabilities}{Immutable\+Capabilities}} moa.\+streams.\+Kafka\+Stream.\+define\+Immutable\+Capabilities (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Defines the set of capabilities the object has. Should be overridden if the object\textquotesingle{}s capabilities do not change.
+
+\begin{DoxyReturn}{Returns}
+The capabilities of the object. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1capabilities_1_1_capabilities_handler_aa82d1befd5dbb958c9787b5304c9a82a}{moa.\+capabilities.\+Capabilities\+Handler}}.
+
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_kafka_stream_a431f50050a74b9178994c3311b4667b6}\label{classmoa_1_1streams_1_1_kafka_stream_a431f50050a74b9178994c3311b4667b6}} 
+\index{moa.streams.KafkaStream@{moa.streams.KafkaStream}!establishConsumer@{establishConsumer}}
+\index{establishConsumer@{establishConsumer}!moa.streams.KafkaStream@{moa.streams.KafkaStream}}
+\doxysubsubsection{\texorpdfstring{establishConsumer()}{establishConsumer()}}
+{\footnotesize\ttfamily void moa.\+streams.\+Kafka\+Stream.\+establish\+Consumer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Makes sure the Kafka consumer is available and ready to retrieve instances. \mbox{\Hypertarget{classmoa_1_1streams_1_1_kafka_stream_a2aa49b4168b3e3e28ebf7d913ee6ffb9}\label{classmoa_1_1streams_1_1_kafka_stream_a2aa49b4168b3e3e28ebf7d913ee6ffb9}} 
+\index{moa.streams.KafkaStream@{moa.streams.KafkaStream}!fillBufferIfNecessary@{fillBufferIfNecessary}}
+\index{fillBufferIfNecessary@{fillBufferIfNecessary}!moa.streams.KafkaStream@{moa.streams.KafkaStream}}
+\doxysubsubsection{\texorpdfstring{fillBufferIfNecessary()}{fillBufferIfNecessary()}}
+{\footnotesize\ttfamily void moa.\+streams.\+Kafka\+Stream.\+fill\+Buffer\+If\+Necessary (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Retrieves more instances from Kafka and places them in the buffer. \mbox{\Hypertarget{classmoa_1_1streams_1_1_kafka_stream_abb3ccc05cc97f41720f7ae5dfef81159}\label{classmoa_1_1streams_1_1_kafka_stream_abb3ccc05cc97f41720f7ae5dfef81159}} 
+\index{moa.streams.KafkaStream@{moa.streams.KafkaStream}!getDescription@{getDescription}}
+\index{getDescription@{getDescription}!moa.streams.KafkaStream@{moa.streams.KafkaStream}}
+\doxysubsubsection{\texorpdfstring{getDescription()}{getDescription()}}
+{\footnotesize\ttfamily void moa.\+streams.\+Kafka\+Stream.\+get\+Description (\begin{DoxyParamCaption}\item[{String\+Builder}]{sb,  }\item[{int}]{indent }\end{DoxyParamCaption})}
+
+Returns a string representation of this object. Used in {\ttfamily \mbox{\hyperlink{classmoa_1_1_abstract_m_o_a_object_ac686fd3b07c734cf21f1894376fe402d}{Abstract\+M\+O\+A\+Object.\+to\+String}}} to give a string representation of the object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sb} & the stringbuilder to add the description \\
+\hline
+{\em indent} & the number of characters to indent \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1_m_o_a_object_afdaf5098f1fe6c852018ce64c28e17f5}{moa.\+M\+O\+A\+Object}}.
+
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_kafka_stream_a6d2ba6d1f29109fbe647ce210249e676}\label{classmoa_1_1streams_1_1_kafka_stream_a6d2ba6d1f29109fbe647ce210249e676}} 
+\index{moa.streams.KafkaStream@{moa.streams.KafkaStream}!getPartitions@{getPartitions}}
+\index{getPartitions@{getPartitions}!moa.streams.KafkaStream@{moa.streams.KafkaStream}}
+\doxysubsubsection{\texorpdfstring{getPartitions()}{getPartitions()}}
+{\footnotesize\ttfamily List$<$Topic\+Partition$>$ moa.\+streams.\+Kafka\+Stream.\+get\+Partitions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Gets a list of all topic partitions the consumer is consuming. \mbox{\Hypertarget{classmoa_1_1streams_1_1_kafka_stream_ab990aedab8ecd04aa2150a42da0ff899}\label{classmoa_1_1streams_1_1_kafka_stream_ab990aedab8ecd04aa2150a42da0ff899}} 
+\index{moa.streams.KafkaStream@{moa.streams.KafkaStream}!getPurposeString@{getPurposeString}}
+\index{getPurposeString@{getPurposeString}!moa.streams.KafkaStream@{moa.streams.KafkaStream}}
+\doxysubsubsection{\texorpdfstring{getPurposeString()}{getPurposeString()}}
+{\footnotesize\ttfamily String moa.\+streams.\+Kafka\+Stream.\+get\+Purpose\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Options to handle Dictionary with option texts and objects 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1options_1_1_abstract_option_handler_abc8df69aea27ef85060557a9e918b2ca}{moa.\+options.\+Abstract\+Option\+Handler}}.
+
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_kafka_stream_a344a8636c8194c0a271a0c142ad802a5}\label{classmoa_1_1streams_1_1_kafka_stream_a344a8636c8194c0a271a0c142ad802a5}} 
+\index{moa.streams.KafkaStream@{moa.streams.KafkaStream}!prepareForUseImpl@{prepareForUseImpl}}
+\index{prepareForUseImpl@{prepareForUseImpl}!moa.streams.KafkaStream@{moa.streams.KafkaStream}}
+\doxysubsubsection{\texorpdfstring{prepareForUseImpl()}{prepareForUseImpl()}}
+{\footnotesize\ttfamily void moa.\+streams.\+Kafka\+Stream.\+prepare\+For\+Use\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}}}]{monitor,  }\item[{\mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}}}]{repository }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+This method describes the implementation of how to prepare this object for use. All classes that extends this class have to implement {\ttfamily prepare\+For\+Use\+Impl} and not {\ttfamily prepare\+For\+Use} since {\ttfamily prepare\+For\+Use} calls {\ttfamily prepare\+For\+Use\+Impl}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em monitor} & the Task\+Monitor to use \\
+\hline
+{\em repository} & the Object\+Repository to use \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1options_1_1_abstract_option_handler_ad0e9c7d4b0e2b185749f36ce28540efb}{moa.\+options.\+Abstract\+Option\+Handler}}.
+
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_kafka_stream_a6f800d5a565424277f7d7171cb584059}\label{classmoa_1_1streams_1_1_kafka_stream_a6f800d5a565424277f7d7171cb584059}} 
+\index{moa.streams.KafkaStream@{moa.streams.KafkaStream}!restartConsumer@{restartConsumer}}
+\index{restartConsumer@{restartConsumer}!moa.streams.KafkaStream@{moa.streams.KafkaStream}}
+\doxysubsubsection{\texorpdfstring{restartConsumer()}{restartConsumer()}}
+{\footnotesize\ttfamily void moa.\+streams.\+Kafka\+Stream.\+restart\+Consumer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Directs the consumer to the beginning of the Kafka stream. \mbox{\Hypertarget{classmoa_1_1streams_1_1_kafka_stream_ae30ae07a00a7ed94b943f3b67ba09629}\label{classmoa_1_1streams_1_1_kafka_stream_ae30ae07a00a7ed94b943f3b67ba09629}} 
+\index{moa.streams.KafkaStream@{moa.streams.KafkaStream}!uniqueGroupIDString@{uniqueGroupIDString}}
+\index{uniqueGroupIDString@{uniqueGroupIDString}!moa.streams.KafkaStream@{moa.streams.KafkaStream}}
+\doxysubsubsection{\texorpdfstring{uniqueGroupIDString()}{uniqueGroupIDString()}}
+{\footnotesize\ttfamily String moa.\+streams.\+Kafka\+Stream.\+unique\+Group\+I\+D\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Generates a unique but consistent group ID string for the consumer. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_kafka_stream_ac6eb0e6be3e3b27169ae16161f65ba6a}\label{classmoa_1_1streams_1_1_kafka_stream_ac6eb0e6be3e3b27169ae16161f65ba6a}} 
+\index{moa.streams.KafkaStream@{moa.streams.KafkaStream}!hostOption@{hostOption}}
+\index{hostOption@{hostOption}!moa.streams.KafkaStream@{moa.streams.KafkaStream}}
+\doxysubsubsection{\texorpdfstring{hostOption}{hostOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_string_option}{String\+Option}} moa.\+streams.\+Kafka\+Stream.\+host\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} StringOption(\textcolor{stringliteral}{"host"}, \textcolor{charliteral}{'h'},}
+\DoxyCodeLine{    \textcolor{stringliteral}{"The Kafka broker host"}, \textcolor{stringliteral}{""})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_kafka_stream_a8db63dea5e31c5162e34261c27e2be52}\label{classmoa_1_1streams_1_1_kafka_stream_a8db63dea5e31c5162e34261c27e2be52}} 
+\index{moa.streams.KafkaStream@{moa.streams.KafkaStream}!portOption@{portOption}}
+\index{portOption@{portOption}!moa.streams.KafkaStream@{moa.streams.KafkaStream}}
+\doxysubsubsection{\texorpdfstring{portOption}{portOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_string_option}{String\+Option}} moa.\+streams.\+Kafka\+Stream.\+port\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} StringOption(\textcolor{stringliteral}{"port"}, \textcolor{charliteral}{'p'},}
+\DoxyCodeLine{    \textcolor{stringliteral}{"The Kafka broker port"}, \textcolor{stringliteral}{""})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_kafka_stream_ae4e29dc77d9acd05677893f0f553ebd8}\label{classmoa_1_1streams_1_1_kafka_stream_ae4e29dc77d9acd05677893f0f553ebd8}} 
+\index{moa.streams.KafkaStream@{moa.streams.KafkaStream}!topicOption@{topicOption}}
+\index{topicOption@{topicOption}!moa.streams.KafkaStream@{moa.streams.KafkaStream}}
+\doxysubsubsection{\texorpdfstring{topicOption}{topicOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_string_option}{String\+Option}} moa.\+streams.\+Kafka\+Stream.\+topic\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} StringOption(\textcolor{stringliteral}{"topic"}, \textcolor{charliteral}{'t'},}
+\DoxyCodeLine{    \textcolor{stringliteral}{"Kafka topic to consume"}, \textcolor{stringliteral}{""})}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa-\/kafka/src/main/java/moa/streams/Kafka\+Stream.\+java\end{DoxyCompactItemize}

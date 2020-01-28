@@ -1,0 +1,151 @@
+\hypertarget{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1kdtrees_1_1_median_of_widest_dimension}{}\doxysection{moa.\+classifiers.\+lazy.\+neighboursearch.\+kdtrees.\+Median\+Of\+Widest\+Dimension Class Reference}
+\label{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1kdtrees_1_1_median_of_widest_dimension}\index{moa.classifiers.lazy.neighboursearch.kdtrees.MedianOfWidestDimension@{moa.classifiers.lazy.neighboursearch.kdtrees.MedianOfWidestDimension}}
+
+
+Inheritance diagram for moa.\+classifiers.\+lazy.\+neighboursearch.\+kdtrees.\+Median\+Of\+Widest\+Dimension\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+classifiers.\+lazy.\+neighboursearch.\+kdtrees.\+Median\+Of\+Widest\+Dimension\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1kdtrees_1_1_median_of_widest_dimension_a578bf641f40d2f80f24c9bf6b288255c}{global\+Info}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1kdtrees_1_1_median_of_widest_dimension_ae552a0a2f30decdde129df15f52b63e8}{split\+Node}} (\mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1kdtrees_1_1_k_d_tree_node}{K\+D\+Tree\+Node}} node, int num\+Nodes\+Created, double\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} node\+Ranges, double\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} universe)  throws Exception 
+\item 
+int \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1kdtrees_1_1_median_of_widest_dimension_ad2efd3d5d8c827e3a360b04266c777ec}{select}} (int att\+Idx, int\mbox{[}$\,$\mbox{]} indices, int left, int right, int k)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1kdtrees_1_1_median_of_widest_dimension_aa7f15aacbfbbbef026bae88f40cb9bde}{partition}} (int att\+Idx, int\mbox{[}$\,$\mbox{]} index, int l, int r)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+The class that splits a \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_k_d_tree}{K\+D\+Tree}} node based on the median value of a dimension in which the node\textquotesingle{}s points have the widest spread.~\newline
+ ~\newline
+ For more information see also\+:~\newline
+ ~\newline
+ Jerome H. Friedman, Jon Luis Bentley, Raphael Ari Finkel (1977). An Algorithm for Finding Best Matches in Logarithmic Expected Time. A\+CM Transactions on Mathematics Software. 3(3)\+:209-\/226. 
+
+Bib\+TeX\+: 
+\begin{DoxyPre}
+  \&\#64;article\{Friedman1977,
+     author = \{Jerome H. Friedman and Jon Luis Bentley and Raphael Ari Finkel\},
+     journal = \{ACM Transactions on Mathematics Software\},
+     month = \{September\},
+     number = \{3\},
+     pages = \{209-\/226\},
+     title = \{An Algorithm for Finding Best Matches in Logarithmic Expected Time\},
+     volume = \{3\},
+     year = \{1977\}
+  \}
+  \end{DoxyPre}
+ 
+
+\begin{DoxyAuthor}{Author}
+Ashraf M. Kibriya (amk14\mbox{[}at-\/the-\/rate\mbox{]}cs\mbox{[}dot\mbox{]}waikato\mbox{[}dot\mbox{]}ac\mbox{[}dot\mbox{]}nz) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+8034 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1kdtrees_1_1_median_of_widest_dimension_a578bf641f40d2f80f24c9bf6b288255c}\label{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1kdtrees_1_1_median_of_widest_dimension_a578bf641f40d2f80f24c9bf6b288255c}} 
+\index{moa.classifiers.lazy.neighboursearch.kdtrees.MedianOfWidestDimension@{moa.classifiers.lazy.neighboursearch.kdtrees.MedianOfWidestDimension}!globalInfo@{globalInfo}}
+\index{globalInfo@{globalInfo}!moa.classifiers.lazy.neighboursearch.kdtrees.MedianOfWidestDimension@{moa.classifiers.lazy.neighboursearch.kdtrees.MedianOfWidestDimension}}
+\doxysubsubsection{\texorpdfstring{globalInfo()}{globalInfo()}}
+{\footnotesize\ttfamily String moa.\+classifiers.\+lazy.\+neighboursearch.\+kdtrees.\+Median\+Of\+Widest\+Dimension.\+global\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns a string describing this nearest neighbour search algorithm.
+
+\begin{DoxyReturn}{Returns}
+a description of the algorithm for displaying in the explorer/experimenter gui 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1kdtrees_1_1_median_of_widest_dimension_aa7f15aacbfbbbef026bae88f40cb9bde}\label{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1kdtrees_1_1_median_of_widest_dimension_aa7f15aacbfbbbef026bae88f40cb9bde}} 
+\index{moa.classifiers.lazy.neighboursearch.kdtrees.MedianOfWidestDimension@{moa.classifiers.lazy.neighboursearch.kdtrees.MedianOfWidestDimension}!partition@{partition}}
+\index{partition@{partition}!moa.classifiers.lazy.neighboursearch.kdtrees.MedianOfWidestDimension@{moa.classifiers.lazy.neighboursearch.kdtrees.MedianOfWidestDimension}}
+\doxysubsubsection{\texorpdfstring{partition()}{partition()}}
+{\footnotesize\ttfamily int moa.\+classifiers.\+lazy.\+neighboursearch.\+kdtrees.\+Median\+Of\+Widest\+Dimension.\+partition (\begin{DoxyParamCaption}\item[{int}]{att\+Idx,  }\item[{int\mbox{[}$\,$\mbox{]}}]{index,  }\item[{int}]{l,  }\item[{int}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Partitions the instances around a pivot. Used by quicksort and kth\+Smallest\+Value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em att\+Idx} & The attribution/dimension based on which the instances should be partitioned. \\
+\hline
+{\em index} & The master index array containing indices of the instances. \\
+\hline
+{\em l} & The begining index of the portion of master index array that should be partitioned. \\
+\hline
+{\em r} & The end index of the portion of master index array that should be partitioned. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the index of the middle element 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1kdtrees_1_1_median_of_widest_dimension_ad2efd3d5d8c827e3a360b04266c777ec}\label{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1kdtrees_1_1_median_of_widest_dimension_ad2efd3d5d8c827e3a360b04266c777ec}} 
+\index{moa.classifiers.lazy.neighboursearch.kdtrees.MedianOfWidestDimension@{moa.classifiers.lazy.neighboursearch.kdtrees.MedianOfWidestDimension}!select@{select}}
+\index{select@{select}!moa.classifiers.lazy.neighboursearch.kdtrees.MedianOfWidestDimension@{moa.classifiers.lazy.neighboursearch.kdtrees.MedianOfWidestDimension}}
+\doxysubsubsection{\texorpdfstring{select()}{select()}}
+{\footnotesize\ttfamily int moa.\+classifiers.\+lazy.\+neighboursearch.\+kdtrees.\+Median\+Of\+Widest\+Dimension.\+select (\begin{DoxyParamCaption}\item[{int}]{att\+Idx,  }\item[{int\mbox{[}$\,$\mbox{]}}]{indices,  }\item[{int}]{left,  }\item[{int}]{right,  }\item[{int}]{k }\end{DoxyParamCaption})}
+
+Implements computation of the kth-\/smallest element according to Manber\textquotesingle{}s \char`\"{}\+Introduction to Algorithms\char`\"{}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em att\+Idx} & The dimension/attribute of the instances in which to find the kth-\/smallest element. \\
+\hline
+{\em indices} & The master index array containing indices of the instances. \\
+\hline
+{\em left} & The begining index of the portion of the master index array in which to find the kth-\/smallest element. \\
+\hline
+{\em right} & The end index of the portion of the master index array in which to find the kth-\/smallest element. \\
+\hline
+{\em k} & The value of k \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The index of the kth-\/smallest element 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1kdtrees_1_1_median_of_widest_dimension_ae552a0a2f30decdde129df15f52b63e8}\label{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1kdtrees_1_1_median_of_widest_dimension_ae552a0a2f30decdde129df15f52b63e8}} 
+\index{moa.classifiers.lazy.neighboursearch.kdtrees.MedianOfWidestDimension@{moa.classifiers.lazy.neighboursearch.kdtrees.MedianOfWidestDimension}!splitNode@{splitNode}}
+\index{splitNode@{splitNode}!moa.classifiers.lazy.neighboursearch.kdtrees.MedianOfWidestDimension@{moa.classifiers.lazy.neighboursearch.kdtrees.MedianOfWidestDimension}}
+\doxysubsubsection{\texorpdfstring{splitNode()}{splitNode()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+lazy.\+neighboursearch.\+kdtrees.\+Median\+Of\+Widest\+Dimension.\+split\+Node (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1kdtrees_1_1_k_d_tree_node}{K\+D\+Tree\+Node}}}]{node,  }\item[{int}]{num\+Nodes\+Created,  }\item[{double}]{node\+Ranges\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]},  }\item[{double}]{universe\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption}) throws Exception}
+
+Splits a node into two based on the median value of the dimension in which the points have the widest spread. After splitting two new nodes are created and correctly initialised. And, node.\+left and node.\+right are set appropriately.
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & The node to split. \\
+\hline
+{\em num\+Nodes\+Created} & The number of nodes that so far have been created for the tree, so that the newly created nodes are assigned correct/meaningful node numbers/ids. \\
+\hline
+{\em node\+Ranges} & The attributes\textquotesingle{} range for the points inside the node that is to be split. \\
+\hline
+{\em universe} & The attributes\textquotesingle{} range for the whole point-\/space. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & If there is some problem in splitting the given node. \\
+\hline
+\end{DoxyExceptions}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1kdtrees_1_1_k_d_tree_node_splitter_aaa4e38cc22d39f0fb5ab16c150ffff43}{moa.\+classifiers.\+lazy.\+neighboursearch.\+kdtrees.\+K\+D\+Tree\+Node\+Splitter}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/classifiers/lazy/neighboursearch/kdtrees/Median\+Of\+Widest\+Dimension.\+java\end{DoxyCompactItemize}

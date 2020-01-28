@@ -1,0 +1,204 @@
+\hypertarget{classmoa_1_1clusterers_1_1_abstract_clusterer}{}\doxysection{moa.\+clusterers.\+Abstract\+Clusterer Class Reference}
+\label{classmoa_1_1clusterers_1_1_abstract_clusterer}\index{moa.clusterers.AbstractClusterer@{moa.clusterers.AbstractClusterer}}
+
+
+Inheritance diagram for moa.\+clusterers.\+Abstract\+Clusterer\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+clusterers.\+Abstract\+Clusterer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classmoa_1_1clusterers_1_1_abstract_clusterer_aaf5f04755e4735cf19df004230ec69c9}{get\+Purpose\+String}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1clusterers_1_1_abstract_clusterer_adce10eb8d3360ee93bdd7c6ebb09d11f}{prepare\+For\+Use\+Impl}} (\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}} monitor, \mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}} repository)
+\item 
+\mbox{\Hypertarget{classmoa_1_1clusterers_1_1_abstract_clusterer_a4d7a69e8bf3dce7d1d9c887609fcbbac}\label{classmoa_1_1clusterers_1_1_abstract_clusterer_a4d7a69e8bf3dce7d1d9c887609fcbbac}} 
+void {\bfseries set\+Model\+Context} (\mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instances_header}{Instances\+Header}} ih)
+\item 
+\mbox{\Hypertarget{classmoa_1_1clusterers_1_1_abstract_clusterer_a6a5d15dab54e400731b1bb6b058b0ebd}\label{classmoa_1_1clusterers_1_1_abstract_clusterer_a6a5d15dab54e400731b1bb6b058b0ebd}} 
+\mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instances_header}{Instances\+Header}} {\bfseries get\+Model\+Context} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1clusterers_1_1_abstract_clusterer_a875fd195db7dd38082d6ee7042bfb2a5}\label{classmoa_1_1clusterers_1_1_abstract_clusterer_a875fd195db7dd38082d6ee7042bfb2a5}} 
+void {\bfseries set\+Random\+Seed} (int s)
+\item 
+\mbox{\Hypertarget{classmoa_1_1clusterers_1_1_abstract_clusterer_ab97e58ac9d9e8a11db1aa923b116a185}\label{classmoa_1_1clusterers_1_1_abstract_clusterer_ab97e58ac9d9e8a11db1aa923b116a185}} 
+boolean {\bfseries training\+Has\+Started} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1clusterers_1_1_abstract_clusterer_aa00a89e5c7f7c9a8821a5c0bc16b3b5f}\label{classmoa_1_1clusterers_1_1_abstract_clusterer_aa00a89e5c7f7c9a8821a5c0bc16b3b5f}} 
+double {\bfseries training\+Weight\+Seen\+By\+Model} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1clusterers_1_1_abstract_clusterer_a88555cfe0043fae7f40fcf34c3bf114a}\label{classmoa_1_1clusterers_1_1_abstract_clusterer_a88555cfe0043fae7f40fcf34c3bf114a}} 
+void {\bfseries reset\+Learning} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1clusterers_1_1_abstract_clusterer_a245de76992d295d0cb8b84761c4a041b}\label{classmoa_1_1clusterers_1_1_abstract_clusterer_a245de76992d295d0cb8b84761c4a041b}} 
+void {\bfseries train\+On\+Instance} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst)
+\item 
+\mbox{\Hypertarget{classmoa_1_1clusterers_1_1_abstract_clusterer_a4fad387f6c2a2a03dd2e2362978008b2}\label{classmoa_1_1clusterers_1_1_abstract_clusterer_a4fad387f6c2a2a03dd2e2362978008b2}} 
+\mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}}\mbox{[}$\,$\mbox{]} {\bfseries get\+Model\+Measurements} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1clusterers_1_1_abstract_clusterer_aecb6d00c7dadc3cea0a752820604e910}{get\+Description}} (String\+Builder out, int indent)
+\item 
+\mbox{\Hypertarget{classmoa_1_1clusterers_1_1_abstract_clusterer_a612eaf16d706d887b8dd6620c0baf1b3}\label{classmoa_1_1clusterers_1_1_abstract_clusterer_a612eaf16d706d887b8dd6620c0baf1b3}} 
+\mbox{\hyperlink{interfacemoa_1_1clusterers_1_1_clusterer}{Clusterer}}\mbox{[}$\,$\mbox{]} {\bfseries get\+Sub\+Clusterers} ()
+\item 
+\mbox{\hyperlink{interfacemoa_1_1clusterers_1_1_clusterer}{Clusterer}} \mbox{\hyperlink{classmoa_1_1clusterers_1_1_abstract_clusterer_a0fcbe3e3e7ab22d8e3c47308de275465}{copy}} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1clusterers_1_1_abstract_clusterer_acf6e4581b8df4ac6d769c05038d32e30}\label{classmoa_1_1clusterers_1_1_abstract_clusterer_acf6e4581b8df4ac6d769c05038d32e30}} 
+String {\bfseries get\+Class\+Name\+String} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1clusterers_1_1_abstract_clusterer_a0dc582b213eafc07542232ccf961714a}\label{classmoa_1_1clusterers_1_1_abstract_clusterer_a0dc582b213eafc07542232ccf961714a}} 
+String {\bfseries get\+Class\+Label\+String} (int class\+Label\+Index)
+\item 
+\mbox{\Hypertarget{classmoa_1_1clusterers_1_1_abstract_clusterer_a01fc7b3efb611094bea1f64ea31ab218}\label{classmoa_1_1clusterers_1_1_abstract_clusterer_a01fc7b3efb611094bea1f64ea31ab218}} 
+String {\bfseries get\+Attribute\+Name\+String} (int att\+Index)
+\item 
+\mbox{\Hypertarget{classmoa_1_1clusterers_1_1_abstract_clusterer_afab9b009d1539faf56408b8778ab9ebe}\label{classmoa_1_1clusterers_1_1_abstract_clusterer_afab9b009d1539faf56408b8778ab9ebe}} 
+String {\bfseries get\+Nominal\+Value\+String} (int att\+Index, int val\+Index)
+\item 
+\mbox{\Hypertarget{classmoa_1_1clusterers_1_1_abstract_clusterer_a2faf549ee9e0045c065512b854d3fdf4}\label{classmoa_1_1clusterers_1_1_abstract_clusterer_a2faf549ee9e0045c065512b854d3fdf4}} 
+\mbox{\hyperlink{interfacemoa_1_1gui_1_1_a_w_t_renderer}{A\+W\+T\+Renderer}} {\bfseries get\+A\+W\+T\+Renderer} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1clusterers_1_1_abstract_clusterer_a0b6492d7c9487fbc6a24d8ef115b2c75}\label{classmoa_1_1clusterers_1_1_abstract_clusterer_a0b6492d7c9487fbc6a24d8ef115b2c75}} 
+abstract void {\bfseries reset\+Learning\+Impl} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1clusterers_1_1_abstract_clusterer_aa430ff0355e2407231b5a1113733bba7}\label{classmoa_1_1clusterers_1_1_abstract_clusterer_aa430ff0355e2407231b5a1113733bba7}} 
+abstract void {\bfseries train\+On\+Instance\+Impl} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst)
+\item 
+\mbox{\Hypertarget{classmoa_1_1clusterers_1_1_abstract_clusterer_ab41dd0a97b7d538bb3f79290e43740f2}\label{classmoa_1_1clusterers_1_1_abstract_clusterer_ab41dd0a97b7d538bb3f79290e43740f2}} 
+abstract void {\bfseries get\+Model\+Description} (String\+Builder out, int indent)
+\item 
+\mbox{\Hypertarget{classmoa_1_1clusterers_1_1_abstract_clusterer_a44b484b54070fd34bcb36f01bd7b7b02}\label{classmoa_1_1clusterers_1_1_abstract_clusterer_a44b484b54070fd34bcb36f01bd7b7b02}} 
+boolean {\bfseries implements\+Micro\+Clusterer} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1clusterers_1_1_abstract_clusterer_ae8c08d7bf4e054b9f58098e199a93bc1}\label{classmoa_1_1clusterers_1_1_abstract_clusterer_ae8c08d7bf4e054b9f58098e199a93bc1}} 
+boolean {\bfseries keep\+Class\+Label} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1clusterers_1_1_abstract_clusterer_a343d513d9e0b903f1f05c4100d00f5de}\label{classmoa_1_1clusterers_1_1_abstract_clusterer_a343d513d9e0b903f1f05c4100d00f5de}} 
+\mbox{\hyperlink{classmoa_1_1cluster_1_1_clustering}{Clustering}} {\bfseries get\+Micro\+Clustering\+Result} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1clusterers_1_1_abstract_clusterer_aa4c3dac49d6b9710dcc400b4b1cc9cf0}\label{classmoa_1_1clusterers_1_1_abstract_clusterer_aa4c3dac49d6b9710dcc400b4b1cc9cf0}} 
+static boolean {\bfseries context\+Is\+Compatible} (\mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instances_header}{Instances\+Header}} original\+Context, \mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instances_header}{Instances\+Header}} new\+Context)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1clusterers_1_1_abstract_clusterer_a9809928b61e3e0f721598c34c156e907}\label{classmoa_1_1clusterers_1_1_abstract_clusterer_a9809928b61e3e0f721598c34c156e907}} 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_flag_option}{Flag\+Option}} {\bfseries evaluate\+Micro\+Clustering\+Option}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1clusterers_1_1_abstract_clusterer_ae1b7bd9a6da0ec133d1a6806a50e0fa5}\label{classmoa_1_1clusterers_1_1_abstract_clusterer_ae1b7bd9a6da0ec133d1a6806a50e0fa5}} 
+abstract \mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}}\mbox{[}$\,$\mbox{]} {\bfseries get\+Model\+Measurements\+Impl} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1clusterers_1_1_abstract_clusterer_a1ad652e6cbacc48365c5e4a386b02849}\label{classmoa_1_1clusterers_1_1_abstract_clusterer_a1ad652e6cbacc48365c5e4a386b02849}} 
+static int {\bfseries model\+Att\+Index\+To\+Instance\+Att\+Index} (int index, \mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst)
+\item 
+\mbox{\Hypertarget{classmoa_1_1clusterers_1_1_abstract_clusterer_ac57543b54af4fbe88f318c53131135ac}\label{classmoa_1_1clusterers_1_1_abstract_clusterer_ac57543b54af4fbe88f318c53131135ac}} 
+static int {\bfseries model\+Att\+Index\+To\+Instance\+Att\+Index} (int index, \mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instances}{Instances}} insts)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1clusterers_1_1_abstract_clusterer_a810fb3c33cf0fa4d9e34fad989ccf24f}\label{classmoa_1_1clusterers_1_1_abstract_clusterer_a810fb3c33cf0fa4d9e34fad989ccf24f}} 
+\mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instances_header}{Instances\+Header}} {\bfseries model\+Context}
+\item 
+\mbox{\Hypertarget{classmoa_1_1clusterers_1_1_abstract_clusterer_a1ab78f9ef9f5de18a5a84133697e5be6}\label{classmoa_1_1clusterers_1_1_abstract_clusterer_a1ab78f9ef9f5de18a5a84133697e5be6}} 
+double {\bfseries training\+Weight\+Seen\+By\+Model} = 0.\+0
+\item 
+\mbox{\Hypertarget{classmoa_1_1clusterers_1_1_abstract_clusterer_adafa9a7e6e128eeecf375212be0f1064}\label{classmoa_1_1clusterers_1_1_abstract_clusterer_adafa9a7e6e128eeecf375212be0f1064}} 
+int {\bfseries random\+Seed} = 1
+\item 
+\mbox{\Hypertarget{classmoa_1_1clusterers_1_1_abstract_clusterer_a4293ef9403254397d3b958260b66f7b4}\label{classmoa_1_1clusterers_1_1_abstract_clusterer_a4293ef9403254397d3b958260b66f7b4}} 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries random\+Seed\+Option}
+\item 
+\mbox{\Hypertarget{classmoa_1_1clusterers_1_1_abstract_clusterer_a274b9c8fa163aad2c635f860f6c87084}\label{classmoa_1_1clusterers_1_1_abstract_clusterer_a274b9c8fa163aad2c635f860f6c87084}} 
+Random {\bfseries clusterer\+Random}
+\item 
+\mbox{\Hypertarget{classmoa_1_1clusterers_1_1_abstract_clusterer_a618584cfc32836159a52e35b59c72dca}\label{classmoa_1_1clusterers_1_1_abstract_clusterer_a618584cfc32836159a52e35b59c72dca}} 
+\mbox{\hyperlink{classmoa_1_1cluster_1_1_clustering}{Clustering}} {\bfseries clustering}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1clusterers_1_1_abstract_clusterer_a0fcbe3e3e7ab22d8e3c47308de275465}\label{classmoa_1_1clusterers_1_1_abstract_clusterer_a0fcbe3e3e7ab22d8e3c47308de275465}} 
+\index{moa.clusterers.AbstractClusterer@{moa.clusterers.AbstractClusterer}!copy@{copy}}
+\index{copy@{copy}!moa.clusterers.AbstractClusterer@{moa.clusterers.AbstractClusterer}}
+\doxysubsubsection{\texorpdfstring{copy()}{copy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacemoa_1_1clusterers_1_1_clusterer}{Clusterer}} moa.\+clusterers.\+Abstract\+Clusterer.\+copy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This method produces a copy of this object.
+
+\begin{DoxyReturn}{Returns}
+a copy of this object 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1clusterers_1_1_clusterer_a09a7a3f73d6b96bdd242d8ff072a61bf}{moa.\+clusterers.\+Clusterer}}.
+
+\mbox{\Hypertarget{classmoa_1_1clusterers_1_1_abstract_clusterer_aecb6d00c7dadc3cea0a752820604e910}\label{classmoa_1_1clusterers_1_1_abstract_clusterer_aecb6d00c7dadc3cea0a752820604e910}} 
+\index{moa.clusterers.AbstractClusterer@{moa.clusterers.AbstractClusterer}!getDescription@{getDescription}}
+\index{getDescription@{getDescription}!moa.clusterers.AbstractClusterer@{moa.clusterers.AbstractClusterer}}
+\doxysubsubsection{\texorpdfstring{getDescription()}{getDescription()}}
+{\footnotesize\ttfamily void moa.\+clusterers.\+Abstract\+Clusterer.\+get\+Description (\begin{DoxyParamCaption}\item[{String\+Builder}]{sb,  }\item[{int}]{indent }\end{DoxyParamCaption})}
+
+Returns a string representation of this object. Used in {\ttfamily \mbox{\hyperlink{classmoa_1_1_abstract_m_o_a_object_ac686fd3b07c734cf21f1894376fe402d}{Abstract\+M\+O\+A\+Object.\+to\+String}}} to give a string representation of the object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sb} & the stringbuilder to add the description \\
+\hline
+{\em indent} & the number of characters to indent \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1_m_o_a_object_afdaf5098f1fe6c852018ce64c28e17f5}{moa.\+M\+O\+A\+Object}}.
+
+\mbox{\Hypertarget{classmoa_1_1clusterers_1_1_abstract_clusterer_aaf5f04755e4735cf19df004230ec69c9}\label{classmoa_1_1clusterers_1_1_abstract_clusterer_aaf5f04755e4735cf19df004230ec69c9}} 
+\index{moa.clusterers.AbstractClusterer@{moa.clusterers.AbstractClusterer}!getPurposeString@{getPurposeString}}
+\index{getPurposeString@{getPurposeString}!moa.clusterers.AbstractClusterer@{moa.clusterers.AbstractClusterer}}
+\doxysubsubsection{\texorpdfstring{getPurposeString()}{getPurposeString()}}
+{\footnotesize\ttfamily String moa.\+clusterers.\+Abstract\+Clusterer.\+get\+Purpose\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Options to handle Dictionary with option texts and objects 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1options_1_1_abstract_option_handler_abc8df69aea27ef85060557a9e918b2ca}{moa.\+options.\+Abstract\+Option\+Handler}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classmoa_1_1clusterers_1_1_weka_clustering_algorithm_a68b1669679bbe0d18b2c1d8f8ce094b5}{moa.\+clusterers.\+Weka\+Clustering\+Algorithm}}, and \mbox{\hyperlink{classmoa_1_1clusterers_1_1outliers_1_1_any_out_1_1_any_out_a05d7c333fe1143f00ad3d4df2cdeac04}{moa.\+clusterers.\+outliers.\+Any\+Out.\+Any\+Out}}.
+
+\mbox{\Hypertarget{classmoa_1_1clusterers_1_1_abstract_clusterer_adce10eb8d3360ee93bdd7c6ebb09d11f}\label{classmoa_1_1clusterers_1_1_abstract_clusterer_adce10eb8d3360ee93bdd7c6ebb09d11f}} 
+\index{moa.clusterers.AbstractClusterer@{moa.clusterers.AbstractClusterer}!prepareForUseImpl@{prepareForUseImpl}}
+\index{prepareForUseImpl@{prepareForUseImpl}!moa.clusterers.AbstractClusterer@{moa.clusterers.AbstractClusterer}}
+\doxysubsubsection{\texorpdfstring{prepareForUseImpl()}{prepareForUseImpl()}}
+{\footnotesize\ttfamily void moa.\+clusterers.\+Abstract\+Clusterer.\+prepare\+For\+Use\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}}}]{monitor,  }\item[{\mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}}}]{repository }\end{DoxyParamCaption})}
+
+This method describes the implementation of how to prepare this object for use. All classes that extends this class have to implement {\ttfamily prepare\+For\+Use\+Impl} and not {\ttfamily prepare\+For\+Use} since {\ttfamily prepare\+For\+Use} calls {\ttfamily prepare\+For\+Use\+Impl}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em monitor} & the Task\+Monitor to use \\
+\hline
+{\em repository} & the Object\+Repository to use \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1options_1_1_abstract_option_handler_ad0e9c7d4b0e2b185749f36ce28540efb}{moa.\+options.\+Abstract\+Option\+Handler}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/clusterers/Abstract\+Clusterer.\+java\end{DoxyCompactItemize}

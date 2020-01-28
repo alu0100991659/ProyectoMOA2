@@ -1,0 +1,181 @@
+\hypertarget{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_binary_tree_numeric_attribute_class_observer_regression}{}\doxysection{moa.\+classifiers.\+core.\+attributeclassobservers.\+Binary\+Tree\+Numeric\+Attribute\+Class\+Observer\+Regression Class Reference}
+\label{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_binary_tree_numeric_attribute_class_observer_regression}\index{moa.classifiers.core.attributeclassobservers.BinaryTreeNumericAttributeClassObserverRegression@{moa.classifiers.core.attributeclassobservers.BinaryTreeNumericAttributeClassObserverRegression}}
+
+
+Inheritance diagram for moa.\+classifiers.\+core.\+attributeclassobservers.\+Binary\+Tree\+Numeric\+Attribute\+Class\+Observer\+Regression\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+classifiers.\+core.\+attributeclassobservers.\+Binary\+Tree\+Numeric\+Attribute\+Class\+Observer\+Regression\+:
+% FIG 1
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_binary_tree_numeric_attribute_class_observer_regression_1_1_node}{Node}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_binary_tree_numeric_attribute_class_observer_regression_a253a5b4cbfd131c9eb786cfa65ce04a2}\label{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_binary_tree_numeric_attribute_class_observer_regression_a253a5b4cbfd131c9eb786cfa65ce04a2}} 
+void {\bfseries observe\+Attribute\+Target} (double att\+Val, double target)
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_binary_tree_numeric_attribute_class_observer_regression_ab42fdd52f1f21027d84050f5aa2ed3fa}{observe\+Attribute\+Class}} (double att\+Val, int class\+Val, double weight)
+\item 
+double \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_binary_tree_numeric_attribute_class_observer_regression_a67a3df2f17b8b895fa428fbaa0b8799e}{probability\+Of\+Attribute\+Value\+Given\+Class}} (double att\+Val, int class\+Val)
+\item 
+\mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1_attribute_split_suggestion}{Attribute\+Split\+Suggestion}} \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_binary_tree_numeric_attribute_class_observer_regression_afc1015100b991928eb043cfe6bb4ddd0}{get\+Best\+Evaluated\+Split\+Suggestion}} (\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1core_1_1splitcriteria_1_1_split_criterion}{Split\+Criterion}} criterion, double\mbox{[}$\,$\mbox{]} pre\+Split\+Dist, int att\+Index, boolean binary\+Only)
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_binary_tree_numeric_attribute_class_observer_regression_a25d46c766eb49acbc861b47380c53120}{get\+Description}} (String\+Builder sb, int indent)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_binary_tree_numeric_attribute_class_observer_regression_a39a23b9019fc2c88aa76a41ed5b9fe4a}\label{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_binary_tree_numeric_attribute_class_observer_regression_a39a23b9019fc2c88aa76a41ed5b9fe4a}} 
+\mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_binary_tree_numeric_attribute_class_observer_regression_1_1_node}{Node}} {\bfseries root1} = null
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_binary_tree_numeric_attribute_class_observer_regression_a2e68e444ee4f417716d9c25605d3447b}\label{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_binary_tree_numeric_attribute_class_observer_regression_a2e68e444ee4f417716d9c25605d3447b}} 
+static final long {\bfseries serial\+Version\+U\+ID} = 1L
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_binary_tree_numeric_attribute_class_observer_regression_aebea838f7807b19e042b82b63f09d261}\label{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_binary_tree_numeric_attribute_class_observer_regression_aebea838f7807b19e042b82b63f09d261}} 
+\mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1_attribute_split_suggestion}{Attribute\+Split\+Suggestion}} {\bfseries search\+For\+Best\+Split\+Option} (\mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_binary_tree_numeric_attribute_class_observer_regression_1_1_node}{Node}} current\+Node, \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1_attribute_split_suggestion}{Attribute\+Split\+Suggestion}} current\+Best\+Option, double\mbox{[}$\,$\mbox{]} actual\+Parent\+Left, double\mbox{[}$\,$\mbox{]} parent\+Left, double\mbox{[}$\,$\mbox{]} parent\+Right, boolean left\+Child, \mbox{\hyperlink{interfacemoa_1_1classifiers_1_1core_1_1splitcriteria_1_1_split_criterion}{Split\+Criterion}} criterion, double\mbox{[}$\,$\mbox{]} pre\+Split\+Dist, int att\+Index)
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_binary_tree_numeric_attribute_class_observer_regression_ac0b9a1b298f15bb18922d6d80d20ef85}{prepare\+For\+Use\+Impl}} (\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}} monitor, \mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}} repository)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Class for observing the class data distribution for a numeric attribute using a binary tree. This observer monitors the class distribution of a given attribute.
+
+Learning Adaptive Model Rules from High-\/\+Speed Data Streams, E\+C\+ML 2013, E. Almeida, C. Ferreira, P. Kosina and J. Gama; 
+
+\begin{DoxyAuthor}{Author}
+E. Almeida, J. Gama 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+2
+\end{DoxyParagraph}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_binary_tree_numeric_attribute_class_observer_regression_afc1015100b991928eb043cfe6bb4ddd0}\label{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_binary_tree_numeric_attribute_class_observer_regression_afc1015100b991928eb043cfe6bb4ddd0}} 
+\index{moa.classifiers.core.attributeclassobservers.BinaryTreeNumericAttributeClassObserverRegression@{moa.classifiers.core.attributeclassobservers.BinaryTreeNumericAttributeClassObserverRegression}!getBestEvaluatedSplitSuggestion@{getBestEvaluatedSplitSuggestion}}
+\index{getBestEvaluatedSplitSuggestion@{getBestEvaluatedSplitSuggestion}!moa.classifiers.core.attributeclassobservers.BinaryTreeNumericAttributeClassObserverRegression@{moa.classifiers.core.attributeclassobservers.BinaryTreeNumericAttributeClassObserverRegression}}
+\doxysubsubsection{\texorpdfstring{getBestEvaluatedSplitSuggestion()}{getBestEvaluatedSplitSuggestion()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1_attribute_split_suggestion}{Attribute\+Split\+Suggestion}} moa.\+classifiers.\+core.\+attributeclassobservers.\+Binary\+Tree\+Numeric\+Attribute\+Class\+Observer\+Regression.\+get\+Best\+Evaluated\+Split\+Suggestion (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1core_1_1splitcriteria_1_1_split_criterion}{Split\+Criterion}}}]{criterion,  }\item[{double\mbox{[}$\,$\mbox{]}}]{pre\+Split\+Dist,  }\item[{int}]{att\+Index,  }\item[{boolean}]{binary\+Only }\end{DoxyParamCaption})}
+
+Gets the best split suggestion given a criterion and a class distribution
+
+
+\begin{DoxyParams}{Parameters}
+{\em criterion} & the split criterion to use \\
+\hline
+{\em pre\+Split\+Dist} & the class distribution before the split \\
+\hline
+{\em att\+Index} & the attribute index \\
+\hline
+{\em binary\+Only} & true to use binary splits \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+suggestion of best attribute split 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_attribute_class_observer_a989571adba7ae36c8bda51b2d6f87b5b}{moa.\+classifiers.\+core.\+attributeclassobservers.\+Attribute\+Class\+Observer}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_binary_tree_numeric_attribute_class_observer_regression_a25d46c766eb49acbc861b47380c53120}\label{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_binary_tree_numeric_attribute_class_observer_regression_a25d46c766eb49acbc861b47380c53120}} 
+\index{moa.classifiers.core.attributeclassobservers.BinaryTreeNumericAttributeClassObserverRegression@{moa.classifiers.core.attributeclassobservers.BinaryTreeNumericAttributeClassObserverRegression}!getDescription@{getDescription}}
+\index{getDescription@{getDescription}!moa.classifiers.core.attributeclassobservers.BinaryTreeNumericAttributeClassObserverRegression@{moa.classifiers.core.attributeclassobservers.BinaryTreeNumericAttributeClassObserverRegression}}
+\doxysubsubsection{\texorpdfstring{getDescription()}{getDescription()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+core.\+attributeclassobservers.\+Binary\+Tree\+Numeric\+Attribute\+Class\+Observer\+Regression.\+get\+Description (\begin{DoxyParamCaption}\item[{String\+Builder}]{sb,  }\item[{int}]{indent }\end{DoxyParamCaption})}
+
+Returns a string representation of this object. Used in {\ttfamily \mbox{\hyperlink{classmoa_1_1_abstract_m_o_a_object_ac686fd3b07c734cf21f1894376fe402d}{Abstract\+M\+O\+A\+Object.\+to\+String}}} to give a string representation of the object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sb} & the stringbuilder to add the description \\
+\hline
+{\em indent} & the number of characters to indent \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1_m_o_a_object_afdaf5098f1fe6c852018ce64c28e17f5}{moa.\+M\+O\+A\+Object}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_binary_tree_numeric_attribute_class_observer_regression_ab42fdd52f1f21027d84050f5aa2ed3fa}\label{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_binary_tree_numeric_attribute_class_observer_regression_ab42fdd52f1f21027d84050f5aa2ed3fa}} 
+\index{moa.classifiers.core.attributeclassobservers.BinaryTreeNumericAttributeClassObserverRegression@{moa.classifiers.core.attributeclassobservers.BinaryTreeNumericAttributeClassObserverRegression}!observeAttributeClass@{observeAttributeClass}}
+\index{observeAttributeClass@{observeAttributeClass}!moa.classifiers.core.attributeclassobservers.BinaryTreeNumericAttributeClassObserverRegression@{moa.classifiers.core.attributeclassobservers.BinaryTreeNumericAttributeClassObserverRegression}}
+\doxysubsubsection{\texorpdfstring{observeAttributeClass()}{observeAttributeClass()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+core.\+attributeclassobservers.\+Binary\+Tree\+Numeric\+Attribute\+Class\+Observer\+Regression.\+observe\+Attribute\+Class (\begin{DoxyParamCaption}\item[{double}]{att\+Val,  }\item[{int}]{class\+Val,  }\item[{double}]{weight }\end{DoxyParamCaption})}
+
+Updates statistics of this observer given an attribute value, a class and the weight of the instance observed
+
+
+\begin{DoxyParams}{Parameters}
+{\em att\+Val} & the value of the attribute \\
+\hline
+{\em class\+Val} & the class \\
+\hline
+{\em weight} & the weight of the instance \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_attribute_class_observer_adeb638c64bb2dad4266a7db241398bf5}{moa.\+classifiers.\+core.\+attributeclassobservers.\+Attribute\+Class\+Observer}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_binary_tree_numeric_attribute_class_observer_regression_ac0b9a1b298f15bb18922d6d80d20ef85}\label{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_binary_tree_numeric_attribute_class_observer_regression_ac0b9a1b298f15bb18922d6d80d20ef85}} 
+\index{moa.classifiers.core.attributeclassobservers.BinaryTreeNumericAttributeClassObserverRegression@{moa.classifiers.core.attributeclassobservers.BinaryTreeNumericAttributeClassObserverRegression}!prepareForUseImpl@{prepareForUseImpl}}
+\index{prepareForUseImpl@{prepareForUseImpl}!moa.classifiers.core.attributeclassobservers.BinaryTreeNumericAttributeClassObserverRegression@{moa.classifiers.core.attributeclassobservers.BinaryTreeNumericAttributeClassObserverRegression}}
+\doxysubsubsection{\texorpdfstring{prepareForUseImpl()}{prepareForUseImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+core.\+attributeclassobservers.\+Binary\+Tree\+Numeric\+Attribute\+Class\+Observer\+Regression.\+prepare\+For\+Use\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}}}]{monitor,  }\item[{\mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}}}]{repository }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+This method describes the implementation of how to prepare this object for use. All classes that extends this class have to implement {\ttfamily prepare\+For\+Use\+Impl} and not {\ttfamily prepare\+For\+Use} since {\ttfamily prepare\+For\+Use} calls {\ttfamily prepare\+For\+Use\+Impl}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em monitor} & the Task\+Monitor to use \\
+\hline
+{\em repository} & the Object\+Repository to use \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1options_1_1_abstract_option_handler_ad0e9c7d4b0e2b185749f36ce28540efb}{moa.\+options.\+Abstract\+Option\+Handler}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_binary_tree_numeric_attribute_class_observer_regression_a67a3df2f17b8b895fa428fbaa0b8799e}\label{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_binary_tree_numeric_attribute_class_observer_regression_a67a3df2f17b8b895fa428fbaa0b8799e}} 
+\index{moa.classifiers.core.attributeclassobservers.BinaryTreeNumericAttributeClassObserverRegression@{moa.classifiers.core.attributeclassobservers.BinaryTreeNumericAttributeClassObserverRegression}!probabilityOfAttributeValueGivenClass@{probabilityOfAttributeValueGivenClass}}
+\index{probabilityOfAttributeValueGivenClass@{probabilityOfAttributeValueGivenClass}!moa.classifiers.core.attributeclassobservers.BinaryTreeNumericAttributeClassObserverRegression@{moa.classifiers.core.attributeclassobservers.BinaryTreeNumericAttributeClassObserverRegression}}
+\doxysubsubsection{\texorpdfstring{probabilityOfAttributeValueGivenClass()}{probabilityOfAttributeValueGivenClass()}}
+{\footnotesize\ttfamily double moa.\+classifiers.\+core.\+attributeclassobservers.\+Binary\+Tree\+Numeric\+Attribute\+Class\+Observer\+Regression.\+probability\+Of\+Attribute\+Value\+Given\+Class (\begin{DoxyParamCaption}\item[{double}]{att\+Val,  }\item[{int}]{class\+Val }\end{DoxyParamCaption})}
+
+Gets the probability for an attribute value given a class
+
+
+\begin{DoxyParams}{Parameters}
+{\em att\+Val} & the attribute value \\
+\hline
+{\em class\+Val} & the class \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+probability for an attribute value given a class 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_attribute_class_observer_af4e7cc0d1cd75c196f00b09c2c4d5458}{moa.\+classifiers.\+core.\+attributeclassobservers.\+Attribute\+Class\+Observer}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/classifiers/core/attributeclassobservers/Binary\+Tree\+Numeric\+Attribute\+Class\+Observer\+Regression.\+java\end{DoxyCompactItemize}

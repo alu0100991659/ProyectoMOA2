@@ -1,0 +1,85 @@
+by Walid Gara on April 20, 2019 using M\+OA 2019.\+04.\+0
+
+Massive Online Analysis (M\+OA) is also available in Docker. Docker images are located in the \href{https://hub.docker.com/r/waikato/moa}{\texttt{ waikato/moa}} Docker Hub repository.
+
+You can download the image and start using M\+OA. Image releases are tagged using the following format\+:
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Tags }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description~  }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Tags }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description~  }\\\cline{1-2}
+\endhead
+\PBS\centering latest &\PBS\centering M\+OA G\+UI image  \\\cline{1-2}
+\PBS\centering devel &\PBS\centering M\+OA G\+UI image that tracks Github repository  \\\cline{1-2}
+\end{longtabu}
+
+
+First, you need to install Docker in your machine.
+
+Download M\+OA Docker image
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$ docker pull waikato/moa:latest}
+\end{DoxyCode}
+\hypertarget{md__c_1__users__edbard_eclipse-java-workspace__proyecto_m_o_a_docker_moa_docker_tutorial_autotoc_md1}{}\doxysubsubsection{For Linux\+:}\label{md__c_1__users__edbard_eclipse-java-workspace__proyecto_m_o_a_docker_moa_docker_tutorial_autotoc_md1}
+You need to expose your xhost so that the Docker container can display M\+OA G\+UI. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$ xhost +local:root}
+\end{DoxyCode}
+
+
+Start M\+OA Docker container.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$ docker run -\/it -\/-\/env="DISPLAY" -\/-\/volume="/tmp/.X11-\/unix:/tmp/.X11-\/unix:rw" waikato/moa:latest}
+\end{DoxyCode}
+\hypertarget{md__c_1__users__edbard_eclipse-java-workspace__proyecto_m_o_a_docker_moa_docker_tutorial_autotoc_md2}{}\doxysubsubsection{For windows 10\+:}\label{md__c_1__users__edbard_eclipse-java-workspace__proyecto_m_o_a_docker_moa_docker_tutorial_autotoc_md2}
+You need to install \href{https://sourceforge.net/projects/vcxsrv/}{\texttt{ Vc\+Xsrv}} and configure it, so Docker can acces to X11 display server. You can follow this \href{https://dev.to/darksmile92/run-gui-app-in-linux-docker-container-on-windows-host-4kde}{\texttt{ tutorial}}.
+
+Then, you have to get your local ip address. Run this command in the {\bfseries{Command Prompt}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$ ipconfig}
+\end{DoxyCode}
+
+
+Example of local ip address\+: {\ttfamily 10.\+42.\+0.\+94}
+
+Then start M\+OA G\+UI container where {\ttfamily $<$ip\+\_\+address$>$} is your local ip address.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$ docker run -\/it -\/-\/privileged -\/e DISPLAY=<ip\_address>:0.0 -\/v /tmp/.X11-\/unix:/tmp/.X11-\/unix waikato/moa:latest}
+\end{DoxyCode}
+\hypertarget{md__c_1__users__edbard_eclipse-java-workspace__proyecto_m_o_a_docker_moa_docker_tutorial_autotoc_md3}{}\doxysubsubsection{For Mac\+OS}\label{md__c_1__users__edbard_eclipse-java-workspace__proyecto_m_o_a_docker_moa_docker_tutorial_autotoc_md3}
+You need to install \href{https://www.xquartz.org/}{\texttt{ X\+Quartz}} and allow connections from network clients. See this \href{https://sourabhbajaj.com/blog/2017/02/07/gui-applications-docker-mac/\#install-xquartz}{\texttt{ tutorial}}.
+
+Then, you have to get your local ip address. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$ ifconfig}
+\end{DoxyCode}
+
+
+Expose your xhost where {\ttfamily $<$ip\+\_\+address$>$} is your local ip address.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$ xhost + <ip\_address>}
+\end{DoxyCode}
+
+
+Start M\+OA G\+UI container
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$ docker run -\/d -\/e DISPLAY=<ip\_address>:0 -\/v /tmp/.X11-\/unix:/tmp/.X11-\/unix waikato/moa:latest}
+\end{DoxyCode}
+ 

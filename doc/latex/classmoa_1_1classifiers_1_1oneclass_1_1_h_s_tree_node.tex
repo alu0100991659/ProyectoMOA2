@@ -1,0 +1,111 @@
+\hypertarget{classmoa_1_1classifiers_1_1oneclass_1_1_h_s_tree_node}{}\doxysection{moa.\+classifiers.\+oneclass.\+H\+S\+Tree\+Node Class Reference}
+\label{classmoa_1_1classifiers_1_1oneclass_1_1_h_s_tree_node}\index{moa.classifiers.oneclass.HSTreeNode@{moa.classifiers.oneclass.HSTreeNode}}
+
+
+Inheritance diagram for moa.\+classifiers.\+oneclass.\+H\+S\+Tree\+Node\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+classifiers.\+oneclass.\+H\+S\+Tree\+Node\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1classifiers_1_1oneclass_1_1_h_s_tree_node_ab850b4d9d5258840a933198068bc40b8}{H\+S\+Tree\+Node}} (double\mbox{[}$\,$\mbox{]} min, double\mbox{[}$\,$\mbox{]} max, int k, int max\+Depth)
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1oneclass_1_1_h_s_tree_node_a92c3b64402298074a6fff1c416c8708e}{update\+Mass}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst, boolean reference\+Window)
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1oneclass_1_1_h_s_tree_node_a74c53ecb372d515b2802446b277c196b}{update\+Model}} ()
+\item 
+double \mbox{\hyperlink{classmoa_1_1classifiers_1_1oneclass_1_1_h_s_tree_node_a31373741667c6b922813ab912b7bb0aa}{score}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst, int size\+Limit)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1oneclass_1_1_h_s_tree_node_a12e5dd958ac62c5d33b0ea0bd4f930fd}{print\+Node}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A node in an H\+S\+Tree. Based on the work S. C. Tan, K. M. Ting, and T. F. Liu, “\+Fast anomaly detection for streaming data,” in I\+J\+C\+AI Proceedings-\/\+International Joint Conference on Artificial Intelligence, 2011, vol. 22, no. 1, pp. 1511–1516.
+
+Made use of by H\+S\+Trees.\+java.
+
+\begin{DoxyAuthor}{Author}
+Richard Hugh Moulton 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1oneclass_1_1_h_s_tree_node_ab850b4d9d5258840a933198068bc40b8}\label{classmoa_1_1classifiers_1_1oneclass_1_1_h_s_tree_node_ab850b4d9d5258840a933198068bc40b8}} 
+\index{moa.classifiers.oneclass.HSTreeNode@{moa.classifiers.oneclass.HSTreeNode}!HSTreeNode@{HSTreeNode}}
+\index{HSTreeNode@{HSTreeNode}!moa.classifiers.oneclass.HSTreeNode@{moa.classifiers.oneclass.HSTreeNode}}
+\doxysubsubsection{\texorpdfstring{HSTreeNode()}{HSTreeNode()}}
+{\footnotesize\ttfamily moa.\+classifiers.\+oneclass.\+H\+S\+Tree\+Node.\+H\+S\+Tree\+Node (\begin{DoxyParamCaption}\item[{double\mbox{[}$\,$\mbox{]}}]{min,  }\item[{double\mbox{[}$\,$\mbox{]}}]{max,  }\item[{int}]{k,  }\item[{int}]{max\+Depth }\end{DoxyParamCaption})}
+
+Constructor for an \mbox{\hyperlink{classmoa_1_1classifiers_1_1oneclass_1_1_h_s_tree_node}{H\+S\+Tree\+Node}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em min} & the minimum values of the attributes for this node\textquotesingle{}s workspace \\
+\hline
+{\em max} & the maximum values of the attributes for this node\textquotesingle{}s workspace \\
+\hline
+{\em k} & the depth of this node in the H\+S\+Tree \\
+\hline
+{\em max\+Depth} & the maximum depth of this H\+S\+Tree \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1oneclass_1_1_h_s_tree_node_a12e5dd958ac62c5d33b0ea0bd4f930fd}\label{classmoa_1_1classifiers_1_1oneclass_1_1_h_s_tree_node_a12e5dd958ac62c5d33b0ea0bd4f930fd}} 
+\index{moa.classifiers.oneclass.HSTreeNode@{moa.classifiers.oneclass.HSTreeNode}!printNode@{printNode}}
+\index{printNode@{printNode}!moa.classifiers.oneclass.HSTreeNode@{moa.classifiers.oneclass.HSTreeNode}}
+\doxysubsubsection{\texorpdfstring{printNode()}{printNode()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+oneclass.\+H\+S\+Tree\+Node.\+print\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Prints this node to string and, if it is an internal node, prints its children nodes as well. Useful for debugging the entire tree structure. \mbox{\Hypertarget{classmoa_1_1classifiers_1_1oneclass_1_1_h_s_tree_node_a31373741667c6b922813ab912b7bb0aa}\label{classmoa_1_1classifiers_1_1oneclass_1_1_h_s_tree_node_a31373741667c6b922813ab912b7bb0aa}} 
+\index{moa.classifiers.oneclass.HSTreeNode@{moa.classifiers.oneclass.HSTreeNode}!score@{score}}
+\index{score@{score}!moa.classifiers.oneclass.HSTreeNode@{moa.classifiers.oneclass.HSTreeNode}}
+\doxysubsubsection{\texorpdfstring{score()}{score()}}
+{\footnotesize\ttfamily double moa.\+classifiers.\+oneclass.\+H\+S\+Tree\+Node.\+score (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{inst,  }\item[{int}]{size\+Limit }\end{DoxyParamCaption})}
+
+If this node is a leaf node or it has a mass profile of less than size\+Limit, this returns the anomaly score for the argument instance. Otherwise this node determines which of its subordinate nodes the argument instance belongs to and asks it provide the anomaly score.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & the instance being passed through the tree \\
+\hline
+{\em size\+Limit} & the minimum mass profile for a node to calculate the argument instance\textquotesingle{}s anomaly score\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the argument instance\textquotesingle{}s anomaly score (r $\ast$ 2$^\wedge$depth) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1oneclass_1_1_h_s_tree_node_a92c3b64402298074a6fff1c416c8708e}\label{classmoa_1_1classifiers_1_1oneclass_1_1_h_s_tree_node_a92c3b64402298074a6fff1c416c8708e}} 
+\index{moa.classifiers.oneclass.HSTreeNode@{moa.classifiers.oneclass.HSTreeNode}!updateMass@{updateMass}}
+\index{updateMass@{updateMass}!moa.classifiers.oneclass.HSTreeNode@{moa.classifiers.oneclass.HSTreeNode}}
+\doxysubsubsection{\texorpdfstring{updateMass()}{updateMass()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+oneclass.\+H\+S\+Tree\+Node.\+update\+Mass (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{inst,  }\item[{boolean}]{reference\+Window }\end{DoxyParamCaption})}
+
+Update the mass profile of this node.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & the instance being passed through the H\+S\+Tree. \\
+\hline
+{\em reference\+Window} & if the H\+S\+Tree is in the initial reference window\+: {\bfseries{true}}, else\+: {\bfseries{false}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1oneclass_1_1_h_s_tree_node_a74c53ecb372d515b2802446b277c196b}\label{classmoa_1_1classifiers_1_1oneclass_1_1_h_s_tree_node_a74c53ecb372d515b2802446b277c196b}} 
+\index{moa.classifiers.oneclass.HSTreeNode@{moa.classifiers.oneclass.HSTreeNode}!updateModel@{updateModel}}
+\index{updateModel@{updateModel}!moa.classifiers.oneclass.HSTreeNode@{moa.classifiers.oneclass.HSTreeNode}}
+\doxysubsubsection{\texorpdfstring{updateModel()}{updateModel()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+oneclass.\+H\+S\+Tree\+Node.\+update\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Update the node\textquotesingle{}s model by setting the latest window\textquotesingle{}s mass profile as the reference window\textquotesingle{}s mass profile, resetting the latest window\textquotesingle{}s mass profile to zero and updating any subordinates nodes\textquotesingle{} models. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/classifiers/oneclass/H\+S\+Tree\+Node.\+java\end{DoxyCompactItemize}

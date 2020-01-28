@@ -1,0 +1,152 @@
+\hypertarget{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_e_w_m_a_chart_d_m}{}\doxysection{moa.\+classifiers.\+core.\+driftdetection.\+E\+W\+M\+A\+Chart\+DM Class Reference}
+\label{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_e_w_m_a_chart_d_m}\index{moa.classifiers.core.driftdetection.EWMAChartDM@{moa.classifiers.core.driftdetection.EWMAChartDM}}
+
+
+Inheritance diagram for moa.\+classifiers.\+core.\+driftdetection.\+E\+W\+M\+A\+Chart\+DM\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+classifiers.\+core.\+driftdetection.\+E\+W\+M\+A\+Chart\+DM\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_e_w_m_a_chart_d_m_ad3a427d7757847e99de8652e3929802f}{reset\+Learning}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_e_w_m_a_chart_d_m_a91d3aeac128037f6ae53aea96b20b39b}{input}} (double prediction)
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_e_w_m_a_chart_d_m_a67dffa54f4de66c183549d99940e3d04}{get\+Description}} (String\+Builder sb, int indent)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries min\+Num\+Instances\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} {\bfseries lambda\+Option}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_e_w_m_a_chart_d_m_a01585cfbd17bbad9caab11ddd341c05e}{prepare\+For\+Use\+Impl}} (\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}} monitor, \mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}} repository)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Drift detection method based in E\+W\+MA Charts of Ross, Adams, Tasoulis and Hand 2012
+
+\begin{DoxyAuthor}{Author}
+Manuel Baena (\href{mailto:mbaena@lcc.uma.es}{\texttt{ mbaena@lcc.\+uma.\+es}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+7 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_e_w_m_a_chart_d_m_a67dffa54f4de66c183549d99940e3d04}\label{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_e_w_m_a_chart_d_m_a67dffa54f4de66c183549d99940e3d04}} 
+\index{moa.classifiers.core.driftdetection.EWMAChartDM@{moa.classifiers.core.driftdetection.EWMAChartDM}!getDescription@{getDescription}}
+\index{getDescription@{getDescription}!moa.classifiers.core.driftdetection.EWMAChartDM@{moa.classifiers.core.driftdetection.EWMAChartDM}}
+\doxysubsubsection{\texorpdfstring{getDescription()}{getDescription()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+core.\+driftdetection.\+E\+W\+M\+A\+Chart\+D\+M.\+get\+Description (\begin{DoxyParamCaption}\item[{String\+Builder}]{sb,  }\item[{int}]{indent }\end{DoxyParamCaption})}
+
+Returns a string representation of the model.
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & the stringbuilder to add the description \\
+\hline
+{\em indent} & the number of characters to indent \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_abstract_change_detector_a111e2c5e7c7809001e0fd66f71c49853}{moa.\+classifiers.\+core.\+driftdetection.\+Abstract\+Change\+Detector}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_e_w_m_a_chart_d_m_a91d3aeac128037f6ae53aea96b20b39b}\label{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_e_w_m_a_chart_d_m_a91d3aeac128037f6ae53aea96b20b39b}} 
+\index{moa.classifiers.core.driftdetection.EWMAChartDM@{moa.classifiers.core.driftdetection.EWMAChartDM}!input@{input}}
+\index{input@{input}!moa.classifiers.core.driftdetection.EWMAChartDM@{moa.classifiers.core.driftdetection.EWMAChartDM}}
+\doxysubsubsection{\texorpdfstring{input()}{input()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+core.\+driftdetection.\+E\+W\+M\+A\+Chart\+D\+M.\+input (\begin{DoxyParamCaption}\item[{double}]{input\+Value }\end{DoxyParamCaption})}
+
+Adding a numeric value to the change detector$<$br$>$~\newline
+
+
+The output of the change detector is modified after the insertion of a new item inside.
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Value} & the number to insert into the change detector \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_abstract_change_detector_abbc8e51592cab2d77a90092030124fd6}{moa.\+classifiers.\+core.\+driftdetection.\+Abstract\+Change\+Detector}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_e_w_m_a_chart_d_m_a01585cfbd17bbad9caab11ddd341c05e}\label{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_e_w_m_a_chart_d_m_a01585cfbd17bbad9caab11ddd341c05e}} 
+\index{moa.classifiers.core.driftdetection.EWMAChartDM@{moa.classifiers.core.driftdetection.EWMAChartDM}!prepareForUseImpl@{prepareForUseImpl}}
+\index{prepareForUseImpl@{prepareForUseImpl}!moa.classifiers.core.driftdetection.EWMAChartDM@{moa.classifiers.core.driftdetection.EWMAChartDM}}
+\doxysubsubsection{\texorpdfstring{prepareForUseImpl()}{prepareForUseImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+core.\+driftdetection.\+E\+W\+M\+A\+Chart\+D\+M.\+prepare\+For\+Use\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}}}]{monitor,  }\item[{\mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}}}]{repository }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+This method describes the implementation of how to prepare this object for use. All classes that extends this class have to implement {\ttfamily prepare\+For\+Use\+Impl} and not {\ttfamily prepare\+For\+Use} since {\ttfamily prepare\+For\+Use} calls {\ttfamily prepare\+For\+Use\+Impl}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em monitor} & the Task\+Monitor to use \\
+\hline
+{\em repository} & the Object\+Repository to use \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1options_1_1_abstract_option_handler_ad0e9c7d4b0e2b185749f36ce28540efb}{moa.\+options.\+Abstract\+Option\+Handler}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_e_w_m_a_chart_d_m_ad3a427d7757847e99de8652e3929802f}\label{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_e_w_m_a_chart_d_m_ad3a427d7757847e99de8652e3929802f}} 
+\index{moa.classifiers.core.driftdetection.EWMAChartDM@{moa.classifiers.core.driftdetection.EWMAChartDM}!resetLearning@{resetLearning}}
+\index{resetLearning@{resetLearning}!moa.classifiers.core.driftdetection.EWMAChartDM@{moa.classifiers.core.driftdetection.EWMAChartDM}}
+\doxysubsubsection{\texorpdfstring{resetLearning()}{resetLearning()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+core.\+driftdetection.\+E\+W\+M\+A\+Chart\+D\+M.\+reset\+Learning (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Resets this change detector. It must be similar to starting a new change detector from scratch. 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_abstract_change_detector_a71b1c7d69b0809172e464cfa243d8cc4}{moa.\+classifiers.\+core.\+driftdetection.\+Abstract\+Change\+Detector}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_e_w_m_a_chart_d_m_ae69cdc2fe10029729c31d54553914594}\label{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_e_w_m_a_chart_d_m_ae69cdc2fe10029729c31d54553914594}} 
+\index{moa.classifiers.core.driftdetection.EWMAChartDM@{moa.classifiers.core.driftdetection.EWMAChartDM}!lambdaOption@{lambdaOption}}
+\index{lambdaOption@{lambdaOption}!moa.classifiers.core.driftdetection.EWMAChartDM@{moa.classifiers.core.driftdetection.EWMAChartDM}}
+\doxysubsubsection{\texorpdfstring{lambdaOption}{lambdaOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} moa.\+classifiers.\+core.\+driftdetection.\+E\+W\+M\+A\+Chart\+D\+M.\+lambda\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FloatOption(\textcolor{stringliteral}{"lambda"}, \textcolor{charliteral}{'l'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Lambda parameter of the EWMA Chart Method"}, 0.2, 0.0, Float.MAX\_VALUE)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_e_w_m_a_chart_d_m_a3952bd8a3e86708798a34fa32b3b7dfe}\label{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_e_w_m_a_chart_d_m_a3952bd8a3e86708798a34fa32b3b7dfe}} 
+\index{moa.classifiers.core.driftdetection.EWMAChartDM@{moa.classifiers.core.driftdetection.EWMAChartDM}!minNumInstancesOption@{minNumInstancesOption}}
+\index{minNumInstancesOption@{minNumInstancesOption}!moa.classifiers.core.driftdetection.EWMAChartDM@{moa.classifiers.core.driftdetection.EWMAChartDM}}
+\doxysubsubsection{\texorpdfstring{minNumInstancesOption}{minNumInstancesOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+classifiers.\+core.\+driftdetection.\+E\+W\+M\+A\+Chart\+D\+M.\+min\+Num\+Instances\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(}
+\DoxyCodeLine{            \textcolor{stringliteral}{"minNumInstances"},}
+\DoxyCodeLine{            \textcolor{charliteral}{'n'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"The minimum number of instances before permitting detecting change."},}
+\DoxyCodeLine{            30, 0, Integer.MAX\_VALUE)}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/classifiers/core/driftdetection/E\+W\+M\+A\+Chart\+D\+M.\+java\end{DoxyCompactItemize}

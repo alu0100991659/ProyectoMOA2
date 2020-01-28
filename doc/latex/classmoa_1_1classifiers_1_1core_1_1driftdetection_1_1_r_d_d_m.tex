@@ -1,0 +1,200 @@
+\hypertarget{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_r_d_d_m}{}\doxysection{moa.\+classifiers.\+core.\+driftdetection.\+R\+D\+DM Class Reference}
+\label{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_r_d_d_m}\index{moa.classifiers.core.driftdetection.RDDM@{moa.classifiers.core.driftdetection.RDDM}}
+
+
+Inheritance diagram for moa.\+classifiers.\+core.\+driftdetection.\+R\+D\+DM\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+classifiers.\+core.\+driftdetection.\+R\+D\+DM\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_r_d_d_m_a847eeb55a9dd0ecd03aab9ca3aa3e3f3}\label{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_r_d_d_m_a847eeb55a9dd0ecd03aab9ca3aa3e3f3}} 
+void {\bfseries initialize} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_r_d_d_m_aaa1d06f5923e65fa6f3ee7227eb09401}{reset\+Learning}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_r_d_d_m_a3866d3fd7acf9ed70d4932dd40bd4628}{input}} (double prediction)
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_r_d_d_m_a65bed18a20f1abb38251f60ebba6da7f}{get\+Description}} (String\+Builder sb, int indent)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries min\+Num\+Instances\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} {\bfseries warning\+Level\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} {\bfseries drift\+Level\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries max\+Size\+Concept\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries min\+Size\+Stable\+Concept\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries warn\+Limit\+Option}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_r_d_d_m_ae56b796e69d7f814c1b71c43c35c6012}{prepare\+For\+Use\+Impl}} (\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}} monitor, \mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}} repository)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_r_d_d_m_a65bed18a20f1abb38251f60ebba6da7f}\label{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_r_d_d_m_a65bed18a20f1abb38251f60ebba6da7f}} 
+\index{moa.classifiers.core.driftdetection.RDDM@{moa.classifiers.core.driftdetection.RDDM}!getDescription@{getDescription}}
+\index{getDescription@{getDescription}!moa.classifiers.core.driftdetection.RDDM@{moa.classifiers.core.driftdetection.RDDM}}
+\doxysubsubsection{\texorpdfstring{getDescription()}{getDescription()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+core.\+driftdetection.\+R\+D\+D\+M.\+get\+Description (\begin{DoxyParamCaption}\item[{String\+Builder}]{sb,  }\item[{int}]{indent }\end{DoxyParamCaption})}
+
+Returns a string representation of the model.
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & the stringbuilder to add the description \\
+\hline
+{\em indent} & the number of characters to indent \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_abstract_change_detector_a111e2c5e7c7809001e0fd66f71c49853}{moa.\+classifiers.\+core.\+driftdetection.\+Abstract\+Change\+Detector}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_r_d_d_m_a3866d3fd7acf9ed70d4932dd40bd4628}\label{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_r_d_d_m_a3866d3fd7acf9ed70d4932dd40bd4628}} 
+\index{moa.classifiers.core.driftdetection.RDDM@{moa.classifiers.core.driftdetection.RDDM}!input@{input}}
+\index{input@{input}!moa.classifiers.core.driftdetection.RDDM@{moa.classifiers.core.driftdetection.RDDM}}
+\doxysubsubsection{\texorpdfstring{input()}{input()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+core.\+driftdetection.\+R\+D\+D\+M.\+input (\begin{DoxyParamCaption}\item[{double}]{input\+Value }\end{DoxyParamCaption})}
+
+Adding a numeric value to the change detector$<$br$>$~\newline
+
+
+The output of the change detector is modified after the insertion of a new item inside.
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Value} & the number to insert into the change detector \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_abstract_change_detector_abbc8e51592cab2d77a90092030124fd6}{moa.\+classifiers.\+core.\+driftdetection.\+Abstract\+Change\+Detector}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_r_d_d_m_ae56b796e69d7f814c1b71c43c35c6012}\label{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_r_d_d_m_ae56b796e69d7f814c1b71c43c35c6012}} 
+\index{moa.classifiers.core.driftdetection.RDDM@{moa.classifiers.core.driftdetection.RDDM}!prepareForUseImpl@{prepareForUseImpl}}
+\index{prepareForUseImpl@{prepareForUseImpl}!moa.classifiers.core.driftdetection.RDDM@{moa.classifiers.core.driftdetection.RDDM}}
+\doxysubsubsection{\texorpdfstring{prepareForUseImpl()}{prepareForUseImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+core.\+driftdetection.\+R\+D\+D\+M.\+prepare\+For\+Use\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}}}]{monitor,  }\item[{\mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}}}]{repository }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+This method describes the implementation of how to prepare this object for use. All classes that extends this class have to implement {\ttfamily prepare\+For\+Use\+Impl} and not {\ttfamily prepare\+For\+Use} since {\ttfamily prepare\+For\+Use} calls {\ttfamily prepare\+For\+Use\+Impl}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em monitor} & the Task\+Monitor to use \\
+\hline
+{\em repository} & the Object\+Repository to use \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1options_1_1_abstract_option_handler_ad0e9c7d4b0e2b185749f36ce28540efb}{moa.\+options.\+Abstract\+Option\+Handler}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_r_d_d_m_aaa1d06f5923e65fa6f3ee7227eb09401}\label{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_r_d_d_m_aaa1d06f5923e65fa6f3ee7227eb09401}} 
+\index{moa.classifiers.core.driftdetection.RDDM@{moa.classifiers.core.driftdetection.RDDM}!resetLearning@{resetLearning}}
+\index{resetLearning@{resetLearning}!moa.classifiers.core.driftdetection.RDDM@{moa.classifiers.core.driftdetection.RDDM}}
+\doxysubsubsection{\texorpdfstring{resetLearning()}{resetLearning()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+core.\+driftdetection.\+R\+D\+D\+M.\+reset\+Learning (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Resets this change detector. It must be similar to starting a new change detector from scratch. 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_abstract_change_detector_a71b1c7d69b0809172e464cfa243d8cc4}{moa.\+classifiers.\+core.\+driftdetection.\+Abstract\+Change\+Detector}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_r_d_d_m_a7cf0e79ba50a84bbe90ac99b51bd0652}\label{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_r_d_d_m_a7cf0e79ba50a84bbe90ac99b51bd0652}} 
+\index{moa.classifiers.core.driftdetection.RDDM@{moa.classifiers.core.driftdetection.RDDM}!driftLevelOption@{driftLevelOption}}
+\index{driftLevelOption@{driftLevelOption}!moa.classifiers.core.driftdetection.RDDM@{moa.classifiers.core.driftdetection.RDDM}}
+\doxysubsubsection{\texorpdfstring{driftLevelOption}{driftLevelOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} moa.\+classifiers.\+core.\+driftdetection.\+R\+D\+D\+M.\+drift\+Level\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FloatOption(\textcolor{stringliteral}{"driftLevel"}, }
+\DoxyCodeLine{            \textcolor{charliteral}{'o'}, \textcolor{stringliteral}{"Drift Level."},}
+\DoxyCodeLine{            2.258, 1.0, 5.0)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_r_d_d_m_aa198df18062dd26b4303c92f5fabb2fa}\label{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_r_d_d_m_aa198df18062dd26b4303c92f5fabb2fa}} 
+\index{moa.classifiers.core.driftdetection.RDDM@{moa.classifiers.core.driftdetection.RDDM}!maxSizeConceptOption@{maxSizeConceptOption}}
+\index{maxSizeConceptOption@{maxSizeConceptOption}!moa.classifiers.core.driftdetection.RDDM@{moa.classifiers.core.driftdetection.RDDM}}
+\doxysubsubsection{\texorpdfstring{maxSizeConceptOption}{maxSizeConceptOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+classifiers.\+core.\+driftdetection.\+R\+D\+D\+M.\+max\+Size\+Concept\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(\textcolor{stringliteral}{"maxSizeConcept"}, }
+\DoxyCodeLine{            \textcolor{charliteral}{'x'}, \textcolor{stringliteral}{"Maximum Size of Concept."},}
+\DoxyCodeLine{            40000, 1, Integer.MAX\_VALUE)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_r_d_d_m_a02d49ec4ce44aea0879385450e3cff55}\label{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_r_d_d_m_a02d49ec4ce44aea0879385450e3cff55}} 
+\index{moa.classifiers.core.driftdetection.RDDM@{moa.classifiers.core.driftdetection.RDDM}!minNumInstancesOption@{minNumInstancesOption}}
+\index{minNumInstancesOption@{minNumInstancesOption}!moa.classifiers.core.driftdetection.RDDM@{moa.classifiers.core.driftdetection.RDDM}}
+\doxysubsubsection{\texorpdfstring{minNumInstancesOption}{minNumInstancesOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+classifiers.\+core.\+driftdetection.\+R\+D\+D\+M.\+min\+Num\+Instances\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(\textcolor{stringliteral}{"minNumInstances"}, }
+\DoxyCodeLine{            \textcolor{charliteral}{'n'}, \textcolor{stringliteral}{"Minimum number of instances before monitoring changes."},}
+\DoxyCodeLine{            129, 0, Integer.MAX\_VALUE)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_r_d_d_m_a2b9e05ed66c3a686e0b69eafd100774a}\label{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_r_d_d_m_a2b9e05ed66c3a686e0b69eafd100774a}} 
+\index{moa.classifiers.core.driftdetection.RDDM@{moa.classifiers.core.driftdetection.RDDM}!minSizeStableConceptOption@{minSizeStableConceptOption}}
+\index{minSizeStableConceptOption@{minSizeStableConceptOption}!moa.classifiers.core.driftdetection.RDDM@{moa.classifiers.core.driftdetection.RDDM}}
+\doxysubsubsection{\texorpdfstring{minSizeStableConceptOption}{minSizeStableConceptOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+classifiers.\+core.\+driftdetection.\+R\+D\+D\+M.\+min\+Size\+Stable\+Concept\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(\textcolor{stringliteral}{"minSizeStableConcept"}, }
+\DoxyCodeLine{            \textcolor{charliteral}{'y'}, \textcolor{stringliteral}{"Minimum Size of Stable Concept."},}
+\DoxyCodeLine{            7000, 1, 20000)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_r_d_d_m_a79f983a13ffce92698dc790a7506f2f0}\label{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_r_d_d_m_a79f983a13ffce92698dc790a7506f2f0}} 
+\index{moa.classifiers.core.driftdetection.RDDM@{moa.classifiers.core.driftdetection.RDDM}!warningLevelOption@{warningLevelOption}}
+\index{warningLevelOption@{warningLevelOption}!moa.classifiers.core.driftdetection.RDDM@{moa.classifiers.core.driftdetection.RDDM}}
+\doxysubsubsection{\texorpdfstring{warningLevelOption}{warningLevelOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} moa.\+classifiers.\+core.\+driftdetection.\+R\+D\+D\+M.\+warning\+Level\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FloatOption(\textcolor{stringliteral}{"warningLevel"}, }
+\DoxyCodeLine{            \textcolor{charliteral}{'w'}, \textcolor{stringliteral}{"Warning Level."},}
+\DoxyCodeLine{            1.773, 1.0, 4.0)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_r_d_d_m_a820c62eeda9b864a00ad261a3b16e6d8}\label{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_r_d_d_m_a820c62eeda9b864a00ad261a3b16e6d8}} 
+\index{moa.classifiers.core.driftdetection.RDDM@{moa.classifiers.core.driftdetection.RDDM}!warnLimitOption@{warnLimitOption}}
+\index{warnLimitOption@{warnLimitOption}!moa.classifiers.core.driftdetection.RDDM@{moa.classifiers.core.driftdetection.RDDM}}
+\doxysubsubsection{\texorpdfstring{warnLimitOption}{warnLimitOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+classifiers.\+core.\+driftdetection.\+R\+D\+D\+M.\+warn\+Limit\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(\textcolor{stringliteral}{"warnLimit"}, }
+\DoxyCodeLine{            \textcolor{charliteral}{'z'}, \textcolor{stringliteral}{"Warning Limit of instances"},}
+\DoxyCodeLine{            1400, 1, 20000)}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/classifiers/core/driftdetection/R\+D\+D\+M.\+java\end{DoxyCompactItemize}

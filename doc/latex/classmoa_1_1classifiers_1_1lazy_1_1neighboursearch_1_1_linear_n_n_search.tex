@@ -1,0 +1,295 @@
+\hypertarget{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_linear_n_n_search}{}\doxysection{moa.\+classifiers.\+lazy.\+neighboursearch.\+Linear\+N\+N\+Search Class Reference}
+\label{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_linear_n_n_search}\index{moa.classifiers.lazy.neighboursearch.LinearNNSearch@{moa.classifiers.lazy.neighboursearch.LinearNNSearch}}
+
+
+Inheritance diagram for moa.\+classifiers.\+lazy.\+neighboursearch.\+Linear\+N\+N\+Search\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+classifiers.\+lazy.\+neighboursearch.\+Linear\+N\+N\+Search\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_linear_n_n_search_a8fe13a23cbb7647aa1cf5fd0b508c2a2}{Linear\+N\+N\+Search}} ()
+\item 
+\mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_linear_n_n_search_aef8ddbd47bad8a932a36095bc6adc72d}{Linear\+N\+N\+Search}} (\mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instances}{Instances}} insts)
+\item 
+String \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_linear_n_n_search_a30f8c109818ac3cba13dcf22b68d2754}{global\+Info}} ()
+\item 
+String \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_linear_n_n_search_a455caf41f4f340546f085ce0e4cf7648}{skip\+Identical\+Tip\+Text}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_linear_n_n_search_a280e600a63be5dc07de5a478828b1206}{set\+Skip\+Identical}} (boolean skip)
+\item 
+boolean \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_linear_n_n_search_a4dcdd3348decb929c3f70cc47dc56558}{get\+Skip\+Identical}} ()
+\item 
+\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_linear_n_n_search_a84348ab6a9b63c521931fe6794314895}{nearest\+Neighbour}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} target)  throws Exception 
+\item 
+\mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instances}{Instances}} \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_linear_n_n_search_af60dd2738258760909208275a7f96bef}{k\+Nearest\+Neighbours}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} target, int \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1k_n_n}{k\+NN}})  throws Exception 
+\item 
+double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_linear_n_n_search_a61a59a1df1f11531053e6503ddfdd78e}{get\+Distances}} ()  throws Exception 
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_linear_n_n_search_a776e3240935d70dab60ec85358dc977d}{set\+Instances}} (\mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instances}{Instances}} insts)  throws Exception 
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_linear_n_n_search_af9858a38247baef4fa7cad9a1254b6a0}{update}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} ins)  throws Exception 
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_linear_n_n_search_a6bf8b531815fbaa2bcd7006074533136}{add\+Instance\+Info}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} ins)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_linear_n_n_search_a967be9c2a44a9bb398d719ee0c15687c}{m\+\_\+\+Distances}}
+\item 
+boolean \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_linear_n_n_search_a9a98b09105651296b655c480d2f458e8}{m\+\_\+\+Skip\+Identical}} = false
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Class implementing the brute force search algorithm for nearest neighbour search. 
+
+Valid options are\+: 
+
+
+\begin{DoxyPre} -\/S
+   Skip identical instances (distances equal to zero).
+  \end{DoxyPre}
+
+
+\begin{DoxyAuthor}{Author}
+Ashraf M. Kibriya (amk14\mbox{[}at-\/the-\/rate\mbox{]}cs\mbox{[}dot\mbox{]}waikato\mbox{[}dot\mbox{]}ac\mbox{[}dot\mbox{]}nz) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+8034 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_linear_n_n_search_a8fe13a23cbb7647aa1cf5fd0b508c2a2}\label{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_linear_n_n_search_a8fe13a23cbb7647aa1cf5fd0b508c2a2}} 
+\index{moa.classifiers.lazy.neighboursearch.LinearNNSearch@{moa.classifiers.lazy.neighboursearch.LinearNNSearch}!LinearNNSearch@{LinearNNSearch}}
+\index{LinearNNSearch@{LinearNNSearch}!moa.classifiers.lazy.neighboursearch.LinearNNSearch@{moa.classifiers.lazy.neighboursearch.LinearNNSearch}}
+\doxysubsubsection{\texorpdfstring{LinearNNSearch()}{LinearNNSearch()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily moa.\+classifiers.\+lazy.\+neighboursearch.\+Linear\+N\+N\+Search.\+Linear\+N\+N\+Search (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructor. Needs \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_linear_n_n_search_a776e3240935d70dab60ec85358dc977d}{set\+Instances(\+Instances)}} to be called before the class is usable. \mbox{\Hypertarget{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_linear_n_n_search_aef8ddbd47bad8a932a36095bc6adc72d}\label{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_linear_n_n_search_aef8ddbd47bad8a932a36095bc6adc72d}} 
+\index{moa.classifiers.lazy.neighboursearch.LinearNNSearch@{moa.classifiers.lazy.neighboursearch.LinearNNSearch}!LinearNNSearch@{LinearNNSearch}}
+\index{LinearNNSearch@{LinearNNSearch}!moa.classifiers.lazy.neighboursearch.LinearNNSearch@{moa.classifiers.lazy.neighboursearch.LinearNNSearch}}
+\doxysubsubsection{\texorpdfstring{LinearNNSearch()}{LinearNNSearch()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily moa.\+classifiers.\+lazy.\+neighboursearch.\+Linear\+N\+N\+Search.\+Linear\+N\+N\+Search (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instances}{Instances}}}]{insts }\end{DoxyParamCaption})}
+
+Constructor that uses the supplied set of instances.
+
+
+\begin{DoxyParams}{Parameters}
+{\em insts} & the instances to use \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_linear_n_n_search_a6bf8b531815fbaa2bcd7006074533136}\label{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_linear_n_n_search_a6bf8b531815fbaa2bcd7006074533136}} 
+\index{moa.classifiers.lazy.neighboursearch.LinearNNSearch@{moa.classifiers.lazy.neighboursearch.LinearNNSearch}!addInstanceInfo@{addInstanceInfo}}
+\index{addInstanceInfo@{addInstanceInfo}!moa.classifiers.lazy.neighboursearch.LinearNNSearch@{moa.classifiers.lazy.neighboursearch.LinearNNSearch}}
+\doxysubsubsection{\texorpdfstring{addInstanceInfo()}{addInstanceInfo()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+lazy.\+neighboursearch.\+Linear\+N\+N\+Search.\+add\+Instance\+Info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{ins }\end{DoxyParamCaption})}
+
+Adds the given instance info. This implementation updates the range datastructures of the \mbox{\hyperlink{interfacemoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_distance_function}{Distance\+Function}} class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ins} & The instance to add the information of. Usually this is the test instance supplied to update the range of attributes in the distance function. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_ab35339bffce0fb95d66b9ca16100eed9}{moa.\+classifiers.\+lazy.\+neighboursearch.\+Nearest\+Neighbour\+Search}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_linear_n_n_search_a61a59a1df1f11531053e6503ddfdd78e}\label{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_linear_n_n_search_a61a59a1df1f11531053e6503ddfdd78e}} 
+\index{moa.classifiers.lazy.neighboursearch.LinearNNSearch@{moa.classifiers.lazy.neighboursearch.LinearNNSearch}!getDistances@{getDistances}}
+\index{getDistances@{getDistances}!moa.classifiers.lazy.neighboursearch.LinearNNSearch@{moa.classifiers.lazy.neighboursearch.LinearNNSearch}}
+\doxysubsubsection{\texorpdfstring{getDistances()}{getDistances()}}
+{\footnotesize\ttfamily double \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+lazy.\+neighboursearch.\+Linear\+N\+N\+Search.\+get\+Distances (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Exception}
+
+Returns the distances of the k nearest neighbours. The k\+Nearest\+Neighbours or nearest\+Neighbour must always be called before calling this function. If this function is called before calling either the k\+Nearest\+Neighbours or the nearest\+Neighbour, then it throws an exception. If, however, if either of the nearest\+Neighbour functions are called at any point in the past then no exception is thrown and the distances of the training set from the last supplied target instance (to either one of the nearest\+Neighbour functions) is/are returned.
+
+\begin{DoxyReturn}{Returns}
+array containing the distances of the nearest\+Neighbours. The length and ordering of the array is the same as that of the instances returned by nearest\+Neighbour functions. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & if called before calling k\+Nearest\+Neighbours or nearest\+Neighbours. \\
+\hline
+\end{DoxyExceptions}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_aa4fe73ce92e71de65e6c67d962cfa1c3}{moa.\+classifiers.\+lazy.\+neighboursearch.\+Nearest\+Neighbour\+Search}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_linear_n_n_search_a4dcdd3348decb929c3f70cc47dc56558}\label{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_linear_n_n_search_a4dcdd3348decb929c3f70cc47dc56558}} 
+\index{moa.classifiers.lazy.neighboursearch.LinearNNSearch@{moa.classifiers.lazy.neighboursearch.LinearNNSearch}!getSkipIdentical@{getSkipIdentical}}
+\index{getSkipIdentical@{getSkipIdentical}!moa.classifiers.lazy.neighboursearch.LinearNNSearch@{moa.classifiers.lazy.neighboursearch.LinearNNSearch}}
+\doxysubsubsection{\texorpdfstring{getSkipIdentical()}{getSkipIdentical()}}
+{\footnotesize\ttfamily boolean moa.\+classifiers.\+lazy.\+neighboursearch.\+Linear\+N\+N\+Search.\+get\+Skip\+Identical (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets whether if identical instances are skipped from the neighbourhood.
+
+\begin{DoxyReturn}{Returns}
+true if identical instances are skipped 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_linear_n_n_search_a30f8c109818ac3cba13dcf22b68d2754}\label{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_linear_n_n_search_a30f8c109818ac3cba13dcf22b68d2754}} 
+\index{moa.classifiers.lazy.neighboursearch.LinearNNSearch@{moa.classifiers.lazy.neighboursearch.LinearNNSearch}!globalInfo@{globalInfo}}
+\index{globalInfo@{globalInfo}!moa.classifiers.lazy.neighboursearch.LinearNNSearch@{moa.classifiers.lazy.neighboursearch.LinearNNSearch}}
+\doxysubsubsection{\texorpdfstring{globalInfo()}{globalInfo()}}
+{\footnotesize\ttfamily String moa.\+classifiers.\+lazy.\+neighboursearch.\+Linear\+N\+N\+Search.\+global\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns a string describing this nearest neighbour search algorithm.
+
+\begin{DoxyReturn}{Returns}
+a description of the algorithm for displaying in the explorer/experimenter gui 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_ad5966ef1c5735ec8dbe1b6054e87dc0e}{moa.\+classifiers.\+lazy.\+neighboursearch.\+Nearest\+Neighbour\+Search}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_linear_n_n_search_af60dd2738258760909208275a7f96bef}\label{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_linear_n_n_search_af60dd2738258760909208275a7f96bef}} 
+\index{moa.classifiers.lazy.neighboursearch.LinearNNSearch@{moa.classifiers.lazy.neighboursearch.LinearNNSearch}!kNearestNeighbours@{kNearestNeighbours}}
+\index{kNearestNeighbours@{kNearestNeighbours}!moa.classifiers.lazy.neighboursearch.LinearNNSearch@{moa.classifiers.lazy.neighboursearch.LinearNNSearch}}
+\doxysubsubsection{\texorpdfstring{kNearestNeighbours()}{kNearestNeighbours()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instances}{Instances}} moa.\+classifiers.\+lazy.\+neighboursearch.\+Linear\+N\+N\+Search.\+k\+Nearest\+Neighbours (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{target,  }\item[{int}]{k\+NN }\end{DoxyParamCaption}) throws Exception}
+
+Returns k nearest instances in the current neighbourhood to the supplied instance.
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & The instance to find the k nearest neighbours for. \\
+\hline
+{\em \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1k_n_n}{k\+NN}}} & The number of nearest neighbours to find. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the k nearest neighbors 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & if the neighbours could not be found. \\
+\hline
+\end{DoxyExceptions}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_a9ca1f8804dd5a2eb7801c047a3443b79}{moa.\+classifiers.\+lazy.\+neighboursearch.\+Nearest\+Neighbour\+Search}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_linear_n_n_search_a84348ab6a9b63c521931fe6794314895}\label{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_linear_n_n_search_a84348ab6a9b63c521931fe6794314895}} 
+\index{moa.classifiers.lazy.neighboursearch.LinearNNSearch@{moa.classifiers.lazy.neighboursearch.LinearNNSearch}!nearestNeighbour@{nearestNeighbour}}
+\index{nearestNeighbour@{nearestNeighbour}!moa.classifiers.lazy.neighboursearch.LinearNNSearch@{moa.classifiers.lazy.neighboursearch.LinearNNSearch}}
+\doxysubsubsection{\texorpdfstring{nearestNeighbour()}{nearestNeighbour()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} moa.\+classifiers.\+lazy.\+neighboursearch.\+Linear\+N\+N\+Search.\+nearest\+Neighbour (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{target }\end{DoxyParamCaption}) throws Exception}
+
+Returns the nearest instance in the current neighbourhood to the supplied instance.
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & The instance to find the nearest neighbour for. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the nearest instance 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & if the nearest neighbour could not be found. \\
+\hline
+\end{DoxyExceptions}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_a38f59f9f2aee4a6f5f0a6bca5bb34753}{moa.\+classifiers.\+lazy.\+neighboursearch.\+Nearest\+Neighbour\+Search}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_linear_n_n_search_a776e3240935d70dab60ec85358dc977d}\label{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_linear_n_n_search_a776e3240935d70dab60ec85358dc977d}} 
+\index{moa.classifiers.lazy.neighboursearch.LinearNNSearch@{moa.classifiers.lazy.neighboursearch.LinearNNSearch}!setInstances@{setInstances}}
+\index{setInstances@{setInstances}!moa.classifiers.lazy.neighboursearch.LinearNNSearch@{moa.classifiers.lazy.neighboursearch.LinearNNSearch}}
+\doxysubsubsection{\texorpdfstring{setInstances()}{setInstances()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+lazy.\+neighboursearch.\+Linear\+N\+N\+Search.\+set\+Instances (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instances}{Instances}}}]{insts }\end{DoxyParamCaption}) throws Exception}
+
+Sets the instances comprising the current neighbourhood.
+
+
+\begin{DoxyParams}{Parameters}
+{\em insts} & The set of instances on which the nearest neighbour search is carried out. Usually this set is the training set. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & if setting of instances fails \\
+\hline
+\end{DoxyExceptions}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_a38f12c2ac927d05908700f3106de9c27}{moa.\+classifiers.\+lazy.\+neighboursearch.\+Nearest\+Neighbour\+Search}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_linear_n_n_search_a280e600a63be5dc07de5a478828b1206}\label{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_linear_n_n_search_a280e600a63be5dc07de5a478828b1206}} 
+\index{moa.classifiers.lazy.neighboursearch.LinearNNSearch@{moa.classifiers.lazy.neighboursearch.LinearNNSearch}!setSkipIdentical@{setSkipIdentical}}
+\index{setSkipIdentical@{setSkipIdentical}!moa.classifiers.lazy.neighboursearch.LinearNNSearch@{moa.classifiers.lazy.neighboursearch.LinearNNSearch}}
+\doxysubsubsection{\texorpdfstring{setSkipIdentical()}{setSkipIdentical()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+lazy.\+neighboursearch.\+Linear\+N\+N\+Search.\+set\+Skip\+Identical (\begin{DoxyParamCaption}\item[{boolean}]{skip }\end{DoxyParamCaption})}
+
+Sets the property to skip identical instances (with distance zero from the target) from the set of neighbours returned.
+
+
+\begin{DoxyParams}{Parameters}
+{\em skip} & if true, identical intances are skipped \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_linear_n_n_search_a455caf41f4f340546f085ce0e4cf7648}\label{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_linear_n_n_search_a455caf41f4f340546f085ce0e4cf7648}} 
+\index{moa.classifiers.lazy.neighboursearch.LinearNNSearch@{moa.classifiers.lazy.neighboursearch.LinearNNSearch}!skipIdenticalTipText@{skipIdenticalTipText}}
+\index{skipIdenticalTipText@{skipIdenticalTipText}!moa.classifiers.lazy.neighboursearch.LinearNNSearch@{moa.classifiers.lazy.neighboursearch.LinearNNSearch}}
+\doxysubsubsection{\texorpdfstring{skipIdenticalTipText()}{skipIdenticalTipText()}}
+{\footnotesize\ttfamily String moa.\+classifiers.\+lazy.\+neighboursearch.\+Linear\+N\+N\+Search.\+skip\+Identical\+Tip\+Text (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the tip text for this property.
+
+\begin{DoxyReturn}{Returns}
+tip text for this property suitable for displaying in the explorer/experimenter gui 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_linear_n_n_search_af9858a38247baef4fa7cad9a1254b6a0}\label{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_linear_n_n_search_af9858a38247baef4fa7cad9a1254b6a0}} 
+\index{moa.classifiers.lazy.neighboursearch.LinearNNSearch@{moa.classifiers.lazy.neighboursearch.LinearNNSearch}!update@{update}}
+\index{update@{update}!moa.classifiers.lazy.neighboursearch.LinearNNSearch@{moa.classifiers.lazy.neighboursearch.LinearNNSearch}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+lazy.\+neighboursearch.\+Linear\+N\+N\+Search.\+update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{ins }\end{DoxyParamCaption}) throws Exception}
+
+Updates the \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_linear_n_n_search}{Linear\+N\+N\+Search}} to cater for the new added instance. This implementation only updates the ranges of the \mbox{\hyperlink{interfacemoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_distance_function}{Distance\+Function}} class, since our set of instances is passed by reference and should already have the newly added instance.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ins} & The instance to add. Usually this is the instance that is added to our neighbourhood i.\+e. the training instances. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & if the given instances are null \\
+\hline
+\end{DoxyExceptions}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_ae2f8a1fccb75bfd9a7b5fd4cfa350aa7}{moa.\+classifiers.\+lazy.\+neighboursearch.\+Nearest\+Neighbour\+Search}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_linear_n_n_search_a967be9c2a44a9bb398d719ee0c15687c}\label{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_linear_n_n_search_a967be9c2a44a9bb398d719ee0c15687c}} 
+\index{moa.classifiers.lazy.neighboursearch.LinearNNSearch@{moa.classifiers.lazy.neighboursearch.LinearNNSearch}!m\_Distances@{m\_Distances}}
+\index{m\_Distances@{m\_Distances}!moa.classifiers.lazy.neighboursearch.LinearNNSearch@{moa.classifiers.lazy.neighboursearch.LinearNNSearch}}
+\doxysubsubsection{\texorpdfstring{m\_Distances}{m\_Distances}}
+{\footnotesize\ttfamily double \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+lazy.\+neighboursearch.\+Linear\+N\+N\+Search.\+m\+\_\+\+Distances\hspace{0.3cm}{\ttfamily [protected]}}
+
+Array holding the distances of the nearest neighbours. It is filled up both by \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_linear_n_n_search_a84348ab6a9b63c521931fe6794314895}{nearest\+Neighbour()}} and \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_linear_n_n_search_af60dd2738258760909208275a7f96bef}{k\+Nearest\+Neighbours()}}. \mbox{\Hypertarget{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_linear_n_n_search_a9a98b09105651296b655c480d2f458e8}\label{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_linear_n_n_search_a9a98b09105651296b655c480d2f458e8}} 
+\index{moa.classifiers.lazy.neighboursearch.LinearNNSearch@{moa.classifiers.lazy.neighboursearch.LinearNNSearch}!m\_SkipIdentical@{m\_SkipIdentical}}
+\index{m\_SkipIdentical@{m\_SkipIdentical}!moa.classifiers.lazy.neighboursearch.LinearNNSearch@{moa.classifiers.lazy.neighboursearch.LinearNNSearch}}
+\doxysubsubsection{\texorpdfstring{m\_SkipIdentical}{m\_SkipIdentical}}
+{\footnotesize\ttfamily boolean moa.\+classifiers.\+lazy.\+neighboursearch.\+Linear\+N\+N\+Search.\+m\+\_\+\+Skip\+Identical = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+Whether to skip instances from the neighbours that are identical to the query instance. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/classifiers/lazy/neighboursearch/Linear\+N\+N\+Search.\+java\end{DoxyCompactItemize}

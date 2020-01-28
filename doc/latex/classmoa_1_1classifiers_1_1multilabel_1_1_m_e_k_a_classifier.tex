@@ -1,0 +1,192 @@
+\hypertarget{classmoa_1_1classifiers_1_1multilabel_1_1_m_e_k_a_classifier}{}\doxysection{moa.\+classifiers.\+multilabel.\+M\+E\+K\+A\+Classifier Class Reference}
+\label{classmoa_1_1classifiers_1_1multilabel_1_1_m_e_k_a_classifier}\index{moa.classifiers.multilabel.MEKAClassifier@{moa.classifiers.multilabel.MEKAClassifier}}
+
+
+Inheritance diagram for moa.\+classifiers.\+multilabel.\+M\+E\+K\+A\+Classifier\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+classifiers.\+multilabel.\+M\+E\+K\+A\+Classifier\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classmoa_1_1classifiers_1_1multilabel_1_1_m_e_k_a_classifier_a3af2729ebb066bb08da5aaf0d8c9f49f}{get\+Purpose\+String}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1multilabel_1_1_m_e_k_a_classifier_ad37f200ecc331ed750b8ee3c328f0918}{reset\+Learning\+Impl}} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1multilabel_1_1_m_e_k_a_classifier_af1f0e867a9e3723858b0254c509ab5d0}\label{classmoa_1_1classifiers_1_1multilabel_1_1_m_e_k_a_classifier_af1f0e867a9e3723858b0254c509ab5d0}} 
+void {\bfseries train\+On\+Instance\+Impl} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_multi_label_instance}{Multi\+Label\+Instance}} samoa\+Instance)
+\item 
+double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1multilabel_1_1_m_e_k_a_classifier_a3795fe3525cd03bf53ca4b7b64be27b7}{get\+Votes\+For\+Instance}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} samoa\+Instance)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1multilabel_1_1_m_e_k_a_classifier_a9d948f559f913c4e35ebd6e4df8f70fd}\label{classmoa_1_1classifiers_1_1multilabel_1_1_m_e_k_a_classifier_a9d948f559f913c4e35ebd6e4df8f70fd}} 
+\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_prediction}{Prediction}} {\bfseries get\+Prediction\+For\+Instance} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_multi_label_instance}{Multi\+Label\+Instance}} samoa\+Instance)
+\item 
+boolean \mbox{\hyperlink{classmoa_1_1classifiers_1_1multilabel_1_1_m_e_k_a_classifier_a340f4bbc4be87f4f3cbc911a066be57b}{is\+Randomizable}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1multilabel_1_1_m_e_k_a_classifier_aef9b67beb0cd96759dd76fd2f0e18a62}{get\+Model\+Description}} (String\+Builder out, int indent)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1multilabel_1_1_m_e_k_a_classifier_a9ee2353deb74e5300423a00b6794a276}\label{classmoa_1_1classifiers_1_1multilabel_1_1_m_e_k_a_classifier_a9ee2353deb74e5300423a00b6794a276}} 
+void {\bfseries create\+Weka\+Classifier} (String\mbox{[}$\,$\mbox{]} options)  throws Exception 
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1options_1_1_w_e_k_a_class_option}{W\+E\+K\+A\+Class\+Option}} {\bfseries base\+Learner\+Option}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1multilabel_1_1_m_e_k_a_classifier_ac78932649bae0a64c245cd51da5a8070}{get\+Model\+Measurements\+Impl}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1multilabel_1_1_m_e_k_a_classifier_a24f08e1f358db26222c6463151c17d95}\label{classmoa_1_1classifiers_1_1multilabel_1_1_m_e_k_a_classifier_a24f08e1f358db26222c6463151c17d95}} 
+\mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_samoa_to_weka_instance_converter}{Samoa\+To\+Weka\+Instance\+Converter}} {\bfseries instance\+Converter}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1multilabel_1_1_m_e_k_a_classifier_a820f4cf14cdff2780ab24a8d2c0547b4}\label{classmoa_1_1classifiers_1_1multilabel_1_1_m_e_k_a_classifier_a820f4cf14cdff2780ab24a8d2c0547b4}} 
+\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier}{Classifier}} {\bfseries classifier}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1multilabel_1_1_m_e_k_a_classifier_ad4b8c63d0c6f800a189b8abe612e2cad}\label{classmoa_1_1classifiers_1_1multilabel_1_1_m_e_k_a_classifier_ad4b8c63d0c6f800a189b8abe612e2cad}} 
+weka.\+core.\+Instances {\bfseries instances\+Buffer}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1multilabel_1_1_m_e_k_a_classifier_a89b8da29e5abd067ebeef2d08f735e14}\label{classmoa_1_1classifiers_1_1multilabel_1_1_m_e_k_a_classifier_a89b8da29e5abd067ebeef2d08f735e14}} 
+boolean {\bfseries is\+Classification\+Enabled}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Wrapper for M\+E\+KA classifiers.
+
+\begin{DoxyAuthor}{Author}
+Jesse Read 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+1 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1multilabel_1_1_m_e_k_a_classifier_aef9b67beb0cd96759dd76fd2f0e18a62}\label{classmoa_1_1classifiers_1_1multilabel_1_1_m_e_k_a_classifier_aef9b67beb0cd96759dd76fd2f0e18a62}} 
+\index{moa.classifiers.multilabel.MEKAClassifier@{moa.classifiers.multilabel.MEKAClassifier}!getModelDescription@{getModelDescription}}
+\index{getModelDescription@{getModelDescription}!moa.classifiers.multilabel.MEKAClassifier@{moa.classifiers.multilabel.MEKAClassifier}}
+\doxysubsubsection{\texorpdfstring{getModelDescription()}{getModelDescription()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+multilabel.\+M\+E\+K\+A\+Classifier.\+get\+Model\+Description (\begin{DoxyParamCaption}\item[{String\+Builder}]{out,  }\item[{int}]{indent }\end{DoxyParamCaption})}
+
+Returns a string representation of the model.
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & the stringbuilder to add the description \\
+\hline
+{\em indent} & the number of characters to indent \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a30e5ff32bc8127dfb7436945776b7523}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1multilabel_1_1_m_e_k_a_classifier_ac78932649bae0a64c245cd51da5a8070}\label{classmoa_1_1classifiers_1_1multilabel_1_1_m_e_k_a_classifier_ac78932649bae0a64c245cd51da5a8070}} 
+\index{moa.classifiers.multilabel.MEKAClassifier@{moa.classifiers.multilabel.MEKAClassifier}!getModelMeasurementsImpl@{getModelMeasurementsImpl}}
+\index{getModelMeasurementsImpl@{getModelMeasurementsImpl}!moa.classifiers.multilabel.MEKAClassifier@{moa.classifiers.multilabel.MEKAClassifier}}
+\doxysubsubsection{\texorpdfstring{getModelMeasurementsImpl()}{getModelMeasurementsImpl()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}} \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+multilabel.\+M\+E\+K\+A\+Classifier.\+get\+Model\+Measurements\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Gets the current measurements of this classifier.~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden.
+
+\begin{DoxyReturn}{Returns}
+an array of measurements to be used in evaluation tasks 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_ac2bebede21c9d2d8cd11d95a7e20e529}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1multilabel_1_1_m_e_k_a_classifier_a3af2729ebb066bb08da5aaf0d8c9f49f}\label{classmoa_1_1classifiers_1_1multilabel_1_1_m_e_k_a_classifier_a3af2729ebb066bb08da5aaf0d8c9f49f}} 
+\index{moa.classifiers.multilabel.MEKAClassifier@{moa.classifiers.multilabel.MEKAClassifier}!getPurposeString@{getPurposeString}}
+\index{getPurposeString@{getPurposeString}!moa.classifiers.multilabel.MEKAClassifier@{moa.classifiers.multilabel.MEKAClassifier}}
+\doxysubsubsection{\texorpdfstring{getPurposeString()}{getPurposeString()}}
+{\footnotesize\ttfamily String moa.\+classifiers.\+multilabel.\+M\+E\+K\+A\+Classifier.\+get\+Purpose\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Options to handle Dictionary with option texts and objects 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a3fc6ae11234b88e51941a77ddb879d8b}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1multilabel_1_1_m_e_k_a_classifier_a3795fe3525cd03bf53ca4b7b64be27b7}\label{classmoa_1_1classifiers_1_1multilabel_1_1_m_e_k_a_classifier_a3795fe3525cd03bf53ca4b7b64be27b7}} 
+\index{moa.classifiers.multilabel.MEKAClassifier@{moa.classifiers.multilabel.MEKAClassifier}!getVotesForInstance@{getVotesForInstance}}
+\index{getVotesForInstance@{getVotesForInstance}!moa.classifiers.multilabel.MEKAClassifier@{moa.classifiers.multilabel.MEKAClassifier}}
+\doxysubsubsection{\texorpdfstring{getVotesForInstance()}{getVotesForInstance()}}
+{\footnotesize\ttfamily double \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+multilabel.\+M\+E\+K\+A\+Classifier.\+get\+Votes\+For\+Instance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{inst }\end{DoxyParamCaption})}
+
+Predicts the class memberships for a given instance. If an instance is unclassified, the returned array elements must be all zero.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & the instance to be classified \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an array containing the estimated membership probabilities of the test instance in each class 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_multi_label_learner_a20e5d8cc1ca49adbb067d83717fb3f1a}{moa.\+classifiers.\+Abstract\+Multi\+Label\+Learner}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1multilabel_1_1_m_e_k_a_classifier_a340f4bbc4be87f4f3cbc911a066be57b}\label{classmoa_1_1classifiers_1_1multilabel_1_1_m_e_k_a_classifier_a340f4bbc4be87f4f3cbc911a066be57b}} 
+\index{moa.classifiers.multilabel.MEKAClassifier@{moa.classifiers.multilabel.MEKAClassifier}!isRandomizable@{isRandomizable}}
+\index{isRandomizable@{isRandomizable}!moa.classifiers.multilabel.MEKAClassifier@{moa.classifiers.multilabel.MEKAClassifier}}
+\doxysubsubsection{\texorpdfstring{isRandomizable()}{isRandomizable()}}
+{\footnotesize\ttfamily boolean moa.\+classifiers.\+multilabel.\+M\+E\+K\+A\+Classifier.\+is\+Randomizable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets whether this learner needs a random seed. Examples of methods that needs a random seed are bagging and boosting.
+
+\begin{DoxyReturn}{Returns}
+true if the learner needs a random seed. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1learners_1_1_learner_a2f1ff9007b5eb5f53801f474b4d42a61}{moa.\+learners.\+Learner$<$ E extends Example $>$}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1multilabel_1_1_m_e_k_a_classifier_ad37f200ecc331ed750b8ee3c328f0918}\label{classmoa_1_1classifiers_1_1multilabel_1_1_m_e_k_a_classifier_ad37f200ecc331ed750b8ee3c328f0918}} 
+\index{moa.classifiers.multilabel.MEKAClassifier@{moa.classifiers.multilabel.MEKAClassifier}!resetLearningImpl@{resetLearningImpl}}
+\index{resetLearningImpl@{resetLearningImpl}!moa.classifiers.multilabel.MEKAClassifier@{moa.classifiers.multilabel.MEKAClassifier}}
+\doxysubsubsection{\texorpdfstring{resetLearningImpl()}{resetLearningImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+multilabel.\+M\+E\+K\+A\+Classifier.\+reset\+Learning\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Resets this classifier. It must be similar to starting a new classifier from scratch. ~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden. 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a099ffcf2417abb919d10d697c0648f29}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1multilabel_1_1_m_e_k_a_classifier_adcfa29b1b473807637a7f23d30dbb027}\label{classmoa_1_1classifiers_1_1multilabel_1_1_m_e_k_a_classifier_adcfa29b1b473807637a7f23d30dbb027}} 
+\index{moa.classifiers.multilabel.MEKAClassifier@{moa.classifiers.multilabel.MEKAClassifier}!baseLearnerOption@{baseLearnerOption}}
+\index{baseLearnerOption@{baseLearnerOption}!moa.classifiers.multilabel.MEKAClassifier@{moa.classifiers.multilabel.MEKAClassifier}}
+\doxysubsubsection{\texorpdfstring{baseLearnerOption}{baseLearnerOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1options_1_1_w_e_k_a_class_option}{W\+E\+K\+A\+Class\+Option}} moa.\+classifiers.\+multilabel.\+M\+E\+K\+A\+Classifier.\+base\+Learner\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} WEKAClassOption(\textcolor{stringliteral}{"baseLearner"}, \textcolor{charliteral}{'l'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Classifier to train."}, weka.classifiers.Classifier.class, \textcolor{stringliteral}{"meka.classifiers.multilabel.incremental.BRUpdateable"})}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/classifiers/multilabel/M\+E\+K\+A\+Classifier.\+java\end{DoxyCompactItemize}

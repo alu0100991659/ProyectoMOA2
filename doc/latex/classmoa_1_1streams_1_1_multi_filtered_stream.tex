@@ -1,0 +1,230 @@
+\hypertarget{classmoa_1_1streams_1_1_multi_filtered_stream}{}\doxysection{moa.\+streams.\+Multi\+Filtered\+Stream Class Reference}
+\label{classmoa_1_1streams_1_1_multi_filtered_stream}\index{moa.streams.MultiFilteredStream@{moa.streams.MultiFilteredStream}}
+
+
+Inheritance diagram for moa.\+streams.\+Multi\+Filtered\+Stream\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+streams.\+Multi\+Filtered\+Stream\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classmoa_1_1streams_1_1_multi_filtered_stream_af8fc20b0125cbbb3d7ddf60f66315123}{get\+Purpose\+String}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1streams_1_1_multi_filtered_stream_aa73c8b24b7e7476de4832b5453dc15db}{prepare\+For\+Use\+Impl}} (\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}} monitor, \mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}} repository)
+\item 
+long \mbox{\hyperlink{classmoa_1_1streams_1_1_multi_filtered_stream_affa7e1a959bd924d3e1fa4b1ff3a78cd}{estimated\+Remaining\+Instances}} ()
+\item 
+\mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instances_header}{Instances\+Header}} \mbox{\hyperlink{classmoa_1_1streams_1_1_multi_filtered_stream_aafb7967368be3f854580886ef6f5cd2f}{get\+Header}} ()
+\item 
+boolean \mbox{\hyperlink{classmoa_1_1streams_1_1_multi_filtered_stream_a8e0ead80bb9b301201ef40242261c642}{has\+More\+Instances}} ()
+\item 
+boolean \mbox{\hyperlink{classmoa_1_1streams_1_1_multi_filtered_stream_ac21ecd3506fd9284279204c013dc090a}{is\+Restartable}} ()
+\item 
+\mbox{\hyperlink{interfacemoa_1_1core_1_1_example}{Example}} \mbox{\hyperlink{classmoa_1_1streams_1_1_multi_filtered_stream_a5ea55f4f4d5c7aa0cd9ca58f01d95395}{next\+Instance}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1streams_1_1_multi_filtered_stream_ae5eb8b6de9bdfe4d98222a7e116514f2}{restart}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1streams_1_1_multi_filtered_stream_a4f2ccf41aa2dd6221c6e548eaf1b021b}{get\+Description}} (String\+Builder sb, int indent)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} {\bfseries stream\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_list_option}{List\+Option}} {\bfseries filters\+Option}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_multi_filtered_stream_a8d2969f9991840de4e33e8fd344eb16f}\label{classmoa_1_1streams_1_1_multi_filtered_stream_a8d2969f9991840de4e33e8fd344eb16f}} 
+\mbox{\hyperlink{interfacemoa_1_1streams_1_1_example_stream}{Example\+Stream}} {\bfseries filter\+Chain}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Class for representing a stream that is filtered.
+
+\begin{DoxyAuthor}{Author}
+Richard Kirkby (\href{mailto:rkirkby@cs.waikato.ac.nz}{\texttt{ rkirkby@cs.\+waikato.\+ac.\+nz}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+7 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_multi_filtered_stream_affa7e1a959bd924d3e1fa4b1ff3a78cd}\label{classmoa_1_1streams_1_1_multi_filtered_stream_affa7e1a959bd924d3e1fa4b1ff3a78cd}} 
+\index{moa.streams.MultiFilteredStream@{moa.streams.MultiFilteredStream}!estimatedRemainingInstances@{estimatedRemainingInstances}}
+\index{estimatedRemainingInstances@{estimatedRemainingInstances}!moa.streams.MultiFilteredStream@{moa.streams.MultiFilteredStream}}
+\doxysubsubsection{\texorpdfstring{estimatedRemainingInstances()}{estimatedRemainingInstances()}}
+{\footnotesize\ttfamily long moa.\+streams.\+Multi\+Filtered\+Stream.\+estimated\+Remaining\+Instances (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the estimated number of remaining instances in this stream
+
+\begin{DoxyReturn}{Returns}
+the estimated number of instances to get from this stream 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1streams_1_1_example_stream_a90c778fc1efe6661cc4fe6ae5ae96b6c}{moa.\+streams.\+Example\+Stream$<$ E extends Example $>$}}.
+
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_multi_filtered_stream_a4f2ccf41aa2dd6221c6e548eaf1b021b}\label{classmoa_1_1streams_1_1_multi_filtered_stream_a4f2ccf41aa2dd6221c6e548eaf1b021b}} 
+\index{moa.streams.MultiFilteredStream@{moa.streams.MultiFilteredStream}!getDescription@{getDescription}}
+\index{getDescription@{getDescription}!moa.streams.MultiFilteredStream@{moa.streams.MultiFilteredStream}}
+\doxysubsubsection{\texorpdfstring{getDescription()}{getDescription()}}
+{\footnotesize\ttfamily void moa.\+streams.\+Multi\+Filtered\+Stream.\+get\+Description (\begin{DoxyParamCaption}\item[{String\+Builder}]{sb,  }\item[{int}]{indent }\end{DoxyParamCaption})}
+
+Returns a string representation of this object. Used in {\ttfamily \mbox{\hyperlink{classmoa_1_1_abstract_m_o_a_object_ac686fd3b07c734cf21f1894376fe402d}{Abstract\+M\+O\+A\+Object.\+to\+String}}} to give a string representation of the object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sb} & the stringbuilder to add the description \\
+\hline
+{\em indent} & the number of characters to indent \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1_m_o_a_object_afdaf5098f1fe6c852018ce64c28e17f5}{moa.\+M\+O\+A\+Object}}.
+
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_multi_filtered_stream_aafb7967368be3f854580886ef6f5cd2f}\label{classmoa_1_1streams_1_1_multi_filtered_stream_aafb7967368be3f854580886ef6f5cd2f}} 
+\index{moa.streams.MultiFilteredStream@{moa.streams.MultiFilteredStream}!getHeader@{getHeader}}
+\index{getHeader@{getHeader}!moa.streams.MultiFilteredStream@{moa.streams.MultiFilteredStream}}
+\doxysubsubsection{\texorpdfstring{getHeader()}{getHeader()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instances_header}{Instances\+Header}} moa.\+streams.\+Multi\+Filtered\+Stream.\+get\+Header (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the header of this stream. This is useful to know attributes and classes. Instances\+Header is an extension of weka.\+Instances.
+
+\begin{DoxyReturn}{Returns}
+the header of this stream 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1streams_1_1_example_stream_acc192788463f1aa804eb3391fb0b54a5}{moa.\+streams.\+Example\+Stream$<$ E extends Example $>$}}.
+
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_multi_filtered_stream_af8fc20b0125cbbb3d7ddf60f66315123}\label{classmoa_1_1streams_1_1_multi_filtered_stream_af8fc20b0125cbbb3d7ddf60f66315123}} 
+\index{moa.streams.MultiFilteredStream@{moa.streams.MultiFilteredStream}!getPurposeString@{getPurposeString}}
+\index{getPurposeString@{getPurposeString}!moa.streams.MultiFilteredStream@{moa.streams.MultiFilteredStream}}
+\doxysubsubsection{\texorpdfstring{getPurposeString()}{getPurposeString()}}
+{\footnotesize\ttfamily String moa.\+streams.\+Multi\+Filtered\+Stream.\+get\+Purpose\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Options to handle Dictionary with option texts and objects 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1options_1_1_abstract_option_handler_abc8df69aea27ef85060557a9e918b2ca}{moa.\+options.\+Abstract\+Option\+Handler}}.
+
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_multi_filtered_stream_a8e0ead80bb9b301201ef40242261c642}\label{classmoa_1_1streams_1_1_multi_filtered_stream_a8e0ead80bb9b301201ef40242261c642}} 
+\index{moa.streams.MultiFilteredStream@{moa.streams.MultiFilteredStream}!hasMoreInstances@{hasMoreInstances}}
+\index{hasMoreInstances@{hasMoreInstances}!moa.streams.MultiFilteredStream@{moa.streams.MultiFilteredStream}}
+\doxysubsubsection{\texorpdfstring{hasMoreInstances()}{hasMoreInstances()}}
+{\footnotesize\ttfamily boolean moa.\+streams.\+Multi\+Filtered\+Stream.\+has\+More\+Instances (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets whether this stream has more instances to output. This is useful when reading streams from files.
+
+\begin{DoxyReturn}{Returns}
+true if this stream has more instances to output 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1streams_1_1_example_stream_a2af98228834384da87c53459736ee86d}{moa.\+streams.\+Example\+Stream$<$ E extends Example $>$}}.
+
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_multi_filtered_stream_ac21ecd3506fd9284279204c013dc090a}\label{classmoa_1_1streams_1_1_multi_filtered_stream_ac21ecd3506fd9284279204c013dc090a}} 
+\index{moa.streams.MultiFilteredStream@{moa.streams.MultiFilteredStream}!isRestartable@{isRestartable}}
+\index{isRestartable@{isRestartable}!moa.streams.MultiFilteredStream@{moa.streams.MultiFilteredStream}}
+\doxysubsubsection{\texorpdfstring{isRestartable()}{isRestartable()}}
+{\footnotesize\ttfamily boolean moa.\+streams.\+Multi\+Filtered\+Stream.\+is\+Restartable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets whether this stream can restart.
+
+\begin{DoxyReturn}{Returns}
+true if this stream can restart 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1streams_1_1_example_stream_a086ea0c8c09f2383f68f9ae7d1ac4f58}{moa.\+streams.\+Example\+Stream$<$ E extends Example $>$}}.
+
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_multi_filtered_stream_a5ea55f4f4d5c7aa0cd9ca58f01d95395}\label{classmoa_1_1streams_1_1_multi_filtered_stream_a5ea55f4f4d5c7aa0cd9ca58f01d95395}} 
+\index{moa.streams.MultiFilteredStream@{moa.streams.MultiFilteredStream}!nextInstance@{nextInstance}}
+\index{nextInstance@{nextInstance}!moa.streams.MultiFilteredStream@{moa.streams.MultiFilteredStream}}
+\doxysubsubsection{\texorpdfstring{nextInstance()}{nextInstance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacemoa_1_1core_1_1_example}{Example}} moa.\+streams.\+Multi\+Filtered\+Stream.\+next\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the next example from this stream.
+
+\begin{DoxyReturn}{Returns}
+the next example of this stream 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1streams_1_1_example_stream_a7d7a2cfbc324b8367bea1afa30276387}{moa.\+streams.\+Example\+Stream$<$ E extends Example $>$}}.
+
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_multi_filtered_stream_aa73c8b24b7e7476de4832b5453dc15db}\label{classmoa_1_1streams_1_1_multi_filtered_stream_aa73c8b24b7e7476de4832b5453dc15db}} 
+\index{moa.streams.MultiFilteredStream@{moa.streams.MultiFilteredStream}!prepareForUseImpl@{prepareForUseImpl}}
+\index{prepareForUseImpl@{prepareForUseImpl}!moa.streams.MultiFilteredStream@{moa.streams.MultiFilteredStream}}
+\doxysubsubsection{\texorpdfstring{prepareForUseImpl()}{prepareForUseImpl()}}
+{\footnotesize\ttfamily void moa.\+streams.\+Multi\+Filtered\+Stream.\+prepare\+For\+Use\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}}}]{monitor,  }\item[{\mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}}}]{repository }\end{DoxyParamCaption})}
+
+This method describes the implementation of how to prepare this object for use. All classes that extends this class have to implement {\ttfamily prepare\+For\+Use\+Impl} and not {\ttfamily prepare\+For\+Use} since {\ttfamily prepare\+For\+Use} calls {\ttfamily prepare\+For\+Use\+Impl}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em monitor} & the Task\+Monitor to use \\
+\hline
+{\em repository} & the Object\+Repository to use \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1options_1_1_abstract_option_handler_ad0e9c7d4b0e2b185749f36ce28540efb}{moa.\+options.\+Abstract\+Option\+Handler}}.
+
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_multi_filtered_stream_ae5eb8b6de9bdfe4d98222a7e116514f2}\label{classmoa_1_1streams_1_1_multi_filtered_stream_ae5eb8b6de9bdfe4d98222a7e116514f2}} 
+\index{moa.streams.MultiFilteredStream@{moa.streams.MultiFilteredStream}!restart@{restart}}
+\index{restart@{restart}!moa.streams.MultiFilteredStream@{moa.streams.MultiFilteredStream}}
+\doxysubsubsection{\texorpdfstring{restart()}{restart()}}
+{\footnotesize\ttfamily void moa.\+streams.\+Multi\+Filtered\+Stream.\+restart (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Restarts this stream. It must be similar to starting a new stream from scratch. 
+
+Implements \mbox{\hyperlink{interfacemoa_1_1streams_1_1_example_stream_a45d6cc4e00eb16debd7f366afab09b87}{moa.\+streams.\+Example\+Stream$<$ E extends Example $>$}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_multi_filtered_stream_ada06b8dac68a385face3b89e1401aeae}\label{classmoa_1_1streams_1_1_multi_filtered_stream_ada06b8dac68a385face3b89e1401aeae}} 
+\index{moa.streams.MultiFilteredStream@{moa.streams.MultiFilteredStream}!filtersOption@{filtersOption}}
+\index{filtersOption@{filtersOption}!moa.streams.MultiFilteredStream@{moa.streams.MultiFilteredStream}}
+\doxysubsubsection{\texorpdfstring{filtersOption}{filtersOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_list_option}{List\+Option}} moa.\+streams.\+Multi\+Filtered\+Stream.\+filters\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} ListOption(\textcolor{stringliteral}{"filters"}, \textcolor{charliteral}{'f'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Filters to apply."}, \textcolor{keyword}{new} ClassOption(\textcolor{stringliteral}{"filter"}, \textcolor{charliteral}{' '},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Stream filter."}, StreamFilter.class, \textcolor{stringliteral}{"AddNoiseFilter"}),}
+\DoxyCodeLine{            \textcolor{keyword}{new} Option[0], \textcolor{charliteral}{','})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_multi_filtered_stream_ae9734e8b00d858a05430a4b1206b3a2f}\label{classmoa_1_1streams_1_1_multi_filtered_stream_ae9734e8b00d858a05430a4b1206b3a2f}} 
+\index{moa.streams.MultiFilteredStream@{moa.streams.MultiFilteredStream}!streamOption@{streamOption}}
+\index{streamOption@{streamOption}!moa.streams.MultiFilteredStream@{moa.streams.MultiFilteredStream}}
+\doxysubsubsection{\texorpdfstring{streamOption}{streamOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} moa.\+streams.\+Multi\+Filtered\+Stream.\+stream\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} ClassOption(\textcolor{stringliteral}{"stream"}, \textcolor{charliteral}{'s'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Stream to filter."}, ExampleStream.class,}
+\DoxyCodeLine{            \textcolor{stringliteral}{"generators.RandomTreeGenerator"})}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/streams/Multi\+Filtered\+Stream.\+java\end{DoxyCompactItemize}

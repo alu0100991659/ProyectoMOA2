@@ -1,0 +1,206 @@
+\hypertarget{classmoa_1_1classifiers_1_1rules_1_1functions_1_1_low_pass_filtered_learner}{}\doxysection{moa.\+classifiers.\+rules.\+functions.\+Low\+Pass\+Filtered\+Learner Class Reference}
+\label{classmoa_1_1classifiers_1_1rules_1_1functions_1_1_low_pass_filtered_learner}\index{moa.classifiers.rules.functions.LowPassFilteredLearner@{moa.classifiers.rules.functions.LowPassFilteredLearner}}
+
+
+Inheritance diagram for moa.\+classifiers.\+rules.\+functions.\+Low\+Pass\+Filtered\+Learner\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+classifiers.\+rules.\+functions.\+Low\+Pass\+Filtered\+Learner\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1functions_1_1_low_pass_filtered_learner_a3dda6f3aa0e3a337074c16b703cc65bf}\label{classmoa_1_1classifiers_1_1rules_1_1functions_1_1_low_pass_filtered_learner_a3dda6f3aa0e3a337074c16b703cc65bf}} 
+double {\bfseries get\+Current\+Error} ()
+\item 
+boolean \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1functions_1_1_low_pass_filtered_learner_a4a2cd52ec0cfc304ba3a43cec08699bd}{is\+Randomizable}} ()
+\item 
+double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1functions_1_1_low_pass_filtered_learner_a5db929d3800e88cc8f02829adfd4ca6e}{get\+Votes\+For\+Instance}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst)
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1functions_1_1_low_pass_filtered_learner_a92da8289460ce8cb95f72b7e2e8a1f4f}{reset\+Learning\+Impl}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1functions_1_1_low_pass_filtered_learner_aec89bc854344075fffbd8c032a69af17}{train\+On\+Instance\+Impl}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst)
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1functions_1_1_low_pass_filtered_learner_a19804086a4a0be31bd980b6f9f4133b0}{get\+Model\+Description}} (String\+Builder out, int indent)
+\item 
+String \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1functions_1_1_low_pass_filtered_learner_a3050ac70e8fbc94b7e475e12a1f317f1}{get\+Purpose\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} {\bfseries base\+Learner\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} {\bfseries alpha\+Option}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1functions_1_1_low_pass_filtered_learner_a72cea71ca8edc8bda7874de928cb4bbd}{get\+Model\+Measurements\+Impl}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1functions_1_1_low_pass_filtered_learner_aefa3f092a936a171d32beafe27171661}\label{classmoa_1_1classifiers_1_1rules_1_1functions_1_1_low_pass_filtered_learner_aefa3f092a936a171d32beafe27171661}} 
+\mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier}{Abstract\+Classifier}} {\bfseries learner}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1functions_1_1_low_pass_filtered_learner_aad8ae14cac48fbd75368cf023495d0c1}\label{classmoa_1_1classifiers_1_1rules_1_1functions_1_1_low_pass_filtered_learner_aad8ae14cac48fbd75368cf023495d0c1}} 
+boolean {\bfseries has\+Started} =false
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1functions_1_1_low_pass_filtered_learner_abd1c1e6b474a3d7d408887fd7ecf1933}\label{classmoa_1_1classifiers_1_1rules_1_1functions_1_1_low_pass_filtered_learner_abd1c1e6b474a3d7d408887fd7ecf1933}} 
+double {\bfseries lastX}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1functions_1_1_low_pass_filtered_learner_a19804086a4a0be31bd980b6f9f4133b0}\label{classmoa_1_1classifiers_1_1rules_1_1functions_1_1_low_pass_filtered_learner_a19804086a4a0be31bd980b6f9f4133b0}} 
+\index{moa.classifiers.rules.functions.LowPassFilteredLearner@{moa.classifiers.rules.functions.LowPassFilteredLearner}!getModelDescription@{getModelDescription}}
+\index{getModelDescription@{getModelDescription}!moa.classifiers.rules.functions.LowPassFilteredLearner@{moa.classifiers.rules.functions.LowPassFilteredLearner}}
+\doxysubsubsection{\texorpdfstring{getModelDescription()}{getModelDescription()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+rules.\+functions.\+Low\+Pass\+Filtered\+Learner.\+get\+Model\+Description (\begin{DoxyParamCaption}\item[{String\+Builder}]{out,  }\item[{int}]{indent }\end{DoxyParamCaption})}
+
+Returns a string representation of the model.
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & the stringbuilder to add the description \\
+\hline
+{\em indent} & the number of characters to indent \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a30e5ff32bc8127dfb7436945776b7523}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1functions_1_1_low_pass_filtered_learner_a72cea71ca8edc8bda7874de928cb4bbd}\label{classmoa_1_1classifiers_1_1rules_1_1functions_1_1_low_pass_filtered_learner_a72cea71ca8edc8bda7874de928cb4bbd}} 
+\index{moa.classifiers.rules.functions.LowPassFilteredLearner@{moa.classifiers.rules.functions.LowPassFilteredLearner}!getModelMeasurementsImpl@{getModelMeasurementsImpl}}
+\index{getModelMeasurementsImpl@{getModelMeasurementsImpl}!moa.classifiers.rules.functions.LowPassFilteredLearner@{moa.classifiers.rules.functions.LowPassFilteredLearner}}
+\doxysubsubsection{\texorpdfstring{getModelMeasurementsImpl()}{getModelMeasurementsImpl()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}} \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+rules.\+functions.\+Low\+Pass\+Filtered\+Learner.\+get\+Model\+Measurements\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Gets the current measurements of this classifier.~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden.
+
+\begin{DoxyReturn}{Returns}
+an array of measurements to be used in evaluation tasks 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_ac2bebede21c9d2d8cd11d95a7e20e529}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1functions_1_1_low_pass_filtered_learner_a3050ac70e8fbc94b7e475e12a1f317f1}\label{classmoa_1_1classifiers_1_1rules_1_1functions_1_1_low_pass_filtered_learner_a3050ac70e8fbc94b7e475e12a1f317f1}} 
+\index{moa.classifiers.rules.functions.LowPassFilteredLearner@{moa.classifiers.rules.functions.LowPassFilteredLearner}!getPurposeString@{getPurposeString}}
+\index{getPurposeString@{getPurposeString}!moa.classifiers.rules.functions.LowPassFilteredLearner@{moa.classifiers.rules.functions.LowPassFilteredLearner}}
+\doxysubsubsection{\texorpdfstring{getPurposeString()}{getPurposeString()}}
+{\footnotesize\ttfamily String moa.\+classifiers.\+rules.\+functions.\+Low\+Pass\+Filtered\+Learner.\+get\+Purpose\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Options to handle Dictionary with option texts and objects 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a3fc6ae11234b88e51941a77ddb879d8b}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1functions_1_1_low_pass_filtered_learner_a5db929d3800e88cc8f02829adfd4ca6e}\label{classmoa_1_1classifiers_1_1rules_1_1functions_1_1_low_pass_filtered_learner_a5db929d3800e88cc8f02829adfd4ca6e}} 
+\index{moa.classifiers.rules.functions.LowPassFilteredLearner@{moa.classifiers.rules.functions.LowPassFilteredLearner}!getVotesForInstance@{getVotesForInstance}}
+\index{getVotesForInstance@{getVotesForInstance}!moa.classifiers.rules.functions.LowPassFilteredLearner@{moa.classifiers.rules.functions.LowPassFilteredLearner}}
+\doxysubsubsection{\texorpdfstring{getVotesForInstance()}{getVotesForInstance()}}
+{\footnotesize\ttfamily double \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+rules.\+functions.\+Low\+Pass\+Filtered\+Learner.\+get\+Votes\+For\+Instance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{inst }\end{DoxyParamCaption})}
+
+Predicts the class memberships for a given instance. If an instance is unclassified, the returned array elements must be all zero.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & the instance to be classified \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an array containing the estimated membership probabilities of the test instance in each class 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a0e3589c4fa6f088d82d64514afd9513c}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1functions_1_1_low_pass_filtered_learner_a4a2cd52ec0cfc304ba3a43cec08699bd}\label{classmoa_1_1classifiers_1_1rules_1_1functions_1_1_low_pass_filtered_learner_a4a2cd52ec0cfc304ba3a43cec08699bd}} 
+\index{moa.classifiers.rules.functions.LowPassFilteredLearner@{moa.classifiers.rules.functions.LowPassFilteredLearner}!isRandomizable@{isRandomizable}}
+\index{isRandomizable@{isRandomizable}!moa.classifiers.rules.functions.LowPassFilteredLearner@{moa.classifiers.rules.functions.LowPassFilteredLearner}}
+\doxysubsubsection{\texorpdfstring{isRandomizable()}{isRandomizable()}}
+{\footnotesize\ttfamily boolean moa.\+classifiers.\+rules.\+functions.\+Low\+Pass\+Filtered\+Learner.\+is\+Randomizable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets whether this learner needs a random seed. Examples of methods that needs a random seed are bagging and boosting.
+
+\begin{DoxyReturn}{Returns}
+true if the learner needs a random seed. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1learners_1_1_learner_a2f1ff9007b5eb5f53801f474b4d42a61}{moa.\+learners.\+Learner$<$ E extends Example $>$}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1functions_1_1_low_pass_filtered_learner_a92da8289460ce8cb95f72b7e2e8a1f4f}\label{classmoa_1_1classifiers_1_1rules_1_1functions_1_1_low_pass_filtered_learner_a92da8289460ce8cb95f72b7e2e8a1f4f}} 
+\index{moa.classifiers.rules.functions.LowPassFilteredLearner@{moa.classifiers.rules.functions.LowPassFilteredLearner}!resetLearningImpl@{resetLearningImpl}}
+\index{resetLearningImpl@{resetLearningImpl}!moa.classifiers.rules.functions.LowPassFilteredLearner@{moa.classifiers.rules.functions.LowPassFilteredLearner}}
+\doxysubsubsection{\texorpdfstring{resetLearningImpl()}{resetLearningImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+rules.\+functions.\+Low\+Pass\+Filtered\+Learner.\+reset\+Learning\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Resets this classifier. It must be similar to starting a new classifier from scratch. ~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden. 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a099ffcf2417abb919d10d697c0648f29}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1functions_1_1_low_pass_filtered_learner_aec89bc854344075fffbd8c032a69af17}\label{classmoa_1_1classifiers_1_1rules_1_1functions_1_1_low_pass_filtered_learner_aec89bc854344075fffbd8c032a69af17}} 
+\index{moa.classifiers.rules.functions.LowPassFilteredLearner@{moa.classifiers.rules.functions.LowPassFilteredLearner}!trainOnInstanceImpl@{trainOnInstanceImpl}}
+\index{trainOnInstanceImpl@{trainOnInstanceImpl}!moa.classifiers.rules.functions.LowPassFilteredLearner@{moa.classifiers.rules.functions.LowPassFilteredLearner}}
+\doxysubsubsection{\texorpdfstring{trainOnInstanceImpl()}{trainOnInstanceImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+rules.\+functions.\+Low\+Pass\+Filtered\+Learner.\+train\+On\+Instance\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{inst }\end{DoxyParamCaption})}
+
+Trains this classifier incrementally using the given instance.~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & the instance to be used for training \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_aceb24d2ddeab386f2ecead6e3c0d3543}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1functions_1_1_low_pass_filtered_learner_a07b2621f3aaec85e64d5511313711203}\label{classmoa_1_1classifiers_1_1rules_1_1functions_1_1_low_pass_filtered_learner_a07b2621f3aaec85e64d5511313711203}} 
+\index{moa.classifiers.rules.functions.LowPassFilteredLearner@{moa.classifiers.rules.functions.LowPassFilteredLearner}!alphaOption@{alphaOption}}
+\index{alphaOption@{alphaOption}!moa.classifiers.rules.functions.LowPassFilteredLearner@{moa.classifiers.rules.functions.LowPassFilteredLearner}}
+\doxysubsubsection{\texorpdfstring{alphaOption}{alphaOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} moa.\+classifiers.\+rules.\+functions.\+Low\+Pass\+Filtered\+Learner.\+alpha\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FloatOption(\textcolor{stringliteral}{"alpha"}, \textcolor{charliteral}{'a'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Alpha value. Y=Yold+alpha*(Yold+Prediction)"},0.15, 0, 1)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1functions_1_1_low_pass_filtered_learner_ae7a9b34d011d8ed7b272f727e92725e9}\label{classmoa_1_1classifiers_1_1rules_1_1functions_1_1_low_pass_filtered_learner_ae7a9b34d011d8ed7b272f727e92725e9}} 
+\index{moa.classifiers.rules.functions.LowPassFilteredLearner@{moa.classifiers.rules.functions.LowPassFilteredLearner}!baseLearnerOption@{baseLearnerOption}}
+\index{baseLearnerOption@{baseLearnerOption}!moa.classifiers.rules.functions.LowPassFilteredLearner@{moa.classifiers.rules.functions.LowPassFilteredLearner}}
+\doxysubsubsection{\texorpdfstring{baseLearnerOption}{baseLearnerOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} moa.\+classifiers.\+rules.\+functions.\+Low\+Pass\+Filtered\+Learner.\+base\+Learner\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} ClassOption(\textcolor{stringliteral}{"baseLearner"}, \textcolor{charliteral}{'l'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Base learner."}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a3da7137e59e323350c8777f119ec26a1}{AbstractClassifier}}.class, AdaptiveNodePredictor.class.getName())}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/classifiers/rules/functions/Low\+Pass\+Filtered\+Learner.\+java\end{DoxyCompactItemize}

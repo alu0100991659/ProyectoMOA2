@@ -1,0 +1,155 @@
+\hypertarget{classmoa_1_1classifiers_1_1rules_1_1core_1_1anomalydetection_1_1_odds_ratio_score}{}\doxysection{moa.\+classifiers.\+rules.\+core.\+anomalydetection.\+Odds\+Ratio\+Score Class Reference}
+\label{classmoa_1_1classifiers_1_1rules_1_1core_1_1anomalydetection_1_1_odds_ratio_score}\index{moa.classifiers.rules.core.anomalydetection.OddsRatioScore@{moa.classifiers.rules.core.anomalydetection.OddsRatioScore}}
+
+
+Inheritance diagram for moa.\+classifiers.\+rules.\+core.\+anomalydetection.\+Odds\+Ratio\+Score\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+classifiers.\+rules.\+core.\+anomalydetection.\+Odds\+Ratio\+Score\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1core_1_1anomalydetection_1_1_odds_ratio_score_a040899f12b2bfdf7487f6561c6589e08}\label{classmoa_1_1classifiers_1_1rules_1_1core_1_1anomalydetection_1_1_odds_ratio_score_a040899f12b2bfdf7487f6561c6589e08}} 
+double {\bfseries get\+Anomaly\+Score} ()
+\item 
+boolean \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1core_1_1anomalydetection_1_1_odds_ratio_score_a2709f54246a021dadd3aa27149b063ff}{update\+And\+Check\+Anomaly\+Detection}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_multi_label_instance}{Multi\+Label\+Instance}} instance)
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1core_1_1anomalydetection_1_1_odds_ratio_score_ae8d28a6c9569f42235de30b1e26c1921}{get\+Description}} (String\+Builder sb, int indent)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries min\+Number\+Instances\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} {\bfseries threshold\+Option}
+\item 
+\mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} {\bfseries probability\+Function\+Option}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1core_1_1anomalydetection_1_1_odds_ratio_score_a00c5bd49c50081c2def33b3417858c99}\label{classmoa_1_1classifiers_1_1rules_1_1core_1_1anomalydetection_1_1_odds_ratio_score_a00c5bd49c50081c2def33b3417858c99}} 
+double {\bfseries anomaly\+Score}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1core_1_1anomalydetection_1_1_odds_ratio_score_a1c75181da0157138f7e17bbeb3db6200}\label{classmoa_1_1classifiers_1_1rules_1_1core_1_1anomalydetection_1_1_odds_ratio_score_a1c75181da0157138f7e17bbeb3db6200}} 
+void {\bfseries print\+Anomaly} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst, double anomaly)
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1core_1_1anomalydetection_1_1_odds_ratio_score_ad0217583b3febd576fd8fde520b696af}{prepare\+For\+Use\+Impl}} (\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}} monitor, \mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}} repository)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Score for anomaly detection\+: Odds\+Ratio
+
+threshold\+Option -\/ The threshold value for detecting anomalies min\+Number\+Instances\+Option -\/ The minimum number of instances required to perform anomaly detection probability\+Function\+Option -\/ Probability function selection 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1core_1_1anomalydetection_1_1_odds_ratio_score_ae8d28a6c9569f42235de30b1e26c1921}\label{classmoa_1_1classifiers_1_1rules_1_1core_1_1anomalydetection_1_1_odds_ratio_score_ae8d28a6c9569f42235de30b1e26c1921}} 
+\index{moa.classifiers.rules.core.anomalydetection.OddsRatioScore@{moa.classifiers.rules.core.anomalydetection.OddsRatioScore}!getDescription@{getDescription}}
+\index{getDescription@{getDescription}!moa.classifiers.rules.core.anomalydetection.OddsRatioScore@{moa.classifiers.rules.core.anomalydetection.OddsRatioScore}}
+\doxysubsubsection{\texorpdfstring{getDescription()}{getDescription()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+rules.\+core.\+anomalydetection.\+Odds\+Ratio\+Score.\+get\+Description (\begin{DoxyParamCaption}\item[{String\+Builder}]{sb,  }\item[{int}]{indent }\end{DoxyParamCaption})}
+
+Returns a string representation of this object. Used in {\ttfamily \mbox{\hyperlink{classmoa_1_1_abstract_m_o_a_object_ac686fd3b07c734cf21f1894376fe402d}{Abstract\+M\+O\+A\+Object.\+to\+String}}} to give a string representation of the object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sb} & the stringbuilder to add the description \\
+\hline
+{\em indent} & the number of characters to indent \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1_m_o_a_object_afdaf5098f1fe6c852018ce64c28e17f5}{moa.\+M\+O\+A\+Object}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1core_1_1anomalydetection_1_1_odds_ratio_score_ad0217583b3febd576fd8fde520b696af}\label{classmoa_1_1classifiers_1_1rules_1_1core_1_1anomalydetection_1_1_odds_ratio_score_ad0217583b3febd576fd8fde520b696af}} 
+\index{moa.classifiers.rules.core.anomalydetection.OddsRatioScore@{moa.classifiers.rules.core.anomalydetection.OddsRatioScore}!prepareForUseImpl@{prepareForUseImpl}}
+\index{prepareForUseImpl@{prepareForUseImpl}!moa.classifiers.rules.core.anomalydetection.OddsRatioScore@{moa.classifiers.rules.core.anomalydetection.OddsRatioScore}}
+\doxysubsubsection{\texorpdfstring{prepareForUseImpl()}{prepareForUseImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+rules.\+core.\+anomalydetection.\+Odds\+Ratio\+Score.\+prepare\+For\+Use\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}}}]{monitor,  }\item[{\mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}}}]{repository }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+This method describes the implementation of how to prepare this object for use. All classes that extends this class have to implement {\ttfamily prepare\+For\+Use\+Impl} and not {\ttfamily prepare\+For\+Use} since {\ttfamily prepare\+For\+Use} calls {\ttfamily prepare\+For\+Use\+Impl}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em monitor} & the Task\+Monitor to use \\
+\hline
+{\em repository} & the Object\+Repository to use \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1options_1_1_abstract_option_handler_ad0e9c7d4b0e2b185749f36ce28540efb}{moa.\+options.\+Abstract\+Option\+Handler}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1core_1_1anomalydetection_1_1_odds_ratio_score_a2709f54246a021dadd3aa27149b063ff}\label{classmoa_1_1classifiers_1_1rules_1_1core_1_1anomalydetection_1_1_odds_ratio_score_a2709f54246a021dadd3aa27149b063ff}} 
+\index{moa.classifiers.rules.core.anomalydetection.OddsRatioScore@{moa.classifiers.rules.core.anomalydetection.OddsRatioScore}!updateAndCheckAnomalyDetection@{updateAndCheckAnomalyDetection}}
+\index{updateAndCheckAnomalyDetection@{updateAndCheckAnomalyDetection}!moa.classifiers.rules.core.anomalydetection.OddsRatioScore@{moa.classifiers.rules.core.anomalydetection.OddsRatioScore}}
+\doxysubsubsection{\texorpdfstring{updateAndCheckAnomalyDetection()}{updateAndCheckAnomalyDetection()}}
+{\footnotesize\ttfamily boolean moa.\+classifiers.\+rules.\+core.\+anomalydetection.\+Odds\+Ratio\+Score.\+update\+And\+Check\+Anomaly\+Detection (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_multi_label_instance}{Multi\+Label\+Instance}}}]{instance }\end{DoxyParamCaption})}
+
+Adding an instance to the anomaly detector$<$br$>$~\newline
+
+
+\begin{DoxyReturn}{Returns}
+true if anomaly is detected and false otherwise 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1core_1_1anomalydetection_1_1_abstract_anomaly_detector_aff3d81d09b6936d59d5658d95bf895f0}{moa.\+classifiers.\+rules.\+core.\+anomalydetection.\+Abstract\+Anomaly\+Detector}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1core_1_1anomalydetection_1_1_odds_ratio_score_a2577ad4662bdcfd59d286421150d2433}\label{classmoa_1_1classifiers_1_1rules_1_1core_1_1anomalydetection_1_1_odds_ratio_score_a2577ad4662bdcfd59d286421150d2433}} 
+\index{moa.classifiers.rules.core.anomalydetection.OddsRatioScore@{moa.classifiers.rules.core.anomalydetection.OddsRatioScore}!minNumberInstancesOption@{minNumberInstancesOption}}
+\index{minNumberInstancesOption@{minNumberInstancesOption}!moa.classifiers.rules.core.anomalydetection.OddsRatioScore@{moa.classifiers.rules.core.anomalydetection.OddsRatioScore}}
+\doxysubsubsection{\texorpdfstring{minNumberInstancesOption}{minNumberInstancesOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+classifiers.\+rules.\+core.\+anomalydetection.\+Odds\+Ratio\+Score.\+min\+Number\+Instances\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(}
+\DoxyCodeLine{            \textcolor{stringliteral}{"minNumberInstances"},}
+\DoxyCodeLine{            \textcolor{charliteral}{'n'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"The minimum number of instances required to perform anomaly detection."},}
+\DoxyCodeLine{            30, 0, Integer.MAX\_VALUE)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1core_1_1anomalydetection_1_1_odds_ratio_score_ae75e41088ee375f6a04f88265dcfe29e}\label{classmoa_1_1classifiers_1_1rules_1_1core_1_1anomalydetection_1_1_odds_ratio_score_ae75e41088ee375f6a04f88265dcfe29e}} 
+\index{moa.classifiers.rules.core.anomalydetection.OddsRatioScore@{moa.classifiers.rules.core.anomalydetection.OddsRatioScore}!probabilityFunctionOption@{probabilityFunctionOption}}
+\index{probabilityFunctionOption@{probabilityFunctionOption}!moa.classifiers.rules.core.anomalydetection.OddsRatioScore@{moa.classifiers.rules.core.anomalydetection.OddsRatioScore}}
+\doxysubsubsection{\texorpdfstring{probabilityFunctionOption}{probabilityFunctionOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} moa.\+classifiers.\+rules.\+core.\+anomalydetection.\+Odds\+Ratio\+Score.\+probability\+Function\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} ClassOption(\textcolor{stringliteral}{"probabilityFunction"},}
+\DoxyCodeLine{            \textcolor{charliteral}{'p'}, \textcolor{stringliteral}{"Probability function"}, }
+\DoxyCodeLine{            ProbabilityFunction.class,}
+\DoxyCodeLine{            CantellisInequality.class.getName())}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1core_1_1anomalydetection_1_1_odds_ratio_score_a539a9f50bba3c0c4982a37a424856eed}\label{classmoa_1_1classifiers_1_1rules_1_1core_1_1anomalydetection_1_1_odds_ratio_score_a539a9f50bba3c0c4982a37a424856eed}} 
+\index{moa.classifiers.rules.core.anomalydetection.OddsRatioScore@{moa.classifiers.rules.core.anomalydetection.OddsRatioScore}!thresholdOption@{thresholdOption}}
+\index{thresholdOption@{thresholdOption}!moa.classifiers.rules.core.anomalydetection.OddsRatioScore@{moa.classifiers.rules.core.anomalydetection.OddsRatioScore}}
+\doxysubsubsection{\texorpdfstring{thresholdOption}{thresholdOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} moa.\+classifiers.\+rules.\+core.\+anomalydetection.\+Odds\+Ratio\+Score.\+threshold\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FloatOption(}
+\DoxyCodeLine{            \textcolor{stringliteral}{"threshold"},}
+\DoxyCodeLine{            \textcolor{charliteral}{'t'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"The threshold value for detecting anomalies."},}
+\DoxyCodeLine{            -\/0.75, -\/10, 0)}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/classifiers/rules/core/anomalydetection/Odds\+Ratio\+Score.\+java\end{DoxyCompactItemize}

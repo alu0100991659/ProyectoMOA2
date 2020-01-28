@@ -1,0 +1,109 @@
+\hypertarget{classmoa_1_1classifiers_1_1meta_1_1_heterogeneous_ensemble_blast_fading_factors}{}\doxysection{moa.\+classifiers.\+meta.\+Heterogeneous\+Ensemble\+Blast\+Fading\+Factors Class Reference}
+\label{classmoa_1_1classifiers_1_1meta_1_1_heterogeneous_ensemble_blast_fading_factors}\index{moa.classifiers.meta.HeterogeneousEnsembleBlastFadingFactors@{moa.classifiers.meta.HeterogeneousEnsembleBlastFadingFactors}}
+
+
+Inheritance diagram for moa.\+classifiers.\+meta.\+Heterogeneous\+Ensemble\+Blast\+Fading\+Factors\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+classifiers.\+meta.\+Heterogeneous\+Ensemble\+Blast\+Fading\+Factors\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_heterogeneous_ensemble_blast_fading_factors_ab92620fecc96bb8ca8cac418b3e51573}{reset\+Learning\+Impl}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_heterogeneous_ensemble_blast_fading_factors_a77b3d32acd6966a1af6df8b089f4db30}{train\+On\+Instance\+Impl}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} {\bfseries alpha\+Option}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+B\+L\+A\+ST (Best Last) for Heterogeneous Ensembles implemented with Fading Factors
+
+Given a set of (heterogeneous) classifiers, B\+L\+A\+ST builds an ensemble, and determines the weights of all ensemble members based on their performance on recent observed instances. This implementation uses fading factors, to emphasize the importance of recent predictions and fade away old predictions. 
+
+J. N. van Rijn, G. Holmes, B. Pfahringer, J. Vanschoren. Having a Blast\+: Meta-\/\+Learning and Heterogeneous Ensembles for Data Streams. In 2015 I\+E\+EE International Conference on Data Mining, pages 1003-\/1008. I\+E\+EE, 2015. 
+
+Parameters\+: 
+
+
+\begin{DoxyItemize}
+\item -\/f \+: Fading factor 
+\item -\/b \+: Comma-\/separated string of classifiers 
+\item -\/g \+: Grace period (1 = optimal) 
+\item -\/k \+: Number of active classifiers 
+\end{DoxyItemize}
+
+\begin{DoxyAuthor}{Author}
+Jan N. van Rijn (\href{mailto:j.n.van.rijn@liacs.leidenuniv.nl}{\texttt{ j.\+n.\+van.\+rijn@liacs.\+leidenuniv.\+nl}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+1 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_heterogeneous_ensemble_blast_fading_factors_ab92620fecc96bb8ca8cac418b3e51573}\label{classmoa_1_1classifiers_1_1meta_1_1_heterogeneous_ensemble_blast_fading_factors_ab92620fecc96bb8ca8cac418b3e51573}} 
+\index{moa.classifiers.meta.HeterogeneousEnsembleBlastFadingFactors@{moa.classifiers.meta.HeterogeneousEnsembleBlastFadingFactors}!resetLearningImpl@{resetLearningImpl}}
+\index{resetLearningImpl@{resetLearningImpl}!moa.classifiers.meta.HeterogeneousEnsembleBlastFadingFactors@{moa.classifiers.meta.HeterogeneousEnsembleBlastFadingFactors}}
+\doxysubsubsection{\texorpdfstring{resetLearningImpl()}{resetLearningImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+meta.\+Heterogeneous\+Ensemble\+Blast\+Fading\+Factors.\+reset\+Learning\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Resets this classifier. It must be similar to starting a new classifier from scratch. ~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden. 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a099ffcf2417abb919d10d697c0648f29}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_heterogeneous_ensemble_blast_fading_factors_a77b3d32acd6966a1af6df8b089f4db30}\label{classmoa_1_1classifiers_1_1meta_1_1_heterogeneous_ensemble_blast_fading_factors_a77b3d32acd6966a1af6df8b089f4db30}} 
+\index{moa.classifiers.meta.HeterogeneousEnsembleBlastFadingFactors@{moa.classifiers.meta.HeterogeneousEnsembleBlastFadingFactors}!trainOnInstanceImpl@{trainOnInstanceImpl}}
+\index{trainOnInstanceImpl@{trainOnInstanceImpl}!moa.classifiers.meta.HeterogeneousEnsembleBlastFadingFactors@{moa.classifiers.meta.HeterogeneousEnsembleBlastFadingFactors}}
+\doxysubsubsection{\texorpdfstring{trainOnInstanceImpl()}{trainOnInstanceImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+meta.\+Heterogeneous\+Ensemble\+Blast\+Fading\+Factors.\+train\+On\+Instance\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{inst }\end{DoxyParamCaption})}
+
+Trains this classifier incrementally using the given instance.~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & the instance to be used for training \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_aceb24d2ddeab386f2ecead6e3c0d3543}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_heterogeneous_ensemble_blast_fading_factors_aa40003249c48fee0655a0f98b1332541}\label{classmoa_1_1classifiers_1_1meta_1_1_heterogeneous_ensemble_blast_fading_factors_aa40003249c48fee0655a0f98b1332541}} 
+\index{moa.classifiers.meta.HeterogeneousEnsembleBlastFadingFactors@{moa.classifiers.meta.HeterogeneousEnsembleBlastFadingFactors}!alphaOption@{alphaOption}}
+\index{alphaOption@{alphaOption}!moa.classifiers.meta.HeterogeneousEnsembleBlastFadingFactors@{moa.classifiers.meta.HeterogeneousEnsembleBlastFadingFactors}}
+\doxysubsubsection{\texorpdfstring{alphaOption}{alphaOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} moa.\+classifiers.\+meta.\+Heterogeneous\+Ensemble\+Blast\+Fading\+Factors.\+alpha\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FloatOption(\textcolor{stringliteral}{"alpha"}, \textcolor{charliteral}{'a'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"The fading factor."}, 0.999, 0, 1)}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/classifiers/meta/Heterogeneous\+Ensemble\+Blast\+Fading\+Factors.\+java\end{DoxyCompactItemize}

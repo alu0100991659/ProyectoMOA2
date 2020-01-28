@@ -1,0 +1,237 @@
+\hypertarget{classmoa_1_1evaluation_1_1_basic_classification_performance_evaluator}{}\doxysection{moa.\+evaluation.\+Basic\+Classification\+Performance\+Evaluator Class Reference}
+\label{classmoa_1_1evaluation_1_1_basic_classification_performance_evaluator}\index{moa.evaluation.BasicClassificationPerformanceEvaluator@{moa.evaluation.BasicClassificationPerformanceEvaluator}}
+
+
+Inheritance diagram for moa.\+evaluation.\+Basic\+Classification\+Performance\+Evaluator\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+evaluation.\+Basic\+Classification\+Performance\+Evaluator\+:
+% FIG 1
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classmoa_1_1evaluation_1_1_basic_classification_performance_evaluator_1_1_basic_estimator}{Basic\+Estimator}}
+\item 
+interface \mbox{\hyperlink{interfacemoa_1_1evaluation_1_1_basic_classification_performance_evaluator_1_1_estimator}{Estimator}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1evaluation_1_1_basic_classification_performance_evaluator_a951fb880c9e1b8d4dd87c9b0675699cc}\label{classmoa_1_1evaluation_1_1_basic_classification_performance_evaluator_a951fb880c9e1b8d4dd87c9b0675699cc}} 
+void {\bfseries reset} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1evaluation_1_1_basic_classification_performance_evaluator_aaa8bd26fe006a8fc17b3f7b820b9505f}\label{classmoa_1_1evaluation_1_1_basic_classification_performance_evaluator_aaa8bd26fe006a8fc17b3f7b820b9505f}} 
+void {\bfseries reset} (int num\+Classes)
+\item 
+\mbox{\Hypertarget{classmoa_1_1evaluation_1_1_basic_classification_performance_evaluator_adf11ac44c20da7ee45c89a38de1990f6}\label{classmoa_1_1evaluation_1_1_basic_classification_performance_evaluator_adf11ac44c20da7ee45c89a38de1990f6}} 
+void {\bfseries add\+Result} (\mbox{\hyperlink{interfacemoa_1_1core_1_1_example}{Example}}$<$ \mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} $>$ example, double\mbox{[}$\,$\mbox{]} class\+Votes)
+\item 
+\mbox{\Hypertarget{classmoa_1_1evaluation_1_1_basic_classification_performance_evaluator_a919a74fe8c0965ebcf10061ed6193927}\label{classmoa_1_1evaluation_1_1_basic_classification_performance_evaluator_a919a74fe8c0965ebcf10061ed6193927}} 
+\mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}}\mbox{[}$\,$\mbox{]} {\bfseries get\+Performance\+Measurements} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1evaluation_1_1_basic_classification_performance_evaluator_a54a4e94e5d7a70a2e6d54e78dad4ad03}\label{classmoa_1_1evaluation_1_1_basic_classification_performance_evaluator_a54a4e94e5d7a70a2e6d54e78dad4ad03}} 
+double {\bfseries get\+Total\+Weight\+Observed} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1evaluation_1_1_basic_classification_performance_evaluator_a705a1aedf9914334d7ff208068c84ef0}\label{classmoa_1_1evaluation_1_1_basic_classification_performance_evaluator_a705a1aedf9914334d7ff208068c84ef0}} 
+double {\bfseries get\+Fraction\+Correctly\+Classified} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1evaluation_1_1_basic_classification_performance_evaluator_a8f8de5fcccab2ee4a9f0605e80c535b5}\label{classmoa_1_1evaluation_1_1_basic_classification_performance_evaluator_a8f8de5fcccab2ee4a9f0605e80c535b5}} 
+double {\bfseries get\+Fraction\+Incorrectly\+Classified} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1evaluation_1_1_basic_classification_performance_evaluator_a65d0bb3294f78a0e688e3d896c550fd7}\label{classmoa_1_1evaluation_1_1_basic_classification_performance_evaluator_a65d0bb3294f78a0e688e3d896c550fd7}} 
+double {\bfseries get\+Kappa\+Statistic} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1evaluation_1_1_basic_classification_performance_evaluator_adec40c592d0ea0c5a4376382e2ab588e}\label{classmoa_1_1evaluation_1_1_basic_classification_performance_evaluator_adec40c592d0ea0c5a4376382e2ab588e}} 
+double {\bfseries get\+Kappa\+Temporal\+Statistic} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1evaluation_1_1_basic_classification_performance_evaluator_a1545f0b7d3a3baadabdef2189bb33977}\label{classmoa_1_1evaluation_1_1_basic_classification_performance_evaluator_a1545f0b7d3a3baadabdef2189bb33977}} 
+double {\bfseries get\+Precision\+Statistic} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1evaluation_1_1_basic_classification_performance_evaluator_a226d259a7726cfca450f192c168dddb9}\label{classmoa_1_1evaluation_1_1_basic_classification_performance_evaluator_a226d259a7726cfca450f192c168dddb9}} 
+double {\bfseries get\+Precision\+Statistic} (int num\+Class)
+\item 
+\mbox{\Hypertarget{classmoa_1_1evaluation_1_1_basic_classification_performance_evaluator_a5002201e07c4143a91f2248036ef98d9}\label{classmoa_1_1evaluation_1_1_basic_classification_performance_evaluator_a5002201e07c4143a91f2248036ef98d9}} 
+double {\bfseries get\+Recall\+Statistic} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1evaluation_1_1_basic_classification_performance_evaluator_a82d7057f306adb761a6491938d9cf348}\label{classmoa_1_1evaluation_1_1_basic_classification_performance_evaluator_a82d7057f306adb761a6491938d9cf348}} 
+double {\bfseries get\+Recall\+Statistic} (int num\+Class)
+\item 
+\mbox{\Hypertarget{classmoa_1_1evaluation_1_1_basic_classification_performance_evaluator_afe177cb5a80a2ba3f9687b06f6e7be51}\label{classmoa_1_1evaluation_1_1_basic_classification_performance_evaluator_afe177cb5a80a2ba3f9687b06f6e7be51}} 
+double {\bfseries get\+F1\+Statistic} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1evaluation_1_1_basic_classification_performance_evaluator_a7ac212aa1510da3b393af403d522bf81}\label{classmoa_1_1evaluation_1_1_basic_classification_performance_evaluator_a7ac212aa1510da3b393af403d522bf81}} 
+double {\bfseries get\+F1\+Statistic} (int num\+Class)
+\item 
+void \mbox{\hyperlink{classmoa_1_1evaluation_1_1_basic_classification_performance_evaluator_a576db1efa1c4376b54cb8d86c32b4727}{get\+Description}} (String\+Builder sb, int indent)
+\item 
+\mbox{\Hypertarget{classmoa_1_1evaluation_1_1_basic_classification_performance_evaluator_a3aeca905c889f2a106ad56f14f1de5c2}\label{classmoa_1_1evaluation_1_1_basic_classification_performance_evaluator_a3aeca905c889f2a106ad56f14f1de5c2}} 
+void {\bfseries add\+Result} (\mbox{\hyperlink{interfacemoa_1_1core_1_1_example}{Example}}$<$ \mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} $>$ test\+Inst, \mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_prediction}{Prediction}} prediction)
+\item 
+\mbox{\Hypertarget{classmoa_1_1evaluation_1_1_basic_classification_performance_evaluator_ad1bead42c6b123a54056bcab9e6fc127}\label{classmoa_1_1evaluation_1_1_basic_classification_performance_evaluator_ad1bead42c6b123a54056bcab9e6fc127}} 
+\mbox{\hyperlink{classmoa_1_1capabilities_1_1_immutable_capabilities}{Immutable\+Capabilities}} {\bfseries define\+Immutable\+Capabilities} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_flag_option}{Flag\+Option}} {\bfseries precision\+Recall\+Output\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_flag_option}{Flag\+Option}} {\bfseries precision\+Per\+Class\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_flag_option}{Flag\+Option}} {\bfseries recall\+Per\+Class\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_flag_option}{Flag\+Option}} {\bfseries f1\+Per\+Class\+Option}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classmoa_1_1evaluation_1_1_basic_classification_performance_evaluator_a5d962822052d0179e55536dff2eb5c57}{prepare\+For\+Use\+Impl}} (\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}} monitor, \mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}} repository)
+\item 
+\mbox{\Hypertarget{classmoa_1_1evaluation_1_1_basic_classification_performance_evaluator_a84985d4b645b127565101ed58ec87857}\label{classmoa_1_1evaluation_1_1_basic_classification_performance_evaluator_a84985d4b645b127565101ed58ec87857}} 
+\mbox{\hyperlink{interfacemoa_1_1evaluation_1_1_basic_classification_performance_evaluator_1_1_estimator}{Estimator}} {\bfseries new\+Estimator} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1evaluation_1_1_basic_classification_performance_evaluator_ad2b690aa1e0c9632639a3c905c26a345}\label{classmoa_1_1evaluation_1_1_basic_classification_performance_evaluator_ad2b690aa1e0c9632639a3c905c26a345}} 
+\mbox{\hyperlink{interfacemoa_1_1evaluation_1_1_basic_classification_performance_evaluator_1_1_estimator}{Estimator}} {\bfseries weight\+Correct}
+\item 
+\mbox{\Hypertarget{classmoa_1_1evaluation_1_1_basic_classification_performance_evaluator_a49e1dcb150be482183f74e623d546882}\label{classmoa_1_1evaluation_1_1_basic_classification_performance_evaluator_a49e1dcb150be482183f74e623d546882}} 
+\mbox{\hyperlink{interfacemoa_1_1evaluation_1_1_basic_classification_performance_evaluator_1_1_estimator}{Estimator}}\mbox{[}$\,$\mbox{]} {\bfseries column\+Kappa}
+\item 
+\mbox{\Hypertarget{classmoa_1_1evaluation_1_1_basic_classification_performance_evaluator_a743f5f24f137ef4e617dc8d5336c2dc6}\label{classmoa_1_1evaluation_1_1_basic_classification_performance_evaluator_a743f5f24f137ef4e617dc8d5336c2dc6}} 
+\mbox{\hyperlink{interfacemoa_1_1evaluation_1_1_basic_classification_performance_evaluator_1_1_estimator}{Estimator}}\mbox{[}$\,$\mbox{]} {\bfseries row\+Kappa}
+\item 
+\mbox{\Hypertarget{classmoa_1_1evaluation_1_1_basic_classification_performance_evaluator_ae1156d52b1c5b40204311256092574e8}\label{classmoa_1_1evaluation_1_1_basic_classification_performance_evaluator_ae1156d52b1c5b40204311256092574e8}} 
+\mbox{\hyperlink{interfacemoa_1_1evaluation_1_1_basic_classification_performance_evaluator_1_1_estimator}{Estimator}}\mbox{[}$\,$\mbox{]} {\bfseries precision}
+\item 
+\mbox{\Hypertarget{classmoa_1_1evaluation_1_1_basic_classification_performance_evaluator_a9232a73f1b3cd222d0140ab6cc1d4f14}\label{classmoa_1_1evaluation_1_1_basic_classification_performance_evaluator_a9232a73f1b3cd222d0140ab6cc1d4f14}} 
+\mbox{\hyperlink{interfacemoa_1_1evaluation_1_1_basic_classification_performance_evaluator_1_1_estimator}{Estimator}}\mbox{[}$\,$\mbox{]} {\bfseries recall}
+\item 
+\mbox{\Hypertarget{classmoa_1_1evaluation_1_1_basic_classification_performance_evaluator_a358aa28c55452ca34bcea43162c8144c}\label{classmoa_1_1evaluation_1_1_basic_classification_performance_evaluator_a358aa28c55452ca34bcea43162c8144c}} 
+int {\bfseries num\+Classes}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Classification evaluator that performs basic incremental evaluation.
+
+\begin{DoxyAuthor}{Author}
+Richard Kirkby (\href{mailto:rkirkby@cs.waikato.ac.nz}{\texttt{ rkirkby@cs.\+waikato.\+ac.\+nz}}) 
+
+Albert Bifet (abifet at cs dot waikato dot ac dot nz)
+\end{DoxyAuthor}
+Updates in September 15th 2017 to include precision, recall and \mbox{\hyperlink{classmoa_1_1evaluation_1_1_f1}{F1}} scores. \begin{DoxyAuthor}{Author}
+Jean Karax (\href{mailto:karaxjr@gmail.com}{\texttt{ karaxjr@gmail.\+com}}) 
+
+Jean Paul Barddal (\href{mailto:jean.barddal@ppgia.pucpr.br}{\texttt{ jean.\+barddal@ppgia.\+pucpr.\+br}}) 
+
+Wilson Sasaki Jr (\href{mailto:sasaki.wilson.jr@gmail.com}{\texttt{ sasaki.\+wilson.\+jr@gmail.\+com}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+8 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1evaluation_1_1_basic_classification_performance_evaluator_a576db1efa1c4376b54cb8d86c32b4727}\label{classmoa_1_1evaluation_1_1_basic_classification_performance_evaluator_a576db1efa1c4376b54cb8d86c32b4727}} 
+\index{moa.evaluation.BasicClassificationPerformanceEvaluator@{moa.evaluation.BasicClassificationPerformanceEvaluator}!getDescription@{getDescription}}
+\index{getDescription@{getDescription}!moa.evaluation.BasicClassificationPerformanceEvaluator@{moa.evaluation.BasicClassificationPerformanceEvaluator}}
+\doxysubsubsection{\texorpdfstring{getDescription()}{getDescription()}}
+{\footnotesize\ttfamily void moa.\+evaluation.\+Basic\+Classification\+Performance\+Evaluator.\+get\+Description (\begin{DoxyParamCaption}\item[{String\+Builder}]{sb,  }\item[{int}]{indent }\end{DoxyParamCaption})}
+
+Returns a string representation of this object. Used in {\ttfamily \mbox{\hyperlink{classmoa_1_1_abstract_m_o_a_object_ac686fd3b07c734cf21f1894376fe402d}{Abstract\+M\+O\+A\+Object.\+to\+String}}} to give a string representation of the object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sb} & the stringbuilder to add the description \\
+\hline
+{\em indent} & the number of characters to indent \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1_m_o_a_object_afdaf5098f1fe6c852018ce64c28e17f5}{moa.\+M\+O\+A\+Object}}.
+
+\mbox{\Hypertarget{classmoa_1_1evaluation_1_1_basic_classification_performance_evaluator_a5d962822052d0179e55536dff2eb5c57}\label{classmoa_1_1evaluation_1_1_basic_classification_performance_evaluator_a5d962822052d0179e55536dff2eb5c57}} 
+\index{moa.evaluation.BasicClassificationPerformanceEvaluator@{moa.evaluation.BasicClassificationPerformanceEvaluator}!prepareForUseImpl@{prepareForUseImpl}}
+\index{prepareForUseImpl@{prepareForUseImpl}!moa.evaluation.BasicClassificationPerformanceEvaluator@{moa.evaluation.BasicClassificationPerformanceEvaluator}}
+\doxysubsubsection{\texorpdfstring{prepareForUseImpl()}{prepareForUseImpl()}}
+{\footnotesize\ttfamily void moa.\+evaluation.\+Basic\+Classification\+Performance\+Evaluator.\+prepare\+For\+Use\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}}}]{monitor,  }\item[{\mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}}}]{repository }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+This method describes the implementation of how to prepare this object for use. All classes that extends this class have to implement {\ttfamily prepare\+For\+Use\+Impl} and not {\ttfamily prepare\+For\+Use} since {\ttfamily prepare\+For\+Use} calls {\ttfamily prepare\+For\+Use\+Impl}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em monitor} & the Task\+Monitor to use \\
+\hline
+{\em repository} & the Object\+Repository to use \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1options_1_1_abstract_option_handler_ad0e9c7d4b0e2b185749f36ce28540efb}{moa.\+options.\+Abstract\+Option\+Handler}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmoa_1_1evaluation_1_1_basic_classification_performance_evaluator_a3a7d8520bba6c0a6a6539755eeeabd39}\label{classmoa_1_1evaluation_1_1_basic_classification_performance_evaluator_a3a7d8520bba6c0a6a6539755eeeabd39}} 
+\index{moa.evaluation.BasicClassificationPerformanceEvaluator@{moa.evaluation.BasicClassificationPerformanceEvaluator}!f1PerClassOption@{f1PerClassOption}}
+\index{f1PerClassOption@{f1PerClassOption}!moa.evaluation.BasicClassificationPerformanceEvaluator@{moa.evaluation.BasicClassificationPerformanceEvaluator}}
+\doxysubsubsection{\texorpdfstring{f1PerClassOption}{f1PerClassOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_flag_option}{Flag\+Option}} moa.\+evaluation.\+Basic\+Classification\+Performance\+Evaluator.\+f1\+Per\+Class\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FlagOption(\textcolor{stringliteral}{"f1PerClass"}, \textcolor{charliteral}{'f'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Report F1 per class."})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1evaluation_1_1_basic_classification_performance_evaluator_a31927610426ea280927131ddbf5e0eb1}\label{classmoa_1_1evaluation_1_1_basic_classification_performance_evaluator_a31927610426ea280927131ddbf5e0eb1}} 
+\index{moa.evaluation.BasicClassificationPerformanceEvaluator@{moa.evaluation.BasicClassificationPerformanceEvaluator}!precisionPerClassOption@{precisionPerClassOption}}
+\index{precisionPerClassOption@{precisionPerClassOption}!moa.evaluation.BasicClassificationPerformanceEvaluator@{moa.evaluation.BasicClassificationPerformanceEvaluator}}
+\doxysubsubsection{\texorpdfstring{precisionPerClassOption}{precisionPerClassOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_flag_option}{Flag\+Option}} moa.\+evaluation.\+Basic\+Classification\+Performance\+Evaluator.\+precision\+Per\+Class\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FlagOption(\textcolor{stringliteral}{"precisionPerClass"},}
+\DoxyCodeLine{            \textcolor{charliteral}{'p'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Report precision per class."})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1evaluation_1_1_basic_classification_performance_evaluator_af235a0c95347cf6997d3f079a0730048}\label{classmoa_1_1evaluation_1_1_basic_classification_performance_evaluator_af235a0c95347cf6997d3f079a0730048}} 
+\index{moa.evaluation.BasicClassificationPerformanceEvaluator@{moa.evaluation.BasicClassificationPerformanceEvaluator}!precisionRecallOutputOption@{precisionRecallOutputOption}}
+\index{precisionRecallOutputOption@{precisionRecallOutputOption}!moa.evaluation.BasicClassificationPerformanceEvaluator@{moa.evaluation.BasicClassificationPerformanceEvaluator}}
+\doxysubsubsection{\texorpdfstring{precisionRecallOutputOption}{precisionRecallOutputOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_flag_option}{Flag\+Option}} moa.\+evaluation.\+Basic\+Classification\+Performance\+Evaluator.\+precision\+Recall\+Output\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FlagOption(\textcolor{stringliteral}{"precisionRecallOutput"},}
+\DoxyCodeLine{            \textcolor{charliteral}{'o'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Outputs average precision, recall and F1 scores."})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1evaluation_1_1_basic_classification_performance_evaluator_a465282dcab88b9cd3c5ab8940a32eb59}\label{classmoa_1_1evaluation_1_1_basic_classification_performance_evaluator_a465282dcab88b9cd3c5ab8940a32eb59}} 
+\index{moa.evaluation.BasicClassificationPerformanceEvaluator@{moa.evaluation.BasicClassificationPerformanceEvaluator}!recallPerClassOption@{recallPerClassOption}}
+\index{recallPerClassOption@{recallPerClassOption}!moa.evaluation.BasicClassificationPerformanceEvaluator@{moa.evaluation.BasicClassificationPerformanceEvaluator}}
+\doxysubsubsection{\texorpdfstring{recallPerClassOption}{recallPerClassOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_flag_option}{Flag\+Option}} moa.\+evaluation.\+Basic\+Classification\+Performance\+Evaluator.\+recall\+Per\+Class\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FlagOption(\textcolor{stringliteral}{"recallPerClass"},}
+\DoxyCodeLine{            \textcolor{charliteral}{'r'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Report recall per class."})}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/evaluation/Basic\+Classification\+Performance\+Evaluator.\+java\end{DoxyCompactItemize}

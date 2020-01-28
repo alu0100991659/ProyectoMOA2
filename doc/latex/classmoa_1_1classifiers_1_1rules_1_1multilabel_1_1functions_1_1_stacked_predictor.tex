@@ -1,0 +1,231 @@
+\hypertarget{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1functions_1_1_stacked_predictor}{}\doxysection{moa.\+classifiers.\+rules.\+multilabel.\+functions.\+Stacked\+Predictor Class Reference}
+\label{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1functions_1_1_stacked_predictor}\index{moa.classifiers.rules.multilabel.functions.StackedPredictor@{moa.classifiers.rules.multilabel.functions.StackedPredictor}}
+
+
+Inheritance diagram for moa.\+classifiers.\+rules.\+multilabel.\+functions.\+Stacked\+Predictor\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+classifiers.\+rules.\+multilabel.\+functions.\+Stacked\+Predictor\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1functions_1_1_stacked_predictor_a201d77b77e1039c4b3840dcf07eb2beb}{is\+Randomizable}} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1functions_1_1_stacked_predictor_a645f3bf176a82cf4f159e0648ae122da}\label{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1functions_1_1_stacked_predictor_a645f3bf176a82cf4f159e0648ae122da}} 
+void {\bfseries reset\+With\+Memory} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1functions_1_1_stacked_predictor_a04856433421ecee8d77d3d76348fca96}\label{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1functions_1_1_stacked_predictor_a04856433421ecee8d77d3d76348fca96}} 
+void {\bfseries train\+On\+Instance\+Impl} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_multi_label_instance}{Multi\+Label\+Instance}} instance)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1functions_1_1_stacked_predictor_a06161016699188704783450a1d5419fd}\label{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1functions_1_1_stacked_predictor_a06161016699188704783450a1d5419fd}} 
+\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_prediction}{Prediction}} {\bfseries get\+Prediction\+For\+Instance} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_multi_label_instance}{Multi\+Label\+Instance}} inst)
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1functions_1_1_stacked_predictor_ae51bbe1b4d0c63132c4709ce6f4e830c}{reset\+Learning\+Impl}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1functions_1_1_stacked_predictor_a7c3b28c078adcdb9cfe9b66a884b20ac}{get\+Model\+Description}} (String\+Builder out, int indent)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1functions_1_1_stacked_predictor_ab9b682e992191a65be35ffeb9bc32a0f}\label{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1functions_1_1_stacked_predictor_ab9b682e992191a65be35ffeb9bc32a0f}} 
+void {\bfseries select\+Outputs\+To\+Learn} (int\mbox{[}$\,$\mbox{]} output\+Atributtes)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_flag_option}{Flag\+Option}} {\bfseries constant\+Learning\+Ratio\+Decay\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} {\bfseries learning\+Ratio\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} {\bfseries learning\+Ratio2nd\+Layer\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} {\bfseries learning\+Rate\+Decay\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_flag_option}{Flag\+Option}} {\bfseries skip\+Stacking\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries random\+Seed\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_flag_option}{Flag\+Option}} {\bfseries print\+Weights\+Option}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1functions_1_1_stacked_predictor_af60dfbab32a952be952a20bb9a46a181}\label{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1functions_1_1_stacked_predictor_af60dfbab32a952be952a20bb9a46a181}} 
+double\mbox{[}$\,$\mbox{]} {\bfseries get\+Normalized\+Input} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_multi_label_instance}{Multi\+Label\+Instance}} instance)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1functions_1_1_stacked_predictor_a3856a0a6b6f61414bf1f5a30c2c330e9}\label{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1functions_1_1_stacked_predictor_a3856a0a6b6f61414bf1f5a30c2c330e9}} 
+double\mbox{[}$\,$\mbox{]} {\bfseries get\+Normalized\+Output} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_multi_label_instance}{Multi\+Label\+Instance}} instance)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1functions_1_1_stacked_predictor_a2500a5599a4289ceb41b159e8f8bfc08}\label{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1functions_1_1_stacked_predictor_a2500a5599a4289ceb41b159e8f8bfc08}} 
+double\mbox{[}$\,$\mbox{]} {\bfseries get\+Denormalized\+Output} (double\mbox{[}$\,$\mbox{]} norm\+Outputs)
+\item 
+\mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1functions_1_1_stacked_predictor_af1dfca704942529b8f5fbdc881159ddf}{get\+Model\+Measurements\+Impl}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1functions_1_1_stacked_predictor_a7c3b28c078adcdb9cfe9b66a884b20ac}\label{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1functions_1_1_stacked_predictor_a7c3b28c078adcdb9cfe9b66a884b20ac}} 
+\index{moa.classifiers.rules.multilabel.functions.StackedPredictor@{moa.classifiers.rules.multilabel.functions.StackedPredictor}!getModelDescription@{getModelDescription}}
+\index{getModelDescription@{getModelDescription}!moa.classifiers.rules.multilabel.functions.StackedPredictor@{moa.classifiers.rules.multilabel.functions.StackedPredictor}}
+\doxysubsubsection{\texorpdfstring{getModelDescription()}{getModelDescription()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+rules.\+multilabel.\+functions.\+Stacked\+Predictor.\+get\+Model\+Description (\begin{DoxyParamCaption}\item[{String\+Builder}]{out,  }\item[{int}]{indent }\end{DoxyParamCaption})}
+
+Returns a string representation of the model.
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & the stringbuilder to add the description \\
+\hline
+{\em indent} & the number of characters to indent \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a30e5ff32bc8127dfb7436945776b7523}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1functions_1_1_stacked_predictor_af1dfca704942529b8f5fbdc881159ddf}\label{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1functions_1_1_stacked_predictor_af1dfca704942529b8f5fbdc881159ddf}} 
+\index{moa.classifiers.rules.multilabel.functions.StackedPredictor@{moa.classifiers.rules.multilabel.functions.StackedPredictor}!getModelMeasurementsImpl@{getModelMeasurementsImpl}}
+\index{getModelMeasurementsImpl@{getModelMeasurementsImpl}!moa.classifiers.rules.multilabel.functions.StackedPredictor@{moa.classifiers.rules.multilabel.functions.StackedPredictor}}
+\doxysubsubsection{\texorpdfstring{getModelMeasurementsImpl()}{getModelMeasurementsImpl()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}} \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+rules.\+multilabel.\+functions.\+Stacked\+Predictor.\+get\+Model\+Measurements\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Gets the current measurements of this classifier.~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden.
+
+\begin{DoxyReturn}{Returns}
+an array of measurements to be used in evaluation tasks 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_ac2bebede21c9d2d8cd11d95a7e20e529}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1functions_1_1_stacked_predictor_a201d77b77e1039c4b3840dcf07eb2beb}\label{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1functions_1_1_stacked_predictor_a201d77b77e1039c4b3840dcf07eb2beb}} 
+\index{moa.classifiers.rules.multilabel.functions.StackedPredictor@{moa.classifiers.rules.multilabel.functions.StackedPredictor}!isRandomizable@{isRandomizable}}
+\index{isRandomizable@{isRandomizable}!moa.classifiers.rules.multilabel.functions.StackedPredictor@{moa.classifiers.rules.multilabel.functions.StackedPredictor}}
+\doxysubsubsection{\texorpdfstring{isRandomizable()}{isRandomizable()}}
+{\footnotesize\ttfamily boolean moa.\+classifiers.\+rules.\+multilabel.\+functions.\+Stacked\+Predictor.\+is\+Randomizable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets whether this learner needs a random seed. Examples of methods that needs a random seed are bagging and boosting.
+
+\begin{DoxyReturn}{Returns}
+true if the learner needs a random seed. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1learners_1_1_learner_a2f1ff9007b5eb5f53801f474b4d42a61}{moa.\+learners.\+Learner$<$ E extends Example $>$}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1functions_1_1_stacked_predictor_ae51bbe1b4d0c63132c4709ce6f4e830c}\label{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1functions_1_1_stacked_predictor_ae51bbe1b4d0c63132c4709ce6f4e830c}} 
+\index{moa.classifiers.rules.multilabel.functions.StackedPredictor@{moa.classifiers.rules.multilabel.functions.StackedPredictor}!resetLearningImpl@{resetLearningImpl}}
+\index{resetLearningImpl@{resetLearningImpl}!moa.classifiers.rules.multilabel.functions.StackedPredictor@{moa.classifiers.rules.multilabel.functions.StackedPredictor}}
+\doxysubsubsection{\texorpdfstring{resetLearningImpl()}{resetLearningImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+rules.\+multilabel.\+functions.\+Stacked\+Predictor.\+reset\+Learning\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Resets this classifier. It must be similar to starting a new classifier from scratch. ~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden. 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a099ffcf2417abb919d10d697c0648f29}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1functions_1_1_stacked_predictor_a0a5483a23c2f38595c4d9aa30ed61e62}\label{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1functions_1_1_stacked_predictor_a0a5483a23c2f38595c4d9aa30ed61e62}} 
+\index{moa.classifiers.rules.multilabel.functions.StackedPredictor@{moa.classifiers.rules.multilabel.functions.StackedPredictor}!constantLearningRatioDecayOption@{constantLearningRatioDecayOption}}
+\index{constantLearningRatioDecayOption@{constantLearningRatioDecayOption}!moa.classifiers.rules.multilabel.functions.StackedPredictor@{moa.classifiers.rules.multilabel.functions.StackedPredictor}}
+\doxysubsubsection{\texorpdfstring{constantLearningRatioDecayOption}{constantLearningRatioDecayOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_flag_option}{Flag\+Option}} moa.\+classifiers.\+rules.\+multilabel.\+functions.\+Stacked\+Predictor.\+constant\+Learning\+Ratio\+Decay\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FlagOption(}
+\DoxyCodeLine{            \textcolor{stringliteral}{"learningRatio\_Decay\_set\_constant"}, \textcolor{charliteral}{'d'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Learning Ratio Decay in Perceptron set to be constant. (The next parameter)."})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1functions_1_1_stacked_predictor_a78192f9c75c61bcf142525e708e81369}\label{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1functions_1_1_stacked_predictor_a78192f9c75c61bcf142525e708e81369}} 
+\index{moa.classifiers.rules.multilabel.functions.StackedPredictor@{moa.classifiers.rules.multilabel.functions.StackedPredictor}!learningRateDecayOption@{learningRateDecayOption}}
+\index{learningRateDecayOption@{learningRateDecayOption}!moa.classifiers.rules.multilabel.functions.StackedPredictor@{moa.classifiers.rules.multilabel.functions.StackedPredictor}}
+\doxysubsubsection{\texorpdfstring{learningRateDecayOption}{learningRateDecayOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} moa.\+classifiers.\+rules.\+multilabel.\+functions.\+Stacked\+Predictor.\+learning\+Rate\+Decay\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FloatOption(}
+\DoxyCodeLine{            \textcolor{stringliteral}{"learningRateDecay"}, \textcolor{charliteral}{'m'}, }
+\DoxyCodeLine{            \textcolor{stringliteral}{" Learning Rate decay to use for training the 1st layer."}, 0.001)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1functions_1_1_stacked_predictor_a5d9ac2f2db6223b1cda8955c27ce2752}\label{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1functions_1_1_stacked_predictor_a5d9ac2f2db6223b1cda8955c27ce2752}} 
+\index{moa.classifiers.rules.multilabel.functions.StackedPredictor@{moa.classifiers.rules.multilabel.functions.StackedPredictor}!learningRatio2ndLayerOption@{learningRatio2ndLayerOption}}
+\index{learningRatio2ndLayerOption@{learningRatio2ndLayerOption}!moa.classifiers.rules.multilabel.functions.StackedPredictor@{moa.classifiers.rules.multilabel.functions.StackedPredictor}}
+\doxysubsubsection{\texorpdfstring{learningRatio2ndLayerOption}{learningRatio2ndLayerOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} moa.\+classifiers.\+rules.\+multilabel.\+functions.\+Stacked\+Predictor.\+learning\+Ratio2nd\+Layer\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FloatOption(}
+\DoxyCodeLine{            \textcolor{stringliteral}{"learningRatio2ndLayer"}, \textcolor{charliteral}{'n'}, }
+\DoxyCodeLine{            \textcolor{stringliteral}{"Learning Ratio to use in the second layer."}, 0.001)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1functions_1_1_stacked_predictor_aa91c2e7003ac8f8289c011c57e44cd33}\label{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1functions_1_1_stacked_predictor_aa91c2e7003ac8f8289c011c57e44cd33}} 
+\index{moa.classifiers.rules.multilabel.functions.StackedPredictor@{moa.classifiers.rules.multilabel.functions.StackedPredictor}!learningRatioOption@{learningRatioOption}}
+\index{learningRatioOption@{learningRatioOption}!moa.classifiers.rules.multilabel.functions.StackedPredictor@{moa.classifiers.rules.multilabel.functions.StackedPredictor}}
+\doxysubsubsection{\texorpdfstring{learningRatioOption}{learningRatioOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} moa.\+classifiers.\+rules.\+multilabel.\+functions.\+Stacked\+Predictor.\+learning\+Ratio\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FloatOption(}
+\DoxyCodeLine{            \textcolor{stringliteral}{"learningRatio"}, \textcolor{charliteral}{'l'}, }
+\DoxyCodeLine{            \textcolor{stringliteral}{"Learning Ratio to use for training the 1st layer."}, 0.025)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1functions_1_1_stacked_predictor_a7ec6f58ac6f669104dd90cc95f655d9f}\label{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1functions_1_1_stacked_predictor_a7ec6f58ac6f669104dd90cc95f655d9f}} 
+\index{moa.classifiers.rules.multilabel.functions.StackedPredictor@{moa.classifiers.rules.multilabel.functions.StackedPredictor}!printWeightsOption@{printWeightsOption}}
+\index{printWeightsOption@{printWeightsOption}!moa.classifiers.rules.multilabel.functions.StackedPredictor@{moa.classifiers.rules.multilabel.functions.StackedPredictor}}
+\doxysubsubsection{\texorpdfstring{printWeightsOption}{printWeightsOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_flag_option}{Flag\+Option}} moa.\+classifiers.\+rules.\+multilabel.\+functions.\+Stacked\+Predictor.\+print\+Weights\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FlagOption(}
+\DoxyCodeLine{            \textcolor{stringliteral}{"printWeights"}, \textcolor{charliteral}{'p'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Outputs the 2nd layer weights as measurements."})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1functions_1_1_stacked_predictor_ae85eba6b286b4905e216a396c9588603}\label{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1functions_1_1_stacked_predictor_ae85eba6b286b4905e216a396c9588603}} 
+\index{moa.classifiers.rules.multilabel.functions.StackedPredictor@{moa.classifiers.rules.multilabel.functions.StackedPredictor}!randomSeedOption@{randomSeedOption}}
+\index{randomSeedOption@{randomSeedOption}!moa.classifiers.rules.multilabel.functions.StackedPredictor@{moa.classifiers.rules.multilabel.functions.StackedPredictor}}
+\doxysubsubsection{\texorpdfstring{randomSeedOption}{randomSeedOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+classifiers.\+rules.\+multilabel.\+functions.\+Stacked\+Predictor.\+random\+Seed\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(\textcolor{stringliteral}{"randomSeed"}, \textcolor{charliteral}{'r'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Seed for random behaviour of the classifier."}, 1)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1functions_1_1_stacked_predictor_a58fad585b4f5025c656682ef948e5747}\label{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1functions_1_1_stacked_predictor_a58fad585b4f5025c656682ef948e5747}} 
+\index{moa.classifiers.rules.multilabel.functions.StackedPredictor@{moa.classifiers.rules.multilabel.functions.StackedPredictor}!skipStackingOption@{skipStackingOption}}
+\index{skipStackingOption@{skipStackingOption}!moa.classifiers.rules.multilabel.functions.StackedPredictor@{moa.classifiers.rules.multilabel.functions.StackedPredictor}}
+\doxysubsubsection{\texorpdfstring{skipStackingOption}{skipStackingOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_flag_option}{Flag\+Option}} moa.\+classifiers.\+rules.\+multilabel.\+functions.\+Stacked\+Predictor.\+skip\+Stacking\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FlagOption(}
+\DoxyCodeLine{            \textcolor{stringliteral}{"skipStackingOption"}, \textcolor{charliteral}{'s'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Predicts the outputs of the first layer (no dependence among output is computed)"})}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/classifiers/rules/multilabel/functions/Stacked\+Predictor.\+java\end{DoxyCompactItemize}

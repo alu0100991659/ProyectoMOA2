@@ -1,0 +1,151 @@
+\hypertarget{classmoa_1_1classifiers_1_1multitarget_1_1_basic_multi_label_learner}{}\doxysection{moa.\+classifiers.\+multitarget.\+Basic\+Multi\+Label\+Learner Class Reference}
+\label{classmoa_1_1classifiers_1_1multitarget_1_1_basic_multi_label_learner}\index{moa.classifiers.multitarget.BasicMultiLabelLearner@{moa.classifiers.multitarget.BasicMultiLabelLearner}}
+
+
+Inheritance diagram for moa.\+classifiers.\+multitarget.\+Basic\+Multi\+Label\+Learner\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+classifiers.\+multitarget.\+Basic\+Multi\+Label\+Learner\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1multitarget_1_1_basic_multi_label_learner_a495d3f8bc03b33c1d4ee1e3204728a37}{reset\+Learning\+Impl}} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1multitarget_1_1_basic_multi_label_learner_aaa11ad58d934f2215e7266d2288edca5}\label{classmoa_1_1classifiers_1_1multitarget_1_1_basic_multi_label_learner_aaa11ad58d934f2215e7266d2288edca5}} 
+void {\bfseries train\+On\+Instance\+Impl} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_multi_label_instance}{Multi\+Label\+Instance}} instance)
+\item 
+boolean \mbox{\hyperlink{classmoa_1_1classifiers_1_1multitarget_1_1_basic_multi_label_learner_ac50e06c97a669f147fc55320a1ee0a5b}{is\+Randomizable}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1multitarget_1_1_basic_multi_label_learner_a8d8d8c72a426483163bb6206288b252e}{get\+Model\+Description}} (String\+Builder out, int indent)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1multitarget_1_1_basic_multi_label_learner_a8c74ee73f53916615398a09b9b1eb1f4}\label{classmoa_1_1classifiers_1_1multitarget_1_1_basic_multi_label_learner_a8c74ee73f53916615398a09b9b1eb1f4}} 
+\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_prediction}{Prediction}} {\bfseries get\+Prediction\+For\+Instance} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_multi_label_instance}{Multi\+Label\+Instance}} instance)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries random\+Seed\+Option}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1multitarget_1_1_basic_multi_label_learner_a224bb2f600d10a91a48e7bda185ba1f3}\label{classmoa_1_1classifiers_1_1multitarget_1_1_basic_multi_label_learner_a224bb2f600d10a91a48e7bda185ba1f3}} 
+\mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} {\bfseries base\+Learner\+Option}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1multitarget_1_1_basic_multi_label_learner_ae41d76873a51d404d499621d42f6ef88}\label{classmoa_1_1classifiers_1_1multitarget_1_1_basic_multi_label_learner_ae41d76873a51d404d499621d42f6ef88}} 
+void {\bfseries init} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1multitarget_1_1_basic_multi_label_learner_a5e4f36ad36a92b91a91cf68e0e582e00}\label{classmoa_1_1classifiers_1_1multitarget_1_1_basic_multi_label_learner_a5e4f36ad36a92b91a91cf68e0e582e00}} 
+\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} {\bfseries transform\+Instance} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_multi_label_instance}{Multi\+Label\+Instance}} inst, int output\+Index)
+\item 
+\mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1multitarget_1_1_basic_multi_label_learner_a852ceddccea54e41ad3062615408d502}{get\+Model\+Measurements\+Impl}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1multitarget_1_1_basic_multi_label_learner_a975aa675bc91f3bd5281091412703548}\label{classmoa_1_1classifiers_1_1multitarget_1_1_basic_multi_label_learner_a975aa675bc91f3bd5281091412703548}} 
+\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier}{Classifier}}\mbox{[}$\,$\mbox{]} {\bfseries ensemble}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1multitarget_1_1_basic_multi_label_learner_ac00d8812cf6a1102043abe5ca78a33ad}\label{classmoa_1_1classifiers_1_1multitarget_1_1_basic_multi_label_learner_ac00d8812cf6a1102043abe5ca78a33ad}} 
+boolean {\bfseries has\+Started} = false
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1multitarget_1_1_basic_multi_label_learner_ab95d9a1823d328dedcf124ec4f057525}\label{classmoa_1_1classifiers_1_1multitarget_1_1_basic_multi_label_learner_ab95d9a1823d328dedcf124ec4f057525}} 
+\mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instances_header}{Instances\+Header}}\mbox{[}$\,$\mbox{]} {\bfseries header}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Binary relevance Multilabel \mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier}{Classifier}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1multitarget_1_1_basic_multi_label_learner_a8d8d8c72a426483163bb6206288b252e}\label{classmoa_1_1classifiers_1_1multitarget_1_1_basic_multi_label_learner_a8d8d8c72a426483163bb6206288b252e}} 
+\index{moa.classifiers.multitarget.BasicMultiLabelLearner@{moa.classifiers.multitarget.BasicMultiLabelLearner}!getModelDescription@{getModelDescription}}
+\index{getModelDescription@{getModelDescription}!moa.classifiers.multitarget.BasicMultiLabelLearner@{moa.classifiers.multitarget.BasicMultiLabelLearner}}
+\doxysubsubsection{\texorpdfstring{getModelDescription()}{getModelDescription()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+multitarget.\+Basic\+Multi\+Label\+Learner.\+get\+Model\+Description (\begin{DoxyParamCaption}\item[{String\+Builder}]{out,  }\item[{int}]{indent }\end{DoxyParamCaption})}
+
+Returns a string representation of the model.
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & the stringbuilder to add the description \\
+\hline
+{\em indent} & the number of characters to indent \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a30e5ff32bc8127dfb7436945776b7523}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1multitarget_1_1_basic_multi_label_learner_a852ceddccea54e41ad3062615408d502}\label{classmoa_1_1classifiers_1_1multitarget_1_1_basic_multi_label_learner_a852ceddccea54e41ad3062615408d502}} 
+\index{moa.classifiers.multitarget.BasicMultiLabelLearner@{moa.classifiers.multitarget.BasicMultiLabelLearner}!getModelMeasurementsImpl@{getModelMeasurementsImpl}}
+\index{getModelMeasurementsImpl@{getModelMeasurementsImpl}!moa.classifiers.multitarget.BasicMultiLabelLearner@{moa.classifiers.multitarget.BasicMultiLabelLearner}}
+\doxysubsubsection{\texorpdfstring{getModelMeasurementsImpl()}{getModelMeasurementsImpl()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}} \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+multitarget.\+Basic\+Multi\+Label\+Learner.\+get\+Model\+Measurements\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Gets the current measurements of this classifier.~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden.
+
+\begin{DoxyReturn}{Returns}
+an array of measurements to be used in evaluation tasks 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_ac2bebede21c9d2d8cd11d95a7e20e529}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1multitarget_1_1_basic_multi_label_learner_ac50e06c97a669f147fc55320a1ee0a5b}\label{classmoa_1_1classifiers_1_1multitarget_1_1_basic_multi_label_learner_ac50e06c97a669f147fc55320a1ee0a5b}} 
+\index{moa.classifiers.multitarget.BasicMultiLabelLearner@{moa.classifiers.multitarget.BasicMultiLabelLearner}!isRandomizable@{isRandomizable}}
+\index{isRandomizable@{isRandomizable}!moa.classifiers.multitarget.BasicMultiLabelLearner@{moa.classifiers.multitarget.BasicMultiLabelLearner}}
+\doxysubsubsection{\texorpdfstring{isRandomizable()}{isRandomizable()}}
+{\footnotesize\ttfamily boolean moa.\+classifiers.\+multitarget.\+Basic\+Multi\+Label\+Learner.\+is\+Randomizable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets whether this learner needs a random seed. Examples of methods that needs a random seed are bagging and boosting.
+
+\begin{DoxyReturn}{Returns}
+true if the learner needs a random seed. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1learners_1_1_learner_a2f1ff9007b5eb5f53801f474b4d42a61}{moa.\+learners.\+Learner$<$ E extends Example $>$}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1multitarget_1_1_basic_multi_label_learner_a495d3f8bc03b33c1d4ee1e3204728a37}\label{classmoa_1_1classifiers_1_1multitarget_1_1_basic_multi_label_learner_a495d3f8bc03b33c1d4ee1e3204728a37}} 
+\index{moa.classifiers.multitarget.BasicMultiLabelLearner@{moa.classifiers.multitarget.BasicMultiLabelLearner}!resetLearningImpl@{resetLearningImpl}}
+\index{resetLearningImpl@{resetLearningImpl}!moa.classifiers.multitarget.BasicMultiLabelLearner@{moa.classifiers.multitarget.BasicMultiLabelLearner}}
+\doxysubsubsection{\texorpdfstring{resetLearningImpl()}{resetLearningImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+multitarget.\+Basic\+Multi\+Label\+Learner.\+reset\+Learning\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Resets this classifier. It must be similar to starting a new classifier from scratch. ~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden. 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a099ffcf2417abb919d10d697c0648f29}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1multitarget_1_1_basic_multi_label_learner_a3212ce9fb801c4d60712d43a454608f4}\label{classmoa_1_1classifiers_1_1multitarget_1_1_basic_multi_label_learner_a3212ce9fb801c4d60712d43a454608f4}} 
+\index{moa.classifiers.multitarget.BasicMultiLabelLearner@{moa.classifiers.multitarget.BasicMultiLabelLearner}!randomSeedOption@{randomSeedOption}}
+\index{randomSeedOption@{randomSeedOption}!moa.classifiers.multitarget.BasicMultiLabelLearner@{moa.classifiers.multitarget.BasicMultiLabelLearner}}
+\doxysubsubsection{\texorpdfstring{randomSeedOption}{randomSeedOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+classifiers.\+multitarget.\+Basic\+Multi\+Label\+Learner.\+random\+Seed\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(\textcolor{stringliteral}{"randomSeedOption"},}
+\DoxyCodeLine{            \textcolor{charliteral}{'r'}, \textcolor{stringliteral}{"randomSeedOption"}, }
+\DoxyCodeLine{            1,Integer.MIN\_VALUE, Integer.MAX\_VALUE)}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/classifiers/multitarget/Basic\+Multi\+Label\+Learner.\+java\end{DoxyCompactItemize}

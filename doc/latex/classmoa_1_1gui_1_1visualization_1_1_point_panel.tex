@@ -1,0 +1,133 @@
+\hypertarget{classmoa_1_1gui_1_1visualization_1_1_point_panel}{}\doxysection{moa.\+gui.\+visualization.\+Point\+Panel Class Reference}
+\label{classmoa_1_1gui_1_1visualization_1_1_point_panel}\index{moa.gui.visualization.PointPanel@{moa.gui.visualization.PointPanel}}
+
+
+Inheritance diagram for moa.\+gui.\+visualization.\+Point\+Panel\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+gui.\+visualization.\+Point\+Panel\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1gui_1_1visualization_1_1_point_panel_a0c789d6e1d4cca5fc0294c793406b38b}{Point\+Panel}} (\mbox{\hyperlink{classmoa_1_1gui_1_1visualization_1_1_data_point}{Data\+Point}} point, \mbox{\hyperlink{classmoa_1_1gui_1_1visualization_1_1_stream_panel}{Stream\+Panel}} stream\+Panel, double decay\+Rate, double decay\+Threshold)
+\item 
+\mbox{\hyperlink{classmoa_1_1gui_1_1visualization_1_1_point_panel_a8b7de553df2ab8146c91907abb0a43a5}{Point\+Panel}} (\mbox{\hyperlink{classmoa_1_1gui_1_1visualization_1_1_data_point}{Data\+Point}} point, \mbox{\hyperlink{classmoa_1_1gui_1_1visualization_1_1_stream_panel}{Stream\+Panel}} stream\+Panel, Color color)
+\item 
+\mbox{\Hypertarget{classmoa_1_1gui_1_1visualization_1_1_point_panel_aec4625c9dc5e2b5a98de4fc2e64f483b}\label{classmoa_1_1gui_1_1visualization_1_1_point_panel_aec4625c9dc5e2b5a98de4fc2e64f483b}} 
+void {\bfseries update\+Location} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1gui_1_1visualization_1_1_point_panel_a4ad4b4dab82a2799c0117543e9afbba9}\label{classmoa_1_1gui_1_1visualization_1_1_point_panel_a4ad4b4dab82a2799c0117543e9afbba9}} 
+void {\bfseries highlight} (boolean enabled)
+\item 
+\mbox{\Hypertarget{classmoa_1_1gui_1_1visualization_1_1_point_panel_ab9cdb7026887c0112f8bc5e6b09bad91}\label{classmoa_1_1gui_1_1visualization_1_1_point_panel_ab9cdb7026887c0112f8bc5e6b09bad91}} 
+String {\bfseries get\+Object\+Info} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1gui_1_1visualization_1_1_point_panel_ad6a6e0ca6bfaed93980fb4036b85e623}\label{classmoa_1_1gui_1_1visualization_1_1_point_panel_ad6a6e0ca6bfaed93980fb4036b85e623}} 
+String {\bfseries get\+Tool\+Tip\+Text} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1gui_1_1visualization_1_1_point_panel_a815aaa4f28651eb6d3753050ebe67c5c}\label{classmoa_1_1gui_1_1visualization_1_1_point_panel_a815aaa4f28651eb6d3753050ebe67c5c}} 
+String {\bfseries get\+S\+V\+G\+String} (int width)
+\item 
+\mbox{\Hypertarget{classmoa_1_1gui_1_1visualization_1_1_point_panel_abdf7e138bb0c87d61444713c5585f051}\label{classmoa_1_1gui_1_1visualization_1_1_point_panel_abdf7e138bb0c87d61444713c5585f051}} 
+void {\bfseries draw\+On\+Canvas} (Graphics2D image\+Graphics)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1gui_1_1visualization_1_1_point_panel_a305d4de9c721b8f62c1d76c5a75dcb26}\label{classmoa_1_1gui_1_1visualization_1_1_point_panel_a305d4de9c721b8f62c1d76c5a75dcb26}} 
+static Color {\bfseries get\+Point\+Colorby\+Class} (\mbox{\hyperlink{classmoa_1_1gui_1_1visualization_1_1_data_point}{Data\+Point}} point, float num\+Classes)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1gui_1_1visualization_1_1_point_panel_a04ae5147e3a2acd23504fb154bb5793b}\label{classmoa_1_1gui_1_1visualization_1_1_point_panel_a04ae5147e3a2acd23504fb154bb5793b}} 
+void {\bfseries paint\+Component} (Graphics g)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1gui_1_1visualization_1_1_point_panel_ad19a39cb7540e6928975a241c42c250f}\label{classmoa_1_1gui_1_1visualization_1_1_point_panel_ad19a39cb7540e6928975a241c42c250f}} 
+int {\bfseries x\+\_\+dim} = 0
+\item 
+\mbox{\Hypertarget{classmoa_1_1gui_1_1visualization_1_1_point_panel_aa75e887a42a24b245505336b5715fb52}\label{classmoa_1_1gui_1_1visualization_1_1_point_panel_aa75e887a42a24b245505336b5715fb52}} 
+int {\bfseries y\+\_\+dim} = 1
+\item 
+\mbox{\Hypertarget{classmoa_1_1gui_1_1visualization_1_1_point_panel_ac1d20c472e9788239d09f881954d1484}\label{classmoa_1_1gui_1_1visualization_1_1_point_panel_ac1d20c472e9788239d09f881954d1484}} 
+Color {\bfseries col}
+\item 
+\mbox{\Hypertarget{classmoa_1_1gui_1_1visualization_1_1_point_panel_a409c4331c743000ddee99e9f7d74305a}\label{classmoa_1_1gui_1_1visualization_1_1_point_panel_a409c4331c743000ddee99e9f7d74305a}} 
+Color {\bfseries default\+\_\+color} = Color.\+B\+L\+A\+CK
+\item 
+\mbox{\Hypertarget{classmoa_1_1gui_1_1visualization_1_1_point_panel_a572d8227adf2800826300212bce0935e}\label{classmoa_1_1gui_1_1visualization_1_1_point_panel_a572d8227adf2800826300212bce0935e}} 
+int {\bfseries panel\+\_\+size}
+\item 
+\mbox{\Hypertarget{classmoa_1_1gui_1_1visualization_1_1_point_panel_aa069d9d4c26bf6d5566d3f356a343397}\label{classmoa_1_1gui_1_1visualization_1_1_point_panel_aa069d9d4c26bf6d5566d3f356a343397}} 
+int {\bfseries window\+\_\+size}
+\item 
+\mbox{\Hypertarget{classmoa_1_1gui_1_1visualization_1_1_point_panel_a1e2bced1ec5592c760d2479b557a70da}\label{classmoa_1_1gui_1_1visualization_1_1_point_panel_a1e2bced1ec5592c760d2479b557a70da}} 
+boolean {\bfseries highligted} = false
+\item 
+\mbox{\Hypertarget{classmoa_1_1gui_1_1visualization_1_1_point_panel_aace5a66014150c688d43896b75490916}\label{classmoa_1_1gui_1_1visualization_1_1_point_panel_aace5a66014150c688d43896b75490916}} 
+double {\bfseries decay\+Rate}
+\item 
+\mbox{\Hypertarget{classmoa_1_1gui_1_1visualization_1_1_point_panel_aa273c9132a09cc403658bbfbeb399596}\label{classmoa_1_1gui_1_1visualization_1_1_point_panel_aa273c9132a09cc403658bbfbeb399596}} 
+double {\bfseries decay\+Threshold}
+\item 
+\mbox{\Hypertarget{classmoa_1_1gui_1_1visualization_1_1_point_panel_ae9bd1d5e138da50a0a8a367228baea33}\label{classmoa_1_1gui_1_1visualization_1_1_point_panel_ae9bd1d5e138da50a0a8a367228baea33}} 
+int {\bfseries type}
+\item 
+\mbox{\Hypertarget{classmoa_1_1gui_1_1visualization_1_1_point_panel_afc092d6b45ad6a454548de015bbc9fdb}\label{classmoa_1_1gui_1_1visualization_1_1_point_panel_afc092d6b45ad6a454548de015bbc9fdb}} 
+final int {\bfseries T\+Y\+P\+E\+\_\+\+P\+L\+A\+IN} = 0
+\item 
+\mbox{\Hypertarget{classmoa_1_1gui_1_1visualization_1_1_point_panel_abe202da8c1bce1af5570e9b1618a4779}\label{classmoa_1_1gui_1_1visualization_1_1_point_panel_abe202da8c1bce1af5570e9b1618a4779}} 
+final int {\bfseries T\+Y\+P\+E\+\_\+\+C\+L\+U\+S\+T\+E\+R\+ED} = 1
+\item 
+\mbox{\Hypertarget{classmoa_1_1gui_1_1visualization_1_1_point_panel_ae40aec73189d6a466c5ad6a75d958e20}\label{classmoa_1_1gui_1_1visualization_1_1_point_panel_ae40aec73189d6a466c5ad6a75d958e20}} 
+\mbox{\hyperlink{classmoa_1_1gui_1_1visualization_1_1_stream_panel}{Stream\+Panel}} {\bfseries sp}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmoa_1_1gui_1_1visualization_1_1_point_panel_a0c789d6e1d4cca5fc0294c793406b38b}\label{classmoa_1_1gui_1_1visualization_1_1_point_panel_a0c789d6e1d4cca5fc0294c793406b38b}} 
+\index{moa.gui.visualization.PointPanel@{moa.gui.visualization.PointPanel}!PointPanel@{PointPanel}}
+\index{PointPanel@{PointPanel}!moa.gui.visualization.PointPanel@{moa.gui.visualization.PointPanel}}
+\doxysubsubsection{\texorpdfstring{PointPanel()}{PointPanel()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily moa.\+gui.\+visualization.\+Point\+Panel.\+Point\+Panel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmoa_1_1gui_1_1visualization_1_1_data_point}{Data\+Point}}}]{point,  }\item[{\mbox{\hyperlink{classmoa_1_1gui_1_1visualization_1_1_stream_panel}{Stream\+Panel}}}]{stream\+Panel,  }\item[{double}]{decay\+Rate,  }\item[{double}]{decay\+Threshold }\end{DoxyParamCaption})}
+
+Type 1\+: Possibly be decayed, colored by class label.
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & \\
+\hline
+{\em stream\+Panel} & \\
+\hline
+{\em decay\+Rate} & \\
+\hline
+{\em decay\+Threshold} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmoa_1_1gui_1_1visualization_1_1_point_panel_a8b7de553df2ab8146c91907abb0a43a5}\label{classmoa_1_1gui_1_1visualization_1_1_point_panel_a8b7de553df2ab8146c91907abb0a43a5}} 
+\index{moa.gui.visualization.PointPanel@{moa.gui.visualization.PointPanel}!PointPanel@{PointPanel}}
+\index{PointPanel@{PointPanel}!moa.gui.visualization.PointPanel@{moa.gui.visualization.PointPanel}}
+\doxysubsubsection{\texorpdfstring{PointPanel()}{PointPanel()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily moa.\+gui.\+visualization.\+Point\+Panel.\+Point\+Panel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmoa_1_1gui_1_1visualization_1_1_data_point}{Data\+Point}}}]{point,  }\item[{\mbox{\hyperlink{classmoa_1_1gui_1_1visualization_1_1_stream_panel}{Stream\+Panel}}}]{stream\+Panel,  }\item[{Color}]{color }\end{DoxyParamCaption})}
+
+Type 2\+: Never be decayed, single color.
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & \\
+\hline
+{\em stream\+Panel} & \\
+\hline
+{\em color} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/gui/visualization/Point\+Panel.\+java\end{DoxyCompactItemize}

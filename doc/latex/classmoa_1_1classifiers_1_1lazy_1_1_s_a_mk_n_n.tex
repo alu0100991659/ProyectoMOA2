@@ -1,0 +1,249 @@
+\hypertarget{classmoa_1_1classifiers_1_1lazy_1_1_s_a_mk_n_n}{}\doxysection{moa.\+classifiers.\+lazy.\+S\+A\+Mk\+NN Class Reference}
+\label{classmoa_1_1classifiers_1_1lazy_1_1_s_a_mk_n_n}\index{moa.classifiers.lazy.SAMkNN@{moa.classifiers.lazy.SAMkNN}}
+
+
+Inheritance diagram for moa.\+classifiers.\+lazy.\+S\+A\+Mk\+NN\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+classifiers.\+lazy.\+S\+A\+Mk\+NN\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1_s_a_mk_n_n_ab814c9e9700f18e724d4f85fef0fcef6}{get\+Purpose\+String}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1_s_a_mk_n_n_ae55845d46f41ea1226b4efe0217b1d25}{set\+Model\+Context}} (\mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instances_header}{Instances\+Header}} context)
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1_s_a_mk_n_n_ad356d7c115c82d52efe2b5cc62859a38}{reset\+Learning\+Impl}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1_s_a_mk_n_n_ac10d5b1a49863eedadf7c0d731a2254a}{train\+On\+Instance\+Impl}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst)
+\item 
+double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1_s_a_mk_n_n_a8dcf1e1b9e44999006d59d8c5fbc7bc8}{get\+Votes\+For\+Instance}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst)
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1_s_a_mk_n_n_a9f58762c02ba49b3f10481001a9b7359}{get\+Model\+Description}} (String\+Builder out, int indent)
+\item 
+boolean \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1_s_a_mk_n_n_ac277ac43551fec0f0e73590a6d57e581}{is\+Randomizable}} ()
+\item 
+\mbox{\hyperlink{classmoa_1_1capabilities_1_1_immutable_capabilities}{Immutable\+Capabilities}} \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1_s_a_mk_n_n_a4516454e644b0aceae081d3226648443}{define\+Immutable\+Capabilities}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1lazy_1_1_s_a_mk_n_n_afb4e795758d7b9340eb48d58066124dc}\label{classmoa_1_1classifiers_1_1lazy_1_1_s_a_mk_n_n_afb4e795758d7b9340eb48d58066124dc}} 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries k\+Option} = new \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}}( \char`\"{}k\char`\"{}, \textquotesingle{}k\textquotesingle{}, \char`\"{}The number of neighbors\char`\"{}, 5, 1, Integer.\+M\+A\+X\+\_\+\+V\+A\+L\+UE)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1lazy_1_1_s_a_mk_n_n_a054f7e13eedbbe09407fb81900c6334e}\label{classmoa_1_1classifiers_1_1lazy_1_1_s_a_mk_n_n_a054f7e13eedbbe09407fb81900c6334e}} 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries limit\+Option} = new \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}}( \char`\"{}limit\char`\"{}, \textquotesingle{}w\textquotesingle{}, \char`\"{}The maximum number of instances to store\char`\"{}, 5000, 1, Integer.\+M\+A\+X\+\_\+\+V\+A\+L\+UE)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1lazy_1_1_s_a_mk_n_n_ac2b34d3ba1b1b5403e584cfc9d7ee566}\label{classmoa_1_1classifiers_1_1lazy_1_1_s_a_mk_n_n_ac2b34d3ba1b1b5403e584cfc9d7ee566}} 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries min\+S\+T\+M\+Size\+Option} = new \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}}( \char`\"{}min\+S\+T\+M\+Size\char`\"{}, \textquotesingle{}m\textquotesingle{}, \char`\"{}The minimum number of instances in the S\+TM\char`\"{}, 50, 1, Integer.\+M\+A\+X\+\_\+\+V\+A\+L\+UE)
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} {\bfseries relative\+L\+T\+M\+Size\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_flag_option}{Flag\+Option}} {\bfseries recalculate\+S\+T\+M\+Error\+Option}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1lazy_1_1_s_a_mk_n_n_a81ff4b542ecaf556b780ec006f6473c2}\label{classmoa_1_1classifiers_1_1lazy_1_1_s_a_mk_n_n_a81ff4b542ecaf556b780ec006f6473c2}} 
+void {\bfseries init} ()
+\item 
+\mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1_s_a_mk_n_n_a4d531dd4c42f5e60a9e0841c7179e4e3}{get\+Model\+Measurements\+Impl}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Self Adjusting Memory (S\+AM) coupled with the k Nearest Neighbor classifier (\mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1k_n_n}{k\+NN}}) .
+
+Valid options are\+:
+
+-\/k number of neighbours ~\newline
+ -\/w max instances ~\newline
+ -\/m minimum number of instances in the S\+TM ~\newline
+ -\/p L\+TM size relative to max instances ~\newline
+ -\/r Recalculation of the S\+TM error ~\newline
+
+
+\begin{DoxyAuthor}{Author}
+Viktor Losing (\href{mailto:vlosing@techfak.uni-bielefeld.de}{\texttt{ vlosing@techfak.\+uni-\/bielefeld.\+de}}) Paper\+: \char`\"{}\+K\+N\+N Classifier with Self Adjusting Memory for Heterogeneous Concept Drift\char`\"{} Viktor Losing, Barbara Hammer and Heiko Wersing \href{http://ieeexplore.ieee.org/document/7837853}{\texttt{ http\+://ieeexplore.\+ieee.\+org/document/7837853}} P\+DF can be found at \href{https://pub.uni-bielefeld.de/download/2907622/2907623}{\texttt{ https\+://pub.\+uni-\/bielefeld.\+de/download/2907622/2907623}} Bib\+Tex\+: "@\+I\+N\+P\+R\+O\+C\+E\+E\+D\+I\+N\+GS\{7837853, author=\{V. Losing and B. Hammer and H. Wersing\}, booktitle=\{2016 I\+E\+EE 16th International Conference on Data Mining (I\+C\+DM)\}, title=\{K\+NN \mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier}{Classifier}} with Self Adjusting Memory for Heterogeneous Concept Drift\}, year=\{2016\}, pages=\{291-\/300\}, keywords=\{data mining;optimisation;pattern classification;Big Data;Internet of Things;K\+NN classifier;S\+A\+M-\/k\+NN robustness;data mining;k nearest neighbor algorithm;metaparameter optimization;nonstationary data streams;performance evaluation;self adjusting memory model;Adaptation models;Benchmark testing;Biological system modeling;Data mining;Heuristic algorithms;Prediction algorithms;Predictive models;Data streams;concept drift;data mining;\mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1k_n_n}{k\+NN}}\}, doi=\{10.\+1109/\+I\+C\+DM.2016.\+0040\}, month=\{Dec\} \}" 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1lazy_1_1_s_a_mk_n_n_a4516454e644b0aceae081d3226648443}\label{classmoa_1_1classifiers_1_1lazy_1_1_s_a_mk_n_n_a4516454e644b0aceae081d3226648443}} 
+\index{moa.classifiers.lazy.SAMkNN@{moa.classifiers.lazy.SAMkNN}!defineImmutableCapabilities@{defineImmutableCapabilities}}
+\index{defineImmutableCapabilities@{defineImmutableCapabilities}!moa.classifiers.lazy.SAMkNN@{moa.classifiers.lazy.SAMkNN}}
+\doxysubsubsection{\texorpdfstring{defineImmutableCapabilities()}{defineImmutableCapabilities()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1capabilities_1_1_immutable_capabilities}{Immutable\+Capabilities}} moa.\+classifiers.\+lazy.\+S\+A\+Mk\+N\+N.\+define\+Immutable\+Capabilities (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Defines the set of capabilities the object has. Should be overridden if the object\textquotesingle{}s capabilities do not change.
+
+\begin{DoxyReturn}{Returns}
+The capabilities of the object. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1capabilities_1_1_capabilities_handler_aa82d1befd5dbb958c9787b5304c9a82a}{moa.\+capabilities.\+Capabilities\+Handler}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1lazy_1_1_s_a_mk_n_n_a9f58762c02ba49b3f10481001a9b7359}\label{classmoa_1_1classifiers_1_1lazy_1_1_s_a_mk_n_n_a9f58762c02ba49b3f10481001a9b7359}} 
+\index{moa.classifiers.lazy.SAMkNN@{moa.classifiers.lazy.SAMkNN}!getModelDescription@{getModelDescription}}
+\index{getModelDescription@{getModelDescription}!moa.classifiers.lazy.SAMkNN@{moa.classifiers.lazy.SAMkNN}}
+\doxysubsubsection{\texorpdfstring{getModelDescription()}{getModelDescription()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+lazy.\+S\+A\+Mk\+N\+N.\+get\+Model\+Description (\begin{DoxyParamCaption}\item[{String\+Builder}]{out,  }\item[{int}]{indent }\end{DoxyParamCaption})}
+
+Returns a string representation of the model.
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & the stringbuilder to add the description \\
+\hline
+{\em indent} & the number of characters to indent \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a30e5ff32bc8127dfb7436945776b7523}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1lazy_1_1_s_a_mk_n_n_a4d531dd4c42f5e60a9e0841c7179e4e3}\label{classmoa_1_1classifiers_1_1lazy_1_1_s_a_mk_n_n_a4d531dd4c42f5e60a9e0841c7179e4e3}} 
+\index{moa.classifiers.lazy.SAMkNN@{moa.classifiers.lazy.SAMkNN}!getModelMeasurementsImpl@{getModelMeasurementsImpl}}
+\index{getModelMeasurementsImpl@{getModelMeasurementsImpl}!moa.classifiers.lazy.SAMkNN@{moa.classifiers.lazy.SAMkNN}}
+\doxysubsubsection{\texorpdfstring{getModelMeasurementsImpl()}{getModelMeasurementsImpl()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}} \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+lazy.\+S\+A\+Mk\+N\+N.\+get\+Model\+Measurements\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Gets the current measurements of this classifier.~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden.
+
+\begin{DoxyReturn}{Returns}
+an array of measurements to be used in evaluation tasks 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_ac2bebede21c9d2d8cd11d95a7e20e529}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1lazy_1_1_s_a_mk_n_n_ab814c9e9700f18e724d4f85fef0fcef6}\label{classmoa_1_1classifiers_1_1lazy_1_1_s_a_mk_n_n_ab814c9e9700f18e724d4f85fef0fcef6}} 
+\index{moa.classifiers.lazy.SAMkNN@{moa.classifiers.lazy.SAMkNN}!getPurposeString@{getPurposeString}}
+\index{getPurposeString@{getPurposeString}!moa.classifiers.lazy.SAMkNN@{moa.classifiers.lazy.SAMkNN}}
+\doxysubsubsection{\texorpdfstring{getPurposeString()}{getPurposeString()}}
+{\footnotesize\ttfamily String moa.\+classifiers.\+lazy.\+S\+A\+Mk\+N\+N.\+get\+Purpose\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Options to handle Dictionary with option texts and objects 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a3fc6ae11234b88e51941a77ddb879d8b}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1lazy_1_1_s_a_mk_n_n_a8dcf1e1b9e44999006d59d8c5fbc7bc8}\label{classmoa_1_1classifiers_1_1lazy_1_1_s_a_mk_n_n_a8dcf1e1b9e44999006d59d8c5fbc7bc8}} 
+\index{moa.classifiers.lazy.SAMkNN@{moa.classifiers.lazy.SAMkNN}!getVotesForInstance@{getVotesForInstance}}
+\index{getVotesForInstance@{getVotesForInstance}!moa.classifiers.lazy.SAMkNN@{moa.classifiers.lazy.SAMkNN}}
+\doxysubsubsection{\texorpdfstring{getVotesForInstance()}{getVotesForInstance()}}
+{\footnotesize\ttfamily double \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+lazy.\+S\+A\+Mk\+N\+N.\+get\+Votes\+For\+Instance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{inst }\end{DoxyParamCaption})}
+
+Predicts the label of a given sample by using the S\+TM, L\+TM and the CM. 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a0e3589c4fa6f088d82d64514afd9513c}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1lazy_1_1_s_a_mk_n_n_ac277ac43551fec0f0e73590a6d57e581}\label{classmoa_1_1classifiers_1_1lazy_1_1_s_a_mk_n_n_ac277ac43551fec0f0e73590a6d57e581}} 
+\index{moa.classifiers.lazy.SAMkNN@{moa.classifiers.lazy.SAMkNN}!isRandomizable@{isRandomizable}}
+\index{isRandomizable@{isRandomizable}!moa.classifiers.lazy.SAMkNN@{moa.classifiers.lazy.SAMkNN}}
+\doxysubsubsection{\texorpdfstring{isRandomizable()}{isRandomizable()}}
+{\footnotesize\ttfamily boolean moa.\+classifiers.\+lazy.\+S\+A\+Mk\+N\+N.\+is\+Randomizable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets whether this learner needs a random seed. Examples of methods that needs a random seed are bagging and boosting.
+
+\begin{DoxyReturn}{Returns}
+true if the learner needs a random seed. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1learners_1_1_learner_a2f1ff9007b5eb5f53801f474b4d42a61}{moa.\+learners.\+Learner$<$ E extends Example $>$}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1lazy_1_1_s_a_mk_n_n_ad356d7c115c82d52efe2b5cc62859a38}\label{classmoa_1_1classifiers_1_1lazy_1_1_s_a_mk_n_n_ad356d7c115c82d52efe2b5cc62859a38}} 
+\index{moa.classifiers.lazy.SAMkNN@{moa.classifiers.lazy.SAMkNN}!resetLearningImpl@{resetLearningImpl}}
+\index{resetLearningImpl@{resetLearningImpl}!moa.classifiers.lazy.SAMkNN@{moa.classifiers.lazy.SAMkNN}}
+\doxysubsubsection{\texorpdfstring{resetLearningImpl()}{resetLearningImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+lazy.\+S\+A\+Mk\+N\+N.\+reset\+Learning\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Resets this classifier. It must be similar to starting a new classifier from scratch. ~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden. 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a099ffcf2417abb919d10d697c0648f29}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1lazy_1_1_s_a_mk_n_n_ae55845d46f41ea1226b4efe0217b1d25}\label{classmoa_1_1classifiers_1_1lazy_1_1_s_a_mk_n_n_ae55845d46f41ea1226b4efe0217b1d25}} 
+\index{moa.classifiers.lazy.SAMkNN@{moa.classifiers.lazy.SAMkNN}!setModelContext@{setModelContext}}
+\index{setModelContext@{setModelContext}!moa.classifiers.lazy.SAMkNN@{moa.classifiers.lazy.SAMkNN}}
+\doxysubsubsection{\texorpdfstring{setModelContext()}{setModelContext()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+lazy.\+S\+A\+Mk\+N\+N.\+set\+Model\+Context (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instances_header}{Instances\+Header}}}]{ih }\end{DoxyParamCaption})}
+
+Sets the reference to the header of the data stream. The header of the data stream is extended from W\+E\+KA {\ttfamily Instances}. This header is needed to know the number of classes and attributes
+
+
+\begin{DoxyParams}{Parameters}
+{\em ih} & the reference to the data stream header \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_ace518fd29d1cdb5af4279aa1b642dbee}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1lazy_1_1_s_a_mk_n_n_ac10d5b1a49863eedadf7c0d731a2254a}\label{classmoa_1_1classifiers_1_1lazy_1_1_s_a_mk_n_n_ac10d5b1a49863eedadf7c0d731a2254a}} 
+\index{moa.classifiers.lazy.SAMkNN@{moa.classifiers.lazy.SAMkNN}!trainOnInstanceImpl@{trainOnInstanceImpl}}
+\index{trainOnInstanceImpl@{trainOnInstanceImpl}!moa.classifiers.lazy.SAMkNN@{moa.classifiers.lazy.SAMkNN}}
+\doxysubsubsection{\texorpdfstring{trainOnInstanceImpl()}{trainOnInstanceImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+lazy.\+S\+A\+Mk\+N\+N.\+train\+On\+Instance\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{inst }\end{DoxyParamCaption})}
+
+Trains this classifier incrementally using the given instance.~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & the instance to be used for training \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_aceb24d2ddeab386f2ecead6e3c0d3543}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1lazy_1_1_s_a_mk_n_n_a745b96d279b9649ec5e94f023fa09976}\label{classmoa_1_1classifiers_1_1lazy_1_1_s_a_mk_n_n_a745b96d279b9649ec5e94f023fa09976}} 
+\index{moa.classifiers.lazy.SAMkNN@{moa.classifiers.lazy.SAMkNN}!recalculateSTMErrorOption@{recalculateSTMErrorOption}}
+\index{recalculateSTMErrorOption@{recalculateSTMErrorOption}!moa.classifiers.lazy.SAMkNN@{moa.classifiers.lazy.SAMkNN}}
+\doxysubsubsection{\texorpdfstring{recalculateSTMErrorOption}{recalculateSTMErrorOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_flag_option}{Flag\+Option}} moa.\+classifiers.\+lazy.\+S\+A\+Mk\+N\+N.\+recalculate\+S\+T\+M\+Error\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FlagOption(\textcolor{stringliteral}{"recalculateError"}, \textcolor{charliteral}{'r'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Recalculates the error rate of the STM for size adaption (Costly operation). Otherwise, an approximation is used."})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1lazy_1_1_s_a_mk_n_n_acfab0137203fa38facac588fbe4f8d41}\label{classmoa_1_1classifiers_1_1lazy_1_1_s_a_mk_n_n_acfab0137203fa38facac588fbe4f8d41}} 
+\index{moa.classifiers.lazy.SAMkNN@{moa.classifiers.lazy.SAMkNN}!relativeLTMSizeOption@{relativeLTMSizeOption}}
+\index{relativeLTMSizeOption@{relativeLTMSizeOption}!moa.classifiers.lazy.SAMkNN@{moa.classifiers.lazy.SAMkNN}}
+\doxysubsubsection{\texorpdfstring{relativeLTMSizeOption}{relativeLTMSizeOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} moa.\+classifiers.\+lazy.\+S\+A\+Mk\+N\+N.\+relative\+L\+T\+M\+Size\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FloatOption(}
+\DoxyCodeLine{            \textcolor{stringliteral}{"relativeLTMSize"},}
+\DoxyCodeLine{            \textcolor{charliteral}{'p'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"The allowed LTM size relative to the total limit."},}
+\DoxyCodeLine{            0.4, 0.0, 1.0)}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/classifiers/lazy/S\+A\+Mk\+N\+N.\+java\end{DoxyCompactItemize}

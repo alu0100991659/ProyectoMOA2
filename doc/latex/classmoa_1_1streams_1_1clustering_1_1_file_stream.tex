@@ -1,0 +1,225 @@
+\hypertarget{classmoa_1_1streams_1_1clustering_1_1_file_stream}{}\doxysection{moa.\+streams.\+clustering.\+File\+Stream Class Reference}
+\label{classmoa_1_1streams_1_1clustering_1_1_file_stream}\index{moa.streams.clustering.FileStream@{moa.streams.clustering.FileStream}}
+
+
+Inheritance diagram for moa.\+streams.\+clustering.\+File\+Stream\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+streams.\+clustering.\+File\+Stream\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classmoa_1_1streams_1_1clustering_1_1_file_stream_aa369d87263b80ec1d911bf86521e49b6}{get\+Purpose\+String}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1streams_1_1clustering_1_1_file_stream_af898d21758aa6a1d551b57b67cd0fabe}{prepare\+For\+Use\+Impl}} (\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}} monitor, \mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}} repository)
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1clustering_1_1_file_stream_ad0d1ed6e68f843132b88e0c0077e1cda}\label{classmoa_1_1streams_1_1clustering_1_1_file_stream_ad0d1ed6e68f843132b88e0c0077e1cda}} 
+\mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instances_header}{Instances\+Header}} {\bfseries get\+Header} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1clustering_1_1_file_stream_a5dad7982c6e395ff5a864dd3ba1f9407}\label{classmoa_1_1streams_1_1clustering_1_1_file_stream_a5dad7982c6e395ff5a864dd3ba1f9407}} 
+long {\bfseries estimated\+Remaining\+Instances} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1clustering_1_1_file_stream_aaed0684d4521e95459f9078b5f76adb1}\label{classmoa_1_1streams_1_1clustering_1_1_file_stream_aaed0684d4521e95459f9078b5f76adb1}} 
+boolean {\bfseries has\+More\+Instances} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1clustering_1_1_file_stream_aeee54270f56512fc45482d4cfa61bd57}\label{classmoa_1_1streams_1_1clustering_1_1_file_stream_aeee54270f56512fc45482d4cfa61bd57}} 
+\mbox{\hyperlink{classmoa_1_1core_1_1_instance_example}{Instance\+Example}} {\bfseries next\+Instance} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1clustering_1_1_file_stream_a91d48ea189e10e676e136ebf2f8a6389}\label{classmoa_1_1streams_1_1clustering_1_1_file_stream_a91d48ea189e10e676e136ebf2f8a6389}} 
+boolean {\bfseries is\+Restartable} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1clustering_1_1_file_stream_afa6427616638ec26533d9edc06bf598a}\label{classmoa_1_1streams_1_1clustering_1_1_file_stream_afa6427616638ec26533d9edc06bf598a}} 
+void {\bfseries restart} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1streams_1_1clustering_1_1_file_stream_ae0a5eea0f7274adaffaf9d40c59bcc0b}{get\+Description}} (String\+Builder sb, int indent)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_file_option}{File\+Option}} {\bfseries arff\+File\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries class\+Index\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_flag_option}{Flag\+Option}} {\bfseries normalize\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_list_option}{List\+Option}} {\bfseries remove\+Attributes\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_flag_option}{Flag\+Option}} {\bfseries keep\+Non\+Numerical\+Attr\+Option}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1clustering_1_1_file_stream_a12763f95d232d4d95cbec108ed873e48}\label{classmoa_1_1streams_1_1clustering_1_1_file_stream_a12763f95d232d4d95cbec108ed873e48}} 
+boolean {\bfseries read\+Next\+Instance\+From\+File} ()
+\item 
+Array\+List$<$ Double\mbox{[}$\,$\mbox{]}$>$ \mbox{\hyperlink{classmoa_1_1streams_1_1clustering_1_1_file_stream_a302d43207ddf466ae11e807d5d33496c}{read\+Min\+Max\+Diff\+Values}} (Hash\+Set$<$ Integer $>$ ignored\+Attributes)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1clustering_1_1_file_stream_aed83149b04025cc4089ab274ae4ec847}\label{classmoa_1_1streams_1_1clustering_1_1_file_stream_aed83149b04025cc4089ab274ae4ec847}} 
+\mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instances}{Instances}} {\bfseries instances}
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1clustering_1_1_file_stream_a0f68da1465e482103a5e2394f38ae64d}\label{classmoa_1_1streams_1_1clustering_1_1_file_stream_a0f68da1465e482103a5e2394f38ae64d}} 
+Reader {\bfseries file\+Reader}
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1clustering_1_1_file_stream_aa9183b85bf249a84d3817076f74a8cae}\label{classmoa_1_1streams_1_1clustering_1_1_file_stream_aa9183b85bf249a84d3817076f74a8cae}} 
+boolean {\bfseries hit\+End\+Of\+File}
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1clustering_1_1_file_stream_a13c1d9ad0e8ca9b47200a93dd4aaf37f}\label{classmoa_1_1streams_1_1clustering_1_1_file_stream_a13c1d9ad0e8ca9b47200a93dd4aaf37f}} 
+\mbox{\hyperlink{classmoa_1_1core_1_1_instance_example}{Instance\+Example}} {\bfseries last\+Instance\+Read}
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1clustering_1_1_file_stream_ac39c97714249daa1d50af2dbfe15c833}\label{classmoa_1_1streams_1_1clustering_1_1_file_stream_ac39c97714249daa1d50af2dbfe15c833}} 
+int {\bfseries num\+Instances\+Read}
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1clustering_1_1_file_stream_af1b0c13dabe8df95f6df389546e005bd}\label{classmoa_1_1streams_1_1clustering_1_1_file_stream_af1b0c13dabe8df95f6df389546e005bd}} 
+\mbox{\hyperlink{classmoa_1_1core_1_1_input_stream_progress_monitor}{Input\+Stream\+Progress\+Monitor}} {\bfseries file\+Progress\+Monitor}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1streams_1_1clustering_1_1_file_stream_ae0a5eea0f7274adaffaf9d40c59bcc0b}\label{classmoa_1_1streams_1_1clustering_1_1_file_stream_ae0a5eea0f7274adaffaf9d40c59bcc0b}} 
+\index{moa.streams.clustering.FileStream@{moa.streams.clustering.FileStream}!getDescription@{getDescription}}
+\index{getDescription@{getDescription}!moa.streams.clustering.FileStream@{moa.streams.clustering.FileStream}}
+\doxysubsubsection{\texorpdfstring{getDescription()}{getDescription()}}
+{\footnotesize\ttfamily void moa.\+streams.\+clustering.\+File\+Stream.\+get\+Description (\begin{DoxyParamCaption}\item[{String\+Builder}]{sb,  }\item[{int}]{indent }\end{DoxyParamCaption})}
+
+Returns a string representation of this object. Used in {\ttfamily \mbox{\hyperlink{classmoa_1_1_abstract_m_o_a_object_ac686fd3b07c734cf21f1894376fe402d}{Abstract\+M\+O\+A\+Object.\+to\+String}}} to give a string representation of the object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sb} & the stringbuilder to add the description \\
+\hline
+{\em indent} & the number of characters to indent \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1_m_o_a_object_afdaf5098f1fe6c852018ce64c28e17f5}{moa.\+M\+O\+A\+Object}}.
+
+\mbox{\Hypertarget{classmoa_1_1streams_1_1clustering_1_1_file_stream_aa369d87263b80ec1d911bf86521e49b6}\label{classmoa_1_1streams_1_1clustering_1_1_file_stream_aa369d87263b80ec1d911bf86521e49b6}} 
+\index{moa.streams.clustering.FileStream@{moa.streams.clustering.FileStream}!getPurposeString@{getPurposeString}}
+\index{getPurposeString@{getPurposeString}!moa.streams.clustering.FileStream@{moa.streams.clustering.FileStream}}
+\doxysubsubsection{\texorpdfstring{getPurposeString()}{getPurposeString()}}
+{\footnotesize\ttfamily String moa.\+streams.\+clustering.\+File\+Stream.\+get\+Purpose\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Options to handle Dictionary with option texts and objects 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1options_1_1_abstract_option_handler_abc8df69aea27ef85060557a9e918b2ca}{moa.\+options.\+Abstract\+Option\+Handler}}.
+
+\mbox{\Hypertarget{classmoa_1_1streams_1_1clustering_1_1_file_stream_af898d21758aa6a1d551b57b67cd0fabe}\label{classmoa_1_1streams_1_1clustering_1_1_file_stream_af898d21758aa6a1d551b57b67cd0fabe}} 
+\index{moa.streams.clustering.FileStream@{moa.streams.clustering.FileStream}!prepareForUseImpl@{prepareForUseImpl}}
+\index{prepareForUseImpl@{prepareForUseImpl}!moa.streams.clustering.FileStream@{moa.streams.clustering.FileStream}}
+\doxysubsubsection{\texorpdfstring{prepareForUseImpl()}{prepareForUseImpl()}}
+{\footnotesize\ttfamily void moa.\+streams.\+clustering.\+File\+Stream.\+prepare\+For\+Use\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}}}]{monitor,  }\item[{\mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}}}]{repository }\end{DoxyParamCaption})}
+
+This method describes the implementation of how to prepare this object for use. All classes that extends this class have to implement {\ttfamily prepare\+For\+Use\+Impl} and not {\ttfamily prepare\+For\+Use} since {\ttfamily prepare\+For\+Use} calls {\ttfamily prepare\+For\+Use\+Impl}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em monitor} & the Task\+Monitor to use \\
+\hline
+{\em repository} & the Object\+Repository to use \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1options_1_1_abstract_option_handler_ad0e9c7d4b0e2b185749f36ce28540efb}{moa.\+options.\+Abstract\+Option\+Handler}}.
+
+\mbox{\Hypertarget{classmoa_1_1streams_1_1clustering_1_1_file_stream_a302d43207ddf466ae11e807d5d33496c}\label{classmoa_1_1streams_1_1clustering_1_1_file_stream_a302d43207ddf466ae11e807d5d33496c}} 
+\index{moa.streams.clustering.FileStream@{moa.streams.clustering.FileStream}!readMinMaxDiffValues@{readMinMaxDiffValues}}
+\index{readMinMaxDiffValues@{readMinMaxDiffValues}!moa.streams.clustering.FileStream@{moa.streams.clustering.FileStream}}
+\doxysubsubsection{\texorpdfstring{readMinMaxDiffValues()}{readMinMaxDiffValues()}}
+{\footnotesize\ttfamily Array\+List$<$Double\mbox{[}$\,$\mbox{]}$>$ moa.\+streams.\+clustering.\+File\+Stream.\+read\+Min\+Max\+Diff\+Values (\begin{DoxyParamCaption}\item[{Hash\+Set$<$ Integer $>$}]{ignored\+Attributes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em ignored\+Attributes} & Attributes that will be ignored \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A list with min/max and diff=max-\/min values per attribute of the arff file 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmoa_1_1streams_1_1clustering_1_1_file_stream_a24c85cad39997bb50b9dcd59ecf964f4}\label{classmoa_1_1streams_1_1clustering_1_1_file_stream_a24c85cad39997bb50b9dcd59ecf964f4}} 
+\index{moa.streams.clustering.FileStream@{moa.streams.clustering.FileStream}!arffFileOption@{arffFileOption}}
+\index{arffFileOption@{arffFileOption}!moa.streams.clustering.FileStream@{moa.streams.clustering.FileStream}}
+\doxysubsubsection{\texorpdfstring{arffFileOption}{arffFileOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_file_option}{File\+Option}} moa.\+streams.\+clustering.\+File\+Stream.\+arff\+File\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FileOption(\textcolor{stringliteral}{"arffFile"}, \textcolor{charliteral}{'f'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"ARFF file to load."}, defaultfile, \textcolor{stringliteral}{"arff"}, \textcolor{keyword}{false})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1streams_1_1clustering_1_1_file_stream_a6e3f604d6a47e13e232dd458ae0dde87}\label{classmoa_1_1streams_1_1clustering_1_1_file_stream_a6e3f604d6a47e13e232dd458ae0dde87}} 
+\index{moa.streams.clustering.FileStream@{moa.streams.clustering.FileStream}!classIndexOption@{classIndexOption}}
+\index{classIndexOption@{classIndexOption}!moa.streams.clustering.FileStream@{moa.streams.clustering.FileStream}}
+\doxysubsubsection{\texorpdfstring{classIndexOption}{classIndexOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+streams.\+clustering.\+File\+Stream.\+class\+Index\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(}
+\DoxyCodeLine{            \textcolor{stringliteral}{"classIndex"},}
+\DoxyCodeLine{            \textcolor{charliteral}{'c'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Class index of data. 0 for none or -\/1 for last attribute in file."},}
+\DoxyCodeLine{            -\/1, -\/1, Integer.MAX\_VALUE)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1streams_1_1clustering_1_1_file_stream_accd235ebdb2b7a8a7a40b54af5adfc9a}\label{classmoa_1_1streams_1_1clustering_1_1_file_stream_accd235ebdb2b7a8a7a40b54af5adfc9a}} 
+\index{moa.streams.clustering.FileStream@{moa.streams.clustering.FileStream}!keepNonNumericalAttrOption@{keepNonNumericalAttrOption}}
+\index{keepNonNumericalAttrOption@{keepNonNumericalAttrOption}!moa.streams.clustering.FileStream@{moa.streams.clustering.FileStream}}
+\doxysubsubsection{\texorpdfstring{keepNonNumericalAttrOption}{keepNonNumericalAttrOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_flag_option}{Flag\+Option}} moa.\+streams.\+clustering.\+File\+Stream.\+keep\+Non\+Numerical\+Attr\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= }
+\DoxyCodeLine{            \textcolor{keyword}{new} FlagOption(\textcolor{stringliteral}{"keepNonNumericalAttr"}, \textcolor{charliteral}{'K'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Non-\/numerical attributes are being filtered by default "} +}
+\DoxyCodeLine{            \textcolor{stringliteral}{"(except the class attribute). "} +}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Check to keep all attributes. This option is being "} +}
+\DoxyCodeLine{            \textcolor{stringliteral}{"overwritten by the manual attribute removal filter."})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1streams_1_1clustering_1_1_file_stream_ae46db6af2dcdffb348e7fac3f3d0618f}\label{classmoa_1_1streams_1_1clustering_1_1_file_stream_ae46db6af2dcdffb348e7fac3f3d0618f}} 
+\index{moa.streams.clustering.FileStream@{moa.streams.clustering.FileStream}!normalizeOption@{normalizeOption}}
+\index{normalizeOption@{normalizeOption}!moa.streams.clustering.FileStream@{moa.streams.clustering.FileStream}}
+\doxysubsubsection{\texorpdfstring{normalizeOption}{normalizeOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_flag_option}{Flag\+Option}} moa.\+streams.\+clustering.\+File\+Stream.\+normalize\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= }
+\DoxyCodeLine{            \textcolor{keyword}{new} FlagOption(\textcolor{stringliteral}{"normalize"}, \textcolor{charliteral}{'n'}, }
+\DoxyCodeLine{                    \textcolor{stringliteral}{"Numerical data will be normalized to 0-\/1 "} +}
+\DoxyCodeLine{                    \textcolor{stringliteral}{"for the visualization to work. The complete arff file needs to be read upfront."})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1streams_1_1clustering_1_1_file_stream_a53d78187ce9b849441ea493ef784c450}\label{classmoa_1_1streams_1_1clustering_1_1_file_stream_a53d78187ce9b849441ea493ef784c450}} 
+\index{moa.streams.clustering.FileStream@{moa.streams.clustering.FileStream}!removeAttributesOption@{removeAttributesOption}}
+\index{removeAttributesOption@{removeAttributesOption}!moa.streams.clustering.FileStream@{moa.streams.clustering.FileStream}}
+\doxysubsubsection{\texorpdfstring{removeAttributesOption}{removeAttributesOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_list_option}{List\+Option}} moa.\+streams.\+clustering.\+File\+Stream.\+remove\+Attributes\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} ListOption(\textcolor{stringliteral}{"removeAttributes"}, \textcolor{charliteral}{'r'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Attributes to remove. Enter comma seperated list, "} +}
+\DoxyCodeLine{            \textcolor{stringliteral}{"starting with 1 for first attribute."}, }
+\DoxyCodeLine{            \textcolor{keyword}{new} IntOption(\textcolor{stringliteral}{"removeAttribute"}, \textcolor{charliteral}{' '}, \textcolor{stringliteral}{"Attribute to remove."},-\/1),}
+\DoxyCodeLine{            \textcolor{keyword}{new} Option[0], \textcolor{charliteral}{','})}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/streams/clustering/File\+Stream.\+java\end{DoxyCompactItemize}

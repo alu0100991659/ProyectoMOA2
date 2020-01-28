@@ -1,0 +1,139 @@
+\hypertarget{classmoa_1_1streams_1_1generators_1_1_waveform_generator_drift}{}\doxysection{moa.\+streams.\+generators.\+Waveform\+Generator\+Drift Class Reference}
+\label{classmoa_1_1streams_1_1generators_1_1_waveform_generator_drift}\index{moa.streams.generators.WaveformGeneratorDrift@{moa.streams.generators.WaveformGeneratorDrift}}
+
+
+Inheritance diagram for moa.\+streams.\+generators.\+Waveform\+Generator\+Drift\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+streams.\+generators.\+Waveform\+Generator\+Drift\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classmoa_1_1streams_1_1generators_1_1_waveform_generator_drift_a44ee3e2db56412f00d79c56738924693}{get\+Purpose\+String}} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1generators_1_1_waveform_generator_drift_a1426acc6023774fc7e83b9801746183a}\label{classmoa_1_1streams_1_1generators_1_1_waveform_generator_drift_a1426acc6023774fc7e83b9801746183a}} 
+\mbox{\hyperlink{classmoa_1_1core_1_1_instance_example}{Instance\+Example}} {\bfseries next\+Instance} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1streams_1_1generators_1_1_waveform_generator_drift_a88442f042f85237dfa8bc3e506b9f47c}{get\+Description}} (String\+Builder sb, int indent)
+\item 
+\mbox{\hyperlink{classmoa_1_1capabilities_1_1_immutable_capabilities}{Immutable\+Capabilities}} \mbox{\hyperlink{classmoa_1_1streams_1_1generators_1_1_waveform_generator_drift_a794ddc0f5f6e742eb2ba554f637e6435}{define\+Immutable\+Capabilities}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries number\+Attributes\+Drift\+Option}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classmoa_1_1streams_1_1generators_1_1_waveform_generator_drift_a650a8ff01f818a38cfd6d0a7a3f27999}{prepare\+For\+Use\+Impl}} (\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}} monitor, \mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}} repository)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1generators_1_1_waveform_generator_drift_a333314641f46338025122a4f7f1a1a93}\label{classmoa_1_1streams_1_1generators_1_1_waveform_generator_drift_a333314641f46338025122a4f7f1a1a93}} 
+int\mbox{[}$\,$\mbox{]} {\bfseries number\+Attribute}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Stream generator for the problem of predicting one of three waveform types with drift.
+
+\begin{DoxyAuthor}{Author}
+Albert Bifet (abifet at cs dot waikato dot ac dot nz) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+7 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1streams_1_1generators_1_1_waveform_generator_drift_a794ddc0f5f6e742eb2ba554f637e6435}\label{classmoa_1_1streams_1_1generators_1_1_waveform_generator_drift_a794ddc0f5f6e742eb2ba554f637e6435}} 
+\index{moa.streams.generators.WaveformGeneratorDrift@{moa.streams.generators.WaveformGeneratorDrift}!defineImmutableCapabilities@{defineImmutableCapabilities}}
+\index{defineImmutableCapabilities@{defineImmutableCapabilities}!moa.streams.generators.WaveformGeneratorDrift@{moa.streams.generators.WaveformGeneratorDrift}}
+\doxysubsubsection{\texorpdfstring{defineImmutableCapabilities()}{defineImmutableCapabilities()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1capabilities_1_1_immutable_capabilities}{Immutable\+Capabilities}} moa.\+streams.\+generators.\+Waveform\+Generator\+Drift.\+define\+Immutable\+Capabilities (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Defines the set of capabilities the object has. Should be overridden if the object\textquotesingle{}s capabilities do not change.
+
+\begin{DoxyReturn}{Returns}
+The capabilities of the object. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1streams_1_1generators_1_1_waveform_generator_a85a5497202ff92b992ff4520c16c50ca}{moa.\+streams.\+generators.\+Waveform\+Generator}}.
+
+\mbox{\Hypertarget{classmoa_1_1streams_1_1generators_1_1_waveform_generator_drift_a88442f042f85237dfa8bc3e506b9f47c}\label{classmoa_1_1streams_1_1generators_1_1_waveform_generator_drift_a88442f042f85237dfa8bc3e506b9f47c}} 
+\index{moa.streams.generators.WaveformGeneratorDrift@{moa.streams.generators.WaveformGeneratorDrift}!getDescription@{getDescription}}
+\index{getDescription@{getDescription}!moa.streams.generators.WaveformGeneratorDrift@{moa.streams.generators.WaveformGeneratorDrift}}
+\doxysubsubsection{\texorpdfstring{getDescription()}{getDescription()}}
+{\footnotesize\ttfamily void moa.\+streams.\+generators.\+Waveform\+Generator\+Drift.\+get\+Description (\begin{DoxyParamCaption}\item[{String\+Builder}]{sb,  }\item[{int}]{indent }\end{DoxyParamCaption})}
+
+Returns a string representation of this object. Used in {\ttfamily \mbox{\hyperlink{classmoa_1_1_abstract_m_o_a_object_ac686fd3b07c734cf21f1894376fe402d}{Abstract\+M\+O\+A\+Object.\+to\+String}}} to give a string representation of the object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sb} & the stringbuilder to add the description \\
+\hline
+{\em indent} & the number of characters to indent \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1streams_1_1generators_1_1_waveform_generator_ac9f6f061f29e08c46c29ba39f9f51073}{moa.\+streams.\+generators.\+Waveform\+Generator}}.
+
+\mbox{\Hypertarget{classmoa_1_1streams_1_1generators_1_1_waveform_generator_drift_a44ee3e2db56412f00d79c56738924693}\label{classmoa_1_1streams_1_1generators_1_1_waveform_generator_drift_a44ee3e2db56412f00d79c56738924693}} 
+\index{moa.streams.generators.WaveformGeneratorDrift@{moa.streams.generators.WaveformGeneratorDrift}!getPurposeString@{getPurposeString}}
+\index{getPurposeString@{getPurposeString}!moa.streams.generators.WaveformGeneratorDrift@{moa.streams.generators.WaveformGeneratorDrift}}
+\doxysubsubsection{\texorpdfstring{getPurposeString()}{getPurposeString()}}
+{\footnotesize\ttfamily String moa.\+streams.\+generators.\+Waveform\+Generator\+Drift.\+get\+Purpose\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Options to handle Dictionary with option texts and objects 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1streams_1_1generators_1_1_waveform_generator_a08831ade7557d8856ad066dabf10acd1}{moa.\+streams.\+generators.\+Waveform\+Generator}}.
+
+\mbox{\Hypertarget{classmoa_1_1streams_1_1generators_1_1_waveform_generator_drift_a650a8ff01f818a38cfd6d0a7a3f27999}\label{classmoa_1_1streams_1_1generators_1_1_waveform_generator_drift_a650a8ff01f818a38cfd6d0a7a3f27999}} 
+\index{moa.streams.generators.WaveformGeneratorDrift@{moa.streams.generators.WaveformGeneratorDrift}!prepareForUseImpl@{prepareForUseImpl}}
+\index{prepareForUseImpl@{prepareForUseImpl}!moa.streams.generators.WaveformGeneratorDrift@{moa.streams.generators.WaveformGeneratorDrift}}
+\doxysubsubsection{\texorpdfstring{prepareForUseImpl()}{prepareForUseImpl()}}
+{\footnotesize\ttfamily void moa.\+streams.\+generators.\+Waveform\+Generator\+Drift.\+prepare\+For\+Use\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}}}]{monitor,  }\item[{\mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}}}]{repository }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+This method describes the implementation of how to prepare this object for use. All classes that extends this class have to implement {\ttfamily prepare\+For\+Use\+Impl} and not {\ttfamily prepare\+For\+Use} since {\ttfamily prepare\+For\+Use} calls {\ttfamily prepare\+For\+Use\+Impl}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em monitor} & the Task\+Monitor to use \\
+\hline
+{\em repository} & the Object\+Repository to use \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1streams_1_1generators_1_1_waveform_generator_ad02fd588707df9fe6f7261b973150c8a}{moa.\+streams.\+generators.\+Waveform\+Generator}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmoa_1_1streams_1_1generators_1_1_waveform_generator_drift_a91450945e7146056ec552167d403e6d9}\label{classmoa_1_1streams_1_1generators_1_1_waveform_generator_drift_a91450945e7146056ec552167d403e6d9}} 
+\index{moa.streams.generators.WaveformGeneratorDrift@{moa.streams.generators.WaveformGeneratorDrift}!numberAttributesDriftOption@{numberAttributesDriftOption}}
+\index{numberAttributesDriftOption@{numberAttributesDriftOption}!moa.streams.generators.WaveformGeneratorDrift@{moa.streams.generators.WaveformGeneratorDrift}}
+\doxysubsubsection{\texorpdfstring{numberAttributesDriftOption}{numberAttributesDriftOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+streams.\+generators.\+Waveform\+Generator\+Drift.\+number\+Attributes\+Drift\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(\textcolor{stringliteral}{"numberAttributesDrift"},}
+\DoxyCodeLine{            \textcolor{charliteral}{'d'}, \textcolor{stringliteral}{"Number of attributes with drift."}, 0, 0, TOTAL\_ATTRIBUTES\_INCLUDING\_NOISE)}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/streams/generators/Waveform\+Generator\+Drift.\+java\end{DoxyCompactItemize}

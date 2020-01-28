@@ -1,0 +1,229 @@
+\hypertarget{classmoa_1_1classifiers_1_1active_1_1_a_l_random}{}\doxysection{moa.\+classifiers.\+active.\+A\+L\+Random Class Reference}
+\label{classmoa_1_1classifiers_1_1active_1_1_a_l_random}\index{moa.classifiers.active.ALRandom@{moa.classifiers.active.ALRandom}}
+
+
+Inheritance diagram for moa.\+classifiers.\+active.\+A\+L\+Random\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+classifiers.\+active.\+A\+L\+Random\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classmoa_1_1classifiers_1_1active_1_1_a_l_random_a971132418002252231ba8a2f7cc3cb7e}{get\+Purpose\+String}} ()
+\item 
+int \mbox{\hyperlink{classmoa_1_1classifiers_1_1active_1_1_a_l_random_ab1ace6a57e0dd5d4d542b9339de0cad6}{get\+Last\+Label\+Acq\+Report}} ()
+\item 
+boolean \mbox{\hyperlink{classmoa_1_1classifiers_1_1active_1_1_a_l_random_a62b9d482df24c2e0c6e995e4ddac6729}{is\+Randomizable}} ()
+\item 
+double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1active_1_1_a_l_random_a21a94e75df686715c7d940a0077deebc}{get\+Votes\+For\+Instance}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst)
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1active_1_1_a_l_random_af7044f20220491b7476bac36301ab35a}{reset\+Learning\+Impl}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1active_1_1_a_l_random_a373f0721162641cff6d5a9762fc088d8}{train\+On\+Instance\+Impl}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst)
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1active_1_1_a_l_random_a9cc57492c7f200850b531e60a03997cf}{get\+Model\+Description}} (String\+Builder out, int indent)
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1active_1_1_a_l_random_a34b3e1b3436482253d94eb37f83473c7}{set\+Model\+Context}} (\mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instances_header}{Instances\+Header}} ih)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} {\bfseries base\+Learner\+Option}
+\item 
+\mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} {\bfseries budget\+Manager\+Option}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1active_1_1_a_l_random_a264180b280c7da800230d4a024a1109d}\label{classmoa_1_1classifiers_1_1active_1_1_a_l_random_a264180b280c7da800230d4a024a1109d}} 
+\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier}{Classifier}} {\bfseries classifier}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1active_1_1_a_l_random_a89bf844bcbefbc2d2758c6d1559ee675}\label{classmoa_1_1classifiers_1_1active_1_1_a_l_random_a89bf844bcbefbc2d2758c6d1559ee675}} 
+\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1active_1_1budget_1_1_budget_manager}{Budget\+Manager}} {\bfseries budget\+Manager}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1active_1_1_a_l_random_a359bad27d5adb6c833b4607244b79cc1}{get\+Model\+Measurements\+Impl}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1active_1_1_a_l_random_ab1ace6a57e0dd5d4d542b9339de0cad6}\label{classmoa_1_1classifiers_1_1active_1_1_a_l_random_ab1ace6a57e0dd5d4d542b9339de0cad6}} 
+\index{moa.classifiers.active.ALRandom@{moa.classifiers.active.ALRandom}!getLastLabelAcqReport@{getLastLabelAcqReport}}
+\index{getLastLabelAcqReport@{getLastLabelAcqReport}!moa.classifiers.active.ALRandom@{moa.classifiers.active.ALRandom}}
+\doxysubsubsection{\texorpdfstring{getLastLabelAcqReport()}{getLastLabelAcqReport()}}
+{\footnotesize\ttfamily int moa.\+classifiers.\+active.\+A\+L\+Random.\+get\+Last\+Label\+Acq\+Report (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns true if the previously chosen instance was added to the training set of the active learner. 
+
+Implements \mbox{\hyperlink{interfacemoa_1_1classifiers_1_1active_1_1_a_l_classifier_a82fa583e206f54703df1cf38ae82a8de}{moa.\+classifiers.\+active.\+A\+L\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1active_1_1_a_l_random_a9cc57492c7f200850b531e60a03997cf}\label{classmoa_1_1classifiers_1_1active_1_1_a_l_random_a9cc57492c7f200850b531e60a03997cf}} 
+\index{moa.classifiers.active.ALRandom@{moa.classifiers.active.ALRandom}!getModelDescription@{getModelDescription}}
+\index{getModelDescription@{getModelDescription}!moa.classifiers.active.ALRandom@{moa.classifiers.active.ALRandom}}
+\doxysubsubsection{\texorpdfstring{getModelDescription()}{getModelDescription()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+active.\+A\+L\+Random.\+get\+Model\+Description (\begin{DoxyParamCaption}\item[{String\+Builder}]{out,  }\item[{int}]{indent }\end{DoxyParamCaption})}
+
+Returns a string representation of the model.
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & the stringbuilder to add the description \\
+\hline
+{\em indent} & the number of characters to indent \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a30e5ff32bc8127dfb7436945776b7523}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1active_1_1_a_l_random_a359bad27d5adb6c833b4607244b79cc1}\label{classmoa_1_1classifiers_1_1active_1_1_a_l_random_a359bad27d5adb6c833b4607244b79cc1}} 
+\index{moa.classifiers.active.ALRandom@{moa.classifiers.active.ALRandom}!getModelMeasurementsImpl@{getModelMeasurementsImpl}}
+\index{getModelMeasurementsImpl@{getModelMeasurementsImpl}!moa.classifiers.active.ALRandom@{moa.classifiers.active.ALRandom}}
+\doxysubsubsection{\texorpdfstring{getModelMeasurementsImpl()}{getModelMeasurementsImpl()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}} \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+active.\+A\+L\+Random.\+get\+Model\+Measurements\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Gets the current measurements of this classifier.~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden.
+
+\begin{DoxyReturn}{Returns}
+an array of measurements to be used in evaluation tasks 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_ac2bebede21c9d2d8cd11d95a7e20e529}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1active_1_1_a_l_random_a971132418002252231ba8a2f7cc3cb7e}\label{classmoa_1_1classifiers_1_1active_1_1_a_l_random_a971132418002252231ba8a2f7cc3cb7e}} 
+\index{moa.classifiers.active.ALRandom@{moa.classifiers.active.ALRandom}!getPurposeString@{getPurposeString}}
+\index{getPurposeString@{getPurposeString}!moa.classifiers.active.ALRandom@{moa.classifiers.active.ALRandom}}
+\doxysubsubsection{\texorpdfstring{getPurposeString()}{getPurposeString()}}
+{\footnotesize\ttfamily String moa.\+classifiers.\+active.\+A\+L\+Random.\+get\+Purpose\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Options to handle Dictionary with option texts and objects 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a3fc6ae11234b88e51941a77ddb879d8b}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1active_1_1_a_l_random_a21a94e75df686715c7d940a0077deebc}\label{classmoa_1_1classifiers_1_1active_1_1_a_l_random_a21a94e75df686715c7d940a0077deebc}} 
+\index{moa.classifiers.active.ALRandom@{moa.classifiers.active.ALRandom}!getVotesForInstance@{getVotesForInstance}}
+\index{getVotesForInstance@{getVotesForInstance}!moa.classifiers.active.ALRandom@{moa.classifiers.active.ALRandom}}
+\doxysubsubsection{\texorpdfstring{getVotesForInstance()}{getVotesForInstance()}}
+{\footnotesize\ttfamily double \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+active.\+A\+L\+Random.\+get\+Votes\+For\+Instance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{inst }\end{DoxyParamCaption})}
+
+Predicts the class memberships for a given instance. If an instance is unclassified, the returned array elements must be all zero.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & the instance to be classified \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an array containing the estimated membership probabilities of the test instance in each class 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a0e3589c4fa6f088d82d64514afd9513c}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1active_1_1_a_l_random_a62b9d482df24c2e0c6e995e4ddac6729}\label{classmoa_1_1classifiers_1_1active_1_1_a_l_random_a62b9d482df24c2e0c6e995e4ddac6729}} 
+\index{moa.classifiers.active.ALRandom@{moa.classifiers.active.ALRandom}!isRandomizable@{isRandomizable}}
+\index{isRandomizable@{isRandomizable}!moa.classifiers.active.ALRandom@{moa.classifiers.active.ALRandom}}
+\doxysubsubsection{\texorpdfstring{isRandomizable()}{isRandomizable()}}
+{\footnotesize\ttfamily boolean moa.\+classifiers.\+active.\+A\+L\+Random.\+is\+Randomizable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets whether this learner needs a random seed. Examples of methods that needs a random seed are bagging and boosting.
+
+\begin{DoxyReturn}{Returns}
+true if the learner needs a random seed. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1learners_1_1_learner_a2f1ff9007b5eb5f53801f474b4d42a61}{moa.\+learners.\+Learner$<$ E extends Example $>$}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1active_1_1_a_l_random_af7044f20220491b7476bac36301ab35a}\label{classmoa_1_1classifiers_1_1active_1_1_a_l_random_af7044f20220491b7476bac36301ab35a}} 
+\index{moa.classifiers.active.ALRandom@{moa.classifiers.active.ALRandom}!resetLearningImpl@{resetLearningImpl}}
+\index{resetLearningImpl@{resetLearningImpl}!moa.classifiers.active.ALRandom@{moa.classifiers.active.ALRandom}}
+\doxysubsubsection{\texorpdfstring{resetLearningImpl()}{resetLearningImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+active.\+A\+L\+Random.\+reset\+Learning\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Resets this classifier. It must be similar to starting a new classifier from scratch. ~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden. 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a099ffcf2417abb919d10d697c0648f29}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1active_1_1_a_l_random_a34b3e1b3436482253d94eb37f83473c7}\label{classmoa_1_1classifiers_1_1active_1_1_a_l_random_a34b3e1b3436482253d94eb37f83473c7}} 
+\index{moa.classifiers.active.ALRandom@{moa.classifiers.active.ALRandom}!setModelContext@{setModelContext}}
+\index{setModelContext@{setModelContext}!moa.classifiers.active.ALRandom@{moa.classifiers.active.ALRandom}}
+\doxysubsubsection{\texorpdfstring{setModelContext()}{setModelContext()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+active.\+A\+L\+Random.\+set\+Model\+Context (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instances_header}{Instances\+Header}}}]{ih }\end{DoxyParamCaption})}
+
+Sets the reference to the header of the data stream. The header of the data stream is extended from W\+E\+KA {\ttfamily Instances}. This header is needed to know the number of classes and attributes
+
+
+\begin{DoxyParams}{Parameters}
+{\em ih} & the reference to the data stream header \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_ace518fd29d1cdb5af4279aa1b642dbee}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1active_1_1_a_l_random_a373f0721162641cff6d5a9762fc088d8}\label{classmoa_1_1classifiers_1_1active_1_1_a_l_random_a373f0721162641cff6d5a9762fc088d8}} 
+\index{moa.classifiers.active.ALRandom@{moa.classifiers.active.ALRandom}!trainOnInstanceImpl@{trainOnInstanceImpl}}
+\index{trainOnInstanceImpl@{trainOnInstanceImpl}!moa.classifiers.active.ALRandom@{moa.classifiers.active.ALRandom}}
+\doxysubsubsection{\texorpdfstring{trainOnInstanceImpl()}{trainOnInstanceImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+active.\+A\+L\+Random.\+train\+On\+Instance\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{inst }\end{DoxyParamCaption})}
+
+Trains this classifier incrementally using the given instance.~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & the instance to be used for training \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_aceb24d2ddeab386f2ecead6e3c0d3543}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1active_1_1_a_l_random_ad687836a48d95a1c007865fdc0ef38dc}\label{classmoa_1_1classifiers_1_1active_1_1_a_l_random_ad687836a48d95a1c007865fdc0ef38dc}} 
+\index{moa.classifiers.active.ALRandom@{moa.classifiers.active.ALRandom}!baseLearnerOption@{baseLearnerOption}}
+\index{baseLearnerOption@{baseLearnerOption}!moa.classifiers.active.ALRandom@{moa.classifiers.active.ALRandom}}
+\doxysubsubsection{\texorpdfstring{baseLearnerOption}{baseLearnerOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} moa.\+classifiers.\+active.\+A\+L\+Random.\+base\+Learner\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} ClassOption(\textcolor{stringliteral}{"baseLearner"}, \textcolor{charliteral}{'l'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Classifier to train."}, Classifier.class, \textcolor{stringliteral}{"drift.SingleClassifierDrift"})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1active_1_1_a_l_random_a3854a02b2cc3278ae23946abcbe09920}\label{classmoa_1_1classifiers_1_1active_1_1_a_l_random_a3854a02b2cc3278ae23946abcbe09920}} 
+\index{moa.classifiers.active.ALRandom@{moa.classifiers.active.ALRandom}!budgetManagerOption@{budgetManagerOption}}
+\index{budgetManagerOption@{budgetManagerOption}!moa.classifiers.active.ALRandom@{moa.classifiers.active.ALRandom}}
+\doxysubsubsection{\texorpdfstring{budgetManagerOption}{budgetManagerOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} moa.\+classifiers.\+active.\+A\+L\+Random.\+budget\+Manager\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} ClassOption(\textcolor{stringliteral}{"budgetManager"},}
+\DoxyCodeLine{            \textcolor{charliteral}{'b'}, \textcolor{stringliteral}{"BudgetManager that should be used."},}
+\DoxyCodeLine{            BudgetManager.class, \textcolor{stringliteral}{"FixedBM"})}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/classifiers/active/A\+L\+Random.\+java\end{DoxyCompactItemize}

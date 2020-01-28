@@ -1,0 +1,326 @@
+\hypertarget{classmoa_1_1classifiers_1_1meta_1_1_leveraging_bag}{}\doxysection{moa.\+classifiers.\+meta.\+Leveraging\+Bag Class Reference}
+\label{classmoa_1_1classifiers_1_1meta_1_1_leveraging_bag}\index{moa.classifiers.meta.LeveragingBag@{moa.classifiers.meta.LeveragingBag}}
+
+
+Inheritance diagram for moa.\+classifiers.\+meta.\+Leveraging\+Bag\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+classifiers.\+meta.\+Leveraging\+Bag\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_leveraging_bag_a81af1d9a01d0e30fe0dfe89da58e9dde}{get\+Purpose\+String}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_leveraging_bag_a9b6f0ebd6882474f57388542ad2c24ed}{reset\+Learning\+Impl}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_leveraging_bag_adabfa059e11a1bc3d967d43871eca31a}{train\+On\+Instance\+Impl}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst)
+\item 
+double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_leveraging_bag_a7cc1a694629153846596c3ec9bd38ba7}{get\+Votes\+For\+Instance}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_leveraging_bag_a595c4a1647b41972ee045d722f222cee}\label{classmoa_1_1classifiers_1_1meta_1_1_leveraging_bag_a595c4a1647b41972ee045d722f222cee}} 
+double\mbox{[}$\,$\mbox{]} {\bfseries get\+Votes\+For\+Instance\+Binary} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst)
+\item 
+boolean \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_leveraging_bag_a2706dd6725001eb6c19f615a47eb1cac}{is\+Randomizable}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_leveraging_bag_a193ef6a1adbf83e64ca09130c2a1c2a9}{get\+Model\+Description}} (String\+Builder out, int indent)
+\item 
+\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier}{Classifier}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_leveraging_bag_a2065dae1a54930c65743edb354746dd7}{get\+Sub\+Classifiers}} ()
+\item 
+\mbox{\hyperlink{classmoa_1_1capabilities_1_1_immutable_capabilities}{Immutable\+Capabilities}} \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_leveraging_bag_a4d7fbe5cefbfc978724690043af02501}{define\+Immutable\+Capabilities}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} {\bfseries base\+Learner\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries ensemble\+Size\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} {\bfseries weight\+Shrink\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} {\bfseries delta\+Adwin\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_flag_option}{Flag\+Option}} {\bfseries output\+Codes\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_multi_choice_option}{Multi\+Choice\+Option}} {\bfseries leveragin\+Bag\+Algorithm\+Option}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_leveraging_bag_ae9fb63cac263b63caac3a4a6cd07eac7}{get\+Model\+Measurements\+Impl}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_leveraging_bag_a2709717a6233755914186e2f6e9d3950}\label{classmoa_1_1classifiers_1_1meta_1_1_leveraging_bag_a2709717a6233755914186e2f6e9d3950}} 
+\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier}{Classifier}}\mbox{[}$\,$\mbox{]} {\bfseries ensemble}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_leveraging_bag_a4898bc53f1b1e8a4950fa9f042f393d9}\label{classmoa_1_1classifiers_1_1meta_1_1_leveraging_bag_a4898bc53f1b1e8a4950fa9f042f393d9}} 
+\mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_a_d_w_i_n}{A\+D\+W\+IN}}\mbox{[}$\,$\mbox{]} {\bfseries A\+D\+Error}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_leveraging_bag_a7df80eb6915e3efae0f7ce325680bf43}\label{classmoa_1_1classifiers_1_1meta_1_1_leveraging_bag_a7df80eb6915e3efae0f7ce325680bf43}} 
+int {\bfseries number\+Of\+Changes\+Detected}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_leveraging_bag_a0b3a64133f6b85cb203c85f695f247b2}\label{classmoa_1_1classifiers_1_1meta_1_1_leveraging_bag_a0b3a64133f6b85cb203c85f695f247b2}} 
+int\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} {\bfseries matrix\+Codes}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_leveraging_bag_abcf26ba1b04257c0c65367c3840051ed}\label{classmoa_1_1classifiers_1_1meta_1_1_leveraging_bag_abcf26ba1b04257c0c65367c3840051ed}} 
+boolean {\bfseries init\+Matrix\+Codes} = false
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Leveraging Bagging for evolving data streams using A\+D\+W\+IN. Leveraging Bagging and Leveraging Bagging MC using Random Output Codes ( -\/o option).
+
+See details in\+:~\newline
+ Albert Bifet, Geoffrey Holmes, Bernhard Pfahringer. Leveraging Bagging for Evolving Data Streams Machine Learning and Knowledge Discovery in Databases, European Conference, E\+C\+ML P\+K\+DD\}, 2010.
+
+\begin{DoxyAuthor}{Author}
+Albert Bifet (abifet at cs dot waikato dot ac dot nz) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+7 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_leveraging_bag_a4d7fbe5cefbfc978724690043af02501}\label{classmoa_1_1classifiers_1_1meta_1_1_leveraging_bag_a4d7fbe5cefbfc978724690043af02501}} 
+\index{moa.classifiers.meta.LeveragingBag@{moa.classifiers.meta.LeveragingBag}!defineImmutableCapabilities@{defineImmutableCapabilities}}
+\index{defineImmutableCapabilities@{defineImmutableCapabilities}!moa.classifiers.meta.LeveragingBag@{moa.classifiers.meta.LeveragingBag}}
+\doxysubsubsection{\texorpdfstring{defineImmutableCapabilities()}{defineImmutableCapabilities()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1capabilities_1_1_immutable_capabilities}{Immutable\+Capabilities}} moa.\+classifiers.\+meta.\+Leveraging\+Bag.\+define\+Immutable\+Capabilities (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Defines the set of capabilities the object has. Should be overridden if the object\textquotesingle{}s capabilities do not change.
+
+\begin{DoxyReturn}{Returns}
+The capabilities of the object. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1capabilities_1_1_capabilities_handler_aa82d1befd5dbb958c9787b5304c9a82a}{moa.\+capabilities.\+Capabilities\+Handler}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_leveraging_bag_a193ef6a1adbf83e64ca09130c2a1c2a9}\label{classmoa_1_1classifiers_1_1meta_1_1_leveraging_bag_a193ef6a1adbf83e64ca09130c2a1c2a9}} 
+\index{moa.classifiers.meta.LeveragingBag@{moa.classifiers.meta.LeveragingBag}!getModelDescription@{getModelDescription}}
+\index{getModelDescription@{getModelDescription}!moa.classifiers.meta.LeveragingBag@{moa.classifiers.meta.LeveragingBag}}
+\doxysubsubsection{\texorpdfstring{getModelDescription()}{getModelDescription()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+meta.\+Leveraging\+Bag.\+get\+Model\+Description (\begin{DoxyParamCaption}\item[{String\+Builder}]{out,  }\item[{int}]{indent }\end{DoxyParamCaption})}
+
+Returns a string representation of the model.
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & the stringbuilder to add the description \\
+\hline
+{\em indent} & the number of characters to indent \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a30e5ff32bc8127dfb7436945776b7523}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_leveraging_bag_ae9fb63cac263b63caac3a4a6cd07eac7}\label{classmoa_1_1classifiers_1_1meta_1_1_leveraging_bag_ae9fb63cac263b63caac3a4a6cd07eac7}} 
+\index{moa.classifiers.meta.LeveragingBag@{moa.classifiers.meta.LeveragingBag}!getModelMeasurementsImpl@{getModelMeasurementsImpl}}
+\index{getModelMeasurementsImpl@{getModelMeasurementsImpl}!moa.classifiers.meta.LeveragingBag@{moa.classifiers.meta.LeveragingBag}}
+\doxysubsubsection{\texorpdfstring{getModelMeasurementsImpl()}{getModelMeasurementsImpl()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}} \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+meta.\+Leveraging\+Bag.\+get\+Model\+Measurements\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Gets the current measurements of this classifier.~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden.
+
+\begin{DoxyReturn}{Returns}
+an array of measurements to be used in evaluation tasks 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_ac2bebede21c9d2d8cd11d95a7e20e529}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_leveraging_bag_a81af1d9a01d0e30fe0dfe89da58e9dde}\label{classmoa_1_1classifiers_1_1meta_1_1_leveraging_bag_a81af1d9a01d0e30fe0dfe89da58e9dde}} 
+\index{moa.classifiers.meta.LeveragingBag@{moa.classifiers.meta.LeveragingBag}!getPurposeString@{getPurposeString}}
+\index{getPurposeString@{getPurposeString}!moa.classifiers.meta.LeveragingBag@{moa.classifiers.meta.LeveragingBag}}
+\doxysubsubsection{\texorpdfstring{getPurposeString()}{getPurposeString()}}
+{\footnotesize\ttfamily String moa.\+classifiers.\+meta.\+Leveraging\+Bag.\+get\+Purpose\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Options to handle Dictionary with option texts and objects 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a3fc6ae11234b88e51941a77ddb879d8b}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_leveraging_bag_a2065dae1a54930c65743edb354746dd7}\label{classmoa_1_1classifiers_1_1meta_1_1_leveraging_bag_a2065dae1a54930c65743edb354746dd7}} 
+\index{moa.classifiers.meta.LeveragingBag@{moa.classifiers.meta.LeveragingBag}!getSubClassifiers@{getSubClassifiers}}
+\index{getSubClassifiers@{getSubClassifiers}!moa.classifiers.meta.LeveragingBag@{moa.classifiers.meta.LeveragingBag}}
+\doxysubsubsection{\texorpdfstring{getSubClassifiers()}{getSubClassifiers()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier}{Classifier}} \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+meta.\+Leveraging\+Bag.\+get\+Sub\+Classifiers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the classifiers of this ensemble. Returns null if this learner is a single learner.
+
+\begin{DoxyReturn}{Returns}
+an array of the learners of the ensemble 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a5d7c5aadeaf3465785aa6bb2efb615f2}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_leveraging_bag_a7cc1a694629153846596c3ec9bd38ba7}\label{classmoa_1_1classifiers_1_1meta_1_1_leveraging_bag_a7cc1a694629153846596c3ec9bd38ba7}} 
+\index{moa.classifiers.meta.LeveragingBag@{moa.classifiers.meta.LeveragingBag}!getVotesForInstance@{getVotesForInstance}}
+\index{getVotesForInstance@{getVotesForInstance}!moa.classifiers.meta.LeveragingBag@{moa.classifiers.meta.LeveragingBag}}
+\doxysubsubsection{\texorpdfstring{getVotesForInstance()}{getVotesForInstance()}}
+{\footnotesize\ttfamily double \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+meta.\+Leveraging\+Bag.\+get\+Votes\+For\+Instance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{inst }\end{DoxyParamCaption})}
+
+Predicts the class memberships for a given instance. If an instance is unclassified, the returned array elements must be all zero.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & the instance to be classified \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an array containing the estimated membership probabilities of the test instance in each class 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a0e3589c4fa6f088d82d64514afd9513c}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_leveraging_bag_a2706dd6725001eb6c19f615a47eb1cac}\label{classmoa_1_1classifiers_1_1meta_1_1_leveraging_bag_a2706dd6725001eb6c19f615a47eb1cac}} 
+\index{moa.classifiers.meta.LeveragingBag@{moa.classifiers.meta.LeveragingBag}!isRandomizable@{isRandomizable}}
+\index{isRandomizable@{isRandomizable}!moa.classifiers.meta.LeveragingBag@{moa.classifiers.meta.LeveragingBag}}
+\doxysubsubsection{\texorpdfstring{isRandomizable()}{isRandomizable()}}
+{\footnotesize\ttfamily boolean moa.\+classifiers.\+meta.\+Leveraging\+Bag.\+is\+Randomizable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets whether this learner needs a random seed. Examples of methods that needs a random seed are bagging and boosting.
+
+\begin{DoxyReturn}{Returns}
+true if the learner needs a random seed. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1learners_1_1_learner_a2f1ff9007b5eb5f53801f474b4d42a61}{moa.\+learners.\+Learner$<$ E extends Example $>$}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_leveraging_bag_a9b6f0ebd6882474f57388542ad2c24ed}\label{classmoa_1_1classifiers_1_1meta_1_1_leveraging_bag_a9b6f0ebd6882474f57388542ad2c24ed}} 
+\index{moa.classifiers.meta.LeveragingBag@{moa.classifiers.meta.LeveragingBag}!resetLearningImpl@{resetLearningImpl}}
+\index{resetLearningImpl@{resetLearningImpl}!moa.classifiers.meta.LeveragingBag@{moa.classifiers.meta.LeveragingBag}}
+\doxysubsubsection{\texorpdfstring{resetLearningImpl()}{resetLearningImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+meta.\+Leveraging\+Bag.\+reset\+Learning\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Resets this classifier. It must be similar to starting a new classifier from scratch. ~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden. 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a099ffcf2417abb919d10d697c0648f29}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_leveraging_bag_adabfa059e11a1bc3d967d43871eca31a}\label{classmoa_1_1classifiers_1_1meta_1_1_leveraging_bag_adabfa059e11a1bc3d967d43871eca31a}} 
+\index{moa.classifiers.meta.LeveragingBag@{moa.classifiers.meta.LeveragingBag}!trainOnInstanceImpl@{trainOnInstanceImpl}}
+\index{trainOnInstanceImpl@{trainOnInstanceImpl}!moa.classifiers.meta.LeveragingBag@{moa.classifiers.meta.LeveragingBag}}
+\doxysubsubsection{\texorpdfstring{trainOnInstanceImpl()}{trainOnInstanceImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+meta.\+Leveraging\+Bag.\+train\+On\+Instance\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{inst }\end{DoxyParamCaption})}
+
+Trains this classifier incrementally using the given instance.~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & the instance to be used for training \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_aceb24d2ddeab386f2ecead6e3c0d3543}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_leveraging_bag_a1f65d58ef98c84c4149e0d6585378f19}\label{classmoa_1_1classifiers_1_1meta_1_1_leveraging_bag_a1f65d58ef98c84c4149e0d6585378f19}} 
+\index{moa.classifiers.meta.LeveragingBag@{moa.classifiers.meta.LeveragingBag}!baseLearnerOption@{baseLearnerOption}}
+\index{baseLearnerOption@{baseLearnerOption}!moa.classifiers.meta.LeveragingBag@{moa.classifiers.meta.LeveragingBag}}
+\doxysubsubsection{\texorpdfstring{baseLearnerOption}{baseLearnerOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} moa.\+classifiers.\+meta.\+Leveraging\+Bag.\+base\+Learner\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} ClassOption(\textcolor{stringliteral}{"baseLearner"}, \textcolor{charliteral}{'l'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Classifier to train."}, Classifier.class, \textcolor{stringliteral}{"trees.HoeffdingTree"})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_leveraging_bag_a69adeff160db202260810709314c7e59}\label{classmoa_1_1classifiers_1_1meta_1_1_leveraging_bag_a69adeff160db202260810709314c7e59}} 
+\index{moa.classifiers.meta.LeveragingBag@{moa.classifiers.meta.LeveragingBag}!deltaAdwinOption@{deltaAdwinOption}}
+\index{deltaAdwinOption@{deltaAdwinOption}!moa.classifiers.meta.LeveragingBag@{moa.classifiers.meta.LeveragingBag}}
+\doxysubsubsection{\texorpdfstring{deltaAdwinOption}{deltaAdwinOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} moa.\+classifiers.\+meta.\+Leveraging\+Bag.\+delta\+Adwin\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FloatOption(\textcolor{stringliteral}{"deltaAdwin"}, \textcolor{charliteral}{'a'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Delta of Adwin change detection"}, 0.002, 0.0, 1.0)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_leveraging_bag_ae6f37df7efb04521cb56ad25dba19cc6}\label{classmoa_1_1classifiers_1_1meta_1_1_leveraging_bag_ae6f37df7efb04521cb56ad25dba19cc6}} 
+\index{moa.classifiers.meta.LeveragingBag@{moa.classifiers.meta.LeveragingBag}!ensembleSizeOption@{ensembleSizeOption}}
+\index{ensembleSizeOption@{ensembleSizeOption}!moa.classifiers.meta.LeveragingBag@{moa.classifiers.meta.LeveragingBag}}
+\doxysubsubsection{\texorpdfstring{ensembleSizeOption}{ensembleSizeOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+classifiers.\+meta.\+Leveraging\+Bag.\+ensemble\+Size\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(\textcolor{stringliteral}{"ensembleSize"}, \textcolor{charliteral}{'s'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"The number of models in the bag."}, 10, 1, Integer.MAX\_VALUE)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_leveraging_bag_a33eb839dc45d7678a6e9e49e8a65d421}\label{classmoa_1_1classifiers_1_1meta_1_1_leveraging_bag_a33eb839dc45d7678a6e9e49e8a65d421}} 
+\index{moa.classifiers.meta.LeveragingBag@{moa.classifiers.meta.LeveragingBag}!leveraginBagAlgorithmOption@{leveraginBagAlgorithmOption}}
+\index{leveraginBagAlgorithmOption@{leveraginBagAlgorithmOption}!moa.classifiers.meta.LeveragingBag@{moa.classifiers.meta.LeveragingBag}}
+\doxysubsubsection{\texorpdfstring{leveraginBagAlgorithmOption}{leveraginBagAlgorithmOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_multi_choice_option}{Multi\+Choice\+Option}} moa.\+classifiers.\+meta.\+Leveraging\+Bag.\+leveragin\+Bag\+Algorithm\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} MultiChoiceOption(}
+\DoxyCodeLine{            \textcolor{stringliteral}{"leveraginBagAlgorithm"}, \textcolor{charliteral}{'m'}, \textcolor{stringliteral}{"Leveraging Bagging to use."}, \textcolor{keyword}{new} String[]\{}
+\DoxyCodeLine{                \textcolor{stringliteral}{"LeveragingBag"}, \textcolor{stringliteral}{"LeveragingBagME"}, \textcolor{stringliteral}{"LeveragingBagHalf"}, \textcolor{stringliteral}{"LeveragingBagWT"}, \textcolor{stringliteral}{"LeveragingSubag"}\},}
+\DoxyCodeLine{            \textcolor{keyword}{new} String[]\{\textcolor{stringliteral}{"Leveraging Bagging for evolving data streams using ADWIN"},}
+\DoxyCodeLine{                \textcolor{stringliteral}{"Leveraging Bagging ME using weight 1 if misclassified, otherwise error/(1-\/error)"},}
+\DoxyCodeLine{                \textcolor{stringliteral}{"Leveraging Bagging Half using resampling without replacement half of the instances"},}
+\DoxyCodeLine{                \textcolor{stringliteral}{"Leveraging Bagging WT without taking out all instances."},}
+\DoxyCodeLine{                \textcolor{stringliteral}{"Leveraging Subagging using resampling without replacement."}}
+\DoxyCodeLine{            \}, 0)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_leveraging_bag_a74df1572ad879f2dfda826bd4c438e87}\label{classmoa_1_1classifiers_1_1meta_1_1_leveraging_bag_a74df1572ad879f2dfda826bd4c438e87}} 
+\index{moa.classifiers.meta.LeveragingBag@{moa.classifiers.meta.LeveragingBag}!outputCodesOption@{outputCodesOption}}
+\index{outputCodesOption@{outputCodesOption}!moa.classifiers.meta.LeveragingBag@{moa.classifiers.meta.LeveragingBag}}
+\doxysubsubsection{\texorpdfstring{outputCodesOption}{outputCodesOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_flag_option}{Flag\+Option}} moa.\+classifiers.\+meta.\+Leveraging\+Bag.\+output\+Codes\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FlagOption(\textcolor{stringliteral}{"outputCodes"}, \textcolor{charliteral}{'o'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Use Output Codes to use binary classifiers."})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_leveraging_bag_ae25999052bc47baa17e839b4cdece224}\label{classmoa_1_1classifiers_1_1meta_1_1_leveraging_bag_ae25999052bc47baa17e839b4cdece224}} 
+\index{moa.classifiers.meta.LeveragingBag@{moa.classifiers.meta.LeveragingBag}!weightShrinkOption@{weightShrinkOption}}
+\index{weightShrinkOption@{weightShrinkOption}!moa.classifiers.meta.LeveragingBag@{moa.classifiers.meta.LeveragingBag}}
+\doxysubsubsection{\texorpdfstring{weightShrinkOption}{weightShrinkOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} moa.\+classifiers.\+meta.\+Leveraging\+Bag.\+weight\+Shrink\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FloatOption(\textcolor{stringliteral}{"weightShrink"}, \textcolor{charliteral}{'w'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"The number to use to compute the weight of new instances."}, 6, 0.0, Float.MAX\_VALUE)}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/classifiers/meta/Leveraging\+Bag.\+java\end{DoxyCompactItemize}

@@ -1,0 +1,73 @@
+\hypertarget{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1inputselectors_1_1_select_all_inputs}{}\doxysection{moa.\+classifiers.\+rules.\+multilabel.\+inputselectors.\+Select\+All\+Inputs Class Reference}
+\label{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1inputselectors_1_1_select_all_inputs}\index{moa.classifiers.rules.multilabel.inputselectors.SelectAllInputs@{moa.classifiers.rules.multilabel.inputselectors.SelectAllInputs}}
+
+
+Inheritance diagram for moa.\+classifiers.\+rules.\+multilabel.\+inputselectors.\+Select\+All\+Inputs\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+classifiers.\+rules.\+multilabel.\+inputselectors.\+Select\+All\+Inputs\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1inputselectors_1_1_select_all_inputs_a3109cb058999152fbd076f5219b2b457}\label{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1inputselectors_1_1_select_all_inputs_a3109cb058999152fbd076f5219b2b457}} 
+int\mbox{[}$\,$\mbox{]} {\bfseries get\+Next\+Input\+Indices} (\mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1core_1_1_attribute_expansion_suggestion}{Attribute\+Expansion\+Suggestion}}\mbox{[}$\,$\mbox{]} sorted\+Split\+Suggestions)
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1inputselectors_1_1_select_all_inputs_a5d587278b739941b1f4af1df87e8bff8}{get\+Description}} (String\+Builder sb, int indent)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1inputselectors_1_1_select_all_inputs_a6195010228ff41d49d279ed006d1250e}{prepare\+For\+Use\+Impl}} (\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}} monitor, \mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}} repository)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Does not selects inputs 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1inputselectors_1_1_select_all_inputs_a5d587278b739941b1f4af1df87e8bff8}\label{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1inputselectors_1_1_select_all_inputs_a5d587278b739941b1f4af1df87e8bff8}} 
+\index{moa.classifiers.rules.multilabel.inputselectors.SelectAllInputs@{moa.classifiers.rules.multilabel.inputselectors.SelectAllInputs}!getDescription@{getDescription}}
+\index{getDescription@{getDescription}!moa.classifiers.rules.multilabel.inputselectors.SelectAllInputs@{moa.classifiers.rules.multilabel.inputselectors.SelectAllInputs}}
+\doxysubsubsection{\texorpdfstring{getDescription()}{getDescription()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+rules.\+multilabel.\+inputselectors.\+Select\+All\+Inputs.\+get\+Description (\begin{DoxyParamCaption}\item[{String\+Builder}]{sb,  }\item[{int}]{indent }\end{DoxyParamCaption})}
+
+Returns a string representation of this object. Used in {\ttfamily \mbox{\hyperlink{classmoa_1_1_abstract_m_o_a_object_ac686fd3b07c734cf21f1894376fe402d}{Abstract\+M\+O\+A\+Object.\+to\+String}}} to give a string representation of the object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sb} & the stringbuilder to add the description \\
+\hline
+{\em indent} & the number of characters to indent \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1_m_o_a_object_afdaf5098f1fe6c852018ce64c28e17f5}{moa.\+M\+O\+A\+Object}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1inputselectors_1_1_select_all_inputs_a6195010228ff41d49d279ed006d1250e}\label{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1inputselectors_1_1_select_all_inputs_a6195010228ff41d49d279ed006d1250e}} 
+\index{moa.classifiers.rules.multilabel.inputselectors.SelectAllInputs@{moa.classifiers.rules.multilabel.inputselectors.SelectAllInputs}!prepareForUseImpl@{prepareForUseImpl}}
+\index{prepareForUseImpl@{prepareForUseImpl}!moa.classifiers.rules.multilabel.inputselectors.SelectAllInputs@{moa.classifiers.rules.multilabel.inputselectors.SelectAllInputs}}
+\doxysubsubsection{\texorpdfstring{prepareForUseImpl()}{prepareForUseImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+rules.\+multilabel.\+inputselectors.\+Select\+All\+Inputs.\+prepare\+For\+Use\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}}}]{monitor,  }\item[{\mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}}}]{repository }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+This method describes the implementation of how to prepare this object for use. All classes that extends this class have to implement {\ttfamily prepare\+For\+Use\+Impl} and not {\ttfamily prepare\+For\+Use} since {\ttfamily prepare\+For\+Use} calls {\ttfamily prepare\+For\+Use\+Impl}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em monitor} & the Task\+Monitor to use \\
+\hline
+{\em repository} & the Object\+Repository to use \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1options_1_1_abstract_option_handler_ad0e9c7d4b0e2b185749f36ce28540efb}{moa.\+options.\+Abstract\+Option\+Handler}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/classifiers/rules/multilabel/inputselectors/Select\+All\+Inputs.\+java\end{DoxyCompactItemize}

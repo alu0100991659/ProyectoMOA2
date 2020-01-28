@@ -1,0 +1,213 @@
+\hypertarget{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_my_heap}{}\doxysection{moa.\+classifiers.\+lazy.\+neighboursearch.\+Nearest\+Neighbour\+Search.\+My\+Heap Class Reference}
+\label{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_my_heap}\index{moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.MyHeap@{moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.MyHeap}}
+
+
+Collaboration diagram for moa.\+classifiers.\+lazy.\+neighboursearch.\+Nearest\+Neighbour\+Search.\+My\+Heap\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_my_heap_a755609eb4f6385ef457005b3ef29b87a}{My\+Heap}} (int max\+Size)
+\item 
+int \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_my_heap_ac9e877c56727dda18be2021c4c99df44}{size}} ()
+\item 
+\mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_my_heap_element}{My\+Heap\+Element}} \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_my_heap_aa3280d69fcf91e98c280c8e77843fcff}{peek}} ()
+\item 
+\mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_my_heap_element}{My\+Heap\+Element}} \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_my_heap_a19758f98f6ae1f6144884dcdbfbe10d9}{get}} ()  throws Exception  
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_my_heap_a0c36c44e6651e71b1c82b32200c78d06}{put}} (int i, double d)  throws Exception 
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_my_heap_a3868c19d0a061d4a74089d640216e84c}{put\+By\+Substitute}} (int i, double d)  throws Exception 
+\item 
+int \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_my_heap_a34366c6deedbe3a9a54b6635757eb3dd}{no\+Of\+Kth\+Nearest}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_my_heap_a1dbdd504b8b5333acd68f107ecc9ef72}{put\+Kth\+Nearest}} (int i, double d)
+\item 
+\mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_my_heap_element}{My\+Heap\+Element}} \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_my_heap_a5923f7607c4a6fb5d756dd503d51eab9}{get\+Kth\+Nearest}} ()
+\item 
+int \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_my_heap_ab9455f58a9f1e6b20f71b62536c3030b}{total\+Size}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_my_heap_ad88c01990eee35c64c5acc6113dc3aa4}{upheap}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_my_heap_a1c0ce6fc344856e596eecd1aa711817c}{downheap}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class for a heap to store the nearest k neighbours to an instance. The heap also takes care of cases where multiple neighbours are the same distance away. i.\+e. the minimum size of the heap is k.
+
+\begin{DoxyAuthor}{Author}
+Ashraf M. Kibriya (amk14\mbox{[}at-\/the-\/rate\mbox{]}cs\mbox{[}dot\mbox{]}waikato\mbox{[}dot\mbox{]}ac\mbox{[}dot\mbox{]}nz) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+8034 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_my_heap_a755609eb4f6385ef457005b3ef29b87a}\label{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_my_heap_a755609eb4f6385ef457005b3ef29b87a}} 
+\index{moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.MyHeap@{moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.MyHeap}!MyHeap@{MyHeap}}
+\index{MyHeap@{MyHeap}!moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.MyHeap@{moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.MyHeap}}
+\doxysubsubsection{\texorpdfstring{MyHeap()}{MyHeap()}}
+{\footnotesize\ttfamily moa.\+classifiers.\+lazy.\+neighboursearch.\+Nearest\+Neighbour\+Search.\+My\+Heap.\+My\+Heap (\begin{DoxyParamCaption}\item[{int}]{max\+Size }\end{DoxyParamCaption})}
+
+constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em max\+Size} & the maximum size of the heap \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_my_heap_a1c0ce6fc344856e596eecd1aa711817c}\label{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_my_heap_a1c0ce6fc344856e596eecd1aa711817c}} 
+\index{moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.MyHeap@{moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.MyHeap}!downheap@{downheap}}
+\index{downheap@{downheap}!moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.MyHeap@{moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.MyHeap}}
+\doxysubsubsection{\texorpdfstring{downheap()}{downheap()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+lazy.\+neighboursearch.\+Nearest\+Neighbour\+Search.\+My\+Heap.\+downheap (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+performs downheap operation for the heap to maintian its properties. \mbox{\Hypertarget{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_my_heap_a19758f98f6ae1f6144884dcdbfbe10d9}\label{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_my_heap_a19758f98f6ae1f6144884dcdbfbe10d9}} 
+\index{moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.MyHeap@{moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.MyHeap}!get@{get}}
+\index{get@{get}!moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.MyHeap@{moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.MyHeap}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_my_heap_element}{My\+Heap\+Element}} moa.\+classifiers.\+lazy.\+neighboursearch.\+Nearest\+Neighbour\+Search.\+My\+Heap.\+get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Exception}
+
+returns the first element and removes it from the heap.
+
+\begin{DoxyReturn}{Returns}
+the first element 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & if no elements in heap \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_my_heap_a5923f7607c4a6fb5d756dd503d51eab9}\label{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_my_heap_a5923f7607c4a6fb5d756dd503d51eab9}} 
+\index{moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.MyHeap@{moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.MyHeap}!getKthNearest@{getKthNearest}}
+\index{getKthNearest@{getKthNearest}!moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.MyHeap@{moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.MyHeap}}
+\doxysubsubsection{\texorpdfstring{getKthNearest()}{getKthNearest()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_my_heap_element}{My\+Heap\+Element}} moa.\+classifiers.\+lazy.\+neighboursearch.\+Nearest\+Neighbour\+Search.\+My\+Heap.\+get\+Kth\+Nearest (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+returns the kth nearest element or null if none there.
+
+\begin{DoxyReturn}{Returns}
+the kth nearest element 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_my_heap_a34366c6deedbe3a9a54b6635757eb3dd}\label{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_my_heap_a34366c6deedbe3a9a54b6635757eb3dd}} 
+\index{moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.MyHeap@{moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.MyHeap}!noOfKthNearest@{noOfKthNearest}}
+\index{noOfKthNearest@{noOfKthNearest}!moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.MyHeap@{moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.MyHeap}}
+\doxysubsubsection{\texorpdfstring{noOfKthNearest()}{noOfKthNearest()}}
+{\footnotesize\ttfamily int moa.\+classifiers.\+lazy.\+neighboursearch.\+Nearest\+Neighbour\+Search.\+My\+Heap.\+no\+Of\+Kth\+Nearest (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+returns the number of k nearest.
+
+\begin{DoxyReturn}{Returns}
+the number of k nearest 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\#m\+\_\+\+Kth\+Nearest\+Size 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_my_heap_aa3280d69fcf91e98c280c8e77843fcff}\label{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_my_heap_aa3280d69fcf91e98c280c8e77843fcff}} 
+\index{moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.MyHeap@{moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.MyHeap}!peek@{peek}}
+\index{peek@{peek}!moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.MyHeap@{moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.MyHeap}}
+\doxysubsubsection{\texorpdfstring{peek()}{peek()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_my_heap_element}{My\+Heap\+Element}} moa.\+classifiers.\+lazy.\+neighboursearch.\+Nearest\+Neighbour\+Search.\+My\+Heap.\+peek (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+peeks at the first element.
+
+\begin{DoxyReturn}{Returns}
+the first element 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_my_heap_a0c36c44e6651e71b1c82b32200c78d06}\label{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_my_heap_a0c36c44e6651e71b1c82b32200c78d06}} 
+\index{moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.MyHeap@{moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.MyHeap}!put@{put}}
+\index{put@{put}!moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.MyHeap@{moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.MyHeap}}
+\doxysubsubsection{\texorpdfstring{put()}{put()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+lazy.\+neighboursearch.\+Nearest\+Neighbour\+Search.\+My\+Heap.\+put (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{double}]{d }\end{DoxyParamCaption}) throws Exception}
+
+adds the value to the heap.
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & the index \\
+\hline
+{\em d} & the distance \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & if the heap gets too large \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_my_heap_a3868c19d0a061d4a74089d640216e84c}\label{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_my_heap_a3868c19d0a061d4a74089d640216e84c}} 
+\index{moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.MyHeap@{moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.MyHeap}!putBySubstitute@{putBySubstitute}}
+\index{putBySubstitute@{putBySubstitute}!moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.MyHeap@{moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.MyHeap}}
+\doxysubsubsection{\texorpdfstring{putBySubstitute()}{putBySubstitute()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+lazy.\+neighboursearch.\+Nearest\+Neighbour\+Search.\+My\+Heap.\+put\+By\+Substitute (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{double}]{d }\end{DoxyParamCaption}) throws Exception}
+
+Puts an element by substituting it in place of the top most element.
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & the index \\
+\hline
+{\em d} & the distance \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & if distance is smaller than that of the head element \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_my_heap_a1dbdd504b8b5333acd68f107ecc9ef72}\label{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_my_heap_a1dbdd504b8b5333acd68f107ecc9ef72}} 
+\index{moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.MyHeap@{moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.MyHeap}!putKthNearest@{putKthNearest}}
+\index{putKthNearest@{putKthNearest}!moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.MyHeap@{moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.MyHeap}}
+\doxysubsubsection{\texorpdfstring{putKthNearest()}{putKthNearest()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+lazy.\+neighboursearch.\+Nearest\+Neighbour\+Search.\+My\+Heap.\+put\+Kth\+Nearest (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{double}]{d }\end{DoxyParamCaption})}
+
+Stores kth nearest elements (if there are more than one). 
+\begin{DoxyParams}{Parameters}
+{\em i} & the index \\
+\hline
+{\em d} & the distance \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_my_heap_ac9e877c56727dda18be2021c4c99df44}\label{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_my_heap_ac9e877c56727dda18be2021c4c99df44}} 
+\index{moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.MyHeap@{moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.MyHeap}!size@{size}}
+\index{size@{size}!moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.MyHeap@{moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.MyHeap}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily int moa.\+classifiers.\+lazy.\+neighboursearch.\+Nearest\+Neighbour\+Search.\+My\+Heap.\+size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+returns the size of the heap.
+
+\begin{DoxyReturn}{Returns}
+the size 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_my_heap_ab9455f58a9f1e6b20f71b62536c3030b}\label{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_my_heap_ab9455f58a9f1e6b20f71b62536c3030b}} 
+\index{moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.MyHeap@{moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.MyHeap}!totalSize@{totalSize}}
+\index{totalSize@{totalSize}!moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.MyHeap@{moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.MyHeap}}
+\doxysubsubsection{\texorpdfstring{totalSize()}{totalSize()}}
+{\footnotesize\ttfamily int moa.\+classifiers.\+lazy.\+neighboursearch.\+Nearest\+Neighbour\+Search.\+My\+Heap.\+total\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+returns the total size.
+
+\begin{DoxyReturn}{Returns}
+the total size 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_my_heap_ad88c01990eee35c64c5acc6113dc3aa4}\label{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_my_heap_ad88c01990eee35c64c5acc6113dc3aa4}} 
+\index{moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.MyHeap@{moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.MyHeap}!upheap@{upheap}}
+\index{upheap@{upheap}!moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.MyHeap@{moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.MyHeap}}
+\doxysubsubsection{\texorpdfstring{upheap()}{upheap()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+lazy.\+neighboursearch.\+Nearest\+Neighbour\+Search.\+My\+Heap.\+upheap (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+performs upheap operation for the heap to maintian its properties. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/classifiers/lazy/neighboursearch/Nearest\+Neighbour\+Search.\+java\end{DoxyCompactItemize}

@@ -1,0 +1,77 @@
+\hypertarget{interfacemoa_1_1classifiers_1_1rules_1_1core_1_1anomalydetection_1_1_anomaly_detector}{}\doxysection{moa.\+classifiers.\+rules.\+core.\+anomalydetection.\+Anomaly\+Detector Interface Reference}
+\label{interfacemoa_1_1classifiers_1_1rules_1_1core_1_1anomalydetection_1_1_anomaly_detector}\index{moa.classifiers.rules.core.anomalydetection.AnomalyDetector@{moa.classifiers.rules.core.anomalydetection.AnomalyDetector}}
+
+
+Inheritance diagram for moa.\+classifiers.\+rules.\+core.\+anomalydetection.\+Anomaly\+Detector\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+classifiers.\+rules.\+core.\+anomalydetection.\+Anomaly\+Detector\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{interfacemoa_1_1classifiers_1_1rules_1_1core_1_1anomalydetection_1_1_anomaly_detector_a6b27b6df353b7c816fe295aae2119389}{update\+And\+Check\+Anomaly\+Detection}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_multi_label_instance}{Multi\+Label\+Instance}} instance)
+\item 
+\mbox{\Hypertarget{interfacemoa_1_1classifiers_1_1rules_1_1core_1_1anomalydetection_1_1_anomaly_detector_aecf9adab4d2dd87545838622755c5fa6}\label{interfacemoa_1_1classifiers_1_1rules_1_1core_1_1anomalydetection_1_1_anomaly_detector_aecf9adab4d2dd87545838622755c5fa6}} 
+double {\bfseries get\+Anomaly\+Score} ()
+\item 
+\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1rules_1_1core_1_1anomalydetection_1_1_anomaly_detector}{Anomaly\+Detector}} \mbox{\hyperlink{interfacemoa_1_1classifiers_1_1rules_1_1core_1_1anomalydetection_1_1_anomaly_detector_aa87619c24d704050bb12f6bf24a7149a}{copy}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Anomaly Detector interface to implement methods that detects change.
+
+\begin{DoxyAuthor}{Author}
+João Duarte (joaomaiaduarte at gmail dot com) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+1
+\end{DoxyParagraph}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interfacemoa_1_1classifiers_1_1rules_1_1core_1_1anomalydetection_1_1_anomaly_detector_aa87619c24d704050bb12f6bf24a7149a}\label{interfacemoa_1_1classifiers_1_1rules_1_1core_1_1anomalydetection_1_1_anomaly_detector_aa87619c24d704050bb12f6bf24a7149a}} 
+\index{moa.classifiers.rules.core.anomalydetection.AnomalyDetector@{moa.classifiers.rules.core.anomalydetection.AnomalyDetector}!copy@{copy}}
+\index{copy@{copy}!moa.classifiers.rules.core.anomalydetection.AnomalyDetector@{moa.classifiers.rules.core.anomalydetection.AnomalyDetector}}
+\doxysubsubsection{\texorpdfstring{copy()}{copy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacemoa_1_1classifiers_1_1rules_1_1core_1_1anomalydetection_1_1_anomaly_detector}{Anomaly\+Detector}} moa.\+classifiers.\+rules.\+core.\+anomalydetection.\+Anomaly\+Detector.\+copy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This method produces a copy of this object.
+
+\begin{DoxyReturn}{Returns}
+a copy of this object 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1options_1_1_option_handler_a96fd6b38c56141192588e19e05e43f17}{moa.\+options.\+Option\+Handler}}.
+
+
+
+Implemented in \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1core_1_1anomalydetection_1_1_abstract_anomaly_detector_a47521883c9b9d094b7202e8a23ce714f}{moa.\+classifiers.\+rules.\+core.\+anomalydetection.\+Abstract\+Anomaly\+Detector}}.
+
+\mbox{\Hypertarget{interfacemoa_1_1classifiers_1_1rules_1_1core_1_1anomalydetection_1_1_anomaly_detector_a6b27b6df353b7c816fe295aae2119389}\label{interfacemoa_1_1classifiers_1_1rules_1_1core_1_1anomalydetection_1_1_anomaly_detector_a6b27b6df353b7c816fe295aae2119389}} 
+\index{moa.classifiers.rules.core.anomalydetection.AnomalyDetector@{moa.classifiers.rules.core.anomalydetection.AnomalyDetector}!updateAndCheckAnomalyDetection@{updateAndCheckAnomalyDetection}}
+\index{updateAndCheckAnomalyDetection@{updateAndCheckAnomalyDetection}!moa.classifiers.rules.core.anomalydetection.AnomalyDetector@{moa.classifiers.rules.core.anomalydetection.AnomalyDetector}}
+\doxysubsubsection{\texorpdfstring{updateAndCheckAnomalyDetection()}{updateAndCheckAnomalyDetection()}}
+{\footnotesize\ttfamily boolean moa.\+classifiers.\+rules.\+core.\+anomalydetection.\+Anomaly\+Detector.\+update\+And\+Check\+Anomaly\+Detection (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_multi_label_instance}{Multi\+Label\+Instance}}}]{instance }\end{DoxyParamCaption})}
+
+Adding an instance to the anomaly detector$<$br$>$~\newline
+
+
+\begin{DoxyReturn}{Returns}
+true if anomaly is detected and false otherwise 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1core_1_1anomalydetection_1_1_anomaliness_ratio_score_a082b1ba748a5d8515d8c6f2e1ef2db76}{moa.\+classifiers.\+rules.\+core.\+anomalydetection.\+Anomaliness\+Ratio\+Score}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1core_1_1anomalydetection_1_1_odds_ratio_score_a2709f54246a021dadd3aa27149b063ff}{moa.\+classifiers.\+rules.\+core.\+anomalydetection.\+Odds\+Ratio\+Score}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1core_1_1anomalydetection_1_1_no_anomaly_detection_a4ecff7cfd06881b0947a816af63a06fa}{moa.\+classifiers.\+rules.\+core.\+anomalydetection.\+No\+Anomaly\+Detection}}, and \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1core_1_1anomalydetection_1_1_abstract_anomaly_detector_aff3d81d09b6936d59d5658d95bf895f0}{moa.\+classifiers.\+rules.\+core.\+anomalydetection.\+Abstract\+Anomaly\+Detector}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/classifiers/rules/core/anomalydetection/Anomaly\+Detector.\+java\end{DoxyCompactItemize}

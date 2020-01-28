@@ -1,0 +1,143 @@
+\hypertarget{classmoa_1_1tasks_1_1_cache_shuffled_stream}{}\doxysection{moa.\+tasks.\+Cache\+Shuffled\+Stream Class Reference}
+\label{classmoa_1_1tasks_1_1_cache_shuffled_stream}\index{moa.tasks.CacheShuffledStream@{moa.tasks.CacheShuffledStream}}
+
+
+Inheritance diagram for moa.\+tasks.\+Cache\+Shuffled\+Stream\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+tasks.\+Cache\+Shuffled\+Stream\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classmoa_1_1tasks_1_1_cache_shuffled_stream_adc296fa828ecdf7beadb76cd91c3908d}{get\+Purpose\+String}} ()
+\item 
+Class$<$?$>$ \mbox{\hyperlink{classmoa_1_1tasks_1_1_cache_shuffled_stream_a4e44033db836de2929c41c03148a87fc}{get\+Task\+Result\+Type}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} {\bfseries stream\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries maximum\+Cache\+Size\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries shuffle\+Random\+Seed\+Option}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Object \mbox{\hyperlink{classmoa_1_1tasks_1_1_cache_shuffled_stream_a4afb4d9579d0f2adbab79252bba907a6}{do\+Task\+Impl}} (\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}} monitor, \mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}} repository)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task}{Task}} for storing and shuffling examples in memory.
+
+\begin{DoxyAuthor}{Author}
+Richard Kirkby (\href{mailto:rkirkby@cs.waikato.ac.nz}{\texttt{ rkirkby@cs.\+waikato.\+ac.\+nz}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+7 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_cache_shuffled_stream_a4afb4d9579d0f2adbab79252bba907a6}\label{classmoa_1_1tasks_1_1_cache_shuffled_stream_a4afb4d9579d0f2adbab79252bba907a6}} 
+\index{moa.tasks.CacheShuffledStream@{moa.tasks.CacheShuffledStream}!doTaskImpl@{doTaskImpl}}
+\index{doTaskImpl@{doTaskImpl}!moa.tasks.CacheShuffledStream@{moa.tasks.CacheShuffledStream}}
+\doxysubsubsection{\texorpdfstring{doTaskImpl()}{doTaskImpl()}}
+{\footnotesize\ttfamily Object moa.\+tasks.\+Cache\+Shuffled\+Stream.\+do\+Task\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}}}]{monitor,  }\item[{\mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}}}]{repository }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+This method performs this task. {\ttfamily \mbox{\hyperlink{classmoa_1_1tasks_1_1_abstract_task}{Abstract\+Task}}} implements {\ttfamily do\+Task} so all its extensions only need to implement {\ttfamily do\+Task\+Impl}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em monitor} & the \mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}} to use \\
+\hline
+{\em repository} & the Object\+Repository to use \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an object with the result of this task 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1tasks_1_1_abstract_task_aec310a468681643a80a74733c53a09b5}{moa.\+tasks.\+Abstract\+Task}}.
+
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_cache_shuffled_stream_adc296fa828ecdf7beadb76cd91c3908d}\label{classmoa_1_1tasks_1_1_cache_shuffled_stream_adc296fa828ecdf7beadb76cd91c3908d}} 
+\index{moa.tasks.CacheShuffledStream@{moa.tasks.CacheShuffledStream}!getPurposeString@{getPurposeString}}
+\index{getPurposeString@{getPurposeString}!moa.tasks.CacheShuffledStream@{moa.tasks.CacheShuffledStream}}
+\doxysubsubsection{\texorpdfstring{getPurposeString()}{getPurposeString()}}
+{\footnotesize\ttfamily String moa.\+tasks.\+Cache\+Shuffled\+Stream.\+get\+Purpose\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Options to handle Dictionary with option texts and objects 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1options_1_1_abstract_option_handler_abc8df69aea27ef85060557a9e918b2ca}{moa.\+options.\+Abstract\+Option\+Handler}}.
+
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_cache_shuffled_stream_a4e44033db836de2929c41c03148a87fc}\label{classmoa_1_1tasks_1_1_cache_shuffled_stream_a4e44033db836de2929c41c03148a87fc}} 
+\index{moa.tasks.CacheShuffledStream@{moa.tasks.CacheShuffledStream}!getTaskResultType@{getTaskResultType}}
+\index{getTaskResultType@{getTaskResultType}!moa.tasks.CacheShuffledStream@{moa.tasks.CacheShuffledStream}}
+\doxysubsubsection{\texorpdfstring{getTaskResultType()}{getTaskResultType()}}
+{\footnotesize\ttfamily Class$<$?$>$ moa.\+tasks.\+Cache\+Shuffled\+Stream.\+get\+Task\+Result\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the result type of this task. Tasks can return Learning\+Curve, Learning\+Evaluation, Classifier, String, Instances..
+
+\begin{DoxyReturn}{Returns}
+a class object of the result of this task 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_a568100cd931416820d1bcc81032301f6}{moa.\+tasks.\+Task}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_cache_shuffled_stream_a09f64f7a08292cd9eccc2077a5d9781a}\label{classmoa_1_1tasks_1_1_cache_shuffled_stream_a09f64f7a08292cd9eccc2077a5d9781a}} 
+\index{moa.tasks.CacheShuffledStream@{moa.tasks.CacheShuffledStream}!maximumCacheSizeOption@{maximumCacheSizeOption}}
+\index{maximumCacheSizeOption@{maximumCacheSizeOption}!moa.tasks.CacheShuffledStream@{moa.tasks.CacheShuffledStream}}
+\doxysubsubsection{\texorpdfstring{maximumCacheSizeOption}{maximumCacheSizeOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+tasks.\+Cache\+Shuffled\+Stream.\+maximum\+Cache\+Size\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(\textcolor{stringliteral}{"maximumCacheSize"},}
+\DoxyCodeLine{            \textcolor{charliteral}{'m'}, \textcolor{stringliteral}{"Maximum number of instances to cache."}, 1000000, 1,}
+\DoxyCodeLine{            Integer.MAX\_VALUE)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_cache_shuffled_stream_a66187967e67c7c233c61350615e2d3d3}\label{classmoa_1_1tasks_1_1_cache_shuffled_stream_a66187967e67c7c233c61350615e2d3d3}} 
+\index{moa.tasks.CacheShuffledStream@{moa.tasks.CacheShuffledStream}!shuffleRandomSeedOption@{shuffleRandomSeedOption}}
+\index{shuffleRandomSeedOption@{shuffleRandomSeedOption}!moa.tasks.CacheShuffledStream@{moa.tasks.CacheShuffledStream}}
+\doxysubsubsection{\texorpdfstring{shuffleRandomSeedOption}{shuffleRandomSeedOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+tasks.\+Cache\+Shuffled\+Stream.\+shuffle\+Random\+Seed\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(}
+\DoxyCodeLine{            \textcolor{stringliteral}{"shuffleRandomSeed"}, \textcolor{charliteral}{'r'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Seed for random shuffling of instances."}, 1)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_cache_shuffled_stream_a46236e82a9b9a04682bc3a849056d869}\label{classmoa_1_1tasks_1_1_cache_shuffled_stream_a46236e82a9b9a04682bc3a849056d869}} 
+\index{moa.tasks.CacheShuffledStream@{moa.tasks.CacheShuffledStream}!streamOption@{streamOption}}
+\index{streamOption@{streamOption}!moa.tasks.CacheShuffledStream@{moa.tasks.CacheShuffledStream}}
+\doxysubsubsection{\texorpdfstring{streamOption}{streamOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} moa.\+tasks.\+Cache\+Shuffled\+Stream.\+stream\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} ClassOption(\textcolor{stringliteral}{"stream"}, \textcolor{charliteral}{'s'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Stream to cache and shuffle."}, InstanceStream.class,}
+\DoxyCodeLine{            \textcolor{stringliteral}{"generators.RandomTreeGenerator"})}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/tasks/Cache\+Shuffled\+Stream.\+java\end{DoxyCompactItemize}

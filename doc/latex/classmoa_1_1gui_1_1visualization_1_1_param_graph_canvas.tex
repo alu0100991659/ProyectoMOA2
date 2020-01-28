@@ -1,0 +1,119 @@
+\hypertarget{classmoa_1_1gui_1_1visualization_1_1_param_graph_canvas}{}\doxysection{moa.\+gui.\+visualization.\+Param\+Graph\+Canvas Class Reference}
+\label{classmoa_1_1gui_1_1visualization_1_1_param_graph_canvas}\index{moa.gui.visualization.ParamGraphCanvas@{moa.gui.visualization.ParamGraphCanvas}}
+
+
+Inheritance diagram for moa.\+gui.\+visualization.\+Param\+Graph\+Canvas\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+gui.\+visualization.\+Param\+Graph\+Canvas\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1gui_1_1visualization_1_1_param_graph_canvas_a8302263f3f5e10e25d7eadd2ccf33adc}{Param\+Graph\+Canvas}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1gui_1_1visualization_1_1_param_graph_canvas_af739f1901a58c94964b3e0e60ddecacb}{set\+Graph}} (\mbox{\hyperlink{classmoa_1_1evaluation_1_1_measure_collection}{Measure\+Collection}}\mbox{[}$\,$\mbox{]} measures, \mbox{\hyperlink{classmoa_1_1evaluation_1_1_measure_collection}{Measure\+Collection}}\mbox{[}$\,$\mbox{]} measure\+Stds, double\mbox{[}$\,$\mbox{]} varied\+Param\+Values, Color\mbox{[}$\,$\mbox{]} colors)
+\item 
+double \mbox{\hyperlink{classmoa_1_1gui_1_1visualization_1_1_param_graph_canvas_a35a3af5fce2523ddb9ffcda4a27cafc6}{get\+Min\+X\+Value}} ()
+\item 
+double \mbox{\hyperlink{classmoa_1_1gui_1_1visualization_1_1_param_graph_canvas_a0176fbba064e34db0f20226ed30f92bc}{get\+Max\+X\+Value}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1gui_1_1visualization_1_1_param_graph_canvas_a5d4e35bf785b09dd2aea97e9d9164be3}{set\+Size}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1gui_1_1visualization_1_1_param_graph_canvas_a932a46ee58e8c3d38543fa325f18da6f}{set\+Preferred\+Size}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classmoa_1_1gui_1_1visualization_1_1_param_graph_canvas}{Param\+Graph\+Canvas}} is an implementation of \mbox{\hyperlink{classmoa_1_1gui_1_1visualization_1_1_abstract_graph_canvas}{Abstract\+Graph\+Canvas}} showing the relation between a parameter and the measures.
+
+\begin{DoxyAuthor}{Author}
+Tim Sabsch (\href{mailto:tim.sabsch@ovgu.de}{\texttt{ tim.\+sabsch@ovgu.\+de}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+1 
+\end{DoxyParagraph}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classmoa_1_1gui_1_1visualization_1_1_abstract_graph_canvas}{Abstract\+Graph\+Canvas}} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmoa_1_1gui_1_1visualization_1_1_param_graph_canvas_a8302263f3f5e10e25d7eadd2ccf33adc}\label{classmoa_1_1gui_1_1visualization_1_1_param_graph_canvas_a8302263f3f5e10e25d7eadd2ccf33adc}} 
+\index{moa.gui.visualization.ParamGraphCanvas@{moa.gui.visualization.ParamGraphCanvas}!ParamGraphCanvas@{ParamGraphCanvas}}
+\index{ParamGraphCanvas@{ParamGraphCanvas}!moa.gui.visualization.ParamGraphCanvas@{moa.gui.visualization.ParamGraphCanvas}}
+\doxysubsubsection{\texorpdfstring{ParamGraphCanvas()}{ParamGraphCanvas()}}
+{\footnotesize\ttfamily moa.\+gui.\+visualization.\+Param\+Graph\+Canvas.\+Param\+Graph\+Canvas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Initialises a \mbox{\hyperlink{classmoa_1_1gui_1_1visualization_1_1_process_graph_canvas}{Process\+Graph\+Canvas}} by calling the super constructor with a \mbox{\hyperlink{classmoa_1_1gui_1_1visualization_1_1_param_graph_axes}{Param\+Graph\+Axes}} as instance of \mbox{\hyperlink{classmoa_1_1gui_1_1visualization_1_1_abstract_graph_axes}{Abstract\+Graph\+Axes}} and \mbox{\hyperlink{classmoa_1_1gui_1_1visualization_1_1_graph_scatter}{Graph\+Scatter}} as instance of \mbox{\hyperlink{classmoa_1_1gui_1_1visualization_1_1_abstract_graph_plot}{Abstract\+Graph\+Plot}}. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1gui_1_1visualization_1_1_param_graph_canvas_a0176fbba064e34db0f20226ed30f92bc}\label{classmoa_1_1gui_1_1visualization_1_1_param_graph_canvas_a0176fbba064e34db0f20226ed30f92bc}} 
+\index{moa.gui.visualization.ParamGraphCanvas@{moa.gui.visualization.ParamGraphCanvas}!getMaxXValue@{getMaxXValue}}
+\index{getMaxXValue@{getMaxXValue}!moa.gui.visualization.ParamGraphCanvas@{moa.gui.visualization.ParamGraphCanvas}}
+\doxysubsubsection{\texorpdfstring{getMaxXValue()}{getMaxXValue()}}
+{\footnotesize\ttfamily double moa.\+gui.\+visualization.\+Param\+Graph\+Canvas.\+get\+Max\+X\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the maximum value for the x-\/axis. 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1gui_1_1visualization_1_1_abstract_graph_canvas_afa4aeb2caa8e6f76d34fa1f190c8590d}{moa.\+gui.\+visualization.\+Abstract\+Graph\+Canvas}}.
+
+\mbox{\Hypertarget{classmoa_1_1gui_1_1visualization_1_1_param_graph_canvas_a35a3af5fce2523ddb9ffcda4a27cafc6}\label{classmoa_1_1gui_1_1visualization_1_1_param_graph_canvas_a35a3af5fce2523ddb9ffcda4a27cafc6}} 
+\index{moa.gui.visualization.ParamGraphCanvas@{moa.gui.visualization.ParamGraphCanvas}!getMinXValue@{getMinXValue}}
+\index{getMinXValue@{getMinXValue}!moa.gui.visualization.ParamGraphCanvas@{moa.gui.visualization.ParamGraphCanvas}}
+\doxysubsubsection{\texorpdfstring{getMinXValue()}{getMinXValue()}}
+{\footnotesize\ttfamily double moa.\+gui.\+visualization.\+Param\+Graph\+Canvas.\+get\+Min\+X\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the minimum value for the x-\/axis. 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1gui_1_1visualization_1_1_abstract_graph_canvas_a653d3311b36ebda8726088b976f5e094}{moa.\+gui.\+visualization.\+Abstract\+Graph\+Canvas}}.
+
+\mbox{\Hypertarget{classmoa_1_1gui_1_1visualization_1_1_param_graph_canvas_af739f1901a58c94964b3e0e60ddecacb}\label{classmoa_1_1gui_1_1visualization_1_1_param_graph_canvas_af739f1901a58c94964b3e0e60ddecacb}} 
+\index{moa.gui.visualization.ParamGraphCanvas@{moa.gui.visualization.ParamGraphCanvas}!setGraph@{setGraph}}
+\index{setGraph@{setGraph}!moa.gui.visualization.ParamGraphCanvas@{moa.gui.visualization.ParamGraphCanvas}}
+\doxysubsubsection{\texorpdfstring{setGraph()}{setGraph()}}
+{\footnotesize\ttfamily void moa.\+gui.\+visualization.\+Param\+Graph\+Canvas.\+set\+Graph (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmoa_1_1evaluation_1_1_measure_collection}{Measure\+Collection}}\mbox{[}$\,$\mbox{]}}]{measures,  }\item[{\mbox{\hyperlink{classmoa_1_1evaluation_1_1_measure_collection}{Measure\+Collection}}\mbox{[}$\,$\mbox{]}}]{measure\+Stds,  }\item[{double\mbox{[}$\,$\mbox{]}}]{varied\+Param\+Values,  }\item[{Color\mbox{[}$\,$\mbox{]}}]{colors }\end{DoxyParamCaption})}
+
+Sets the scatter graph.
+
+
+\begin{DoxyParams}{Parameters}
+{\em measures} & information about the curves \\
+\hline
+{\em measure\+Stds} & standard deviation for the measures \\
+\hline
+{\em varied\+Param\+Values} & values of the varied parameter \\
+\hline
+{\em colors} & color encoding for the param array \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmoa_1_1gui_1_1visualization_1_1_param_graph_canvas_a932a46ee58e8c3d38543fa325f18da6f}\label{classmoa_1_1gui_1_1visualization_1_1_param_graph_canvas_a932a46ee58e8c3d38543fa325f18da6f}} 
+\index{moa.gui.visualization.ParamGraphCanvas@{moa.gui.visualization.ParamGraphCanvas}!setPreferredSize@{setPreferredSize}}
+\index{setPreferredSize@{setPreferredSize}!moa.gui.visualization.ParamGraphCanvas@{moa.gui.visualization.ParamGraphCanvas}}
+\doxysubsubsection{\texorpdfstring{setPreferredSize()}{setPreferredSize()}}
+{\footnotesize\ttfamily void moa.\+gui.\+visualization.\+Param\+Graph\+Canvas.\+set\+Preferred\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Sets the preferred canvas size. 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1gui_1_1visualization_1_1_abstract_graph_canvas_a3e1154990222a1456b3124bea6f0b1a3}{moa.\+gui.\+visualization.\+Abstract\+Graph\+Canvas}}.
+
+\mbox{\Hypertarget{classmoa_1_1gui_1_1visualization_1_1_param_graph_canvas_a5d4e35bf785b09dd2aea97e9d9164be3}\label{classmoa_1_1gui_1_1visualization_1_1_param_graph_canvas_a5d4e35bf785b09dd2aea97e9d9164be3}} 
+\index{moa.gui.visualization.ParamGraphCanvas@{moa.gui.visualization.ParamGraphCanvas}!setSize@{setSize}}
+\index{setSize@{setSize}!moa.gui.visualization.ParamGraphCanvas@{moa.gui.visualization.ParamGraphCanvas}}
+\doxysubsubsection{\texorpdfstring{setSize()}{setSize()}}
+{\footnotesize\ttfamily void moa.\+gui.\+visualization.\+Param\+Graph\+Canvas.\+set\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Sets the canvas size. 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1gui_1_1visualization_1_1_abstract_graph_canvas_a7e312dd0b70c900a2005877ed72b4fcd}{moa.\+gui.\+visualization.\+Abstract\+Graph\+Canvas}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/gui/visualization/Param\+Graph\+Canvas.\+java\end{DoxyCompactItemize}

@@ -1,0 +1,102 @@
+\hypertarget{classmoa_1_1classifiers_1_1_abstract_multi_label_learner}{}\doxysection{moa.\+classifiers.\+Abstract\+Multi\+Label\+Learner Class Reference}
+\label{classmoa_1_1classifiers_1_1_abstract_multi_label_learner}\index{moa.classifiers.AbstractMultiLabelLearner@{moa.classifiers.AbstractMultiLabelLearner}}
+
+
+Inheritance diagram for moa.\+classifiers.\+Abstract\+Multi\+Label\+Learner\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+classifiers.\+Abstract\+Multi\+Label\+Learner\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1_abstract_multi_label_learner_a3e7c60989dba64fe245c9a503458791e}\label{classmoa_1_1classifiers_1_1_abstract_multi_label_learner_a3e7c60989dba64fe245c9a503458791e}} 
+abstract void {\bfseries train\+On\+Instance\+Impl} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_multi_label_instance}{Multi\+Label\+Instance}} instance)
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_multi_label_learner_a1e5138648ebec046f02441fb370c0b47}{train\+On\+Instance\+Impl}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} instance)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1_abstract_multi_label_learner_aa8f07bfc33f48408d57475d76240eff6}\label{classmoa_1_1classifiers_1_1_abstract_multi_label_learner_aa8f07bfc33f48408d57475d76240eff6}} 
+\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_prediction}{Prediction}} {\bfseries get\+Prediction\+For\+Instance} (\mbox{\hyperlink{interfacemoa_1_1core_1_1_example}{Example}}$<$ \mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} $>$ example)
+\item 
+\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_prediction}{Prediction}} \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_multi_label_learner_ac2bb4763c11b326e2eea987cdc1d06f3}{get\+Prediction\+For\+Instance}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1_abstract_multi_label_learner_af3c40f299395a1b5a7deacd0411c0356}\label{classmoa_1_1classifiers_1_1_abstract_multi_label_learner_af3c40f299395a1b5a7deacd0411c0356}} 
+abstract \mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_prediction}{Prediction}} {\bfseries get\+Prediction\+For\+Instance} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_multi_label_instance}{Multi\+Label\+Instance}} inst)
+\item 
+double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_multi_label_learner_a20e5d8cc1ca49adbb067d83717fb3f1a}{get\+Votes\+For\+Instance}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1_abstract_multi_label_learner_ac2bb4763c11b326e2eea987cdc1d06f3}\label{classmoa_1_1classifiers_1_1_abstract_multi_label_learner_ac2bb4763c11b326e2eea987cdc1d06f3}} 
+\index{moa.classifiers.AbstractMultiLabelLearner@{moa.classifiers.AbstractMultiLabelLearner}!getPredictionForInstance@{getPredictionForInstance}}
+\index{getPredictionForInstance@{getPredictionForInstance}!moa.classifiers.AbstractMultiLabelLearner@{moa.classifiers.AbstractMultiLabelLearner}}
+\doxysubsubsection{\texorpdfstring{getPredictionForInstance()}{getPredictionForInstance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_prediction}{Prediction}} moa.\+classifiers.\+Abstract\+Multi\+Label\+Learner.\+get\+Prediction\+For\+Instance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{inst }\end{DoxyParamCaption})}
+
+Sets the reference to the header of the data stream. The header of the data stream is extended from W\+E\+KA {\ttfamily Instances}. This header is needed to know the number of classes and attributes
+
+
+\begin{DoxyParams}{Parameters}
+{\em ih} & the reference to the data stream header Gets the reference to the header of the data stream. The header of the data stream is extended from W\+E\+KA {\ttfamily Instances}. This header is needed to know the number of classes and attributes\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the reference to the data stream header 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_ae4e9ced48011ca7d5a5e725730b8a774}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1_abstract_multi_label_learner_a20e5d8cc1ca49adbb067d83717fb3f1a}\label{classmoa_1_1classifiers_1_1_abstract_multi_label_learner_a20e5d8cc1ca49adbb067d83717fb3f1a}} 
+\index{moa.classifiers.AbstractMultiLabelLearner@{moa.classifiers.AbstractMultiLabelLearner}!getVotesForInstance@{getVotesForInstance}}
+\index{getVotesForInstance@{getVotesForInstance}!moa.classifiers.AbstractMultiLabelLearner@{moa.classifiers.AbstractMultiLabelLearner}}
+\doxysubsubsection{\texorpdfstring{getVotesForInstance()}{getVotesForInstance()}}
+{\footnotesize\ttfamily double \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+Abstract\+Multi\+Label\+Learner.\+get\+Votes\+For\+Instance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{inst }\end{DoxyParamCaption})}
+
+Predicts the class memberships for a given instance. If an instance is unclassified, the returned array elements must be all zero.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & the instance to be classified \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an array containing the estimated membership probabilities of the test instance in each class 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a0e3589c4fa6f088d82d64514afd9513c}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classmoa_1_1classifiers_1_1multilabel_1_1_m_e_k_a_classifier_a3795fe3525cd03bf53ca4b7b64be27b7}{moa.\+classifiers.\+multilabel.\+M\+E\+K\+A\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1_abstract_multi_label_learner_a1e5138648ebec046f02441fb370c0b47}\label{classmoa_1_1classifiers_1_1_abstract_multi_label_learner_a1e5138648ebec046f02441fb370c0b47}} 
+\index{moa.classifiers.AbstractMultiLabelLearner@{moa.classifiers.AbstractMultiLabelLearner}!trainOnInstanceImpl@{trainOnInstanceImpl}}
+\index{trainOnInstanceImpl@{trainOnInstanceImpl}!moa.classifiers.AbstractMultiLabelLearner@{moa.classifiers.AbstractMultiLabelLearner}}
+\doxysubsubsection{\texorpdfstring{trainOnInstanceImpl()}{trainOnInstanceImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+Abstract\+Multi\+Label\+Learner.\+train\+On\+Instance\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{inst }\end{DoxyParamCaption})}
+
+Trains this classifier incrementally using the given instance.~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & the instance to be used for training \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_aceb24d2ddeab386f2ecead6e3c0d3543}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/classifiers/Abstract\+Multi\+Label\+Learner.\+java\end{DoxyCompactItemize}

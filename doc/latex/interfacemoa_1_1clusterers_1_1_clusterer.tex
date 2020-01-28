@@ -1,0 +1,87 @@
+\hypertarget{interfacemoa_1_1clusterers_1_1_clusterer}{}\doxysection{moa.\+clusterers.\+Clusterer Interface Reference}
+\label{interfacemoa_1_1clusterers_1_1_clusterer}\index{moa.clusterers.Clusterer@{moa.clusterers.Clusterer}}
+
+
+Inheritance diagram for moa.\+clusterers.\+Clusterer\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+clusterers.\+Clusterer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interfacemoa_1_1clusterers_1_1_clusterer_a326ebf255ed8425d15bc4bbd72fcb58c}\label{interfacemoa_1_1clusterers_1_1_clusterer_a326ebf255ed8425d15bc4bbd72fcb58c}} 
+void {\bfseries set\+Model\+Context} (\mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instances_header}{Instances\+Header}} ih)
+\item 
+\mbox{\Hypertarget{interfacemoa_1_1clusterers_1_1_clusterer_a79f3d7ce945c62d2d3b9117864e03dd7}\label{interfacemoa_1_1clusterers_1_1_clusterer_a79f3d7ce945c62d2d3b9117864e03dd7}} 
+\mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instances_header}{Instances\+Header}} {\bfseries get\+Model\+Context} ()
+\item 
+\mbox{\Hypertarget{interfacemoa_1_1clusterers_1_1_clusterer_ac88640d485d05b8134278d79c5217530}\label{interfacemoa_1_1clusterers_1_1_clusterer_ac88640d485d05b8134278d79c5217530}} 
+boolean {\bfseries is\+Randomizable} ()
+\item 
+\mbox{\Hypertarget{interfacemoa_1_1clusterers_1_1_clusterer_aee5b1a653578db89b1387a59020235cd}\label{interfacemoa_1_1clusterers_1_1_clusterer_aee5b1a653578db89b1387a59020235cd}} 
+void {\bfseries set\+Random\+Seed} (int s)
+\item 
+\mbox{\Hypertarget{interfacemoa_1_1clusterers_1_1_clusterer_a3068fca90d669f0eae0a45c4106628e5}\label{interfacemoa_1_1clusterers_1_1_clusterer_a3068fca90d669f0eae0a45c4106628e5}} 
+boolean {\bfseries training\+Has\+Started} ()
+\item 
+\mbox{\Hypertarget{interfacemoa_1_1clusterers_1_1_clusterer_ae52a50e2a9124fd203ceead5574501a2}\label{interfacemoa_1_1clusterers_1_1_clusterer_ae52a50e2a9124fd203ceead5574501a2}} 
+double {\bfseries training\+Weight\+Seen\+By\+Model} ()
+\item 
+\mbox{\Hypertarget{interfacemoa_1_1clusterers_1_1_clusterer_a4b821574d4e61205475a1c0f501e34ad}\label{interfacemoa_1_1clusterers_1_1_clusterer_a4b821574d4e61205475a1c0f501e34ad}} 
+void {\bfseries reset\+Learning} ()
+\item 
+\mbox{\Hypertarget{interfacemoa_1_1clusterers_1_1_clusterer_a995447d63e2de56b07254fa9378086c0}\label{interfacemoa_1_1clusterers_1_1_clusterer_a995447d63e2de56b07254fa9378086c0}} 
+void {\bfseries train\+On\+Instance} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst)
+\item 
+\mbox{\Hypertarget{interfacemoa_1_1clusterers_1_1_clusterer_a0d3248ecce7131457d9e3645f07e9599}\label{interfacemoa_1_1clusterers_1_1_clusterer_a0d3248ecce7131457d9e3645f07e9599}} 
+double\mbox{[}$\,$\mbox{]} {\bfseries get\+Votes\+For\+Instance} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst)
+\item 
+\mbox{\Hypertarget{interfacemoa_1_1clusterers_1_1_clusterer_a0ed323db9697deead4d423aa22a4157c}\label{interfacemoa_1_1clusterers_1_1_clusterer_a0ed323db9697deead4d423aa22a4157c}} 
+\mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}}\mbox{[}$\,$\mbox{]} {\bfseries get\+Model\+Measurements} ()
+\item 
+\mbox{\Hypertarget{interfacemoa_1_1clusterers_1_1_clusterer_ab9a2f1d0e121c5c77649e857952ca571}\label{interfacemoa_1_1clusterers_1_1_clusterer_ab9a2f1d0e121c5c77649e857952ca571}} 
+\mbox{\hyperlink{interfacemoa_1_1clusterers_1_1_clusterer}{Clusterer}}\mbox{[}$\,$\mbox{]} {\bfseries get\+Sub\+Clusterers} ()
+\item 
+\mbox{\hyperlink{interfacemoa_1_1clusterers_1_1_clusterer}{Clusterer}} \mbox{\hyperlink{interfacemoa_1_1clusterers_1_1_clusterer_a09a7a3f73d6b96bdd242d8ff072a61bf}{copy}} ()
+\item 
+\mbox{\Hypertarget{interfacemoa_1_1clusterers_1_1_clusterer_a42f51032b2971880e321bfdde4dc6a78}\label{interfacemoa_1_1clusterers_1_1_clusterer_a42f51032b2971880e321bfdde4dc6a78}} 
+\mbox{\hyperlink{classmoa_1_1cluster_1_1_clustering}{Clustering}} {\bfseries get\+Clustering\+Result} ()
+\item 
+\mbox{\Hypertarget{interfacemoa_1_1clusterers_1_1_clusterer_ac680cbfe8dfad8b1abd54874a70418c0}\label{interfacemoa_1_1clusterers_1_1_clusterer_ac680cbfe8dfad8b1abd54874a70418c0}} 
+boolean {\bfseries implements\+Micro\+Clusterer} ()
+\item 
+\mbox{\Hypertarget{interfacemoa_1_1clusterers_1_1_clusterer_aceba6a67f9b984ae0d53807a6a4f0998}\label{interfacemoa_1_1clusterers_1_1_clusterer_aceba6a67f9b984ae0d53807a6a4f0998}} 
+\mbox{\hyperlink{classmoa_1_1cluster_1_1_clustering}{Clustering}} {\bfseries get\+Micro\+Clustering\+Result} ()
+\item 
+\mbox{\Hypertarget{interfacemoa_1_1clusterers_1_1_clusterer_a5111c15b2f12e0127c87526c926a6c13}\label{interfacemoa_1_1clusterers_1_1_clusterer_a5111c15b2f12e0127c87526c926a6c13}} 
+boolean {\bfseries keep\+Class\+Label} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interfacemoa_1_1clusterers_1_1_clusterer_a09a7a3f73d6b96bdd242d8ff072a61bf}\label{interfacemoa_1_1clusterers_1_1_clusterer_a09a7a3f73d6b96bdd242d8ff072a61bf}} 
+\index{moa.clusterers.Clusterer@{moa.clusterers.Clusterer}!copy@{copy}}
+\index{copy@{copy}!moa.clusterers.Clusterer@{moa.clusterers.Clusterer}}
+\doxysubsubsection{\texorpdfstring{copy()}{copy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacemoa_1_1clusterers_1_1_clusterer}{Clusterer}} moa.\+clusterers.\+Clusterer.\+copy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This method produces a copy of this object.
+
+\begin{DoxyReturn}{Returns}
+a copy of this object 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1_m_o_a_object_a43a1c94524779322ce415898501d6a0c}{moa.\+M\+O\+A\+Object}}.
+
+
+
+Implemented in \mbox{\hyperlink{classmoa_1_1clusterers_1_1_abstract_clusterer_a0fcbe3e3e7ab22d8e3c47308de275465}{moa.\+clusterers.\+Abstract\+Clusterer}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/clusterers/Clusterer.\+java\end{DoxyCompactItemize}

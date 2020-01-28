@@ -1,0 +1,172 @@
+\hypertarget{classmoa_1_1tasks_1_1_evaluate_model_regression}{}\doxysection{moa.\+tasks.\+Evaluate\+Model\+Regression Class Reference}
+\label{classmoa_1_1tasks_1_1_evaluate_model_regression}\index{moa.tasks.EvaluateModelRegression@{moa.tasks.EvaluateModelRegression}}
+
+
+Inheritance diagram for moa.\+tasks.\+Evaluate\+Model\+Regression\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+tasks.\+Evaluate\+Model\+Regression\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classmoa_1_1tasks_1_1_evaluate_model_regression_ac1df95aeb2a881378f6a795482d51416}{get\+Purpose\+String}} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_model_regression_a313f1d8dbd6f323718a9f347c978f2e4}\label{classmoa_1_1tasks_1_1_evaluate_model_regression_a313f1d8dbd6f323718a9f347c978f2e4}} 
+{\bfseries Evaluate\+Model\+Regression} (\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier}{Classifier}} model, \mbox{\hyperlink{interfacemoa_1_1streams_1_1_instance_stream}{Instance\+Stream}} stream, \mbox{\hyperlink{interfacemoa_1_1evaluation_1_1_learning_performance_evaluator}{Learning\+Performance\+Evaluator}} evaluator, int max\+Instances)
+\item 
+Class$<$?$>$ \mbox{\hyperlink{classmoa_1_1tasks_1_1_evaluate_model_regression_ac1dcfd9e74e95cd3e39c07c8380f2abf}{get\+Task\+Result\+Type}} ()
+\item 
+Object \mbox{\hyperlink{classmoa_1_1tasks_1_1_evaluate_model_regression_a1456d9f54442afa76e62fd1fbcf0c091}{do\+Main\+Task}} (\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}} monitor, \mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}} repository)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} {\bfseries model\+Option}
+\item 
+\mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} {\bfseries stream\+Option}
+\item 
+\mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} {\bfseries evaluator\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries max\+Instances\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_file_option}{File\+Option}} {\bfseries output\+Prediction\+File\+Option}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task}{Task}} for evaluating a static model on a stream.
+
+\begin{DoxyAuthor}{Author}
+Richard Kirkby (\href{mailto:rkirkby@cs.waikato.ac.nz}{\texttt{ rkirkby@cs.\+waikato.\+ac.\+nz}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+7 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_model_regression_a1456d9f54442afa76e62fd1fbcf0c091}\label{classmoa_1_1tasks_1_1_evaluate_model_regression_a1456d9f54442afa76e62fd1fbcf0c091}} 
+\index{moa.tasks.EvaluateModelRegression@{moa.tasks.EvaluateModelRegression}!doMainTask@{doMainTask}}
+\index{doMainTask@{doMainTask}!moa.tasks.EvaluateModelRegression@{moa.tasks.EvaluateModelRegression}}
+\doxysubsubsection{\texorpdfstring{doMainTask()}{doMainTask()}}
+{\footnotesize\ttfamily Object moa.\+tasks.\+Evaluate\+Model\+Regression.\+do\+Main\+Task (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}}}]{monitor,  }\item[{\mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}}}]{repository }\end{DoxyParamCaption})}
+
+This method performs this task. {\ttfamily \mbox{\hyperlink{classmoa_1_1tasks_1_1_abstract_task}{Abstract\+Task}}} implements {\ttfamily do\+Task}, that uses {\ttfamily do\+Task\+Impl}. {\ttfamily \mbox{\hyperlink{classmoa_1_1tasks_1_1_main_task}{Main\+Task}}} implements {\ttfamily do\+Task\+Impl} using {\ttfamily do\+Main\+Task} so its extensions only need to implement {\ttfamily do\+Main\+Task}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em monitor} & the \mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}} to use \\
+\hline
+{\em repository} & the Object\+Repository to use \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an object with the result of this task 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1tasks_1_1_main_task_afab790976c2ace902aa1e2f780442788}{moa.\+tasks.\+Main\+Task}}.
+
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_model_regression_ac1df95aeb2a881378f6a795482d51416}\label{classmoa_1_1tasks_1_1_evaluate_model_regression_ac1df95aeb2a881378f6a795482d51416}} 
+\index{moa.tasks.EvaluateModelRegression@{moa.tasks.EvaluateModelRegression}!getPurposeString@{getPurposeString}}
+\index{getPurposeString@{getPurposeString}!moa.tasks.EvaluateModelRegression@{moa.tasks.EvaluateModelRegression}}
+\doxysubsubsection{\texorpdfstring{getPurposeString()}{getPurposeString()}}
+{\footnotesize\ttfamily String moa.\+tasks.\+Evaluate\+Model\+Regression.\+get\+Purpose\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Options to handle Dictionary with option texts and objects 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1options_1_1_abstract_option_handler_abc8df69aea27ef85060557a9e918b2ca}{moa.\+options.\+Abstract\+Option\+Handler}}.
+
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_model_regression_ac1dcfd9e74e95cd3e39c07c8380f2abf}\label{classmoa_1_1tasks_1_1_evaluate_model_regression_ac1dcfd9e74e95cd3e39c07c8380f2abf}} 
+\index{moa.tasks.EvaluateModelRegression@{moa.tasks.EvaluateModelRegression}!getTaskResultType@{getTaskResultType}}
+\index{getTaskResultType@{getTaskResultType}!moa.tasks.EvaluateModelRegression@{moa.tasks.EvaluateModelRegression}}
+\doxysubsubsection{\texorpdfstring{getTaskResultType()}{getTaskResultType()}}
+{\footnotesize\ttfamily Class$<$?$>$ moa.\+tasks.\+Evaluate\+Model\+Regression.\+get\+Task\+Result\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the result type of this task. Tasks can return Learning\+Curve, Learning\+Evaluation, Classifier, String, Instances..
+
+\begin{DoxyReturn}{Returns}
+a class object of the result of this task 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_a568100cd931416820d1bcc81032301f6}{moa.\+tasks.\+Task}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_model_regression_a73027ec46cb6c2aa5ae05d9e9d07a230}\label{classmoa_1_1tasks_1_1_evaluate_model_regression_a73027ec46cb6c2aa5ae05d9e9d07a230}} 
+\index{moa.tasks.EvaluateModelRegression@{moa.tasks.EvaluateModelRegression}!evaluatorOption@{evaluatorOption}}
+\index{evaluatorOption@{evaluatorOption}!moa.tasks.EvaluateModelRegression@{moa.tasks.EvaluateModelRegression}}
+\doxysubsubsection{\texorpdfstring{evaluatorOption}{evaluatorOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} moa.\+tasks.\+Evaluate\+Model\+Regression.\+evaluator\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} ClassOption(\textcolor{stringliteral}{"evaluator"}, \textcolor{charliteral}{'e'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Classification performance evaluation method."},}
+\DoxyCodeLine{            RegressionPerformanceEvaluator.class,}
+\DoxyCodeLine{            \textcolor{stringliteral}{"BasicRegressionPerformanceEvaluator"})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_model_regression_a9d8e8f0d3a9e13e6ca2df9d142107b0c}\label{classmoa_1_1tasks_1_1_evaluate_model_regression_a9d8e8f0d3a9e13e6ca2df9d142107b0c}} 
+\index{moa.tasks.EvaluateModelRegression@{moa.tasks.EvaluateModelRegression}!maxInstancesOption@{maxInstancesOption}}
+\index{maxInstancesOption@{maxInstancesOption}!moa.tasks.EvaluateModelRegression@{moa.tasks.EvaluateModelRegression}}
+\doxysubsubsection{\texorpdfstring{maxInstancesOption}{maxInstancesOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+tasks.\+Evaluate\+Model\+Regression.\+max\+Instances\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(\textcolor{stringliteral}{"maxInstances"}, \textcolor{charliteral}{'i'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Maximum number of instances to test."}, 1000000, 0,}
+\DoxyCodeLine{            Integer.MAX\_VALUE)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_model_regression_a6134d8475ff03142b8a0b92fbe3fe8b8}\label{classmoa_1_1tasks_1_1_evaluate_model_regression_a6134d8475ff03142b8a0b92fbe3fe8b8}} 
+\index{moa.tasks.EvaluateModelRegression@{moa.tasks.EvaluateModelRegression}!modelOption@{modelOption}}
+\index{modelOption@{modelOption}!moa.tasks.EvaluateModelRegression@{moa.tasks.EvaluateModelRegression}}
+\doxysubsubsection{\texorpdfstring{modelOption}{modelOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} moa.\+tasks.\+Evaluate\+Model\+Regression.\+model\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} ClassOption(\textcolor{stringliteral}{"model"}, \textcolor{charliteral}{'m'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Learner to evaluate."}, Regressor.class, \textcolor{stringliteral}{"LearnModelRegression"})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_model_regression_a89fff11cee9579b6657437eea7cd08b8}\label{classmoa_1_1tasks_1_1_evaluate_model_regression_a89fff11cee9579b6657437eea7cd08b8}} 
+\index{moa.tasks.EvaluateModelRegression@{moa.tasks.EvaluateModelRegression}!outputPredictionFileOption@{outputPredictionFileOption}}
+\index{outputPredictionFileOption@{outputPredictionFileOption}!moa.tasks.EvaluateModelRegression@{moa.tasks.EvaluateModelRegression}}
+\doxysubsubsection{\texorpdfstring{outputPredictionFileOption}{outputPredictionFileOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_file_option}{File\+Option}} moa.\+tasks.\+Evaluate\+Model\+Regression.\+output\+Prediction\+File\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FileOption(\textcolor{stringliteral}{"outputPredictionFile"}, \textcolor{charliteral}{'o'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"File to append output predictions to."}, \textcolor{keyword}{null}, \textcolor{stringliteral}{"pred"}, \textcolor{keyword}{true})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_model_regression_a829f359bca6703cc5c0f172106c25b7c}\label{classmoa_1_1tasks_1_1_evaluate_model_regression_a829f359bca6703cc5c0f172106c25b7c}} 
+\index{moa.tasks.EvaluateModelRegression@{moa.tasks.EvaluateModelRegression}!streamOption@{streamOption}}
+\index{streamOption@{streamOption}!moa.tasks.EvaluateModelRegression@{moa.tasks.EvaluateModelRegression}}
+\doxysubsubsection{\texorpdfstring{streamOption}{streamOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} moa.\+tasks.\+Evaluate\+Model\+Regression.\+stream\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} ClassOption(\textcolor{stringliteral}{"stream"}, \textcolor{charliteral}{'s'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Stream to evaluate on."}, ExampleStream.class,}
+\DoxyCodeLine{            \textcolor{stringliteral}{"generators.RandomTreeGenerator"})}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/tasks/Evaluate\+Model\+Regression.\+java\end{DoxyCompactItemize}

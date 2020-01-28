@@ -1,0 +1,56 @@
+\hypertarget{interfacemoa_1_1evaluation_1_1_a_l_classification_performance_evaluator}{}\doxysection{moa.\+evaluation.\+A\+L\+Classification\+Performance\+Evaluator Interface Reference}
+\label{interfacemoa_1_1evaluation_1_1_a_l_classification_performance_evaluator}\index{moa.evaluation.ALClassificationPerformanceEvaluator@{moa.evaluation.ALClassificationPerformanceEvaluator}}
+
+
+Inheritance diagram for moa.\+evaluation.\+A\+L\+Classification\+Performance\+Evaluator\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+evaluation.\+A\+L\+Classification\+Performance\+Evaluator\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interfacemoa_1_1evaluation_1_1_a_l_classification_performance_evaluator_a40ab71a215689a34e2fadc7d8ddb7a6e}{do\+Label\+Acq\+Report}} (\mbox{\hyperlink{interfacemoa_1_1core_1_1_example}{Example}}$<$ \mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} $>$ train\+Inst, int label\+Acquired)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Active Learning Evaluator Interface to make AL Evaluators selectable in AL tasks.
+
+\begin{DoxyAuthor}{Author}
+Daniel Kottke (\href{mailto:daniel.kottke@ovgu.de}{\texttt{ daniel.\+kottke@ovgu.\+de}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+1 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interfacemoa_1_1evaluation_1_1_a_l_classification_performance_evaluator_a40ab71a215689a34e2fadc7d8ddb7a6e}\label{interfacemoa_1_1evaluation_1_1_a_l_classification_performance_evaluator_a40ab71a215689a34e2fadc7d8ddb7a6e}} 
+\index{moa.evaluation.ALClassificationPerformanceEvaluator@{moa.evaluation.ALClassificationPerformanceEvaluator}!doLabelAcqReport@{doLabelAcqReport}}
+\index{doLabelAcqReport@{doLabelAcqReport}!moa.evaluation.ALClassificationPerformanceEvaluator@{moa.evaluation.ALClassificationPerformanceEvaluator}}
+\doxysubsubsection{\texorpdfstring{doLabelAcqReport()}{doLabelAcqReport()}}
+{\footnotesize\ttfamily void moa.\+evaluation.\+A\+L\+Classification\+Performance\+Evaluator.\+do\+Label\+Acq\+Report (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacemoa_1_1core_1_1_example}{Example}}$<$ \mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} $>$}]{train\+Inst,  }\item[{int}]{label\+Acquired }\end{DoxyParamCaption})}
+
+Reports if a label of an instance was acquired.
+
+
+\begin{DoxyParams}{Parameters}
+{\em train\+Inst} & the instance that was previously considered \\
+\hline
+{\em label\+Acquired} & bool type which indicates if train\+Inst was acquired by the active learner \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classmoa_1_1evaluation_1_1_a_l_window_classification_performance_evaluator_a4b667f2eaab585c8bd99928a8faf5b12}{moa.\+evaluation.\+A\+L\+Window\+Classification\+Performance\+Evaluator}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/evaluation/A\+L\+Classification\+Performance\+Evaluator.\+java\end{DoxyCompactItemize}

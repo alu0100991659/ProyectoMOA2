@@ -1,0 +1,234 @@
+\hypertarget{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_h_d_d_m___w___test}{}\doxysection{moa.\+classifiers.\+core.\+driftdetection.\+H\+D\+D\+M\+\_\+\+W\+\_\+\+Test Class Reference}
+\label{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_h_d_d_m___w___test}\index{moa.classifiers.core.driftdetection.HDDM\_W\_Test@{moa.classifiers.core.driftdetection.HDDM\_W\_Test}}
+
+
+Inheritance diagram for moa.\+classifiers.\+core.\+driftdetection.\+H\+D\+D\+M\+\_\+\+W\+\_\+\+Test\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+classifiers.\+core.\+driftdetection.\+H\+D\+D\+M\+\_\+\+W\+\_\+\+Test\+:
+% FIG 1
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Sample\+Info}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_h_d_d_m___w___test_a20fcc772a21892e6d0d1f327a01f960a}{reset\+Learning}} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_h_d_d_m___w___test_ad66da70d4c59a4c7e013e2ddc97ee3a1}\label{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_h_d_d_m___w___test_ad66da70d4c59a4c7e013e2ddc97ee3a1}} 
+void {\bfseries input} (boolean prediction)
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_h_d_d_m___w___test_ad392157ef409c8d2289f9847dc906210}{input}} (double value)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_h_d_d_m___w___test_a305fdbef31c46ffe0a5e26a47deedaa7}\label{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_h_d_d_m___w___test_a305fdbef31c46ffe0a5e26a47deedaa7}} 
+boolean {\bfseries detect\+Mean\+Increment} (Sample\+Info sample1, Sample\+Info sample2, double confidence)
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_h_d_d_m___w___test_a320b19619ee19b0d917a87569177b178}{get\+Description}} (String\+Builder sb, int indent)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} {\bfseries drift\+Confidence\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} {\bfseries warning\+Confidence\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} {\bfseries lambda\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_multi_choice_option}{Multi\+Choice\+Option}} {\bfseries one\+Sided\+Test\+Option}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_h_d_d_m___w___test_abb768980bfb082d89d533fd155c39c40}\label{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_h_d_d_m___w___test_abb768980bfb082d89d533fd155c39c40}} 
+boolean {\bfseries monitor\+Mean\+Incr} (double valor, double confidence)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_h_d_d_m___w___test_a0c0f6484872a859743825c0b153d6cfb}\label{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_h_d_d_m___w___test_a0c0f6484872a859743825c0b153d6cfb}} 
+boolean {\bfseries monitor\+Mean\+Decr} (double valor, double confidence)
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_h_d_d_m___w___test_a0372a6846cddefbbaf8c09034a137811}{prepare\+For\+Use\+Impl}} (\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}} monitor, \mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}} repository)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_h_d_d_m___w___test_a4e6198ac87618aeac527c1cf5f715bdd}\label{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_h_d_d_m___w___test_a4e6198ac87618aeac527c1cf5f715bdd}} 
+double {\bfseries incr\+Cut\+Point}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_h_d_d_m___w___test_a9fedee919b388a15cd7c81c2927162a5}\label{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_h_d_d_m___w___test_a9fedee919b388a15cd7c81c2927162a5}} 
+double {\bfseries lambda}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_h_d_d_m___w___test_a7ce6626d5183ba7c32d6773368ed89ab}\label{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_h_d_d_m___w___test_a7ce6626d5183ba7c32d6773368ed89ab}} 
+double {\bfseries warning\+Confidence}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_h_d_d_m___w___test_a0d5ee5e99b3d81162008443712df38f2}\label{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_h_d_d_m___w___test_a0d5ee5e99b3d81162008443712df38f2}} 
+double {\bfseries drift\+Confidence}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_h_d_d_m___w___test_ac7751cffb327751cdd235714171574d6}\label{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_h_d_d_m___w___test_ac7751cffb327751cdd235714171574d6}} 
+boolean {\bfseries one\+Sided\+Test}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_h_d_d_m___w___test_a412b36ac91d0366c8070332b8e3bbf26}\label{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_h_d_d_m___w___test_a412b36ac91d0366c8070332b8e3bbf26}} 
+int {\bfseries width}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_h_d_d_m___w___test_a013ec3c8a9d94754299845de774700e2}\label{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_h_d_d_m___w___test_a013ec3c8a9d94754299845de774700e2}} 
+static final long {\bfseries serial\+Version\+U\+ID} = 1L
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Online drift detection method based on Mc\+Diarmid\textquotesingle{}s bounds. H\+D\+DM\textsubscript{{\itshape W}-\/test} uses the E\+W\+MA statistic as estimator. It receives as input a stream of real values and returns the estimated status of the stream\+: S\+T\+A\+B\+LE, W\+A\+R\+N\+I\+NG or D\+R\+I\+FT.
+
+I. Frias-\/\+Blanco, J. del Campo-\/\+Avila, G. Ramos-\/\+Jimenez, R. Morales-\/\+Bueno, A. Ortiz-\/\+Diaz, and Y. Caballero-\/\+Mota, Online and non-\/parametric drift detection methods based on Hoeffding\textquotesingle{}s bound, I\+E\+EE Transactions on Knowledge and Data Engineering, 2014. D\+OI 10.\+1109/\+T\+K\+DE.2014.\+2345382.
+
+Parameters\+:
+
+
+\begin{DoxyItemize}
+\item -\/d \+: Confidence to the drift
+\item -\/w \+: Confidence to the warning
+\item -\/m \+: Controls how much weight is given to more recent data compared to older data. Smaller values mean less weight given to recent data
+\item -\/t \+: Option to monitor error increments and decrements (two-\/sided) or only increments (one-\/sided) 
+\end{DoxyItemize}
+
+\begin{DoxyAuthor}{Author}
+Isvani Frias-\/\+Blanco (\href{mailto:ifriasb@udg.co.cu}{\texttt{ ifriasb@udg.\+co.\+cu}}) 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_h_d_d_m___w___test_a320b19619ee19b0d917a87569177b178}\label{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_h_d_d_m___w___test_a320b19619ee19b0d917a87569177b178}} 
+\index{moa.classifiers.core.driftdetection.HDDM\_W\_Test@{moa.classifiers.core.driftdetection.HDDM\_W\_Test}!getDescription@{getDescription}}
+\index{getDescription@{getDescription}!moa.classifiers.core.driftdetection.HDDM\_W\_Test@{moa.classifiers.core.driftdetection.HDDM\_W\_Test}}
+\doxysubsubsection{\texorpdfstring{getDescription()}{getDescription()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+core.\+driftdetection.\+H\+D\+D\+M\+\_\+\+W\+\_\+\+Test.\+get\+Description (\begin{DoxyParamCaption}\item[{String\+Builder}]{sb,  }\item[{int}]{indent }\end{DoxyParamCaption})}
+
+Returns a string representation of the model.
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & the stringbuilder to add the description \\
+\hline
+{\em indent} & the number of characters to indent \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_abstract_change_detector_a111e2c5e7c7809001e0fd66f71c49853}{moa.\+classifiers.\+core.\+driftdetection.\+Abstract\+Change\+Detector}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_h_d_d_m___w___test_ad392157ef409c8d2289f9847dc906210}\label{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_h_d_d_m___w___test_ad392157ef409c8d2289f9847dc906210}} 
+\index{moa.classifiers.core.driftdetection.HDDM\_W\_Test@{moa.classifiers.core.driftdetection.HDDM\_W\_Test}!input@{input}}
+\index{input@{input}!moa.classifiers.core.driftdetection.HDDM\_W\_Test@{moa.classifiers.core.driftdetection.HDDM\_W\_Test}}
+\doxysubsubsection{\texorpdfstring{input()}{input()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+core.\+driftdetection.\+H\+D\+D\+M\+\_\+\+W\+\_\+\+Test.\+input (\begin{DoxyParamCaption}\item[{double}]{input\+Value }\end{DoxyParamCaption})}
+
+Adding a numeric value to the change detector$<$br$>$~\newline
+
+
+The output of the change detector is modified after the insertion of a new item inside.
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Value} & the number to insert into the change detector \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_abstract_change_detector_abbc8e51592cab2d77a90092030124fd6}{moa.\+classifiers.\+core.\+driftdetection.\+Abstract\+Change\+Detector}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_h_d_d_m___w___test_a0372a6846cddefbbaf8c09034a137811}\label{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_h_d_d_m___w___test_a0372a6846cddefbbaf8c09034a137811}} 
+\index{moa.classifiers.core.driftdetection.HDDM\_W\_Test@{moa.classifiers.core.driftdetection.HDDM\_W\_Test}!prepareForUseImpl@{prepareForUseImpl}}
+\index{prepareForUseImpl@{prepareForUseImpl}!moa.classifiers.core.driftdetection.HDDM\_W\_Test@{moa.classifiers.core.driftdetection.HDDM\_W\_Test}}
+\doxysubsubsection{\texorpdfstring{prepareForUseImpl()}{prepareForUseImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+core.\+driftdetection.\+H\+D\+D\+M\+\_\+\+W\+\_\+\+Test.\+prepare\+For\+Use\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}}}]{monitor,  }\item[{\mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}}}]{repository }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+This method describes the implementation of how to prepare this object for use. All classes that extends this class have to implement {\ttfamily prepare\+For\+Use\+Impl} and not {\ttfamily prepare\+For\+Use} since {\ttfamily prepare\+For\+Use} calls {\ttfamily prepare\+For\+Use\+Impl}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em monitor} & the Task\+Monitor to use \\
+\hline
+{\em repository} & the Object\+Repository to use \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1options_1_1_abstract_option_handler_ad0e9c7d4b0e2b185749f36ce28540efb}{moa.\+options.\+Abstract\+Option\+Handler}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_h_d_d_m___w___test_a20fcc772a21892e6d0d1f327a01f960a}\label{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_h_d_d_m___w___test_a20fcc772a21892e6d0d1f327a01f960a}} 
+\index{moa.classifiers.core.driftdetection.HDDM\_W\_Test@{moa.classifiers.core.driftdetection.HDDM\_W\_Test}!resetLearning@{resetLearning}}
+\index{resetLearning@{resetLearning}!moa.classifiers.core.driftdetection.HDDM\_W\_Test@{moa.classifiers.core.driftdetection.HDDM\_W\_Test}}
+\doxysubsubsection{\texorpdfstring{resetLearning()}{resetLearning()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+core.\+driftdetection.\+H\+D\+D\+M\+\_\+\+W\+\_\+\+Test.\+reset\+Learning (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Resets this change detector. It must be similar to starting a new change detector from scratch. 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_abstract_change_detector_a71b1c7d69b0809172e464cfa243d8cc4}{moa.\+classifiers.\+core.\+driftdetection.\+Abstract\+Change\+Detector}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_h_d_d_m___w___test_ab5d79613c538afb0b4744e3340eab9b1}\label{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_h_d_d_m___w___test_ab5d79613c538afb0b4744e3340eab9b1}} 
+\index{moa.classifiers.core.driftdetection.HDDM\_W\_Test@{moa.classifiers.core.driftdetection.HDDM\_W\_Test}!driftConfidenceOption@{driftConfidenceOption}}
+\index{driftConfidenceOption@{driftConfidenceOption}!moa.classifiers.core.driftdetection.HDDM\_W\_Test@{moa.classifiers.core.driftdetection.HDDM\_W\_Test}}
+\doxysubsubsection{\texorpdfstring{driftConfidenceOption}{driftConfidenceOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} moa.\+classifiers.\+core.\+driftdetection.\+H\+D\+D\+M\+\_\+\+W\+\_\+\+Test.\+drift\+Confidence\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FloatOption(\textcolor{stringliteral}{"driftConfidence"}, \textcolor{charliteral}{'d'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Confidence to the drift"},}
+\DoxyCodeLine{            0.001, 0, 1)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_h_d_d_m___w___test_a25c806e4635f0831fb07bb2bd1b040a1}\label{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_h_d_d_m___w___test_a25c806e4635f0831fb07bb2bd1b040a1}} 
+\index{moa.classifiers.core.driftdetection.HDDM\_W\_Test@{moa.classifiers.core.driftdetection.HDDM\_W\_Test}!lambdaOption@{lambdaOption}}
+\index{lambdaOption@{lambdaOption}!moa.classifiers.core.driftdetection.HDDM\_W\_Test@{moa.classifiers.core.driftdetection.HDDM\_W\_Test}}
+\doxysubsubsection{\texorpdfstring{lambdaOption}{lambdaOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} moa.\+classifiers.\+core.\+driftdetection.\+H\+D\+D\+M\+\_\+\+W\+\_\+\+Test.\+lambda\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FloatOption(\textcolor{stringliteral}{"lambda"},}
+\DoxyCodeLine{            \textcolor{charliteral}{'m'}, \textcolor{stringliteral}{"Controls how much weight is given to more recent data compared to older data. Smaller values mean less weight given to recent data."},}
+\DoxyCodeLine{            0.050, 0, 1)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_h_d_d_m___w___test_a26e9fed0979a8bd5dadcbf537195d384}\label{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_h_d_d_m___w___test_a26e9fed0979a8bd5dadcbf537195d384}} 
+\index{moa.classifiers.core.driftdetection.HDDM\_W\_Test@{moa.classifiers.core.driftdetection.HDDM\_W\_Test}!oneSidedTestOption@{oneSidedTestOption}}
+\index{oneSidedTestOption@{oneSidedTestOption}!moa.classifiers.core.driftdetection.HDDM\_W\_Test@{moa.classifiers.core.driftdetection.HDDM\_W\_Test}}
+\doxysubsubsection{\texorpdfstring{oneSidedTestOption}{oneSidedTestOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_multi_choice_option}{Multi\+Choice\+Option}} moa.\+classifiers.\+core.\+driftdetection.\+H\+D\+D\+M\+\_\+\+W\+\_\+\+Test.\+one\+Sided\+Test\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} MultiChoiceOption(}
+\DoxyCodeLine{            \textcolor{stringliteral}{"typeOfTest"}, \textcolor{charliteral}{'t'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Monitors error increments and decrements (two-\/sided) or only increments (one-\/sided)"}, \textcolor{keyword}{new} String[]\{}
+\DoxyCodeLine{        \textcolor{stringliteral}{"One-\/sided"}, \textcolor{stringliteral}{"Two-\/sided"}\}, \textcolor{keyword}{new} String[]\{}
+\DoxyCodeLine{        \textcolor{stringliteral}{"One-\/sided"}, \textcolor{stringliteral}{"Two-\/sided"}\},}
+\DoxyCodeLine{            0)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_h_d_d_m___w___test_a21f8f01d2dcaf257ac0993dd88707ff5}\label{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_h_d_d_m___w___test_a21f8f01d2dcaf257ac0993dd88707ff5}} 
+\index{moa.classifiers.core.driftdetection.HDDM\_W\_Test@{moa.classifiers.core.driftdetection.HDDM\_W\_Test}!warningConfidenceOption@{warningConfidenceOption}}
+\index{warningConfidenceOption@{warningConfidenceOption}!moa.classifiers.core.driftdetection.HDDM\_W\_Test@{moa.classifiers.core.driftdetection.HDDM\_W\_Test}}
+\doxysubsubsection{\texorpdfstring{warningConfidenceOption}{warningConfidenceOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} moa.\+classifiers.\+core.\+driftdetection.\+H\+D\+D\+M\+\_\+\+W\+\_\+\+Test.\+warning\+Confidence\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FloatOption(\textcolor{stringliteral}{"warningConfidence"}, \textcolor{charliteral}{'w'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Confidence to the warning"},}
+\DoxyCodeLine{            0.005, 0, 1)}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/classifiers/core/driftdetection/H\+D\+D\+M\+\_\+\+W\+\_\+\+Test.\+java\end{DoxyCompactItemize}

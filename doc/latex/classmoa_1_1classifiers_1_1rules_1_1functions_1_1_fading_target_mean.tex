@@ -1,0 +1,104 @@
+\hypertarget{classmoa_1_1classifiers_1_1rules_1_1functions_1_1_fading_target_mean}{}\doxysection{moa.\+classifiers.\+rules.\+functions.\+Fading\+Target\+Mean Class Reference}
+\label{classmoa_1_1classifiers_1_1rules_1_1functions_1_1_fading_target_mean}\index{moa.classifiers.rules.functions.FadingTargetMean@{moa.classifiers.rules.functions.FadingTargetMean}}
+
+
+Inheritance diagram for moa.\+classifiers.\+rules.\+functions.\+Fading\+Target\+Mean\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+classifiers.\+rules.\+functions.\+Fading\+Target\+Mean\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1functions_1_1_fading_target_mean_ae739838a2f244912e4d659f7f703806b}{train\+On\+Instance\+Impl}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst)
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1functions_1_1_fading_target_mean_addc2df4a914a498abe13ddf1ec873584}{reset\+Learning\+Impl}} ()
+\item 
+double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1functions_1_1_fading_target_mean_a3f72464fd8b698d429b2330699edfb7f}{get\+Votes\+For\+Instance}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} {\bfseries fading\+Factor\+Option}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1functions_1_1_fading_target_mean_a3f72464fd8b698d429b2330699edfb7f}\label{classmoa_1_1classifiers_1_1rules_1_1functions_1_1_fading_target_mean_a3f72464fd8b698d429b2330699edfb7f}} 
+\index{moa.classifiers.rules.functions.FadingTargetMean@{moa.classifiers.rules.functions.FadingTargetMean}!getVotesForInstance@{getVotesForInstance}}
+\index{getVotesForInstance@{getVotesForInstance}!moa.classifiers.rules.functions.FadingTargetMean@{moa.classifiers.rules.functions.FadingTargetMean}}
+\doxysubsubsection{\texorpdfstring{getVotesForInstance()}{getVotesForInstance()}}
+{\footnotesize\ttfamily double \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+rules.\+functions.\+Fading\+Target\+Mean.\+get\+Votes\+For\+Instance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{inst }\end{DoxyParamCaption})}
+
+Predicts the class memberships for a given instance. If an instance is unclassified, the returned array elements must be all zero.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & the instance to be classified \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an array containing the estimated membership probabilities of the test instance in each class 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1functions_1_1_target_mean_a523c9306eb864c869da1e9ceba8dc33e}{moa.\+classifiers.\+rules.\+functions.\+Target\+Mean}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1functions_1_1_fading_target_mean_addc2df4a914a498abe13ddf1ec873584}\label{classmoa_1_1classifiers_1_1rules_1_1functions_1_1_fading_target_mean_addc2df4a914a498abe13ddf1ec873584}} 
+\index{moa.classifiers.rules.functions.FadingTargetMean@{moa.classifiers.rules.functions.FadingTargetMean}!resetLearningImpl@{resetLearningImpl}}
+\index{resetLearningImpl@{resetLearningImpl}!moa.classifiers.rules.functions.FadingTargetMean@{moa.classifiers.rules.functions.FadingTargetMean}}
+\doxysubsubsection{\texorpdfstring{resetLearningImpl()}{resetLearningImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+rules.\+functions.\+Fading\+Target\+Mean.\+reset\+Learning\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Resets this classifier. It must be similar to starting a new classifier from scratch. ~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden. 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1functions_1_1_target_mean_afe8d749d905bae865f8fd72517cf3d76}{moa.\+classifiers.\+rules.\+functions.\+Target\+Mean}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1functions_1_1_fading_target_mean_ae739838a2f244912e4d659f7f703806b}\label{classmoa_1_1classifiers_1_1rules_1_1functions_1_1_fading_target_mean_ae739838a2f244912e4d659f7f703806b}} 
+\index{moa.classifiers.rules.functions.FadingTargetMean@{moa.classifiers.rules.functions.FadingTargetMean}!trainOnInstanceImpl@{trainOnInstanceImpl}}
+\index{trainOnInstanceImpl@{trainOnInstanceImpl}!moa.classifiers.rules.functions.FadingTargetMean@{moa.classifiers.rules.functions.FadingTargetMean}}
+\doxysubsubsection{\texorpdfstring{trainOnInstanceImpl()}{trainOnInstanceImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+rules.\+functions.\+Fading\+Target\+Mean.\+train\+On\+Instance\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{inst }\end{DoxyParamCaption})}
+
+Trains this classifier incrementally using the given instance.~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & the instance to be used for training \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1functions_1_1_target_mean_a7cbdb19fdf76cc6c759a157b84ae1307}{moa.\+classifiers.\+rules.\+functions.\+Target\+Mean}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1functions_1_1_fading_target_mean_a7eda4f260c0fdb3d046ef6f99d5257a4}\label{classmoa_1_1classifiers_1_1rules_1_1functions_1_1_fading_target_mean_a7eda4f260c0fdb3d046ef6f99d5257a4}} 
+\index{moa.classifiers.rules.functions.FadingTargetMean@{moa.classifiers.rules.functions.FadingTargetMean}!fadingFactorOption@{fadingFactorOption}}
+\index{fadingFactorOption@{fadingFactorOption}!moa.classifiers.rules.functions.FadingTargetMean@{moa.classifiers.rules.functions.FadingTargetMean}}
+\doxysubsubsection{\texorpdfstring{fadingFactorOption}{fadingFactorOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} moa.\+classifiers.\+rules.\+functions.\+Fading\+Target\+Mean.\+fading\+Factor\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FloatOption(}
+\DoxyCodeLine{            \textcolor{stringliteral}{"fadingFactor"}, \textcolor{charliteral}{'f'}, }
+\DoxyCodeLine{            \textcolor{stringliteral}{"Fading factor for the FadingTargetMean accumulated error"}, 0.99, 0, 1)}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/classifiers/rules/functions/Fading\+Target\+Mean.\+java\end{DoxyCompactItemize}

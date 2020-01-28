@@ -1,0 +1,263 @@
+\hypertarget{classmoa_1_1tasks_1_1_evaluate_prequential_multi_label}{}\doxysection{moa.\+tasks.\+Evaluate\+Prequential\+Multi\+Label Class Reference}
+\label{classmoa_1_1tasks_1_1_evaluate_prequential_multi_label}\index{moa.tasks.EvaluatePrequentialMultiLabel@{moa.tasks.EvaluatePrequentialMultiLabel}}
+
+
+Inheritance diagram for moa.\+tasks.\+Evaluate\+Prequential\+Multi\+Label\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+tasks.\+Evaluate\+Prequential\+Multi\+Label\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classmoa_1_1tasks_1_1_evaluate_prequential_multi_label_aace1184f9e4a8c4745d7f38a075925dd}{get\+Purpose\+String}} ()
+\item 
+Class$<$?$>$ \mbox{\hyperlink{classmoa_1_1tasks_1_1_evaluate_prequential_multi_label_a4428af519ed6efa280af338d3311f02c}{get\+Task\+Result\+Type}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} {\bfseries learner\+Option}
+\item 
+\mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} {\bfseries stream\+Option}
+\item 
+\mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} {\bfseries evaluator\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries instance\+Limit\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries time\+Limit\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries sample\+Frequency\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries mem\+Check\+Frequency\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_file_option}{File\+Option}} {\bfseries dump\+File\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_file_option}{File\+Option}} {\bfseries output\+Prediction\+File\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries width\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} {\bfseries alpha\+Option}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Object \mbox{\hyperlink{classmoa_1_1tasks_1_1_evaluate_prequential_multi_label_a002b165b7c599ab000ad8c6c3694ad8a}{do\+Main\+Task}} (\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}} monitor, \mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}} repository)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task}{Task}} for evaluating a classifier on a stream by testing then training with each example in sequence.
+
+\begin{DoxyAuthor}{Author}
+Richard Kirkby (\href{mailto:rkirkby@cs.waikato.ac.nz}{\texttt{ rkirkby@cs.\+waikato.\+ac.\+nz}}) 
+
+Albert Bifet (abifet at cs dot waikato dot ac dot nz) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+7 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_prequential_multi_label_a002b165b7c599ab000ad8c6c3694ad8a}\label{classmoa_1_1tasks_1_1_evaluate_prequential_multi_label_a002b165b7c599ab000ad8c6c3694ad8a}} 
+\index{moa.tasks.EvaluatePrequentialMultiLabel@{moa.tasks.EvaluatePrequentialMultiLabel}!doMainTask@{doMainTask}}
+\index{doMainTask@{doMainTask}!moa.tasks.EvaluatePrequentialMultiLabel@{moa.tasks.EvaluatePrequentialMultiLabel}}
+\doxysubsubsection{\texorpdfstring{doMainTask()}{doMainTask()}}
+{\footnotesize\ttfamily Object moa.\+tasks.\+Evaluate\+Prequential\+Multi\+Label.\+do\+Main\+Task (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}}}]{monitor,  }\item[{\mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}}}]{repository }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+This method performs this task. {\ttfamily \mbox{\hyperlink{classmoa_1_1tasks_1_1_abstract_task}{Abstract\+Task}}} implements {\ttfamily do\+Task}, that uses {\ttfamily do\+Task\+Impl}. {\ttfamily \mbox{\hyperlink{classmoa_1_1tasks_1_1_main_task}{Main\+Task}}} implements {\ttfamily do\+Task\+Impl} using {\ttfamily do\+Main\+Task} so its extensions only need to implement {\ttfamily do\+Main\+Task}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em monitor} & the \mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}} to use \\
+\hline
+{\em repository} & the Object\+Repository to use \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an object with the result of this task 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1tasks_1_1_main_task_afab790976c2ace902aa1e2f780442788}{moa.\+tasks.\+Main\+Task}}.
+
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_prequential_multi_label_aace1184f9e4a8c4745d7f38a075925dd}\label{classmoa_1_1tasks_1_1_evaluate_prequential_multi_label_aace1184f9e4a8c4745d7f38a075925dd}} 
+\index{moa.tasks.EvaluatePrequentialMultiLabel@{moa.tasks.EvaluatePrequentialMultiLabel}!getPurposeString@{getPurposeString}}
+\index{getPurposeString@{getPurposeString}!moa.tasks.EvaluatePrequentialMultiLabel@{moa.tasks.EvaluatePrequentialMultiLabel}}
+\doxysubsubsection{\texorpdfstring{getPurposeString()}{getPurposeString()}}
+{\footnotesize\ttfamily String moa.\+tasks.\+Evaluate\+Prequential\+Multi\+Label.\+get\+Purpose\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Options to handle Dictionary with option texts and objects 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1options_1_1_abstract_option_handler_abc8df69aea27ef85060557a9e918b2ca}{moa.\+options.\+Abstract\+Option\+Handler}}.
+
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_prequential_multi_label_a4428af519ed6efa280af338d3311f02c}\label{classmoa_1_1tasks_1_1_evaluate_prequential_multi_label_a4428af519ed6efa280af338d3311f02c}} 
+\index{moa.tasks.EvaluatePrequentialMultiLabel@{moa.tasks.EvaluatePrequentialMultiLabel}!getTaskResultType@{getTaskResultType}}
+\index{getTaskResultType@{getTaskResultType}!moa.tasks.EvaluatePrequentialMultiLabel@{moa.tasks.EvaluatePrequentialMultiLabel}}
+\doxysubsubsection{\texorpdfstring{getTaskResultType()}{getTaskResultType()}}
+{\footnotesize\ttfamily Class$<$?$>$ moa.\+tasks.\+Evaluate\+Prequential\+Multi\+Label.\+get\+Task\+Result\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the result type of this task. Tasks can return Learning\+Curve, Learning\+Evaluation, Classifier, String, Instances..
+
+\begin{DoxyReturn}{Returns}
+a class object of the result of this task 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_a568100cd931416820d1bcc81032301f6}{moa.\+tasks.\+Task}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_prequential_multi_label_acd356c8e1cd9a049ee9f0dca180dc918}\label{classmoa_1_1tasks_1_1_evaluate_prequential_multi_label_acd356c8e1cd9a049ee9f0dca180dc918}} 
+\index{moa.tasks.EvaluatePrequentialMultiLabel@{moa.tasks.EvaluatePrequentialMultiLabel}!alphaOption@{alphaOption}}
+\index{alphaOption@{alphaOption}!moa.tasks.EvaluatePrequentialMultiLabel@{moa.tasks.EvaluatePrequentialMultiLabel}}
+\doxysubsubsection{\texorpdfstring{alphaOption}{alphaOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} moa.\+tasks.\+Evaluate\+Prequential\+Multi\+Label.\+alpha\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FloatOption(\textcolor{stringliteral}{"alpha"},}
+\DoxyCodeLine{            \textcolor{charliteral}{'a'}, \textcolor{stringliteral}{"Fading factor or exponential smoothing factor"}, .01)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_prequential_multi_label_a0c3d5e9ed44aed4d247d55997d1215ff}\label{classmoa_1_1tasks_1_1_evaluate_prequential_multi_label_a0c3d5e9ed44aed4d247d55997d1215ff}} 
+\index{moa.tasks.EvaluatePrequentialMultiLabel@{moa.tasks.EvaluatePrequentialMultiLabel}!dumpFileOption@{dumpFileOption}}
+\index{dumpFileOption@{dumpFileOption}!moa.tasks.EvaluatePrequentialMultiLabel@{moa.tasks.EvaluatePrequentialMultiLabel}}
+\doxysubsubsection{\texorpdfstring{dumpFileOption}{dumpFileOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_file_option}{File\+Option}} moa.\+tasks.\+Evaluate\+Prequential\+Multi\+Label.\+dump\+File\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FileOption(\textcolor{stringliteral}{"dumpFile"}, \textcolor{charliteral}{'d'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"File to append intermediate csv results to."}, \textcolor{keyword}{null}, \textcolor{stringliteral}{"csv"}, \textcolor{keyword}{true})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_prequential_multi_label_a2ef2a0826f64687f29d2a74a12b8722b}\label{classmoa_1_1tasks_1_1_evaluate_prequential_multi_label_a2ef2a0826f64687f29d2a74a12b8722b}} 
+\index{moa.tasks.EvaluatePrequentialMultiLabel@{moa.tasks.EvaluatePrequentialMultiLabel}!evaluatorOption@{evaluatorOption}}
+\index{evaluatorOption@{evaluatorOption}!moa.tasks.EvaluatePrequentialMultiLabel@{moa.tasks.EvaluatePrequentialMultiLabel}}
+\doxysubsubsection{\texorpdfstring{evaluatorOption}{evaluatorOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} moa.\+tasks.\+Evaluate\+Prequential\+Multi\+Label.\+evaluator\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} ClassOption(\textcolor{stringliteral}{"evaluator"}, \textcolor{charliteral}{'e'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Classification performance evaluation method."},}
+\DoxyCodeLine{            MultiTargetPerformanceEvaluator.class,}
+\DoxyCodeLine{            \textcolor{stringliteral}{"BasicMultiLabelPerformanceEvaluator"})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_prequential_multi_label_a2dbba34dce1737785561b5304560e7c6}\label{classmoa_1_1tasks_1_1_evaluate_prequential_multi_label_a2dbba34dce1737785561b5304560e7c6}} 
+\index{moa.tasks.EvaluatePrequentialMultiLabel@{moa.tasks.EvaluatePrequentialMultiLabel}!instanceLimitOption@{instanceLimitOption}}
+\index{instanceLimitOption@{instanceLimitOption}!moa.tasks.EvaluatePrequentialMultiLabel@{moa.tasks.EvaluatePrequentialMultiLabel}}
+\doxysubsubsection{\texorpdfstring{instanceLimitOption}{instanceLimitOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+tasks.\+Evaluate\+Prequential\+Multi\+Label.\+instance\+Limit\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(\textcolor{stringliteral}{"instanceLimit"}, \textcolor{charliteral}{'i'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Maximum number of instances to test/train on  (-\/1 = no limit)."},}
+\DoxyCodeLine{            100000000, -\/1, Integer.MAX\_VALUE)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_prequential_multi_label_ac88a9118ea5e8e383d11edaf152e1efb}\label{classmoa_1_1tasks_1_1_evaluate_prequential_multi_label_ac88a9118ea5e8e383d11edaf152e1efb}} 
+\index{moa.tasks.EvaluatePrequentialMultiLabel@{moa.tasks.EvaluatePrequentialMultiLabel}!learnerOption@{learnerOption}}
+\index{learnerOption@{learnerOption}!moa.tasks.EvaluatePrequentialMultiLabel@{moa.tasks.EvaluatePrequentialMultiLabel}}
+\doxysubsubsection{\texorpdfstring{learnerOption}{learnerOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} moa.\+tasks.\+Evaluate\+Prequential\+Multi\+Label.\+learner\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} ClassOption(\textcolor{stringliteral}{"learner"}, \textcolor{charliteral}{'l'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Learner to train."}, MultiLabelClassifier.class, MultiLabelNaiveBayes.class.getName())}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_prequential_multi_label_acb8f484d86ca149b1619fa3598a03bd3}\label{classmoa_1_1tasks_1_1_evaluate_prequential_multi_label_acb8f484d86ca149b1619fa3598a03bd3}} 
+\index{moa.tasks.EvaluatePrequentialMultiLabel@{moa.tasks.EvaluatePrequentialMultiLabel}!memCheckFrequencyOption@{memCheckFrequencyOption}}
+\index{memCheckFrequencyOption@{memCheckFrequencyOption}!moa.tasks.EvaluatePrequentialMultiLabel@{moa.tasks.EvaluatePrequentialMultiLabel}}
+\doxysubsubsection{\texorpdfstring{memCheckFrequencyOption}{memCheckFrequencyOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+tasks.\+Evaluate\+Prequential\+Multi\+Label.\+mem\+Check\+Frequency\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(}
+\DoxyCodeLine{            \textcolor{stringliteral}{"memCheckFrequency"}, \textcolor{charliteral}{'q'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"How many instances between memory bound checks."}, 100000, 0,}
+\DoxyCodeLine{            Integer.MAX\_VALUE)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_prequential_multi_label_a44e7b7d4b5253dc13d5f5e5b6476ef06}\label{classmoa_1_1tasks_1_1_evaluate_prequential_multi_label_a44e7b7d4b5253dc13d5f5e5b6476ef06}} 
+\index{moa.tasks.EvaluatePrequentialMultiLabel@{moa.tasks.EvaluatePrequentialMultiLabel}!outputPredictionFileOption@{outputPredictionFileOption}}
+\index{outputPredictionFileOption@{outputPredictionFileOption}!moa.tasks.EvaluatePrequentialMultiLabel@{moa.tasks.EvaluatePrequentialMultiLabel}}
+\doxysubsubsection{\texorpdfstring{outputPredictionFileOption}{outputPredictionFileOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_file_option}{File\+Option}} moa.\+tasks.\+Evaluate\+Prequential\+Multi\+Label.\+output\+Prediction\+File\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FileOption(\textcolor{stringliteral}{"outputPredictionFile"}, \textcolor{charliteral}{'o'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"File to append output predictions to."}, \textcolor{keyword}{null}, \textcolor{stringliteral}{"pred"}, \textcolor{keyword}{true})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_prequential_multi_label_a9f172ae36e58eef6da4d7cb782626d31}\label{classmoa_1_1tasks_1_1_evaluate_prequential_multi_label_a9f172ae36e58eef6da4d7cb782626d31}} 
+\index{moa.tasks.EvaluatePrequentialMultiLabel@{moa.tasks.EvaluatePrequentialMultiLabel}!sampleFrequencyOption@{sampleFrequencyOption}}
+\index{sampleFrequencyOption@{sampleFrequencyOption}!moa.tasks.EvaluatePrequentialMultiLabel@{moa.tasks.EvaluatePrequentialMultiLabel}}
+\doxysubsubsection{\texorpdfstring{sampleFrequencyOption}{sampleFrequencyOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+tasks.\+Evaluate\+Prequential\+Multi\+Label.\+sample\+Frequency\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(\textcolor{stringliteral}{"sampleFrequency"},}
+\DoxyCodeLine{            \textcolor{charliteral}{'f'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"How many instances between samples of the learning performance."},}
+\DoxyCodeLine{            100000, 0, Integer.MAX\_VALUE)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_prequential_multi_label_ab97abbf302e30e9b5aeaae9179f3817d}\label{classmoa_1_1tasks_1_1_evaluate_prequential_multi_label_ab97abbf302e30e9b5aeaae9179f3817d}} 
+\index{moa.tasks.EvaluatePrequentialMultiLabel@{moa.tasks.EvaluatePrequentialMultiLabel}!streamOption@{streamOption}}
+\index{streamOption@{streamOption}!moa.tasks.EvaluatePrequentialMultiLabel@{moa.tasks.EvaluatePrequentialMultiLabel}}
+\doxysubsubsection{\texorpdfstring{streamOption}{streamOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} moa.\+tasks.\+Evaluate\+Prequential\+Multi\+Label.\+stream\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} ClassOption(\textcolor{stringliteral}{"stream"}, \textcolor{charliteral}{'s'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Stream to learn from."}, MultiTargetInstanceStream.class,}
+\DoxyCodeLine{            \textcolor{stringliteral}{"MultiTargetArffFileStream"})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_prequential_multi_label_af21d7a36458e953e5e72264748a49eb3}\label{classmoa_1_1tasks_1_1_evaluate_prequential_multi_label_af21d7a36458e953e5e72264748a49eb3}} 
+\index{moa.tasks.EvaluatePrequentialMultiLabel@{moa.tasks.EvaluatePrequentialMultiLabel}!timeLimitOption@{timeLimitOption}}
+\index{timeLimitOption@{timeLimitOption}!moa.tasks.EvaluatePrequentialMultiLabel@{moa.tasks.EvaluatePrequentialMultiLabel}}
+\doxysubsubsection{\texorpdfstring{timeLimitOption}{timeLimitOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+tasks.\+Evaluate\+Prequential\+Multi\+Label.\+time\+Limit\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(\textcolor{stringliteral}{"timeLimit"}, \textcolor{charliteral}{'t'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Maximum number of seconds to test/train for (-\/1 = no limit)."}, -\/1,}
+\DoxyCodeLine{            -\/1, Integer.MAX\_VALUE)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_prequential_multi_label_a05e1760f4b4f969046eb553f5eab156c}\label{classmoa_1_1tasks_1_1_evaluate_prequential_multi_label_a05e1760f4b4f969046eb553f5eab156c}} 
+\index{moa.tasks.EvaluatePrequentialMultiLabel@{moa.tasks.EvaluatePrequentialMultiLabel}!widthOption@{widthOption}}
+\index{widthOption@{widthOption}!moa.tasks.EvaluatePrequentialMultiLabel@{moa.tasks.EvaluatePrequentialMultiLabel}}
+\doxysubsubsection{\texorpdfstring{widthOption}{widthOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+tasks.\+Evaluate\+Prequential\+Multi\+Label.\+width\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(\textcolor{stringliteral}{"width"},}
+\DoxyCodeLine{            \textcolor{charliteral}{'w'}, \textcolor{stringliteral}{"Size of Window"}, 1000)}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/tasks/Evaluate\+Prequential\+Multi\+Label.\+java\end{DoxyCompactItemize}

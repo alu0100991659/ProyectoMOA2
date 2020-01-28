@@ -1,0 +1,168 @@
+\hypertarget{classmoa_1_1classifiers_1_1rules_1_1_binary_classifier_from_regressor}{}\doxysection{moa.\+classifiers.\+rules.\+Binary\+Classifier\+From\+Regressor Class Reference}
+\label{classmoa_1_1classifiers_1_1rules_1_1_binary_classifier_from_regressor}\index{moa.classifiers.rules.BinaryClassifierFromRegressor@{moa.classifiers.rules.BinaryClassifierFromRegressor}}
+
+
+Inheritance diagram for moa.\+classifiers.\+rules.\+Binary\+Classifier\+From\+Regressor\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+classifiers.\+rules.\+Binary\+Classifier\+From\+Regressor\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1_binary_classifier_from_regressor_a6fe373f9da48cd1baa071f6c47f2bba4}{is\+Randomizable}} ()
+\item 
+double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1_binary_classifier_from_regressor_ac9de343cf50b90397f91e3a4088efbc9}{get\+Votes\+For\+Instance}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst)
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1_binary_classifier_from_regressor_a57997a099dde5a1cd3286d90fc7e3dea}{reset\+Learning\+Impl}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1_binary_classifier_from_regressor_a6b880fbc6ef46fbd64af4f34ec0c32c4}{train\+On\+Instance\+Impl}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst)
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1_binary_classifier_from_regressor_a40df281483d911a4f5ca4ef39f1c5bd2}{get\+Model\+Description}} (String\+Builder out, int indent)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} {\bfseries base\+Learner\+Option}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1_binary_classifier_from_regressor_a8746a37b3b397c701814c6b68ca736c2}{get\+Model\+Measurements\+Impl}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Function that convertes a regressor into a binary classifier base\+Learner\+Option-\/ regressor learner selection 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1_binary_classifier_from_regressor_a40df281483d911a4f5ca4ef39f1c5bd2}\label{classmoa_1_1classifiers_1_1rules_1_1_binary_classifier_from_regressor_a40df281483d911a4f5ca4ef39f1c5bd2}} 
+\index{moa.classifiers.rules.BinaryClassifierFromRegressor@{moa.classifiers.rules.BinaryClassifierFromRegressor}!getModelDescription@{getModelDescription}}
+\index{getModelDescription@{getModelDescription}!moa.classifiers.rules.BinaryClassifierFromRegressor@{moa.classifiers.rules.BinaryClassifierFromRegressor}}
+\doxysubsubsection{\texorpdfstring{getModelDescription()}{getModelDescription()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+rules.\+Binary\+Classifier\+From\+Regressor.\+get\+Model\+Description (\begin{DoxyParamCaption}\item[{String\+Builder}]{out,  }\item[{int}]{indent }\end{DoxyParamCaption})}
+
+Returns a string representation of the model.
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & the stringbuilder to add the description \\
+\hline
+{\em indent} & the number of characters to indent \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a30e5ff32bc8127dfb7436945776b7523}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1_binary_classifier_from_regressor_a8746a37b3b397c701814c6b68ca736c2}\label{classmoa_1_1classifiers_1_1rules_1_1_binary_classifier_from_regressor_a8746a37b3b397c701814c6b68ca736c2}} 
+\index{moa.classifiers.rules.BinaryClassifierFromRegressor@{moa.classifiers.rules.BinaryClassifierFromRegressor}!getModelMeasurementsImpl@{getModelMeasurementsImpl}}
+\index{getModelMeasurementsImpl@{getModelMeasurementsImpl}!moa.classifiers.rules.BinaryClassifierFromRegressor@{moa.classifiers.rules.BinaryClassifierFromRegressor}}
+\doxysubsubsection{\texorpdfstring{getModelMeasurementsImpl()}{getModelMeasurementsImpl()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}} \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+rules.\+Binary\+Classifier\+From\+Regressor.\+get\+Model\+Measurements\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Gets the current measurements of this classifier.~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden.
+
+\begin{DoxyReturn}{Returns}
+an array of measurements to be used in evaluation tasks 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_ac2bebede21c9d2d8cd11d95a7e20e529}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1_binary_classifier_from_regressor_ac9de343cf50b90397f91e3a4088efbc9}\label{classmoa_1_1classifiers_1_1rules_1_1_binary_classifier_from_regressor_ac9de343cf50b90397f91e3a4088efbc9}} 
+\index{moa.classifiers.rules.BinaryClassifierFromRegressor@{moa.classifiers.rules.BinaryClassifierFromRegressor}!getVotesForInstance@{getVotesForInstance}}
+\index{getVotesForInstance@{getVotesForInstance}!moa.classifiers.rules.BinaryClassifierFromRegressor@{moa.classifiers.rules.BinaryClassifierFromRegressor}}
+\doxysubsubsection{\texorpdfstring{getVotesForInstance()}{getVotesForInstance()}}
+{\footnotesize\ttfamily double \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+rules.\+Binary\+Classifier\+From\+Regressor.\+get\+Votes\+For\+Instance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{inst }\end{DoxyParamCaption})}
+
+Predicts the class memberships for a given instance. If an instance is unclassified, the returned array elements must be all zero.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & the instance to be classified \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an array containing the estimated membership probabilities of the test instance in each class 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a0e3589c4fa6f088d82d64514afd9513c}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1_binary_classifier_from_regressor_a6fe373f9da48cd1baa071f6c47f2bba4}\label{classmoa_1_1classifiers_1_1rules_1_1_binary_classifier_from_regressor_a6fe373f9da48cd1baa071f6c47f2bba4}} 
+\index{moa.classifiers.rules.BinaryClassifierFromRegressor@{moa.classifiers.rules.BinaryClassifierFromRegressor}!isRandomizable@{isRandomizable}}
+\index{isRandomizable@{isRandomizable}!moa.classifiers.rules.BinaryClassifierFromRegressor@{moa.classifiers.rules.BinaryClassifierFromRegressor}}
+\doxysubsubsection{\texorpdfstring{isRandomizable()}{isRandomizable()}}
+{\footnotesize\ttfamily boolean moa.\+classifiers.\+rules.\+Binary\+Classifier\+From\+Regressor.\+is\+Randomizable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets whether this learner needs a random seed. Examples of methods that needs a random seed are bagging and boosting.
+
+\begin{DoxyReturn}{Returns}
+true if the learner needs a random seed. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1learners_1_1_learner_a2f1ff9007b5eb5f53801f474b4d42a61}{moa.\+learners.\+Learner$<$ E extends Example $>$}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1_binary_classifier_from_regressor_a57997a099dde5a1cd3286d90fc7e3dea}\label{classmoa_1_1classifiers_1_1rules_1_1_binary_classifier_from_regressor_a57997a099dde5a1cd3286d90fc7e3dea}} 
+\index{moa.classifiers.rules.BinaryClassifierFromRegressor@{moa.classifiers.rules.BinaryClassifierFromRegressor}!resetLearningImpl@{resetLearningImpl}}
+\index{resetLearningImpl@{resetLearningImpl}!moa.classifiers.rules.BinaryClassifierFromRegressor@{moa.classifiers.rules.BinaryClassifierFromRegressor}}
+\doxysubsubsection{\texorpdfstring{resetLearningImpl()}{resetLearningImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+rules.\+Binary\+Classifier\+From\+Regressor.\+reset\+Learning\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Resets this classifier. It must be similar to starting a new classifier from scratch. ~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden. 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a099ffcf2417abb919d10d697c0648f29}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1_binary_classifier_from_regressor_a6b880fbc6ef46fbd64af4f34ec0c32c4}\label{classmoa_1_1classifiers_1_1rules_1_1_binary_classifier_from_regressor_a6b880fbc6ef46fbd64af4f34ec0c32c4}} 
+\index{moa.classifiers.rules.BinaryClassifierFromRegressor@{moa.classifiers.rules.BinaryClassifierFromRegressor}!trainOnInstanceImpl@{trainOnInstanceImpl}}
+\index{trainOnInstanceImpl@{trainOnInstanceImpl}!moa.classifiers.rules.BinaryClassifierFromRegressor@{moa.classifiers.rules.BinaryClassifierFromRegressor}}
+\doxysubsubsection{\texorpdfstring{trainOnInstanceImpl()}{trainOnInstanceImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+rules.\+Binary\+Classifier\+From\+Regressor.\+train\+On\+Instance\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{inst }\end{DoxyParamCaption})}
+
+Trains this classifier incrementally using the given instance.~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & the instance to be used for training \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_aceb24d2ddeab386f2ecead6e3c0d3543}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1_binary_classifier_from_regressor_a87d89aa1607f2e13b6e6bdcd95d412ee}\label{classmoa_1_1classifiers_1_1rules_1_1_binary_classifier_from_regressor_a87d89aa1607f2e13b6e6bdcd95d412ee}} 
+\index{moa.classifiers.rules.BinaryClassifierFromRegressor@{moa.classifiers.rules.BinaryClassifierFromRegressor}!baseLearnerOption@{baseLearnerOption}}
+\index{baseLearnerOption@{baseLearnerOption}!moa.classifiers.rules.BinaryClassifierFromRegressor@{moa.classifiers.rules.BinaryClassifierFromRegressor}}
+\doxysubsubsection{\texorpdfstring{baseLearnerOption}{baseLearnerOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} moa.\+classifiers.\+rules.\+Binary\+Classifier\+From\+Regressor.\+base\+Learner\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} ClassOption(\textcolor{stringliteral}{"baseLearner"}, \textcolor{charliteral}{'r'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Regressor to train."}, Regressor.class, \textcolor{stringliteral}{"rules.AMRulesRegressor"})}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/classifiers/rules/Binary\+Classifier\+From\+Regressor.\+java\end{DoxyCompactItemize}

@@ -1,0 +1,173 @@
+\hypertarget{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_arff_loader}{}\doxysection{com.\+yahoo.\+labs.\+samoa.\+instances.\+Arff\+Loader Class Reference}
+\label{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_arff_loader}\index{com.yahoo.labs.samoa.instances.ArffLoader@{com.yahoo.labs.samoa.instances.ArffLoader}}
+
+
+Inheritance diagram for com.\+yahoo.\+labs.\+samoa.\+instances.\+Arff\+Loader\+:
+% FIG 0
+
+
+Collaboration diagram for com.\+yahoo.\+labs.\+samoa.\+instances.\+Arff\+Loader\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_arff_loader_a91bc999386bdcef5965bda5289221583}{Arff\+Loader}} (Reader reader, int size, int class\+Attribute)
+\item 
+\mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_arff_loader_a2ffbf46b5cf93f3254aa46ad525a4b5f}{Arff\+Loader}} (Reader reader)
+\item 
+\mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_arff_loader_a1928cd628d644bae113d4bd044ecce4d}{Arff\+Loader}} (Reader reader, \mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_range}{Range}} range)
+\item 
+\mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance_information}{Instance\+Information}} \mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_arff_loader_aab51d8269b1cd4d4bc02337e1595b6b4}{get\+Structure}} ()
+\item 
+\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} \mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_arff_loader_a2a0a64d971b0fada33b13c1f525d3af3}{read\+Instance}} ()
+\item 
+\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} \mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_arff_loader_affc00dc25c29a310c480ed7ca248b479}{read\+Instance\+Dense}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_arff_loader_ac69c0896090f999a73aedd92dfab62e5}\label{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_arff_loader_ac69c0896090f999a73aedd92dfab62e5}} 
+void {\bfseries set\+Value} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} instance, int num\+Attribute, double value, boolean is\+Number)
+\item 
+\mbox{\Hypertarget{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_arff_loader_a92d560d93cb0bd8fd9b44fb69c394163}\label{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_arff_loader_a92d560d93cb0bd8fd9b44fb69c394163}} 
+\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} {\bfseries new\+Sparse\+Instance} (double d, double\mbox{[}$\,$\mbox{]} res)
+\item 
+\mbox{\Hypertarget{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_arff_loader_a156dad2b3cb30782471a01833c65b28c}\label{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_arff_loader_a156dad2b3cb30782471a01833c65b28c}} 
+\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} {\bfseries new\+Sparse\+Instance} (double d)
+\item 
+\mbox{\Hypertarget{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_arff_loader_a3e5b1bddc2ea790155be27ca7e561424}\label{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_arff_loader_a3e5b1bddc2ea790155be27ca7e561424}} 
+\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} {\bfseries new\+Dense\+Instance} (int number\+Attributes)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance_information}{Instance\+Information}} \mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_arff_loader_a05df009b3ff4ab04f4a64c09083a4160}{instance\+Information}}
+\item 
+\mbox{\Hypertarget{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_arff_loader_a5312e59d143d79fec2e9d7a0d795bc20}\label{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_arff_loader_a5312e59d143d79fec2e9d7a0d795bc20}} 
+\mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instances_header}{Instances\+Header}} {\bfseries stream\+Header}
+\item 
+Stream\+Tokenizer \mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_arff_loader_ad778307e212c0b159088f7d14100951d}{stream\+Tokenizer}}
+\item 
+\mbox{\Hypertarget{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_arff_loader_aa7e85ae7404bad5d6293b4512844729b}\label{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_arff_loader_aa7e85ae7404bad5d6293b4512844729b}} 
+\mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_range}{Range}} {\bfseries range}
+\item 
+\mbox{\Hypertarget{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_arff_loader_a77e5f1e9f73771595dbd7793b2bee2f9}\label{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_arff_loader_a77e5f1e9f73771595dbd7793b2bee2f9}} 
+List$<$ \mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_attribute}{Attribute}} $>$ {\bfseries aux\+Attributes}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The Class \mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_arff_loader}{Arff\+Loader}}. Loads an Arff file with sparse or dense format. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_arff_loader_a91bc999386bdcef5965bda5289221583}\label{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_arff_loader_a91bc999386bdcef5965bda5289221583}} 
+\index{com.yahoo.labs.samoa.instances.ArffLoader@{com.yahoo.labs.samoa.instances.ArffLoader}!ArffLoader@{ArffLoader}}
+\index{ArffLoader@{ArffLoader}!com.yahoo.labs.samoa.instances.ArffLoader@{com.yahoo.labs.samoa.instances.ArffLoader}}
+\doxysubsubsection{\texorpdfstring{ArffLoader()}{ArffLoader()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily com.\+yahoo.\+labs.\+samoa.\+instances.\+Arff\+Loader.\+Arff\+Loader (\begin{DoxyParamCaption}\item[{Reader}]{reader,  }\item[{int}]{size,  }\item[{int}]{class\+Attribute }\end{DoxyParamCaption})}
+
+Instantiates a new arff loader.
+
+
+\begin{DoxyParams}{Parameters}
+{\em reader} & the reader \\
+\hline
+{\em size} & the size \\
+\hline
+{\em class\+Attribute} & the class attribute \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_arff_loader_a2ffbf46b5cf93f3254aa46ad525a4b5f}\label{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_arff_loader_a2ffbf46b5cf93f3254aa46ad525a4b5f}} 
+\index{com.yahoo.labs.samoa.instances.ArffLoader@{com.yahoo.labs.samoa.instances.ArffLoader}!ArffLoader@{ArffLoader}}
+\index{ArffLoader@{ArffLoader}!com.yahoo.labs.samoa.instances.ArffLoader@{com.yahoo.labs.samoa.instances.ArffLoader}}
+\doxysubsubsection{\texorpdfstring{ArffLoader()}{ArffLoader()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily com.\+yahoo.\+labs.\+samoa.\+instances.\+Arff\+Loader.\+Arff\+Loader (\begin{DoxyParamCaption}\item[{Reader}]{reader }\end{DoxyParamCaption})}
+
+Instantiates a new arff loader.
+
+
+\begin{DoxyParams}{Parameters}
+{\em reader} & the reader \\
+\hline
+{\em range} & \\
+\hline
+{\em size} & the size \\
+\hline
+{\em class\+Attribute} & the class attribute \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_arff_loader_a1928cd628d644bae113d4bd044ecce4d}\label{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_arff_loader_a1928cd628d644bae113d4bd044ecce4d}} 
+\index{com.yahoo.labs.samoa.instances.ArffLoader@{com.yahoo.labs.samoa.instances.ArffLoader}!ArffLoader@{ArffLoader}}
+\index{ArffLoader@{ArffLoader}!com.yahoo.labs.samoa.instances.ArffLoader@{com.yahoo.labs.samoa.instances.ArffLoader}}
+\doxysubsubsection{\texorpdfstring{ArffLoader()}{ArffLoader()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily com.\+yahoo.\+labs.\+samoa.\+instances.\+Arff\+Loader.\+Arff\+Loader (\begin{DoxyParamCaption}\item[{Reader}]{reader,  }\item[{\mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_range}{Range}}}]{range }\end{DoxyParamCaption})}
+
+Instantiates a new arff loader.
+
+
+\begin{DoxyParams}{Parameters}
+{\em reader} & the reader \\
+\hline
+{\em range} & \\
+\hline
+{\em size} & the size \\
+\hline
+{\em class\+Attribute} & the class attribute \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_arff_loader_aab51d8269b1cd4d4bc02337e1595b6b4}\label{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_arff_loader_aab51d8269b1cd4d4bc02337e1595b6b4}} 
+\index{com.yahoo.labs.samoa.instances.ArffLoader@{com.yahoo.labs.samoa.instances.ArffLoader}!getStructure@{getStructure}}
+\index{getStructure@{getStructure}!com.yahoo.labs.samoa.instances.ArffLoader@{com.yahoo.labs.samoa.instances.ArffLoader}}
+\doxysubsubsection{\texorpdfstring{getStructure()}{getStructure()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance_information}{Instance\+Information}} com.\+yahoo.\+labs.\+samoa.\+instances.\+Arff\+Loader.\+get\+Structure (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the structure.
+
+\begin{DoxyReturn}{Returns}
+the structure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_arff_loader_a2a0a64d971b0fada33b13c1f525d3af3}\label{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_arff_loader_a2a0a64d971b0fada33b13c1f525d3af3}} 
+\index{com.yahoo.labs.samoa.instances.ArffLoader@{com.yahoo.labs.samoa.instances.ArffLoader}!readInstance@{readInstance}}
+\index{readInstance@{readInstance}!com.yahoo.labs.samoa.instances.ArffLoader@{com.yahoo.labs.samoa.instances.ArffLoader}}
+\doxysubsubsection{\texorpdfstring{readInstance()}{readInstance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} com.\+yahoo.\+labs.\+samoa.\+instances.\+Arff\+Loader.\+read\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Reads instance. It detects if it is dense or sparse.
+
+\begin{DoxyReturn}{Returns}
+the instance 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_arff_loader_affc00dc25c29a310c480ed7ca248b479}\label{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_arff_loader_affc00dc25c29a310c480ed7ca248b479}} 
+\index{com.yahoo.labs.samoa.instances.ArffLoader@{com.yahoo.labs.samoa.instances.ArffLoader}!readInstanceDense@{readInstanceDense}}
+\index{readInstanceDense@{readInstanceDense}!com.yahoo.labs.samoa.instances.ArffLoader@{com.yahoo.labs.samoa.instances.ArffLoader}}
+\doxysubsubsection{\texorpdfstring{readInstanceDense()}{readInstanceDense()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} com.\+yahoo.\+labs.\+samoa.\+instances.\+Arff\+Loader.\+read\+Instance\+Dense (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Reads a dense instance from the file.
+
+\begin{DoxyReturn}{Returns}
+the instance 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_arff_loader_a05df009b3ff4ab04f4a64c09083a4160}\label{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_arff_loader_a05df009b3ff4ab04f4a64c09083a4160}} 
+\index{com.yahoo.labs.samoa.instances.ArffLoader@{com.yahoo.labs.samoa.instances.ArffLoader}!instanceInformation@{instanceInformation}}
+\index{instanceInformation@{instanceInformation}!com.yahoo.labs.samoa.instances.ArffLoader@{com.yahoo.labs.samoa.instances.ArffLoader}}
+\doxysubsubsection{\texorpdfstring{instanceInformation}{instanceInformation}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance_information}{Instance\+Information}} com.\+yahoo.\+labs.\+samoa.\+instances.\+Arff\+Loader.\+instance\+Information\hspace{0.3cm}{\ttfamily [protected]}}
+
+The instance information. \mbox{\Hypertarget{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_arff_loader_ad778307e212c0b159088f7d14100951d}\label{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_arff_loader_ad778307e212c0b159088f7d14100951d}} 
+\index{com.yahoo.labs.samoa.instances.ArffLoader@{com.yahoo.labs.samoa.instances.ArffLoader}!streamTokenizer@{streamTokenizer}}
+\index{streamTokenizer@{streamTokenizer}!com.yahoo.labs.samoa.instances.ArffLoader@{com.yahoo.labs.samoa.instances.ArffLoader}}
+\doxysubsubsection{\texorpdfstring{streamTokenizer}{streamTokenizer}}
+{\footnotesize\ttfamily Stream\+Tokenizer com.\+yahoo.\+labs.\+samoa.\+instances.\+Arff\+Loader.\+stream\+Tokenizer\hspace{0.3cm}{\ttfamily [protected]}}
+
+The stream tokenizer. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/com/yahoo/labs/samoa/instances/Arff\+Loader.\+java\end{DoxyCompactItemize}

@@ -1,0 +1,55 @@
+\hypertarget{interfacemoa_1_1capabilities_1_1_capabilities_handler}{}\doxysection{moa.\+capabilities.\+Capabilities\+Handler Interface Reference}
+\label{interfacemoa_1_1capabilities_1_1_capabilities_handler}\index{moa.capabilities.CapabilitiesHandler@{moa.capabilities.CapabilitiesHandler}}
+
+
+Inheritance diagram for moa.\+capabilities.\+Capabilities\+Handler\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+default \mbox{\hyperlink{classmoa_1_1capabilities_1_1_capabilities}{Capabilities}} \mbox{\hyperlink{interfacemoa_1_1capabilities_1_1_capabilities_handler_a51e7828740f70dd3237d33eb2b3427b1}{get\+Capabilities}} ()
+\item 
+default \mbox{\hyperlink{classmoa_1_1capabilities_1_1_immutable_capabilities}{Immutable\+Capabilities}} \mbox{\hyperlink{interfacemoa_1_1capabilities_1_1_capabilities_handler_aa82d1befd5dbb958c9787b5304c9a82a}{define\+Immutable\+Capabilities}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface marking classes as being able to specify the capabilities they can handle.
+
+\begin{DoxyAuthor}{Author}
+Corey Sterling (csterlin at waikato dot ac dot nz) 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interfacemoa_1_1capabilities_1_1_capabilities_handler_aa82d1befd5dbb958c9787b5304c9a82a}\label{interfacemoa_1_1capabilities_1_1_capabilities_handler_aa82d1befd5dbb958c9787b5304c9a82a}} 
+\index{moa.capabilities.CapabilitiesHandler@{moa.capabilities.CapabilitiesHandler}!defineImmutableCapabilities@{defineImmutableCapabilities}}
+\index{defineImmutableCapabilities@{defineImmutableCapabilities}!moa.capabilities.CapabilitiesHandler@{moa.capabilities.CapabilitiesHandler}}
+\doxysubsubsection{\texorpdfstring{defineImmutableCapabilities()}{defineImmutableCapabilities()}}
+{\footnotesize\ttfamily default \mbox{\hyperlink{classmoa_1_1capabilities_1_1_immutable_capabilities}{Immutable\+Capabilities}} moa.\+capabilities.\+Capabilities\+Handler.\+define\+Immutable\+Capabilities (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Defines the set of capabilities the object has. Should be overridden if the object\textquotesingle{}s capabilities do not change.
+
+\begin{DoxyReturn}{Returns}
+The capabilities of the object. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_adb1f062488ebb965120b4fb90c43f553}{moa.\+classifiers.\+trees.\+Hoeffding\+Option\+Tree}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_tree_a13869e69dfa9a5db1067a14a8ea8c525}{moa.\+classifiers.\+trees.\+Hoeffding\+Tree}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1_s_a_mk_n_n_a4516454e644b0aceae081d3226648443}{moa.\+classifiers.\+lazy.\+S\+A\+Mk\+NN}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_adaptive_tree_af62596ab03402be9de840e36560668c3}{moa.\+classifiers.\+trees.\+Hoeffding\+Adaptive\+Tree}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a38e8d69f41e7aa037e53671344b93dfc}{moa.\+classifiers.\+Abstract\+Classifier}}, \mbox{\hyperlink{classmoa_1_1streams_1_1generators_1_1_agrawal_generator_ae24c7bb622379674b10ffcc59f4401a5}{moa.\+streams.\+generators.\+Agrawal\+Generator}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_streaming_random_patches_a45f973954b5740870ac1d1046461ac47}{moa.\+classifiers.\+meta.\+Streaming\+Random\+Patches}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_a27f2c45e8becdc83fd02054bb0d7dad8}{moa.\+classifiers.\+meta.\+Adaptive\+Random\+Forest}}, \mbox{\hyperlink{classmoa_1_1tasks_1_1_evaluate_periodic_held_out_test_a27f7ecda8aad8532c39bff120a73bd6b}{moa.\+tasks.\+Evaluate\+Periodic\+Held\+Out\+Test}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_leveraging_bag_a4d7fbe5cefbfc978724690043af02501}{moa.\+classifiers.\+meta.\+Leveraging\+Bag}}, \mbox{\hyperlink{classmoa_1_1tasks_1_1_evaluate_prequential_a754643b1d2a9b86eaa5427b3390daa82}{moa.\+tasks.\+Evaluate\+Prequential}}, \mbox{\hyperlink{classmoa_1_1streams_1_1generators_1_1_random_tree_generator_a669c744931b62c259ac403a65333990e}{moa.\+streams.\+generators.\+Random\+Tree\+Generator}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1bayes_1_1_naive_bayes_multinomial_a7e20fa613bd985e8ab84391f694512a8}{moa.\+classifiers.\+bayes.\+Naive\+Bayes\+Multinomial}}, \mbox{\hyperlink{classmoa_1_1tasks_1_1_evaluate_interleaved_test_then_train_a0965ffdaac4995d21104f4552a8b2613}{moa.\+tasks.\+Evaluate\+Interleaved\+Test\+Then\+Train}}, \mbox{\hyperlink{classmoa_1_1streams_1_1generators_1_1_s_e_a_generator_a2e9fb1ac53ca790e7885a8751d36b171}{moa.\+streams.\+generators.\+S\+E\+A\+Generator}}, \mbox{\hyperlink{classmoa_1_1streams_1_1generators_1_1_s_t_a_g_g_e_r_generator_a60dde48c91c0fbc82d71ef7cda3fd649}{moa.\+streams.\+generators.\+S\+T\+A\+G\+G\+E\+R\+Generator}}, \mbox{\hyperlink{classmoa_1_1streams_1_1_concept_drift_real_stream_a978b5213d5e3bda3abdb7b706f59c03a}{moa.\+streams.\+Concept\+Drift\+Real\+Stream}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1drift_1_1_drift_detection_method_classifier_affb7928023e4c11a0eaafab0edbf33df}{moa.\+classifiers.\+drift.\+Drift\+Detection\+Method\+Classifier}}, \mbox{\hyperlink{classmoa_1_1streams_1_1generators_1_1_random_r_b_f_generator_a5578284bed89dda8269eb7b2c18f3d07}{moa.\+streams.\+generators.\+Random\+R\+B\+F\+Generator}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1bayes_1_1_naive_bayes_aa19d9c09e559bc12c2c6d56e93e8ce13}{moa.\+classifiers.\+bayes.\+Naive\+Bayes}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_oza_bag_adwin_ae8efece4fc18672f0f0b83973a50ae24}{moa.\+classifiers.\+meta.\+Oza\+Bag\+Adwin}}, \mbox{\hyperlink{classmoa_1_1streams_1_1generators_1_1_hyperplane_generator_a9394441ff09011c1b309bc6a2a656d26}{moa.\+streams.\+generators.\+Hyperplane\+Generator}}, \mbox{\hyperlink{classmoa_1_1streams_1_1_arff_file_stream_a766a2a3219f9ad879de77db9aab37997}{moa.\+streams.\+Arff\+File\+Stream}}, \mbox{\hyperlink{classmoa_1_1tasks_1_1_evaluate_model_aa66262a5db4995a5f4f08ea613cabc60}{moa.\+tasks.\+Evaluate\+Model}}, \mbox{\hyperlink{classmoa_1_1streams_1_1_kafka_stream_aaf7f79c427243b5ede6c91b1b172981d}{moa.\+streams.\+Kafka\+Stream}}, \mbox{\hyperlink{classmoa_1_1streams_1_1generators_1_1_waveform_generator_a85a5497202ff92b992ff4520c16c50ca}{moa.\+streams.\+generators.\+Waveform\+Generator}}, \mbox{\hyperlink{classmoa_1_1streams_1_1generators_1_1_l_e_d_generator_a3598d07a6cad765626c5d4089ab2bb65}{moa.\+streams.\+generators.\+L\+E\+D\+Generator}}, \mbox{\hyperlink{classmoa_1_1streams_1_1_concept_drift_stream_a6a96173df2f4f916873fdeb722589dc1}{moa.\+streams.\+Concept\+Drift\+Stream}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_oza_bag_a7d61a79f8d60989eeba6de8a699cbf2a}{moa.\+classifiers.\+meta.\+Oza\+Bag}}, \mbox{\hyperlink{classmoa_1_1tasks_1_1_learn_model_a13498468df668cd7544437ecb33c549a}{moa.\+tasks.\+Learn\+Model}}, \mbox{\hyperlink{classmoa_1_1streams_1_1generators_1_1_waveform_generator_drift_a794ddc0f5f6e742eb2ba554f637e6435}{moa.\+streams.\+generators.\+Waveform\+Generator\+Drift}}, \mbox{\hyperlink{classmoa_1_1streams_1_1generators_1_1_random_r_b_f_generator_drift_ae4a0f5d427d2575b8f3721b9214bad18}{moa.\+streams.\+generators.\+Random\+R\+B\+F\+Generator\+Drift}}, \mbox{\hyperlink{classmoa_1_1streams_1_1generators_1_1_l_e_d_generator_drift_ae166cc242a978e68d6d0c6fe478143fb}{moa.\+streams.\+generators.\+L\+E\+D\+Generator\+Drift}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1functions_1_1_majority_class_ab64bc87cb052f7f2dad212dce208b6a6}{moa.\+classifiers.\+functions.\+Majority\+Class}}, \mbox{\hyperlink{interfacemoa_1_1streams_1_1_example_stream_a3e3e95e96db07173e5fe5dbdb85d4e94}{moa.\+streams.\+Example\+Stream$<$ E extends Example $>$}}, \mbox{\hyperlink{interfacemoa_1_1evaluation_1_1_learning_performance_evaluator_a85e7caebd2fac5085f83f5a05b50972f}{moa.\+evaluation.\+Learning\+Performance\+Evaluator$<$ E extends Example $>$}}, and \mbox{\hyperlink{classmoa_1_1tasks_1_1_classification_main_task_a06bfdc54fba70f28d51cf33b04c9d8c2}{moa.\+tasks.\+Classification\+Main\+Task}}.
+
+\mbox{\Hypertarget{interfacemoa_1_1capabilities_1_1_capabilities_handler_a51e7828740f70dd3237d33eb2b3427b1}\label{interfacemoa_1_1capabilities_1_1_capabilities_handler_a51e7828740f70dd3237d33eb2b3427b1}} 
+\index{moa.capabilities.CapabilitiesHandler@{moa.capabilities.CapabilitiesHandler}!getCapabilities@{getCapabilities}}
+\index{getCapabilities@{getCapabilities}!moa.capabilities.CapabilitiesHandler@{moa.capabilities.CapabilitiesHandler}}
+\doxysubsubsection{\texorpdfstring{getCapabilities()}{getCapabilities()}}
+{\footnotesize\ttfamily default \mbox{\hyperlink{classmoa_1_1capabilities_1_1_capabilities}{Capabilities}} moa.\+capabilities.\+Capabilities\+Handler.\+get\+Capabilities (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the capabilities of the object. Should be overridden if the object\textquotesingle{}s capabilities can change.
+
+\begin{DoxyReturn}{Returns}
+The capabilities of the object. 
+\end{DoxyReturn}
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/capabilities/Capabilities\+Handler.\+java\end{DoxyCompactItemize}

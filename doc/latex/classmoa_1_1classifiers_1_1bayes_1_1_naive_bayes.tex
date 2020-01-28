@@ -1,0 +1,225 @@
+\hypertarget{classmoa_1_1classifiers_1_1bayes_1_1_naive_bayes}{}\doxysection{moa.\+classifiers.\+bayes.\+Naive\+Bayes Class Reference}
+\label{classmoa_1_1classifiers_1_1bayes_1_1_naive_bayes}\index{moa.classifiers.bayes.NaiveBayes@{moa.classifiers.bayes.NaiveBayes}}
+
+
+Inheritance diagram for moa.\+classifiers.\+bayes.\+Naive\+Bayes\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+classifiers.\+bayes.\+Naive\+Bayes\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classmoa_1_1classifiers_1_1bayes_1_1_naive_bayes_a9925f68b1d0452f0f657cde6aee39200}{get\+Purpose\+String}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1bayes_1_1_naive_bayes_a475c2e24225ecba958b1dbe7fce2f81b}{reset\+Learning\+Impl}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1bayes_1_1_naive_bayes_a49475a13eb0f2a0955a04a0d25b7bec0}{train\+On\+Instance\+Impl}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst)
+\item 
+double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1bayes_1_1_naive_bayes_ae61d88b768d7a7eb285a138efec01bdd}{get\+Votes\+For\+Instance}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst)
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1bayes_1_1_naive_bayes_a9c6844cc26818257b91bb284d78f2af0}{get\+Model\+Description}} (String\+Builder out, int indent)
+\item 
+boolean \mbox{\hyperlink{classmoa_1_1classifiers_1_1bayes_1_1_naive_bayes_acffbd56ccb45d361d64a4ba558e69b2c}{is\+Randomizable}} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1bayes_1_1_naive_bayes_a641fc4e0ae3deab8d620e99d1465ee35}\label{classmoa_1_1classifiers_1_1bayes_1_1_naive_bayes_a641fc4e0ae3deab8d620e99d1465ee35}} 
+void {\bfseries manage\+Memory} (int current\+Byte\+Size, int max\+Byte\+Size)
+\item 
+\mbox{\hyperlink{classmoa_1_1capabilities_1_1_immutable_capabilities}{Immutable\+Capabilities}} \mbox{\hyperlink{classmoa_1_1classifiers_1_1bayes_1_1_naive_bayes_aa19d9c09e559bc12c2c6d56e93e8ce13}{define\+Immutable\+Capabilities}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1bayes_1_1_naive_bayes_aaeb3aa564394e10a043c31963096ac78}\label{classmoa_1_1classifiers_1_1bayes_1_1_naive_bayes_aaeb3aa564394e10a043c31963096ac78}} 
+static double\mbox{[}$\,$\mbox{]} {\bfseries do\+Naive\+Bayes\+Prediction} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst, \mbox{\hyperlink{classmoa_1_1core_1_1_double_vector}{Double\+Vector}} observed\+Class\+Distribution, \mbox{\hyperlink{classmoa_1_1core_1_1_auto_expand_vector}{Auto\+Expand\+Vector}}$<$ \mbox{\hyperlink{interfacemoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_attribute_class_observer}{Attribute\+Class\+Observer}} $>$ attribute\+Observers)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1bayes_1_1_naive_bayes_a92559d8413215b11f74191718b6c14d4}\label{classmoa_1_1classifiers_1_1bayes_1_1_naive_bayes_a92559d8413215b11f74191718b6c14d4}} 
+static double\mbox{[}$\,$\mbox{]} {\bfseries do\+Naive\+Bayes\+Prediction\+Log} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst, \mbox{\hyperlink{classmoa_1_1core_1_1_double_vector}{Double\+Vector}} observed\+Class\+Distribution, \mbox{\hyperlink{classmoa_1_1core_1_1_auto_expand_vector}{Auto\+Expand\+Vector}}$<$ \mbox{\hyperlink{interfacemoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_attribute_class_observer}{Attribute\+Class\+Observer}} $>$ observers, \mbox{\hyperlink{classmoa_1_1core_1_1_auto_expand_vector}{Auto\+Expand\+Vector}}$<$ \mbox{\hyperlink{interfacemoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_attribute_class_observer}{Attribute\+Class\+Observer}} $>$ observers2)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1bayes_1_1_naive_bayes_a0fcea0b8634a19db14adfda6879cee34}{get\+Model\+Measurements\+Impl}} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1bayes_1_1_naive_bayes_a625d7e6f55d4acc600b9e75ed3625309}\label{classmoa_1_1classifiers_1_1bayes_1_1_naive_bayes_a625d7e6f55d4acc600b9e75ed3625309}} 
+\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_attribute_class_observer}{Attribute\+Class\+Observer}} {\bfseries new\+Nominal\+Class\+Observer} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1bayes_1_1_naive_bayes_ac2b38c3d876537798c60af3ccffea31c}\label{classmoa_1_1classifiers_1_1bayes_1_1_naive_bayes_ac2b38c3d876537798c60af3ccffea31c}} 
+\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_attribute_class_observer}{Attribute\+Class\+Observer}} {\bfseries new\+Numeric\+Class\+Observer} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1bayes_1_1_naive_bayes_a30aa778adf85ed44448ccae686b897a1}\label{classmoa_1_1classifiers_1_1bayes_1_1_naive_bayes_a30aa778adf85ed44448ccae686b897a1}} 
+\mbox{\hyperlink{classmoa_1_1core_1_1_double_vector}{Double\+Vector}} {\bfseries observed\+Class\+Distribution}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1bayes_1_1_naive_bayes_a11f8b620b02027bd918e767b91ee3f9c}\label{classmoa_1_1classifiers_1_1bayes_1_1_naive_bayes_a11f8b620b02027bd918e767b91ee3f9c}} 
+\mbox{\hyperlink{classmoa_1_1core_1_1_auto_expand_vector}{Auto\+Expand\+Vector}}$<$ \mbox{\hyperlink{interfacemoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_attribute_class_observer}{Attribute\+Class\+Observer}} $>$ {\bfseries attribute\+Observers}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Naive Bayes incremental learner.
+
+Performs classic bayesian prediction while making naive assumption that all inputs are independent.~\newline
+ Naive Bayes is a classiﬁer algorithm known for its simplicity and low computational cost. Given n different classes, the trained Naive Bayes classiﬁer predicts for every unlabelled instance I the class C to which it belongs with high accuracy.
+
+Parameters\+:
+
+
+\begin{DoxyItemize}
+\item -\/r \+: Seed for random behaviour of the classifier 
+\end{DoxyItemize}
+
+\begin{DoxyAuthor}{Author}
+Richard Kirkby (\href{mailto:rkirkby@cs.waikato.ac.nz}{\texttt{ rkirkby@cs.\+waikato.\+ac.\+nz}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+7 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1bayes_1_1_naive_bayes_aa19d9c09e559bc12c2c6d56e93e8ce13}\label{classmoa_1_1classifiers_1_1bayes_1_1_naive_bayes_aa19d9c09e559bc12c2c6d56e93e8ce13}} 
+\index{moa.classifiers.bayes.NaiveBayes@{moa.classifiers.bayes.NaiveBayes}!defineImmutableCapabilities@{defineImmutableCapabilities}}
+\index{defineImmutableCapabilities@{defineImmutableCapabilities}!moa.classifiers.bayes.NaiveBayes@{moa.classifiers.bayes.NaiveBayes}}
+\doxysubsubsection{\texorpdfstring{defineImmutableCapabilities()}{defineImmutableCapabilities()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1capabilities_1_1_immutable_capabilities}{Immutable\+Capabilities}} moa.\+classifiers.\+bayes.\+Naive\+Bayes.\+define\+Immutable\+Capabilities (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Defines the set of capabilities the object has. Should be overridden if the object\textquotesingle{}s capabilities do not change.
+
+\begin{DoxyReturn}{Returns}
+The capabilities of the object. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1capabilities_1_1_capabilities_handler_aa82d1befd5dbb958c9787b5304c9a82a}{moa.\+capabilities.\+Capabilities\+Handler}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1bayes_1_1_naive_bayes_a9c6844cc26818257b91bb284d78f2af0}\label{classmoa_1_1classifiers_1_1bayes_1_1_naive_bayes_a9c6844cc26818257b91bb284d78f2af0}} 
+\index{moa.classifiers.bayes.NaiveBayes@{moa.classifiers.bayes.NaiveBayes}!getModelDescription@{getModelDescription}}
+\index{getModelDescription@{getModelDescription}!moa.classifiers.bayes.NaiveBayes@{moa.classifiers.bayes.NaiveBayes}}
+\doxysubsubsection{\texorpdfstring{getModelDescription()}{getModelDescription()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+bayes.\+Naive\+Bayes.\+get\+Model\+Description (\begin{DoxyParamCaption}\item[{String\+Builder}]{out,  }\item[{int}]{indent }\end{DoxyParamCaption})}
+
+Returns a string representation of the model.
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & the stringbuilder to add the description \\
+\hline
+{\em indent} & the number of characters to indent \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a30e5ff32bc8127dfb7436945776b7523}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1bayes_1_1_naive_bayes_a0fcea0b8634a19db14adfda6879cee34}\label{classmoa_1_1classifiers_1_1bayes_1_1_naive_bayes_a0fcea0b8634a19db14adfda6879cee34}} 
+\index{moa.classifiers.bayes.NaiveBayes@{moa.classifiers.bayes.NaiveBayes}!getModelMeasurementsImpl@{getModelMeasurementsImpl}}
+\index{getModelMeasurementsImpl@{getModelMeasurementsImpl}!moa.classifiers.bayes.NaiveBayes@{moa.classifiers.bayes.NaiveBayes}}
+\doxysubsubsection{\texorpdfstring{getModelMeasurementsImpl()}{getModelMeasurementsImpl()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}} \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+bayes.\+Naive\+Bayes.\+get\+Model\+Measurements\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Gets the current measurements of this classifier.~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden.
+
+\begin{DoxyReturn}{Returns}
+an array of measurements to be used in evaluation tasks 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_ac2bebede21c9d2d8cd11d95a7e20e529}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1bayes_1_1_naive_bayes_a9925f68b1d0452f0f657cde6aee39200}\label{classmoa_1_1classifiers_1_1bayes_1_1_naive_bayes_a9925f68b1d0452f0f657cde6aee39200}} 
+\index{moa.classifiers.bayes.NaiveBayes@{moa.classifiers.bayes.NaiveBayes}!getPurposeString@{getPurposeString}}
+\index{getPurposeString@{getPurposeString}!moa.classifiers.bayes.NaiveBayes@{moa.classifiers.bayes.NaiveBayes}}
+\doxysubsubsection{\texorpdfstring{getPurposeString()}{getPurposeString()}}
+{\footnotesize\ttfamily String moa.\+classifiers.\+bayes.\+Naive\+Bayes.\+get\+Purpose\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Options to handle Dictionary with option texts and objects 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a3fc6ae11234b88e51941a77ddb879d8b}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1bayes_1_1_naive_bayes_ae61d88b768d7a7eb285a138efec01bdd}\label{classmoa_1_1classifiers_1_1bayes_1_1_naive_bayes_ae61d88b768d7a7eb285a138efec01bdd}} 
+\index{moa.classifiers.bayes.NaiveBayes@{moa.classifiers.bayes.NaiveBayes}!getVotesForInstance@{getVotesForInstance}}
+\index{getVotesForInstance@{getVotesForInstance}!moa.classifiers.bayes.NaiveBayes@{moa.classifiers.bayes.NaiveBayes}}
+\doxysubsubsection{\texorpdfstring{getVotesForInstance()}{getVotesForInstance()}}
+{\footnotesize\ttfamily double \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+bayes.\+Naive\+Bayes.\+get\+Votes\+For\+Instance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{inst }\end{DoxyParamCaption})}
+
+Predicts the class memberships for a given instance. If an instance is unclassified, the returned array elements must be all zero.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & the instance to be classified \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an array containing the estimated membership probabilities of the test instance in each class 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a0e3589c4fa6f088d82d64514afd9513c}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1bayes_1_1_naive_bayes_acffbd56ccb45d361d64a4ba558e69b2c}\label{classmoa_1_1classifiers_1_1bayes_1_1_naive_bayes_acffbd56ccb45d361d64a4ba558e69b2c}} 
+\index{moa.classifiers.bayes.NaiveBayes@{moa.classifiers.bayes.NaiveBayes}!isRandomizable@{isRandomizable}}
+\index{isRandomizable@{isRandomizable}!moa.classifiers.bayes.NaiveBayes@{moa.classifiers.bayes.NaiveBayes}}
+\doxysubsubsection{\texorpdfstring{isRandomizable()}{isRandomizable()}}
+{\footnotesize\ttfamily boolean moa.\+classifiers.\+bayes.\+Naive\+Bayes.\+is\+Randomizable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets whether this learner needs a random seed. Examples of methods that needs a random seed are bagging and boosting.
+
+\begin{DoxyReturn}{Returns}
+true if the learner needs a random seed. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1learners_1_1_learner_a2f1ff9007b5eb5f53801f474b4d42a61}{moa.\+learners.\+Learner$<$ E extends Example $>$}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1bayes_1_1_naive_bayes_a475c2e24225ecba958b1dbe7fce2f81b}\label{classmoa_1_1classifiers_1_1bayes_1_1_naive_bayes_a475c2e24225ecba958b1dbe7fce2f81b}} 
+\index{moa.classifiers.bayes.NaiveBayes@{moa.classifiers.bayes.NaiveBayes}!resetLearningImpl@{resetLearningImpl}}
+\index{resetLearningImpl@{resetLearningImpl}!moa.classifiers.bayes.NaiveBayes@{moa.classifiers.bayes.NaiveBayes}}
+\doxysubsubsection{\texorpdfstring{resetLearningImpl()}{resetLearningImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+bayes.\+Naive\+Bayes.\+reset\+Learning\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Resets this classifier. It must be similar to starting a new classifier from scratch. ~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden. 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a099ffcf2417abb919d10d697c0648f29}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1bayes_1_1_naive_bayes_a49475a13eb0f2a0955a04a0d25b7bec0}\label{classmoa_1_1classifiers_1_1bayes_1_1_naive_bayes_a49475a13eb0f2a0955a04a0d25b7bec0}} 
+\index{moa.classifiers.bayes.NaiveBayes@{moa.classifiers.bayes.NaiveBayes}!trainOnInstanceImpl@{trainOnInstanceImpl}}
+\index{trainOnInstanceImpl@{trainOnInstanceImpl}!moa.classifiers.bayes.NaiveBayes@{moa.classifiers.bayes.NaiveBayes}}
+\doxysubsubsection{\texorpdfstring{trainOnInstanceImpl()}{trainOnInstanceImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+bayes.\+Naive\+Bayes.\+train\+On\+Instance\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{inst }\end{DoxyParamCaption})}
+
+Trains this classifier incrementally using the given instance.~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & the instance to be used for training \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_aceb24d2ddeab386f2ecead6e3c0d3543}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/classifiers/bayes/Naive\+Bayes.\+java\end{DoxyCompactItemize}

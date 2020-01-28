@@ -1,0 +1,3 @@
+moa\streams\KafkaStream.class
+moa\streams\ObjectSerializer.class
+moa\streams\ObjectDeserializer.class

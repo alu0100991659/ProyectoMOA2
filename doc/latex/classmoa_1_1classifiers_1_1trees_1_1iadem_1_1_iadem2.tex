@@ -1,0 +1,406 @@
+\hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2}{}\doxysection{moa.\+classifiers.\+trees.\+iadem.\+Iadem2 Class Reference}
+\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2}\index{moa.classifiers.trees.iadem.Iadem2@{moa.classifiers.trees.iadem.Iadem2}}
+
+
+Inheritance diagram for moa.\+classifiers.\+trees.\+iadem.\+Iadem2\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+classifiers.\+trees.\+iadem.\+Iadem2\+:
+% FIG 1
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_1_1_leaf_node}{Leaf\+Node}}
+\item 
+class \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_1_1_leaf_node_n_b}{Leaf\+Node\+NB}}
+\item 
+class \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_1_1_leaf_node_n_b_kirkby}{Leaf\+Node\+N\+B\+Kirkby}}
+\item 
+class \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_1_1_leaf_node_weighted_vote}{Leaf\+Node\+Weighted\+Vote}}
+\item 
+class \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_1_1_node}{Node}}
+\item 
+class \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_1_1_nominal_virtual_node}{Nominal\+Virtual\+Node}}
+\item 
+class \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_1_1_numeric_virtual_node}{Numeric\+Virtual\+Node}}
+\item 
+class \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_1_1_split_node}{Split\+Node}}
+\item 
+class \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_1_1_virtual_node}{Virtual\+Node}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_a8feabc4adf0667f231812b2524bc590e}{is\+Randomizable}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_a0a1cfb9bc9927be4c43bc0ea98d06a69}{reset\+Learning\+Impl}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_aecb459d99f4f7a212ee7d05ba0e7442f}{train\+On\+Instance\+Impl}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst)
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_a126f908ec438c2a80a9b777d5c9e669d}{get\+Model\+Description}} (String\+Builder out, int indent)
+\item 
+double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_af313d759121cac79b6b6612756133c9d}{get\+Votes\+For\+Instance}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_a381dee8fa83060d5693293597a50d848}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_a381dee8fa83060d5693293597a50d848}} 
+\mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_abstract_change_detector}{Abstract\+Change\+Detector}} {\bfseries new\+Estimator} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_ae6dc2309195ee9d5cf9e8785cc6b2369}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_ae6dc2309195ee9d5cf9e8785cc6b2369}} 
+void {\bfseries create\+Root} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} instance)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_af8a1c3e7e3046b11808293c7c0c3d45e}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_af8a1c3e7e3046b11808293c7c0c3d45e}} 
+int {\bfseries get\+Max\+Number\+Of\+Bins} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_a7b4f194fdb14a88535ccbb01789c14c0}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_a7b4f194fdb14a88535ccbb01789c14c0}} 
+\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem_numeric_attribute_observer}{Iadem\+Numeric\+Attribute\+Observer}} {\bfseries get\+Numeric\+Att\+Observer} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_af3192512adc3857d935b110750365728}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_af3192512adc3857d935b110750365728}} 
+long {\bfseries get\+Number\+Of\+Instances\+Processed} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_aa45617bcb5c53ba865f87c5c69b882c2}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_aa45617bcb5c53ba865f87c5c69b882c2}} 
+\mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_1_1_leaf_node}{Leaf\+Node}} {\bfseries new\+Leaf\+Node} (\mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_1_1_node}{Node}} parent, long inst\+Tree\+Count\+Since\+Virtual, long inst\+Node\+Count\+Since\+Virtual, double\mbox{[}$\,$\mbox{]} class\+Dist, \mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} instance)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_a6ca6ab1b14c555377cebc9fbca2cc09b}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_a6ca6ab1b14c555377cebc9fbca2cc09b}} 
+double {\bfseries get\+Attribute\+Differentiation} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_ab80ace93a1d647f1676ed0502fbbc931}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_ab80ace93a1d647f1676ed0502fbbc931}} 
+\mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem_split_criterion}{Iadem\+Split\+Criterion}} {\bfseries get\+Measure} ()  throws Iadem\+Exception 
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_ab96a603abbe5cab143dcb8da5bd63408}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_ab96a603abbe5cab143dcb8da5bd63408}} 
+void {\bfseries set\+Tree\+Root} (\mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_1_1_node}{Node}} new\+Root)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_a6a59b6fe979ddd147f870a74883fbda7}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_a6a59b6fe979ddd147f870a74883fbda7}} 
+void {\bfseries learn\+From\+Instance} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} instance)  throws Iadem\+Exception 
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_aa87ee12c9d881aed8e090bf5252e0b97}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_aa87ee12c9d881aed8e090bf5252e0b97}} 
+\mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_1_1_node}{Node}} {\bfseries get\+Tree\+Root} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_a37c1c4cc3ac81766f050f5dd51f40387}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_a37c1c4cc3ac81766f050f5dd51f40387}} 
+double\mbox{[}$\,$\mbox{]} {\bfseries get\+Class\+Votes} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} instance)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_a6b47a8524df93e4e7a6d573f61aae2ec}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_a6b47a8524df93e4e7a6d573f61aae2ec}} 
+double {\bfseries get\+Percent\+In\+Common} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_abd19dc9b768e1d6105142ecd5fa32a1d}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_abd19dc9b768e1d6105142ecd5fa32a1d}} 
+int {\bfseries get\+Values\+Of\+Nominal\+Attributes} (int att\+Index, \mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} instance)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_a57541af752119c1a209d573f01b1a681}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_a57541af752119c1a209d573f01b1a681}} 
+int {\bfseries get\+Naive\+Bayes\+Limit} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_a9c8712ea747edd2ebe34a87328d5886b}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_a9c8712ea747edd2ebe34a87328d5886b}} 
+boolean {\bfseries is\+Only\+Multiway\+Test} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_add1f4038132b5a01c1fddaa7970da7f9}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_add1f4038132b5a01c1fddaa7970da7f9}} 
+boolean {\bfseries is\+Only\+Binary\+Test} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_a2fab696b032fc5e3cd1b0e3f5d9b1eec}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_a2fab696b032fc5e3cd1b0e3f5d9b1eec}} 
+void {\bfseries incr\+Number\+Of\+Instances\+Processed} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_a154b0808dec62c503300d3d4d194ef7a}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_a154b0808dec62c503300d3d4d194ef7a}} 
+void {\bfseries get\+Number\+Of\+Nodes} (int\mbox{[}$\,$\mbox{]} count)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_a33632ac0713b6fc999008e7612653b0b}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_a33632ac0713b6fc999008e7612653b0b}} 
+void {\bfseries new\+Split} (int num\+Of\+Leaves)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_a50f668237fbe8d67d88a190083e32dfd}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_a50f668237fbe8d67d88a190083e32dfd}} 
+int {\bfseries get\+Number\+Of\+Nodes} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_a924d0156bae5166a63e46fd47155cbc3}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_a924d0156bae5166a63e46fd47155cbc3}} 
+void {\bfseries set\+Number\+Of\+Nodes} (int number\+Of\+Nodes)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_aeee251a87d70d04a5dfd8975513af669}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_aeee251a87d70d04a5dfd8975513af669}} 
+int {\bfseries get\+Number\+Of\+Leaves} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_a0fa840d665b59b9b63c0a7e7d6b3e545}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_a0fa840d665b59b9b63c0a7e7d6b3e545}} 
+void {\bfseries set\+Number\+Of\+Leaves} (int number\+Of\+Leaves)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} {\bfseries numeric\+Estimator\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries grace\+Period\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_multi_choice_option}{Multi\+Choice\+Option}} {\bfseries split\+Criterion\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} {\bfseries split\+Confidence\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_multi_choice_option}{Multi\+Choice\+Option}} {\bfseries split\+Tests\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_multi_choice_option}{Multi\+Choice\+Option}} {\bfseries leaf\+Prediction\+Option}
+\item 
+\mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} {\bfseries drift\+Detection\+Method\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} {\bfseries attribute\+Diferentiation}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_a58f13ef648281ec1ea7cfa0dbfc4cd7b}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_a58f13ef648281ec1ea7cfa0dbfc4cd7b}} 
+final int {\bfseries naive\+Bayes\+Limit} = 0
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_ae215ded298e03478ffcbb745d32f041f}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_ae215ded298e03478ffcbb745d32f041f}} 
+final double {\bfseries percent\+In\+Common} = 0.\+75
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_ab5cf767ef4968beb1a25f0eeaf4bfaa6}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_ab5cf767ef4968beb1a25f0eeaf4bfaa6}} 
+int {\bfseries number\+Of\+Nodes} = 1
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_a34c7e6806560ded0ffcbe554661c4435}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_a34c7e6806560ded0ffcbe554661c4435}} 
+final static double {\bfseries E\+R\+R\+O\+R\+\_\+\+M\+A\+R\+G\+IN} = 1.\+0e-\/9
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_ac8c6fd86890a4b416de3587fe101dab0}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_ac8c6fd86890a4b416de3587fe101dab0}} 
+\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem_numeric_attribute_observer}{Iadem\+Numeric\+Attribute\+Observer}} {\bfseries new\+Numeric\+Class\+Observer} ()
+\item 
+\mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_a0e39e81cb07f88ff2659d90c2f687f78}{get\+Model\+Measurements\+Impl}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_a5968a534e22f4d2eff22650f0dde8977}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_a5968a534e22f4d2eff22650f0dde8977}} 
+int {\bfseries number\+Of\+Instances\+Processed} = 0
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_a2714d9162ee1c50d1e0524c9a133ee35}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_a2714d9162ee1c50d1e0524c9a133ee35}} 
+\mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_1_1_node}{Node}} {\bfseries tree\+Root}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_aabbf9fb0ca0ffd3bdc498e4abb40519e}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_aabbf9fb0ca0ffd3bdc498e4abb40519e}} 
+\mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_abstract_change_detector}{Abstract\+Change\+Detector}} {\bfseries estimator}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_a126f908ec438c2a80a9b777d5c9e669d}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_a126f908ec438c2a80a9b777d5c9e669d}} 
+\index{moa.classifiers.trees.iadem.Iadem2@{moa.classifiers.trees.iadem.Iadem2}!getModelDescription@{getModelDescription}}
+\index{getModelDescription@{getModelDescription}!moa.classifiers.trees.iadem.Iadem2@{moa.classifiers.trees.iadem.Iadem2}}
+\doxysubsubsection{\texorpdfstring{getModelDescription()}{getModelDescription()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+trees.\+iadem.\+Iadem2.\+get\+Model\+Description (\begin{DoxyParamCaption}\item[{String\+Builder}]{out,  }\item[{int}]{indent }\end{DoxyParamCaption})}
+
+Returns a string representation of the model.
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & the stringbuilder to add the description \\
+\hline
+{\em indent} & the number of characters to indent \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a30e5ff32bc8127dfb7436945776b7523}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_a0e39e81cb07f88ff2659d90c2f687f78}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_a0e39e81cb07f88ff2659d90c2f687f78}} 
+\index{moa.classifiers.trees.iadem.Iadem2@{moa.classifiers.trees.iadem.Iadem2}!getModelMeasurementsImpl@{getModelMeasurementsImpl}}
+\index{getModelMeasurementsImpl@{getModelMeasurementsImpl}!moa.classifiers.trees.iadem.Iadem2@{moa.classifiers.trees.iadem.Iadem2}}
+\doxysubsubsection{\texorpdfstring{getModelMeasurementsImpl()}{getModelMeasurementsImpl()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}} \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+trees.\+iadem.\+Iadem2.\+get\+Model\+Measurements\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Gets the current measurements of this classifier.~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden.
+
+\begin{DoxyReturn}{Returns}
+an array of measurements to be used in evaluation tasks 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_ac2bebede21c9d2d8cd11d95a7e20e529}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_a5a184e0217c583a15084bce05de1bf7d}{moa.\+classifiers.\+trees.\+iadem.\+Iadem3}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_af313d759121cac79b6b6612756133c9d}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_af313d759121cac79b6b6612756133c9d}} 
+\index{moa.classifiers.trees.iadem.Iadem2@{moa.classifiers.trees.iadem.Iadem2}!getVotesForInstance@{getVotesForInstance}}
+\index{getVotesForInstance@{getVotesForInstance}!moa.classifiers.trees.iadem.Iadem2@{moa.classifiers.trees.iadem.Iadem2}}
+\doxysubsubsection{\texorpdfstring{getVotesForInstance()}{getVotesForInstance()}}
+{\footnotesize\ttfamily double \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+trees.\+iadem.\+Iadem2.\+get\+Votes\+For\+Instance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{inst }\end{DoxyParamCaption})}
+
+Predicts the class memberships for a given instance. If an instance is unclassified, the returned array elements must be all zero.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & the instance to be classified \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an array containing the estimated membership probabilities of the test instance in each class 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a0e3589c4fa6f088d82d64514afd9513c}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_a8feabc4adf0667f231812b2524bc590e}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_a8feabc4adf0667f231812b2524bc590e}} 
+\index{moa.classifiers.trees.iadem.Iadem2@{moa.classifiers.trees.iadem.Iadem2}!isRandomizable@{isRandomizable}}
+\index{isRandomizable@{isRandomizable}!moa.classifiers.trees.iadem.Iadem2@{moa.classifiers.trees.iadem.Iadem2}}
+\doxysubsubsection{\texorpdfstring{isRandomizable()}{isRandomizable()}}
+{\footnotesize\ttfamily boolean moa.\+classifiers.\+trees.\+iadem.\+Iadem2.\+is\+Randomizable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets whether this learner needs a random seed. Examples of methods that needs a random seed are bagging and boosting.
+
+\begin{DoxyReturn}{Returns}
+true if the learner needs a random seed. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1learners_1_1_learner_a2f1ff9007b5eb5f53801f474b4d42a61}{moa.\+learners.\+Learner$<$ E extends Example $>$}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_a0a1cfb9bc9927be4c43bc0ea98d06a69}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_a0a1cfb9bc9927be4c43bc0ea98d06a69}} 
+\index{moa.classifiers.trees.iadem.Iadem2@{moa.classifiers.trees.iadem.Iadem2}!resetLearningImpl@{resetLearningImpl}}
+\index{resetLearningImpl@{resetLearningImpl}!moa.classifiers.trees.iadem.Iadem2@{moa.classifiers.trees.iadem.Iadem2}}
+\doxysubsubsection{\texorpdfstring{resetLearningImpl()}{resetLearningImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+trees.\+iadem.\+Iadem2.\+reset\+Learning\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Resets this classifier. It must be similar to starting a new classifier from scratch. ~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden. 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a099ffcf2417abb919d10d697c0648f29}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_aecb459d99f4f7a212ee7d05ba0e7442f}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_aecb459d99f4f7a212ee7d05ba0e7442f}} 
+\index{moa.classifiers.trees.iadem.Iadem2@{moa.classifiers.trees.iadem.Iadem2}!trainOnInstanceImpl@{trainOnInstanceImpl}}
+\index{trainOnInstanceImpl@{trainOnInstanceImpl}!moa.classifiers.trees.iadem.Iadem2@{moa.classifiers.trees.iadem.Iadem2}}
+\doxysubsubsection{\texorpdfstring{trainOnInstanceImpl()}{trainOnInstanceImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+trees.\+iadem.\+Iadem2.\+train\+On\+Instance\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{inst }\end{DoxyParamCaption})}
+
+Trains this classifier incrementally using the given instance.~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & the instance to be used for training \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_aceb24d2ddeab386f2ecead6e3c0d3543}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_aba5fedd210cbfe858aaef78a1b490d1a}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_aba5fedd210cbfe858aaef78a1b490d1a}} 
+\index{moa.classifiers.trees.iadem.Iadem2@{moa.classifiers.trees.iadem.Iadem2}!attributeDiferentiation@{attributeDiferentiation}}
+\index{attributeDiferentiation@{attributeDiferentiation}!moa.classifiers.trees.iadem.Iadem2@{moa.classifiers.trees.iadem.Iadem2}}
+\doxysubsubsection{\texorpdfstring{attributeDiferentiation}{attributeDiferentiation}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} moa.\+classifiers.\+trees.\+iadem.\+Iadem2.\+attribute\+Diferentiation}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FloatOption(\textcolor{stringliteral}{"attritubeDiferentiation"}, \textcolor{charliteral}{'a'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Attribute differenciation"},}
+\DoxyCodeLine{            0.1, 0.0, 1.0)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_a2587935ba56554b8f12071dd7978abb9}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_a2587935ba56554b8f12071dd7978abb9}} 
+\index{moa.classifiers.trees.iadem.Iadem2@{moa.classifiers.trees.iadem.Iadem2}!driftDetectionMethodOption@{driftDetectionMethodOption}}
+\index{driftDetectionMethodOption@{driftDetectionMethodOption}!moa.classifiers.trees.iadem.Iadem2@{moa.classifiers.trees.iadem.Iadem2}}
+\doxysubsubsection{\texorpdfstring{driftDetectionMethodOption}{driftDetectionMethodOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} moa.\+classifiers.\+trees.\+iadem.\+Iadem2.\+drift\+Detection\+Method\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} ClassOption(\textcolor{stringliteral}{"driftDetectionMethod"}, \textcolor{charliteral}{'d'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Drift detection method to use."}, AbstractChangeDetector.class, \textcolor{stringliteral}{"HDDM\_A\_Test"})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_aa57bc5f79850b01aac327bda36b48e7c}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_aa57bc5f79850b01aac327bda36b48e7c}} 
+\index{moa.classifiers.trees.iadem.Iadem2@{moa.classifiers.trees.iadem.Iadem2}!gracePeriodOption@{gracePeriodOption}}
+\index{gracePeriodOption@{gracePeriodOption}!moa.classifiers.trees.iadem.Iadem2@{moa.classifiers.trees.iadem.Iadem2}}
+\doxysubsubsection{\texorpdfstring{gracePeriodOption}{gracePeriodOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+classifiers.\+trees.\+iadem.\+Iadem2.\+grace\+Period\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(\textcolor{stringliteral}{"gracePeriod"}, \textcolor{charliteral}{'n'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"The number of instances the tree should observe between splitting attempts."},}
+\DoxyCodeLine{            100, 1, Integer.MAX\_VALUE)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_a39b2941261c5a36de217f6da45164d3a}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_a39b2941261c5a36de217f6da45164d3a}} 
+\index{moa.classifiers.trees.iadem.Iadem2@{moa.classifiers.trees.iadem.Iadem2}!leafPredictionOption@{leafPredictionOption}}
+\index{leafPredictionOption@{leafPredictionOption}!moa.classifiers.trees.iadem.Iadem2@{moa.classifiers.trees.iadem.Iadem2}}
+\doxysubsubsection{\texorpdfstring{leafPredictionOption}{leafPredictionOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_multi_choice_option}{Multi\+Choice\+Option}} moa.\+classifiers.\+trees.\+iadem.\+Iadem2.\+leaf\+Prediction\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} MultiChoiceOption(\textcolor{stringliteral}{"leafPrediction"}, \textcolor{charliteral}{'b'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Leaf prediction to use."}, \textcolor{keyword}{new} String[]\{}
+\DoxyCodeLine{                \textcolor{stringliteral}{"MC"}, \textcolor{stringliteral}{"NB"}, \textcolor{stringliteral}{"NBKirkby"}, \textcolor{stringliteral}{"WeightedVote"}\},}
+\DoxyCodeLine{            \textcolor{keyword}{new} String[]\{\textcolor{stringliteral}{"MC: Majority class."},}
+\DoxyCodeLine{                \textcolor{stringliteral}{"NB: Naïve Bayes."},}
+\DoxyCodeLine{                \textcolor{stringliteral}{"NBKirkby."},}
+\DoxyCodeLine{                \textcolor{stringliteral}{"WeightedVote: Weighted vote between NB and MC."}\},}
+\DoxyCodeLine{            1)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_a196995cad868979335a1550247a26101}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_a196995cad868979335a1550247a26101}} 
+\index{moa.classifiers.trees.iadem.Iadem2@{moa.classifiers.trees.iadem.Iadem2}!numericEstimatorOption@{numericEstimatorOption}}
+\index{numericEstimatorOption@{numericEstimatorOption}!moa.classifiers.trees.iadem.Iadem2@{moa.classifiers.trees.iadem.Iadem2}}
+\doxysubsubsection{\texorpdfstring{numericEstimatorOption}{numericEstimatorOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} moa.\+classifiers.\+trees.\+iadem.\+Iadem2.\+numeric\+Estimator\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} ClassOption(\textcolor{stringliteral}{"numericEstimator"},}
+\DoxyCodeLine{            \textcolor{charliteral}{'z'}, \textcolor{stringliteral}{"Numeric estimator to use."}, IademNumericAttributeObserver.class,}
+\DoxyCodeLine{            \textcolor{stringliteral}{"IademGaussianNumericAttributeClassObserver"})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_aab641ac33f50635b8ffbf62c192c784d}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_aab641ac33f50635b8ffbf62c192c784d}} 
+\index{moa.classifiers.trees.iadem.Iadem2@{moa.classifiers.trees.iadem.Iadem2}!splitConfidenceOption@{splitConfidenceOption}}
+\index{splitConfidenceOption@{splitConfidenceOption}!moa.classifiers.trees.iadem.Iadem2@{moa.classifiers.trees.iadem.Iadem2}}
+\doxysubsubsection{\texorpdfstring{splitConfidenceOption}{splitConfidenceOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} moa.\+classifiers.\+trees.\+iadem.\+Iadem2.\+split\+Confidence\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FloatOption(\textcolor{stringliteral}{"splitConfidence"}, \textcolor{charliteral}{'c'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"The allowable error in split decision, values closer to 0 will take longer to decide."},}
+\DoxyCodeLine{            0.01, 0.0, 1.0)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_ae35a3012427324595a2e905e4b28a43f}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_ae35a3012427324595a2e905e4b28a43f}} 
+\index{moa.classifiers.trees.iadem.Iadem2@{moa.classifiers.trees.iadem.Iadem2}!splitCriterionOption@{splitCriterionOption}}
+\index{splitCriterionOption@{splitCriterionOption}!moa.classifiers.trees.iadem.Iadem2@{moa.classifiers.trees.iadem.Iadem2}}
+\doxysubsubsection{\texorpdfstring{splitCriterionOption}{splitCriterionOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_multi_choice_option}{Multi\+Choice\+Option}} moa.\+classifiers.\+trees.\+iadem.\+Iadem2.\+split\+Criterion\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} MultiChoiceOption(\textcolor{stringliteral}{"splitCriterion"}, \textcolor{charliteral}{'s'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Split criterion to use."}, \textcolor{keyword}{new} String[]\{}
+\DoxyCodeLine{                \textcolor{stringliteral}{"entropy"}, \textcolor{stringliteral}{"entropy\_logVar"}, \textcolor{stringliteral}{"entropy\_logVar+Peso"}, \textcolor{stringliteral}{"entropy\_Peso"}, \textcolor{stringliteral}{"beta1"}, \textcolor{stringliteral}{"gamma1"}, \textcolor{stringliteral}{"beta2"}, \textcolor{stringliteral}{"gamma2"}, \textcolor{stringliteral}{"beta4"}, \textcolor{stringliteral}{"gamma4"}\}, \textcolor{keyword}{new} String[]\{}
+\DoxyCodeLine{                \textcolor{stringliteral}{"entropy"}, \textcolor{stringliteral}{"entropy\_logVar"}, \textcolor{stringliteral}{"entropy\_logVar+Peso"}, \textcolor{stringliteral}{"entropy\_Peso"}, \textcolor{stringliteral}{"beta1"}, \textcolor{stringliteral}{"gamma1"}, \textcolor{stringliteral}{"beta2"}, \textcolor{stringliteral}{"gamma2"}, \textcolor{stringliteral}{"beta4"}, \textcolor{stringliteral}{"gamma4"}\}, 0)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_a6426c1bec942fc77abbda017e85ba0b9}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_a6426c1bec942fc77abbda017e85ba0b9}} 
+\index{moa.classifiers.trees.iadem.Iadem2@{moa.classifiers.trees.iadem.Iadem2}!splitTestsOption@{splitTestsOption}}
+\index{splitTestsOption@{splitTestsOption}!moa.classifiers.trees.iadem.Iadem2@{moa.classifiers.trees.iadem.Iadem2}}
+\doxysubsubsection{\texorpdfstring{splitTestsOption}{splitTestsOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_multi_choice_option}{Multi\+Choice\+Option}} moa.\+classifiers.\+trees.\+iadem.\+Iadem2.\+split\+Tests\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} MultiChoiceOption(\textcolor{stringliteral}{"splitChoice"}, \textcolor{charliteral}{'i'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Methods for splitting leaf nodes."},}
+\DoxyCodeLine{            \textcolor{keyword}{new} String[]\{}
+\DoxyCodeLine{                \textcolor{stringliteral}{"onlyBinarySplit"}, \textcolor{stringliteral}{"onlyMultiwaySplit"}, \textcolor{stringliteral}{"bestSplit"}\}, \textcolor{keyword}{new} String[]\{}
+\DoxyCodeLine{                \textcolor{stringliteral}{"onlyBinary"}, \textcolor{stringliteral}{"onlyMultiway"}, \textcolor{stringliteral}{"bestSplit"}\},}
+\DoxyCodeLine{            2)}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/classifiers/trees/iadem/Iadem2.\+java\end{DoxyCompactItemize}

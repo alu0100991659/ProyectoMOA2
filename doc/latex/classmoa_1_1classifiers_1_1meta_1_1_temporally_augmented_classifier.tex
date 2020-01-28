@@ -1,0 +1,267 @@
+\hypertarget{classmoa_1_1classifiers_1_1meta_1_1_temporally_augmented_classifier}{}\doxysection{moa.\+classifiers.\+meta.\+Temporally\+Augmented\+Classifier Class Reference}
+\label{classmoa_1_1classifiers_1_1meta_1_1_temporally_augmented_classifier}\index{moa.classifiers.meta.TemporallyAugmentedClassifier@{moa.classifiers.meta.TemporallyAugmentedClassifier}}
+
+
+Inheritance diagram for moa.\+classifiers.\+meta.\+Temporally\+Augmented\+Classifier\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+classifiers.\+meta.\+Temporally\+Augmented\+Classifier\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_temporally_augmented_classifier_aa539cc577d4ca5584c9e5308f7212564}{get\+Purpose\+String}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_temporally_augmented_classifier_af2b36a8e976859e523f7a5fb58550a2d}{reset\+Learning\+Impl}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_temporally_augmented_classifier_aee5670abbacca0c7461cf6bf1117f7f1}{train\+On\+Instance\+Impl}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} instance)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_temporally_augmented_classifier_abbd8ac28548f9d01b012eb0ea094c8fe}\label{classmoa_1_1classifiers_1_1meta_1_1_temporally_augmented_classifier_abbd8ac28548f9d01b012eb0ea094c8fe}} 
+void {\bfseries add\+Old\+Label} (double new\+Prediction)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_temporally_augmented_classifier_aed84104af8bf7825863d64e91a385a34}\label{classmoa_1_1classifiers_1_1meta_1_1_temporally_augmented_classifier_aed84104af8bf7825863d64e91a385a34}} 
+void {\bfseries init\+Header} (\mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instances}{Instances}} dataset)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_temporally_augmented_classifier_a172bef12b69495b2ae195932478fb735}\label{classmoa_1_1classifiers_1_1meta_1_1_temporally_augmented_classifier_a172bef12b69495b2ae195932478fb735}} 
+\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} {\bfseries extend\+With\+Old\+Labels} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} instance)
+\item 
+double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_temporally_augmented_classifier_aed3b7b8d63e077e50e7f7ae5f0381e7e}{get\+Votes\+For\+Instance}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} instance)
+\item 
+boolean \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_temporally_augmented_classifier_ac83051056e1f8d1575316931ed751cc6}{is\+Randomizable}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_temporally_augmented_classifier_ab0bba4ec97f992bfd7daf6bd1fa04b3b}{get\+Model\+Description}} (String\+Builder out, int indent)
+\item 
+String \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_temporally_augmented_classifier_a40b71d31f971dae689d6fdb3afbf248c}{to\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} {\bfseries base\+Learner\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries num\+Old\+Labels\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_flag_option}{Flag\+Option}} {\bfseries label\+Delay\+Option}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_temporally_augmented_classifier_a70de460c24dfa1b04646f7609e0e51c7}{get\+Model\+Measurements\+Impl}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_temporally_augmented_classifier_ac7d9504ecbcbd8aab8f20fd3495dac12}\label{classmoa_1_1classifiers_1_1meta_1_1_temporally_augmented_classifier_ac7d9504ecbcbd8aab8f20fd3495dac12}} 
+\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier}{Classifier}} {\bfseries base\+Learner}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_temporally_augmented_classifier_a4caa05f1a7ac08db1c1a5eeaa4694445}\label{classmoa_1_1classifiers_1_1meta_1_1_temporally_augmented_classifier_a4caa05f1a7ac08db1c1a5eeaa4694445}} 
+double\mbox{[}$\,$\mbox{]} {\bfseries old\+Labels}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_temporally_augmented_classifier_a751f6b5595d9f0f52bd8ad9a3b1c349e}\label{classmoa_1_1classifiers_1_1meta_1_1_temporally_augmented_classifier_a751f6b5595d9f0f52bd8ad9a3b1c349e}} 
+\mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instances}{Instances}} {\bfseries header}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Include labels of previous instances into the training data
+
+This enables a classifier to exploit potentially present auto-\/correlation 
+
+Parameters\+:
+
+
+\begin{DoxyItemize}
+\item -\/l \+: Classiﬁer to train 
+\item -\/n \+: The number of old labels to include 
+\end{DoxyItemize}
+
+\begin{DoxyAuthor}{Author}
+Bernhard Pfahringer (\href{mailto:bernhard@cs.waikato.ac.nz}{\texttt{ bernhard@cs.\+waikato.\+ac.\+nz}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+1 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_temporally_augmented_classifier_ab0bba4ec97f992bfd7daf6bd1fa04b3b}\label{classmoa_1_1classifiers_1_1meta_1_1_temporally_augmented_classifier_ab0bba4ec97f992bfd7daf6bd1fa04b3b}} 
+\index{moa.classifiers.meta.TemporallyAugmentedClassifier@{moa.classifiers.meta.TemporallyAugmentedClassifier}!getModelDescription@{getModelDescription}}
+\index{getModelDescription@{getModelDescription}!moa.classifiers.meta.TemporallyAugmentedClassifier@{moa.classifiers.meta.TemporallyAugmentedClassifier}}
+\doxysubsubsection{\texorpdfstring{getModelDescription()}{getModelDescription()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+meta.\+Temporally\+Augmented\+Classifier.\+get\+Model\+Description (\begin{DoxyParamCaption}\item[{String\+Builder}]{out,  }\item[{int}]{indent }\end{DoxyParamCaption})}
+
+Returns a string representation of the model.
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & the stringbuilder to add the description \\
+\hline
+{\em indent} & the number of characters to indent \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a30e5ff32bc8127dfb7436945776b7523}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_temporally_augmented_classifier_a70de460c24dfa1b04646f7609e0e51c7}\label{classmoa_1_1classifiers_1_1meta_1_1_temporally_augmented_classifier_a70de460c24dfa1b04646f7609e0e51c7}} 
+\index{moa.classifiers.meta.TemporallyAugmentedClassifier@{moa.classifiers.meta.TemporallyAugmentedClassifier}!getModelMeasurementsImpl@{getModelMeasurementsImpl}}
+\index{getModelMeasurementsImpl@{getModelMeasurementsImpl}!moa.classifiers.meta.TemporallyAugmentedClassifier@{moa.classifiers.meta.TemporallyAugmentedClassifier}}
+\doxysubsubsection{\texorpdfstring{getModelMeasurementsImpl()}{getModelMeasurementsImpl()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}} \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+meta.\+Temporally\+Augmented\+Classifier.\+get\+Model\+Measurements\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Gets the current measurements of this classifier.~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden.
+
+\begin{DoxyReturn}{Returns}
+an array of measurements to be used in evaluation tasks 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_ac2bebede21c9d2d8cd11d95a7e20e529}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_temporally_augmented_classifier_aa539cc577d4ca5584c9e5308f7212564}\label{classmoa_1_1classifiers_1_1meta_1_1_temporally_augmented_classifier_aa539cc577d4ca5584c9e5308f7212564}} 
+\index{moa.classifiers.meta.TemporallyAugmentedClassifier@{moa.classifiers.meta.TemporallyAugmentedClassifier}!getPurposeString@{getPurposeString}}
+\index{getPurposeString@{getPurposeString}!moa.classifiers.meta.TemporallyAugmentedClassifier@{moa.classifiers.meta.TemporallyAugmentedClassifier}}
+\doxysubsubsection{\texorpdfstring{getPurposeString()}{getPurposeString()}}
+{\footnotesize\ttfamily String moa.\+classifiers.\+meta.\+Temporally\+Augmented\+Classifier.\+get\+Purpose\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Options to handle Dictionary with option texts and objects 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a3fc6ae11234b88e51941a77ddb879d8b}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_temporally_augmented_classifier_aed3b7b8d63e077e50e7f7ae5f0381e7e}\label{classmoa_1_1classifiers_1_1meta_1_1_temporally_augmented_classifier_aed3b7b8d63e077e50e7f7ae5f0381e7e}} 
+\index{moa.classifiers.meta.TemporallyAugmentedClassifier@{moa.classifiers.meta.TemporallyAugmentedClassifier}!getVotesForInstance@{getVotesForInstance}}
+\index{getVotesForInstance@{getVotesForInstance}!moa.classifiers.meta.TemporallyAugmentedClassifier@{moa.classifiers.meta.TemporallyAugmentedClassifier}}
+\doxysubsubsection{\texorpdfstring{getVotesForInstance()}{getVotesForInstance()}}
+{\footnotesize\ttfamily double \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+meta.\+Temporally\+Augmented\+Classifier.\+get\+Votes\+For\+Instance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{inst }\end{DoxyParamCaption})}
+
+Predicts the class memberships for a given instance. If an instance is unclassified, the returned array elements must be all zero.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & the instance to be classified \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an array containing the estimated membership probabilities of the test instance in each class 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a0e3589c4fa6f088d82d64514afd9513c}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_temporally_augmented_classifier_ac83051056e1f8d1575316931ed751cc6}\label{classmoa_1_1classifiers_1_1meta_1_1_temporally_augmented_classifier_ac83051056e1f8d1575316931ed751cc6}} 
+\index{moa.classifiers.meta.TemporallyAugmentedClassifier@{moa.classifiers.meta.TemporallyAugmentedClassifier}!isRandomizable@{isRandomizable}}
+\index{isRandomizable@{isRandomizable}!moa.classifiers.meta.TemporallyAugmentedClassifier@{moa.classifiers.meta.TemporallyAugmentedClassifier}}
+\doxysubsubsection{\texorpdfstring{isRandomizable()}{isRandomizable()}}
+{\footnotesize\ttfamily boolean moa.\+classifiers.\+meta.\+Temporally\+Augmented\+Classifier.\+is\+Randomizable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets whether this learner needs a random seed. Examples of methods that needs a random seed are bagging and boosting.
+
+\begin{DoxyReturn}{Returns}
+true if the learner needs a random seed. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1learners_1_1_learner_a2f1ff9007b5eb5f53801f474b4d42a61}{moa.\+learners.\+Learner$<$ E extends Example $>$}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_temporally_augmented_classifier_af2b36a8e976859e523f7a5fb58550a2d}\label{classmoa_1_1classifiers_1_1meta_1_1_temporally_augmented_classifier_af2b36a8e976859e523f7a5fb58550a2d}} 
+\index{moa.classifiers.meta.TemporallyAugmentedClassifier@{moa.classifiers.meta.TemporallyAugmentedClassifier}!resetLearningImpl@{resetLearningImpl}}
+\index{resetLearningImpl@{resetLearningImpl}!moa.classifiers.meta.TemporallyAugmentedClassifier@{moa.classifiers.meta.TemporallyAugmentedClassifier}}
+\doxysubsubsection{\texorpdfstring{resetLearningImpl()}{resetLearningImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+meta.\+Temporally\+Augmented\+Classifier.\+reset\+Learning\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Resets this classifier. It must be similar to starting a new classifier from scratch. ~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden. 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a099ffcf2417abb919d10d697c0648f29}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_temporally_augmented_classifier_a40b71d31f971dae689d6fdb3afbf248c}\label{classmoa_1_1classifiers_1_1meta_1_1_temporally_augmented_classifier_a40b71d31f971dae689d6fdb3afbf248c}} 
+\index{moa.classifiers.meta.TemporallyAugmentedClassifier@{moa.classifiers.meta.TemporallyAugmentedClassifier}!toString@{toString}}
+\index{toString@{toString}!moa.classifiers.meta.TemporallyAugmentedClassifier@{moa.classifiers.meta.TemporallyAugmentedClassifier}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily String moa.\+classifiers.\+meta.\+Temporally\+Augmented\+Classifier.\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns a description of the object.
+
+\begin{DoxyReturn}{Returns}
+a description of the object 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1_abstract_m_o_a_object_ac686fd3b07c734cf21f1894376fe402d}{moa.\+Abstract\+M\+O\+A\+Object}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_temporally_augmented_classifier_aee5670abbacca0c7461cf6bf1117f7f1}\label{classmoa_1_1classifiers_1_1meta_1_1_temporally_augmented_classifier_aee5670abbacca0c7461cf6bf1117f7f1}} 
+\index{moa.classifiers.meta.TemporallyAugmentedClassifier@{moa.classifiers.meta.TemporallyAugmentedClassifier}!trainOnInstanceImpl@{trainOnInstanceImpl}}
+\index{trainOnInstanceImpl@{trainOnInstanceImpl}!moa.classifiers.meta.TemporallyAugmentedClassifier@{moa.classifiers.meta.TemporallyAugmentedClassifier}}
+\doxysubsubsection{\texorpdfstring{trainOnInstanceImpl()}{trainOnInstanceImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+meta.\+Temporally\+Augmented\+Classifier.\+train\+On\+Instance\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{inst }\end{DoxyParamCaption})}
+
+Trains this classifier incrementally using the given instance.~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & the instance to be used for training \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_aceb24d2ddeab386f2ecead6e3c0d3543}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_temporally_augmented_classifier_a3cb0cf0221b96cf3344d831dacb27ef1}\label{classmoa_1_1classifiers_1_1meta_1_1_temporally_augmented_classifier_a3cb0cf0221b96cf3344d831dacb27ef1}} 
+\index{moa.classifiers.meta.TemporallyAugmentedClassifier@{moa.classifiers.meta.TemporallyAugmentedClassifier}!baseLearnerOption@{baseLearnerOption}}
+\index{baseLearnerOption@{baseLearnerOption}!moa.classifiers.meta.TemporallyAugmentedClassifier@{moa.classifiers.meta.TemporallyAugmentedClassifier}}
+\doxysubsubsection{\texorpdfstring{baseLearnerOption}{baseLearnerOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} moa.\+classifiers.\+meta.\+Temporally\+Augmented\+Classifier.\+base\+Learner\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} ClassOption(\textcolor{stringliteral}{"baseLearner"}, \textcolor{charliteral}{'l'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Classifier to train."}, Classifier.class, \textcolor{stringliteral}{"trees.HoeffdingTree"})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_temporally_augmented_classifier_a462436b6f334c102df3ec8cb3416319c}\label{classmoa_1_1classifiers_1_1meta_1_1_temporally_augmented_classifier_a462436b6f334c102df3ec8cb3416319c}} 
+\index{moa.classifiers.meta.TemporallyAugmentedClassifier@{moa.classifiers.meta.TemporallyAugmentedClassifier}!labelDelayOption@{labelDelayOption}}
+\index{labelDelayOption@{labelDelayOption}!moa.classifiers.meta.TemporallyAugmentedClassifier@{moa.classifiers.meta.TemporallyAugmentedClassifier}}
+\doxysubsubsection{\texorpdfstring{labelDelayOption}{labelDelayOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_flag_option}{Flag\+Option}} moa.\+classifiers.\+meta.\+Temporally\+Augmented\+Classifier.\+label\+Delay\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FlagOption(\textcolor{stringliteral}{"labelDelay"}, \textcolor{charliteral}{'d'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{"Labels arrive with Delay. Use predictions instead of true Labels."})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_temporally_augmented_classifier_a64b80440563fe847286551736d65a638}\label{classmoa_1_1classifiers_1_1meta_1_1_temporally_augmented_classifier_a64b80440563fe847286551736d65a638}} 
+\index{moa.classifiers.meta.TemporallyAugmentedClassifier@{moa.classifiers.meta.TemporallyAugmentedClassifier}!numOldLabelsOption@{numOldLabelsOption}}
+\index{numOldLabelsOption@{numOldLabelsOption}!moa.classifiers.meta.TemporallyAugmentedClassifier@{moa.classifiers.meta.TemporallyAugmentedClassifier}}
+\doxysubsubsection{\texorpdfstring{numOldLabelsOption}{numOldLabelsOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+classifiers.\+meta.\+Temporally\+Augmented\+Classifier.\+num\+Old\+Labels\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(\textcolor{stringliteral}{"numOldLabels"}, \textcolor{charliteral}{'n'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"The number of old labels to add to each example."}, 1, 0, Integer.MAX\_VALUE)}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/classifiers/meta/Temporally\+Augmented\+Classifier.\+java\end{DoxyCompactItemize}

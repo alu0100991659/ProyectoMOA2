@@ -1,0 +1,180 @@
+\hypertarget{classmoa_1_1tasks_1_1meta_1_1_a_l_partition_evaluation_task}{}\doxysection{moa.\+tasks.\+meta.\+A\+L\+Partition\+Evaluation\+Task Class Reference}
+\label{classmoa_1_1tasks_1_1meta_1_1_a_l_partition_evaluation_task}\index{moa.tasks.meta.ALPartitionEvaluationTask@{moa.tasks.meta.ALPartitionEvaluationTask}}
+
+
+Inheritance diagram for moa.\+tasks.\+meta.\+A\+L\+Partition\+Evaluation\+Task\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+tasks.\+meta.\+A\+L\+Partition\+Evaluation\+Task\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classmoa_1_1tasks_1_1meta_1_1_a_l_partition_evaluation_task_ac9752cceec1651cf0c9572167fd7dfb9}{get\+Purpose\+String}} ()
+\item 
+Class$<$?$>$ \mbox{\hyperlink{classmoa_1_1tasks_1_1meta_1_1_a_l_partition_evaluation_task_afee3e61481d993d5d82c9b80a34b8c42}{get\+Task\+Result\+Type}} ()
+\item 
+List$<$ \mbox{\hyperlink{classmoa_1_1tasks_1_1meta_1_1_a_l_task_thread}{A\+L\+Task\+Thread}} $>$ \mbox{\hyperlink{classmoa_1_1tasks_1_1meta_1_1_a_l_partition_evaluation_task_a1dc1619734b93a9dcd585184d8b3b906}{get\+Subtask\+Threads}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} {\bfseries multi\+Param\+Task\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries num\+Partitions\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries random\+Seed\+Option}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classmoa_1_1tasks_1_1meta_1_1_a_l_partition_evaluation_task_ad92751670a7d9f72e84a88f2b8e7ddc6}{prepare\+For\+Use\+Impl}} (\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}} monitor, \mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}} repository)
+\item 
+Object \mbox{\hyperlink{classmoa_1_1tasks_1_1meta_1_1_a_l_partition_evaluation_task_a1440fd3da4b5e0d7c4c7bda49ad52e49}{do\+Main\+Task}} (\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}} monitor, \mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}} repository)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This task extensively evaluates an active learning classifier on a stream. First, the given data set is partitioned into subsets, each leaving out a different part of the overall data. On each subset, the \mbox{\hyperlink{classmoa_1_1tasks_1_1meta_1_1_a_l_multi_param_task}{A\+L\+Multi\+Param\+Task}} is performed which individually evaluates the active learning classifier for each element of a set of parameter values. The individual evaluation is done by prequential evaluation (testing, then training with each example in sequence).
+
+\begin{DoxyAuthor}{Author}
+Cornelius Styp von Rekowski (\href{mailto:cornelius.styp@ovgu.de}{\texttt{ cornelius.\+styp@ovgu.\+de}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+1 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1meta_1_1_a_l_partition_evaluation_task_a1440fd3da4b5e0d7c4c7bda49ad52e49}\label{classmoa_1_1tasks_1_1meta_1_1_a_l_partition_evaluation_task_a1440fd3da4b5e0d7c4c7bda49ad52e49}} 
+\index{moa.tasks.meta.ALPartitionEvaluationTask@{moa.tasks.meta.ALPartitionEvaluationTask}!doMainTask@{doMainTask}}
+\index{doMainTask@{doMainTask}!moa.tasks.meta.ALPartitionEvaluationTask@{moa.tasks.meta.ALPartitionEvaluationTask}}
+\doxysubsubsection{\texorpdfstring{doMainTask()}{doMainTask()}}
+{\footnotesize\ttfamily Object moa.\+tasks.\+meta.\+A\+L\+Partition\+Evaluation\+Task.\+do\+Main\+Task (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}}}]{monitor,  }\item[{\mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}}}]{repository }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+This method performs this task. {\ttfamily \mbox{\hyperlink{classmoa_1_1tasks_1_1_abstract_task}{Abstract\+Task}}} implements {\ttfamily do\+Task}, that uses {\ttfamily do\+Task\+Impl}. {\ttfamily \mbox{\hyperlink{classmoa_1_1tasks_1_1_main_task}{Main\+Task}}} implements {\ttfamily do\+Task\+Impl} using {\ttfamily do\+Main\+Task} so its extensions only need to implement {\ttfamily do\+Main\+Task}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em monitor} & the \mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}} to use \\
+\hline
+{\em repository} & the Object\+Repository to use \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an object with the result of this task 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1tasks_1_1_main_task_afab790976c2ace902aa1e2f780442788}{moa.\+tasks.\+Main\+Task}}.
+
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1meta_1_1_a_l_partition_evaluation_task_ac9752cceec1651cf0c9572167fd7dfb9}\label{classmoa_1_1tasks_1_1meta_1_1_a_l_partition_evaluation_task_ac9752cceec1651cf0c9572167fd7dfb9}} 
+\index{moa.tasks.meta.ALPartitionEvaluationTask@{moa.tasks.meta.ALPartitionEvaluationTask}!getPurposeString@{getPurposeString}}
+\index{getPurposeString@{getPurposeString}!moa.tasks.meta.ALPartitionEvaluationTask@{moa.tasks.meta.ALPartitionEvaluationTask}}
+\doxysubsubsection{\texorpdfstring{getPurposeString()}{getPurposeString()}}
+{\footnotesize\ttfamily String moa.\+tasks.\+meta.\+A\+L\+Partition\+Evaluation\+Task.\+get\+Purpose\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Options to handle Dictionary with option texts and objects 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1options_1_1_abstract_option_handler_abc8df69aea27ef85060557a9e918b2ca}{moa.\+options.\+Abstract\+Option\+Handler}}.
+
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1meta_1_1_a_l_partition_evaluation_task_a1dc1619734b93a9dcd585184d8b3b906}\label{classmoa_1_1tasks_1_1meta_1_1_a_l_partition_evaluation_task_a1dc1619734b93a9dcd585184d8b3b906}} 
+\index{moa.tasks.meta.ALPartitionEvaluationTask@{moa.tasks.meta.ALPartitionEvaluationTask}!getSubtaskThreads@{getSubtaskThreads}}
+\index{getSubtaskThreads@{getSubtaskThreads}!moa.tasks.meta.ALPartitionEvaluationTask@{moa.tasks.meta.ALPartitionEvaluationTask}}
+\doxysubsubsection{\texorpdfstring{getSubtaskThreads()}{getSubtaskThreads()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classmoa_1_1tasks_1_1meta_1_1_a_l_task_thread}{A\+L\+Task\+Thread}}$>$ moa.\+tasks.\+meta.\+A\+L\+Partition\+Evaluation\+Task.\+get\+Subtask\+Threads (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the list of threads for all subtasks and recursively the children\textquotesingle{}s subtasks.
+
+\begin{DoxyReturn}{Returns}
+list of subtask threads, recursively generated 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1tasks_1_1meta_1_1_a_l_main_task_a09ee9c9087bcff13236ed207d92c0a35}{moa.\+tasks.\+meta.\+A\+L\+Main\+Task}}.
+
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1meta_1_1_a_l_partition_evaluation_task_afee3e61481d993d5d82c9b80a34b8c42}\label{classmoa_1_1tasks_1_1meta_1_1_a_l_partition_evaluation_task_afee3e61481d993d5d82c9b80a34b8c42}} 
+\index{moa.tasks.meta.ALPartitionEvaluationTask@{moa.tasks.meta.ALPartitionEvaluationTask}!getTaskResultType@{getTaskResultType}}
+\index{getTaskResultType@{getTaskResultType}!moa.tasks.meta.ALPartitionEvaluationTask@{moa.tasks.meta.ALPartitionEvaluationTask}}
+\doxysubsubsection{\texorpdfstring{getTaskResultType()}{getTaskResultType()}}
+{\footnotesize\ttfamily Class$<$?$>$ moa.\+tasks.\+meta.\+A\+L\+Partition\+Evaluation\+Task.\+get\+Task\+Result\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the result type of this task. Tasks can return Learning\+Curve, Learning\+Evaluation, Classifier, String, Instances..
+
+\begin{DoxyReturn}{Returns}
+a class object of the result of this task 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_a568100cd931416820d1bcc81032301f6}{moa.\+tasks.\+Task}}.
+
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1meta_1_1_a_l_partition_evaluation_task_ad92751670a7d9f72e84a88f2b8e7ddc6}\label{classmoa_1_1tasks_1_1meta_1_1_a_l_partition_evaluation_task_ad92751670a7d9f72e84a88f2b8e7ddc6}} 
+\index{moa.tasks.meta.ALPartitionEvaluationTask@{moa.tasks.meta.ALPartitionEvaluationTask}!prepareForUseImpl@{prepareForUseImpl}}
+\index{prepareForUseImpl@{prepareForUseImpl}!moa.tasks.meta.ALPartitionEvaluationTask@{moa.tasks.meta.ALPartitionEvaluationTask}}
+\doxysubsubsection{\texorpdfstring{prepareForUseImpl()}{prepareForUseImpl()}}
+{\footnotesize\ttfamily void moa.\+tasks.\+meta.\+A\+L\+Partition\+Evaluation\+Task.\+prepare\+For\+Use\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}}}]{monitor,  }\item[{\mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}}}]{repository }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+This method describes the implementation of how to prepare this object for use. All classes that extends this class have to implement {\ttfamily prepare\+For\+Use\+Impl} and not {\ttfamily prepare\+For\+Use} since {\ttfamily prepare\+For\+Use} calls {\ttfamily prepare\+For\+Use\+Impl}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em monitor} & the \mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}} to use \\
+\hline
+{\em repository} & the Object\+Repository to use \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1tasks_1_1_abstract_task_ac70d5074f64417facf9021f935fdc186}{moa.\+tasks.\+Abstract\+Task}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1meta_1_1_a_l_partition_evaluation_task_a967841c5993878183ee264ebd2e0ed32}\label{classmoa_1_1tasks_1_1meta_1_1_a_l_partition_evaluation_task_a967841c5993878183ee264ebd2e0ed32}} 
+\index{moa.tasks.meta.ALPartitionEvaluationTask@{moa.tasks.meta.ALPartitionEvaluationTask}!multiParamTaskOption@{multiParamTaskOption}}
+\index{multiParamTaskOption@{multiParamTaskOption}!moa.tasks.meta.ALPartitionEvaluationTask@{moa.tasks.meta.ALPartitionEvaluationTask}}
+\doxysubsubsection{\texorpdfstring{multiParamTaskOption}{multiParamTaskOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} moa.\+tasks.\+meta.\+A\+L\+Partition\+Evaluation\+Task.\+multi\+Param\+Task\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} ClassOption(}
+\DoxyCodeLine{            \textcolor{stringliteral}{"multiParamTask"}, \textcolor{charliteral}{'t'}, }
+\DoxyCodeLine{            \textcolor{stringliteral}{"Multi param task to be performed for each partition"}, }
+\DoxyCodeLine{            ALMultiParamTask.class, \textcolor{stringliteral}{"moa.tasks.meta.ALMultiParamTask"})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1meta_1_1_a_l_partition_evaluation_task_a456d236569a2328da907dd1cc27cff74}\label{classmoa_1_1tasks_1_1meta_1_1_a_l_partition_evaluation_task_a456d236569a2328da907dd1cc27cff74}} 
+\index{moa.tasks.meta.ALPartitionEvaluationTask@{moa.tasks.meta.ALPartitionEvaluationTask}!numPartitionsOption@{numPartitionsOption}}
+\index{numPartitionsOption@{numPartitionsOption}!moa.tasks.meta.ALPartitionEvaluationTask@{moa.tasks.meta.ALPartitionEvaluationTask}}
+\doxysubsubsection{\texorpdfstring{numPartitionsOption}{numPartitionsOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+tasks.\+meta.\+A\+L\+Partition\+Evaluation\+Task.\+num\+Partitions\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(\textcolor{stringliteral}{"numPartitions"}, \textcolor{charliteral}{'k'}, }
+\DoxyCodeLine{            \textcolor{stringliteral}{"Number of data set partitions."}, 10)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1meta_1_1_a_l_partition_evaluation_task_a6d1af9f2a7ec58cba4cb34f4f649829b}\label{classmoa_1_1tasks_1_1meta_1_1_a_l_partition_evaluation_task_a6d1af9f2a7ec58cba4cb34f4f649829b}} 
+\index{moa.tasks.meta.ALPartitionEvaluationTask@{moa.tasks.meta.ALPartitionEvaluationTask}!randomSeedOption@{randomSeedOption}}
+\index{randomSeedOption@{randomSeedOption}!moa.tasks.meta.ALPartitionEvaluationTask@{moa.tasks.meta.ALPartitionEvaluationTask}}
+\doxysubsubsection{\texorpdfstring{randomSeedOption}{randomSeedOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+tasks.\+meta.\+A\+L\+Partition\+Evaluation\+Task.\+random\+Seed\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(\textcolor{stringliteral}{"randomSeed"}, \textcolor{charliteral}{'r'}, }
+\DoxyCodeLine{            \textcolor{stringliteral}{"random seed which is used for partitioning of the stream."}, 0)}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/tasks/meta/A\+L\+Partition\+Evaluation\+Task.\+java\end{DoxyCompactItemize}

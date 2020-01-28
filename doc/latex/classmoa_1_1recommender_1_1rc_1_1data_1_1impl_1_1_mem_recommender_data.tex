@@ -1,0 +1,133 @@
+\hypertarget{classmoa_1_1recommender_1_1rc_1_1data_1_1impl_1_1_mem_recommender_data}{}\doxysection{moa.\+recommender.\+rc.\+data.\+impl.\+Mem\+Recommender\+Data Class Reference}
+\label{classmoa_1_1recommender_1_1rc_1_1data_1_1impl_1_1_mem_recommender_data}\index{moa.recommender.rc.data.impl.MemRecommenderData@{moa.recommender.rc.data.impl.MemRecommenderData}}
+
+
+Inheritance diagram for moa.\+recommender.\+rc.\+data.\+impl.\+Mem\+Recommender\+Data\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+recommender.\+rc.\+data.\+impl.\+Mem\+Recommender\+Data\+:
+% FIG 1
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Entity\+Stats}
+\item 
+class \mbox{\hyperlink{classmoa_1_1recommender_1_1rc_1_1data_1_1impl_1_1_mem_recommender_data_1_1_rating_iterator}{Rating\+Iterator}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1recommender_1_1rc_1_1data_1_1impl_1_1_mem_recommender_data_a4cea2ae3d840cf1e963925be61fc8beb}\label{classmoa_1_1recommender_1_1rc_1_1data_1_1impl_1_1_mem_recommender_data_a4cea2ae3d840cf1e963925be61fc8beb}} 
+void {\bfseries add\+User} (int user\+ID, List$<$ Integer $>$ rated\+Items, List$<$ Double $>$ ratings)
+\item 
+\mbox{\Hypertarget{classmoa_1_1recommender_1_1rc_1_1data_1_1impl_1_1_mem_recommender_data_ad7ef71acad649b118e602cb08bd26f47}\label{classmoa_1_1recommender_1_1rc_1_1data_1_1impl_1_1_mem_recommender_data_ad7ef71acad649b118e602cb08bd26f47}} 
+void {\bfseries remove\+User} (int user\+ID)
+\item 
+\mbox{\Hypertarget{classmoa_1_1recommender_1_1rc_1_1data_1_1impl_1_1_mem_recommender_data_ae74a8402c74a2b836e1295074921168f}\label{classmoa_1_1recommender_1_1rc_1_1data_1_1impl_1_1_mem_recommender_data_ae74a8402c74a2b836e1295074921168f}} 
+void {\bfseries add\+Item} (int item\+ID, List$<$ Integer $>$ rating\+Users, List$<$ Double $>$ ratings)
+\item 
+\mbox{\Hypertarget{classmoa_1_1recommender_1_1rc_1_1data_1_1impl_1_1_mem_recommender_data_a799945056c6a9dd0344eb02547a1d1f3}\label{classmoa_1_1recommender_1_1rc_1_1data_1_1impl_1_1_mem_recommender_data_a799945056c6a9dd0344eb02547a1d1f3}} 
+void {\bfseries remove\+Item} (int item\+ID)
+\item 
+\mbox{\Hypertarget{classmoa_1_1recommender_1_1rc_1_1data_1_1impl_1_1_mem_recommender_data_a2b81eb45b71400367d9492d98d54f1a3}\label{classmoa_1_1recommender_1_1rc_1_1data_1_1impl_1_1_mem_recommender_data_a2b81eb45b71400367d9492d98d54f1a3}} 
+void {\bfseries set\+Rating} (int user\+ID, int item\+ID, double rating)
+\item 
+\mbox{\Hypertarget{classmoa_1_1recommender_1_1rc_1_1data_1_1impl_1_1_mem_recommender_data_a00f2b342542c3537a8e54ff572179403}\label{classmoa_1_1recommender_1_1rc_1_1data_1_1impl_1_1_mem_recommender_data_a00f2b342542c3537a8e54ff572179403}} 
+void {\bfseries remove\+Rating} (int user\+ID, int item\+ID)
+\item 
+\mbox{\Hypertarget{classmoa_1_1recommender_1_1rc_1_1data_1_1impl_1_1_mem_recommender_data_a47f35e70b606876c58399c414ac7fa06}\label{classmoa_1_1recommender_1_1rc_1_1data_1_1impl_1_1_mem_recommender_data_a47f35e70b606876c58399c414ac7fa06}} 
+\mbox{\hyperlink{classmoa_1_1recommender_1_1rc_1_1utils_1_1_sparse_vector}{Sparse\+Vector}} {\bfseries get\+Ratings\+User} (int user\+ID)
+\item 
+\mbox{\Hypertarget{classmoa_1_1recommender_1_1rc_1_1data_1_1impl_1_1_mem_recommender_data_acd685826eebba29878731f599d25a207}\label{classmoa_1_1recommender_1_1rc_1_1data_1_1impl_1_1_mem_recommender_data_acd685826eebba29878731f599d25a207}} 
+double {\bfseries get\+Rating} (int user\+ID, int item\+ID)
+\item 
+\mbox{\Hypertarget{classmoa_1_1recommender_1_1rc_1_1data_1_1impl_1_1_mem_recommender_data_a0d2b170d79bfd8d4c8188c073f5af3a5}\label{classmoa_1_1recommender_1_1rc_1_1data_1_1impl_1_1_mem_recommender_data_a0d2b170d79bfd8d4c8188c073f5af3a5}} 
+int {\bfseries get\+Num\+Items} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1recommender_1_1rc_1_1data_1_1impl_1_1_mem_recommender_data_a085d5079a734d6c4b4df4036e918bed5}\label{classmoa_1_1recommender_1_1rc_1_1data_1_1impl_1_1_mem_recommender_data_a085d5079a734d6c4b4df4036e918bed5}} 
+int {\bfseries get\+Num\+Users} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1recommender_1_1rc_1_1data_1_1impl_1_1_mem_recommender_data_a486ddeec29977a1f7b12883a6a62b691}\label{classmoa_1_1recommender_1_1rc_1_1data_1_1impl_1_1_mem_recommender_data_a486ddeec29977a1f7b12883a6a62b691}} 
+double {\bfseries get\+Avg\+Rating\+User} (int user\+ID)
+\item 
+\mbox{\Hypertarget{classmoa_1_1recommender_1_1rc_1_1data_1_1impl_1_1_mem_recommender_data_a24c0e5ff15b4c2198b355de202f5d387}\label{classmoa_1_1recommender_1_1rc_1_1data_1_1impl_1_1_mem_recommender_data_a24c0e5ff15b4c2198b355de202f5d387}} 
+double {\bfseries get\+Avg\+Rating\+Item} (int item\+ID)
+\item 
+\mbox{\Hypertarget{classmoa_1_1recommender_1_1rc_1_1data_1_1impl_1_1_mem_recommender_data_a6497355905151a8cf9e1b14c49db6918}\label{classmoa_1_1recommender_1_1rc_1_1data_1_1impl_1_1_mem_recommender_data_a6497355905151a8cf9e1b14c49db6918}} 
+double {\bfseries get\+Min\+Rating} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1recommender_1_1rc_1_1data_1_1impl_1_1_mem_recommender_data_a96a77221191dc277229565a775b67a07}\label{classmoa_1_1recommender_1_1rc_1_1data_1_1impl_1_1_mem_recommender_data_a96a77221191dc277229565a775b67a07}} 
+double {\bfseries get\+Max\+Rating} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1recommender_1_1rc_1_1data_1_1impl_1_1_mem_recommender_data_a83586527c030c721b9c43d5052f8cd71}\label{classmoa_1_1recommender_1_1rc_1_1data_1_1impl_1_1_mem_recommender_data_a83586527c030c721b9c43d5052f8cd71}} 
+Set$<$ Integer $>$ {\bfseries get\+Users} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1recommender_1_1rc_1_1data_1_1impl_1_1_mem_recommender_data_a8bb966478111dbcb0eeb3e6bbf813cd5}\label{classmoa_1_1recommender_1_1rc_1_1data_1_1impl_1_1_mem_recommender_data_a8bb966478111dbcb0eeb3e6bbf813cd5}} 
+\mbox{\hyperlink{classmoa_1_1recommender_1_1rc_1_1utils_1_1_sparse_vector}{Sparse\+Vector}} {\bfseries get\+Ratings\+Item} (int item\+ID)
+\item 
+\mbox{\Hypertarget{classmoa_1_1recommender_1_1rc_1_1data_1_1impl_1_1_mem_recommender_data_ad8d88867721f04fe1b636a7566f8b002}\label{classmoa_1_1recommender_1_1rc_1_1data_1_1impl_1_1_mem_recommender_data_ad8d88867721f04fe1b636a7566f8b002}} 
+Set$<$ Integer $>$ {\bfseries get\+Items} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1recommender_1_1rc_1_1data_1_1impl_1_1_mem_recommender_data_a74c6ea9c0e52daefb2ea031654c05772}\label{classmoa_1_1recommender_1_1rc_1_1data_1_1impl_1_1_mem_recommender_data_a74c6ea9c0e52daefb2ea031654c05772}} 
+double {\bfseries get\+Global\+Mean} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1recommender_1_1rc_1_1data_1_1impl_1_1_mem_recommender_data_a77f8c9b920eb9992952e15e80a6fa479}\label{classmoa_1_1recommender_1_1rc_1_1data_1_1impl_1_1_mem_recommender_data_a77f8c9b920eb9992952e15e80a6fa479}} 
+int {\bfseries count\+Ratings\+User} (int user\+ID)
+\item 
+\mbox{\Hypertarget{classmoa_1_1recommender_1_1rc_1_1data_1_1impl_1_1_mem_recommender_data_a20f6e3b558bec91e233901d85b33d5cf}\label{classmoa_1_1recommender_1_1rc_1_1data_1_1impl_1_1_mem_recommender_data_a20f6e3b558bec91e233901d85b33d5cf}} 
+int {\bfseries count\+Ratings\+Item} (int item\+ID)
+\item 
+\mbox{\Hypertarget{classmoa_1_1recommender_1_1rc_1_1data_1_1impl_1_1_mem_recommender_data_a2e3802fad1a456a10b07bb32dedeae4b}\label{classmoa_1_1recommender_1_1rc_1_1data_1_1impl_1_1_mem_recommender_data_a2e3802fad1a456a10b07bb32dedeae4b}} 
+Iterator$<$ \mbox{\hyperlink{classmoa_1_1recommender_1_1rc_1_1utils_1_1_rating}{Rating}} $>$ {\bfseries rating\+Iterator} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1recommender_1_1rc_1_1data_1_1impl_1_1_mem_recommender_data_a5351d7d3da6cd03107e1b8c558f0e6ec}\label{classmoa_1_1recommender_1_1rc_1_1data_1_1impl_1_1_mem_recommender_data_a5351d7d3da6cd03107e1b8c558f0e6ec}} 
+int {\bfseries get\+Num\+Ratings} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1recommender_1_1rc_1_1data_1_1impl_1_1_mem_recommender_data_a31aad62ea1701325f4718e24dfef1eec}\label{classmoa_1_1recommender_1_1rc_1_1data_1_1impl_1_1_mem_recommender_data_a31aad62ea1701325f4718e24dfef1eec}} 
+boolean {\bfseries user\+Exists} (int user\+ID)
+\item 
+\mbox{\Hypertarget{classmoa_1_1recommender_1_1rc_1_1data_1_1impl_1_1_mem_recommender_data_a0e3fee5bbd2e7bf857aa092b55c8b1fe}\label{classmoa_1_1recommender_1_1rc_1_1data_1_1impl_1_1_mem_recommender_data_a0e3fee5bbd2e7bf857aa092b55c8b1fe}} 
+boolean {\bfseries item\+Exists} (int item\+ID)
+\item 
+\mbox{\Hypertarget{classmoa_1_1recommender_1_1rc_1_1data_1_1impl_1_1_mem_recommender_data_a99977afb8d602a90129c9811c7b1aaf5}\label{classmoa_1_1recommender_1_1rc_1_1data_1_1impl_1_1_mem_recommender_data_a99977afb8d602a90129c9811c7b1aaf5}} 
+void {\bfseries clear} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1recommender_1_1rc_1_1data_1_1impl_1_1_mem_recommender_data_adf1583d6c6f944c86b6c6cf7a80ff50d}\label{classmoa_1_1recommender_1_1rc_1_1data_1_1impl_1_1_mem_recommender_data_adf1583d6c6f944c86b6c6cf7a80ff50d}} 
+Map$<$ Integer, Map$<$ Integer, Double $>$ $>$ {\bfseries ratings\+User}
+\item 
+\mbox{\Hypertarget{classmoa_1_1recommender_1_1rc_1_1data_1_1impl_1_1_mem_recommender_data_adb3746ff2a45d57f49f2cd65467b2361}\label{classmoa_1_1recommender_1_1rc_1_1data_1_1impl_1_1_mem_recommender_data_adb3746ff2a45d57f49f2cd65467b2361}} 
+Map$<$ Integer, Map$<$ Integer, Double $>$ $>$ {\bfseries ratings\+Item}
+\item 
+\mbox{\Hypertarget{classmoa_1_1recommender_1_1rc_1_1data_1_1impl_1_1_mem_recommender_data_a25fc5bf566e11463ae26162fb38571b5}\label{classmoa_1_1recommender_1_1rc_1_1data_1_1impl_1_1_mem_recommender_data_a25fc5bf566e11463ae26162fb38571b5}} 
+Map$<$ Integer, Entity\+Stats $>$ {\bfseries users\+Stats}
+\item 
+\mbox{\Hypertarget{classmoa_1_1recommender_1_1rc_1_1data_1_1impl_1_1_mem_recommender_data_ae6ea29b9bed4cebec6333bd0783da613}\label{classmoa_1_1recommender_1_1rc_1_1data_1_1impl_1_1_mem_recommender_data_ae6ea29b9bed4cebec6333bd0783da613}} 
+Map$<$ Integer, Entity\+Stats $>$ {\bfseries items\+Stats}
+\item 
+\mbox{\Hypertarget{classmoa_1_1recommender_1_1rc_1_1data_1_1impl_1_1_mem_recommender_data_ac7bb8b2cc4815a9ebe8db322563a2b8b}\label{classmoa_1_1recommender_1_1rc_1_1data_1_1impl_1_1_mem_recommender_data_ac7bb8b2cc4815a9ebe8db322563a2b8b}} 
+int {\bfseries n\+Items} = 0
+\item 
+\mbox{\Hypertarget{classmoa_1_1recommender_1_1rc_1_1data_1_1impl_1_1_mem_recommender_data_a1310739f628d4b132204792cdb30067f}\label{classmoa_1_1recommender_1_1rc_1_1data_1_1impl_1_1_mem_recommender_data_a1310739f628d4b132204792cdb30067f}} 
+int {\bfseries n\+Users} = 0
+\item 
+\mbox{\Hypertarget{classmoa_1_1recommender_1_1rc_1_1data_1_1impl_1_1_mem_recommender_data_a9dcd90a059a1cd7cd0cac4b62951065c}\label{classmoa_1_1recommender_1_1rc_1_1data_1_1impl_1_1_mem_recommender_data_a9dcd90a059a1cd7cd0cac4b62951065c}} 
+double {\bfseries sum\+Ratings} = 0
+\item 
+\mbox{\Hypertarget{classmoa_1_1recommender_1_1rc_1_1data_1_1impl_1_1_mem_recommender_data_a5a741cd5cd2cedd7f6c1d21f15d8f0f1}\label{classmoa_1_1recommender_1_1rc_1_1data_1_1impl_1_1_mem_recommender_data_a5a741cd5cd2cedd7f6c1d21f15d8f0f1}} 
+int {\bfseries n\+Ratings} = 0
+\item 
+\mbox{\Hypertarget{classmoa_1_1recommender_1_1rc_1_1data_1_1impl_1_1_mem_recommender_data_a5f3eb8fddb090b02715d1155d578d8d0}\label{classmoa_1_1recommender_1_1rc_1_1data_1_1impl_1_1_mem_recommender_data_a5f3eb8fddb090b02715d1155d578d8d0}} 
+double {\bfseries min\+Rating} = 0
+\item 
+\mbox{\Hypertarget{classmoa_1_1recommender_1_1rc_1_1data_1_1impl_1_1_mem_recommender_data_a80c09be35e91447101373e6c29ce7c3e}\label{classmoa_1_1recommender_1_1rc_1_1data_1_1impl_1_1_mem_recommender_data_a80c09be35e91447101373e6c29ce7c3e}} 
+double {\bfseries max\+Rating} = 0
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/recommender/rc/data/impl/Mem\+Recommender\+Data.\+java\end{DoxyCompactItemize}

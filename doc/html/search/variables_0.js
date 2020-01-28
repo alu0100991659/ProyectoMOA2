@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['addedpermanent_4061',['addedPermanent',['../classmoa_1_1classifiers_1_1meta_1_1_a_d_a_c_c.html#aa80279c16a581246063d9d150a5dd90f',1,'moa::classifiers::meta::ADACC']]],
+  ['additionalplotoption_4062',['additionalPlotOption',['../classmoa_1_1tasks_1_1_plot.html#ac68c74320330e1ca77af3f9214b3076f',1,'moa::tasks::Plot']]],
+  ['additionalsetoption_4063',['additionalSetOption',['../classmoa_1_1tasks_1_1_plot.html#a99a81a3676cc41a54e8f111fdfb8085b',1,'moa::tasks::Plot']]],
+  ['algorithm_4064',['algorithm',['../classmoa_1_1gui_1_1experimentertab_1_1_stream.html#a041f4b8595d821efaa88d40ccd7c4bd8',1,'moa::gui::experimentertab::Stream']]],
+  ['arff_4065',['arff',['../classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instances.html#ae8be389b963688dda7a364ed5ce9b8dd',1,'com::yahoo::labs::samoa::instances::Instances']]],
+  ['arff_5fattribute_4066',['ARFF_ATTRIBUTE',['../classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_attribute.html#ad579af950131ad5ea3dc11cdea15781c',1,'com::yahoo::labs::samoa::instances::Attribute']]],
+  ['arff_5fattribute_5fdate_4067',['ARFF_ATTRIBUTE_DATE',['../classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_attribute.html#a03682011987cb1dd4c8fe0dabc8e8b75',1,'com::yahoo::labs::samoa::instances::Attribute']]],
+  ['arff_5fattribute_5finteger_4068',['ARFF_ATTRIBUTE_INTEGER',['../classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_attribute.html#aacde2ba9d693b1bcdaca18c607bad229',1,'com::yahoo::labs::samoa::instances::Attribute']]],
+  ['arff_5fattribute_5fnumeric_4069',['ARFF_ATTRIBUTE_NUMERIC',['../classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_attribute.html#aff0c382c0f5446d723558663281f515e',1,'com::yahoo::labs::samoa::instances::Attribute']]],
+  ['arff_5fattribute_5freal_4070',['ARFF_ATTRIBUTE_REAL',['../classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_attribute.html#ab686d4fe3d6c9a08067e9f8c517a16d2',1,'com::yahoo::labs::samoa::instances::Attribute']]],
+  ['arff_5fattribute_5frelational_4071',['ARFF_ATTRIBUTE_RELATIONAL',['../classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_attribute.html#a95b947365b1b1daa895d84ca38b47135',1,'com::yahoo::labs::samoa::instances::Attribute']]],
+  ['arff_5fattribute_5fstring_4072',['ARFF_ATTRIBUTE_STRING',['../classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_attribute.html#acaad78d22dcfc9c6be5472a18fbca668',1,'com::yahoo::labs::samoa::instances::Attribute']]],
+  ['arff_5fdata_4073',['ARFF_DATA',['../classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instances.html#a0d761315617d46401b577b10df29955a',1,'com::yahoo::labs::samoa::instances::Instances']]],
+  ['arff_5fend_5fsubrelation_4074',['ARFF_END_SUBRELATION',['../classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_attribute.html#a59df64c9ed294fe83fed39397132aa86',1,'com::yahoo::labs::samoa::instances::Attribute']]],
+  ['arff_5frelation_4075',['ARFF_RELATION',['../classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instances.html#aa0feb24a3951a489144f6ec5fbfb0def',1,'com::yahoo::labs::samoa::instances::Instances']]],
+  ['attributes_4076',['attributes',['../classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_attributes_information.html#a22bd590a84e01230c4ddf70f7c546acf',1,'com::yahoo::labs::samoa::instances::AttributesInformation']]],
+  ['attributevalues_4077',['attributeValues',['../classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_attribute.html#adff43f237d9fdeb94ab125210e264026',1,'com.yahoo.labs.samoa.instances.Attribute.attributeValues()'],['../classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_dense_instance_data.html#a5f06267d55571dd6d879887c4f2e0309',1,'com.yahoo.labs.samoa.instances.DenseInstanceData.attributeValues()'],['../classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_sparse_instance_data.html#af6feab4bd34cf83ea49b91f8fc6bc034',1,'com.yahoo.labs.samoa.instances.SparseInstanceData.attributeValues()']]]
+];

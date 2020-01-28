@@ -1,0 +1,273 @@
+\hypertarget{classmoa_1_1tasks_1_1_evaluate_prequential_c_v}{}\doxysection{moa.\+tasks.\+Evaluate\+Prequential\+CV Class Reference}
+\label{classmoa_1_1tasks_1_1_evaluate_prequential_c_v}\index{moa.tasks.EvaluatePrequentialCV@{moa.tasks.EvaluatePrequentialCV}}
+
+
+Inheritance diagram for moa.\+tasks.\+Evaluate\+Prequential\+CV\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+tasks.\+Evaluate\+Prequential\+CV\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classmoa_1_1tasks_1_1_evaluate_prequential_c_v_a091913db1d40ee8748061777118358e7}{get\+Purpose\+String}} ()
+\item 
+Class$<$?$>$ \mbox{\hyperlink{classmoa_1_1tasks_1_1_evaluate_prequential_c_v_af45117981e335a6ec39d164dcd5ec55e}{get\+Task\+Result\+Type}} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_prequential_c_v_a7872ed8e62e2c4d35fb2e9a3160d3ed1}\label{classmoa_1_1tasks_1_1_evaluate_prequential_c_v_a7872ed8e62e2c4d35fb2e9a3160d3ed1}} 
+\mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}}\mbox{[}$\,$\mbox{]} {\bfseries get\+Evaluation\+Measurements} (\mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}}\mbox{[}$\,$\mbox{]} model\+Measurements, \mbox{\hyperlink{interfacemoa_1_1evaluation_1_1_learning_performance_evaluator}{Learning\+Performance\+Evaluator}}\mbox{[}$\,$\mbox{]} sub\+Evaluators)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} {\bfseries learner\+Option}
+\item 
+\mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} {\bfseries stream\+Option}
+\item 
+\mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} {\bfseries evaluator\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries instance\+Limit\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries time\+Limit\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries sample\+Frequency\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries mem\+Check\+Frequency\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_file_option}{File\+Option}} {\bfseries dump\+File\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries num\+Folds\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_multi_choice_option}{Multi\+Choice\+Option}} {\bfseries validation\+Methodology\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries random\+Seed\+Option}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Object \mbox{\hyperlink{classmoa_1_1tasks_1_1_evaluate_prequential_c_v_aab093ffbbbf79dcc1b26668dfb9298bb}{do\+Main\+Task}} (\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}} monitor, \mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}} repository)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task}{Task}} for prequential cross-\/validation evaluation of a classifier on a stream by testing then training with each example in sequence and doing cross-\/validation at the same time.
+
+Albert Bifet, Gianmarco De Francisci Morales, Jesse Read, Geoff Holmes, Bernhard Pfahringer\+: Efficient Online Evaluation of Big Data Stream Classifiers. K\+DD 2015\+: 59-\/68
+
+\begin{DoxyAuthor}{Author}
+Richard Kirkby (\href{mailto:rkirkby@cs.waikato.ac.nz}{\texttt{ rkirkby@cs.\+waikato.\+ac.\+nz}}) 
+
+Albert Bifet (abifet at cs dot waikato dot ac dot nz) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+7 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_prequential_c_v_aab093ffbbbf79dcc1b26668dfb9298bb}\label{classmoa_1_1tasks_1_1_evaluate_prequential_c_v_aab093ffbbbf79dcc1b26668dfb9298bb}} 
+\index{moa.tasks.EvaluatePrequentialCV@{moa.tasks.EvaluatePrequentialCV}!doMainTask@{doMainTask}}
+\index{doMainTask@{doMainTask}!moa.tasks.EvaluatePrequentialCV@{moa.tasks.EvaluatePrequentialCV}}
+\doxysubsubsection{\texorpdfstring{doMainTask()}{doMainTask()}}
+{\footnotesize\ttfamily Object moa.\+tasks.\+Evaluate\+Prequential\+C\+V.\+do\+Main\+Task (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}}}]{monitor,  }\item[{\mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}}}]{repository }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+This method performs this task. {\ttfamily \mbox{\hyperlink{classmoa_1_1tasks_1_1_abstract_task}{Abstract\+Task}}} implements {\ttfamily do\+Task}, that uses {\ttfamily do\+Task\+Impl}. {\ttfamily \mbox{\hyperlink{classmoa_1_1tasks_1_1_main_task}{Main\+Task}}} implements {\ttfamily do\+Task\+Impl} using {\ttfamily do\+Main\+Task} so its extensions only need to implement {\ttfamily do\+Main\+Task}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em monitor} & the \mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}} to use \\
+\hline
+{\em repository} & the Object\+Repository to use \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an object with the result of this task 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1tasks_1_1_main_task_afab790976c2ace902aa1e2f780442788}{moa.\+tasks.\+Main\+Task}}.
+
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_prequential_c_v_a091913db1d40ee8748061777118358e7}\label{classmoa_1_1tasks_1_1_evaluate_prequential_c_v_a091913db1d40ee8748061777118358e7}} 
+\index{moa.tasks.EvaluatePrequentialCV@{moa.tasks.EvaluatePrequentialCV}!getPurposeString@{getPurposeString}}
+\index{getPurposeString@{getPurposeString}!moa.tasks.EvaluatePrequentialCV@{moa.tasks.EvaluatePrequentialCV}}
+\doxysubsubsection{\texorpdfstring{getPurposeString()}{getPurposeString()}}
+{\footnotesize\ttfamily String moa.\+tasks.\+Evaluate\+Prequential\+C\+V.\+get\+Purpose\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Options to handle Dictionary with option texts and objects 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1options_1_1_abstract_option_handler_abc8df69aea27ef85060557a9e918b2ca}{moa.\+options.\+Abstract\+Option\+Handler}}.
+
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_prequential_c_v_af45117981e335a6ec39d164dcd5ec55e}\label{classmoa_1_1tasks_1_1_evaluate_prequential_c_v_af45117981e335a6ec39d164dcd5ec55e}} 
+\index{moa.tasks.EvaluatePrequentialCV@{moa.tasks.EvaluatePrequentialCV}!getTaskResultType@{getTaskResultType}}
+\index{getTaskResultType@{getTaskResultType}!moa.tasks.EvaluatePrequentialCV@{moa.tasks.EvaluatePrequentialCV}}
+\doxysubsubsection{\texorpdfstring{getTaskResultType()}{getTaskResultType()}}
+{\footnotesize\ttfamily Class$<$?$>$ moa.\+tasks.\+Evaluate\+Prequential\+C\+V.\+get\+Task\+Result\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the result type of this task. Tasks can return Learning\+Curve, Learning\+Evaluation, Classifier, String, Instances..
+
+\begin{DoxyReturn}{Returns}
+a class object of the result of this task 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_a568100cd931416820d1bcc81032301f6}{moa.\+tasks.\+Task}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_prequential_c_v_a358fe4ddc3ba5ee21479751f6daceea2}\label{classmoa_1_1tasks_1_1_evaluate_prequential_c_v_a358fe4ddc3ba5ee21479751f6daceea2}} 
+\index{moa.tasks.EvaluatePrequentialCV@{moa.tasks.EvaluatePrequentialCV}!dumpFileOption@{dumpFileOption}}
+\index{dumpFileOption@{dumpFileOption}!moa.tasks.EvaluatePrequentialCV@{moa.tasks.EvaluatePrequentialCV}}
+\doxysubsubsection{\texorpdfstring{dumpFileOption}{dumpFileOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_file_option}{File\+Option}} moa.\+tasks.\+Evaluate\+Prequential\+C\+V.\+dump\+File\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FileOption(\textcolor{stringliteral}{"dumpFile"}, \textcolor{charliteral}{'d'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"File to append intermediate csv results to."}, \textcolor{keyword}{null}, \textcolor{stringliteral}{"csv"}, \textcolor{keyword}{true})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_prequential_c_v_a2dc6f6d65d2d1ec12b15b9f2613b3a41}\label{classmoa_1_1tasks_1_1_evaluate_prequential_c_v_a2dc6f6d65d2d1ec12b15b9f2613b3a41}} 
+\index{moa.tasks.EvaluatePrequentialCV@{moa.tasks.EvaluatePrequentialCV}!evaluatorOption@{evaluatorOption}}
+\index{evaluatorOption@{evaluatorOption}!moa.tasks.EvaluatePrequentialCV@{moa.tasks.EvaluatePrequentialCV}}
+\doxysubsubsection{\texorpdfstring{evaluatorOption}{evaluatorOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} moa.\+tasks.\+Evaluate\+Prequential\+C\+V.\+evaluator\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} ClassOption(\textcolor{stringliteral}{"evaluator"}, \textcolor{charliteral}{'e'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Classification performance evaluation method."},}
+\DoxyCodeLine{            LearningPerformanceEvaluator.class,}
+\DoxyCodeLine{            \textcolor{stringliteral}{"WindowClassificationPerformanceEvaluator"})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_prequential_c_v_add0477283a2f1ffe0a1b8a5a6f14b9c3}\label{classmoa_1_1tasks_1_1_evaluate_prequential_c_v_add0477283a2f1ffe0a1b8a5a6f14b9c3}} 
+\index{moa.tasks.EvaluatePrequentialCV@{moa.tasks.EvaluatePrequentialCV}!instanceLimitOption@{instanceLimitOption}}
+\index{instanceLimitOption@{instanceLimitOption}!moa.tasks.EvaluatePrequentialCV@{moa.tasks.EvaluatePrequentialCV}}
+\doxysubsubsection{\texorpdfstring{instanceLimitOption}{instanceLimitOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+tasks.\+Evaluate\+Prequential\+C\+V.\+instance\+Limit\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(\textcolor{stringliteral}{"instanceLimit"}, \textcolor{charliteral}{'i'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Maximum number of instances to test/train on  (-\/1 = no limit)."},}
+\DoxyCodeLine{            100000000, -\/1, Integer.MAX\_VALUE)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_prequential_c_v_aedb2bdb8543ee76a4a065ec27968a418}\label{classmoa_1_1tasks_1_1_evaluate_prequential_c_v_aedb2bdb8543ee76a4a065ec27968a418}} 
+\index{moa.tasks.EvaluatePrequentialCV@{moa.tasks.EvaluatePrequentialCV}!learnerOption@{learnerOption}}
+\index{learnerOption@{learnerOption}!moa.tasks.EvaluatePrequentialCV@{moa.tasks.EvaluatePrequentialCV}}
+\doxysubsubsection{\texorpdfstring{learnerOption}{learnerOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} moa.\+tasks.\+Evaluate\+Prequential\+C\+V.\+learner\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} ClassOption(\textcolor{stringliteral}{"learner"}, \textcolor{charliteral}{'l'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Learner to train."}, MultiClassClassifier.class, \textcolor{stringliteral}{"moa.classifiers.bayes.NaiveBayes"})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_prequential_c_v_aad351127fc30e0510a9a0077966fc8e5}\label{classmoa_1_1tasks_1_1_evaluate_prequential_c_v_aad351127fc30e0510a9a0077966fc8e5}} 
+\index{moa.tasks.EvaluatePrequentialCV@{moa.tasks.EvaluatePrequentialCV}!memCheckFrequencyOption@{memCheckFrequencyOption}}
+\index{memCheckFrequencyOption@{memCheckFrequencyOption}!moa.tasks.EvaluatePrequentialCV@{moa.tasks.EvaluatePrequentialCV}}
+\doxysubsubsection{\texorpdfstring{memCheckFrequencyOption}{memCheckFrequencyOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+tasks.\+Evaluate\+Prequential\+C\+V.\+mem\+Check\+Frequency\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(}
+\DoxyCodeLine{            \textcolor{stringliteral}{"memCheckFrequency"}, \textcolor{charliteral}{'q'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"How many instances between memory bound checks."}, 100000, 0,}
+\DoxyCodeLine{            Integer.MAX\_VALUE)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_prequential_c_v_aa6b4623c9be5b325b801d451998e607e}\label{classmoa_1_1tasks_1_1_evaluate_prequential_c_v_aa6b4623c9be5b325b801d451998e607e}} 
+\index{moa.tasks.EvaluatePrequentialCV@{moa.tasks.EvaluatePrequentialCV}!numFoldsOption@{numFoldsOption}}
+\index{numFoldsOption@{numFoldsOption}!moa.tasks.EvaluatePrequentialCV@{moa.tasks.EvaluatePrequentialCV}}
+\doxysubsubsection{\texorpdfstring{numFoldsOption}{numFoldsOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+tasks.\+Evaluate\+Prequential\+C\+V.\+num\+Folds\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(\textcolor{stringliteral}{"numFolds"}, \textcolor{charliteral}{'w'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"The number of folds (e.g. distributed models) to be used."}, 10, 1, Integer.MAX\_VALUE)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_prequential_c_v_aa38be795489996e1dfc146aa4caa4a3a}\label{classmoa_1_1tasks_1_1_evaluate_prequential_c_v_aa38be795489996e1dfc146aa4caa4a3a}} 
+\index{moa.tasks.EvaluatePrequentialCV@{moa.tasks.EvaluatePrequentialCV}!randomSeedOption@{randomSeedOption}}
+\index{randomSeedOption@{randomSeedOption}!moa.tasks.EvaluatePrequentialCV@{moa.tasks.EvaluatePrequentialCV}}
+\doxysubsubsection{\texorpdfstring{randomSeedOption}{randomSeedOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+tasks.\+Evaluate\+Prequential\+C\+V.\+random\+Seed\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(\textcolor{stringliteral}{"randomSeed"}, \textcolor{charliteral}{'r'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Seed for random behaviour of the task."}, 1)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_prequential_c_v_a61af96b9b63bb7b9f93937a399962fd8}\label{classmoa_1_1tasks_1_1_evaluate_prequential_c_v_a61af96b9b63bb7b9f93937a399962fd8}} 
+\index{moa.tasks.EvaluatePrequentialCV@{moa.tasks.EvaluatePrequentialCV}!sampleFrequencyOption@{sampleFrequencyOption}}
+\index{sampleFrequencyOption@{sampleFrequencyOption}!moa.tasks.EvaluatePrequentialCV@{moa.tasks.EvaluatePrequentialCV}}
+\doxysubsubsection{\texorpdfstring{sampleFrequencyOption}{sampleFrequencyOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+tasks.\+Evaluate\+Prequential\+C\+V.\+sample\+Frequency\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(\textcolor{stringliteral}{"sampleFrequency"},}
+\DoxyCodeLine{            \textcolor{charliteral}{'f'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"How many instances between samples of the learning performance."},}
+\DoxyCodeLine{            100000, 0, Integer.MAX\_VALUE)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_prequential_c_v_aee8542efcc4abe48c59d08afc6f8e5ba}\label{classmoa_1_1tasks_1_1_evaluate_prequential_c_v_aee8542efcc4abe48c59d08afc6f8e5ba}} 
+\index{moa.tasks.EvaluatePrequentialCV@{moa.tasks.EvaluatePrequentialCV}!streamOption@{streamOption}}
+\index{streamOption@{streamOption}!moa.tasks.EvaluatePrequentialCV@{moa.tasks.EvaluatePrequentialCV}}
+\doxysubsubsection{\texorpdfstring{streamOption}{streamOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} moa.\+tasks.\+Evaluate\+Prequential\+C\+V.\+stream\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} ClassOption(\textcolor{stringliteral}{"stream"}, \textcolor{charliteral}{'s'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Stream to learn from."}, ExampleStream.class,}
+\DoxyCodeLine{            \textcolor{stringliteral}{"generators.RandomTreeGenerator"})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_prequential_c_v_a51c722b4ec8dc2d8792bbb48dcd2c666}\label{classmoa_1_1tasks_1_1_evaluate_prequential_c_v_a51c722b4ec8dc2d8792bbb48dcd2c666}} 
+\index{moa.tasks.EvaluatePrequentialCV@{moa.tasks.EvaluatePrequentialCV}!timeLimitOption@{timeLimitOption}}
+\index{timeLimitOption@{timeLimitOption}!moa.tasks.EvaluatePrequentialCV@{moa.tasks.EvaluatePrequentialCV}}
+\doxysubsubsection{\texorpdfstring{timeLimitOption}{timeLimitOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+tasks.\+Evaluate\+Prequential\+C\+V.\+time\+Limit\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(\textcolor{stringliteral}{"timeLimit"}, \textcolor{charliteral}{'t'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Maximum number of seconds to test/train for (-\/1 = no limit)."}, -\/1,}
+\DoxyCodeLine{            -\/1, Integer.MAX\_VALUE)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_prequential_c_v_a4b51f8dcb41a5d03beedd55df81bef56}\label{classmoa_1_1tasks_1_1_evaluate_prequential_c_v_a4b51f8dcb41a5d03beedd55df81bef56}} 
+\index{moa.tasks.EvaluatePrequentialCV@{moa.tasks.EvaluatePrequentialCV}!validationMethodologyOption@{validationMethodologyOption}}
+\index{validationMethodologyOption@{validationMethodologyOption}!moa.tasks.EvaluatePrequentialCV@{moa.tasks.EvaluatePrequentialCV}}
+\doxysubsubsection{\texorpdfstring{validationMethodologyOption}{validationMethodologyOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_multi_choice_option}{Multi\+Choice\+Option}} moa.\+tasks.\+Evaluate\+Prequential\+C\+V.\+validation\+Methodology\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} MultiChoiceOption(}
+\DoxyCodeLine{            \textcolor{stringliteral}{"validationMethodology"}, \textcolor{charliteral}{'a'}, \textcolor{stringliteral}{"Validation methodology to use."}, \textcolor{keyword}{new} String[]\{}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Cross-\/Validation"}, \textcolor{stringliteral}{"Bootstrap-\/Validation"}, \textcolor{stringliteral}{"Split-\/Validation"}\},}
+\DoxyCodeLine{            \textcolor{keyword}{new} String[]\{\textcolor{stringliteral}{"k-\/fold distributed Cross Validation"},}
+\DoxyCodeLine{                    \textcolor{stringliteral}{"k-\/fold distributed Bootstrap Validation"},}
+\DoxyCodeLine{                    \textcolor{stringliteral}{"k-\/fold distributed Split Validation"}}
+\DoxyCodeLine{            \}, 0)}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/tasks/Evaluate\+Prequential\+C\+V.\+java\end{DoxyCompactItemize}

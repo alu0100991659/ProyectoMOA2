@@ -1,0 +1,161 @@
+\hypertarget{classmoa_1_1classifiers_1_1core_1_1splitcriteria_1_1_info_gain_split_criterion}{}\doxysection{moa.\+classifiers.\+core.\+splitcriteria.\+Info\+Gain\+Split\+Criterion Class Reference}
+\label{classmoa_1_1classifiers_1_1core_1_1splitcriteria_1_1_info_gain_split_criterion}\index{moa.classifiers.core.splitcriteria.InfoGainSplitCriterion@{moa.classifiers.core.splitcriteria.InfoGainSplitCriterion}}
+
+
+Inheritance diagram for moa.\+classifiers.\+core.\+splitcriteria.\+Info\+Gain\+Split\+Criterion\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+classifiers.\+core.\+splitcriteria.\+Info\+Gain\+Split\+Criterion\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1splitcriteria_1_1_info_gain_split_criterion_ab06eb1c5c11f3f08e47cd5ac1348b9db}{get\+Merit\+Of\+Split}} (double\mbox{[}$\,$\mbox{]} pre\+Split\+Dist, double\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} post\+Split\+Dists)
+\item 
+double \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1splitcriteria_1_1_info_gain_split_criterion_a8a415bab6fe9bd2c1a3d787bd58c5fb2}{get\+Range\+Of\+Merit}} (double\mbox{[}$\,$\mbox{]} pre\+Split\+Dist)
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1splitcriteria_1_1_info_gain_split_criterion_ae474373a5cae3b45df3f087f88956921}{get\+Description}} (String\+Builder sb, int indent)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1splitcriteria_1_1_info_gain_split_criterion_a13c5236a98043316fe4717617b6058ed}\label{classmoa_1_1classifiers_1_1core_1_1splitcriteria_1_1_info_gain_split_criterion_a13c5236a98043316fe4717617b6058ed}} 
+static double {\bfseries compute\+Entropy} (double\mbox{[}$\,$\mbox{]} dist)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1splitcriteria_1_1_info_gain_split_criterion_ad4d7e437ce8c29c74f12deebcb86b4b0}\label{classmoa_1_1classifiers_1_1core_1_1splitcriteria_1_1_info_gain_split_criterion_ad4d7e437ce8c29c74f12deebcb86b4b0}} 
+static double {\bfseries compute\+Entropy} (double\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} dists)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1splitcriteria_1_1_info_gain_split_criterion_a91bbc1cededa6dedac038d1a3e8b6adc}\label{classmoa_1_1classifiers_1_1core_1_1splitcriteria_1_1_info_gain_split_criterion_a91bbc1cededa6dedac038d1a3e8b6adc}} 
+static int {\bfseries num\+Subsets\+Greater\+Than\+Frac} (double\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} distributions, double min\+Frac)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} {\bfseries min\+Branch\+Frac\+Option}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1splitcriteria_1_1_info_gain_split_criterion_a039d89abb4237ffc58c576d2c4663043}{prepare\+For\+Use\+Impl}} (\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}} monitor, \mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}} repository)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Class for computing splitting criteria using information gain with respect to distributions of class values. The split criterion is used as a parameter on decision trees and decision stumps.
+
+\begin{DoxyAuthor}{Author}
+Richard Kirkby (\href{mailto:rkirkby@cs.waikato.ac.nz}{\texttt{ rkirkby@cs.\+waikato.\+ac.\+nz}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+7 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1splitcriteria_1_1_info_gain_split_criterion_ae474373a5cae3b45df3f087f88956921}\label{classmoa_1_1classifiers_1_1core_1_1splitcriteria_1_1_info_gain_split_criterion_ae474373a5cae3b45df3f087f88956921}} 
+\index{moa.classifiers.core.splitcriteria.InfoGainSplitCriterion@{moa.classifiers.core.splitcriteria.InfoGainSplitCriterion}!getDescription@{getDescription}}
+\index{getDescription@{getDescription}!moa.classifiers.core.splitcriteria.InfoGainSplitCriterion@{moa.classifiers.core.splitcriteria.InfoGainSplitCriterion}}
+\doxysubsubsection{\texorpdfstring{getDescription()}{getDescription()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+core.\+splitcriteria.\+Info\+Gain\+Split\+Criterion.\+get\+Description (\begin{DoxyParamCaption}\item[{String\+Builder}]{sb,  }\item[{int}]{indent }\end{DoxyParamCaption})}
+
+Returns a string representation of this object. Used in {\ttfamily \mbox{\hyperlink{classmoa_1_1_abstract_m_o_a_object_ac686fd3b07c734cf21f1894376fe402d}{Abstract\+M\+O\+A\+Object.\+to\+String}}} to give a string representation of the object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sb} & the stringbuilder to add the description \\
+\hline
+{\em indent} & the number of characters to indent \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1_m_o_a_object_afdaf5098f1fe6c852018ce64c28e17f5}{moa.\+M\+O\+A\+Object}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1splitcriteria_1_1_info_gain_split_criterion_ab06eb1c5c11f3f08e47cd5ac1348b9db}\label{classmoa_1_1classifiers_1_1core_1_1splitcriteria_1_1_info_gain_split_criterion_ab06eb1c5c11f3f08e47cd5ac1348b9db}} 
+\index{moa.classifiers.core.splitcriteria.InfoGainSplitCriterion@{moa.classifiers.core.splitcriteria.InfoGainSplitCriterion}!getMeritOfSplit@{getMeritOfSplit}}
+\index{getMeritOfSplit@{getMeritOfSplit}!moa.classifiers.core.splitcriteria.InfoGainSplitCriterion@{moa.classifiers.core.splitcriteria.InfoGainSplitCriterion}}
+\doxysubsubsection{\texorpdfstring{getMeritOfSplit()}{getMeritOfSplit()}}
+{\footnotesize\ttfamily double moa.\+classifiers.\+core.\+splitcriteria.\+Info\+Gain\+Split\+Criterion.\+get\+Merit\+Of\+Split (\begin{DoxyParamCaption}\item[{double\mbox{[}$\,$\mbox{]}}]{pre\+Split\+Dist,  }\item[{double}]{post\+Split\+Dists\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+Computes the merit of splitting for a given ditribution before the split and after it.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pre\+Split\+Dist} & the class distribution before the split \\
+\hline
+{\em post\+Split\+Dist} & the class distribution after the split \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+value of the merit of splitting 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1classifiers_1_1core_1_1splitcriteria_1_1_split_criterion_a82f5cb7ad49c396d4f50615a55300b36}{moa.\+classifiers.\+core.\+splitcriteria.\+Split\+Criterion}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1splitcriteria_1_1_info_gain_split_criterion_a8a415bab6fe9bd2c1a3d787bd58c5fb2}\label{classmoa_1_1classifiers_1_1core_1_1splitcriteria_1_1_info_gain_split_criterion_a8a415bab6fe9bd2c1a3d787bd58c5fb2}} 
+\index{moa.classifiers.core.splitcriteria.InfoGainSplitCriterion@{moa.classifiers.core.splitcriteria.InfoGainSplitCriterion}!getRangeOfMerit@{getRangeOfMerit}}
+\index{getRangeOfMerit@{getRangeOfMerit}!moa.classifiers.core.splitcriteria.InfoGainSplitCriterion@{moa.classifiers.core.splitcriteria.InfoGainSplitCriterion}}
+\doxysubsubsection{\texorpdfstring{getRangeOfMerit()}{getRangeOfMerit()}}
+{\footnotesize\ttfamily double moa.\+classifiers.\+core.\+splitcriteria.\+Info\+Gain\+Split\+Criterion.\+get\+Range\+Of\+Merit (\begin{DoxyParamCaption}\item[{double\mbox{[}$\,$\mbox{]}}]{pre\+Split\+Dist }\end{DoxyParamCaption})}
+
+Computes the range of splitting merit
+
+
+\begin{DoxyParams}{Parameters}
+{\em pre\+Split\+Dist} & the class distribution before the split \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+value of the range of splitting merit 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1classifiers_1_1core_1_1splitcriteria_1_1_split_criterion_af4602783ac8df6d5fed77c9b828aa4b4}{moa.\+classifiers.\+core.\+splitcriteria.\+Split\+Criterion}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1splitcriteria_1_1_info_gain_split_criterion_a039d89abb4237ffc58c576d2c4663043}\label{classmoa_1_1classifiers_1_1core_1_1splitcriteria_1_1_info_gain_split_criterion_a039d89abb4237ffc58c576d2c4663043}} 
+\index{moa.classifiers.core.splitcriteria.InfoGainSplitCriterion@{moa.classifiers.core.splitcriteria.InfoGainSplitCriterion}!prepareForUseImpl@{prepareForUseImpl}}
+\index{prepareForUseImpl@{prepareForUseImpl}!moa.classifiers.core.splitcriteria.InfoGainSplitCriterion@{moa.classifiers.core.splitcriteria.InfoGainSplitCriterion}}
+\doxysubsubsection{\texorpdfstring{prepareForUseImpl()}{prepareForUseImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+core.\+splitcriteria.\+Info\+Gain\+Split\+Criterion.\+prepare\+For\+Use\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}}}]{monitor,  }\item[{\mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}}}]{repository }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+This method describes the implementation of how to prepare this object for use. All classes that extends this class have to implement {\ttfamily prepare\+For\+Use\+Impl} and not {\ttfamily prepare\+For\+Use} since {\ttfamily prepare\+For\+Use} calls {\ttfamily prepare\+For\+Use\+Impl}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em monitor} & the Task\+Monitor to use \\
+\hline
+{\em repository} & the Object\+Repository to use \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1options_1_1_abstract_option_handler_ad0e9c7d4b0e2b185749f36ce28540efb}{moa.\+options.\+Abstract\+Option\+Handler}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1splitcriteria_1_1_info_gain_split_criterion_ae96c2934d4dc8f96ba97f4b02508e6d8}\label{classmoa_1_1classifiers_1_1core_1_1splitcriteria_1_1_info_gain_split_criterion_ae96c2934d4dc8f96ba97f4b02508e6d8}} 
+\index{moa.classifiers.core.splitcriteria.InfoGainSplitCriterion@{moa.classifiers.core.splitcriteria.InfoGainSplitCriterion}!minBranchFracOption@{minBranchFracOption}}
+\index{minBranchFracOption@{minBranchFracOption}!moa.classifiers.core.splitcriteria.InfoGainSplitCriterion@{moa.classifiers.core.splitcriteria.InfoGainSplitCriterion}}
+\doxysubsubsection{\texorpdfstring{minBranchFracOption}{minBranchFracOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} moa.\+classifiers.\+core.\+splitcriteria.\+Info\+Gain\+Split\+Criterion.\+min\+Branch\+Frac\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FloatOption(\textcolor{stringliteral}{"minBranchFrac"},}
+\DoxyCodeLine{            \textcolor{charliteral}{'f'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Minimum fraction of weight required down at least two branches."},}
+\DoxyCodeLine{            0.01, 0.0, 0.5)}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/classifiers/core/splitcriteria/Info\+Gain\+Split\+Criterion.\+java\end{DoxyCompactItemize}

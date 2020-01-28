@@ -1,0 +1,109 @@
+\hypertarget{classmoa_1_1test_1_1_test_helper}{}\doxysection{moa.\+test.\+Test\+Helper$<$ I, O $>$ Class Template Reference}
+\label{classmoa_1_1test_1_1_test_helper}\index{moa.test.TestHelper$<$ I, O $>$@{moa.test.TestHelper$<$ I, O $>$}}
+
+
+Inheritance diagram for moa.\+test.\+Test\+Helper$<$ I, O $>$\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+test.\+Test\+Helper$<$ I, O $>$\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1test_1_1_test_helper_adfad123f1a21a20b5664ea78ca9fc1e3}{Test\+Helper}} (\mbox{\hyperlink{classmoa_1_1test_1_1_moa_test_case}{Moa\+Test\+Case}} owner, String data\+Dir)
+\item 
+I \mbox{\hyperlink{classmoa_1_1test_1_1_test_helper_a9cdb65c9e987b090b0b668595fb9b3e7}{load}} (String filename)
+\item 
+boolean \mbox{\hyperlink{classmoa_1_1test_1_1_test_helper_a19fc200a30b7c6fc28708faae1e0bb39}{save}} (O data, String filename)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A helper class specific to the moa project.
+
+\begin{DoxyAuthor}{Author}
+fracpete (fracpete at waikato dot ac dot nz) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+4584 
+\end{DoxyParagraph}
+
+\begin{DoxyParams}{Parameters}
+{\em $<$\+I$>$} & the type of input data \\
+\hline
+{\em $<$\+O$>$} & the type of output data \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmoa_1_1test_1_1_test_helper_adfad123f1a21a20b5664ea78ca9fc1e3}\label{classmoa_1_1test_1_1_test_helper_adfad123f1a21a20b5664ea78ca9fc1e3}} 
+\index{moa.test.TestHelper$<$ I, O $>$@{moa.test.TestHelper$<$ I, O $>$}!TestHelper@{TestHelper}}
+\index{TestHelper@{TestHelper}!moa.test.TestHelper$<$ I, O $>$@{moa.test.TestHelper$<$ I, O $>$}}
+\doxysubsubsection{\texorpdfstring{TestHelper()}{TestHelper()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1test_1_1_test_helper}{moa.\+test.\+Test\+Helper}}$<$ I, O $>$.\mbox{\hyperlink{classmoa_1_1test_1_1_test_helper}{Test\+Helper}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmoa_1_1test_1_1_moa_test_case}{Moa\+Test\+Case}}}]{owner,  }\item[{String}]{data\+Dir }\end{DoxyParamCaption})}
+
+Initializes the helper class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em owner} & the owning test case \\
+\hline
+{\em data\+Dir} & the data directory to use \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1test_1_1_test_helper_a9cdb65c9e987b090b0b668595fb9b3e7}\label{classmoa_1_1test_1_1_test_helper_a9cdb65c9e987b090b0b668595fb9b3e7}} 
+\index{moa.test.TestHelper$<$ I, O $>$@{moa.test.TestHelper$<$ I, O $>$}!load@{load}}
+\index{load@{load}!moa.test.TestHelper$<$ I, O $>$@{moa.test.TestHelper$<$ I, O $>$}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily I \mbox{\hyperlink{classmoa_1_1test_1_1_test_helper}{moa.\+test.\+Test\+Helper}}$<$ I, O $>$.load (\begin{DoxyParamCaption}\item[{String}]{filename }\end{DoxyParamCaption})}
+
+Dummy, does nothing.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & the filename to load (without path) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+always null 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1test_1_1_abstract_test_helper_ac848ebc396b173b85786ffb1924728f1}{moa.\+test.\+Abstract\+Test\+Helper$<$ I, O $>$}}.
+
+\mbox{\Hypertarget{classmoa_1_1test_1_1_test_helper_a19fc200a30b7c6fc28708faae1e0bb39}\label{classmoa_1_1test_1_1_test_helper_a19fc200a30b7c6fc28708faae1e0bb39}} 
+\index{moa.test.TestHelper$<$ I, O $>$@{moa.test.TestHelper$<$ I, O $>$}!save@{save}}
+\index{save@{save}!moa.test.TestHelper$<$ I, O $>$@{moa.test.TestHelper$<$ I, O $>$}}
+\doxysubsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily boolean \mbox{\hyperlink{classmoa_1_1test_1_1_test_helper}{moa.\+test.\+Test\+Helper}}$<$ I, O $>$.save (\begin{DoxyParamCaption}\item[{O}]{data,  }\item[{String}]{filename }\end{DoxyParamCaption})}
+
+Dummy, just write the string returned by the object\textquotesingle{}s to\+String() method to the file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & the data to save \\
+\hline
+{\em filename} & the filename to save to (without path) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+always true 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1test_1_1_abstract_test_helper_a1ae76fbed8b0aa4d3b2a2449990a8fcc}{moa.\+test.\+Abstract\+Test\+Helper$<$ I, O $>$}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/test/java/moa/test/Test\+Helper.\+java\end{DoxyCompactItemize}

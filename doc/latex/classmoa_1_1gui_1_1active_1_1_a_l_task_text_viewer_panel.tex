@@ -1,0 +1,92 @@
+\hypertarget{classmoa_1_1gui_1_1active_1_1_a_l_task_text_viewer_panel}{}\doxysection{moa.\+gui.\+active.\+A\+L\+Task\+Text\+Viewer\+Panel Class Reference}
+\label{classmoa_1_1gui_1_1active_1_1_a_l_task_text_viewer_panel}\index{moa.gui.active.ALTaskTextViewerPanel@{moa.gui.active.ALTaskTextViewerPanel}}
+
+
+Inheritance diagram for moa.\+gui.\+active.\+A\+L\+Task\+Text\+Viewer\+Panel\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+gui.\+active.\+A\+L\+Task\+Text\+Viewer\+Panel\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classmoa_1_1gui_1_1active_1_1_a_l_task_text_viewer_panel_a95393e3e8a02247acce8f6427d4c2e05}{set\+Text}} (\mbox{\hyperlink{classmoa_1_1evaluation_1_1preview_1_1_preview}{Preview}} preview)
+\item 
+void \mbox{\hyperlink{classmoa_1_1gui_1_1active_1_1_a_l_task_text_viewer_panel_aa9db02256a711eb618edcdea4fe27877}{set\+Error\+Text}} (\mbox{\hyperlink{classmoa_1_1tasks_1_1_failed_task_report}{Failed\+Task\+Report}} failed\+Task\+Report)
+\item 
+void \mbox{\hyperlink{classmoa_1_1gui_1_1active_1_1_a_l_task_text_viewer_panel_a4c4ca6512e11ac6aa06ced13cdae3c32}{set\+Graph}} (\mbox{\hyperlink{classmoa_1_1evaluation_1_1preview_1_1_preview}{Preview}} preview, Color\mbox{[}$\,$\mbox{]} colors)
+\item 
+Parsed\+Preview \mbox{\hyperlink{classmoa_1_1gui_1_1active_1_1_a_l_task_text_viewer_panel_aedd9a30f1e66b07807fa5f1787601223}{read\+Collection}} (\mbox{\hyperlink{classmoa_1_1evaluation_1_1preview_1_1_preview_collection}{Preview\+Collection}}$<$ \mbox{\hyperlink{classmoa_1_1evaluation_1_1preview_1_1_preview}{Preview}} $>$ pc)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This panel displays text. Used to output the results of tasks. In contrast to Tast\+Text\+Viewer\+Panel, this class supports multiple curves, standard deviations and two additional views, which display a varied parameter and the relative label acquisition rate (usually called budget).
+
+\begin{DoxyAuthor}{Author}
+Tim Sabsch (\href{mailto:tim.sabsch@ovgu.de}{\texttt{ tim.\+sabsch@ovgu.\+de}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+1 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1gui_1_1active_1_1_a_l_task_text_viewer_panel_aedd9a30f1e66b07807fa5f1787601223}\label{classmoa_1_1gui_1_1active_1_1_a_l_task_text_viewer_panel_aedd9a30f1e66b07807fa5f1787601223}} 
+\index{moa.gui.active.ALTaskTextViewerPanel@{moa.gui.active.ALTaskTextViewerPanel}!readCollection@{readCollection}}
+\index{readCollection@{readCollection}!moa.gui.active.ALTaskTextViewerPanel@{moa.gui.active.ALTaskTextViewerPanel}}
+\doxysubsubsection{\texorpdfstring{readCollection()}{readCollection()}}
+{\footnotesize\ttfamily Parsed\+Preview moa.\+gui.\+active.\+A\+L\+Task\+Text\+Viewer\+Panel.\+read\+Collection (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmoa_1_1evaluation_1_1preview_1_1_preview_collection}{Preview\+Collection}}$<$ \mbox{\hyperlink{classmoa_1_1evaluation_1_1preview_1_1_preview}{Preview}} $>$}]{pc }\end{DoxyParamCaption})}
+
+Parses a Preview\+Collection and return the resulting Parsed\+Preview object. If the Preview\+Collection contains Preview\+Collections again, it recursively adds their results. If it contains simple Previews, it adds their properties to the result. 
+\begin{DoxyParams}{Parameters}
+{\em pc} & Preview\+Collection \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+relevant information contained in the Preview\+Collection 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmoa_1_1gui_1_1active_1_1_a_l_task_text_viewer_panel_aa9db02256a711eb618edcdea4fe27877}\label{classmoa_1_1gui_1_1active_1_1_a_l_task_text_viewer_panel_aa9db02256a711eb618edcdea4fe27877}} 
+\index{moa.gui.active.ALTaskTextViewerPanel@{moa.gui.active.ALTaskTextViewerPanel}!setErrorText@{setErrorText}}
+\index{setErrorText@{setErrorText}!moa.gui.active.ALTaskTextViewerPanel@{moa.gui.active.ALTaskTextViewerPanel}}
+\doxysubsubsection{\texorpdfstring{setErrorText()}{setErrorText()}}
+{\footnotesize\ttfamily void moa.\+gui.\+active.\+A\+L\+Task\+Text\+Viewer\+Panel.\+set\+Error\+Text (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmoa_1_1tasks_1_1_failed_task_report}{Failed\+Task\+Report}}}]{failed\+Task\+Report }\end{DoxyParamCaption})}
+
+Displays the error message. 
+\begin{DoxyParams}{Parameters}
+{\em failed\+Task\+Report} & error message \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmoa_1_1gui_1_1active_1_1_a_l_task_text_viewer_panel_a4c4ca6512e11ac6aa06ced13cdae3c32}\label{classmoa_1_1gui_1_1active_1_1_a_l_task_text_viewer_panel_a4c4ca6512e11ac6aa06ced13cdae3c32}} 
+\index{moa.gui.active.ALTaskTextViewerPanel@{moa.gui.active.ALTaskTextViewerPanel}!setGraph@{setGraph}}
+\index{setGraph@{setGraph}!moa.gui.active.ALTaskTextViewerPanel@{moa.gui.active.ALTaskTextViewerPanel}}
+\doxysubsubsection{\texorpdfstring{setGraph()}{setGraph()}}
+{\footnotesize\ttfamily void moa.\+gui.\+active.\+A\+L\+Task\+Text\+Viewer\+Panel.\+set\+Graph (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmoa_1_1evaluation_1_1preview_1_1_preview}{Preview}}}]{preview,  }\item[{Color\mbox{[}$\,$\mbox{]}}]{colors }\end{DoxyParamCaption})}
+
+Updates the graph based on the information given by the preview. 
+\begin{DoxyParams}{Parameters}
+{\em preview} & information used to update the graph \\
+\hline
+{\em colors} & color coding used to connect the tasks with the graphs \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmoa_1_1gui_1_1active_1_1_a_l_task_text_viewer_panel_a95393e3e8a02247acce8f6427d4c2e05}\label{classmoa_1_1gui_1_1active_1_1_a_l_task_text_viewer_panel_a95393e3e8a02247acce8f6427d4c2e05}} 
+\index{moa.gui.active.ALTaskTextViewerPanel@{moa.gui.active.ALTaskTextViewerPanel}!setText@{setText}}
+\index{setText@{setText}!moa.gui.active.ALTaskTextViewerPanel@{moa.gui.active.ALTaskTextViewerPanel}}
+\doxysubsubsection{\texorpdfstring{setText()}{setText()}}
+{\footnotesize\ttfamily void moa.\+gui.\+active.\+A\+L\+Task\+Text\+Viewer\+Panel.\+set\+Text (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmoa_1_1evaluation_1_1preview_1_1_preview}{Preview}}}]{preview }\end{DoxyParamCaption})}
+
+Updates the preview table based on the information given by preview. 
+\begin{DoxyParams}{Parameters}
+{\em preview} & the new information used to update the table \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/gui/active/A\+L\+Task\+Text\+Viewer\+Panel.\+java\end{DoxyCompactItemize}

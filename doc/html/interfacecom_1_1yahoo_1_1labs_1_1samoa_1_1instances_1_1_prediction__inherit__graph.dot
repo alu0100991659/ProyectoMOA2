@@ -1,0 +1,9 @@
+digraph "com.yahoo.labs.samoa.instances.Prediction"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="com.yahoo.labs.samoa.instances.\lPrediction",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="com.yahoo.labs.samoa.instances.\lMultiLabelPrediction",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_multi_label_prediction.html",tooltip=" "];
+}

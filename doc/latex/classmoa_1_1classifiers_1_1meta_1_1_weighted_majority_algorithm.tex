@@ -1,0 +1,299 @@
+\hypertarget{classmoa_1_1classifiers_1_1meta_1_1_weighted_majority_algorithm}{}\doxysection{moa.\+classifiers.\+meta.\+Weighted\+Majority\+Algorithm Class Reference}
+\label{classmoa_1_1classifiers_1_1meta_1_1_weighted_majority_algorithm}\index{moa.classifiers.meta.WeightedMajorityAlgorithm@{moa.classifiers.meta.WeightedMajorityAlgorithm}}
+
+
+Inheritance diagram for moa.\+classifiers.\+meta.\+Weighted\+Majority\+Algorithm\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+classifiers.\+meta.\+Weighted\+Majority\+Algorithm\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_weighted_majority_algorithm_ac5833095f9f5a5886b7deac4a562fb4c}{get\+Purpose\+String}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_weighted_majority_algorithm_afe5f4023bbc8ae823b2c791d8c2dc0b9}{prepare\+For\+Use\+Impl}} (\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}} monitor, \mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}} repository)
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_weighted_majority_algorithm_ac4950609b056b4591ee437dd38f03e26}{reset\+Learning\+Impl}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_weighted_majority_algorithm_ae15b5d18bca06dbc02574d75293c88f7}{train\+On\+Instance\+Impl}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst)
+\item 
+double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_weighted_majority_algorithm_aa78a629163fc11b7cc74308d2ffc28eb}{get\+Votes\+For\+Instance}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst)
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_weighted_majority_algorithm_a8c9cdb8325b6e5c2fac1fae71bb5887f}{get\+Model\+Description}} (String\+Builder out, int indent)
+\item 
+boolean \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_weighted_majority_algorithm_a7172a003a25442ed37b47ef029567e5c}{is\+Randomizable}} ()
+\item 
+\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier}{Classifier}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_weighted_majority_algorithm_afeee3fb5097d699bfa3afaec115d40c2}{get\+Sub\+Classifiers}} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_weighted_majority_algorithm_a3fb12c99a710ca4bf3635a060d7e90bb}\label{classmoa_1_1classifiers_1_1meta_1_1_weighted_majority_algorithm_a3fb12c99a710ca4bf3635a060d7e90bb}} 
+void {\bfseries discard\+Model} (int index)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_list_option}{List\+Option}} {\bfseries learner\+List\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} {\bfseries beta\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} {\bfseries gamma\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_flag_option}{Flag\+Option}} {\bfseries prune\+Option}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_weighted_majority_algorithm_a938c9725a8c6373a70c66c9f9fc04cfc}{get\+Model\+Measurements\+Impl}} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_weighted_majority_algorithm_a5086835ea413b94d2afa50e2f4f0e1a8}\label{classmoa_1_1classifiers_1_1meta_1_1_weighted_majority_algorithm_a5086835ea413b94d2afa50e2f4f0e1a8}} 
+int {\bfseries remove\+Poorest\+Model\+Bytes} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_weighted_majority_algorithm_a87d7c63939d3600b42b4edbe032f7878}\label{classmoa_1_1classifiers_1_1meta_1_1_weighted_majority_algorithm_a87d7c63939d3600b42b4edbe032f7878}} 
+\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier}{Classifier}}\mbox{[}$\,$\mbox{]} {\bfseries ensemble}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_weighted_majority_algorithm_ab7159d7e326be76e6a1c4886d40d8c8f}\label{classmoa_1_1classifiers_1_1meta_1_1_weighted_majority_algorithm_ab7159d7e326be76e6a1c4886d40d8c8f}} 
+double\mbox{[}$\,$\mbox{]} {\bfseries ensemble\+Weights}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Weighted majority algorithm for data streams.
+
+\begin{DoxyAuthor}{Author}
+Richard Kirkby (\href{mailto:rkirkby@cs.waikato.ac.nz}{\texttt{ rkirkby@cs.\+waikato.\+ac.\+nz}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+7 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_weighted_majority_algorithm_a8c9cdb8325b6e5c2fac1fae71bb5887f}\label{classmoa_1_1classifiers_1_1meta_1_1_weighted_majority_algorithm_a8c9cdb8325b6e5c2fac1fae71bb5887f}} 
+\index{moa.classifiers.meta.WeightedMajorityAlgorithm@{moa.classifiers.meta.WeightedMajorityAlgorithm}!getModelDescription@{getModelDescription}}
+\index{getModelDescription@{getModelDescription}!moa.classifiers.meta.WeightedMajorityAlgorithm@{moa.classifiers.meta.WeightedMajorityAlgorithm}}
+\doxysubsubsection{\texorpdfstring{getModelDescription()}{getModelDescription()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+meta.\+Weighted\+Majority\+Algorithm.\+get\+Model\+Description (\begin{DoxyParamCaption}\item[{String\+Builder}]{out,  }\item[{int}]{indent }\end{DoxyParamCaption})}
+
+Returns a string representation of the model.
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & the stringbuilder to add the description \\
+\hline
+{\em indent} & the number of characters to indent \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a30e5ff32bc8127dfb7436945776b7523}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_weighted_majority_algorithm_a938c9725a8c6373a70c66c9f9fc04cfc}\label{classmoa_1_1classifiers_1_1meta_1_1_weighted_majority_algorithm_a938c9725a8c6373a70c66c9f9fc04cfc}} 
+\index{moa.classifiers.meta.WeightedMajorityAlgorithm@{moa.classifiers.meta.WeightedMajorityAlgorithm}!getModelMeasurementsImpl@{getModelMeasurementsImpl}}
+\index{getModelMeasurementsImpl@{getModelMeasurementsImpl}!moa.classifiers.meta.WeightedMajorityAlgorithm@{moa.classifiers.meta.WeightedMajorityAlgorithm}}
+\doxysubsubsection{\texorpdfstring{getModelMeasurementsImpl()}{getModelMeasurementsImpl()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}} \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+meta.\+Weighted\+Majority\+Algorithm.\+get\+Model\+Measurements\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Gets the current measurements of this classifier.~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden.
+
+\begin{DoxyReturn}{Returns}
+an array of measurements to be used in evaluation tasks 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_ac2bebede21c9d2d8cd11d95a7e20e529}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_weighted_majority_algorithm_ac5833095f9f5a5886b7deac4a562fb4c}\label{classmoa_1_1classifiers_1_1meta_1_1_weighted_majority_algorithm_ac5833095f9f5a5886b7deac4a562fb4c}} 
+\index{moa.classifiers.meta.WeightedMajorityAlgorithm@{moa.classifiers.meta.WeightedMajorityAlgorithm}!getPurposeString@{getPurposeString}}
+\index{getPurposeString@{getPurposeString}!moa.classifiers.meta.WeightedMajorityAlgorithm@{moa.classifiers.meta.WeightedMajorityAlgorithm}}
+\doxysubsubsection{\texorpdfstring{getPurposeString()}{getPurposeString()}}
+{\footnotesize\ttfamily String moa.\+classifiers.\+meta.\+Weighted\+Majority\+Algorithm.\+get\+Purpose\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Options to handle Dictionary with option texts and objects 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a3fc6ae11234b88e51941a77ddb879d8b}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_weighted_majority_algorithm_afeee3fb5097d699bfa3afaec115d40c2}\label{classmoa_1_1classifiers_1_1meta_1_1_weighted_majority_algorithm_afeee3fb5097d699bfa3afaec115d40c2}} 
+\index{moa.classifiers.meta.WeightedMajorityAlgorithm@{moa.classifiers.meta.WeightedMajorityAlgorithm}!getSubClassifiers@{getSubClassifiers}}
+\index{getSubClassifiers@{getSubClassifiers}!moa.classifiers.meta.WeightedMajorityAlgorithm@{moa.classifiers.meta.WeightedMajorityAlgorithm}}
+\doxysubsubsection{\texorpdfstring{getSubClassifiers()}{getSubClassifiers()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier}{Classifier}} \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+meta.\+Weighted\+Majority\+Algorithm.\+get\+Sub\+Classifiers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the classifiers of this ensemble. Returns null if this learner is a single learner.
+
+\begin{DoxyReturn}{Returns}
+an array of the learners of the ensemble 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a5d7c5aadeaf3465785aa6bb2efb615f2}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_weighted_majority_algorithm_aa78a629163fc11b7cc74308d2ffc28eb}\label{classmoa_1_1classifiers_1_1meta_1_1_weighted_majority_algorithm_aa78a629163fc11b7cc74308d2ffc28eb}} 
+\index{moa.classifiers.meta.WeightedMajorityAlgorithm@{moa.classifiers.meta.WeightedMajorityAlgorithm}!getVotesForInstance@{getVotesForInstance}}
+\index{getVotesForInstance@{getVotesForInstance}!moa.classifiers.meta.WeightedMajorityAlgorithm@{moa.classifiers.meta.WeightedMajorityAlgorithm}}
+\doxysubsubsection{\texorpdfstring{getVotesForInstance()}{getVotesForInstance()}}
+{\footnotesize\ttfamily double \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+meta.\+Weighted\+Majority\+Algorithm.\+get\+Votes\+For\+Instance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{inst }\end{DoxyParamCaption})}
+
+Predicts the class memberships for a given instance. If an instance is unclassified, the returned array elements must be all zero.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & the instance to be classified \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an array containing the estimated membership probabilities of the test instance in each class 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a0e3589c4fa6f088d82d64514afd9513c}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_weighted_majority_algorithm_a7172a003a25442ed37b47ef029567e5c}\label{classmoa_1_1classifiers_1_1meta_1_1_weighted_majority_algorithm_a7172a003a25442ed37b47ef029567e5c}} 
+\index{moa.classifiers.meta.WeightedMajorityAlgorithm@{moa.classifiers.meta.WeightedMajorityAlgorithm}!isRandomizable@{isRandomizable}}
+\index{isRandomizable@{isRandomizable}!moa.classifiers.meta.WeightedMajorityAlgorithm@{moa.classifiers.meta.WeightedMajorityAlgorithm}}
+\doxysubsubsection{\texorpdfstring{isRandomizable()}{isRandomizable()}}
+{\footnotesize\ttfamily boolean moa.\+classifiers.\+meta.\+Weighted\+Majority\+Algorithm.\+is\+Randomizable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets whether this learner needs a random seed. Examples of methods that needs a random seed are bagging and boosting.
+
+\begin{DoxyReturn}{Returns}
+true if the learner needs a random seed. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1learners_1_1_learner_a2f1ff9007b5eb5f53801f474b4d42a61}{moa.\+learners.\+Learner$<$ E extends Example $>$}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_weighted_majority_algorithm_afe5f4023bbc8ae823b2c791d8c2dc0b9}\label{classmoa_1_1classifiers_1_1meta_1_1_weighted_majority_algorithm_afe5f4023bbc8ae823b2c791d8c2dc0b9}} 
+\index{moa.classifiers.meta.WeightedMajorityAlgorithm@{moa.classifiers.meta.WeightedMajorityAlgorithm}!prepareForUseImpl@{prepareForUseImpl}}
+\index{prepareForUseImpl@{prepareForUseImpl}!moa.classifiers.meta.WeightedMajorityAlgorithm@{moa.classifiers.meta.WeightedMajorityAlgorithm}}
+\doxysubsubsection{\texorpdfstring{prepareForUseImpl()}{prepareForUseImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+meta.\+Weighted\+Majority\+Algorithm.\+prepare\+For\+Use\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}}}]{monitor,  }\item[{\mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}}}]{repository }\end{DoxyParamCaption})}
+
+This method describes the implementation of how to prepare this object for use. All classes that extends this class have to implement {\ttfamily prepare\+For\+Use\+Impl} and not {\ttfamily prepare\+For\+Use} since {\ttfamily prepare\+For\+Use} calls {\ttfamily prepare\+For\+Use\+Impl}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em monitor} & the Task\+Monitor to use \\
+\hline
+{\em repository} & the Object\+Repository to use \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_af81677ce9db6e94f79321df05e7dc019}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_weighted_majority_algorithm_ac4950609b056b4591ee437dd38f03e26}\label{classmoa_1_1classifiers_1_1meta_1_1_weighted_majority_algorithm_ac4950609b056b4591ee437dd38f03e26}} 
+\index{moa.classifiers.meta.WeightedMajorityAlgorithm@{moa.classifiers.meta.WeightedMajorityAlgorithm}!resetLearningImpl@{resetLearningImpl}}
+\index{resetLearningImpl@{resetLearningImpl}!moa.classifiers.meta.WeightedMajorityAlgorithm@{moa.classifiers.meta.WeightedMajorityAlgorithm}}
+\doxysubsubsection{\texorpdfstring{resetLearningImpl()}{resetLearningImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+meta.\+Weighted\+Majority\+Algorithm.\+reset\+Learning\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Resets this classifier. It must be similar to starting a new classifier from scratch. ~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden. 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a099ffcf2417abb919d10d697c0648f29}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_weighted_majority_algorithm_ae15b5d18bca06dbc02574d75293c88f7}\label{classmoa_1_1classifiers_1_1meta_1_1_weighted_majority_algorithm_ae15b5d18bca06dbc02574d75293c88f7}} 
+\index{moa.classifiers.meta.WeightedMajorityAlgorithm@{moa.classifiers.meta.WeightedMajorityAlgorithm}!trainOnInstanceImpl@{trainOnInstanceImpl}}
+\index{trainOnInstanceImpl@{trainOnInstanceImpl}!moa.classifiers.meta.WeightedMajorityAlgorithm@{moa.classifiers.meta.WeightedMajorityAlgorithm}}
+\doxysubsubsection{\texorpdfstring{trainOnInstanceImpl()}{trainOnInstanceImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+meta.\+Weighted\+Majority\+Algorithm.\+train\+On\+Instance\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{inst }\end{DoxyParamCaption})}
+
+Trains this classifier incrementally using the given instance.~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & the instance to be used for training \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_aceb24d2ddeab386f2ecead6e3c0d3543}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_weighted_majority_algorithm_a594dfe1b333278d9c11d53ce9a03fa39}\label{classmoa_1_1classifiers_1_1meta_1_1_weighted_majority_algorithm_a594dfe1b333278d9c11d53ce9a03fa39}} 
+\index{moa.classifiers.meta.WeightedMajorityAlgorithm@{moa.classifiers.meta.WeightedMajorityAlgorithm}!betaOption@{betaOption}}
+\index{betaOption@{betaOption}!moa.classifiers.meta.WeightedMajorityAlgorithm@{moa.classifiers.meta.WeightedMajorityAlgorithm}}
+\doxysubsubsection{\texorpdfstring{betaOption}{betaOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} moa.\+classifiers.\+meta.\+Weighted\+Majority\+Algorithm.\+beta\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FloatOption(\textcolor{stringliteral}{"beta"}, \textcolor{charliteral}{'b'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Factor to punish mistakes by."}, 0.9, 0.0, 1.0)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_weighted_majority_algorithm_ad23a5aabe0f53a2d13b4651cee13c444}\label{classmoa_1_1classifiers_1_1meta_1_1_weighted_majority_algorithm_ad23a5aabe0f53a2d13b4651cee13c444}} 
+\index{moa.classifiers.meta.WeightedMajorityAlgorithm@{moa.classifiers.meta.WeightedMajorityAlgorithm}!gammaOption@{gammaOption}}
+\index{gammaOption@{gammaOption}!moa.classifiers.meta.WeightedMajorityAlgorithm@{moa.classifiers.meta.WeightedMajorityAlgorithm}}
+\doxysubsubsection{\texorpdfstring{gammaOption}{gammaOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} moa.\+classifiers.\+meta.\+Weighted\+Majority\+Algorithm.\+gamma\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FloatOption(\textcolor{stringliteral}{"gamma"}, \textcolor{charliteral}{'g'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Minimum fraction of weight per model."}, 0.01, 0.0, 0.5)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_weighted_majority_algorithm_a359848f9d0a9f7875ce1e85df9ecedea}\label{classmoa_1_1classifiers_1_1meta_1_1_weighted_majority_algorithm_a359848f9d0a9f7875ce1e85df9ecedea}} 
+\index{moa.classifiers.meta.WeightedMajorityAlgorithm@{moa.classifiers.meta.WeightedMajorityAlgorithm}!learnerListOption@{learnerListOption}}
+\index{learnerListOption@{learnerListOption}!moa.classifiers.meta.WeightedMajorityAlgorithm@{moa.classifiers.meta.WeightedMajorityAlgorithm}}
+\doxysubsubsection{\texorpdfstring{learnerListOption}{learnerListOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_list_option}{List\+Option}} moa.\+classifiers.\+meta.\+Weighted\+Majority\+Algorithm.\+learner\+List\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} ListOption(}
+\DoxyCodeLine{            \textcolor{stringliteral}{"learners"},}
+\DoxyCodeLine{            \textcolor{charliteral}{'l'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"The learners to combine."},}
+\DoxyCodeLine{            \textcolor{keyword}{new} ClassOption(\textcolor{stringliteral}{"learner"}, \textcolor{charliteral}{' '}, \textcolor{stringliteral}{""}, Classifier.class,}
+\DoxyCodeLine{            \textcolor{stringliteral}{"trees.HoeffdingTree"}),}
+\DoxyCodeLine{            \textcolor{keyword}{new} Option[]\{}
+\DoxyCodeLine{                new ClassOption(\textcolor{stringliteral}{""}, \textcolor{stringliteral}{' '}, \textcolor{stringliteral}{""}, Classifier.class,}
+\DoxyCodeLine{                \textcolor{stringliteral}{"trees.HoeffdingTree -\/l MC"}),}
+\DoxyCodeLine{                new ClassOption(\textcolor{stringliteral}{""}, \textcolor{stringliteral}{' '}, \textcolor{stringliteral}{""}, Classifier.class,}
+\DoxyCodeLine{                \textcolor{stringliteral}{"trees.HoeffdingTree -\/l NB"}),}
+\DoxyCodeLine{                new ClassOption(\textcolor{stringliteral}{""}, \textcolor{stringliteral}{' '}, \textcolor{stringliteral}{""}, Classifier.class,}
+\DoxyCodeLine{                \textcolor{stringliteral}{"trees.HoeffdingTree -\/l NBAdaptive"}),}
+\DoxyCodeLine{                new ClassOption(\textcolor{stringliteral}{""}, \textcolor{stringliteral}{' '}, \textcolor{stringliteral}{""}, Classifier.class, \textcolor{stringliteral}{"bayes.NaiveBayes"})\},}
+\DoxyCodeLine{            \textcolor{charliteral}{','})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_weighted_majority_algorithm_ad589ff837eaa6508b0c584076804d682}\label{classmoa_1_1classifiers_1_1meta_1_1_weighted_majority_algorithm_ad589ff837eaa6508b0c584076804d682}} 
+\index{moa.classifiers.meta.WeightedMajorityAlgorithm@{moa.classifiers.meta.WeightedMajorityAlgorithm}!pruneOption@{pruneOption}}
+\index{pruneOption@{pruneOption}!moa.classifiers.meta.WeightedMajorityAlgorithm@{moa.classifiers.meta.WeightedMajorityAlgorithm}}
+\doxysubsubsection{\texorpdfstring{pruneOption}{pruneOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_flag_option}{Flag\+Option}} moa.\+classifiers.\+meta.\+Weighted\+Majority\+Algorithm.\+prune\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FlagOption(\textcolor{stringliteral}{"prune"}, \textcolor{charliteral}{'p'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Prune poorly performing models from ensemble."})}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/classifiers/meta/Weighted\+Majority\+Algorithm.\+java\end{DoxyCompactItemize}

@@ -1,0 +1,40 @@
+\hypertarget{classmoa_1_1clusterers_1_1outliers_1_1_any_out_1_1util_1_1_e_m_projected_clustering}{}\doxysection{moa.\+clusterers.\+outliers.\+Any\+Out.\+util.\+E\+M\+Projected\+Clustering Class Reference}
+\label{classmoa_1_1clusterers_1_1outliers_1_1_any_out_1_1util_1_1_e_m_projected_clustering}\index{moa.clusterers.outliers.AnyOut.util.EMProjectedClustering@{moa.clusterers.outliers.AnyOut.util.EMProjectedClustering}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1clusterers_1_1outliers_1_1_any_out_1_1util_1_1_e_m_projected_clustering_ab898a19a73944d94c736fec1f1ab388b}{get\+E\+M\+Clustering\+Variances}} (double\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} point\+Array, int k)
+\item 
+\mbox{\Hypertarget{classmoa_1_1clusterers_1_1outliers_1_1_any_out_1_1util_1_1_e_m_projected_clustering_a40d93e90b1ef7baf34752a83532b0c24}\label{classmoa_1_1clusterers_1_1outliers_1_1_any_out_1_1util_1_1_e_m_projected_clustering_a40d93e90b1ef7baf34752a83532b0c24}} 
+int\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} {\bfseries get\+E\+M\+Clustering\+Variances\+Best\+Choice} (double\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} point\+Array, int k, int nr\+Of\+Choices)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implements clustering via Expectation Maximization but return a clear partitioning of the data, i.\+e. a point belongs to only one cluster (the most probable) \begin{DoxyAuthor}{Author}
+kranen 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1clusterers_1_1outliers_1_1_any_out_1_1util_1_1_e_m_projected_clustering_ab898a19a73944d94c736fec1f1ab388b}\label{classmoa_1_1clusterers_1_1outliers_1_1_any_out_1_1util_1_1_e_m_projected_clustering_ab898a19a73944d94c736fec1f1ab388b}} 
+\index{moa.clusterers.outliers.AnyOut.util.EMProjectedClustering@{moa.clusterers.outliers.AnyOut.util.EMProjectedClustering}!getEMClusteringVariances@{getEMClusteringVariances}}
+\index{getEMClusteringVariances@{getEMClusteringVariances}!moa.clusterers.outliers.AnyOut.util.EMProjectedClustering@{moa.clusterers.outliers.AnyOut.util.EMProjectedClustering}}
+\doxysubsubsection{\texorpdfstring{getEMClusteringVariances()}{getEMClusteringVariances()}}
+{\footnotesize\ttfamily int \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} moa.\+clusterers.\+outliers.\+Any\+Out.\+util.\+E\+M\+Projected\+Clustering.\+get\+E\+M\+Clustering\+Variances (\begin{DoxyParamCaption}\item[{double}]{point\+Array\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]},  }\item[{int}]{k }\end{DoxyParamCaption})}
+
+Performs an EM clustering on the provided data set !! Only the variances are calculated and used for point assignments ! !!! the number k\textquotesingle{} of returned clusters might be smaller than k !!! 
+\begin{DoxyParams}{Parameters}
+{\em point\+Array} & the data set as an array\mbox{[}n\mbox{]}\mbox{[}d\mbox{]} of n points with d dimensions \\
+\hline
+{\em k} & the number of requested partitions (!might return less) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a mapping int\mbox{[}n\mbox{]}\mbox{[}k\textquotesingle{}\mbox{]} of the n given points to the k\textquotesingle{} resulting clusters 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/clusterers/outliers/\+Any\+Out/util/E\+M\+Projected\+Clustering.\+java\end{DoxyCompactItemize}

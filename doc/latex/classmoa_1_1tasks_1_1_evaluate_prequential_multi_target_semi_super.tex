@@ -1,0 +1,324 @@
+\hypertarget{classmoa_1_1tasks_1_1_evaluate_prequential_multi_target_semi_super}{}\doxysection{moa.\+tasks.\+Evaluate\+Prequential\+Multi\+Target\+Semi\+Super Class Reference}
+\label{classmoa_1_1tasks_1_1_evaluate_prequential_multi_target_semi_super}\index{moa.tasks.EvaluatePrequentialMultiTargetSemiSuper@{moa.tasks.EvaluatePrequentialMultiTargetSemiSuper}}
+
+
+Inheritance diagram for moa.\+tasks.\+Evaluate\+Prequential\+Multi\+Target\+Semi\+Super\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+tasks.\+Evaluate\+Prequential\+Multi\+Target\+Semi\+Super\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classmoa_1_1tasks_1_1_evaluate_prequential_multi_target_semi_super_a272873101d5f1e89cef179a865fe5cfa}{get\+Purpose\+String}} ()
+\item 
+Class$<$?$>$ \mbox{\hyperlink{classmoa_1_1tasks_1_1_evaluate_prequential_multi_target_semi_super_a681e6675a14e02e02fc1c906df5a47dc}{get\+Task\+Result\+Type}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} {\bfseries learner\+Option}
+\item 
+\mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} {\bfseries stream\+Option}
+\item 
+\mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} {\bfseries evaluator\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries instance\+Limit\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries time\+Limit\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries sample\+Frequency\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries mem\+Check\+Frequency\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_file_option}{File\+Option}} {\bfseries dump\+File\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_file_option}{File\+Option}} {\bfseries output\+Prediction\+File\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries width\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} {\bfseries alpha\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} {\bfseries unlabeled\+Percentage}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} {\bfseries db\+Initial\+Model\+Percentage}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries run\+Seed}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries sliding\+Window\+Size}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries sliding\+Window\+Step}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Object \mbox{\hyperlink{classmoa_1_1tasks_1_1_evaluate_prequential_multi_target_semi_super_a2bea9a37ba1b6a4095c5f7ea187edc9f}{do\+Main\+Task}} (\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}} monitor, \mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}} repository)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Multi-\/target Prequential semi-\/supervised evaluation
+
+Phase1\+: Creates a initial model with $<$db\+Initial\+Model\+Percentage$>$ of the instances in the dataset Phase2\+: When an instance is received\+: A binary random process with a binomial distribution selects if the instance should be labeled or unlabeled with probability $<$unlabeled\+Percentage$>$.
+
+\begin{DoxyAuthor}{Author}
+R\+Sousa 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+2 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_prequential_multi_target_semi_super_a2bea9a37ba1b6a4095c5f7ea187edc9f}\label{classmoa_1_1tasks_1_1_evaluate_prequential_multi_target_semi_super_a2bea9a37ba1b6a4095c5f7ea187edc9f}} 
+\index{moa.tasks.EvaluatePrequentialMultiTargetSemiSuper@{moa.tasks.EvaluatePrequentialMultiTargetSemiSuper}!doMainTask@{doMainTask}}
+\index{doMainTask@{doMainTask}!moa.tasks.EvaluatePrequentialMultiTargetSemiSuper@{moa.tasks.EvaluatePrequentialMultiTargetSemiSuper}}
+\doxysubsubsection{\texorpdfstring{doMainTask()}{doMainTask()}}
+{\footnotesize\ttfamily Object moa.\+tasks.\+Evaluate\+Prequential\+Multi\+Target\+Semi\+Super.\+do\+Main\+Task (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}}}]{monitor,  }\item[{\mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}}}]{repository }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+This method performs this task. {\ttfamily \mbox{\hyperlink{classmoa_1_1tasks_1_1_abstract_task}{Abstract\+Task}}} implements {\ttfamily do\+Task}, that uses {\ttfamily do\+Task\+Impl}. {\ttfamily \mbox{\hyperlink{classmoa_1_1tasks_1_1_main_task}{Main\+Task}}} implements {\ttfamily do\+Task\+Impl} using {\ttfamily do\+Main\+Task} so its extensions only need to implement {\ttfamily do\+Main\+Task}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em monitor} & the \mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}} to use \\
+\hline
+{\em repository} & the Object\+Repository to use \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an object with the result of this task 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1tasks_1_1_main_task_afab790976c2ace902aa1e2f780442788}{moa.\+tasks.\+Main\+Task}}.
+
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_prequential_multi_target_semi_super_a272873101d5f1e89cef179a865fe5cfa}\label{classmoa_1_1tasks_1_1_evaluate_prequential_multi_target_semi_super_a272873101d5f1e89cef179a865fe5cfa}} 
+\index{moa.tasks.EvaluatePrequentialMultiTargetSemiSuper@{moa.tasks.EvaluatePrequentialMultiTargetSemiSuper}!getPurposeString@{getPurposeString}}
+\index{getPurposeString@{getPurposeString}!moa.tasks.EvaluatePrequentialMultiTargetSemiSuper@{moa.tasks.EvaluatePrequentialMultiTargetSemiSuper}}
+\doxysubsubsection{\texorpdfstring{getPurposeString()}{getPurposeString()}}
+{\footnotesize\ttfamily String moa.\+tasks.\+Evaluate\+Prequential\+Multi\+Target\+Semi\+Super.\+get\+Purpose\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Options to handle Dictionary with option texts and objects 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1options_1_1_abstract_option_handler_abc8df69aea27ef85060557a9e918b2ca}{moa.\+options.\+Abstract\+Option\+Handler}}.
+
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_prequential_multi_target_semi_super_a681e6675a14e02e02fc1c906df5a47dc}\label{classmoa_1_1tasks_1_1_evaluate_prequential_multi_target_semi_super_a681e6675a14e02e02fc1c906df5a47dc}} 
+\index{moa.tasks.EvaluatePrequentialMultiTargetSemiSuper@{moa.tasks.EvaluatePrequentialMultiTargetSemiSuper}!getTaskResultType@{getTaskResultType}}
+\index{getTaskResultType@{getTaskResultType}!moa.tasks.EvaluatePrequentialMultiTargetSemiSuper@{moa.tasks.EvaluatePrequentialMultiTargetSemiSuper}}
+\doxysubsubsection{\texorpdfstring{getTaskResultType()}{getTaskResultType()}}
+{\footnotesize\ttfamily Class$<$?$>$ moa.\+tasks.\+Evaluate\+Prequential\+Multi\+Target\+Semi\+Super.\+get\+Task\+Result\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the result type of this task. Tasks can return Learning\+Curve, Learning\+Evaluation, Classifier, String, Instances..
+
+\begin{DoxyReturn}{Returns}
+a class object of the result of this task 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_a568100cd931416820d1bcc81032301f6}{moa.\+tasks.\+Task}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_prequential_multi_target_semi_super_a4c13454986560a2a7e3465efd14c6e4f}\label{classmoa_1_1tasks_1_1_evaluate_prequential_multi_target_semi_super_a4c13454986560a2a7e3465efd14c6e4f}} 
+\index{moa.tasks.EvaluatePrequentialMultiTargetSemiSuper@{moa.tasks.EvaluatePrequentialMultiTargetSemiSuper}!alphaOption@{alphaOption}}
+\index{alphaOption@{alphaOption}!moa.tasks.EvaluatePrequentialMultiTargetSemiSuper@{moa.tasks.EvaluatePrequentialMultiTargetSemiSuper}}
+\doxysubsubsection{\texorpdfstring{alphaOption}{alphaOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} moa.\+tasks.\+Evaluate\+Prequential\+Multi\+Target\+Semi\+Super.\+alpha\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FloatOption(\textcolor{stringliteral}{"alpha"},}
+\DoxyCodeLine{                \textcolor{charliteral}{'a'}, \textcolor{stringliteral}{"Fading factor or exponential smoothing factor"}, .01)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_prequential_multi_target_semi_super_ab8f0509a35e11d88afd05751a6746a13}\label{classmoa_1_1tasks_1_1_evaluate_prequential_multi_target_semi_super_ab8f0509a35e11d88afd05751a6746a13}} 
+\index{moa.tasks.EvaluatePrequentialMultiTargetSemiSuper@{moa.tasks.EvaluatePrequentialMultiTargetSemiSuper}!dbInitialModelPercentage@{dbInitialModelPercentage}}
+\index{dbInitialModelPercentage@{dbInitialModelPercentage}!moa.tasks.EvaluatePrequentialMultiTargetSemiSuper@{moa.tasks.EvaluatePrequentialMultiTargetSemiSuper}}
+\doxysubsubsection{\texorpdfstring{dbInitialModelPercentage}{dbInitialModelPercentage}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} moa.\+tasks.\+Evaluate\+Prequential\+Multi\+Target\+Semi\+Super.\+db\+Initial\+Model\+Percentage}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FloatOption(\textcolor{stringliteral}{"DBPercent"},}
+\DoxyCodeLine{                \textcolor{charliteral}{'D'}, \textcolor{stringliteral}{"Initial dataset (\%)"}, 30)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_prequential_multi_target_semi_super_a942b534878893a0bba6af690b0469256}\label{classmoa_1_1tasks_1_1_evaluate_prequential_multi_target_semi_super_a942b534878893a0bba6af690b0469256}} 
+\index{moa.tasks.EvaluatePrequentialMultiTargetSemiSuper@{moa.tasks.EvaluatePrequentialMultiTargetSemiSuper}!dumpFileOption@{dumpFileOption}}
+\index{dumpFileOption@{dumpFileOption}!moa.tasks.EvaluatePrequentialMultiTargetSemiSuper@{moa.tasks.EvaluatePrequentialMultiTargetSemiSuper}}
+\doxysubsubsection{\texorpdfstring{dumpFileOption}{dumpFileOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_file_option}{File\+Option}} moa.\+tasks.\+Evaluate\+Prequential\+Multi\+Target\+Semi\+Super.\+dump\+File\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FileOption(\textcolor{stringliteral}{"dumpFile"}, }
+\DoxyCodeLine{                \textcolor{charliteral}{'d'},\textcolor{stringliteral}{"File to append intermediate csv results to."}, \textcolor{keyword}{null}, \textcolor{stringliteral}{"csv"}, \textcolor{keyword}{true})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_prequential_multi_target_semi_super_aad9e047dbdb63876c138fa9f9bd9c0ae}\label{classmoa_1_1tasks_1_1_evaluate_prequential_multi_target_semi_super_aad9e047dbdb63876c138fa9f9bd9c0ae}} 
+\index{moa.tasks.EvaluatePrequentialMultiTargetSemiSuper@{moa.tasks.EvaluatePrequentialMultiTargetSemiSuper}!evaluatorOption@{evaluatorOption}}
+\index{evaluatorOption@{evaluatorOption}!moa.tasks.EvaluatePrequentialMultiTargetSemiSuper@{moa.tasks.EvaluatePrequentialMultiTargetSemiSuper}}
+\doxysubsubsection{\texorpdfstring{evaluatorOption}{evaluatorOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} moa.\+tasks.\+Evaluate\+Prequential\+Multi\+Target\+Semi\+Super.\+evaluator\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} ClassOption(\textcolor{stringliteral}{"evaluator"}, }
+\DoxyCodeLine{                \textcolor{charliteral}{'e'},\textcolor{stringliteral}{"Classification performance evaluation method."},MultiTargetPerformanceEvaluator.class,\textcolor{stringliteral}{"BasicMultiTargetPerformanceEvaluator"})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_prequential_multi_target_semi_super_adaf2299f027930dc3ec267f7314153b5}\label{classmoa_1_1tasks_1_1_evaluate_prequential_multi_target_semi_super_adaf2299f027930dc3ec267f7314153b5}} 
+\index{moa.tasks.EvaluatePrequentialMultiTargetSemiSuper@{moa.tasks.EvaluatePrequentialMultiTargetSemiSuper}!instanceLimitOption@{instanceLimitOption}}
+\index{instanceLimitOption@{instanceLimitOption}!moa.tasks.EvaluatePrequentialMultiTargetSemiSuper@{moa.tasks.EvaluatePrequentialMultiTargetSemiSuper}}
+\doxysubsubsection{\texorpdfstring{instanceLimitOption}{instanceLimitOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+tasks.\+Evaluate\+Prequential\+Multi\+Target\+Semi\+Super.\+instance\+Limit\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(\textcolor{stringliteral}{"instanceLimit"}, }
+\DoxyCodeLine{                \textcolor{charliteral}{'i'},\textcolor{stringliteral}{"Maximum number of instances to test/train on  (-\/1 = no limit)."},100000000, -\/1, Integer.MAX\_VALUE)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_prequential_multi_target_semi_super_a57525910b71121a605642c22627e812a}\label{classmoa_1_1tasks_1_1_evaluate_prequential_multi_target_semi_super_a57525910b71121a605642c22627e812a}} 
+\index{moa.tasks.EvaluatePrequentialMultiTargetSemiSuper@{moa.tasks.EvaluatePrequentialMultiTargetSemiSuper}!learnerOption@{learnerOption}}
+\index{learnerOption@{learnerOption}!moa.tasks.EvaluatePrequentialMultiTargetSemiSuper@{moa.tasks.EvaluatePrequentialMultiTargetSemiSuper}}
+\doxysubsubsection{\texorpdfstring{learnerOption}{learnerOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} moa.\+tasks.\+Evaluate\+Prequential\+Multi\+Target\+Semi\+Super.\+learner\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} ClassOption(\textcolor{stringliteral}{"learner"}, }
+\DoxyCodeLine{                \textcolor{charliteral}{'l'},\textcolor{stringliteral}{"Learner to train."}, MultiTargetLearnerSemiSupervised.class, \textcolor{stringliteral}{"moa.classifiers.rules.multilabel.AMRulesMultiTargetRegressorSemiSuper"})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_prequential_multi_target_semi_super_a3709fc95144919d4dffefd73e8176359}\label{classmoa_1_1tasks_1_1_evaluate_prequential_multi_target_semi_super_a3709fc95144919d4dffefd73e8176359}} 
+\index{moa.tasks.EvaluatePrequentialMultiTargetSemiSuper@{moa.tasks.EvaluatePrequentialMultiTargetSemiSuper}!memCheckFrequencyOption@{memCheckFrequencyOption}}
+\index{memCheckFrequencyOption@{memCheckFrequencyOption}!moa.tasks.EvaluatePrequentialMultiTargetSemiSuper@{moa.tasks.EvaluatePrequentialMultiTargetSemiSuper}}
+\doxysubsubsection{\texorpdfstring{memCheckFrequencyOption}{memCheckFrequencyOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+tasks.\+Evaluate\+Prequential\+Multi\+Target\+Semi\+Super.\+mem\+Check\+Frequency\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(\textcolor{stringliteral}{"memCheckFrequency"}, }
+\DoxyCodeLine{                \textcolor{charliteral}{'q'},\textcolor{stringliteral}{"How many instances between memory bound checks."}, 100000, 0,Integer.MAX\_VALUE)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_prequential_multi_target_semi_super_a00c2615bb210b8a965f167269c8cd63f}\label{classmoa_1_1tasks_1_1_evaluate_prequential_multi_target_semi_super_a00c2615bb210b8a965f167269c8cd63f}} 
+\index{moa.tasks.EvaluatePrequentialMultiTargetSemiSuper@{moa.tasks.EvaluatePrequentialMultiTargetSemiSuper}!outputPredictionFileOption@{outputPredictionFileOption}}
+\index{outputPredictionFileOption@{outputPredictionFileOption}!moa.tasks.EvaluatePrequentialMultiTargetSemiSuper@{moa.tasks.EvaluatePrequentialMultiTargetSemiSuper}}
+\doxysubsubsection{\texorpdfstring{outputPredictionFileOption}{outputPredictionFileOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_file_option}{File\+Option}} moa.\+tasks.\+Evaluate\+Prequential\+Multi\+Target\+Semi\+Super.\+output\+Prediction\+File\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FileOption(\textcolor{stringliteral}{"outputPredictionFile"}, }
+\DoxyCodeLine{                \textcolor{charliteral}{'o'},\textcolor{stringliteral}{"File to append output predictions to."}, \textcolor{keyword}{null}, \textcolor{stringliteral}{"pred"}, \textcolor{keyword}{true})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_prequential_multi_target_semi_super_acf0effb8f10a4c7338cf4d58070283a4}\label{classmoa_1_1tasks_1_1_evaluate_prequential_multi_target_semi_super_acf0effb8f10a4c7338cf4d58070283a4}} 
+\index{moa.tasks.EvaluatePrequentialMultiTargetSemiSuper@{moa.tasks.EvaluatePrequentialMultiTargetSemiSuper}!runSeed@{runSeed}}
+\index{runSeed@{runSeed}!moa.tasks.EvaluatePrequentialMultiTargetSemiSuper@{moa.tasks.EvaluatePrequentialMultiTargetSemiSuper}}
+\doxysubsubsection{\texorpdfstring{runSeed}{runSeed}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+tasks.\+Evaluate\+Prequential\+Multi\+Target\+Semi\+Super.\+run\+Seed}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(\textcolor{stringliteral}{"Seed"},}
+\DoxyCodeLine{                \textcolor{charliteral}{'r'}, \textcolor{stringliteral}{"Number of predictions"},1)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_prequential_multi_target_semi_super_ab949618834ba039e18f7c90ffbc137b6}\label{classmoa_1_1tasks_1_1_evaluate_prequential_multi_target_semi_super_ab949618834ba039e18f7c90ffbc137b6}} 
+\index{moa.tasks.EvaluatePrequentialMultiTargetSemiSuper@{moa.tasks.EvaluatePrequentialMultiTargetSemiSuper}!sampleFrequencyOption@{sampleFrequencyOption}}
+\index{sampleFrequencyOption@{sampleFrequencyOption}!moa.tasks.EvaluatePrequentialMultiTargetSemiSuper@{moa.tasks.EvaluatePrequentialMultiTargetSemiSuper}}
+\doxysubsubsection{\texorpdfstring{sampleFrequencyOption}{sampleFrequencyOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+tasks.\+Evaluate\+Prequential\+Multi\+Target\+Semi\+Super.\+sample\+Frequency\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(\textcolor{stringliteral}{"sampleFrequency"},}
+\DoxyCodeLine{                \textcolor{charliteral}{'f'},\textcolor{stringliteral}{"How many instances between samples of the learning performance."},100000, 0, Integer.MAX\_VALUE)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_prequential_multi_target_semi_super_a075e4c61d6ef5f37650603487ddfcbda}\label{classmoa_1_1tasks_1_1_evaluate_prequential_multi_target_semi_super_a075e4c61d6ef5f37650603487ddfcbda}} 
+\index{moa.tasks.EvaluatePrequentialMultiTargetSemiSuper@{moa.tasks.EvaluatePrequentialMultiTargetSemiSuper}!slidingWindowSize@{slidingWindowSize}}
+\index{slidingWindowSize@{slidingWindowSize}!moa.tasks.EvaluatePrequentialMultiTargetSemiSuper@{moa.tasks.EvaluatePrequentialMultiTargetSemiSuper}}
+\doxysubsubsection{\texorpdfstring{slidingWindowSize}{slidingWindowSize}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+tasks.\+Evaluate\+Prequential\+Multi\+Target\+Semi\+Super.\+sliding\+Window\+Size}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(\textcolor{stringliteral}{"slidingWindowSize"},}
+\DoxyCodeLine{                \textcolor{charliteral}{'W'}, \textcolor{stringliteral}{"slidingWindowSize"},1000)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_prequential_multi_target_semi_super_a3f032856d097ba441489cc488e76715b}\label{classmoa_1_1tasks_1_1_evaluate_prequential_multi_target_semi_super_a3f032856d097ba441489cc488e76715b}} 
+\index{moa.tasks.EvaluatePrequentialMultiTargetSemiSuper@{moa.tasks.EvaluatePrequentialMultiTargetSemiSuper}!slidingWindowStep@{slidingWindowStep}}
+\index{slidingWindowStep@{slidingWindowStep}!moa.tasks.EvaluatePrequentialMultiTargetSemiSuper@{moa.tasks.EvaluatePrequentialMultiTargetSemiSuper}}
+\doxysubsubsection{\texorpdfstring{slidingWindowStep}{slidingWindowStep}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+tasks.\+Evaluate\+Prequential\+Multi\+Target\+Semi\+Super.\+sliding\+Window\+Step}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(\textcolor{stringliteral}{"slidingWindowStep"},}
+\DoxyCodeLine{                \textcolor{charliteral}{'j'}, \textcolor{stringliteral}{"slidingWindowStep"},1)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_prequential_multi_target_semi_super_acf7a3725451f2982a20a2d3698cc6579}\label{classmoa_1_1tasks_1_1_evaluate_prequential_multi_target_semi_super_acf7a3725451f2982a20a2d3698cc6579}} 
+\index{moa.tasks.EvaluatePrequentialMultiTargetSemiSuper@{moa.tasks.EvaluatePrequentialMultiTargetSemiSuper}!streamOption@{streamOption}}
+\index{streamOption@{streamOption}!moa.tasks.EvaluatePrequentialMultiTargetSemiSuper@{moa.tasks.EvaluatePrequentialMultiTargetSemiSuper}}
+\doxysubsubsection{\texorpdfstring{streamOption}{streamOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} moa.\+tasks.\+Evaluate\+Prequential\+Multi\+Target\+Semi\+Super.\+stream\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} ClassOption(\textcolor{stringliteral}{"stream"}, }
+\DoxyCodeLine{                \textcolor{charliteral}{'s'},\textcolor{stringliteral}{"Stream to learn from."}, MultiTargetInstanceStream.class,\textcolor{stringliteral}{"MultiTargetArffFileStream"})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_prequential_multi_target_semi_super_ab53b3ecf17520cdde63dc37acfe3847a}\label{classmoa_1_1tasks_1_1_evaluate_prequential_multi_target_semi_super_ab53b3ecf17520cdde63dc37acfe3847a}} 
+\index{moa.tasks.EvaluatePrequentialMultiTargetSemiSuper@{moa.tasks.EvaluatePrequentialMultiTargetSemiSuper}!timeLimitOption@{timeLimitOption}}
+\index{timeLimitOption@{timeLimitOption}!moa.tasks.EvaluatePrequentialMultiTargetSemiSuper@{moa.tasks.EvaluatePrequentialMultiTargetSemiSuper}}
+\doxysubsubsection{\texorpdfstring{timeLimitOption}{timeLimitOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+tasks.\+Evaluate\+Prequential\+Multi\+Target\+Semi\+Super.\+time\+Limit\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(\textcolor{stringliteral}{"timeLimit"}, }
+\DoxyCodeLine{                \textcolor{charliteral}{'t'},\textcolor{stringliteral}{"Maximum number of seconds to test/train for (-\/1 = no limit)."}, -\/1,-\/1, Integer.MAX\_VALUE)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_prequential_multi_target_semi_super_ac8a71f446d2168487aa302d98448e1cc}\label{classmoa_1_1tasks_1_1_evaluate_prequential_multi_target_semi_super_ac8a71f446d2168487aa302d98448e1cc}} 
+\index{moa.tasks.EvaluatePrequentialMultiTargetSemiSuper@{moa.tasks.EvaluatePrequentialMultiTargetSemiSuper}!unlabeledPercentage@{unlabeledPercentage}}
+\index{unlabeledPercentage@{unlabeledPercentage}!moa.tasks.EvaluatePrequentialMultiTargetSemiSuper@{moa.tasks.EvaluatePrequentialMultiTargetSemiSuper}}
+\doxysubsubsection{\texorpdfstring{unlabeledPercentage}{unlabeledPercentage}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} moa.\+tasks.\+Evaluate\+Prequential\+Multi\+Target\+Semi\+Super.\+unlabeled\+Percentage}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FloatOption(\textcolor{stringliteral}{"WithoutTarget"},}
+\DoxyCodeLine{                \textcolor{charliteral}{'z'}, \textcolor{stringliteral}{"Without target percentage(\%)"}, 50)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_prequential_multi_target_semi_super_a5ee3e0c2e2f6d556fb6d27892f842f55}\label{classmoa_1_1tasks_1_1_evaluate_prequential_multi_target_semi_super_a5ee3e0c2e2f6d556fb6d27892f842f55}} 
+\index{moa.tasks.EvaluatePrequentialMultiTargetSemiSuper@{moa.tasks.EvaluatePrequentialMultiTargetSemiSuper}!widthOption@{widthOption}}
+\index{widthOption@{widthOption}!moa.tasks.EvaluatePrequentialMultiTargetSemiSuper@{moa.tasks.EvaluatePrequentialMultiTargetSemiSuper}}
+\doxysubsubsection{\texorpdfstring{widthOption}{widthOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+tasks.\+Evaluate\+Prequential\+Multi\+Target\+Semi\+Super.\+width\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(\textcolor{stringliteral}{"width"},}
+\DoxyCodeLine{                \textcolor{charliteral}{'w'}, \textcolor{stringliteral}{"Size of Window"}, 1000)}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/tasks/Evaluate\+Prequential\+Multi\+Target\+Semi\+Super.\+java\end{DoxyCompactItemize}

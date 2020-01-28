@@ -1,0 +1,14 @@
+digraph "moa.classifiers.rules.featureranking.messages.FeatureRankingMessage"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="moa.classifiers.rules.featureranking.messages.\lFeatureRankingMessage",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="moa.classifiers.rules.featureranking.messages.\lChangeDetectedMessage",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classmoa_1_1classifiers_1_1rules_1_1featureranking_1_1messages_1_1_change_detected_message.html",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="moa.classifiers.rules.featureranking.messages.\lMeritCheckMessage",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classmoa_1_1classifiers_1_1rules_1_1featureranking_1_1messages_1_1_merit_check_message.html",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="moa.classifiers.rules.featureranking.messages.\lRuleExpandedMessage",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classmoa_1_1classifiers_1_1rules_1_1featureranking_1_1messages_1_1_rule_expanded_message.html",tooltip=" "];
+}

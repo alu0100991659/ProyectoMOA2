@@ -1,0 +1,397 @@
+\hypertarget{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class}{}\doxysection{moa.\+classifiers.\+functions.\+S\+G\+D\+Multi\+Class Class Reference}
+\label{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class}\index{moa.classifiers.functions.SGDMultiClass@{moa.classifiers.functions.SGDMultiClass}}
+
+
+Inheritance diagram for moa.\+classifiers.\+functions.\+S\+G\+D\+Multi\+Class\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+classifiers.\+functions.\+S\+G\+D\+Multi\+Class\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_a53fb968606048c4d7aa51546c31d119d}{get\+Purpose\+String}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_a263a36660635157cfd56cd91ec3c88a4}{set\+Lambda}} (double lambda)
+\item 
+double \mbox{\hyperlink{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_a19a95f8afe6936ff53ffe0446a368fbe}{get\+Lambda}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_a872104826180f3835862af50bc801bdd}{set\+Loss\+Function}} (int function)
+\item 
+int \mbox{\hyperlink{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_afa4302683bf3130c7e1a55fe31af223e}{get\+Loss\+Function}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_a315abebce5bd7f393dbe745ac80143f1}{set\+Learning\+Rate}} (double lr)
+\item 
+double \mbox{\hyperlink{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_a7cdf6972ed9d1f0eb781564c3c9aed03}{get\+Learning\+Rate}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_aac64edc57f0ed5c8a997af484566e84e}{reset}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_a23e3850ddca7e749d6887bc594e694b0}{reset\+Learning\+Impl}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_a5c3cb2495a4c9ae46d43f07e61ab5ca1}{train\+On\+Instance\+Impl}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} instance)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_a80eb3f2f9d30d403c820ee5a2b822179}\label{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_a80eb3f2f9d30d403c820ee5a2b822179}} 
+void {\bfseries train\+On\+Instance\+Impl} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} instance, int class\+Label)
+\item 
+double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_a4c8a42d0d7e44d4a049d590b3de120e3}{get\+Votes\+For\+Instance}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst)
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_adc5ade5bfea35e7b3cb4f49f42d9da83}{get\+Model\+Description}} (String\+Builder result, int indent)
+\item 
+String \mbox{\hyperlink{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_a45273b6fd77a124dbfb759cd5a3185ac}{to\+String}} ()
+\item 
+boolean \mbox{\hyperlink{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_aa8d45bd8294cf979da8b22acb7f351b5}{is\+Randomizable}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} {\bfseries lambda\+Regularization\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} {\bfseries learning\+Rate\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_multi_choice_option}{Multi\+Choice\+Option}} {\bfseries loss\+Function\+Option}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_adbe2e547aadd4b174760cd0cae75b3c2}\label{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_adbe2e547aadd4b174760cd0cae75b3c2}} 
+double {\bfseries dloss} (double z)
+\item 
+\mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_a0fea24923e4f7939aebe012a335da2b6}{get\+Model\+Measurements\+Impl}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_ac8758b70e8cb80e20f2bb918a1a1ed3c}\label{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_ac8758b70e8cb80e20f2bb918a1a1ed3c}} 
+static double {\bfseries dot\+Prod} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst1, \mbox{\hyperlink{classmoa_1_1core_1_1_double_vector}{Double\+Vector}} weights, int class\+Index)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_a9fdaeee19d70fccc1af25370acb3157a}{m\+\_\+lambda}} = 0.\+0001
+\item 
+double \mbox{\hyperlink{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_af67b7d9b9d8cc02070e16276833952ec}{m\+\_\+learning\+Rate}} = 0.\+01
+\item 
+\mbox{\hyperlink{classmoa_1_1core_1_1_double_vector}{Double\+Vector}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_ac32d94869deb0a8dc799928153291878}{m\+\_\+weights}}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_aa8128a0cea9531355bccb02f42a0a1e2}\label{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_aa8128a0cea9531355bccb02f42a0a1e2}} 
+double\mbox{[}$\,$\mbox{]} {\bfseries m\+\_\+bias}
+\item 
+double \mbox{\hyperlink{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_acb5cadcc87a5d1a584710fa0c9e396d4}{m\+\_\+t}}
+\item 
+double \mbox{\hyperlink{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_ae58a795bb46b6fa158f1e36285032014}{m\+\_\+num\+Instances}}
+\item 
+int \mbox{\hyperlink{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_aa7fa47a1c8d808cfc69dac532db3e650}{m\+\_\+loss}} = H\+I\+N\+GE
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_a061672ba09677081172b494972ca1ff2}\label{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_a061672ba09677081172b494972ca1ff2}} 
+static final int {\bfseries H\+I\+N\+GE} = 0
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_ae206a19a74ab644f8a9a65e026333e3a}\label{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_ae206a19a74ab644f8a9a65e026333e3a}} 
+static final int {\bfseries L\+O\+G\+L\+O\+SS} = 1
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_a75abb94fc9d3a9553390e8cecde6367a}\label{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_a75abb94fc9d3a9553390e8cecde6367a}} 
+static final int {\bfseries S\+Q\+U\+A\+R\+E\+D\+L\+O\+SS} = 2
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Implements stochastic gradient descent for learning various linear models (binary class S\+VM, binary class logistic regression and linear regression). 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_a19a95f8afe6936ff53ffe0446a368fbe}\label{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_a19a95f8afe6936ff53ffe0446a368fbe}} 
+\index{moa.classifiers.functions.SGDMultiClass@{moa.classifiers.functions.SGDMultiClass}!getLambda@{getLambda}}
+\index{getLambda@{getLambda}!moa.classifiers.functions.SGDMultiClass@{moa.classifiers.functions.SGDMultiClass}}
+\doxysubsubsection{\texorpdfstring{getLambda()}{getLambda()}}
+{\footnotesize\ttfamily double moa.\+classifiers.\+functions.\+S\+G\+D\+Multi\+Class.\+get\+Lambda (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the current value of lambda
+
+\begin{DoxyReturn}{Returns}
+the current value of lambda 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_a7cdf6972ed9d1f0eb781564c3c9aed03}\label{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_a7cdf6972ed9d1f0eb781564c3c9aed03}} 
+\index{moa.classifiers.functions.SGDMultiClass@{moa.classifiers.functions.SGDMultiClass}!getLearningRate@{getLearningRate}}
+\index{getLearningRate@{getLearningRate}!moa.classifiers.functions.SGDMultiClass@{moa.classifiers.functions.SGDMultiClass}}
+\doxysubsubsection{\texorpdfstring{getLearningRate()}{getLearningRate()}}
+{\footnotesize\ttfamily double moa.\+classifiers.\+functions.\+S\+G\+D\+Multi\+Class.\+get\+Learning\+Rate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the learning rate.
+
+\begin{DoxyReturn}{Returns}
+the learning rate 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_afa4302683bf3130c7e1a55fe31af223e}\label{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_afa4302683bf3130c7e1a55fe31af223e}} 
+\index{moa.classifiers.functions.SGDMultiClass@{moa.classifiers.functions.SGDMultiClass}!getLossFunction@{getLossFunction}}
+\index{getLossFunction@{getLossFunction}!moa.classifiers.functions.SGDMultiClass@{moa.classifiers.functions.SGDMultiClass}}
+\doxysubsubsection{\texorpdfstring{getLossFunction()}{getLossFunction()}}
+{\footnotesize\ttfamily int moa.\+classifiers.\+functions.\+S\+G\+D\+Multi\+Class.\+get\+Loss\+Function (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the current loss function.
+
+\begin{DoxyReturn}{Returns}
+the current loss function. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_adc5ade5bfea35e7b3cb4f49f42d9da83}\label{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_adc5ade5bfea35e7b3cb4f49f42d9da83}} 
+\index{moa.classifiers.functions.SGDMultiClass@{moa.classifiers.functions.SGDMultiClass}!getModelDescription@{getModelDescription}}
+\index{getModelDescription@{getModelDescription}!moa.classifiers.functions.SGDMultiClass@{moa.classifiers.functions.SGDMultiClass}}
+\doxysubsubsection{\texorpdfstring{getModelDescription()}{getModelDescription()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+functions.\+S\+G\+D\+Multi\+Class.\+get\+Model\+Description (\begin{DoxyParamCaption}\item[{String\+Builder}]{out,  }\item[{int}]{indent }\end{DoxyParamCaption})}
+
+Returns a string representation of the model.
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & the stringbuilder to add the description \\
+\hline
+{\em indent} & the number of characters to indent \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a30e5ff32bc8127dfb7436945776b7523}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_a0fea24923e4f7939aebe012a335da2b6}\label{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_a0fea24923e4f7939aebe012a335da2b6}} 
+\index{moa.classifiers.functions.SGDMultiClass@{moa.classifiers.functions.SGDMultiClass}!getModelMeasurementsImpl@{getModelMeasurementsImpl}}
+\index{getModelMeasurementsImpl@{getModelMeasurementsImpl}!moa.classifiers.functions.SGDMultiClass@{moa.classifiers.functions.SGDMultiClass}}
+\doxysubsubsection{\texorpdfstring{getModelMeasurementsImpl()}{getModelMeasurementsImpl()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}} \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+functions.\+S\+G\+D\+Multi\+Class.\+get\+Model\+Measurements\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Gets the current measurements of this classifier.~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden.
+
+\begin{DoxyReturn}{Returns}
+an array of measurements to be used in evaluation tasks 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_ac2bebede21c9d2d8cd11d95a7e20e529}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_a53fb968606048c4d7aa51546c31d119d}\label{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_a53fb968606048c4d7aa51546c31d119d}} 
+\index{moa.classifiers.functions.SGDMultiClass@{moa.classifiers.functions.SGDMultiClass}!getPurposeString@{getPurposeString}}
+\index{getPurposeString@{getPurposeString}!moa.classifiers.functions.SGDMultiClass@{moa.classifiers.functions.SGDMultiClass}}
+\doxysubsubsection{\texorpdfstring{getPurposeString()}{getPurposeString()}}
+{\footnotesize\ttfamily String moa.\+classifiers.\+functions.\+S\+G\+D\+Multi\+Class.\+get\+Purpose\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Options to handle Dictionary with option texts and objects 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a3fc6ae11234b88e51941a77ddb879d8b}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_a4c8a42d0d7e44d4a049d590b3de120e3}\label{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_a4c8a42d0d7e44d4a049d590b3de120e3}} 
+\index{moa.classifiers.functions.SGDMultiClass@{moa.classifiers.functions.SGDMultiClass}!getVotesForInstance@{getVotesForInstance}}
+\index{getVotesForInstance@{getVotesForInstance}!moa.classifiers.functions.SGDMultiClass@{moa.classifiers.functions.SGDMultiClass}}
+\doxysubsubsection{\texorpdfstring{getVotesForInstance()}{getVotesForInstance()}}
+{\footnotesize\ttfamily double \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+functions.\+S\+G\+D\+Multi\+Class.\+get\+Votes\+For\+Instance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{inst }\end{DoxyParamCaption})}
+
+Calculates the class membership probabilities for the given test instance.
+
+
+\begin{DoxyParams}{Parameters}
+{\em instance} & the instance to be classified \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+predicted class probability distribution 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a0e3589c4fa6f088d82d64514afd9513c}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_aa8d45bd8294cf979da8b22acb7f351b5}\label{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_aa8d45bd8294cf979da8b22acb7f351b5}} 
+\index{moa.classifiers.functions.SGDMultiClass@{moa.classifiers.functions.SGDMultiClass}!isRandomizable@{isRandomizable}}
+\index{isRandomizable@{isRandomizable}!moa.classifiers.functions.SGDMultiClass@{moa.classifiers.functions.SGDMultiClass}}
+\doxysubsubsection{\texorpdfstring{isRandomizable()}{isRandomizable()}}
+{\footnotesize\ttfamily boolean moa.\+classifiers.\+functions.\+S\+G\+D\+Multi\+Class.\+is\+Randomizable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets whether this learner needs a random seed. Examples of methods that needs a random seed are bagging and boosting.
+
+\begin{DoxyReturn}{Returns}
+true if the learner needs a random seed. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1learners_1_1_learner_a2f1ff9007b5eb5f53801f474b4d42a61}{moa.\+learners.\+Learner$<$ E extends Example $>$}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_aac64edc57f0ed5c8a997af484566e84e}\label{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_aac64edc57f0ed5c8a997af484566e84e}} 
+\index{moa.classifiers.functions.SGDMultiClass@{moa.classifiers.functions.SGDMultiClass}!reset@{reset}}
+\index{reset@{reset}!moa.classifiers.functions.SGDMultiClass@{moa.classifiers.functions.SGDMultiClass}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+functions.\+S\+G\+D\+Multi\+Class.\+reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Reset the classifier. \mbox{\Hypertarget{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_a23e3850ddca7e749d6887bc594e694b0}\label{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_a23e3850ddca7e749d6887bc594e694b0}} 
+\index{moa.classifiers.functions.SGDMultiClass@{moa.classifiers.functions.SGDMultiClass}!resetLearningImpl@{resetLearningImpl}}
+\index{resetLearningImpl@{resetLearningImpl}!moa.classifiers.functions.SGDMultiClass@{moa.classifiers.functions.SGDMultiClass}}
+\doxysubsubsection{\texorpdfstring{resetLearningImpl()}{resetLearningImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+functions.\+S\+G\+D\+Multi\+Class.\+reset\+Learning\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Resets this classifier. It must be similar to starting a new classifier from scratch. ~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden. 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a099ffcf2417abb919d10d697c0648f29}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_a263a36660635157cfd56cd91ec3c88a4}\label{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_a263a36660635157cfd56cd91ec3c88a4}} 
+\index{moa.classifiers.functions.SGDMultiClass@{moa.classifiers.functions.SGDMultiClass}!setLambda@{setLambda}}
+\index{setLambda@{setLambda}!moa.classifiers.functions.SGDMultiClass@{moa.classifiers.functions.SGDMultiClass}}
+\doxysubsubsection{\texorpdfstring{setLambda()}{setLambda()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+functions.\+S\+G\+D\+Multi\+Class.\+set\+Lambda (\begin{DoxyParamCaption}\item[{double}]{lambda }\end{DoxyParamCaption})}
+
+Set the value of lambda to use
+
+
+\begin{DoxyParams}{Parameters}
+{\em lambda} & the value of lambda to use \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_a315abebce5bd7f393dbe745ac80143f1}\label{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_a315abebce5bd7f393dbe745ac80143f1}} 
+\index{moa.classifiers.functions.SGDMultiClass@{moa.classifiers.functions.SGDMultiClass}!setLearningRate@{setLearningRate}}
+\index{setLearningRate@{setLearningRate}!moa.classifiers.functions.SGDMultiClass@{moa.classifiers.functions.SGDMultiClass}}
+\doxysubsubsection{\texorpdfstring{setLearningRate()}{setLearningRate()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+functions.\+S\+G\+D\+Multi\+Class.\+set\+Learning\+Rate (\begin{DoxyParamCaption}\item[{double}]{lr }\end{DoxyParamCaption})}
+
+Set the learning rate.
+
+
+\begin{DoxyParams}{Parameters}
+{\em lr} & the learning rate to use. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_a872104826180f3835862af50bc801bdd}\label{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_a872104826180f3835862af50bc801bdd}} 
+\index{moa.classifiers.functions.SGDMultiClass@{moa.classifiers.functions.SGDMultiClass}!setLossFunction@{setLossFunction}}
+\index{setLossFunction@{setLossFunction}!moa.classifiers.functions.SGDMultiClass@{moa.classifiers.functions.SGDMultiClass}}
+\doxysubsubsection{\texorpdfstring{setLossFunction()}{setLossFunction()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+functions.\+S\+G\+D\+Multi\+Class.\+set\+Loss\+Function (\begin{DoxyParamCaption}\item[{int}]{function }\end{DoxyParamCaption})}
+
+Set the loss function to use.
+
+
+\begin{DoxyParams}{Parameters}
+{\em function} & the loss function to use. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_a45273b6fd77a124dbfb759cd5a3185ac}\label{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_a45273b6fd77a124dbfb759cd5a3185ac}} 
+\index{moa.classifiers.functions.SGDMultiClass@{moa.classifiers.functions.SGDMultiClass}!toString@{toString}}
+\index{toString@{toString}!moa.classifiers.functions.SGDMultiClass@{moa.classifiers.functions.SGDMultiClass}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily String moa.\+classifiers.\+functions.\+S\+G\+D\+Multi\+Class.\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Prints out the classifier.
+
+\begin{DoxyReturn}{Returns}
+a description of the classifier as a string 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1_abstract_m_o_a_object_ac686fd3b07c734cf21f1894376fe402d}{moa.\+Abstract\+M\+O\+A\+Object}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_a5c3cb2495a4c9ae46d43f07e61ab5ca1}\label{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_a5c3cb2495a4c9ae46d43f07e61ab5ca1}} 
+\index{moa.classifiers.functions.SGDMultiClass@{moa.classifiers.functions.SGDMultiClass}!trainOnInstanceImpl@{trainOnInstanceImpl}}
+\index{trainOnInstanceImpl@{trainOnInstanceImpl}!moa.classifiers.functions.SGDMultiClass@{moa.classifiers.functions.SGDMultiClass}}
+\doxysubsubsection{\texorpdfstring{trainOnInstanceImpl()}{trainOnInstanceImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+functions.\+S\+G\+D\+Multi\+Class.\+train\+On\+Instance\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{instance }\end{DoxyParamCaption})}
+
+Trains the classifier with the given instance.
+
+
+\begin{DoxyParams}{Parameters}
+{\em instance} & the new training instance to include in the model \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_aceb24d2ddeab386f2ecead6e3c0d3543}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_affe585590a5449137e1fc3b2946a2ead}\label{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_affe585590a5449137e1fc3b2946a2ead}} 
+\index{moa.classifiers.functions.SGDMultiClass@{moa.classifiers.functions.SGDMultiClass}!lambdaRegularizationOption@{lambdaRegularizationOption}}
+\index{lambdaRegularizationOption@{lambdaRegularizationOption}!moa.classifiers.functions.SGDMultiClass@{moa.classifiers.functions.SGDMultiClass}}
+\doxysubsubsection{\texorpdfstring{lambdaRegularizationOption}{lambdaRegularizationOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} moa.\+classifiers.\+functions.\+S\+G\+D\+Multi\+Class.\+lambda\+Regularization\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FloatOption(\textcolor{stringliteral}{"lambdaRegularization"},}
+\DoxyCodeLine{            \textcolor{charliteral}{'l'}, \textcolor{stringliteral}{"Lambda regularization parameter ."},}
+\DoxyCodeLine{            0.0001, 0.00, Integer.MAX\_VALUE)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_ad079c4246f6495d104ed96e2b1a794e4}\label{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_ad079c4246f6495d104ed96e2b1a794e4}} 
+\index{moa.classifiers.functions.SGDMultiClass@{moa.classifiers.functions.SGDMultiClass}!learningRateOption@{learningRateOption}}
+\index{learningRateOption@{learningRateOption}!moa.classifiers.functions.SGDMultiClass@{moa.classifiers.functions.SGDMultiClass}}
+\doxysubsubsection{\texorpdfstring{learningRateOption}{learningRateOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} moa.\+classifiers.\+functions.\+S\+G\+D\+Multi\+Class.\+learning\+Rate\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FloatOption(\textcolor{stringliteral}{"learningRate"},}
+\DoxyCodeLine{            \textcolor{charliteral}{'r'}, \textcolor{stringliteral}{"Learning rate parameter."},}
+\DoxyCodeLine{            0.0001, 0.00, Integer.MAX\_VALUE)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_a137840691507f1aa7bbb3a85fee1ba41}\label{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_a137840691507f1aa7bbb3a85fee1ba41}} 
+\index{moa.classifiers.functions.SGDMultiClass@{moa.classifiers.functions.SGDMultiClass}!lossFunctionOption@{lossFunctionOption}}
+\index{lossFunctionOption@{lossFunctionOption}!moa.classifiers.functions.SGDMultiClass@{moa.classifiers.functions.SGDMultiClass}}
+\doxysubsubsection{\texorpdfstring{lossFunctionOption}{lossFunctionOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_multi_choice_option}{Multi\+Choice\+Option}} moa.\+classifiers.\+functions.\+S\+G\+D\+Multi\+Class.\+loss\+Function\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} MultiChoiceOption(}
+\DoxyCodeLine{            \textcolor{stringliteral}{"lossFunction"}, \textcolor{charliteral}{'o'}, \textcolor{stringliteral}{"The loss function to use."}, \textcolor{keyword}{new} String[]\{}
+\DoxyCodeLine{                \textcolor{stringliteral}{"HINGE"}, \textcolor{stringliteral}{"LOGLOSS"}, \textcolor{stringliteral}{"SQUAREDLOSS"}\}, \textcolor{keyword}{new} String[]\{}
+\DoxyCodeLine{                \textcolor{stringliteral}{"Hinge loss (SVM)"},}
+\DoxyCodeLine{                \textcolor{stringliteral}{"Log loss (logistic regression)"},}
+\DoxyCodeLine{                \textcolor{stringliteral}{"Squared loss (regression)"}\}, 0)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_a9fdaeee19d70fccc1af25370acb3157a}\label{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_a9fdaeee19d70fccc1af25370acb3157a}} 
+\index{moa.classifiers.functions.SGDMultiClass@{moa.classifiers.functions.SGDMultiClass}!m\_lambda@{m\_lambda}}
+\index{m\_lambda@{m\_lambda}!moa.classifiers.functions.SGDMultiClass@{moa.classifiers.functions.SGDMultiClass}}
+\doxysubsubsection{\texorpdfstring{m\_lambda}{m\_lambda}}
+{\footnotesize\ttfamily double moa.\+classifiers.\+functions.\+S\+G\+D\+Multi\+Class.\+m\+\_\+lambda = 0.\+0001\hspace{0.3cm}{\ttfamily [protected]}}
+
+The regularization parameter \mbox{\Hypertarget{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_af67b7d9b9d8cc02070e16276833952ec}\label{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_af67b7d9b9d8cc02070e16276833952ec}} 
+\index{moa.classifiers.functions.SGDMultiClass@{moa.classifiers.functions.SGDMultiClass}!m\_learningRate@{m\_learningRate}}
+\index{m\_learningRate@{m\_learningRate}!moa.classifiers.functions.SGDMultiClass@{moa.classifiers.functions.SGDMultiClass}}
+\doxysubsubsection{\texorpdfstring{m\_learningRate}{m\_learningRate}}
+{\footnotesize\ttfamily double moa.\+classifiers.\+functions.\+S\+G\+D\+Multi\+Class.\+m\+\_\+learning\+Rate = 0.\+01\hspace{0.3cm}{\ttfamily [protected]}}
+
+The learning rate \mbox{\Hypertarget{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_aa7fa47a1c8d808cfc69dac532db3e650}\label{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_aa7fa47a1c8d808cfc69dac532db3e650}} 
+\index{moa.classifiers.functions.SGDMultiClass@{moa.classifiers.functions.SGDMultiClass}!m\_loss@{m\_loss}}
+\index{m\_loss@{m\_loss}!moa.classifiers.functions.SGDMultiClass@{moa.classifiers.functions.SGDMultiClass}}
+\doxysubsubsection{\texorpdfstring{m\_loss}{m\_loss}}
+{\footnotesize\ttfamily int moa.\+classifiers.\+functions.\+S\+G\+D\+Multi\+Class.\+m\+\_\+loss = H\+I\+N\+GE\hspace{0.3cm}{\ttfamily [protected]}}
+
+The current loss function to minimize \mbox{\Hypertarget{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_ae58a795bb46b6fa158f1e36285032014}\label{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_ae58a795bb46b6fa158f1e36285032014}} 
+\index{moa.classifiers.functions.SGDMultiClass@{moa.classifiers.functions.SGDMultiClass}!m\_numInstances@{m\_numInstances}}
+\index{m\_numInstances@{m\_numInstances}!moa.classifiers.functions.SGDMultiClass@{moa.classifiers.functions.SGDMultiClass}}
+\doxysubsubsection{\texorpdfstring{m\_numInstances}{m\_numInstances}}
+{\footnotesize\ttfamily double moa.\+classifiers.\+functions.\+S\+G\+D\+Multi\+Class.\+m\+\_\+num\+Instances\hspace{0.3cm}{\ttfamily [protected]}}
+
+The number of training instances \mbox{\Hypertarget{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_acb5cadcc87a5d1a584710fa0c9e396d4}\label{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_acb5cadcc87a5d1a584710fa0c9e396d4}} 
+\index{moa.classifiers.functions.SGDMultiClass@{moa.classifiers.functions.SGDMultiClass}!m\_t@{m\_t}}
+\index{m\_t@{m\_t}!moa.classifiers.functions.SGDMultiClass@{moa.classifiers.functions.SGDMultiClass}}
+\doxysubsubsection{\texorpdfstring{m\_t}{m\_t}}
+{\footnotesize\ttfamily double moa.\+classifiers.\+functions.\+S\+G\+D\+Multi\+Class.\+m\+\_\+t\hspace{0.3cm}{\ttfamily [protected]}}
+
+Holds the current iteration number \mbox{\Hypertarget{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_ac32d94869deb0a8dc799928153291878}\label{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_ac32d94869deb0a8dc799928153291878}} 
+\index{moa.classifiers.functions.SGDMultiClass@{moa.classifiers.functions.SGDMultiClass}!m\_weights@{m\_weights}}
+\index{m\_weights@{m\_weights}!moa.classifiers.functions.SGDMultiClass@{moa.classifiers.functions.SGDMultiClass}}
+\doxysubsubsection{\texorpdfstring{m\_weights}{m\_weights}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1core_1_1_double_vector}{Double\+Vector}} \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+functions.\+S\+G\+D\+Multi\+Class.\+m\+\_\+weights\hspace{0.3cm}{\ttfamily [protected]}}
+
+Stores the weights (+ bias in the last element) 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/classifiers/functions/S\+G\+D\+Multi\+Class.\+java\end{DoxyCompactItemize}

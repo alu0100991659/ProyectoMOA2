@@ -1,0 +1,26 @@
+digraph "com.yahoo.labs.samoa.instances.Instance"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="com.yahoo.labs.samoa.instances.\lInstance",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Serializable",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="com.yahoo.labs.samoa.instances.\lMultiLabelInstance",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_multi_label_instance.html",tooltip=" "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="com.yahoo.labs.samoa.instances.\lInstanceImpl",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance_impl.html",tooltip=" "];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="com.yahoo.labs.samoa.instances.\lDenseInstance",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_dense_instance.html",tooltip=" "];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="moa.gui.visualization.Data\lPoint",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classmoa_1_1gui_1_1visualization_1_1_data_point.html",tooltip=" "];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="moa.evaluation.CMM\l_GTAnalysis.CMMPoint",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classmoa_1_1evaluation_1_1_c_m_m___g_t_analysis_1_1_c_m_m_point.html",tooltip=" "];
+  Node4 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="com.yahoo.labs.samoa.instances.\lSparseInstance",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_sparse_instance.html",tooltip=" "];
+  Node8 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="com.yahoo.labs.samoa.instances.\lFilteredSparseInstance",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_filtered_sparse_instance.html",tooltip=" "];
+  Node4 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="moa.core.MultilabelInstance",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classmoa_1_1core_1_1_multilabel_instance.html",tooltip=" "];
+}

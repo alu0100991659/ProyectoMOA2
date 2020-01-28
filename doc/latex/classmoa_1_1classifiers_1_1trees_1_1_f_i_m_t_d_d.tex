@@ -1,0 +1,451 @@
+\hypertarget{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d}{}\doxysection{moa.\+classifiers.\+trees.\+F\+I\+M\+T\+DD Class Reference}
+\label{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d}\index{moa.classifiers.trees.FIMTDD@{moa.classifiers.trees.FIMTDD}}
+
+
+Inheritance diagram for moa.\+classifiers.\+trees.\+F\+I\+M\+T\+DD\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+classifiers.\+trees.\+F\+I\+M\+T\+DD\+:
+% FIG 1
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_1_1_f_i_m_t_d_d_perceptron}{F\+I\+M\+T\+D\+D\+Perceptron}}
+\item 
+class {\bfseries Inner\+Node}
+\item 
+class {\bfseries Leaf\+Node}
+\item 
+class {\bfseries Node}
+\item 
+class {\bfseries Split\+Node}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_a6a47b798a7a1b090fe2a3ccd3f69a93b}{get\+Purpose\+String}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_a75f38e22d615d7a19e72d2926f178ca5}{reset\+Learning\+Impl}} ()
+\item 
+boolean \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_a6e48f0027fc873a005d4909585edccfd}{is\+Randomizable}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_a3f0075ba4455f7f23f819ae85a4efa09}{get\+Model\+Description}} (String\+Builder out, int indent)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_ac68391a29cb07e7d027203b759c339f8}\label{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_ac68391a29cb07e7d027203b759c339f8}} 
+int {\bfseries calc\+Byte\+Size} ()
+\item 
+double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_a97b0cdef18ebeea3e113d776731851d9}{get\+Votes\+For\+Instance}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_a95c13b3bf640d7078583e0cb627c243e}\label{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_a95c13b3bf640d7078583e0cb627c243e}} 
+double {\bfseries normalize\+Target\+Value} (double value)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_a10642705b93bb1973e809f09128a193b}\label{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_a10642705b93bb1973e809f09128a193b}} 
+double {\bfseries get\+Normalized\+Error} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst, double prediction)
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_a54cba40a86a075373556cafdc55467e0}{train\+On\+Instance\+Impl}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_ae0f6348e9b25cd1d04211a91278a0a0f}\label{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_ae0f6348e9b25cd1d04211a91278a0a0f}} 
+void {\bfseries process\+Instance} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst, Node node, double prediction, double normal\+Error, boolean growth\+Allowed, boolean in\+Alternate)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_a7b653b4ea02daa6dca2ec5b00414db86}\label{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_a7b653b4ea02daa6dca2ec5b00414db86}} 
+boolean {\bfseries building\+Model\+Tree} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_a868d219cc03c811547b47e9e1e61e43f}\label{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_a868d219cc03c811547b47e9e1e61e43f}} 
+double {\bfseries compute\+SD} (double squared\+Val, double val, double size)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_acfd63c1f37b96ea1e102bc52e5d5cfe6}\label{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_acfd63c1f37b96ea1e102bc52e5d5cfe6}} 
+double {\bfseries scalar\+Product} (\mbox{\hyperlink{classmoa_1_1core_1_1_double_vector}{Double\+Vector}} u, \mbox{\hyperlink{classmoa_1_1core_1_1_double_vector}{Double\+Vector}} v)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_a6c6c4fdd6b8e062d6593c17c906538f0}\label{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_a6c6c4fdd6b8e062d6593c17c906538f0}} 
+static double {\bfseries compute\+Hoeffding\+Bound} (double range, double confidence, double n)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_af2ec4889ed28bfd4435ff17c54b1a085}\label{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_af2ec4889ed28bfd4435ff17c54b1a085}} 
+int {\bfseries max\+ID} = 0
+\item 
+\mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} {\bfseries split\+Criterion\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries grace\+Period\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} {\bfseries split\+Confidence\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} {\bfseries tie\+Threshold\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} {\bfseries Page\+Hinckley\+Alpha\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries Page\+Hinckley\+Threshold\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} {\bfseries alternate\+Tree\+Fading\+Factor\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries alternate\+Tree\+T\+Min\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries alternate\+Tree\+Time\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_flag_option}{Flag\+Option}} {\bfseries regression\+Tree\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} {\bfseries learning\+Ratio\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} {\bfseries learning\+Rate\+Decay\+Factor\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_flag_option}{Flag\+Option}} {\bfseries learning\+Ratio\+Const\+Option}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_ab0119099c2d4c1dcfdb494594fbd16f6}{get\+Model\+Measurements\+Impl}} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_a794d4115ba2b74f6771df1f1df7cc8dd}\label{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_a794d4115ba2b74f6771df1f1df7cc8dd}} 
+\mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_f_i_m_t_d_d_numeric_attribute_class_observer}{F\+I\+M\+T\+D\+D\+Numeric\+Attribute\+Class\+Observer}} {\bfseries new\+Numeric\+Class\+Observer} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_ae02fff2df3970445f6231122ff180b99}\label{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_ae02fff2df3970445f6231122ff180b99}} 
+Split\+Node {\bfseries new\+Split\+Node} (\mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1conditionaltests_1_1_instance_conditional_test}{Instance\+Conditional\+Test}} split\+Test)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_a0833a3a0cb2ff029b3723fd8599a6357}\label{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_a0833a3a0cb2ff029b3723fd8599a6357}} 
+Leaf\+Node {\bfseries new\+Leaf\+Node} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_ab29e53285a641a08b4c03c53ba6bea56}\label{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_ab29e53285a641a08b4c03c53ba6bea56}} 
+\mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_1_1_f_i_m_t_d_d_perceptron}{F\+I\+M\+T\+D\+D\+Perceptron}} {\bfseries new\+Leaf\+Model} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_afcf7fb93e1a70a13dcc218b8f1d590ce}\label{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_afcf7fb93e1a70a13dcc218b8f1d590ce}} 
+void {\bfseries check\+Root} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_aeb750289b309a7118ba3ccf7875982f9}\label{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_aeb750289b309a7118ba3ccf7875982f9}} 
+void {\bfseries attempt\+To\+Split} (Leaf\+Node node, Node parent, int parent\+Index)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_aad4981099a45425c467f49c6661db4a1}\label{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_aad4981099a45425c467f49c6661db4a1}} 
+Node {\bfseries tree\+Root}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_a52a7a8c5a3d47202ec65b81fe2c6d7e4}\label{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_a52a7a8c5a3d47202ec65b81fe2c6d7e4}} 
+int {\bfseries leaf\+Node\+Count} = 0
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_a4f54119b72eb1c2bbfb9604e58f1a350}\label{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_a4f54119b72eb1c2bbfb9604e58f1a350}} 
+int {\bfseries split\+Node\+Count} = 0
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_a58adc8ca1d0312547b4ff7d174d1d400}\label{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_a58adc8ca1d0312547b4ff7d174d1d400}} 
+double {\bfseries examples\+Seen} = 0.\+0
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_ae84b2fd55f188eae23289deb0e4f28df}\label{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_ae84b2fd55f188eae23289deb0e4f28df}} 
+double {\bfseries sum\+Of\+Values} = 0.\+0
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_a4ec114742c8ed9c78bd6e9c7b031094f}\label{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_a4ec114742c8ed9c78bd6e9c7b031094f}} 
+double {\bfseries sum\+Of\+Squares} = 0.\+0
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_a10c5096c025baeb1ba527efbf14edcb6}\label{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_a10c5096c025baeb1ba527efbf14edcb6}} 
+\mbox{\hyperlink{classmoa_1_1core_1_1_double_vector}{Double\+Vector}} {\bfseries sum\+Of\+Attr\+Values} = new \mbox{\hyperlink{classmoa_1_1core_1_1_double_vector}{Double\+Vector}}()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_aaf65d8a79688d44f7fa4380fcf270b04}\label{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_aaf65d8a79688d44f7fa4380fcf270b04}} 
+\mbox{\hyperlink{classmoa_1_1core_1_1_double_vector}{Double\+Vector}} {\bfseries sum\+Of\+Attr\+Squares} = new \mbox{\hyperlink{classmoa_1_1core_1_1_double_vector}{Double\+Vector}}()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Implementation of \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d}{F\+I\+M\+T\+DD}}, regression and model trees for data streams.
+
+See details in\+:~\newline
+ Ikonomovska, Elena, João Gama, and Sašo Džeroski. Learning model trees from evolving data streams. Data mining and knowledge discovery 23.\+1 (2011)\+: 128-\/168.
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_a3f0075ba4455f7f23f819ae85a4efa09}\label{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_a3f0075ba4455f7f23f819ae85a4efa09}} 
+\index{moa.classifiers.trees.FIMTDD@{moa.classifiers.trees.FIMTDD}!getModelDescription@{getModelDescription}}
+\index{getModelDescription@{getModelDescription}!moa.classifiers.trees.FIMTDD@{moa.classifiers.trees.FIMTDD}}
+\doxysubsubsection{\texorpdfstring{getModelDescription()}{getModelDescription()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+trees.\+F\+I\+M\+T\+D\+D.\+get\+Model\+Description (\begin{DoxyParamCaption}\item[{String\+Builder}]{out,  }\item[{int}]{indent }\end{DoxyParamCaption})}
+
+Returns a string representation of the model.
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & the stringbuilder to add the description \\
+\hline
+{\em indent} & the number of characters to indent \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a30e5ff32bc8127dfb7436945776b7523}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_ab0119099c2d4c1dcfdb494594fbd16f6}\label{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_ab0119099c2d4c1dcfdb494594fbd16f6}} 
+\index{moa.classifiers.trees.FIMTDD@{moa.classifiers.trees.FIMTDD}!getModelMeasurementsImpl@{getModelMeasurementsImpl}}
+\index{getModelMeasurementsImpl@{getModelMeasurementsImpl}!moa.classifiers.trees.FIMTDD@{moa.classifiers.trees.FIMTDD}}
+\doxysubsubsection{\texorpdfstring{getModelMeasurementsImpl()}{getModelMeasurementsImpl()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}} \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+trees.\+F\+I\+M\+T\+D\+D.\+get\+Model\+Measurements\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Gets the current measurements of this classifier.~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden.
+
+\begin{DoxyReturn}{Returns}
+an array of measurements to be used in evaluation tasks 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_ac2bebede21c9d2d8cd11d95a7e20e529}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1_o_r_t_o_a3a3119eac5b836e2082b971a07a4e3eb}{moa.\+classifiers.\+trees.\+O\+R\+TO}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_a6a47b798a7a1b090fe2a3ccd3f69a93b}\label{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_a6a47b798a7a1b090fe2a3ccd3f69a93b}} 
+\index{moa.classifiers.trees.FIMTDD@{moa.classifiers.trees.FIMTDD}!getPurposeString@{getPurposeString}}
+\index{getPurposeString@{getPurposeString}!moa.classifiers.trees.FIMTDD@{moa.classifiers.trees.FIMTDD}}
+\doxysubsubsection{\texorpdfstring{getPurposeString()}{getPurposeString()}}
+{\footnotesize\ttfamily String moa.\+classifiers.\+trees.\+F\+I\+M\+T\+D\+D.\+get\+Purpose\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Options to handle Dictionary with option texts and objects 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a3fc6ae11234b88e51941a77ddb879d8b}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1_o_r_t_o_aabc5c6a58b58646c9afeb1b4f2a67496}{moa.\+classifiers.\+trees.\+O\+R\+TO}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_a97b0cdef18ebeea3e113d776731851d9}\label{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_a97b0cdef18ebeea3e113d776731851d9}} 
+\index{moa.classifiers.trees.FIMTDD@{moa.classifiers.trees.FIMTDD}!getVotesForInstance@{getVotesForInstance}}
+\index{getVotesForInstance@{getVotesForInstance}!moa.classifiers.trees.FIMTDD@{moa.classifiers.trees.FIMTDD}}
+\doxysubsubsection{\texorpdfstring{getVotesForInstance()}{getVotesForInstance()}}
+{\footnotesize\ttfamily double \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+trees.\+F\+I\+M\+T\+D\+D.\+get\+Votes\+For\+Instance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{inst }\end{DoxyParamCaption})}
+
+Predicts the class memberships for a given instance. If an instance is unclassified, the returned array elements must be all zero.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & the instance to be classified \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an array containing the estimated membership probabilities of the test instance in each class 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a0e3589c4fa6f088d82d64514afd9513c}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_a6e48f0027fc873a005d4909585edccfd}\label{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_a6e48f0027fc873a005d4909585edccfd}} 
+\index{moa.classifiers.trees.FIMTDD@{moa.classifiers.trees.FIMTDD}!isRandomizable@{isRandomizable}}
+\index{isRandomizable@{isRandomizable}!moa.classifiers.trees.FIMTDD@{moa.classifiers.trees.FIMTDD}}
+\doxysubsubsection{\texorpdfstring{isRandomizable()}{isRandomizable()}}
+{\footnotesize\ttfamily boolean moa.\+classifiers.\+trees.\+F\+I\+M\+T\+D\+D.\+is\+Randomizable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets whether this learner needs a random seed. Examples of methods that needs a random seed are bagging and boosting.
+
+\begin{DoxyReturn}{Returns}
+true if the learner needs a random seed. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1learners_1_1_learner_a2f1ff9007b5eb5f53801f474b4d42a61}{moa.\+learners.\+Learner$<$ E extends Example $>$}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_a75f38e22d615d7a19e72d2926f178ca5}\label{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_a75f38e22d615d7a19e72d2926f178ca5}} 
+\index{moa.classifiers.trees.FIMTDD@{moa.classifiers.trees.FIMTDD}!resetLearningImpl@{resetLearningImpl}}
+\index{resetLearningImpl@{resetLearningImpl}!moa.classifiers.trees.FIMTDD@{moa.classifiers.trees.FIMTDD}}
+\doxysubsubsection{\texorpdfstring{resetLearningImpl()}{resetLearningImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+trees.\+F\+I\+M\+T\+D\+D.\+reset\+Learning\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Resets this classifier. It must be similar to starting a new classifier from scratch. ~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden. 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a099ffcf2417abb919d10d697c0648f29}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1_o_r_t_o_a9702308f5e34f6cefe77deb7111d3b27}{moa.\+classifiers.\+trees.\+O\+R\+TO}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_a54cba40a86a075373556cafdc55467e0}\label{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_a54cba40a86a075373556cafdc55467e0}} 
+\index{moa.classifiers.trees.FIMTDD@{moa.classifiers.trees.FIMTDD}!trainOnInstanceImpl@{trainOnInstanceImpl}}
+\index{trainOnInstanceImpl@{trainOnInstanceImpl}!moa.classifiers.trees.FIMTDD@{moa.classifiers.trees.FIMTDD}}
+\doxysubsubsection{\texorpdfstring{trainOnInstanceImpl()}{trainOnInstanceImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+trees.\+F\+I\+M\+T\+D\+D.\+train\+On\+Instance\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{inst }\end{DoxyParamCaption})}
+
+Method for updating (training) the model using a new instance 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_aceb24d2ddeab386f2ecead6e3c0d3543}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_a30c2ae6b84e72d6ea0a95741c3f7d4f7}\label{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_a30c2ae6b84e72d6ea0a95741c3f7d4f7}} 
+\index{moa.classifiers.trees.FIMTDD@{moa.classifiers.trees.FIMTDD}!alternateTreeFadingFactorOption@{alternateTreeFadingFactorOption}}
+\index{alternateTreeFadingFactorOption@{alternateTreeFadingFactorOption}!moa.classifiers.trees.FIMTDD@{moa.classifiers.trees.FIMTDD}}
+\doxysubsubsection{\texorpdfstring{alternateTreeFadingFactorOption}{alternateTreeFadingFactorOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} moa.\+classifiers.\+trees.\+F\+I\+M\+T\+D\+D.\+alternate\+Tree\+Fading\+Factor\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FloatOption(}
+\DoxyCodeLine{            \textcolor{stringliteral}{"alternateTreeFadingFactor"}, \textcolor{charliteral}{'f'}, \textcolor{stringliteral}{"Fading factor used to decide if an alternate tree should replace an original."},}
+\DoxyCodeLine{            0.995, 0.0, 1.0)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_aa12cdd733671929cba0e142f0863b6af}\label{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_aa12cdd733671929cba0e142f0863b6af}} 
+\index{moa.classifiers.trees.FIMTDD@{moa.classifiers.trees.FIMTDD}!alternateTreeTimeOption@{alternateTreeTimeOption}}
+\index{alternateTreeTimeOption@{alternateTreeTimeOption}!moa.classifiers.trees.FIMTDD@{moa.classifiers.trees.FIMTDD}}
+\doxysubsubsection{\texorpdfstring{alternateTreeTimeOption}{alternateTreeTimeOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+classifiers.\+trees.\+F\+I\+M\+T\+D\+D.\+alternate\+Tree\+Time\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(}
+\DoxyCodeLine{            \textcolor{stringliteral}{"alternateTreeTime"}, \textcolor{charliteral}{'u'}, \textcolor{stringliteral}{"The number of instances used to decide if an alternate tree should be discarded."},}
+\DoxyCodeLine{            1500, 0, Integer.MAX\_VALUE)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_accd0adedeef7ab020a7342472587dfbc}\label{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_accd0adedeef7ab020a7342472587dfbc}} 
+\index{moa.classifiers.trees.FIMTDD@{moa.classifiers.trees.FIMTDD}!alternateTreeTMinOption@{alternateTreeTMinOption}}
+\index{alternateTreeTMinOption@{alternateTreeTMinOption}!moa.classifiers.trees.FIMTDD@{moa.classifiers.trees.FIMTDD}}
+\doxysubsubsection{\texorpdfstring{alternateTreeTMinOption}{alternateTreeTMinOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+classifiers.\+trees.\+F\+I\+M\+T\+D\+D.\+alternate\+Tree\+T\+Min\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(}
+\DoxyCodeLine{            \textcolor{stringliteral}{"alternateTreeTMin"}, \textcolor{charliteral}{'y'}, \textcolor{stringliteral}{"Tmin value used to decide if an alternate tree should replace an original."},}
+\DoxyCodeLine{            150, 0, Integer.MAX\_VALUE)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_a70304da71811ecd573e05f812bfda5a0}\label{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_a70304da71811ecd573e05f812bfda5a0}} 
+\index{moa.classifiers.trees.FIMTDD@{moa.classifiers.trees.FIMTDD}!gracePeriodOption@{gracePeriodOption}}
+\index{gracePeriodOption@{gracePeriodOption}!moa.classifiers.trees.FIMTDD@{moa.classifiers.trees.FIMTDD}}
+\doxysubsubsection{\texorpdfstring{gracePeriodOption}{gracePeriodOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+classifiers.\+trees.\+F\+I\+M\+T\+D\+D.\+grace\+Period\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(}
+\DoxyCodeLine{            \textcolor{stringliteral}{"gracePeriod"}, \textcolor{charliteral}{'g'}, \textcolor{stringliteral}{"Number of instances a leaf should observe between split attempts."},}
+\DoxyCodeLine{            200, 0, Integer.MAX\_VALUE)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_a20a0966411a75f129f35f69f0bdfb827}\label{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_a20a0966411a75f129f35f69f0bdfb827}} 
+\index{moa.classifiers.trees.FIMTDD@{moa.classifiers.trees.FIMTDD}!learningRateDecayFactorOption@{learningRateDecayFactorOption}}
+\index{learningRateDecayFactorOption@{learningRateDecayFactorOption}!moa.classifiers.trees.FIMTDD@{moa.classifiers.trees.FIMTDD}}
+\doxysubsubsection{\texorpdfstring{learningRateDecayFactorOption}{learningRateDecayFactorOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} moa.\+classifiers.\+trees.\+F\+I\+M\+T\+D\+D.\+learning\+Rate\+Decay\+Factor\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FloatOption(}
+\DoxyCodeLine{            \textcolor{stringliteral}{"learningRatioDecayFactor"}, \textcolor{charliteral}{'d'}, \textcolor{stringliteral}{"Learning rate decay factor (not used when learning rate is constant)."},}
+\DoxyCodeLine{            0.001, 0, 1.00)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_a94524176209a166a0d1811606d42a63e}\label{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_a94524176209a166a0d1811606d42a63e}} 
+\index{moa.classifiers.trees.FIMTDD@{moa.classifiers.trees.FIMTDD}!learningRatioConstOption@{learningRatioConstOption}}
+\index{learningRatioConstOption@{learningRatioConstOption}!moa.classifiers.trees.FIMTDD@{moa.classifiers.trees.FIMTDD}}
+\doxysubsubsection{\texorpdfstring{learningRatioConstOption}{learningRatioConstOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_flag_option}{Flag\+Option}} moa.\+classifiers.\+trees.\+F\+I\+M\+T\+D\+D.\+learning\+Ratio\+Const\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FlagOption(}
+\DoxyCodeLine{            \textcolor{stringliteral}{"learningRatioConst"}, \textcolor{charliteral}{'p'}, \textcolor{stringliteral}{"Keep learning rate constant instead of decaying."})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_a5536d19a1ba5c4525b8b4e2f21ec63b5}\label{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_a5536d19a1ba5c4525b8b4e2f21ec63b5}} 
+\index{moa.classifiers.trees.FIMTDD@{moa.classifiers.trees.FIMTDD}!learningRatioOption@{learningRatioOption}}
+\index{learningRatioOption@{learningRatioOption}!moa.classifiers.trees.FIMTDD@{moa.classifiers.trees.FIMTDD}}
+\doxysubsubsection{\texorpdfstring{learningRatioOption}{learningRatioOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} moa.\+classifiers.\+trees.\+F\+I\+M\+T\+D\+D.\+learning\+Ratio\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FloatOption(}
+\DoxyCodeLine{            \textcolor{stringliteral}{"learningRatio"}, \textcolor{charliteral}{'l'}, \textcolor{stringliteral}{"Learning ratio to used for training the Perceptrons in the leaves."},}
+\DoxyCodeLine{            0.02, 0, 1.00)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_af01da68271fdd3ebba8bc628eeb3dabb}\label{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_af01da68271fdd3ebba8bc628eeb3dabb}} 
+\index{moa.classifiers.trees.FIMTDD@{moa.classifiers.trees.FIMTDD}!PageHinckleyAlphaOption@{PageHinckleyAlphaOption}}
+\index{PageHinckleyAlphaOption@{PageHinckleyAlphaOption}!moa.classifiers.trees.FIMTDD@{moa.classifiers.trees.FIMTDD}}
+\doxysubsubsection{\texorpdfstring{PageHinckleyAlphaOption}{PageHinckleyAlphaOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} moa.\+classifiers.\+trees.\+F\+I\+M\+T\+D\+D.\+Page\+Hinckley\+Alpha\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FloatOption(}
+\DoxyCodeLine{            \textcolor{stringliteral}{"PageHinckleyAlpha"}, \textcolor{charliteral}{'a'}, \textcolor{stringliteral}{"Alpha value to use in the Page Hinckley change detection tests."},}
+\DoxyCodeLine{            0.005, 0.0, 1.0)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_aafc3eebde7cb1b16059a08320e42395c}\label{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_aafc3eebde7cb1b16059a08320e42395c}} 
+\index{moa.classifiers.trees.FIMTDD@{moa.classifiers.trees.FIMTDD}!PageHinckleyThresholdOption@{PageHinckleyThresholdOption}}
+\index{PageHinckleyThresholdOption@{PageHinckleyThresholdOption}!moa.classifiers.trees.FIMTDD@{moa.classifiers.trees.FIMTDD}}
+\doxysubsubsection{\texorpdfstring{PageHinckleyThresholdOption}{PageHinckleyThresholdOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+classifiers.\+trees.\+F\+I\+M\+T\+D\+D.\+Page\+Hinckley\+Threshold\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(}
+\DoxyCodeLine{            \textcolor{stringliteral}{"PageHinckleyThreshold"}, \textcolor{charliteral}{'h'}, \textcolor{stringliteral}{"Threshold value used in the Page Hinckley change detection tests."},}
+\DoxyCodeLine{            50, 0, Integer.MAX\_VALUE)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_ad7b0a5331ad0c0902afd4a6f57fcb85b}\label{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_ad7b0a5331ad0c0902afd4a6f57fcb85b}} 
+\index{moa.classifiers.trees.FIMTDD@{moa.classifiers.trees.FIMTDD}!regressionTreeOption@{regressionTreeOption}}
+\index{regressionTreeOption@{regressionTreeOption}!moa.classifiers.trees.FIMTDD@{moa.classifiers.trees.FIMTDD}}
+\doxysubsubsection{\texorpdfstring{regressionTreeOption}{regressionTreeOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_flag_option}{Flag\+Option}} moa.\+classifiers.\+trees.\+F\+I\+M\+T\+D\+D.\+regression\+Tree\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FlagOption(}
+\DoxyCodeLine{            \textcolor{stringliteral}{"regressionTree"}, \textcolor{charliteral}{'e'}, \textcolor{stringliteral}{"Build a regression tree instead of a model tree."})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_af2c5409de037f835cfcc12c2b9e31b12}\label{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_af2c5409de037f835cfcc12c2b9e31b12}} 
+\index{moa.classifiers.trees.FIMTDD@{moa.classifiers.trees.FIMTDD}!splitConfidenceOption@{splitConfidenceOption}}
+\index{splitConfidenceOption@{splitConfidenceOption}!moa.classifiers.trees.FIMTDD@{moa.classifiers.trees.FIMTDD}}
+\doxysubsubsection{\texorpdfstring{splitConfidenceOption}{splitConfidenceOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} moa.\+classifiers.\+trees.\+F\+I\+M\+T\+D\+D.\+split\+Confidence\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FloatOption(}
+\DoxyCodeLine{            \textcolor{stringliteral}{"splitConfidence"}, \textcolor{charliteral}{'c'}, \textcolor{stringliteral}{"Allowed error in split decision, values close to 0 will take long to decide."},}
+\DoxyCodeLine{            0.0000001, 0.0, 1.0)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_a23a5612611a039790443b38c6fa0505a}\label{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_a23a5612611a039790443b38c6fa0505a}} 
+\index{moa.classifiers.trees.FIMTDD@{moa.classifiers.trees.FIMTDD}!splitCriterionOption@{splitCriterionOption}}
+\index{splitCriterionOption@{splitCriterionOption}!moa.classifiers.trees.FIMTDD@{moa.classifiers.trees.FIMTDD}}
+\doxysubsubsection{\texorpdfstring{splitCriterionOption}{splitCriterionOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} moa.\+classifiers.\+trees.\+F\+I\+M\+T\+D\+D.\+split\+Criterion\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} ClassOption(}
+\DoxyCodeLine{            \textcolor{stringliteral}{"splitCriterion"}, \textcolor{charliteral}{'s'}, \textcolor{stringliteral}{"Split criterion to use."},}
+\DoxyCodeLine{            SplitCriterion.class, \textcolor{stringliteral}{"moa.classifiers.core.splitcriteria.VarianceReductionSplitCriterion"})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_abcd233c0b7066c202aeee36c69eb3a71}\label{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_abcd233c0b7066c202aeee36c69eb3a71}} 
+\index{moa.classifiers.trees.FIMTDD@{moa.classifiers.trees.FIMTDD}!tieThresholdOption@{tieThresholdOption}}
+\index{tieThresholdOption@{tieThresholdOption}!moa.classifiers.trees.FIMTDD@{moa.classifiers.trees.FIMTDD}}
+\doxysubsubsection{\texorpdfstring{tieThresholdOption}{tieThresholdOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} moa.\+classifiers.\+trees.\+F\+I\+M\+T\+D\+D.\+tie\+Threshold\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FloatOption(}
+\DoxyCodeLine{            \textcolor{stringliteral}{"tieThreshold"}, \textcolor{charliteral}{'t'}, \textcolor{stringliteral}{"Threshold below which a split will be forced to break ties."},}
+\DoxyCodeLine{            0.05, 0.0, 1.0)}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/classifiers/trees/F\+I\+M\+T\+D\+D.\+java\end{DoxyCompactItemize}

@@ -1,0 +1,102 @@
+\hypertarget{classcom_1_1github_1_1javacliparser_1_1_java_c_l_i_parser}{}\doxysection{com.\+github.\+javacliparser.\+Java\+C\+L\+I\+Parser Class Reference}
+\label{classcom_1_1github_1_1javacliparser_1_1_java_c_l_i_parser}\index{com.github.javacliparser.JavaCLIParser@{com.github.javacliparser.JavaCLIParser}}
+
+
+Inheritance diagram for com.\+github.\+javacliparser.\+Java\+C\+L\+I\+Parser\+:
+% FIG 0
+
+
+Collaboration diagram for com.\+github.\+javacliparser.\+Java\+C\+L\+I\+Parser\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1github_1_1javacliparser_1_1_java_c_l_i_parser_aa2f64845827010e9ad3e4a42bf0220ac}\label{classcom_1_1github_1_1javacliparser_1_1_java_c_l_i_parser_aa2f64845827010e9ad3e4a42bf0220ac}} 
+{\bfseries Java\+C\+L\+I\+Parser} (Object c, String cli\+String)
+\item 
+\mbox{\Hypertarget{classcom_1_1github_1_1javacliparser_1_1_java_c_l_i_parser_a3e0d414bd932a1709e2891847a94d0e1}\label{classcom_1_1github_1_1javacliparser_1_1_java_c_l_i_parser_a3e0d414bd932a1709e2891847a94d0e1}} 
+String {\bfseries get\+Purpose\+String} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1github_1_1javacliparser_1_1_java_c_l_i_parser_a3e6f51e15459c5c9da774c1e8971a6d5}\label{classcom_1_1github_1_1javacliparser_1_1_java_c_l_i_parser_a3e6f51e15459c5c9da774c1e8971a6d5}} 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_options}{Options}} {\bfseries get\+Options} ()
+\item 
+\mbox{\hyperlink{interfacecom_1_1github_1_1javacliparser_1_1_option}{Option}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_java_c_l_i_parser_af123a478b51ad99efc6b858f7665c464}{discover\+Options\+Via\+Reflection}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_java_c_l_i_parser_ae523da75522c543c6b6a3f4e9621545b}{prepare\+Class\+Options}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1github_1_1javacliparser_1_1_java_c_l_i_parser_ab9c4457f118adf9991141fb7ac0cec5b}\label{classcom_1_1github_1_1javacliparser_1_1_java_c_l_i_parser_ab9c4457f118adf9991141fb7ac0cec5b}} 
+Object {\bfseries handler}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_options}{Options}} \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_java_c_l_i_parser_a21f475e24a93ad4df824d14bc6d58737}{options}}
+\item 
+Map$<$ String, Object $>$ \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_java_c_l_i_parser_a361562d4a58389289eb5b648601dc22a}{class\+Option\+Names\+To\+Prepared\+Objects}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Java Command Line Interface Parser.
+
+\begin{DoxyAuthor}{Author}
+Richard Kirkby (\href{mailto:rkirkby@cs.waikato.ac.nz}{\texttt{ rkirkby@cs.\+waikato.\+ac.\+nz}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+7 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1github_1_1javacliparser_1_1_java_c_l_i_parser_af123a478b51ad99efc6b858f7665c464}\label{classcom_1_1github_1_1javacliparser_1_1_java_c_l_i_parser_af123a478b51ad99efc6b858f7665c464}} 
+\index{com.github.javacliparser.JavaCLIParser@{com.github.javacliparser.JavaCLIParser}!discoverOptionsViaReflection@{discoverOptionsViaReflection}}
+\index{discoverOptionsViaReflection@{discoverOptionsViaReflection}!com.github.javacliparser.JavaCLIParser@{com.github.javacliparser.JavaCLIParser}}
+\doxysubsubsection{\texorpdfstring{discoverOptionsViaReflection()}{discoverOptionsViaReflection()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1github_1_1javacliparser_1_1_option}{Option}} \mbox{[}$\,$\mbox{]} com.\+github.\+javacliparser.\+Java\+C\+L\+I\+Parser.\+discover\+Options\+Via\+Reflection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the options of this class via reflection.
+
+\begin{DoxyReturn}{Returns}
+an array of options 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1github_1_1javacliparser_1_1_java_c_l_i_parser_ae523da75522c543c6b6a3f4e9621545b}\label{classcom_1_1github_1_1javacliparser_1_1_java_c_l_i_parser_ae523da75522c543c6b6a3f4e9621545b}} 
+\index{com.github.javacliparser.JavaCLIParser@{com.github.javacliparser.JavaCLIParser}!prepareClassOptions@{prepareClassOptions}}
+\index{prepareClassOptions@{prepareClassOptions}!com.github.javacliparser.JavaCLIParser@{com.github.javacliparser.JavaCLIParser}}
+\doxysubsubsection{\texorpdfstring{prepareClassOptions()}{prepareClassOptions()}}
+{\footnotesize\ttfamily void com.\+github.\+javacliparser.\+Java\+C\+L\+I\+Parser.\+prepare\+Class\+Options (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Prepares the options of this class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em monitor} & the Task\+Monitor to use \\
+\hline
+{\em repository} & the Object\+Repository to use \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classcom_1_1github_1_1javacliparser_1_1_java_c_l_i_parser_a361562d4a58389289eb5b648601dc22a}\label{classcom_1_1github_1_1javacliparser_1_1_java_c_l_i_parser_a361562d4a58389289eb5b648601dc22a}} 
+\index{com.github.javacliparser.JavaCLIParser@{com.github.javacliparser.JavaCLIParser}!classOptionNamesToPreparedObjects@{classOptionNamesToPreparedObjects}}
+\index{classOptionNamesToPreparedObjects@{classOptionNamesToPreparedObjects}!com.github.javacliparser.JavaCLIParser@{com.github.javacliparser.JavaCLIParser}}
+\doxysubsubsection{\texorpdfstring{classOptionNamesToPreparedObjects}{classOptionNamesToPreparedObjects}}
+{\footnotesize\ttfamily Map$<$String, Object$>$ com.\+github.\+javacliparser.\+Java\+C\+L\+I\+Parser.\+class\+Option\+Names\+To\+Prepared\+Objects\hspace{0.3cm}{\ttfamily [protected]}}
+
+Dictionary with option texts and objects \mbox{\Hypertarget{classcom_1_1github_1_1javacliparser_1_1_java_c_l_i_parser_a21f475e24a93ad4df824d14bc6d58737}\label{classcom_1_1github_1_1javacliparser_1_1_java_c_l_i_parser_a21f475e24a93ad4df824d14bc6d58737}} 
+\index{com.github.javacliparser.JavaCLIParser@{com.github.javacliparser.JavaCLIParser}!options@{options}}
+\index{options@{options}!com.github.javacliparser.JavaCLIParser@{com.github.javacliparser.JavaCLIParser}}
+\doxysubsubsection{\texorpdfstring{options}{options}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_options}{Options}} com.\+github.\+javacliparser.\+Java\+C\+L\+I\+Parser.\+options\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_options}{Options}} to handle 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/com/github/javacliparser/Java\+C\+L\+I\+Parser.\+java\end{DoxyCompactItemize}

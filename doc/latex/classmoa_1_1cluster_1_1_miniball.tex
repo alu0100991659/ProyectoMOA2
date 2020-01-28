@@ -1,0 +1,172 @@
+\hypertarget{classmoa_1_1cluster_1_1_miniball}{}\doxysection{moa.\+cluster.\+Miniball Class Reference}
+\label{classmoa_1_1cluster_1_1_miniball}\index{moa.cluster.Miniball@{moa.cluster.Miniball}}
+
+
+Collaboration diagram for moa.\+cluster.\+Miniball\+:
+% FIG 0
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Miniball\+\_\+b}
+\item 
+class {\bfseries pvt}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1cluster_1_1_miniball_a9f7d6b31651ca0aa45db572b05d25aa8}\label{classmoa_1_1cluster_1_1_miniball_a9f7d6b31651ca0aa45db572b05d25aa8}} 
+{\bfseries Miniball} (int dim)
+\item 
+void \mbox{\hyperlink{classmoa_1_1cluster_1_1_miniball_afe28b9bd14748fe0794c7b11c3f34823}{clear}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1cluster_1_1_miniball_a16c4f9fc1a06c780524e026ce652cde1}{check\+\_\+in}} (double\mbox{[}$\,$\mbox{]} p)
+\item 
+void \mbox{\hyperlink{classmoa_1_1cluster_1_1_miniball_ac7b74f6f245e62ab969022723db4d67c}{build}} ()
+\item 
+double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1cluster_1_1_miniball_a947964eff6b7e1e26d375475ff962466}{center}} ()
+\item 
+double \mbox{\hyperlink{classmoa_1_1cluster_1_1_miniball_ab94eac4e1b12d589756c2f267e3b0e69}{squared\+\_\+radius}} ()
+\item 
+double \mbox{\hyperlink{classmoa_1_1cluster_1_1_miniball_acba7a050b345f8a473562b7684cec13a}{radius}} ()
+\item 
+int \mbox{\hyperlink{classmoa_1_1cluster_1_1_miniball_adaba677696c96891d75dc9a50e19c655}{nr\+\_\+points}} ()
+\item 
+int \mbox{\hyperlink{classmoa_1_1cluster_1_1_miniball_acd56f3e06adc7dd8db3901032f02f0f6}{nr\+\_\+support\+\_\+points}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Java Porting of the Miniball.\+h code of {\bfseries{Bernd Gaertner}}. Look at \href{http://www.inf.ethz.ch/personal/gaertner/miniball.html}{\texttt{ http\+://www.\+inf.\+ethz.\+ch/personal/gaertner/miniball.\+html}}~\newline
+ and related work at \href{http://www.inf.ethz.ch/personal/gaertner/texts/own_work/esa99_final.pdf}{\texttt{ http\+://www.\+inf.\+ethz.\+ch/personal/gaertner/texts/own\+\_\+work/esa99\+\_\+final.\+pdf}}~\newline
+ for reading about the algorithm and the implementation of it.
+
+If interested in Bounding Sphere algorithms read also published work of {\bfseries{Emo Welzl}} \char`\"{}\+Smallest enclosing disks (balls and Ellipsoid)\char`\"{} and the work of {\bfseries{Jack Ritter}} on \char`\"{}\+Efficient Bounding Spheres\char`\"{} at~\newline
+ \href{http://tog.acm.org/GraphicsGems/gems/BoundSphere.c?searchterm=calc}{\texttt{ http\+://tog.\+acm.\+org/\+Graphics\+Gems/gems/\+Bound\+Sphere.\+c?searchterm=calc}}
+
+For Licencing Info report to Bernd Gaertner\textquotesingle{}s one reported below\+:
+
+Copright (C) 1999-\/2006, Bernd Gaertner~\newline
+ \begin{DoxyParagraph}{Revision}
+1.\+3 
+\end{DoxyParagraph}
+~\newline
+ \begin{DoxyParagraph}{Date}
+2006/11/16 08\+:01\+:52 
+\end{DoxyParagraph}
+~\newline
+ ~\newline
+ This program is free software; you can redistribute it and/or modify~\newline
+ it under the terms of the G\+NU General Public License as published by~\newline
+ the Free Software Foundation; either version 3 of the License, or~\newline
+ (at your option) any later version.~\newline
+ ~\newline
+ This program is distributed in the hope that it will be useful,~\newline
+ but W\+I\+T\+H\+O\+UT A\+NY W\+A\+R\+R\+A\+N\+TY; without even the implied warranty of~\newline
+ M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY or F\+I\+T\+N\+E\+SS F\+OR A P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE. See the~\newline
+ G\+NU General Public License for more details.~\newline
+ ~\newline
+ You should have received a copy of the G\+NU General Public License~\newline
+ along with this program. If not, see \href{http://www.gnu.org/licenses/}{\texttt{ http\+://www.\+gnu.\+org/licenses/}}.~\newline
+ Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, U\+SA,~\newline
+ or download the License terms from prep.\+ai.\+mit.\+edu/pub/gnu/\+C\+O\+P\+Y\+I\+N\+G-\/2.0.~\newline
+ ~\newline
+ Contact\+:~\newline
+ -\/-\/-\/-\/-\/---~\newline
+ Bernd Gaertner~\newline
+ Institute of Theoretical Computer Science~\newline
+ E\+TH Zuerich~\newline
+ C\+AB G32.\+2~\newline
+ C\+H-\/8092 Zuerich, Switzerland~\newline
+ \href{http://www.inf.ethz.ch/personal/gaertner}{\texttt{ http\+://www.\+inf.\+ethz.\+ch/personal/gaertner}}~\newline
+
+
+Original Java port from Paolo Perissinotto for Jpatch Project by Sascha Ledinsky found at \href{http://forum.jpatch.com/viewtopic.php?f=3&t=919}{\texttt{ http\+://forum.\+jpatch.\+com/viewtopic.\+php?f=3\&t=919}}
+
+\begin{DoxyAuthor}{Author}
+Paolo Perissinotto for Jpatch Project by {\bfseries{Sascha Ledinsky}}
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 \{@literal Date\+: 2007/11/18 21\+:57\}
+\end{DoxyVersion}
+used for moa for calculating most compact sphere cluster modified by Timm Jansen (\href{mailto:moa@cs.rwth-aachen.de}{\texttt{ moa@cs.\+rwth-\/aachen.\+de}}) to be used with high dimensional points 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1cluster_1_1_miniball_ac7b74f6f245e62ab969022723db4d67c}\label{classmoa_1_1cluster_1_1_miniball_ac7b74f6f245e62ab969022723db4d67c}} 
+\index{moa.cluster.Miniball@{moa.cluster.Miniball}!build@{build}}
+\index{build@{build}!moa.cluster.Miniball@{moa.cluster.Miniball}}
+\doxysubsubsection{\texorpdfstring{build()}{build()}}
+{\footnotesize\ttfamily void moa.\+cluster.\+Miniball.\+build (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Recalculate \mbox{\hyperlink{classmoa_1_1cluster_1_1_miniball}{Miniball}} parameter Center and Radius \mbox{\Hypertarget{classmoa_1_1cluster_1_1_miniball_a947964eff6b7e1e26d375475ff962466}\label{classmoa_1_1cluster_1_1_miniball_a947964eff6b7e1e26d375475ff962466}} 
+\index{moa.cluster.Miniball@{moa.cluster.Miniball}!center@{center}}
+\index{center@{center}!moa.cluster.Miniball@{moa.cluster.Miniball}}
+\doxysubsubsection{\texorpdfstring{center()}{center()}}
+{\footnotesize\ttfamily double \mbox{[}$\,$\mbox{]} moa.\+cluster.\+Miniball.\+center (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Return the center of the \mbox{\hyperlink{classmoa_1_1cluster_1_1_miniball}{Miniball}} \begin{DoxyReturn}{Returns}
+The center (double\mbox{[}\mbox{]}) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmoa_1_1cluster_1_1_miniball_a16c4f9fc1a06c780524e026ce652cde1}\label{classmoa_1_1cluster_1_1_miniball_a16c4f9fc1a06c780524e026ce652cde1}} 
+\index{moa.cluster.Miniball@{moa.cluster.Miniball}!check\_in@{check\_in}}
+\index{check\_in@{check\_in}!moa.cluster.Miniball@{moa.cluster.Miniball}}
+\doxysubsubsection{\texorpdfstring{check\_in()}{check\_in()}}
+{\footnotesize\ttfamily void moa.\+cluster.\+Miniball.\+check\+\_\+in (\begin{DoxyParamCaption}\item[{double\mbox{[}$\,$\mbox{]}}]{p }\end{DoxyParamCaption})}
+
+Adds a point to the list.~\newline
+ Skip action on null parameter.~\newline
+ 
+\begin{DoxyParams}{Parameters}
+{\em p} & The object to be added to the list \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmoa_1_1cluster_1_1_miniball_afe28b9bd14748fe0794c7b11c3f34823}\label{classmoa_1_1cluster_1_1_miniball_afe28b9bd14748fe0794c7b11c3f34823}} 
+\index{moa.cluster.Miniball@{moa.cluster.Miniball}!clear@{clear}}
+\index{clear@{clear}!moa.cluster.Miniball@{moa.cluster.Miniball}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void moa.\+cluster.\+Miniball.\+clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Method clear\+: clears the Array\+List of the selection points.~\newline
+ Use it for starting a new selection list to calculate Bounding Sphere on~\newline
+ or to clear memory references to the list of objects.~\newline
+ Always use at the end of a \mbox{\hyperlink{classmoa_1_1cluster_1_1_miniball}{Miniball}} use if you want to reuse later the \mbox{\hyperlink{classmoa_1_1cluster_1_1_miniball}{Miniball}} object \mbox{\Hypertarget{classmoa_1_1cluster_1_1_miniball_adaba677696c96891d75dc9a50e19c655}\label{classmoa_1_1cluster_1_1_miniball_adaba677696c96891d75dc9a50e19c655}} 
+\index{moa.cluster.Miniball@{moa.cluster.Miniball}!nr\_points@{nr\_points}}
+\index{nr\_points@{nr\_points}!moa.cluster.Miniball@{moa.cluster.Miniball}}
+\doxysubsubsection{\texorpdfstring{nr\_points()}{nr\_points()}}
+{\footnotesize\ttfamily int moa.\+cluster.\+Miniball.\+nr\+\_\+points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Return the actual number of points in the list \begin{DoxyReturn}{Returns}
+the actual number of points 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmoa_1_1cluster_1_1_miniball_acd56f3e06adc7dd8db3901032f02f0f6}\label{classmoa_1_1cluster_1_1_miniball_acd56f3e06adc7dd8db3901032f02f0f6}} 
+\index{moa.cluster.Miniball@{moa.cluster.Miniball}!nr\_support\_points@{nr\_support\_points}}
+\index{nr\_support\_points@{nr\_support\_points}!moa.cluster.Miniball@{moa.cluster.Miniball}}
+\doxysubsubsection{\texorpdfstring{nr\_support\_points()}{nr\_support\_points()}}
+{\footnotesize\ttfamily int moa.\+cluster.\+Miniball.\+nr\+\_\+support\+\_\+points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Return the number of support points (used to calculate the miniball).~\newline
+ It\textquotesingle{}s and internal info \begin{DoxyReturn}{Returns}
+the number of support points 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmoa_1_1cluster_1_1_miniball_acba7a050b345f8a473562b7684cec13a}\label{classmoa_1_1cluster_1_1_miniball_acba7a050b345f8a473562b7684cec13a}} 
+\index{moa.cluster.Miniball@{moa.cluster.Miniball}!radius@{radius}}
+\index{radius@{radius}!moa.cluster.Miniball@{moa.cluster.Miniball}}
+\doxysubsubsection{\texorpdfstring{radius()}{radius()}}
+{\footnotesize\ttfamily double moa.\+cluster.\+Miniball.\+radius (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Return the Radius of the miniball \begin{DoxyReturn}{Returns}
+The radius 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmoa_1_1cluster_1_1_miniball_ab94eac4e1b12d589756c2f267e3b0e69}\label{classmoa_1_1cluster_1_1_miniball_ab94eac4e1b12d589756c2f267e3b0e69}} 
+\index{moa.cluster.Miniball@{moa.cluster.Miniball}!squared\_radius@{squared\_radius}}
+\index{squared\_radius@{squared\_radius}!moa.cluster.Miniball@{moa.cluster.Miniball}}
+\doxysubsubsection{\texorpdfstring{squared\_radius()}{squared\_radius()}}
+{\footnotesize\ttfamily double moa.\+cluster.\+Miniball.\+squared\+\_\+radius (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Return the sqaured Radius of the miniball \begin{DoxyReturn}{Returns}
+The square radius 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/cluster/Miniball.\+java\end{DoxyCompactItemize}

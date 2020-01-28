@@ -1,0 +1,141 @@
+\hypertarget{classmoa_1_1clusterers_1_1kmeanspm_1_1_cuckoo_hashing}{}\doxysection{moa.\+clusterers.\+kmeanspm.\+Cuckoo\+Hashing$<$ T $>$ Class Template Reference}
+\label{classmoa_1_1clusterers_1_1kmeanspm_1_1_cuckoo_hashing}\index{moa.clusterers.kmeanspm.CuckooHashing$<$ T $>$@{moa.clusterers.kmeanspm.CuckooHashing$<$ T $>$}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1clusterers_1_1kmeanspm_1_1_cuckoo_hashing_a49affa26d651877d57d1476885ba5400}{Cuckoo\+Hashing}} (int start\+Hash\+Size, int max\+Stash\+Size, int start\+Num\+Tables, Random random)
+\item 
+\mbox{\hyperlink{classmoa_1_1clusterers_1_1kmeanspm_1_1_cuckoo_hashing_a51140c9cea60c76f6746a96d609812bb}{Cuckoo\+Hashing}} (int hash\+Size, Random random)
+\item 
+void \mbox{\hyperlink{classmoa_1_1clusterers_1_1kmeanspm_1_1_cuckoo_hashing_a8915e5480a54cfb54208346661551a48}{put}} (long key, T element)
+\item 
+T \mbox{\hyperlink{classmoa_1_1clusterers_1_1kmeanspm_1_1_cuckoo_hashing_a8a9337b56ab4cf51a2a288c1859ef5c2}{get}} (long key)
+\item 
+void \mbox{\hyperlink{classmoa_1_1clusterers_1_1kmeanspm_1_1_cuckoo_hashing_adae26c0de4a9033d6f10f2fc84882319}{clear}} ()
+\item 
+int \mbox{\hyperlink{classmoa_1_1clusterers_1_1kmeanspm_1_1_cuckoo_hashing_afbea88ea9f032dfffa56aba9136521ad}{size}} ()
+\item 
+boolean \mbox{\hyperlink{classmoa_1_1clusterers_1_1kmeanspm_1_1_cuckoo_hashing_ad24367d23e9264498240480b30b7ef6f}{is\+Empty}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1clusterers_1_1kmeanspm_1_1_cuckoo_hashing_a5c033089f03d3b9ef71ae9525ec2ef9b}\label{classmoa_1_1clusterers_1_1kmeanspm_1_1_cuckoo_hashing_a5c033089f03d3b9ef71ae9525ec2ef9b}} 
+static final int {\bfseries D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+T\+A\+S\+H\+\_\+\+S\+I\+ZE} = 10
+\item 
+\mbox{\Hypertarget{classmoa_1_1clusterers_1_1kmeanspm_1_1_cuckoo_hashing_aa4022b05d51f202b7794fe899bf6539b}\label{classmoa_1_1clusterers_1_1kmeanspm_1_1_cuckoo_hashing_aa4022b05d51f202b7794fe899bf6539b}} 
+static final int {\bfseries D\+E\+F\+A\+U\+L\+T\+\_\+\+N\+U\+M\+\_\+\+T\+A\+B\+L\+ES} = 2
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Provides a hash table based on Cuckoo Hashing.
+
+Citation\+: Rasmus Pagh, Flemming Friche Rodler\+: Cuckoo Hashing. E\+SA 2001\+: 121-\/133
+
+
+\begin{DoxyParams}{Parameters}
+{\em $<$\+T$>$} & class of stored elements \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmoa_1_1clusterers_1_1kmeanspm_1_1_cuckoo_hashing_a49affa26d651877d57d1476885ba5400}\label{classmoa_1_1clusterers_1_1kmeanspm_1_1_cuckoo_hashing_a49affa26d651877d57d1476885ba5400}} 
+\index{moa.clusterers.kmeanspm.CuckooHashing$<$ T $>$@{moa.clusterers.kmeanspm.CuckooHashing$<$ T $>$}!CuckooHashing@{CuckooHashing}}
+\index{CuckooHashing@{CuckooHashing}!moa.clusterers.kmeanspm.CuckooHashing$<$ T $>$@{moa.clusterers.kmeanspm.CuckooHashing$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{CuckooHashing()}{CuckooHashing()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1clusterers_1_1kmeanspm_1_1_cuckoo_hashing}{moa.\+clusterers.\+kmeanspm.\+Cuckoo\+Hashing}}$<$ T $>$.\mbox{\hyperlink{classmoa_1_1clusterers_1_1kmeanspm_1_1_cuckoo_hashing}{Cuckoo\+Hashing}} (\begin{DoxyParamCaption}\item[{int}]{start\+Hash\+Size,  }\item[{int}]{max\+Stash\+Size,  }\item[{int}]{start\+Num\+Tables,  }\item[{Random}]{random }\end{DoxyParamCaption})}
+
+Creates a new hash table based on Cuckoo Hashing.
+
+
+\begin{DoxyParams}{Parameters}
+{\em start\+Hash\+Size} & size of the hash function at the beginning (must be smaller than 31) \\
+\hline
+{\em max\+Stash\+Size} & maximum size of the stash \\
+\hline
+{\em start\+Num\+Tables} & number of tables for Cuckoo hashing \\
+\hline
+{\em random} & instance to generate a stream of pseudorandom numbers \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmoa_1_1clusterers_1_1kmeanspm_1_1_cuckoo_hashing_a51140c9cea60c76f6746a96d609812bb}\label{classmoa_1_1clusterers_1_1kmeanspm_1_1_cuckoo_hashing_a51140c9cea60c76f6746a96d609812bb}} 
+\index{moa.clusterers.kmeanspm.CuckooHashing$<$ T $>$@{moa.clusterers.kmeanspm.CuckooHashing$<$ T $>$}!CuckooHashing@{CuckooHashing}}
+\index{CuckooHashing@{CuckooHashing}!moa.clusterers.kmeanspm.CuckooHashing$<$ T $>$@{moa.clusterers.kmeanspm.CuckooHashing$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{CuckooHashing()}{CuckooHashing()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1clusterers_1_1kmeanspm_1_1_cuckoo_hashing}{moa.\+clusterers.\+kmeanspm.\+Cuckoo\+Hashing}}$<$ T $>$.\mbox{\hyperlink{classmoa_1_1clusterers_1_1kmeanspm_1_1_cuckoo_hashing}{Cuckoo\+Hashing}} (\begin{DoxyParamCaption}\item[{int}]{hash\+Size,  }\item[{Random}]{random }\end{DoxyParamCaption})}
+
+Creates a new hash table based on Cuckoo Hashing.
+
+
+\begin{DoxyParams}{Parameters}
+{\em hash\+Size} & size of the hash function \\
+\hline
+{\em random} & instance to generate a stream of pseudorandom numbers \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1clusterers_1_1kmeanspm_1_1_cuckoo_hashing_adae26c0de4a9033d6f10f2fc84882319}\label{classmoa_1_1clusterers_1_1kmeanspm_1_1_cuckoo_hashing_adae26c0de4a9033d6f10f2fc84882319}} 
+\index{moa.clusterers.kmeanspm.CuckooHashing$<$ T $>$@{moa.clusterers.kmeanspm.CuckooHashing$<$ T $>$}!clear@{clear}}
+\index{clear@{clear}!moa.clusterers.kmeanspm.CuckooHashing$<$ T $>$@{moa.clusterers.kmeanspm.CuckooHashing$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{classmoa_1_1clusterers_1_1kmeanspm_1_1_cuckoo_hashing}{moa.\+clusterers.\+kmeanspm.\+Cuckoo\+Hashing}}$<$ T $>$.clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Removes all of the elements from this hash table. The hash table will be empty after this call returns. \mbox{\Hypertarget{classmoa_1_1clusterers_1_1kmeanspm_1_1_cuckoo_hashing_a8a9337b56ab4cf51a2a288c1859ef5c2}\label{classmoa_1_1clusterers_1_1kmeanspm_1_1_cuckoo_hashing_a8a9337b56ab4cf51a2a288c1859ef5c2}} 
+\index{moa.clusterers.kmeanspm.CuckooHashing$<$ T $>$@{moa.clusterers.kmeanspm.CuckooHashing$<$ T $>$}!get@{get}}
+\index{get@{get}!moa.clusterers.kmeanspm.CuckooHashing$<$ T $>$@{moa.clusterers.kmeanspm.CuckooHashing$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily T \mbox{\hyperlink{classmoa_1_1clusterers_1_1kmeanspm_1_1_cuckoo_hashing}{moa.\+clusterers.\+kmeanspm.\+Cuckoo\+Hashing}}$<$ T $>$.get (\begin{DoxyParamCaption}\item[{long}]{key }\end{DoxyParamCaption})}
+
+Gets an element of the hash table.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & key value of the element \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmoa_1_1clusterers_1_1kmeanspm_1_1_cuckoo_hashing_ad24367d23e9264498240480b30b7ef6f}\label{classmoa_1_1clusterers_1_1kmeanspm_1_1_cuckoo_hashing_ad24367d23e9264498240480b30b7ef6f}} 
+\index{moa.clusterers.kmeanspm.CuckooHashing$<$ T $>$@{moa.clusterers.kmeanspm.CuckooHashing$<$ T $>$}!isEmpty@{isEmpty}}
+\index{isEmpty@{isEmpty}!moa.clusterers.kmeanspm.CuckooHashing$<$ T $>$@{moa.clusterers.kmeanspm.CuckooHashing$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{isEmpty()}{isEmpty()}}
+{\footnotesize\ttfamily boolean \mbox{\hyperlink{classmoa_1_1clusterers_1_1kmeanspm_1_1_cuckoo_hashing}{moa.\+clusterers.\+kmeanspm.\+Cuckoo\+Hashing}}$<$ T $>$.is\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns {\ttfamily true} if this hash table contains no elements.
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if this hash table contains no elements 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmoa_1_1clusterers_1_1kmeanspm_1_1_cuckoo_hashing_a8915e5480a54cfb54208346661551a48}\label{classmoa_1_1clusterers_1_1kmeanspm_1_1_cuckoo_hashing_a8915e5480a54cfb54208346661551a48}} 
+\index{moa.clusterers.kmeanspm.CuckooHashing$<$ T $>$@{moa.clusterers.kmeanspm.CuckooHashing$<$ T $>$}!put@{put}}
+\index{put@{put}!moa.clusterers.kmeanspm.CuckooHashing$<$ T $>$@{moa.clusterers.kmeanspm.CuckooHashing$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{put()}{put()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{classmoa_1_1clusterers_1_1kmeanspm_1_1_cuckoo_hashing}{moa.\+clusterers.\+kmeanspm.\+Cuckoo\+Hashing}}$<$ T $>$.put (\begin{DoxyParamCaption}\item[{long}]{key,  }\item[{T}]{element }\end{DoxyParamCaption})}
+
+Adds an element to the hash table.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & key value of the element \\
+\hline
+{\em element} & value of the element \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmoa_1_1clusterers_1_1kmeanspm_1_1_cuckoo_hashing_afbea88ea9f032dfffa56aba9136521ad}\label{classmoa_1_1clusterers_1_1kmeanspm_1_1_cuckoo_hashing_afbea88ea9f032dfffa56aba9136521ad}} 
+\index{moa.clusterers.kmeanspm.CuckooHashing$<$ T $>$@{moa.clusterers.kmeanspm.CuckooHashing$<$ T $>$}!size@{size}}
+\index{size@{size}!moa.clusterers.kmeanspm.CuckooHashing$<$ T $>$@{moa.clusterers.kmeanspm.CuckooHashing$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily int \mbox{\hyperlink{classmoa_1_1clusterers_1_1kmeanspm_1_1_cuckoo_hashing}{moa.\+clusterers.\+kmeanspm.\+Cuckoo\+Hashing}}$<$ T $>$.size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the number of elements in the hash table.
+
+\begin{DoxyReturn}{Returns}
+the number of elements in the hash table 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/clusterers/kmeanspm/Cuckoo\+Hashing.\+java\end{DoxyCompactItemize}

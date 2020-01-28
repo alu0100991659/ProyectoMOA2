@@ -1,0 +1,291 @@
+\hypertarget{classmoa_1_1classifiers_1_1meta_1_1_heterogeneous_ensemble_abstract}{}\doxysection{moa.\+classifiers.\+meta.\+Heterogeneous\+Ensemble\+Abstract Class Reference}
+\label{classmoa_1_1classifiers_1_1meta_1_1_heterogeneous_ensemble_abstract}\index{moa.classifiers.meta.HeterogeneousEnsembleAbstract@{moa.classifiers.meta.HeterogeneousEnsembleAbstract}}
+
+
+Inheritance diagram for moa.\+classifiers.\+meta.\+Heterogeneous\+Ensemble\+Abstract\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+classifiers.\+meta.\+Heterogeneous\+Ensemble\+Abstract\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_heterogeneous_ensemble_abstract_a0cfa42f2c9aeab7577ebf3a1fc385194}{get\+Purpose\+String}} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_heterogeneous_ensemble_abstract_a56e416cf76f08d372d43fde83b6dc7ad}\label{classmoa_1_1classifiers_1_1meta_1_1_heterogeneous_ensemble_abstract_a56e416cf76f08d372d43fde83b6dc7ad}} 
+int {\bfseries get\+Ensemble\+Size} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_heterogeneous_ensemble_abstract_ac95c14cd5f7fcdd13f7e2bc840a83f3c}\label{classmoa_1_1classifiers_1_1meta_1_1_heterogeneous_ensemble_abstract_ac95c14cd5f7fcdd13f7e2bc840a83f3c}} 
+String {\bfseries get\+Member\+Cli\+String} (int idx)
+\item 
+double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_heterogeneous_ensemble_abstract_a936b33357b61ca567f27afb666775e05}{get\+Votes\+For\+Instance}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst)
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_heterogeneous_ensemble_abstract_a94b54c6368e726a4722e612cf3e5a270}{set\+Model\+Context}} (\mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instances_header}{Instances\+Header}} ih)
+\item 
+boolean \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_heterogeneous_ensemble_abstract_a6520e062cdfb6f30eb4eb0065a81d728}{is\+Randomizable}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_heterogeneous_ensemble_abstract_ab00fed9b12b579456c67164a30182d9a}{get\+Model\+Description}} (String\+Builder arg0, int arg1)
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_heterogeneous_ensemble_abstract_aaea7b382c097460613f5c63356d8ea71}{prepare\+For\+Use\+Impl}} (\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}} monitor, \mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}} repository)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_list_option}{List\+Option}} {\bfseries baselearners\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries grace\+Perion\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries active\+Classifiers\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_flag_option}{Flag\+Option}} {\bfseries weight\+Classifiers\+Option}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_heterogeneous_ensemble_abstract_ae696218ab6ba45fbf4c41fa2273832f4}{get\+Model\+Measurements\+Impl}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_heterogeneous_ensemble_abstract_ae1163c53eea7488413cb1607dbf6a4b0}\label{classmoa_1_1classifiers_1_1meta_1_1_heterogeneous_ensemble_abstract_ae1163c53eea7488413cb1607dbf6a4b0}} 
+static List$<$ Integer $>$ {\bfseries topK} (double\mbox{[}$\,$\mbox{]} scores, int k)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_heterogeneous_ensemble_abstract_a8f7a27e1341df4ebfeb912929977e40f}\label{classmoa_1_1classifiers_1_1meta_1_1_heterogeneous_ensemble_abstract_a8f7a27e1341df4ebfeb912929977e40f}} 
+static int {\bfseries max\+Index} (double\mbox{[}$\,$\mbox{]} scores)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_heterogeneous_ensemble_abstract_ae14bd0359f0684b97a7645c004ebf5be}\label{classmoa_1_1classifiers_1_1meta_1_1_heterogeneous_ensemble_abstract_ae14bd0359f0684b97a7645c004ebf5be}} 
+static double\mbox{[}$\,$\mbox{]} {\bfseries normalize} (double\mbox{[}$\,$\mbox{]} input)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_heterogeneous_ensemble_abstract_ac336c5113aa8babec45f6cb8da4dd4bb}\label{classmoa_1_1classifiers_1_1meta_1_1_heterogeneous_ensemble_abstract_ac336c5113aa8babec45f6cb8da4dd4bb}} 
+\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier}{Classifier}}\mbox{[}$\,$\mbox{]} {\bfseries ensemble}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_heterogeneous_ensemble_abstract_a299739a1a0779f741ba952eddcfc92c2}\label{classmoa_1_1classifiers_1_1meta_1_1_heterogeneous_ensemble_abstract_a299739a1a0779f741ba952eddcfc92c2}} 
+double\mbox{[}$\,$\mbox{]} {\bfseries history\+Total}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_heterogeneous_ensemble_abstract_a202469d93001ee45d30cd82f6c7eaefd}\label{classmoa_1_1classifiers_1_1meta_1_1_heterogeneous_ensemble_abstract_a202469d93001ee45d30cd82f6c7eaefd}} 
+Integer {\bfseries instances\+Seen}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+B\+L\+A\+ST (Best Last) for Heterogeneous Ensembles Abstract Base Class
+
+Given a set of (heterogeneous) classifiers, B\+L\+A\+ST builds an ensemble, and determines the weights of all ensemble members based on their performance on recent observed instances. Used as Abstact Base Class for \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_heterogeneous_ensemble_blast}{Heterogeneous\+Ensemble\+Blast}} and \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_heterogeneous_ensemble_blast_fading_factors}{Heterogeneous\+Ensemble\+Blast\+Fading\+Factors}}. 
+
+J. N. van Rijn, G. Holmes, B. Pfahringer, J. Vanschoren. Having a Blast\+: Meta-\/\+Learning and Heterogeneous Ensembles for Data Streams. In 2015 I\+E\+EE International Conference on Data Mining, pages 1003-\/1008. I\+E\+EE, 2015. 
+
+Parameters\+: 
+
+
+\begin{DoxyItemize}
+\item -\/b \+: Comma-\/separated string of classifiers 
+\item -\/g \+: Grace period (1 = optimal) 
+\item -\/k \+: Number of active classifiers 
+\end{DoxyItemize}
+
+\begin{DoxyAuthor}{Author}
+Jan N. van Rijn (\href{mailto:j.n.van.rijn@liacs.leidenuniv.nl}{\texttt{ j.\+n.\+van.\+rijn@liacs.\+leidenuniv.\+nl}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+1 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_heterogeneous_ensemble_abstract_ab00fed9b12b579456c67164a30182d9a}\label{classmoa_1_1classifiers_1_1meta_1_1_heterogeneous_ensemble_abstract_ab00fed9b12b579456c67164a30182d9a}} 
+\index{moa.classifiers.meta.HeterogeneousEnsembleAbstract@{moa.classifiers.meta.HeterogeneousEnsembleAbstract}!getModelDescription@{getModelDescription}}
+\index{getModelDescription@{getModelDescription}!moa.classifiers.meta.HeterogeneousEnsembleAbstract@{moa.classifiers.meta.HeterogeneousEnsembleAbstract}}
+\doxysubsubsection{\texorpdfstring{getModelDescription()}{getModelDescription()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+meta.\+Heterogeneous\+Ensemble\+Abstract.\+get\+Model\+Description (\begin{DoxyParamCaption}\item[{String\+Builder}]{out,  }\item[{int}]{indent }\end{DoxyParamCaption})}
+
+Returns a string representation of the model.
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & the stringbuilder to add the description \\
+\hline
+{\em indent} & the number of characters to indent \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a30e5ff32bc8127dfb7436945776b7523}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_heterogeneous_ensemble_abstract_ae696218ab6ba45fbf4c41fa2273832f4}\label{classmoa_1_1classifiers_1_1meta_1_1_heterogeneous_ensemble_abstract_ae696218ab6ba45fbf4c41fa2273832f4}} 
+\index{moa.classifiers.meta.HeterogeneousEnsembleAbstract@{moa.classifiers.meta.HeterogeneousEnsembleAbstract}!getModelMeasurementsImpl@{getModelMeasurementsImpl}}
+\index{getModelMeasurementsImpl@{getModelMeasurementsImpl}!moa.classifiers.meta.HeterogeneousEnsembleAbstract@{moa.classifiers.meta.HeterogeneousEnsembleAbstract}}
+\doxysubsubsection{\texorpdfstring{getModelMeasurementsImpl()}{getModelMeasurementsImpl()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}} \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+meta.\+Heterogeneous\+Ensemble\+Abstract.\+get\+Model\+Measurements\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Gets the current measurements of this classifier.~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden.
+
+\begin{DoxyReturn}{Returns}
+an array of measurements to be used in evaluation tasks 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_ac2bebede21c9d2d8cd11d95a7e20e529}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_heterogeneous_ensemble_abstract_a0cfa42f2c9aeab7577ebf3a1fc385194}\label{classmoa_1_1classifiers_1_1meta_1_1_heterogeneous_ensemble_abstract_a0cfa42f2c9aeab7577ebf3a1fc385194}} 
+\index{moa.classifiers.meta.HeterogeneousEnsembleAbstract@{moa.classifiers.meta.HeterogeneousEnsembleAbstract}!getPurposeString@{getPurposeString}}
+\index{getPurposeString@{getPurposeString}!moa.classifiers.meta.HeterogeneousEnsembleAbstract@{moa.classifiers.meta.HeterogeneousEnsembleAbstract}}
+\doxysubsubsection{\texorpdfstring{getPurposeString()}{getPurposeString()}}
+{\footnotesize\ttfamily String moa.\+classifiers.\+meta.\+Heterogeneous\+Ensemble\+Abstract.\+get\+Purpose\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Options to handle Dictionary with option texts and objects 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a3fc6ae11234b88e51941a77ddb879d8b}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_heterogeneous_ensemble_abstract_a936b33357b61ca567f27afb666775e05}\label{classmoa_1_1classifiers_1_1meta_1_1_heterogeneous_ensemble_abstract_a936b33357b61ca567f27afb666775e05}} 
+\index{moa.classifiers.meta.HeterogeneousEnsembleAbstract@{moa.classifiers.meta.HeterogeneousEnsembleAbstract}!getVotesForInstance@{getVotesForInstance}}
+\index{getVotesForInstance@{getVotesForInstance}!moa.classifiers.meta.HeterogeneousEnsembleAbstract@{moa.classifiers.meta.HeterogeneousEnsembleAbstract}}
+\doxysubsubsection{\texorpdfstring{getVotesForInstance()}{getVotesForInstance()}}
+{\footnotesize\ttfamily double \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+meta.\+Heterogeneous\+Ensemble\+Abstract.\+get\+Votes\+For\+Instance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{inst }\end{DoxyParamCaption})}
+
+Predicts the class memberships for a given instance. If an instance is unclassified, the returned array elements must be all zero.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & the instance to be classified \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an array containing the estimated membership probabilities of the test instance in each class 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a0e3589c4fa6f088d82d64514afd9513c}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_heterogeneous_ensemble_abstract_a6520e062cdfb6f30eb4eb0065a81d728}\label{classmoa_1_1classifiers_1_1meta_1_1_heterogeneous_ensemble_abstract_a6520e062cdfb6f30eb4eb0065a81d728}} 
+\index{moa.classifiers.meta.HeterogeneousEnsembleAbstract@{moa.classifiers.meta.HeterogeneousEnsembleAbstract}!isRandomizable@{isRandomizable}}
+\index{isRandomizable@{isRandomizable}!moa.classifiers.meta.HeterogeneousEnsembleAbstract@{moa.classifiers.meta.HeterogeneousEnsembleAbstract}}
+\doxysubsubsection{\texorpdfstring{isRandomizable()}{isRandomizable()}}
+{\footnotesize\ttfamily boolean moa.\+classifiers.\+meta.\+Heterogeneous\+Ensemble\+Abstract.\+is\+Randomizable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets whether this learner needs a random seed. Examples of methods that needs a random seed are bagging and boosting.
+
+\begin{DoxyReturn}{Returns}
+true if the learner needs a random seed. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1learners_1_1_learner_a2f1ff9007b5eb5f53801f474b4d42a61}{moa.\+learners.\+Learner$<$ E extends Example $>$}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_heterogeneous_ensemble_abstract_aaea7b382c097460613f5c63356d8ea71}\label{classmoa_1_1classifiers_1_1meta_1_1_heterogeneous_ensemble_abstract_aaea7b382c097460613f5c63356d8ea71}} 
+\index{moa.classifiers.meta.HeterogeneousEnsembleAbstract@{moa.classifiers.meta.HeterogeneousEnsembleAbstract}!prepareForUseImpl@{prepareForUseImpl}}
+\index{prepareForUseImpl@{prepareForUseImpl}!moa.classifiers.meta.HeterogeneousEnsembleAbstract@{moa.classifiers.meta.HeterogeneousEnsembleAbstract}}
+\doxysubsubsection{\texorpdfstring{prepareForUseImpl()}{prepareForUseImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+meta.\+Heterogeneous\+Ensemble\+Abstract.\+prepare\+For\+Use\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}}}]{monitor,  }\item[{\mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}}}]{repository }\end{DoxyParamCaption})}
+
+This method describes the implementation of how to prepare this object for use. All classes that extends this class have to implement {\ttfamily prepare\+For\+Use\+Impl} and not {\ttfamily prepare\+For\+Use} since {\ttfamily prepare\+For\+Use} calls {\ttfamily prepare\+For\+Use\+Impl}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em monitor} & the Task\+Monitor to use \\
+\hline
+{\em repository} & the Object\+Repository to use \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_af81677ce9db6e94f79321df05e7dc019}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_heterogeneous_ensemble_abstract_a94b54c6368e726a4722e612cf3e5a270}\label{classmoa_1_1classifiers_1_1meta_1_1_heterogeneous_ensemble_abstract_a94b54c6368e726a4722e612cf3e5a270}} 
+\index{moa.classifiers.meta.HeterogeneousEnsembleAbstract@{moa.classifiers.meta.HeterogeneousEnsembleAbstract}!setModelContext@{setModelContext}}
+\index{setModelContext@{setModelContext}!moa.classifiers.meta.HeterogeneousEnsembleAbstract@{moa.classifiers.meta.HeterogeneousEnsembleAbstract}}
+\doxysubsubsection{\texorpdfstring{setModelContext()}{setModelContext()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+meta.\+Heterogeneous\+Ensemble\+Abstract.\+set\+Model\+Context (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instances_header}{Instances\+Header}}}]{ih }\end{DoxyParamCaption})}
+
+Sets the reference to the header of the data stream. The header of the data stream is extended from W\+E\+KA {\ttfamily Instances}. This header is needed to know the number of classes and attributes
+
+
+\begin{DoxyParams}{Parameters}
+{\em ih} & the reference to the data stream header \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_ace518fd29d1cdb5af4279aa1b642dbee}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_heterogeneous_ensemble_abstract_a431d3486ada54a4c8f08e24611386623}\label{classmoa_1_1classifiers_1_1meta_1_1_heterogeneous_ensemble_abstract_a431d3486ada54a4c8f08e24611386623}} 
+\index{moa.classifiers.meta.HeterogeneousEnsembleAbstract@{moa.classifiers.meta.HeterogeneousEnsembleAbstract}!activeClassifiersOption@{activeClassifiersOption}}
+\index{activeClassifiersOption@{activeClassifiersOption}!moa.classifiers.meta.HeterogeneousEnsembleAbstract@{moa.classifiers.meta.HeterogeneousEnsembleAbstract}}
+\doxysubsubsection{\texorpdfstring{activeClassifiersOption}{activeClassifiersOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+classifiers.\+meta.\+Heterogeneous\+Ensemble\+Abstract.\+active\+Classifiers\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(\textcolor{stringliteral}{"activeClassifiers"},}
+\DoxyCodeLine{            \textcolor{charliteral}{'k'}, \textcolor{stringliteral}{"The number of active classifiers (used for voting)"}, 1, 1,}
+\DoxyCodeLine{            Integer.MAX\_VALUE)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_heterogeneous_ensemble_abstract_ae3d440e7c2b793ecf9271179a95a3d13}\label{classmoa_1_1classifiers_1_1meta_1_1_heterogeneous_ensemble_abstract_ae3d440e7c2b793ecf9271179a95a3d13}} 
+\index{moa.classifiers.meta.HeterogeneousEnsembleAbstract@{moa.classifiers.meta.HeterogeneousEnsembleAbstract}!baselearnersOption@{baselearnersOption}}
+\index{baselearnersOption@{baselearnersOption}!moa.classifiers.meta.HeterogeneousEnsembleAbstract@{moa.classifiers.meta.HeterogeneousEnsembleAbstract}}
+\doxysubsubsection{\texorpdfstring{baselearnersOption}{baselearnersOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_list_option}{List\+Option}} moa.\+classifiers.\+meta.\+Heterogeneous\+Ensemble\+Abstract.\+baselearners\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} ListOption(\textcolor{stringliteral}{"baseClassifiers"}, \textcolor{charliteral}{'b'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"The classifiers the ensemble consists of."},}
+\DoxyCodeLine{            \textcolor{keyword}{new} ClassOption(\textcolor{stringliteral}{"learner"}, \textcolor{charliteral}{' '}, \textcolor{stringliteral}{""}, Classifier.class,}
+\DoxyCodeLine{                    \textcolor{stringliteral}{"trees.HoeffdingTree"}),}
+\DoxyCodeLine{            \textcolor{keyword}{new} Option[] \{}
+\DoxyCodeLine{                    new ClassOption(\textcolor{stringliteral}{""}, \textcolor{stringliteral}{' '}, \textcolor{stringliteral}{""}, Classifier.class, \textcolor{stringliteral}{"bayes.NaiveBayes"}),}
+\DoxyCodeLine{                    new ClassOption(\textcolor{stringliteral}{""}, \textcolor{stringliteral}{' '}, \textcolor{stringliteral}{""}, Classifier.class,}
+\DoxyCodeLine{                            \textcolor{stringliteral}{"functions.Perceptron"}),}
+\DoxyCodeLine{                    new ClassOption(\textcolor{stringliteral}{""}, \textcolor{stringliteral}{' '}, \textcolor{stringliteral}{""}, Classifier.class, \textcolor{stringliteral}{"functions.SGD"}),}
+\DoxyCodeLine{                    new ClassOption(\textcolor{stringliteral}{""}, \textcolor{stringliteral}{' '}, \textcolor{stringliteral}{""}, Classifier.class, \textcolor{stringliteral}{"lazy.kNN"}),}
+\DoxyCodeLine{                    new ClassOption(\textcolor{stringliteral}{""}, \textcolor{stringliteral}{' '}, \textcolor{stringliteral}{""}, Classifier.class,}
+\DoxyCodeLine{                            \textcolor{stringliteral}{"trees.HoeffdingTree"}) \},}
+\DoxyCodeLine{            \textcolor{charliteral}{','})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_heterogeneous_ensemble_abstract_ae7089797b7605e15a29e051025dfa1bd}\label{classmoa_1_1classifiers_1_1meta_1_1_heterogeneous_ensemble_abstract_ae7089797b7605e15a29e051025dfa1bd}} 
+\index{moa.classifiers.meta.HeterogeneousEnsembleAbstract@{moa.classifiers.meta.HeterogeneousEnsembleAbstract}!gracePerionOption@{gracePerionOption}}
+\index{gracePerionOption@{gracePerionOption}!moa.classifiers.meta.HeterogeneousEnsembleAbstract@{moa.classifiers.meta.HeterogeneousEnsembleAbstract}}
+\doxysubsubsection{\texorpdfstring{gracePerionOption}{gracePerionOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+classifiers.\+meta.\+Heterogeneous\+Ensemble\+Abstract.\+grace\+Perion\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(\textcolor{stringliteral}{"gracePeriod"}, \textcolor{charliteral}{'g'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"How many instances before we reevalate the best classifier"}, 1, 1,}
+\DoxyCodeLine{            Integer.MAX\_VALUE)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_heterogeneous_ensemble_abstract_a4a86c1a1964e403ad419f67ad667065c}\label{classmoa_1_1classifiers_1_1meta_1_1_heterogeneous_ensemble_abstract_a4a86c1a1964e403ad419f67ad667065c}} 
+\index{moa.classifiers.meta.HeterogeneousEnsembleAbstract@{moa.classifiers.meta.HeterogeneousEnsembleAbstract}!weightClassifiersOption@{weightClassifiersOption}}
+\index{weightClassifiersOption@{weightClassifiersOption}!moa.classifiers.meta.HeterogeneousEnsembleAbstract@{moa.classifiers.meta.HeterogeneousEnsembleAbstract}}
+\doxysubsubsection{\texorpdfstring{weightClassifiersOption}{weightClassifiersOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_flag_option}{Flag\+Option}} moa.\+classifiers.\+meta.\+Heterogeneous\+Ensemble\+Abstract.\+weight\+Classifiers\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FlagOption(}
+\DoxyCodeLine{            \textcolor{stringliteral}{"weightClassifiers"}, \textcolor{charliteral}{'p'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Uses online performance estimation to weight the classifiers"})}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/classifiers/meta/Heterogeneous\+Ensemble\+Abstract.\+java\end{DoxyCompactItemize}

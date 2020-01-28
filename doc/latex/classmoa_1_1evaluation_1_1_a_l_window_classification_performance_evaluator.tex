@@ -1,0 +1,79 @@
+\hypertarget{classmoa_1_1evaluation_1_1_a_l_window_classification_performance_evaluator}{}\doxysection{moa.\+evaluation.\+A\+L\+Window\+Classification\+Performance\+Evaluator Class Reference}
+\label{classmoa_1_1evaluation_1_1_a_l_window_classification_performance_evaluator}\index{moa.evaluation.ALWindowClassificationPerformanceEvaluator@{moa.evaluation.ALWindowClassificationPerformanceEvaluator}}
+
+
+Inheritance diagram for moa.\+evaluation.\+A\+L\+Window\+Classification\+Performance\+Evaluator\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+evaluation.\+A\+L\+Window\+Classification\+Performance\+Evaluator\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classmoa_1_1evaluation_1_1_a_l_window_classification_performance_evaluator_a4b667f2eaab585c8bd99928a8faf5b12}{do\+Label\+Acq\+Report}} (\mbox{\hyperlink{interfacemoa_1_1core_1_1_example}{Example}}$<$ \mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} $>$ train\+Inst, int label\+Acquired)
+\item 
+int \mbox{\hyperlink{classmoa_1_1evaluation_1_1_a_l_window_classification_performance_evaluator_a714a5b675f7653a14153d549c91dcdbd}{get\+Abs\+Num\+Of\+Acq\+Inst}} ()
+\item 
+double \mbox{\hyperlink{classmoa_1_1evaluation_1_1_a_l_window_classification_performance_evaluator_a83c77b0c21fff7144a95077c631718e4}{get\+Rel\+Num\+Of\+Acq\+Inst}} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1evaluation_1_1_a_l_window_classification_performance_evaluator_a8e964eb2d25370c617e5bad240d30aab}\label{classmoa_1_1evaluation_1_1_a_l_window_classification_performance_evaluator_a8e964eb2d25370c617e5bad240d30aab}} 
+\mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}}\mbox{[}$\,$\mbox{]} {\bfseries get\+Performance\+Measurements} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1evaluation_1_1_a_l_window_classification_performance_evaluator_a8665a2b7375b3ec6491a9a8f33e87eca}\label{classmoa_1_1evaluation_1_1_a_l_window_classification_performance_evaluator_a8665a2b7375b3ec6491a9a8f33e87eca}} 
+void {\bfseries reset} (int num\+Classes)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Active Learning Wrapper for \mbox{\hyperlink{classmoa_1_1evaluation_1_1_basic_classification_performance_evaluator}{Basic\+Classification\+Performance\+Evaluator}}.
+
+\begin{DoxyAuthor}{Author}
+Daniel Kottke (\href{mailto:daniel.kottke@ovgu.de}{\texttt{ daniel.\+kottke@ovgu.\+de}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+1 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1evaluation_1_1_a_l_window_classification_performance_evaluator_a4b667f2eaab585c8bd99928a8faf5b12}\label{classmoa_1_1evaluation_1_1_a_l_window_classification_performance_evaluator_a4b667f2eaab585c8bd99928a8faf5b12}} 
+\index{moa.evaluation.ALWindowClassificationPerformanceEvaluator@{moa.evaluation.ALWindowClassificationPerformanceEvaluator}!doLabelAcqReport@{doLabelAcqReport}}
+\index{doLabelAcqReport@{doLabelAcqReport}!moa.evaluation.ALWindowClassificationPerformanceEvaluator@{moa.evaluation.ALWindowClassificationPerformanceEvaluator}}
+\doxysubsubsection{\texorpdfstring{doLabelAcqReport()}{doLabelAcqReport()}}
+{\footnotesize\ttfamily void moa.\+evaluation.\+A\+L\+Window\+Classification\+Performance\+Evaluator.\+do\+Label\+Acq\+Report (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacemoa_1_1core_1_1_example}{Example}}$<$ \mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} $>$}]{train\+Inst,  }\item[{int}]{label\+Acquired }\end{DoxyParamCaption})}
+
+Receives the information if a label has been acquired and increases counters.
+
+
+\begin{DoxyParams}{Parameters}
+{\em train\+Inst} & the instance that was previously considered \\
+\hline
+{\em label\+Acquired} & bool type which indicates if train\+Inst was acquired by the active learner \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1evaluation_1_1_a_l_classification_performance_evaluator_a40ab71a215689a34e2fadc7d8ddb7a6e}{moa.\+evaluation.\+A\+L\+Classification\+Performance\+Evaluator}}.
+
+\mbox{\Hypertarget{classmoa_1_1evaluation_1_1_a_l_window_classification_performance_evaluator_a714a5b675f7653a14153d549c91dcdbd}\label{classmoa_1_1evaluation_1_1_a_l_window_classification_performance_evaluator_a714a5b675f7653a14153d549c91dcdbd}} 
+\index{moa.evaluation.ALWindowClassificationPerformanceEvaluator@{moa.evaluation.ALWindowClassificationPerformanceEvaluator}!getAbsNumOfAcqInst@{getAbsNumOfAcqInst}}
+\index{getAbsNumOfAcqInst@{getAbsNumOfAcqInst}!moa.evaluation.ALWindowClassificationPerformanceEvaluator@{moa.evaluation.ALWindowClassificationPerformanceEvaluator}}
+\doxysubsubsection{\texorpdfstring{getAbsNumOfAcqInst()}{getAbsNumOfAcqInst()}}
+{\footnotesize\ttfamily int moa.\+evaluation.\+A\+L\+Window\+Classification\+Performance\+Evaluator.\+get\+Abs\+Num\+Of\+Acq\+Inst (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns absolute number of acquired labels so far. \mbox{\Hypertarget{classmoa_1_1evaluation_1_1_a_l_window_classification_performance_evaluator_a83c77b0c21fff7144a95077c631718e4}\label{classmoa_1_1evaluation_1_1_a_l_window_classification_performance_evaluator_a83c77b0c21fff7144a95077c631718e4}} 
+\index{moa.evaluation.ALWindowClassificationPerformanceEvaluator@{moa.evaluation.ALWindowClassificationPerformanceEvaluator}!getRelNumOfAcqInst@{getRelNumOfAcqInst}}
+\index{getRelNumOfAcqInst@{getRelNumOfAcqInst}!moa.evaluation.ALWindowClassificationPerformanceEvaluator@{moa.evaluation.ALWindowClassificationPerformanceEvaluator}}
+\doxysubsubsection{\texorpdfstring{getRelNumOfAcqInst()}{getRelNumOfAcqInst()}}
+{\footnotesize\ttfamily double moa.\+evaluation.\+A\+L\+Window\+Classification\+Performance\+Evaluator.\+get\+Rel\+Num\+Of\+Acq\+Inst (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns relative number of acquired labels so far. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/evaluation/A\+L\+Window\+Classification\+Performance\+Evaluator.\+java\end{DoxyCompactItemize}

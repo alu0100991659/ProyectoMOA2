@@ -1,0 +1,177 @@
+\hypertarget{classmoa_1_1classifiers_1_1functions_1_1_no_change}{}\doxysection{moa.\+classifiers.\+functions.\+No\+Change Class Reference}
+\label{classmoa_1_1classifiers_1_1functions_1_1_no_change}\index{moa.classifiers.functions.NoChange@{moa.classifiers.functions.NoChange}}
+
+
+Inheritance diagram for moa.\+classifiers.\+functions.\+No\+Change\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+classifiers.\+functions.\+No\+Change\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classmoa_1_1classifiers_1_1functions_1_1_no_change_a163269f6d44ae433a0640cadfa104a21}{get\+Purpose\+String}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1functions_1_1_no_change_af51315334ad6ff47879da43d649ced0b}{reset\+Learning\+Impl}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1functions_1_1_no_change_a8e0f27bfbb40b8fba3c3cdd5f6cdd37d}{train\+On\+Instance\+Impl}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst)
+\item 
+double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1functions_1_1_no_change_aaf30eac7ba9df16c9f21652fe252f0f3}{get\+Votes\+For\+Instance}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} i)
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1functions_1_1_no_change_adf282188cc5cee2cd30c3725bcbbc3fd}{get\+Model\+Description}} (String\+Builder out, int indent)
+\item 
+boolean \mbox{\hyperlink{classmoa_1_1classifiers_1_1functions_1_1_no_change_a643df4e54acf4c9ff210f8530144a39f}{is\+Randomizable}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1functions_1_1_no_change_abb9cec2eb0a32d2ef59899425c998b26}{get\+Model\+Measurements\+Impl}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1functions_1_1_no_change_a03605b87447826b8b087d31014e8c8d3}\label{classmoa_1_1classifiers_1_1functions_1_1_no_change_a03605b87447826b8b087d31014e8c8d3}} 
+double {\bfseries last\+Seen\+Class}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classmoa_1_1classifiers_1_1functions_1_1_no_change}{No\+Change}} class classifier. It always predicts the last class seen.
+
+\begin{DoxyAuthor}{Author}
+Bernhard Pfahringer (\href{mailto:bernhard@cs.waikato.ac.nz}{\texttt{ bernhard@cs.\+waikato.\+ac.\+nz}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+1 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1functions_1_1_no_change_adf282188cc5cee2cd30c3725bcbbc3fd}\label{classmoa_1_1classifiers_1_1functions_1_1_no_change_adf282188cc5cee2cd30c3725bcbbc3fd}} 
+\index{moa.classifiers.functions.NoChange@{moa.classifiers.functions.NoChange}!getModelDescription@{getModelDescription}}
+\index{getModelDescription@{getModelDescription}!moa.classifiers.functions.NoChange@{moa.classifiers.functions.NoChange}}
+\doxysubsubsection{\texorpdfstring{getModelDescription()}{getModelDescription()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+functions.\+No\+Change.\+get\+Model\+Description (\begin{DoxyParamCaption}\item[{String\+Builder}]{out,  }\item[{int}]{indent }\end{DoxyParamCaption})}
+
+Returns a string representation of the model.
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & the stringbuilder to add the description \\
+\hline
+{\em indent} & the number of characters to indent \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a30e5ff32bc8127dfb7436945776b7523}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1functions_1_1_no_change_abb9cec2eb0a32d2ef59899425c998b26}\label{classmoa_1_1classifiers_1_1functions_1_1_no_change_abb9cec2eb0a32d2ef59899425c998b26}} 
+\index{moa.classifiers.functions.NoChange@{moa.classifiers.functions.NoChange}!getModelMeasurementsImpl@{getModelMeasurementsImpl}}
+\index{getModelMeasurementsImpl@{getModelMeasurementsImpl}!moa.classifiers.functions.NoChange@{moa.classifiers.functions.NoChange}}
+\doxysubsubsection{\texorpdfstring{getModelMeasurementsImpl()}{getModelMeasurementsImpl()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}} \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+functions.\+No\+Change.\+get\+Model\+Measurements\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Gets the current measurements of this classifier.~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden.
+
+\begin{DoxyReturn}{Returns}
+an array of measurements to be used in evaluation tasks 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_ac2bebede21c9d2d8cd11d95a7e20e529}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1functions_1_1_no_change_a163269f6d44ae433a0640cadfa104a21}\label{classmoa_1_1classifiers_1_1functions_1_1_no_change_a163269f6d44ae433a0640cadfa104a21}} 
+\index{moa.classifiers.functions.NoChange@{moa.classifiers.functions.NoChange}!getPurposeString@{getPurposeString}}
+\index{getPurposeString@{getPurposeString}!moa.classifiers.functions.NoChange@{moa.classifiers.functions.NoChange}}
+\doxysubsubsection{\texorpdfstring{getPurposeString()}{getPurposeString()}}
+{\footnotesize\ttfamily String moa.\+classifiers.\+functions.\+No\+Change.\+get\+Purpose\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Options to handle Dictionary with option texts and objects 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a3fc6ae11234b88e51941a77ddb879d8b}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1functions_1_1_no_change_aaf30eac7ba9df16c9f21652fe252f0f3}\label{classmoa_1_1classifiers_1_1functions_1_1_no_change_aaf30eac7ba9df16c9f21652fe252f0f3}} 
+\index{moa.classifiers.functions.NoChange@{moa.classifiers.functions.NoChange}!getVotesForInstance@{getVotesForInstance}}
+\index{getVotesForInstance@{getVotesForInstance}!moa.classifiers.functions.NoChange@{moa.classifiers.functions.NoChange}}
+\doxysubsubsection{\texorpdfstring{getVotesForInstance()}{getVotesForInstance()}}
+{\footnotesize\ttfamily double \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+functions.\+No\+Change.\+get\+Votes\+For\+Instance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{inst }\end{DoxyParamCaption})}
+
+Predicts the class memberships for a given instance. If an instance is unclassified, the returned array elements must be all zero.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & the instance to be classified \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an array containing the estimated membership probabilities of the test instance in each class 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a0e3589c4fa6f088d82d64514afd9513c}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1functions_1_1_no_change_a643df4e54acf4c9ff210f8530144a39f}\label{classmoa_1_1classifiers_1_1functions_1_1_no_change_a643df4e54acf4c9ff210f8530144a39f}} 
+\index{moa.classifiers.functions.NoChange@{moa.classifiers.functions.NoChange}!isRandomizable@{isRandomizable}}
+\index{isRandomizable@{isRandomizable}!moa.classifiers.functions.NoChange@{moa.classifiers.functions.NoChange}}
+\doxysubsubsection{\texorpdfstring{isRandomizable()}{isRandomizable()}}
+{\footnotesize\ttfamily boolean moa.\+classifiers.\+functions.\+No\+Change.\+is\+Randomizable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets whether this learner needs a random seed. Examples of methods that needs a random seed are bagging and boosting.
+
+\begin{DoxyReturn}{Returns}
+true if the learner needs a random seed. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1learners_1_1_learner_a2f1ff9007b5eb5f53801f474b4d42a61}{moa.\+learners.\+Learner$<$ E extends Example $>$}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1functions_1_1_no_change_af51315334ad6ff47879da43d649ced0b}\label{classmoa_1_1classifiers_1_1functions_1_1_no_change_af51315334ad6ff47879da43d649ced0b}} 
+\index{moa.classifiers.functions.NoChange@{moa.classifiers.functions.NoChange}!resetLearningImpl@{resetLearningImpl}}
+\index{resetLearningImpl@{resetLearningImpl}!moa.classifiers.functions.NoChange@{moa.classifiers.functions.NoChange}}
+\doxysubsubsection{\texorpdfstring{resetLearningImpl()}{resetLearningImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+functions.\+No\+Change.\+reset\+Learning\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Resets this classifier. It must be similar to starting a new classifier from scratch. ~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden. 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a099ffcf2417abb919d10d697c0648f29}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1functions_1_1_no_change_a8e0f27bfbb40b8fba3c3cdd5f6cdd37d}\label{classmoa_1_1classifiers_1_1functions_1_1_no_change_a8e0f27bfbb40b8fba3c3cdd5f6cdd37d}} 
+\index{moa.classifiers.functions.NoChange@{moa.classifiers.functions.NoChange}!trainOnInstanceImpl@{trainOnInstanceImpl}}
+\index{trainOnInstanceImpl@{trainOnInstanceImpl}!moa.classifiers.functions.NoChange@{moa.classifiers.functions.NoChange}}
+\doxysubsubsection{\texorpdfstring{trainOnInstanceImpl()}{trainOnInstanceImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+functions.\+No\+Change.\+train\+On\+Instance\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{inst }\end{DoxyParamCaption})}
+
+Trains this classifier incrementally using the given instance.~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & the instance to be used for training \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_aceb24d2ddeab386f2ecead6e3c0d3543}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/classifiers/functions/No\+Change.\+java\end{DoxyCompactItemize}

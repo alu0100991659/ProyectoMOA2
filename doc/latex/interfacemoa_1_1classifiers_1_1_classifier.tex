@@ -1,0 +1,158 @@
+\hypertarget{interfacemoa_1_1classifiers_1_1_classifier}{}\doxysection{moa.\+classifiers.\+Classifier Interface Reference}
+\label{interfacemoa_1_1classifiers_1_1_classifier}\index{moa.classifiers.Classifier@{moa.classifiers.Classifier}}
+
+
+Inheritance diagram for moa.\+classifiers.\+Classifier\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+classifiers.\+Classifier\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier}{Classifier}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier_a2a75ffa1898972418235be3ecf17061d}{get\+Sub\+Classifiers}} ()
+\item 
+\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier}{Classifier}} \mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier_af50dcec23ecb34c1bd141d0d389bdb59}{copy}} ()
+\item 
+boolean \mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier_a8348b4106e79422d3dec0a1857d402f3}{correctly\+Classifies}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst)
+\item 
+void \mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier_ac28018bc307abe34a8ace54dba3ebff1}{train\+On\+Instance}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst)
+\item 
+double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier_a0933ed1199c2b16a8eb8186dabf9a8f9}{get\+Votes\+For\+Instance}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst)
+\item 
+\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_prediction}{Prediction}} \mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier_a0f550a8c22209b2c470a466a9f8b648e}{get\+Prediction\+For\+Instance}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier}{Classifier}} interface for incremental classification models.
+
+\begin{DoxyAuthor}{Author}
+Richard Kirkby (\href{mailto:rkirkby@cs.waikato.ac.nz}{\texttt{ rkirkby@cs.\+waikato.\+ac.\+nz}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+7 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interfacemoa_1_1classifiers_1_1_classifier_af50dcec23ecb34c1bd141d0d389bdb59}\label{interfacemoa_1_1classifiers_1_1_classifier_af50dcec23ecb34c1bd141d0d389bdb59}} 
+\index{moa.classifiers.Classifier@{moa.classifiers.Classifier}!copy@{copy}}
+\index{copy@{copy}!moa.classifiers.Classifier@{moa.classifiers.Classifier}}
+\doxysubsubsection{\texorpdfstring{copy()}{copy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier}{Classifier}} moa.\+classifiers.\+Classifier.\+copy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Produces a copy of this learner.
+
+\begin{DoxyReturn}{Returns}
+the copy of this learner 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1_m_o_a_object_a43a1c94524779322ce415898501d6a0c}{moa.\+M\+O\+A\+Object}}.
+
+
+
+Implemented in \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a0d95f541e4ae5a893415b0a1b8ddbef9}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{interfacemoa_1_1classifiers_1_1_classifier_a8348b4106e79422d3dec0a1857d402f3}\label{interfacemoa_1_1classifiers_1_1_classifier_a8348b4106e79422d3dec0a1857d402f3}} 
+\index{moa.classifiers.Classifier@{moa.classifiers.Classifier}!correctlyClassifies@{correctlyClassifies}}
+\index{correctlyClassifies@{correctlyClassifies}!moa.classifiers.Classifier@{moa.classifiers.Classifier}}
+\doxysubsubsection{\texorpdfstring{correctlyClassifies()}{correctlyClassifies()}}
+{\footnotesize\ttfamily boolean moa.\+classifiers.\+Classifier.\+correctly\+Classifies (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{inst }\end{DoxyParamCaption})}
+
+Gets whether this classifier correctly classifies an instance. Uses get\+Votes\+For\+Instance to obtain the prediction and the instance to obtain its true class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & the instance to be classified \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the instance is correctly classified 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a0a5d3c3df5b27390f6830fed829540ea}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{interfacemoa_1_1classifiers_1_1_classifier_a0f550a8c22209b2c470a466a9f8b648e}\label{interfacemoa_1_1classifiers_1_1_classifier_a0f550a8c22209b2c470a466a9f8b648e}} 
+\index{moa.classifiers.Classifier@{moa.classifiers.Classifier}!getPredictionForInstance@{getPredictionForInstance}}
+\index{getPredictionForInstance@{getPredictionForInstance}!moa.classifiers.Classifier@{moa.classifiers.Classifier}}
+\doxysubsubsection{\texorpdfstring{getPredictionForInstance()}{getPredictionForInstance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_prediction}{Prediction}} moa.\+classifiers.\+Classifier.\+get\+Prediction\+For\+Instance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{inst }\end{DoxyParamCaption})}
+
+Sets the reference to the header of the data stream. The header of the data stream is extended from W\+E\+KA {\ttfamily Instances}. This header is needed to know the number of classes and attributes
+
+
+\begin{DoxyParams}{Parameters}
+{\em ih} & the reference to the data stream header Gets the reference to the header of the data stream. The header of the data stream is extended from W\+E\+KA {\ttfamily Instances}. This header is needed to know the number of classes and attributes\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the reference to the data stream header 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_ae4e9ced48011ca7d5a5e725730b8a774}{moa.\+classifiers.\+Abstract\+Classifier}}, and \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_multi_label_learner_ac2bb4763c11b326e2eea987cdc1d06f3}{moa.\+classifiers.\+Abstract\+Multi\+Label\+Learner}}.
+
+\mbox{\Hypertarget{interfacemoa_1_1classifiers_1_1_classifier_a2a75ffa1898972418235be3ecf17061d}\label{interfacemoa_1_1classifiers_1_1_classifier_a2a75ffa1898972418235be3ecf17061d}} 
+\index{moa.classifiers.Classifier@{moa.classifiers.Classifier}!getSubClassifiers@{getSubClassifiers}}
+\index{getSubClassifiers@{getSubClassifiers}!moa.classifiers.Classifier@{moa.classifiers.Classifier}}
+\doxysubsubsection{\texorpdfstring{getSubClassifiers()}{getSubClassifiers()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier}{Classifier}} \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+Classifier.\+get\+Sub\+Classifiers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the classifiers of this ensemble. Returns null if this learner is a single learner.
+
+\begin{DoxyReturn}{Returns}
+an array of the learners of the ensemble 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_lim_att_classifier_a2e68d689a15e902bc65aabb06cb0ee16}{moa.\+classifiers.\+meta.\+Lim\+Att\+Classifier}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_a2b89b976bdc0aa5896c6cb84c1cc1a1b}{moa.\+classifiers.\+meta.\+Accuracy\+Weighted\+Ensemble}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_a45c94e815ca1eb36809c3b5214337de2}{moa.\+classifiers.\+meta.\+D\+A\+CC}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_oza_boost_adwin_aad08c2a944c178ba2402b6521707aa78}{moa.\+classifiers.\+meta.\+Oza\+Boost\+Adwin}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_leveraging_bag_a2065dae1a54930c65743edb354746dd7}{moa.\+classifiers.\+meta.\+Leveraging\+Bag}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a5d7c5aadeaf3465785aa6bb2efb615f2}{moa.\+classifiers.\+Abstract\+Classifier}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_b_o_l_e_aed00ee90bea0889401a95389013a10c0}{moa.\+classifiers.\+meta.\+B\+O\+LE}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_online_accuracy_updated_ensemble_acb832e405cebdcdf8d8ec945139d62ca}{moa.\+classifiers.\+meta.\+Online\+Accuracy\+Updated\+Ensemble}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_a_d_o_b_a75d82ebe0cb53854e9a16cceacfd8948}{moa.\+classifiers.\+meta.\+A\+D\+OB}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1meta_1_1_random_a_m_rules_old_ac0024af9c0d1e027885acf776778bdce}{moa.\+classifiers.\+rules.\+meta.\+Random\+A\+M\+Rules\+Old}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_oza_bag_a_s_h_t_aaccfd40b0a05287786dd5637d940ad6b}{moa.\+classifiers.\+meta.\+Oza\+Bag\+A\+S\+HT}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_o_c_boost_aa812d34f3fecfc156e039338f40796e2}{moa.\+classifiers.\+meta.\+O\+C\+Boost}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_oza_bag_adwin_a71468e4bec827fcab16e4710031fed3d}{moa.\+classifiers.\+meta.\+Oza\+Bag\+Adwin}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_weighted_majority_algorithm_afeee3fb5097d699bfa3afaec115d40c2}{moa.\+classifiers.\+meta.\+Weighted\+Majority\+Algorithm}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_accuracy_updated_ensemble_a65dcf13bac7f2e08da32992912d2e872}{moa.\+classifiers.\+meta.\+Accuracy\+Updated\+Ensemble}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_oza_boost_a3a8bf1f675ab12180c17d10b5d574511}{moa.\+classifiers.\+meta.\+Oza\+Boost}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_online_smooth_boost_aa827cb49acde4bd21deabe2a7c27eaea}{moa.\+classifiers.\+meta.\+Online\+Smooth\+Boost}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_random_rules_a8ceac7fafaf602b3e3bca94722771bbc}{moa.\+classifiers.\+meta.\+Random\+Rules}}, and \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_oza_bag_a1672b0ad21251927eadbd6598f6539d5}{moa.\+classifiers.\+meta.\+Oza\+Bag}}.
+
+\mbox{\Hypertarget{interfacemoa_1_1classifiers_1_1_classifier_a0933ed1199c2b16a8eb8186dabf9a8f9}\label{interfacemoa_1_1classifiers_1_1_classifier_a0933ed1199c2b16a8eb8186dabf9a8f9}} 
+\index{moa.classifiers.Classifier@{moa.classifiers.Classifier}!getVotesForInstance@{getVotesForInstance}}
+\index{getVotesForInstance@{getVotesForInstance}!moa.classifiers.Classifier@{moa.classifiers.Classifier}}
+\doxysubsubsection{\texorpdfstring{getVotesForInstance()}{getVotesForInstance()}}
+{\footnotesize\ttfamily double \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+Classifier.\+get\+Votes\+For\+Instance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{inst }\end{DoxyParamCaption})}
+
+Predicts the class memberships for a given instance. If an instance is unclassified, the returned array elements must be all zero.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & the instance to be classified \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an array containing the estimated membership probabilities of the test instance in each class 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_w_e_k_a_classifier_a9cb872b8e53f70dc6b25396a22788661}{moa.\+classifiers.\+meta.\+W\+E\+K\+A\+Classifier}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1multilabel_1_1_m_e_k_a_classifier_a3795fe3525cd03bf53ca4b7b64be27b7}{moa.\+classifiers.\+multilabel.\+M\+E\+K\+A\+Classifier}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1_abstract_a_m_rules_a1e75f677bd1ca8f8d39ca9c28bfb7cf2}{moa.\+classifiers.\+rules.\+Abstract\+A\+M\+Rules}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_adb611f9476fb4a05d0d69ce333648935}{moa.\+classifiers.\+meta.\+Adaptive\+Random\+Forest}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_streaming_random_patches_a5655283bc1b1fb3a98b254e2332ee4bc}{moa.\+classifiers.\+meta.\+Streaming\+Random\+Patches}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1bayes_1_1_naive_bayes_multinomial_a2492192f6fb985dd4af596d5298cb4c6}{moa.\+classifiers.\+bayes.\+Naive\+Bayes\+Multinomial}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_temporally_augmented_classifier_aed3b7b8d63e077e50e7f7ae5f0381e7e}{moa.\+classifiers.\+meta.\+Temporally\+Augmented\+Classifier}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_regressor_ad0564edda8f949970257728952e144cc}{moa.\+classifiers.\+meta.\+Adaptive\+Random\+Forest\+Regressor}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1_a_r_f_f_i_m_t_d_d_a82df5e12a14bfa5e024d27af62fffe13}{moa.\+classifiers.\+trees.\+A\+R\+F\+F\+I\+M\+T\+DD}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_a97b0cdef18ebeea3e113d776731851d9}{moa.\+classifiers.\+trees.\+F\+I\+M\+T\+DD}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_ae8d3fd0f0d01dd24031e0db92794b4c3}{moa.\+classifiers.\+trees.\+Hoeffding\+Option\+Tree}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_tree_a2bcda84a5c9a13d9d8baf06246a25354}{moa.\+classifiers.\+trees.\+Hoeffding\+Tree}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_adaptive_tree_afef2fb53920a5863df9fa8c9032e9cf6}{moa.\+classifiers.\+trees.\+Hoeffding\+Adaptive\+Tree}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_lim_att_classifier_a57ddfd01e4a874072b89ad1aa2fd05ae}{moa.\+classifiers.\+meta.\+Lim\+Att\+Classifier}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1functions_1_1_perceptron_abf373f442c389f4d67176f998ada714c}{moa.\+classifiers.\+rules.\+functions.\+Perceptron}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_a3aa38fe0bc4c5f4beaf333efc6f98012}{moa.\+classifiers.\+meta.\+Accuracy\+Weighted\+Ensemble}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1oneclass_1_1_autoencoder_ad474b0cfd4348d75384589a247449c7f}{moa.\+classifiers.\+oneclass.\+Autoencoder}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_multi_class_a4c8a42d0d7e44d4a049d590b3de120e3}{moa.\+classifiers.\+functions.\+S\+G\+D\+Multi\+Class}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_a05007ceccb6cc18317e6169f604c4c94}{moa.\+classifiers.\+functions.\+S\+GD}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1functions_1_1_s_pegasos_ac89caf2994d1d6a64a187649849c6ffb}{moa.\+classifiers.\+functions.\+S\+Pegasos}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_learn_n_s_e_a1992287b1914f2519d1d1378f174246c}{moa.\+classifiers.\+meta.\+Learn\+N\+SE}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1active_1_1_a_l_uncertainty_a0f851596ea89eacd3602f55cdb8816a3}{moa.\+classifiers.\+active.\+A\+L\+Uncertainty}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_r_c_d_a3604a189645075a36112481f32e5af0b}{moa.\+classifiers.\+meta.\+R\+CD}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1_e_f_d_t_aed40483eeea18ce2fea8e599c176c4ed}{moa.\+classifiers.\+trees.\+E\+F\+DT}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_leveraging_bag_a7cc1a694629153846596c3ec9bd38ba7}{moa.\+classifiers.\+meta.\+Leveraging\+Bag}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_oza_boost_adwin_a18314a53ec41fa1e24865d6725819ea7}{moa.\+classifiers.\+meta.\+Oza\+Boost\+Adwin}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1_rule_classifier_ace9204249eb27db4b70d4a13b93d08f4}{moa.\+classifiers.\+rules.\+Rule\+Classifier}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1oneclass_1_1_h_s_trees_a81c5ca04073f8e39a6f031fcce4dff92}{moa.\+classifiers.\+oneclass.\+H\+S\+Trees}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_b_o_l_e_a08d1f4d32bb356a8b5f9c98f9d897adb}{moa.\+classifiers.\+meta.\+B\+O\+LE}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_online_accuracy_updated_ensemble_a88fadbdcf2ab55bc1af67747b4471968}{moa.\+classifiers.\+meta.\+Online\+Accuracy\+Updated\+Ensemble}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1_s_a_mk_n_n_a8dcf1e1b9e44999006d59d8c5fbc7bc8}{moa.\+classifiers.\+lazy.\+S\+A\+Mk\+NN}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_a_d_o_b_a96329d94f1cd854fd15960fd132e07c4}{moa.\+classifiers.\+meta.\+A\+D\+OB}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1drift_1_1_drift_detection_method_classifier_ad019b405e40ab7a5150910733588ab6b}{moa.\+classifiers.\+drift.\+Drift\+Detection\+Method\+Classifier}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_dynamic_weighted_majority_a25f732ad0f4fc40496c5dcdfff9f253a}{moa.\+classifiers.\+meta.\+Dynamic\+Weighted\+Majority}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_oza_bag_adwin_a38fc0309ef34e30d96cd81d897c45c16}{moa.\+classifiers.\+meta.\+Oza\+Bag\+Adwin}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_oza_bag_a_s_h_t_a58eb57c9bfd6512ecb133a1d80ae9d01}{moa.\+classifiers.\+meta.\+Oza\+Bag\+A\+S\+HT}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_o_c_boost_ac077f921cf1d749d6b917afaba995383}{moa.\+classifiers.\+meta.\+O\+C\+Boost}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_accuracy_updated_ensemble_a023b446ff571d202d2d9f5e2b86a181f}{moa.\+classifiers.\+meta.\+Accuracy\+Updated\+Ensemble}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_a98e1d9e368b0f8f97435e27bf4593083}{moa.\+classifiers.\+meta.\+D\+A\+CC}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_weighted_majority_algorithm_aa78a629163fc11b7cc74308d2ffc28eb}{moa.\+classifiers.\+meta.\+Weighted\+Majority\+Algorithm}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_af313d759121cac79b6b6612756133c9d}{moa.\+classifiers.\+trees.\+iadem.\+Iadem2}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1meta_1_1_random_a_m_rules_old_a8cf3a862f4828a095466f92c7b06f26e}{moa.\+classifiers.\+rules.\+meta.\+Random\+A\+M\+Rules\+Old}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1functions_1_1_perceptron_a9bbfb76e17a1e17af3304626d8704a0c}{moa.\+classifiers.\+functions.\+Perceptron}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1oneclass_1_1_nearest_neighbour_description_a242ffec99d392f6aa4f76479c9b943fa}{moa.\+classifiers.\+oneclass.\+Nearest\+Neighbour\+Description}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_heterogeneous_ensemble_abstract_a936b33357b61ca567f27afb666775e05}{moa.\+classifiers.\+meta.\+Heterogeneous\+Ensemble\+Abstract}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_paired_learners_ab7a296a52654289e139edd417518314a}{moa.\+classifiers.\+meta.\+Paired\+Learners}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_oza_boost_a3ad325dd3d8d927a4efbb87cf4196c39}{moa.\+classifiers.\+meta.\+Oza\+Boost}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1_decision_stump_a47c4e10523e3e9c893baee6015268fd0}{moa.\+classifiers.\+trees.\+Decision\+Stump}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_online_smooth_boost_a95716f04d900f6d510a28f6b46bd86d8}{moa.\+classifiers.\+meta.\+Online\+Smooth\+Boost}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a0e3589c4fa6f088d82d64514afd9513c}{moa.\+classifiers.\+Abstract\+Classifier}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1k_n_n_a0fe92c2e3e66586958cb2ef550d81f17}{moa.\+classifiers.\+lazy.\+k\+NN}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1multilabel_1_1meta_1_1_oza_bag_adwin_m_l_aa2f6e18bb1f0721cfb3dd4ba79b4d3a8}{moa.\+classifiers.\+multilabel.\+meta.\+Oza\+Bag\+Adwin\+ML}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_random_rules_a79e8a7cb96c8aedc9f25de3763eea057}{moa.\+classifiers.\+meta.\+Random\+Rules}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_oza_bag_a9dc25e872bb0a6d1ae17ded4f119bc4e}{moa.\+classifiers.\+meta.\+Oza\+Bag}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1multilabel_1_1meta_1_1_oza_bag_m_l_a27e344784405b7c7f8035b9170b519ea}{moa.\+classifiers.\+multilabel.\+meta.\+Oza\+Bag\+ML}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1bayes_1_1_naive_bayes_ae61d88b768d7a7eb285a138efec01bdd}{moa.\+classifiers.\+bayes.\+Naive\+Bayes}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1_decision_stump_tutorial_afcf4c220450766bc59f0443d9a7715ba}{moa.\+classifiers.\+Decision\+Stump\+Tutorial}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1active_1_1_a_l_random_a21a94e75df686715c7d940a0077deebc}{moa.\+classifiers.\+active.\+A\+L\+Random}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1_rule_classifier_n_bayes_a41d9b5a53f156c36ab3a40517d544930}{moa.\+classifiers.\+rules.\+Rule\+Classifier\+N\+Bayes}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1functions_1_1_low_pass_filtered_learner_a5db929d3800e88cc8f02829adfd4ca6e}{moa.\+classifiers.\+rules.\+functions.\+Low\+Pass\+Filtered\+Learner}}, \mbox{\hyperlink{classmoa_1_1learners_1_1_change_detector_learner_a17a95d6800df2cca2a6e654b8643be7f}{moa.\+learners.\+Change\+Detector\+Learner}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1functions_1_1_target_mean_a523c9306eb864c869da1e9ceba8dc33e}{moa.\+classifiers.\+rules.\+functions.\+Target\+Mean}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1functions_1_1_adaptive_node_predictor_ae4b9f061deb5cf3ec485c9518a454bd0}{moa.\+classifiers.\+rules.\+functions.\+Adaptive\+Node\+Predictor}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1_binary_classifier_from_regressor_ac9de343cf50b90397f91e3a4088efbc9}{moa.\+classifiers.\+rules.\+Binary\+Classifier\+From\+Regressor}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1functions_1_1_fading_target_mean_a3f72464fd8b698d429b2330699edfb7f}{moa.\+classifiers.\+rules.\+functions.\+Fading\+Target\+Mean}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_multi_label_learner_a20e5d8cc1ca49adbb067d83717fb3f1a}{moa.\+classifiers.\+Abstract\+Multi\+Label\+Learner}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1functions_1_1_majority_class_a1ac63eef4c77c1b6aae4d052ceca9576}{moa.\+classifiers.\+functions.\+Majority\+Class}}, and \mbox{\hyperlink{classmoa_1_1classifiers_1_1functions_1_1_no_change_aaf30eac7ba9df16c9f21652fe252f0f3}{moa.\+classifiers.\+functions.\+No\+Change}}.
+
+\mbox{\Hypertarget{interfacemoa_1_1classifiers_1_1_classifier_ac28018bc307abe34a8ace54dba3ebff1}\label{interfacemoa_1_1classifiers_1_1_classifier_ac28018bc307abe34a8ace54dba3ebff1}} 
+\index{moa.classifiers.Classifier@{moa.classifiers.Classifier}!trainOnInstance@{trainOnInstance}}
+\index{trainOnInstance@{trainOnInstance}!moa.classifiers.Classifier@{moa.classifiers.Classifier}}
+\doxysubsubsection{\texorpdfstring{trainOnInstance()}{trainOnInstance()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+Classifier.\+train\+On\+Instance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{inst }\end{DoxyParamCaption})}
+
+Trains this learner incrementally using the given example.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & the instance to be used for training \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classmoa_1_1classifiers_1_1multilabel_1_1_multilabel_hoeffding_tree_a5d54807bae9f9b4ad0e34ce51285c23a}{moa.\+classifiers.\+multilabel.\+Multilabel\+Hoeffding\+Tree}}, and \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a5604757bcbc1b7716aa519f7ed2cf448}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/classifiers/Classifier.\+java\end{DoxyCompactItemize}

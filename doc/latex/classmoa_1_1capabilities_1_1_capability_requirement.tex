@@ -1,0 +1,186 @@
+\hypertarget{classmoa_1_1capabilities_1_1_capability_requirement}{}\doxysection{moa.\+capabilities.\+Capability\+Requirement Class Reference}
+\label{classmoa_1_1capabilities_1_1_capability_requirement}\index{moa.capabilities.CapabilityRequirement@{moa.capabilities.CapabilityRequirement}}
+
+
+Collaboration diagram for moa.\+capabilities.\+Capability\+Requirement\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1capabilities_1_1_capability_requirement_a84e952ed73b38c66ebb358a38d80a2b1}{Capability\+Requirement}} (Predicate$<$ \mbox{\hyperlink{classmoa_1_1capabilities_1_1_capabilities}{Capabilities}} $>$ check)
+\item 
+boolean \mbox{\hyperlink{classmoa_1_1capabilities_1_1_capability_requirement_ac944fd01d44d664263dd925769f75b33}{is\+Met\+By}} (\mbox{\hyperlink{classmoa_1_1capabilities_1_1_capabilities}{Capabilities}} capabilities)
+\item 
+boolean \mbox{\hyperlink{classmoa_1_1capabilities_1_1_capability_requirement_ab01d38eac361594a6b5ffc58b289a4af}{is\+Met\+By}} (\mbox{\hyperlink{interfacemoa_1_1capabilities_1_1_capabilities_handler}{Capabilities\+Handler}} handler)
+\item 
+boolean \mbox{\hyperlink{classmoa_1_1capabilities_1_1_capability_requirement_a394b796e7e5afcef1a61bd8f08b00fb7}{is\+Met\+By}} (Class$<$?$>$ klass)
+\item 
+\mbox{\hyperlink{classmoa_1_1capabilities_1_1_capability_requirement}{Capability\+Requirement}} \mbox{\hyperlink{classmoa_1_1capabilities_1_1_capability_requirement_a0a3fb7e6e74551b7c1850dee0def46db}{or}} (\mbox{\hyperlink{classmoa_1_1capabilities_1_1_capability_requirement}{Capability\+Requirement}} other)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classmoa_1_1capabilities_1_1_capability_requirement}{Capability\+Requirement}} \mbox{\hyperlink{classmoa_1_1capabilities_1_1_capability_requirement_a306082cbfe5bc4bcac488c313c62b339}{has\+All}} (Capability... capabilities)
+\item 
+static \mbox{\hyperlink{classmoa_1_1capabilities_1_1_capability_requirement}{Capability\+Requirement}} \mbox{\hyperlink{classmoa_1_1capabilities_1_1_capability_requirement_a6ceb6579804fca0a3f6e3e4e6ffd164e}{has\+Any}} (Capability... capabilities)
+\item 
+static \mbox{\hyperlink{classmoa_1_1capabilities_1_1_capability_requirement}{Capability\+Requirement}} \mbox{\hyperlink{classmoa_1_1capabilities_1_1_capability_requirement_a90091617d9460116c60f8884d4b4f8da}{has}} (\mbox{\hyperlink{enummoa_1_1capabilities_1_1_capability}{Capability}} capability)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final \mbox{\hyperlink{classmoa_1_1capabilities_1_1_immutable_capabilities}{Immutable\+Capabilities}} \mbox{\hyperlink{classmoa_1_1capabilities_1_1_capability_requirement_a1fee0f93b71ff27e228613e07a86dff7}{N\+O\+N\+\_\+\+H\+A\+N\+D\+L\+E\+R\+\_\+\+C\+A\+P\+A\+B\+I\+L\+I\+T\+I\+ES}} = new \mbox{\hyperlink{classmoa_1_1capabilities_1_1_immutable_capabilities}{Immutable\+Capabilities}}(Capability.\+V\+I\+E\+W\+\_\+\+S\+T\+A\+N\+D\+A\+RD, Capability.\+V\+I\+E\+W\+\_\+\+L\+I\+TE)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a requirement that a set of capabilities must meet.
+
+\begin{DoxyAuthor}{Author}
+Corey Sterling (csterlin at waikato dot ac dot nz) 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmoa_1_1capabilities_1_1_capability_requirement_a84e952ed73b38c66ebb358a38d80a2b1}\label{classmoa_1_1capabilities_1_1_capability_requirement_a84e952ed73b38c66ebb358a38d80a2b1}} 
+\index{moa.capabilities.CapabilityRequirement@{moa.capabilities.CapabilityRequirement}!CapabilityRequirement@{CapabilityRequirement}}
+\index{CapabilityRequirement@{CapabilityRequirement}!moa.capabilities.CapabilityRequirement@{moa.capabilities.CapabilityRequirement}}
+\doxysubsubsection{\texorpdfstring{CapabilityRequirement()}{CapabilityRequirement()}}
+{\footnotesize\ttfamily moa.\+capabilities.\+Capability\+Requirement.\+Capability\+Requirement (\begin{DoxyParamCaption}\item[{Predicate$<$ \mbox{\hyperlink{classmoa_1_1capabilities_1_1_capabilities}{Capabilities}} $>$}]{check }\end{DoxyParamCaption})}
+
+Creates a capabilities requirement with the given predicate as its method of checking if the requirement is met.
+
+
+\begin{DoxyParams}{Parameters}
+{\em check} & The test for adherence. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1capabilities_1_1_capability_requirement_a90091617d9460116c60f8884d4b4f8da}\label{classmoa_1_1capabilities_1_1_capability_requirement_a90091617d9460116c60f8884d4b4f8da}} 
+\index{moa.capabilities.CapabilityRequirement@{moa.capabilities.CapabilityRequirement}!has@{has}}
+\index{has@{has}!moa.capabilities.CapabilityRequirement@{moa.capabilities.CapabilityRequirement}}
+\doxysubsubsection{\texorpdfstring{has()}{has()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classmoa_1_1capabilities_1_1_capability_requirement}{Capability\+Requirement}} moa.\+capabilities.\+Capability\+Requirement.\+has (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{enummoa_1_1capabilities_1_1_capability}{Capability}}}]{capability }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Creates a requirement that a given set of capabilities must have the given capability.
+
+
+\begin{DoxyParams}{Parameters}
+{\em capability} & The capability a tested set must have. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The requirement. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmoa_1_1capabilities_1_1_capability_requirement_a306082cbfe5bc4bcac488c313c62b339}\label{classmoa_1_1capabilities_1_1_capability_requirement_a306082cbfe5bc4bcac488c313c62b339}} 
+\index{moa.capabilities.CapabilityRequirement@{moa.capabilities.CapabilityRequirement}!hasAll@{hasAll}}
+\index{hasAll@{hasAll}!moa.capabilities.CapabilityRequirement@{moa.capabilities.CapabilityRequirement}}
+\doxysubsubsection{\texorpdfstring{hasAll()}{hasAll()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classmoa_1_1capabilities_1_1_capability_requirement}{Capability\+Requirement}} moa.\+capabilities.\+Capability\+Requirement.\+has\+All (\begin{DoxyParamCaption}\item[{Capability...}]{capabilities }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Creates a requirement that a given set of capabilities have all of the specified capabilities.
+
+
+\begin{DoxyParams}{Parameters}
+{\em capabilities} & The capabilities that a tested set must have. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The requirement. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmoa_1_1capabilities_1_1_capability_requirement_a6ceb6579804fca0a3f6e3e4e6ffd164e}\label{classmoa_1_1capabilities_1_1_capability_requirement_a6ceb6579804fca0a3f6e3e4e6ffd164e}} 
+\index{moa.capabilities.CapabilityRequirement@{moa.capabilities.CapabilityRequirement}!hasAny@{hasAny}}
+\index{hasAny@{hasAny}!moa.capabilities.CapabilityRequirement@{moa.capabilities.CapabilityRequirement}}
+\doxysubsubsection{\texorpdfstring{hasAny()}{hasAny()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classmoa_1_1capabilities_1_1_capability_requirement}{Capability\+Requirement}} moa.\+capabilities.\+Capability\+Requirement.\+has\+Any (\begin{DoxyParamCaption}\item[{Capability...}]{capabilities }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Creates a requirement that a given set of capabilities have at least on of the specified capabilities.
+
+
+\begin{DoxyParams}{Parameters}
+{\em capabilities} & The capabilities that a tested set must have at least one of. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The requirement. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmoa_1_1capabilities_1_1_capability_requirement_ac944fd01d44d664263dd925769f75b33}\label{classmoa_1_1capabilities_1_1_capability_requirement_ac944fd01d44d664263dd925769f75b33}} 
+\index{moa.capabilities.CapabilityRequirement@{moa.capabilities.CapabilityRequirement}!isMetBy@{isMetBy}}
+\index{isMetBy@{isMetBy}!moa.capabilities.CapabilityRequirement@{moa.capabilities.CapabilityRequirement}}
+\doxysubsubsection{\texorpdfstring{isMetBy()}{isMetBy()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily boolean moa.\+capabilities.\+Capability\+Requirement.\+is\+Met\+By (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmoa_1_1capabilities_1_1_capabilities}{Capabilities}}}]{capabilities }\end{DoxyParamCaption})}
+
+Tests if the requirement is met by the given set of capabilities.
+
+
+\begin{DoxyParams}{Parameters}
+{\em capabilities} & The set of capabilities to test. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the requirement is met, false if not. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmoa_1_1capabilities_1_1_capability_requirement_ab01d38eac361594a6b5ffc58b289a4af}\label{classmoa_1_1capabilities_1_1_capability_requirement_ab01d38eac361594a6b5ffc58b289a4af}} 
+\index{moa.capabilities.CapabilityRequirement@{moa.capabilities.CapabilityRequirement}!isMetBy@{isMetBy}}
+\index{isMetBy@{isMetBy}!moa.capabilities.CapabilityRequirement@{moa.capabilities.CapabilityRequirement}}
+\doxysubsubsection{\texorpdfstring{isMetBy()}{isMetBy()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily boolean moa.\+capabilities.\+Capability\+Requirement.\+is\+Met\+By (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacemoa_1_1capabilities_1_1_capabilities_handler}{Capabilities\+Handler}}}]{handler }\end{DoxyParamCaption})}
+
+Tests if the requirement is met by the given capabilities handler.
+
+
+\begin{DoxyParams}{Parameters}
+{\em handler} & The handler to test. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the handler meets the requirements, false if not. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmoa_1_1capabilities_1_1_capability_requirement_a394b796e7e5afcef1a61bd8f08b00fb7}\label{classmoa_1_1capabilities_1_1_capability_requirement_a394b796e7e5afcef1a61bd8f08b00fb7}} 
+\index{moa.capabilities.CapabilityRequirement@{moa.capabilities.CapabilityRequirement}!isMetBy@{isMetBy}}
+\index{isMetBy@{isMetBy}!moa.capabilities.CapabilityRequirement@{moa.capabilities.CapabilityRequirement}}
+\doxysubsubsection{\texorpdfstring{isMetBy()}{isMetBy()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily boolean moa.\+capabilities.\+Capability\+Requirement.\+is\+Met\+By (\begin{DoxyParamCaption}\item[{Class$<$?$>$}]{klass }\end{DoxyParamCaption})}
+
+Tests if the requirement is met by the given class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em klass} & The class to test. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the class meets the requirements, false if not. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmoa_1_1capabilities_1_1_capability_requirement_a0a3fb7e6e74551b7c1850dee0def46db}\label{classmoa_1_1capabilities_1_1_capability_requirement_a0a3fb7e6e74551b7c1850dee0def46db}} 
+\index{moa.capabilities.CapabilityRequirement@{moa.capabilities.CapabilityRequirement}!or@{or}}
+\index{or@{or}!moa.capabilities.CapabilityRequirement@{moa.capabilities.CapabilityRequirement}}
+\doxysubsubsection{\texorpdfstring{or()}{or()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1capabilities_1_1_capability_requirement}{Capability\+Requirement}} moa.\+capabilities.\+Capability\+Requirement.\+or (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmoa_1_1capabilities_1_1_capability_requirement}{Capability\+Requirement}}}]{other }\end{DoxyParamCaption})}
+
+Creates a requirement which is the logical OR of this and the given requirement.
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The other operand to the OR. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The resulting requirement. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmoa_1_1capabilities_1_1_capability_requirement_a1fee0f93b71ff27e228613e07a86dff7}\label{classmoa_1_1capabilities_1_1_capability_requirement_a1fee0f93b71ff27e228613e07a86dff7}} 
+\index{moa.capabilities.CapabilityRequirement@{moa.capabilities.CapabilityRequirement}!NON\_HANDLER\_CAPABILITIES@{NON\_HANDLER\_CAPABILITIES}}
+\index{NON\_HANDLER\_CAPABILITIES@{NON\_HANDLER\_CAPABILITIES}!moa.capabilities.CapabilityRequirement@{moa.capabilities.CapabilityRequirement}}
+\doxysubsubsection{\texorpdfstring{NON\_HANDLER\_CAPABILITIES}{NON\_HANDLER\_CAPABILITIES}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{classmoa_1_1capabilities_1_1_immutable_capabilities}{Immutable\+Capabilities}} moa.\+capabilities.\+Capability\+Requirement.\+N\+O\+N\+\_\+\+H\+A\+N\+D\+L\+E\+R\+\_\+\+C\+A\+P\+A\+B\+I\+L\+I\+T\+I\+ES = new \mbox{\hyperlink{classmoa_1_1capabilities_1_1_immutable_capabilities}{Immutable\+Capabilities}}(Capability.\+V\+I\+E\+W\+\_\+\+S\+T\+A\+N\+D\+A\+RD, Capability.\+V\+I\+E\+W\+\_\+\+L\+I\+TE)\hspace{0.3cm}{\ttfamily [static]}}
+
+The capabilities to assume a class has if it does not implement the \mbox{\hyperlink{interfacemoa_1_1capabilities_1_1_capabilities_handler}{Capabilities\+Handler}} interface. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/capabilities/Capability\+Requirement.\+java\end{DoxyCompactItemize}

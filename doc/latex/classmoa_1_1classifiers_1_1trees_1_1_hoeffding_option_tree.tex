@@ -1,0 +1,610 @@
+\hypertarget{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree}{}\doxysection{moa.\+classifiers.\+trees.\+Hoeffding\+Option\+Tree Class Reference}
+\label{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree}\index{moa.classifiers.trees.HoeffdingOptionTree@{moa.classifiers.trees.HoeffdingOptionTree}}
+
+
+Inheritance diagram for moa.\+classifiers.\+trees.\+Hoeffding\+Option\+Tree\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+classifiers.\+trees.\+Hoeffding\+Option\+Tree\+:
+% FIG 1
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Active\+Learning\+Node}
+\item 
+class {\bfseries Found\+Node}
+\item 
+class {\bfseries Inactive\+Learning\+Node}
+\item 
+class {\bfseries Learning\+Node}
+\item 
+class {\bfseries Learning\+Node\+NB}
+\item 
+class {\bfseries Learning\+Node\+N\+B\+Adaptive}
+\item 
+class {\bfseries Node}
+\item 
+class {\bfseries Split\+Node}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_a4086f7d17681bf356831d4bfebd82daf}{get\+Purpose\+String}} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_a00e4928ea5457eb93a868cb9ee8408e2}\label{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_a00e4928ea5457eb93a868cb9ee8408e2}} 
+int {\bfseries calc\+Byte\+Size} ()
+\item 
+int \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_add101daa141562c1f5523591bf0b9845}{measure\+Byte\+Size}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_a6a389081a974289cc44385c98f21b28f}{reset\+Learning\+Impl}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_a6d24917b8e79ad50eba7b10c84ee7a2b}{train\+On\+Instance\+Impl}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst)
+\item 
+double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_ae8d3fd0f0d01dd24031e0db92794b4c3}{get\+Votes\+For\+Instance}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_a0a470f3c8922ef4536d164687f61bfb5}\label{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_a0a470f3c8922ef4536d164687f61bfb5}} 
+int {\bfseries measure\+Tree\+Depth} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_a474c923be5877e41fb71e90bcca4e429}{get\+Model\+Description}} (String\+Builder out, int indent)
+\item 
+boolean \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_a09991efdfd2d8b939b00039e576f1bfc}{is\+Randomizable}} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_af9382a6efb72761ad3a4ac9896d35c79}\label{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_af9382a6efb72761ad3a4ac9896d35c79}} 
+void {\bfseries enforce\+Tracker\+Limit} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_a6d4113c26f7913f8e7993cabe5bdd519}\label{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_a6d4113c26f7913f8e7993cabe5bdd519}} 
+void {\bfseries estimate\+Model\+Byte\+Sizes} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_a1f15e497acb07a97c872e84cdef881b7}\label{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_a1f15e497acb07a97c872e84cdef881b7}} 
+void {\bfseries deactivate\+All\+Leaves} ()
+\item 
+\mbox{\hyperlink{classmoa_1_1capabilities_1_1_immutable_capabilities}{Immutable\+Capabilities}} \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_adb1f062488ebb965120b4fb90c43f553}{define\+Immutable\+Capabilities}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_a1ded723b77d7774e0797933573c57d1b}\label{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_a1ded723b77d7774e0797933573c57d1b}} 
+static double {\bfseries compute\+Hoeffding\+Bound} (double range, double confidence, double n)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries max\+Option\+Paths\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries max\+Byte\+Size\+Option}
+\item 
+\mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} {\bfseries numeric\+Estimator\+Option}
+\item 
+\mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} {\bfseries nominal\+Estimator\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries memory\+Estimate\+Period\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries grace\+Period\+Option}
+\item 
+\mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} {\bfseries split\+Criterion\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} {\bfseries split\+Confidence\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} {\bfseries secondary\+Split\+Confidence\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} {\bfseries tie\+Threshold\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_flag_option}{Flag\+Option}} {\bfseries binary\+Splits\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_flag_option}{Flag\+Option}} {\bfseries remove\+Poor\+Atts\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_flag_option}{Flag\+Option}} {\bfseries no\+Pre\+Prune\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_file_option}{File\+Option}} {\bfseries dump\+File\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries memory\+Strategy\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_multi_choice_option}{Multi\+Choice\+Option}} {\bfseries leafprediction\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries nb\+Threshold\+Option}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_ab471aab79623e75323ec7b2e131282e3}{get\+Model\+Measurements\+Impl}} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_a876e8b3ff654189a0601bd37d8e5ef37}\label{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_a876e8b3ff654189a0601bd37d8e5ef37}} 
+\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_attribute_class_observer}{Attribute\+Class\+Observer}} {\bfseries new\+Nominal\+Class\+Observer} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_a9b293240accf9db803f5001d3055dd97}\label{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_a9b293240accf9db803f5001d3055dd97}} 
+\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_attribute_class_observer}{Attribute\+Class\+Observer}} {\bfseries new\+Numeric\+Class\+Observer} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_a60861115e0d7dd52f735d32f2969f122}\label{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_a60861115e0d7dd52f735d32f2969f122}} 
+void {\bfseries attempt\+To\+Split} (Active\+Learning\+Node node, Split\+Node parent, int parent\+Index)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_ada2e3a2cdc6904f1dd0181582ddf568c}\label{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_ada2e3a2cdc6904f1dd0181582ddf568c}} 
+void {\bfseries deactivate\+Learning\+Node} (Active\+Learning\+Node to\+Deactivate, Split\+Node parent, int parent\+Branch)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_ab116c9db2271051b330dd469b2f62d33}\label{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_ab116c9db2271051b330dd469b2f62d33}} 
+void {\bfseries activate\+Learning\+Node} (Inactive\+Learning\+Node to\+Activate, Split\+Node parent, int parent\+Branch)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_a60814e898cd252cae09b82db20083079}\label{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_a60814e898cd252cae09b82db20083079}} 
+Found\+Node\mbox{[}$\,$\mbox{]} {\bfseries find\+Learning\+Nodes} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_a4253f245fdb0d24fcaa8e00b938fb2ce}\label{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_a4253f245fdb0d24fcaa8e00b938fb2ce}} 
+void {\bfseries find\+Learning\+Nodes} (Node node, Split\+Node parent, int parent\+Branch, List$<$ Found\+Node $>$ found)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_a98a15647c88ad315c8e572bd41dde4b9}\label{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_a98a15647c88ad315c8e572bd41dde4b9}} 
+Learning\+Node {\bfseries new\+Learning\+Node} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_abc4f20a04c61d3051c71764e8ba51161}\label{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_abc4f20a04c61d3051c71764e8ba51161}} 
+Learning\+Node {\bfseries new\+Learning\+Node} (double\mbox{[}$\,$\mbox{]} initial\+Class\+Observations)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_af4c8253a8a64cddaacbf74bff5d1244d}\label{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_af4c8253a8a64cddaacbf74bff5d1244d}} 
+Node {\bfseries tree\+Root}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_af0586c6fa3b9d9b83ff925c4417b2970}\label{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_af0586c6fa3b9d9b83ff925c4417b2970}} 
+int {\bfseries decision\+Node\+Count}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_a66c958e6e550132431bdd3fcedb10027}\label{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_a66c958e6e550132431bdd3fcedb10027}} 
+int {\bfseries active\+Leaf\+Node\+Count}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_ade4662a28e18395b9704f98f9ff708dc}\label{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_ade4662a28e18395b9704f98f9ff708dc}} 
+int {\bfseries inactive\+Leaf\+Node\+Count}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_a146e6e3e75002fd6ecb28a851f5370f6}\label{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_a146e6e3e75002fd6ecb28a851f5370f6}} 
+double {\bfseries inactive\+Leaf\+Byte\+Size\+Estimate}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_aa17fa13031d62a31e83620529bde59f4}\label{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_aa17fa13031d62a31e83620529bde59f4}} 
+double {\bfseries active\+Leaf\+Byte\+Size\+Estimate}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_acfafcef9f24bd0e1920353efec48050a}\label{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_acfafcef9f24bd0e1920353efec48050a}} 
+double {\bfseries byte\+Size\+Estimate\+Overhead\+Fraction}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_a2355b7da08114bf25be95bc8c45c087d}\label{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_a2355b7da08114bf25be95bc8c45c087d}} 
+int {\bfseries max\+Prediction\+Paths}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Hoeffding Option Tree.
+
+Hoeffding Option Trees are regular Hoeffding trees containing additional option nodes that allow several tests to be applied, leading to multiple Hoeffding trees as separate paths. They consist of a single structure that efﬁciently represents multiple trees. A particular example can travel down multiple paths of the tree, contributing, in different ways, to different options.
+
+See for details\+:
+
+B. Pfahringer, G. Holmes, and R. Kirkby. New options for hoeffding trees. In AI, pages 90–99, 2007.
+
+Parameters\+:
+
+
+\begin{DoxyItemize}
+\item -\/o \+: Maximum number of option paths per node 
+\item -\/m \+: Maximum memory consumed by the tree 
+\item -\/n \+: Numeric estimator to use \+: 
+\begin{DoxyItemize}
+\item Gaussian approximation evaluating 10 splitpoints 
+\item Gaussian approximation evaluating 100 splitpoints 
+\item Greenwald-\/\+Khanna quantile summary with 10 tuples 
+\item Greenwald-\/\+Khanna quantile summary with 100 tuples 
+\item Greenwald-\/\+Khanna quantile summary with 1000 tuples 
+\item V\+F\+ML method with 10 bins 
+\item V\+F\+ML method with 100 bins 
+\item V\+F\+ML method with 1000 bins 
+\item Exhaustive binary tree 
+\end{DoxyItemize}
+\item -\/e \+: How many instances between memory consumption checks 
+\item -\/g \+: The number of instances a leaf should observe between split attempts 
+\item -\/s \+: Split criterion to use. Example \+: Info\+Gain\+Split\+Criterion 
+\item -\/c \+: The allowable error in split decision, values closer to 0 will take longer to decide 
+\item -\/w \+: The allowable error in secondary split decisions, values closer to 0 will take longer to decide 
+\item -\/t \+: Threshold below which a split will be forced to break ties 
+\item -\/b \+: Only allow binary splits 
+\item -\/z \+: Memory strategy to use 
+\item -\/r \+: Disable poor attributes 
+\item -\/p \+: Disable pre-\/pruning 
+\item -\/d \+: File to append option table to. 
+\item -\/l \+: Leaf prediction to use\+: Majority\+Class (MC), Naive Bayes (NB) or Naive\+Bayes adaptive (N\+B\+Adaptive). 
+\item -\/q \+: The number of instances a leaf should observe before permitting Naive Bayes 
+\end{DoxyItemize}
+
+\begin{DoxyAuthor}{Author}
+Richard Kirkby (\href{mailto:rkirkby@cs.waikato.ac.nz}{\texttt{ rkirkby@cs.\+waikato.\+ac.\+nz}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+7 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_adb1f062488ebb965120b4fb90c43f553}\label{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_adb1f062488ebb965120b4fb90c43f553}} 
+\index{moa.classifiers.trees.HoeffdingOptionTree@{moa.classifiers.trees.HoeffdingOptionTree}!defineImmutableCapabilities@{defineImmutableCapabilities}}
+\index{defineImmutableCapabilities@{defineImmutableCapabilities}!moa.classifiers.trees.HoeffdingOptionTree@{moa.classifiers.trees.HoeffdingOptionTree}}
+\doxysubsubsection{\texorpdfstring{defineImmutableCapabilities()}{defineImmutableCapabilities()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1capabilities_1_1_immutable_capabilities}{Immutable\+Capabilities}} moa.\+classifiers.\+trees.\+Hoeffding\+Option\+Tree.\+define\+Immutable\+Capabilities (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Defines the set of capabilities the object has. Should be overridden if the object\textquotesingle{}s capabilities do not change.
+
+\begin{DoxyReturn}{Returns}
+The capabilities of the object. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1capabilities_1_1_capabilities_handler_aa82d1befd5dbb958c9787b5304c9a82a}{moa.\+capabilities.\+Capabilities\+Handler}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_a474c923be5877e41fb71e90bcca4e429}\label{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_a474c923be5877e41fb71e90bcca4e429}} 
+\index{moa.classifiers.trees.HoeffdingOptionTree@{moa.classifiers.trees.HoeffdingOptionTree}!getModelDescription@{getModelDescription}}
+\index{getModelDescription@{getModelDescription}!moa.classifiers.trees.HoeffdingOptionTree@{moa.classifiers.trees.HoeffdingOptionTree}}
+\doxysubsubsection{\texorpdfstring{getModelDescription()}{getModelDescription()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+trees.\+Hoeffding\+Option\+Tree.\+get\+Model\+Description (\begin{DoxyParamCaption}\item[{String\+Builder}]{out,  }\item[{int}]{indent }\end{DoxyParamCaption})}
+
+Returns a string representation of the model.
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & the stringbuilder to add the description \\
+\hline
+{\em indent} & the number of characters to indent \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a30e5ff32bc8127dfb7436945776b7523}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_ab471aab79623e75323ec7b2e131282e3}\label{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_ab471aab79623e75323ec7b2e131282e3}} 
+\index{moa.classifiers.trees.HoeffdingOptionTree@{moa.classifiers.trees.HoeffdingOptionTree}!getModelMeasurementsImpl@{getModelMeasurementsImpl}}
+\index{getModelMeasurementsImpl@{getModelMeasurementsImpl}!moa.classifiers.trees.HoeffdingOptionTree@{moa.classifiers.trees.HoeffdingOptionTree}}
+\doxysubsubsection{\texorpdfstring{getModelMeasurementsImpl()}{getModelMeasurementsImpl()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}} \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+trees.\+Hoeffding\+Option\+Tree.\+get\+Model\+Measurements\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Gets the current measurements of this classifier.~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden.
+
+\begin{DoxyReturn}{Returns}
+an array of measurements to be used in evaluation tasks 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_ac2bebede21c9d2d8cd11d95a7e20e529}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_a4086f7d17681bf356831d4bfebd82daf}\label{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_a4086f7d17681bf356831d4bfebd82daf}} 
+\index{moa.classifiers.trees.HoeffdingOptionTree@{moa.classifiers.trees.HoeffdingOptionTree}!getPurposeString@{getPurposeString}}
+\index{getPurposeString@{getPurposeString}!moa.classifiers.trees.HoeffdingOptionTree@{moa.classifiers.trees.HoeffdingOptionTree}}
+\doxysubsubsection{\texorpdfstring{getPurposeString()}{getPurposeString()}}
+{\footnotesize\ttfamily String moa.\+classifiers.\+trees.\+Hoeffding\+Option\+Tree.\+get\+Purpose\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Options to handle Dictionary with option texts and objects 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a3fc6ae11234b88e51941a77ddb879d8b}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1_ada_hoeffding_option_tree_a26a69c494b7dafc08c55db7f949bcd26}{moa.\+classifiers.\+trees.\+Ada\+Hoeffding\+Option\+Tree}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_ae8d3fd0f0d01dd24031e0db92794b4c3}\label{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_ae8d3fd0f0d01dd24031e0db92794b4c3}} 
+\index{moa.classifiers.trees.HoeffdingOptionTree@{moa.classifiers.trees.HoeffdingOptionTree}!getVotesForInstance@{getVotesForInstance}}
+\index{getVotesForInstance@{getVotesForInstance}!moa.classifiers.trees.HoeffdingOptionTree@{moa.classifiers.trees.HoeffdingOptionTree}}
+\doxysubsubsection{\texorpdfstring{getVotesForInstance()}{getVotesForInstance()}}
+{\footnotesize\ttfamily double \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+trees.\+Hoeffding\+Option\+Tree.\+get\+Votes\+For\+Instance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{inst }\end{DoxyParamCaption})}
+
+Predicts the class memberships for a given instance. If an instance is unclassified, the returned array elements must be all zero.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & the instance to be classified \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an array containing the estimated membership probabilities of the test instance in each class 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a0e3589c4fa6f088d82d64514afd9513c}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_a09991efdfd2d8b939b00039e576f1bfc}\label{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_a09991efdfd2d8b939b00039e576f1bfc}} 
+\index{moa.classifiers.trees.HoeffdingOptionTree@{moa.classifiers.trees.HoeffdingOptionTree}!isRandomizable@{isRandomizable}}
+\index{isRandomizable@{isRandomizable}!moa.classifiers.trees.HoeffdingOptionTree@{moa.classifiers.trees.HoeffdingOptionTree}}
+\doxysubsubsection{\texorpdfstring{isRandomizable()}{isRandomizable()}}
+{\footnotesize\ttfamily boolean moa.\+classifiers.\+trees.\+Hoeffding\+Option\+Tree.\+is\+Randomizable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets whether this learner needs a random seed. Examples of methods that needs a random seed are bagging and boosting.
+
+\begin{DoxyReturn}{Returns}
+true if the learner needs a random seed. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1learners_1_1_learner_a2f1ff9007b5eb5f53801f474b4d42a61}{moa.\+learners.\+Learner$<$ E extends Example $>$}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_add101daa141562c1f5523591bf0b9845}\label{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_add101daa141562c1f5523591bf0b9845}} 
+\index{moa.classifiers.trees.HoeffdingOptionTree@{moa.classifiers.trees.HoeffdingOptionTree}!measureByteSize@{measureByteSize}}
+\index{measureByteSize@{measureByteSize}!moa.classifiers.trees.HoeffdingOptionTree@{moa.classifiers.trees.HoeffdingOptionTree}}
+\doxysubsubsection{\texorpdfstring{measureByteSize()}{measureByteSize()}}
+{\footnotesize\ttfamily int moa.\+classifiers.\+trees.\+Hoeffding\+Option\+Tree.\+measure\+Byte\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the memory size of this object.
+
+\begin{DoxyReturn}{Returns}
+the memory size of this object 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1_abstract_m_o_a_object_ad6d970cd923812656763b448fedf2791}{moa.\+Abstract\+M\+O\+A\+Object}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_a6a389081a974289cc44385c98f21b28f}\label{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_a6a389081a974289cc44385c98f21b28f}} 
+\index{moa.classifiers.trees.HoeffdingOptionTree@{moa.classifiers.trees.HoeffdingOptionTree}!resetLearningImpl@{resetLearningImpl}}
+\index{resetLearningImpl@{resetLearningImpl}!moa.classifiers.trees.HoeffdingOptionTree@{moa.classifiers.trees.HoeffdingOptionTree}}
+\doxysubsubsection{\texorpdfstring{resetLearningImpl()}{resetLearningImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+trees.\+Hoeffding\+Option\+Tree.\+reset\+Learning\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Resets this classifier. It must be similar to starting a new classifier from scratch. ~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden. 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a099ffcf2417abb919d10d697c0648f29}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_a6d24917b8e79ad50eba7b10c84ee7a2b}\label{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_a6d24917b8e79ad50eba7b10c84ee7a2b}} 
+\index{moa.classifiers.trees.HoeffdingOptionTree@{moa.classifiers.trees.HoeffdingOptionTree}!trainOnInstanceImpl@{trainOnInstanceImpl}}
+\index{trainOnInstanceImpl@{trainOnInstanceImpl}!moa.classifiers.trees.HoeffdingOptionTree@{moa.classifiers.trees.HoeffdingOptionTree}}
+\doxysubsubsection{\texorpdfstring{trainOnInstanceImpl()}{trainOnInstanceImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+trees.\+Hoeffding\+Option\+Tree.\+train\+On\+Instance\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{inst }\end{DoxyParamCaption})}
+
+Trains this classifier incrementally using the given instance.~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & the instance to be used for training \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_aceb24d2ddeab386f2ecead6e3c0d3543}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_ab8cf9b1cd45d7f5d9f1f8fc40c1f5ba9}\label{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_ab8cf9b1cd45d7f5d9f1f8fc40c1f5ba9}} 
+\index{moa.classifiers.trees.HoeffdingOptionTree@{moa.classifiers.trees.HoeffdingOptionTree}!binarySplitsOption@{binarySplitsOption}}
+\index{binarySplitsOption@{binarySplitsOption}!moa.classifiers.trees.HoeffdingOptionTree@{moa.classifiers.trees.HoeffdingOptionTree}}
+\doxysubsubsection{\texorpdfstring{binarySplitsOption}{binarySplitsOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_flag_option}{Flag\+Option}} moa.\+classifiers.\+trees.\+Hoeffding\+Option\+Tree.\+binary\+Splits\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FlagOption(\textcolor{stringliteral}{"binarySplits"}, \textcolor{charliteral}{'b'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Only allow binary splits."})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_a374c8fb9cfcf5193fcdd623fc66212c8}\label{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_a374c8fb9cfcf5193fcdd623fc66212c8}} 
+\index{moa.classifiers.trees.HoeffdingOptionTree@{moa.classifiers.trees.HoeffdingOptionTree}!dumpFileOption@{dumpFileOption}}
+\index{dumpFileOption@{dumpFileOption}!moa.classifiers.trees.HoeffdingOptionTree@{moa.classifiers.trees.HoeffdingOptionTree}}
+\doxysubsubsection{\texorpdfstring{dumpFileOption}{dumpFileOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_file_option}{File\+Option}} moa.\+classifiers.\+trees.\+Hoeffding\+Option\+Tree.\+dump\+File\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FileOption(\textcolor{stringliteral}{"dumpFile"}, \textcolor{charliteral}{'f'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"File to append option table to."}, \textcolor{keyword}{null}, \textcolor{stringliteral}{"csv"}, \textcolor{keyword}{true})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_aa92d53ab53ecc2ec0a1930722d872fa4}\label{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_aa92d53ab53ecc2ec0a1930722d872fa4}} 
+\index{moa.classifiers.trees.HoeffdingOptionTree@{moa.classifiers.trees.HoeffdingOptionTree}!gracePeriodOption@{gracePeriodOption}}
+\index{gracePeriodOption@{gracePeriodOption}!moa.classifiers.trees.HoeffdingOptionTree@{moa.classifiers.trees.HoeffdingOptionTree}}
+\doxysubsubsection{\texorpdfstring{gracePeriodOption}{gracePeriodOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+classifiers.\+trees.\+Hoeffding\+Option\+Tree.\+grace\+Period\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(}
+\DoxyCodeLine{            \textcolor{stringliteral}{"gracePeriod"},}
+\DoxyCodeLine{            \textcolor{charliteral}{'g'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"The number of instances a leaf should observe between split attempts."},}
+\DoxyCodeLine{            200, 0, Integer.MAX\_VALUE)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_aa4a3243e56ce6421a191b29776dd2d7e}\label{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_aa4a3243e56ce6421a191b29776dd2d7e}} 
+\index{moa.classifiers.trees.HoeffdingOptionTree@{moa.classifiers.trees.HoeffdingOptionTree}!leafpredictionOption@{leafpredictionOption}}
+\index{leafpredictionOption@{leafpredictionOption}!moa.classifiers.trees.HoeffdingOptionTree@{moa.classifiers.trees.HoeffdingOptionTree}}
+\doxysubsubsection{\texorpdfstring{leafpredictionOption}{leafpredictionOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_multi_choice_option}{Multi\+Choice\+Option}} moa.\+classifiers.\+trees.\+Hoeffding\+Option\+Tree.\+leafprediction\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} MultiChoiceOption(}
+\DoxyCodeLine{            \textcolor{stringliteral}{"leafprediction"}, \textcolor{charliteral}{'l'}, \textcolor{stringliteral}{"Leaf prediction to use."}, \textcolor{keyword}{new} String[]\{}
+\DoxyCodeLine{                \textcolor{stringliteral}{"MC"}, \textcolor{stringliteral}{"NB"}, \textcolor{stringliteral}{"NBAdaptive"}\}, \textcolor{keyword}{new} String[]\{}
+\DoxyCodeLine{                \textcolor{stringliteral}{"Majority class"},}
+\DoxyCodeLine{                \textcolor{stringliteral}{"Naive Bayes"},}
+\DoxyCodeLine{                \textcolor{stringliteral}{"Naive Bayes Adaptive"}\}, 2)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_a33cc978d8d9c0a192e0bcc5c6c17e512}\label{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_a33cc978d8d9c0a192e0bcc5c6c17e512}} 
+\index{moa.classifiers.trees.HoeffdingOptionTree@{moa.classifiers.trees.HoeffdingOptionTree}!maxByteSizeOption@{maxByteSizeOption}}
+\index{maxByteSizeOption@{maxByteSizeOption}!moa.classifiers.trees.HoeffdingOptionTree@{moa.classifiers.trees.HoeffdingOptionTree}}
+\doxysubsubsection{\texorpdfstring{maxByteSizeOption}{maxByteSizeOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+classifiers.\+trees.\+Hoeffding\+Option\+Tree.\+max\+Byte\+Size\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(\textcolor{stringliteral}{"maxByteSize"}, \textcolor{charliteral}{'m'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Maximum memory consumed by the tree."}, 33554432, 0,}
+\DoxyCodeLine{            Integer.MAX\_VALUE)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_a7d907d047309a6f6c9d53e0c1642923c}\label{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_a7d907d047309a6f6c9d53e0c1642923c}} 
+\index{moa.classifiers.trees.HoeffdingOptionTree@{moa.classifiers.trees.HoeffdingOptionTree}!maxOptionPathsOption@{maxOptionPathsOption}}
+\index{maxOptionPathsOption@{maxOptionPathsOption}!moa.classifiers.trees.HoeffdingOptionTree@{moa.classifiers.trees.HoeffdingOptionTree}}
+\doxysubsubsection{\texorpdfstring{maxOptionPathsOption}{maxOptionPathsOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+classifiers.\+trees.\+Hoeffding\+Option\+Tree.\+max\+Option\+Paths\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(\textcolor{stringliteral}{"maxOptionPaths"},}
+\DoxyCodeLine{            \textcolor{charliteral}{'o'}, \textcolor{stringliteral}{"Maximum number of option paths per node."}, 5, 1,}
+\DoxyCodeLine{            Integer.MAX\_VALUE)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_ac5417e20cb099ac4c8eff43ac88f1718}\label{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_ac5417e20cb099ac4c8eff43ac88f1718}} 
+\index{moa.classifiers.trees.HoeffdingOptionTree@{moa.classifiers.trees.HoeffdingOptionTree}!memoryEstimatePeriodOption@{memoryEstimatePeriodOption}}
+\index{memoryEstimatePeriodOption@{memoryEstimatePeriodOption}!moa.classifiers.trees.HoeffdingOptionTree@{moa.classifiers.trees.HoeffdingOptionTree}}
+\doxysubsubsection{\texorpdfstring{memoryEstimatePeriodOption}{memoryEstimatePeriodOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+classifiers.\+trees.\+Hoeffding\+Option\+Tree.\+memory\+Estimate\+Period\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(}
+\DoxyCodeLine{            \textcolor{stringliteral}{"memoryEstimatePeriod"}, \textcolor{charliteral}{'e'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"How many instances between memory consumption checks."}, 1000000,}
+\DoxyCodeLine{            0, Integer.MAX\_VALUE)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_af5b0478f15e381b9d16ee06b9fb7e3c7}\label{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_af5b0478f15e381b9d16ee06b9fb7e3c7}} 
+\index{moa.classifiers.trees.HoeffdingOptionTree@{moa.classifiers.trees.HoeffdingOptionTree}!memoryStrategyOption@{memoryStrategyOption}}
+\index{memoryStrategyOption@{memoryStrategyOption}!moa.classifiers.trees.HoeffdingOptionTree@{moa.classifiers.trees.HoeffdingOptionTree}}
+\doxysubsubsection{\texorpdfstring{memoryStrategyOption}{memoryStrategyOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+classifiers.\+trees.\+Hoeffding\+Option\+Tree.\+memory\+Strategy\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(\textcolor{stringliteral}{"memStrategy"}, \textcolor{charliteral}{'z'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Memory strategy to use."}, 2)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_af060f957cc706b17f6f39275ef5b26ca}\label{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_af060f957cc706b17f6f39275ef5b26ca}} 
+\index{moa.classifiers.trees.HoeffdingOptionTree@{moa.classifiers.trees.HoeffdingOptionTree}!nbThresholdOption@{nbThresholdOption}}
+\index{nbThresholdOption@{nbThresholdOption}!moa.classifiers.trees.HoeffdingOptionTree@{moa.classifiers.trees.HoeffdingOptionTree}}
+\doxysubsubsection{\texorpdfstring{nbThresholdOption}{nbThresholdOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+classifiers.\+trees.\+Hoeffding\+Option\+Tree.\+nb\+Threshold\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(}
+\DoxyCodeLine{            \textcolor{stringliteral}{"nbThreshold"},}
+\DoxyCodeLine{            \textcolor{charliteral}{'q'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"The number of instances a leaf should observe before permitting Naive Bayes."},}
+\DoxyCodeLine{            0, 0, Integer.MAX\_VALUE)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_a3cf5eff8b24e2be64e90c3b201bf37e9}\label{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_a3cf5eff8b24e2be64e90c3b201bf37e9}} 
+\index{moa.classifiers.trees.HoeffdingOptionTree@{moa.classifiers.trees.HoeffdingOptionTree}!nominalEstimatorOption@{nominalEstimatorOption}}
+\index{nominalEstimatorOption@{nominalEstimatorOption}!moa.classifiers.trees.HoeffdingOptionTree@{moa.classifiers.trees.HoeffdingOptionTree}}
+\doxysubsubsection{\texorpdfstring{nominalEstimatorOption}{nominalEstimatorOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} moa.\+classifiers.\+trees.\+Hoeffding\+Option\+Tree.\+nominal\+Estimator\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} ClassOption(\textcolor{stringliteral}{"nominalEstimator"},}
+\DoxyCodeLine{            \textcolor{charliteral}{'d'}, \textcolor{stringliteral}{"Nominal estimator to use."}, DiscreteAttributeClassObserver.class,}
+\DoxyCodeLine{            \textcolor{stringliteral}{"NominalAttributeClassObserver"})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_a0ab187e6bb0bd2f3c3afdf4fc5b682d0}\label{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_a0ab187e6bb0bd2f3c3afdf4fc5b682d0}} 
+\index{moa.classifiers.trees.HoeffdingOptionTree@{moa.classifiers.trees.HoeffdingOptionTree}!noPrePruneOption@{noPrePruneOption}}
+\index{noPrePruneOption@{noPrePruneOption}!moa.classifiers.trees.HoeffdingOptionTree@{moa.classifiers.trees.HoeffdingOptionTree}}
+\doxysubsubsection{\texorpdfstring{noPrePruneOption}{noPrePruneOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_flag_option}{Flag\+Option}} moa.\+classifiers.\+trees.\+Hoeffding\+Option\+Tree.\+no\+Pre\+Prune\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FlagOption(\textcolor{stringliteral}{"noPrePrune"}, \textcolor{charliteral}{'p'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Disable pre-\/pruning."})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_aa19a849c0414960813b6c0ecd89207c7}\label{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_aa19a849c0414960813b6c0ecd89207c7}} 
+\index{moa.classifiers.trees.HoeffdingOptionTree@{moa.classifiers.trees.HoeffdingOptionTree}!numericEstimatorOption@{numericEstimatorOption}}
+\index{numericEstimatorOption@{numericEstimatorOption}!moa.classifiers.trees.HoeffdingOptionTree@{moa.classifiers.trees.HoeffdingOptionTree}}
+\doxysubsubsection{\texorpdfstring{numericEstimatorOption}{numericEstimatorOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} moa.\+classifiers.\+trees.\+Hoeffding\+Option\+Tree.\+numeric\+Estimator\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} ClassOption(\textcolor{stringliteral}{"numericEstimator"},}
+\DoxyCodeLine{            \textcolor{charliteral}{'n'}, \textcolor{stringliteral}{"Numeric estimator to use."}, NumericAttributeClassObserver.class,}
+\DoxyCodeLine{            \textcolor{stringliteral}{"GaussianNumericAttributeClassObserver"})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_a44680379ec83c5b1918db5081c039d01}\label{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_a44680379ec83c5b1918db5081c039d01}} 
+\index{moa.classifiers.trees.HoeffdingOptionTree@{moa.classifiers.trees.HoeffdingOptionTree}!removePoorAttsOption@{removePoorAttsOption}}
+\index{removePoorAttsOption@{removePoorAttsOption}!moa.classifiers.trees.HoeffdingOptionTree@{moa.classifiers.trees.HoeffdingOptionTree}}
+\doxysubsubsection{\texorpdfstring{removePoorAttsOption}{removePoorAttsOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_flag_option}{Flag\+Option}} moa.\+classifiers.\+trees.\+Hoeffding\+Option\+Tree.\+remove\+Poor\+Atts\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FlagOption(\textcolor{stringliteral}{"removePoorAtts"},}
+\DoxyCodeLine{            \textcolor{charliteral}{'r'}, \textcolor{stringliteral}{"Disable poor attributes."})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_ae5ffd479f202738079208de53af45cb8}\label{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_ae5ffd479f202738079208de53af45cb8}} 
+\index{moa.classifiers.trees.HoeffdingOptionTree@{moa.classifiers.trees.HoeffdingOptionTree}!secondarySplitConfidenceOption@{secondarySplitConfidenceOption}}
+\index{secondarySplitConfidenceOption@{secondarySplitConfidenceOption}!moa.classifiers.trees.HoeffdingOptionTree@{moa.classifiers.trees.HoeffdingOptionTree}}
+\doxysubsubsection{\texorpdfstring{secondarySplitConfidenceOption}{secondarySplitConfidenceOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} moa.\+classifiers.\+trees.\+Hoeffding\+Option\+Tree.\+secondary\+Split\+Confidence\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FloatOption(}
+\DoxyCodeLine{            \textcolor{stringliteral}{"secondarySplitConfidence"},}
+\DoxyCodeLine{            \textcolor{charliteral}{'w'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"The allowable error in secondary split decisions, values closer to 0 will take longer to decide."},}
+\DoxyCodeLine{            0.1, 0.0, 1.0)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_a78a3486aeb7d639e5f95a0061bed021e}\label{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_a78a3486aeb7d639e5f95a0061bed021e}} 
+\index{moa.classifiers.trees.HoeffdingOptionTree@{moa.classifiers.trees.HoeffdingOptionTree}!splitConfidenceOption@{splitConfidenceOption}}
+\index{splitConfidenceOption@{splitConfidenceOption}!moa.classifiers.trees.HoeffdingOptionTree@{moa.classifiers.trees.HoeffdingOptionTree}}
+\doxysubsubsection{\texorpdfstring{splitConfidenceOption}{splitConfidenceOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} moa.\+classifiers.\+trees.\+Hoeffding\+Option\+Tree.\+split\+Confidence\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FloatOption(}
+\DoxyCodeLine{            \textcolor{stringliteral}{"splitConfidence"},}
+\DoxyCodeLine{            \textcolor{charliteral}{'c'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"The allowable error in split decision, values closer to 0 will take longer to decide."},}
+\DoxyCodeLine{            0.0000001, 0.0, 1.0)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_a3bb44b8667319d03c586b940cb08b944}\label{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_a3bb44b8667319d03c586b940cb08b944}} 
+\index{moa.classifiers.trees.HoeffdingOptionTree@{moa.classifiers.trees.HoeffdingOptionTree}!splitCriterionOption@{splitCriterionOption}}
+\index{splitCriterionOption@{splitCriterionOption}!moa.classifiers.trees.HoeffdingOptionTree@{moa.classifiers.trees.HoeffdingOptionTree}}
+\doxysubsubsection{\texorpdfstring{splitCriterionOption}{splitCriterionOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} moa.\+classifiers.\+trees.\+Hoeffding\+Option\+Tree.\+split\+Criterion\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} ClassOption(\textcolor{stringliteral}{"splitCriterion"},}
+\DoxyCodeLine{            \textcolor{charliteral}{'s'}, \textcolor{stringliteral}{"Split criterion to use."}, SplitCriterion.class,}
+\DoxyCodeLine{            \textcolor{stringliteral}{"InfoGainSplitCriterion"})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_a82e8a29462e90a90ac37e2316b06f058}\label{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_a82e8a29462e90a90ac37e2316b06f058}} 
+\index{moa.classifiers.trees.HoeffdingOptionTree@{moa.classifiers.trees.HoeffdingOptionTree}!tieThresholdOption@{tieThresholdOption}}
+\index{tieThresholdOption@{tieThresholdOption}!moa.classifiers.trees.HoeffdingOptionTree@{moa.classifiers.trees.HoeffdingOptionTree}}
+\doxysubsubsection{\texorpdfstring{tieThresholdOption}{tieThresholdOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} moa.\+classifiers.\+trees.\+Hoeffding\+Option\+Tree.\+tie\+Threshold\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FloatOption(\textcolor{stringliteral}{"tieThreshold"},}
+\DoxyCodeLine{            \textcolor{charliteral}{'t'}, \textcolor{stringliteral}{"Threshold below which a split will be forced to break ties."},}
+\DoxyCodeLine{            0.05, 0.0, 1.0)}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/classifiers/trees/Hoeffding\+Option\+Tree.\+java\end{DoxyCompactItemize}

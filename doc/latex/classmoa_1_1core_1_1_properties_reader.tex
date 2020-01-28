@@ -1,0 +1,56 @@
+\hypertarget{classmoa_1_1core_1_1_properties_reader}{}\doxysection{moa.\+core.\+Properties\+Reader Class Reference}
+\label{classmoa_1_1core_1_1_properties_reader}\index{moa.core.PropertiesReader@{moa.core.PropertiesReader}}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Properties \mbox{\hyperlink{classmoa_1_1core_1_1_properties_reader_ac73567adb3417174ec54948d6034fecf}{read\+Properties}} (String resource\+Name)  throws Exception 
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class implementing some properties reader utility methods.
+
+\begin{DoxyAuthor}{Author}
+Eibe Frank 
+
+Yong Wang 
+
+Len Trigg 
+
+Julien Prados 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+6681 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1core_1_1_properties_reader_ac73567adb3417174ec54948d6034fecf}\label{classmoa_1_1core_1_1_properties_reader_ac73567adb3417174ec54948d6034fecf}} 
+\index{moa.core.PropertiesReader@{moa.core.PropertiesReader}!readProperties@{readProperties}}
+\index{readProperties@{readProperties}!moa.core.PropertiesReader@{moa.core.PropertiesReader}}
+\doxysubsubsection{\texorpdfstring{readProperties()}{readProperties()}}
+{\footnotesize\ttfamily static Properties moa.\+core.\+Properties\+Reader.\+read\+Properties (\begin{DoxyParamCaption}\item[{String}]{resource\+Name }\end{DoxyParamCaption}) throws Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+Reads properties that inherit from three locations. Properties are first defined in the system resource location (i.\+e. in the C\+L\+A\+S\+S\+P\+A\+TH). These default properties must exist. Properties defined in the users home directory (optional) override default settings. Properties defined in the current directory (optional) override all these settings.
+
+
+\begin{DoxyParams}{Parameters}
+{\em resource\+Name} & the location of the resource that should be loaded. e.\+g.\+: \char`\"{}weka/core/\+Utils.\+props\char`\"{}. (The use of hardcoded forward slashes here is OK -\/ see jdk1.\+1/docs/guide/misc/resources.html) This routine will also look for the file (in this case) \char`\"{}\+Utils.\+props\char`\"{} in the users home directory and the current directory. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the Properties 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & if no default properties are defined, or if an error occurs reading the properties files. \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/core/Properties\+Reader.\+java\end{DoxyCompactItemize}

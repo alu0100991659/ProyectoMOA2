@@ -1,0 +1,117 @@
+\hypertarget{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_e_d_d_m}{}\doxysection{moa.\+classifiers.\+core.\+driftdetection.\+E\+D\+DM Class Reference}
+\label{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_e_d_d_m}\index{moa.classifiers.core.driftdetection.EDDM@{moa.classifiers.core.driftdetection.EDDM}}
+
+
+Inheritance diagram for moa.\+classifiers.\+core.\+driftdetection.\+E\+D\+DM\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+classifiers.\+core.\+driftdetection.\+E\+D\+DM\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_e_d_d_m_a7b6d9513058da53903b4afab395d8b7c}{reset\+Learning}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_e_d_d_m_a9fa4a320c9fff6625b7f800b59c715b6}{input}} (double prediction)
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_e_d_d_m_a1a11e8785388be4af61812cc6a794644}{get\+Description}} (String\+Builder sb, int indent)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_e_d_d_m_a072b12d4ee588f45e428338371f59434}{prepare\+For\+Use\+Impl}} (\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}} monitor, \mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}} repository)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Drift detection method based in \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_e_d_d_m}{E\+D\+DM}} method of Manuel Baena et al.
+
+Early Drift Detection Method. Manuel Baena-\/\+Garcia, Jose Del Campo-\/\+Avila, Raúl Fidalgo, Albert Bifet, Ricard Gavalda, Rafael Morales-\/\+Bueno. In Fourth International Workshop on Knowledge Discovery from Data Streams, 2006.
+
+\begin{DoxyAuthor}{Author}
+Manuel Baena (\href{mailto:mbaena@lcc.uma.es}{\texttt{ mbaena@lcc.\+uma.\+es}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+7 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_e_d_d_m_a1a11e8785388be4af61812cc6a794644}\label{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_e_d_d_m_a1a11e8785388be4af61812cc6a794644}} 
+\index{moa.classifiers.core.driftdetection.EDDM@{moa.classifiers.core.driftdetection.EDDM}!getDescription@{getDescription}}
+\index{getDescription@{getDescription}!moa.classifiers.core.driftdetection.EDDM@{moa.classifiers.core.driftdetection.EDDM}}
+\doxysubsubsection{\texorpdfstring{getDescription()}{getDescription()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+core.\+driftdetection.\+E\+D\+D\+M.\+get\+Description (\begin{DoxyParamCaption}\item[{String\+Builder}]{sb,  }\item[{int}]{indent }\end{DoxyParamCaption})}
+
+Returns a string representation of the model.
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & the stringbuilder to add the description \\
+\hline
+{\em indent} & the number of characters to indent \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_abstract_change_detector_a111e2c5e7c7809001e0fd66f71c49853}{moa.\+classifiers.\+core.\+driftdetection.\+Abstract\+Change\+Detector}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_e_d_d_m_a9fa4a320c9fff6625b7f800b59c715b6}\label{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_e_d_d_m_a9fa4a320c9fff6625b7f800b59c715b6}} 
+\index{moa.classifiers.core.driftdetection.EDDM@{moa.classifiers.core.driftdetection.EDDM}!input@{input}}
+\index{input@{input}!moa.classifiers.core.driftdetection.EDDM@{moa.classifiers.core.driftdetection.EDDM}}
+\doxysubsubsection{\texorpdfstring{input()}{input()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+core.\+driftdetection.\+E\+D\+D\+M.\+input (\begin{DoxyParamCaption}\item[{double}]{input\+Value }\end{DoxyParamCaption})}
+
+Adding a numeric value to the change detector$<$br$>$~\newline
+
+
+The output of the change detector is modified after the insertion of a new item inside.
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Value} & the number to insert into the change detector \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_abstract_change_detector_abbc8e51592cab2d77a90092030124fd6}{moa.\+classifiers.\+core.\+driftdetection.\+Abstract\+Change\+Detector}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_e_d_d_m_a072b12d4ee588f45e428338371f59434}\label{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_e_d_d_m_a072b12d4ee588f45e428338371f59434}} 
+\index{moa.classifiers.core.driftdetection.EDDM@{moa.classifiers.core.driftdetection.EDDM}!prepareForUseImpl@{prepareForUseImpl}}
+\index{prepareForUseImpl@{prepareForUseImpl}!moa.classifiers.core.driftdetection.EDDM@{moa.classifiers.core.driftdetection.EDDM}}
+\doxysubsubsection{\texorpdfstring{prepareForUseImpl()}{prepareForUseImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+core.\+driftdetection.\+E\+D\+D\+M.\+prepare\+For\+Use\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}}}]{monitor,  }\item[{\mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}}}]{repository }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+This method describes the implementation of how to prepare this object for use. All classes that extends this class have to implement {\ttfamily prepare\+For\+Use\+Impl} and not {\ttfamily prepare\+For\+Use} since {\ttfamily prepare\+For\+Use} calls {\ttfamily prepare\+For\+Use\+Impl}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em monitor} & the Task\+Monitor to use \\
+\hline
+{\em repository} & the Object\+Repository to use \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1options_1_1_abstract_option_handler_ad0e9c7d4b0e2b185749f36ce28540efb}{moa.\+options.\+Abstract\+Option\+Handler}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_e_d_d_m_a7b6d9513058da53903b4afab395d8b7c}\label{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_e_d_d_m_a7b6d9513058da53903b4afab395d8b7c}} 
+\index{moa.classifiers.core.driftdetection.EDDM@{moa.classifiers.core.driftdetection.EDDM}!resetLearning@{resetLearning}}
+\index{resetLearning@{resetLearning}!moa.classifiers.core.driftdetection.EDDM@{moa.classifiers.core.driftdetection.EDDM}}
+\doxysubsubsection{\texorpdfstring{resetLearning()}{resetLearning()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+core.\+driftdetection.\+E\+D\+D\+M.\+reset\+Learning (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Resets this change detector. It must be similar to starting a new change detector from scratch. 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_abstract_change_detector_a71b1c7d69b0809172e464cfa243d8cc4}{moa.\+classifiers.\+core.\+driftdetection.\+Abstract\+Change\+Detector}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/classifiers/core/driftdetection/E\+D\+D\+M.\+java\end{DoxyCompactItemize}

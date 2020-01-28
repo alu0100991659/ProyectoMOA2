@@ -1,0 +1,240 @@
+\hypertarget{classmoa_1_1tasks_1_1meta_1_1_a_l_multi_param_task}{}\doxysection{moa.\+tasks.\+meta.\+A\+L\+Multi\+Param\+Task Class Reference}
+\label{classmoa_1_1tasks_1_1meta_1_1_a_l_multi_param_task}\index{moa.tasks.meta.ALMultiParamTask@{moa.tasks.meta.ALMultiParamTask}}
+
+
+Inheritance diagram for moa.\+tasks.\+meta.\+A\+L\+Multi\+Param\+Task\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+tasks.\+meta.\+A\+L\+Multi\+Param\+Task\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classmoa_1_1tasks_1_1meta_1_1_a_l_multi_param_task_a46e20908e5f4cb0aff1096b03d30a9fe}{get\+Purpose\+String}} ()
+\item 
+\mbox{\hyperlink{classmoa_1_1tasks_1_1meta_1_1_a_l_multi_param_task_a1ce4f4bf5780b9f4208e18ab4edd6bec}{A\+L\+Multi\+Param\+Task}} ()
+\item 
+\mbox{\hyperlink{classmoa_1_1tasks_1_1meta_1_1_a_l_multi_param_task_ac00efd459b2862b39fa95aec7274a667}{A\+L\+Multi\+Param\+Task}} (Color\mbox{[}$\,$\mbox{]} sub\+Task\+Color\+Coding)
+\item 
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1meta_1_1_a_l_multi_param_task_a5272f14b3b933831d55a57c08ef196c3}\label{classmoa_1_1tasks_1_1meta_1_1_a_l_multi_param_task_a5272f14b3b933831d55a57c08ef196c3}} 
+void {\bfseries set\+Partition\+Idx} (int partition\+Idx)
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_options}{Options}} \mbox{\hyperlink{classmoa_1_1tasks_1_1meta_1_1_a_l_multi_param_task_a62b3c6c373aecdda16c2ec514425673a}{get\+Options}} ()
+\item 
+Class$<$?$>$ \mbox{\hyperlink{classmoa_1_1tasks_1_1meta_1_1_a_l_multi_param_task_a3e5cd13d01c18fa6a0ca3b539dcb091e}{get\+Task\+Result\+Type}} ()
+\item 
+List$<$ \mbox{\hyperlink{classmoa_1_1tasks_1_1meta_1_1_a_l_task_thread}{A\+L\+Task\+Thread}} $>$ \mbox{\hyperlink{classmoa_1_1tasks_1_1meta_1_1_a_l_multi_param_task_a4581d79b74f8d99ba3d342a27448057d}{get\+Subtask\+Threads}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1options_1_1_class_option_with_listener_option}{Class\+Option\+With\+Listener\+Option}} {\bfseries prequential\+Evaluation\+Task\+Option}
+\item 
+\mbox{\hyperlink{classmoa_1_1options_1_1_editable_multi_choice_option}{Editable\+Multi\+Choice\+Option}} {\bfseries varied\+Param\+Name\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_list_option}{List\+Option}} {\bfseries varied\+Param\+Values\+Option}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classmoa_1_1tasks_1_1meta_1_1_a_l_multi_param_task_a10f8886aa43e8f265658501d969a2be1}{prepare\+For\+Use\+Impl}} (\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}} monitor, \mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}} repository)
+\item 
+Object \mbox{\hyperlink{classmoa_1_1tasks_1_1meta_1_1_a_l_multi_param_task_ac3986279e5d04b2bf2f6f39a950300e2}{do\+Main\+Task}} (\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}} monitor, \mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}} repository)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This task individually evaluates an active learning classifier for each element of a set of parameter values. The individual evaluation is done by prequential evaluation (testing, then training with each example in sequence).
+
+\begin{DoxyAuthor}{Author}
+Cornelius Styp von Rekowski (\href{mailto:cornelius.styp@ovgu.de}{\texttt{ cornelius.\+styp@ovgu.\+de}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+1 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1meta_1_1_a_l_multi_param_task_a1ce4f4bf5780b9f4208e18ab4edd6bec}\label{classmoa_1_1tasks_1_1meta_1_1_a_l_multi_param_task_a1ce4f4bf5780b9f4208e18ab4edd6bec}} 
+\index{moa.tasks.meta.ALMultiParamTask@{moa.tasks.meta.ALMultiParamTask}!ALMultiParamTask@{ALMultiParamTask}}
+\index{ALMultiParamTask@{ALMultiParamTask}!moa.tasks.meta.ALMultiParamTask@{moa.tasks.meta.ALMultiParamTask}}
+\doxysubsubsection{\texorpdfstring{ALMultiParamTask()}{ALMultiParamTask()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily moa.\+tasks.\+meta.\+A\+L\+Multi\+Param\+Task.\+A\+L\+Multi\+Param\+Task (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Default constructor which sets up the refresh mechanism between the learner and the varied\+Param\+Name option. \mbox{\Hypertarget{classmoa_1_1tasks_1_1meta_1_1_a_l_multi_param_task_ac00efd459b2862b39fa95aec7274a667}\label{classmoa_1_1tasks_1_1meta_1_1_a_l_multi_param_task_ac00efd459b2862b39fa95aec7274a667}} 
+\index{moa.tasks.meta.ALMultiParamTask@{moa.tasks.meta.ALMultiParamTask}!ALMultiParamTask@{ALMultiParamTask}}
+\index{ALMultiParamTask@{ALMultiParamTask}!moa.tasks.meta.ALMultiParamTask@{moa.tasks.meta.ALMultiParamTask}}
+\doxysubsubsection{\texorpdfstring{ALMultiParamTask()}{ALMultiParamTask()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily moa.\+tasks.\+meta.\+A\+L\+Multi\+Param\+Task.\+A\+L\+Multi\+Param\+Task (\begin{DoxyParamCaption}\item[{Color\mbox{[}$\,$\mbox{]}}]{sub\+Task\+Color\+Coding }\end{DoxyParamCaption})}
+
+Constructor that sets the color coding for the subtasks additionally to the default constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sub\+Task\+Color\+Coding} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1meta_1_1_a_l_multi_param_task_ac3986279e5d04b2bf2f6f39a950300e2}\label{classmoa_1_1tasks_1_1meta_1_1_a_l_multi_param_task_ac3986279e5d04b2bf2f6f39a950300e2}} 
+\index{moa.tasks.meta.ALMultiParamTask@{moa.tasks.meta.ALMultiParamTask}!doMainTask@{doMainTask}}
+\index{doMainTask@{doMainTask}!moa.tasks.meta.ALMultiParamTask@{moa.tasks.meta.ALMultiParamTask}}
+\doxysubsubsection{\texorpdfstring{doMainTask()}{doMainTask()}}
+{\footnotesize\ttfamily Object moa.\+tasks.\+meta.\+A\+L\+Multi\+Param\+Task.\+do\+Main\+Task (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}}}]{monitor,  }\item[{\mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}}}]{repository }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+This method performs this task. {\ttfamily \mbox{\hyperlink{classmoa_1_1tasks_1_1_abstract_task}{Abstract\+Task}}} implements {\ttfamily do\+Task}, that uses {\ttfamily do\+Task\+Impl}. {\ttfamily \mbox{\hyperlink{classmoa_1_1tasks_1_1_main_task}{Main\+Task}}} implements {\ttfamily do\+Task\+Impl} using {\ttfamily do\+Main\+Task} so its extensions only need to implement {\ttfamily do\+Main\+Task}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em monitor} & the \mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}} to use \\
+\hline
+{\em repository} & the Object\+Repository to use \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an object with the result of this task 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1tasks_1_1_main_task_afab790976c2ace902aa1e2f780442788}{moa.\+tasks.\+Main\+Task}}.
+
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1meta_1_1_a_l_multi_param_task_a62b3c6c373aecdda16c2ec514425673a}\label{classmoa_1_1tasks_1_1meta_1_1_a_l_multi_param_task_a62b3c6c373aecdda16c2ec514425673a}} 
+\index{moa.tasks.meta.ALMultiParamTask@{moa.tasks.meta.ALMultiParamTask}!getOptions@{getOptions}}
+\index{getOptions@{getOptions}!moa.tasks.meta.ALMultiParamTask@{moa.tasks.meta.ALMultiParamTask}}
+\doxysubsubsection{\texorpdfstring{getOptions()}{getOptions()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_options}{Options}} moa.\+tasks.\+meta.\+A\+L\+Multi\+Param\+Task.\+get\+Options (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the options of this object
+
+\begin{DoxyReturn}{Returns}
+the options of this object 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1options_1_1_abstract_option_handler_a7ba82c22a57694b00d317d345f1fa317}{moa.\+options.\+Abstract\+Option\+Handler}}.
+
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1meta_1_1_a_l_multi_param_task_a46e20908e5f4cb0aff1096b03d30a9fe}\label{classmoa_1_1tasks_1_1meta_1_1_a_l_multi_param_task_a46e20908e5f4cb0aff1096b03d30a9fe}} 
+\index{moa.tasks.meta.ALMultiParamTask@{moa.tasks.meta.ALMultiParamTask}!getPurposeString@{getPurposeString}}
+\index{getPurposeString@{getPurposeString}!moa.tasks.meta.ALMultiParamTask@{moa.tasks.meta.ALMultiParamTask}}
+\doxysubsubsection{\texorpdfstring{getPurposeString()}{getPurposeString()}}
+{\footnotesize\ttfamily String moa.\+tasks.\+meta.\+A\+L\+Multi\+Param\+Task.\+get\+Purpose\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Options to handle Dictionary with option texts and objects 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1options_1_1_abstract_option_handler_abc8df69aea27ef85060557a9e918b2ca}{moa.\+options.\+Abstract\+Option\+Handler}}.
+
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1meta_1_1_a_l_multi_param_task_a4581d79b74f8d99ba3d342a27448057d}\label{classmoa_1_1tasks_1_1meta_1_1_a_l_multi_param_task_a4581d79b74f8d99ba3d342a27448057d}} 
+\index{moa.tasks.meta.ALMultiParamTask@{moa.tasks.meta.ALMultiParamTask}!getSubtaskThreads@{getSubtaskThreads}}
+\index{getSubtaskThreads@{getSubtaskThreads}!moa.tasks.meta.ALMultiParamTask@{moa.tasks.meta.ALMultiParamTask}}
+\doxysubsubsection{\texorpdfstring{getSubtaskThreads()}{getSubtaskThreads()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classmoa_1_1tasks_1_1meta_1_1_a_l_task_thread}{A\+L\+Task\+Thread}}$>$ moa.\+tasks.\+meta.\+A\+L\+Multi\+Param\+Task.\+get\+Subtask\+Threads (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the list of threads for all subtasks and recursively the children\textquotesingle{}s subtasks.
+
+\begin{DoxyReturn}{Returns}
+list of subtask threads, recursively generated 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1tasks_1_1meta_1_1_a_l_main_task_a09ee9c9087bcff13236ed207d92c0a35}{moa.\+tasks.\+meta.\+A\+L\+Main\+Task}}.
+
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1meta_1_1_a_l_multi_param_task_a3e5cd13d01c18fa6a0ca3b539dcb091e}\label{classmoa_1_1tasks_1_1meta_1_1_a_l_multi_param_task_a3e5cd13d01c18fa6a0ca3b539dcb091e}} 
+\index{moa.tasks.meta.ALMultiParamTask@{moa.tasks.meta.ALMultiParamTask}!getTaskResultType@{getTaskResultType}}
+\index{getTaskResultType@{getTaskResultType}!moa.tasks.meta.ALMultiParamTask@{moa.tasks.meta.ALMultiParamTask}}
+\doxysubsubsection{\texorpdfstring{getTaskResultType()}{getTaskResultType()}}
+{\footnotesize\ttfamily Class$<$?$>$ moa.\+tasks.\+meta.\+A\+L\+Multi\+Param\+Task.\+get\+Task\+Result\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the result type of this task. Tasks can return Learning\+Curve, Learning\+Evaluation, Classifier, String, Instances..
+
+\begin{DoxyReturn}{Returns}
+a class object of the result of this task 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_a568100cd931416820d1bcc81032301f6}{moa.\+tasks.\+Task}}.
+
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1meta_1_1_a_l_multi_param_task_a10f8886aa43e8f265658501d969a2be1}\label{classmoa_1_1tasks_1_1meta_1_1_a_l_multi_param_task_a10f8886aa43e8f265658501d969a2be1}} 
+\index{moa.tasks.meta.ALMultiParamTask@{moa.tasks.meta.ALMultiParamTask}!prepareForUseImpl@{prepareForUseImpl}}
+\index{prepareForUseImpl@{prepareForUseImpl}!moa.tasks.meta.ALMultiParamTask@{moa.tasks.meta.ALMultiParamTask}}
+\doxysubsubsection{\texorpdfstring{prepareForUseImpl()}{prepareForUseImpl()}}
+{\footnotesize\ttfamily void moa.\+tasks.\+meta.\+A\+L\+Multi\+Param\+Task.\+prepare\+For\+Use\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}}}]{monitor,  }\item[{\mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}}}]{repository }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+This method describes the implementation of how to prepare this object for use. All classes that extends this class have to implement {\ttfamily prepare\+For\+Use\+Impl} and not {\ttfamily prepare\+For\+Use} since {\ttfamily prepare\+For\+Use} calls {\ttfamily prepare\+For\+Use\+Impl}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em monitor} & the \mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}} to use \\
+\hline
+{\em repository} & the Object\+Repository to use \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1tasks_1_1_abstract_task_ac70d5074f64417facf9021f935fdc186}{moa.\+tasks.\+Abstract\+Task}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1meta_1_1_a_l_multi_param_task_a06f01bd311200247b528292e363209e9}\label{classmoa_1_1tasks_1_1meta_1_1_a_l_multi_param_task_a06f01bd311200247b528292e363209e9}} 
+\index{moa.tasks.meta.ALMultiParamTask@{moa.tasks.meta.ALMultiParamTask}!prequentialEvaluationTaskOption@{prequentialEvaluationTaskOption}}
+\index{prequentialEvaluationTaskOption@{prequentialEvaluationTaskOption}!moa.tasks.meta.ALMultiParamTask@{moa.tasks.meta.ALMultiParamTask}}
+\doxysubsubsection{\texorpdfstring{prequentialEvaluationTaskOption}{prequentialEvaluationTaskOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1options_1_1_class_option_with_listener_option}{Class\+Option\+With\+Listener\+Option}} moa.\+tasks.\+meta.\+A\+L\+Multi\+Param\+Task.\+prequential\+Evaluation\+Task\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= }
+\DoxyCodeLine{            \textcolor{keyword}{new} ClassOptionWithListenerOption(}
+\DoxyCodeLine{                \textcolor{stringliteral}{"prequentialEvaluationTask"}, \textcolor{charliteral}{'e'}, }
+\DoxyCodeLine{                \textcolor{stringliteral}{"Prequential evaluation task to be performed for each "} + }
+\DoxyCodeLine{                \textcolor{stringliteral}{"parameter value."}, ALPrequentialEvaluationTask.class, }
+\DoxyCodeLine{                \textcolor{stringliteral}{"moa.tasks.meta.ALPrequentialEvaluationTask"})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1meta_1_1_a_l_multi_param_task_a6df81fb92a88eac02e5d2379044710f3}\label{classmoa_1_1tasks_1_1meta_1_1_a_l_multi_param_task_a6df81fb92a88eac02e5d2379044710f3}} 
+\index{moa.tasks.meta.ALMultiParamTask@{moa.tasks.meta.ALMultiParamTask}!variedParamNameOption@{variedParamNameOption}}
+\index{variedParamNameOption@{variedParamNameOption}!moa.tasks.meta.ALMultiParamTask@{moa.tasks.meta.ALMultiParamTask}}
+\doxysubsubsection{\texorpdfstring{variedParamNameOption}{variedParamNameOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1options_1_1_editable_multi_choice_option}{Editable\+Multi\+Choice\+Option}} moa.\+tasks.\+meta.\+A\+L\+Multi\+Param\+Task.\+varied\+Param\+Name\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= }
+\DoxyCodeLine{            \textcolor{keyword}{new} EditableMultiChoiceOption(}
+\DoxyCodeLine{                    \textcolor{stringliteral}{"variedParamName"}, \textcolor{charliteral}{'p'}, }
+\DoxyCodeLine{                    \textcolor{stringliteral}{"Name of the parameter to be varied."},}
+\DoxyCodeLine{                    \textcolor{keyword}{new} String[]\{\textcolor{stringliteral}{"budget"}\}, }
+\DoxyCodeLine{                    \textcolor{keyword}{new} String[]\{\textcolor{stringliteral}{"default varied parameter name"}\}, }
+\DoxyCodeLine{                    0)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1meta_1_1_a_l_multi_param_task_a67b4d83d4d969ee3cd70046e7f299b31}\label{classmoa_1_1tasks_1_1meta_1_1_a_l_multi_param_task_a67b4d83d4d969ee3cd70046e7f299b31}} 
+\index{moa.tasks.meta.ALMultiParamTask@{moa.tasks.meta.ALMultiParamTask}!variedParamValuesOption@{variedParamValuesOption}}
+\index{variedParamValuesOption@{variedParamValuesOption}!moa.tasks.meta.ALMultiParamTask@{moa.tasks.meta.ALMultiParamTask}}
+\doxysubsubsection{\texorpdfstring{variedParamValuesOption}{variedParamValuesOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_list_option}{List\+Option}} moa.\+tasks.\+meta.\+A\+L\+Multi\+Param\+Task.\+varied\+Param\+Values\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} ListOption(}
+\DoxyCodeLine{            \textcolor{stringliteral}{"variedParamValues"}, \textcolor{charliteral}{'v'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"List of parameter values to train classifiers for."},}
+\DoxyCodeLine{            \textcolor{keyword}{new} FloatOption(\textcolor{stringliteral}{"value"}, \textcolor{charliteral}{' '}, \textcolor{stringliteral}{"Parameter value."}, 0.0), }
+\DoxyCodeLine{            \textcolor{keyword}{new} FloatOption[]\{}
+\DoxyCodeLine{                    \textcolor{keyword}{new} FloatOption(\textcolor{stringliteral}{""}, \textcolor{charliteral}{' '}, \textcolor{stringliteral}{""}, 0.1),}
+\DoxyCodeLine{                    \textcolor{keyword}{new} FloatOption(\textcolor{stringliteral}{""}, \textcolor{charliteral}{' '}, \textcolor{stringliteral}{""}, 0.2),}
+\DoxyCodeLine{                    \textcolor{keyword}{new} FloatOption(\textcolor{stringliteral}{""}, \textcolor{charliteral}{' '}, \textcolor{stringliteral}{""}, 0.5)}
+\DoxyCodeLine{            \}, \textcolor{charliteral}{','})}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/tasks/meta/A\+L\+Multi\+Param\+Task.\+java\end{DoxyCompactItemize}

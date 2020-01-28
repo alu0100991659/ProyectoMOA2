@@ -1,0 +1,237 @@
+\hypertarget{classmoa_1_1classifiers_1_1oneclass_1_1_h_s_trees}{}\doxysection{moa.\+classifiers.\+oneclass.\+H\+S\+Trees Class Reference}
+\label{classmoa_1_1classifiers_1_1oneclass_1_1_h_s_trees}\index{moa.classifiers.oneclass.HSTrees@{moa.classifiers.oneclass.HSTrees}}
+
+
+Inheritance diagram for moa.\+classifiers.\+oneclass.\+H\+S\+Trees\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+classifiers.\+oneclass.\+H\+S\+Trees\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classmoa_1_1classifiers_1_1oneclass_1_1_h_s_trees_a56207f6b0d24dc97d842f449320b95fb}{get\+Purpose\+String}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1oneclass_1_1_h_s_trees_a4ff9e45c398a32f9422aa8805b083349}{reset\+Learning\+Impl}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1oneclass_1_1_h_s_trees_a2b01ed28f8ed81926c2ef1f73bea85f7}{train\+On\+Instance\+Impl}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst)
+\item 
+double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1oneclass_1_1_h_s_trees_a81c5ca04073f8e39a6f031fcce4dff92}{get\+Votes\+For\+Instance}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst)
+\item 
+double \mbox{\hyperlink{classmoa_1_1classifiers_1_1oneclass_1_1_h_s_trees_aaf6e11e1ab30c7ef18275f28034b1a10}{get\+Anomaly\+Score}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst)
+\item 
+boolean \mbox{\hyperlink{classmoa_1_1classifiers_1_1oneclass_1_1_h_s_trees_a9632d5f9ad9baddd0b5239a6518c1972}{is\+Randomizable}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1oneclass_1_1_h_s_trees_a7978ea7a175c04b67ede83d38e40225d}{get\+Model\+Description}} (String\+Builder out, int indent)
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1oneclass_1_1_h_s_trees_a02b46f0e954c74ba261b2c0d2e734b53}{initialize}} (Collection$<$ \mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} $>$ training\+Points)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1oneclass_1_1_h_s_trees_a5de5273e7b8d71781b2b0895799f670c}\label{classmoa_1_1classifiers_1_1oneclass_1_1_h_s_trees_a5de5273e7b8d71781b2b0895799f670c}} 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries window\+Size\+Option} = new \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}}(\char`\"{}window\+Size\char`\"{}, \textquotesingle{}p\textquotesingle{}, \char`\"{}The size of the landmark windows used.\char`\"{}, 250)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1oneclass_1_1_h_s_trees_a79a581aa026135f2497ee1226485e6d9}\label{classmoa_1_1classifiers_1_1oneclass_1_1_h_s_trees_a79a581aa026135f2497ee1226485e6d9}} 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries num\+Trees\+Option} = new \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}}(\char`\"{}number\+Of\+Trees\char`\"{}, \textquotesingle{}t\textquotesingle{}, \char`\"{}The number of trees in the ensemble.\char`\"{}, 25)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1oneclass_1_1_h_s_trees_a94c02d285d5b0902c46d731aa0784b5c}\label{classmoa_1_1classifiers_1_1oneclass_1_1_h_s_trees_a94c02d285d5b0902c46d731aa0784b5c}} 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries max\+Depth\+Option} = new \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}}(\char`\"{}max\+Depth\char`\"{}, \textquotesingle{}h\textquotesingle{}, \char`\"{}The maximum depth of the trees\char`\"{}, 15)
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} {\bfseries anomaly\+Threshold\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} {\bfseries size\+Limit\+Option}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1oneclass_1_1_h_s_trees_ac86fc30521d0392570e1243339258d5a}{get\+Model\+Measurements\+Impl}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Implements the Streaming Half-\/\+Space Trees one-\/class classifier described in S. C. Tan, K. M. Ting, and T. F. Liu, “\+Fast anomaly detection for streaming data,” in I\+J\+C\+AI Proceedings-\/\+International Joint Conference on Artificial Intelligence, 2011, vol. 22, no. 1, pp. 1511–1516.
+
+\begin{DoxyAuthor}{Author}
+Richard Hugh Moulton 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1oneclass_1_1_h_s_trees_aaf6e11e1ab30c7ef18275f28034b1a10}\label{classmoa_1_1classifiers_1_1oneclass_1_1_h_s_trees_aaf6e11e1ab30c7ef18275f28034b1a10}} 
+\index{moa.classifiers.oneclass.HSTrees@{moa.classifiers.oneclass.HSTrees}!getAnomalyScore@{getAnomalyScore}}
+\index{getAnomalyScore@{getAnomalyScore}!moa.classifiers.oneclass.HSTrees@{moa.classifiers.oneclass.HSTrees}}
+\doxysubsubsection{\texorpdfstring{getAnomalyScore()}{getAnomalyScore()}}
+{\footnotesize\ttfamily double moa.\+classifiers.\+oneclass.\+H\+S\+Trees.\+get\+Anomaly\+Score (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{inst }\end{DoxyParamCaption})}
+
+Returns the anomaly score for the argument instance.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & the argument instance\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+inst\textquotesingle{}s anomaly score 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_one_class_classifier_a45de155b079d7768d1d94620a180fe9d}{moa.\+classifiers.\+One\+Class\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1oneclass_1_1_h_s_trees_a7978ea7a175c04b67ede83d38e40225d}\label{classmoa_1_1classifiers_1_1oneclass_1_1_h_s_trees_a7978ea7a175c04b67ede83d38e40225d}} 
+\index{moa.classifiers.oneclass.HSTrees@{moa.classifiers.oneclass.HSTrees}!getModelDescription@{getModelDescription}}
+\index{getModelDescription@{getModelDescription}!moa.classifiers.oneclass.HSTrees@{moa.classifiers.oneclass.HSTrees}}
+\doxysubsubsection{\texorpdfstring{getModelDescription()}{getModelDescription()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+oneclass.\+H\+S\+Trees.\+get\+Model\+Description (\begin{DoxyParamCaption}\item[{String\+Builder}]{out,  }\item[{int}]{indent }\end{DoxyParamCaption})}
+
+Returns a string representation of the model.
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & the stringbuilder to add the description \\
+\hline
+{\em indent} & the number of characters to indent \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a30e5ff32bc8127dfb7436945776b7523}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1oneclass_1_1_h_s_trees_ac86fc30521d0392570e1243339258d5a}\label{classmoa_1_1classifiers_1_1oneclass_1_1_h_s_trees_ac86fc30521d0392570e1243339258d5a}} 
+\index{moa.classifiers.oneclass.HSTrees@{moa.classifiers.oneclass.HSTrees}!getModelMeasurementsImpl@{getModelMeasurementsImpl}}
+\index{getModelMeasurementsImpl@{getModelMeasurementsImpl}!moa.classifiers.oneclass.HSTrees@{moa.classifiers.oneclass.HSTrees}}
+\doxysubsubsection{\texorpdfstring{getModelMeasurementsImpl()}{getModelMeasurementsImpl()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}} \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+oneclass.\+H\+S\+Trees.\+get\+Model\+Measurements\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Gets the current measurements of this classifier.~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden.
+
+\begin{DoxyReturn}{Returns}
+an array of measurements to be used in evaluation tasks 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_ac2bebede21c9d2d8cd11d95a7e20e529}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1oneclass_1_1_h_s_trees_a56207f6b0d24dc97d842f449320b95fb}\label{classmoa_1_1classifiers_1_1oneclass_1_1_h_s_trees_a56207f6b0d24dc97d842f449320b95fb}} 
+\index{moa.classifiers.oneclass.HSTrees@{moa.classifiers.oneclass.HSTrees}!getPurposeString@{getPurposeString}}
+\index{getPurposeString@{getPurposeString}!moa.classifiers.oneclass.HSTrees@{moa.classifiers.oneclass.HSTrees}}
+\doxysubsubsection{\texorpdfstring{getPurposeString()}{getPurposeString()}}
+{\footnotesize\ttfamily String moa.\+classifiers.\+oneclass.\+H\+S\+Trees.\+get\+Purpose\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Options to handle Dictionary with option texts and objects 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a3fc6ae11234b88e51941a77ddb879d8b}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1oneclass_1_1_h_s_trees_a81c5ca04073f8e39a6f031fcce4dff92}\label{classmoa_1_1classifiers_1_1oneclass_1_1_h_s_trees_a81c5ca04073f8e39a6f031fcce4dff92}} 
+\index{moa.classifiers.oneclass.HSTrees@{moa.classifiers.oneclass.HSTrees}!getVotesForInstance@{getVotesForInstance}}
+\index{getVotesForInstance@{getVotesForInstance}!moa.classifiers.oneclass.HSTrees@{moa.classifiers.oneclass.HSTrees}}
+\doxysubsubsection{\texorpdfstring{getVotesForInstance()}{getVotesForInstance()}}
+{\footnotesize\ttfamily double \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+oneclass.\+H\+S\+Trees.\+get\+Votes\+For\+Instance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{inst }\end{DoxyParamCaption})}
+
+Combine the anomaly scores from each H\+S\+Tree in the forest and convert into a vote score.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & the instance to get votes for\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the votes for the instance\textquotesingle{}s label \mbox{[}normal, outlier\mbox{]} 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a0e3589c4fa6f088d82d64514afd9513c}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1oneclass_1_1_h_s_trees_a02b46f0e954c74ba261b2c0d2e734b53}\label{classmoa_1_1classifiers_1_1oneclass_1_1_h_s_trees_a02b46f0e954c74ba261b2c0d2e734b53}} 
+\index{moa.classifiers.oneclass.HSTrees@{moa.classifiers.oneclass.HSTrees}!initialize@{initialize}}
+\index{initialize@{initialize}!moa.classifiers.oneclass.HSTrees@{moa.classifiers.oneclass.HSTrees}}
+\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+oneclass.\+H\+S\+Trees.\+initialize (\begin{DoxyParamCaption}\item[{Collection$<$ \mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} $>$}]{training\+Points }\end{DoxyParamCaption})}
+
+Initializes the Streaming H\+S-\/\+Trees classifier on the argument training\+Points.
+
+
+\begin{DoxyParams}{Parameters}
+{\em training\+Points} & the Collection of instance with which to initialize the Streaming Hs-\/\+Trees classifier. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_one_class_classifier_a4ff73e92da76b79bbe7ed7b6be724c37}{moa.\+classifiers.\+One\+Class\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1oneclass_1_1_h_s_trees_a9632d5f9ad9baddd0b5239a6518c1972}\label{classmoa_1_1classifiers_1_1oneclass_1_1_h_s_trees_a9632d5f9ad9baddd0b5239a6518c1972}} 
+\index{moa.classifiers.oneclass.HSTrees@{moa.classifiers.oneclass.HSTrees}!isRandomizable@{isRandomizable}}
+\index{isRandomizable@{isRandomizable}!moa.classifiers.oneclass.HSTrees@{moa.classifiers.oneclass.HSTrees}}
+\doxysubsubsection{\texorpdfstring{isRandomizable()}{isRandomizable()}}
+{\footnotesize\ttfamily boolean moa.\+classifiers.\+oneclass.\+H\+S\+Trees.\+is\+Randomizable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{classmoa_1_1classifiers_1_1oneclass_1_1_h_s_trees}{H\+S\+Trees}} is randomizable. 
+
+Implements \mbox{\hyperlink{interfacemoa_1_1learners_1_1_learner_a2f1ff9007b5eb5f53801f474b4d42a61}{moa.\+learners.\+Learner$<$ E extends Example $>$}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1oneclass_1_1_h_s_trees_a4ff9e45c398a32f9422aa8805b083349}\label{classmoa_1_1classifiers_1_1oneclass_1_1_h_s_trees_a4ff9e45c398a32f9422aa8805b083349}} 
+\index{moa.classifiers.oneclass.HSTrees@{moa.classifiers.oneclass.HSTrees}!resetLearningImpl@{resetLearningImpl}}
+\index{resetLearningImpl@{resetLearningImpl}!moa.classifiers.oneclass.HSTrees@{moa.classifiers.oneclass.HSTrees}}
+\doxysubsubsection{\texorpdfstring{resetLearningImpl()}{resetLearningImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+oneclass.\+H\+S\+Trees.\+reset\+Learning\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Reset the classifier\textquotesingle{}s parameters and data structures. 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a099ffcf2417abb919d10d697c0648f29}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1oneclass_1_1_h_s_trees_a2b01ed28f8ed81926c2ef1f73bea85f7}\label{classmoa_1_1classifiers_1_1oneclass_1_1_h_s_trees_a2b01ed28f8ed81926c2ef1f73bea85f7}} 
+\index{moa.classifiers.oneclass.HSTrees@{moa.classifiers.oneclass.HSTrees}!trainOnInstanceImpl@{trainOnInstanceImpl}}
+\index{trainOnInstanceImpl@{trainOnInstanceImpl}!moa.classifiers.oneclass.HSTrees@{moa.classifiers.oneclass.HSTrees}}
+\doxysubsubsection{\texorpdfstring{trainOnInstanceImpl()}{trainOnInstanceImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+oneclass.\+H\+S\+Trees.\+train\+On\+Instance\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{inst }\end{DoxyParamCaption})}
+
+Update the forest with the argument instance
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & the instance to pass to the forest \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_aceb24d2ddeab386f2ecead6e3c0d3543}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1oneclass_1_1_h_s_trees_aae1fbec844dd7696805fb64b45765a64}\label{classmoa_1_1classifiers_1_1oneclass_1_1_h_s_trees_aae1fbec844dd7696805fb64b45765a64}} 
+\index{moa.classifiers.oneclass.HSTrees@{moa.classifiers.oneclass.HSTrees}!anomalyThresholdOption@{anomalyThresholdOption}}
+\index{anomalyThresholdOption@{anomalyThresholdOption}!moa.classifiers.oneclass.HSTrees@{moa.classifiers.oneclass.HSTrees}}
+\doxysubsubsection{\texorpdfstring{anomalyThresholdOption}{anomalyThresholdOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} moa.\+classifiers.\+oneclass.\+H\+S\+Trees.\+anomaly\+Threshold\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FloatOption(\textcolor{stringliteral}{"anomalyThreshold"}, \textcolor{charliteral}{'a'}, }
+\DoxyCodeLine{            \textcolor{stringliteral}{"Threshold (as a fraction of the maximum mass value) below which an instance is declared an anomaly."}, }
+\DoxyCodeLine{            0.5, Double.MIN\_VALUE, 1.0)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1oneclass_1_1_h_s_trees_a474fb0d37d9bcee7c2e3089486872fd2}\label{classmoa_1_1classifiers_1_1oneclass_1_1_h_s_trees_a474fb0d37d9bcee7c2e3089486872fd2}} 
+\index{moa.classifiers.oneclass.HSTrees@{moa.classifiers.oneclass.HSTrees}!sizeLimitOption@{sizeLimitOption}}
+\index{sizeLimitOption@{sizeLimitOption}!moa.classifiers.oneclass.HSTrees@{moa.classifiers.oneclass.HSTrees}}
+\doxysubsubsection{\texorpdfstring{sizeLimitOption}{sizeLimitOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} moa.\+classifiers.\+oneclass.\+H\+S\+Trees.\+size\+Limit\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FloatOption(\textcolor{stringliteral}{"sizeLimit"}, \textcolor{charliteral}{'s'}, \textcolor{stringliteral}{"The minimum mass required in a node (as a "}}
+\DoxyCodeLine{            + \textcolor{stringliteral}{"fraction of the window size) to calculate the anomaly score."}, 0.1, Double.MIN\_VALUE, 1.0)}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/classifiers/oneclass/H\+S\+Trees.\+java\end{DoxyCompactItemize}

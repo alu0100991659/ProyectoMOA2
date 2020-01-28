@@ -1,0 +1,180 @@
+\hypertarget{classmoa_1_1gui_1_1experimentertab_1_1_read_file}{}\doxysection{moa.\+gui.\+experimentertab.\+Read\+File Class Reference}
+\label{classmoa_1_1gui_1_1experimentertab_1_1_read_file}\index{moa.gui.experimentertab.ReadFile@{moa.gui.experimentertab.ReadFile}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1gui_1_1experimentertab_1_1_read_file_a9f9de7e69ad7e0058eaab7e0d51f3a34}{Read\+File}} (String path)
+\item 
+String \mbox{\hyperlink{classmoa_1_1gui_1_1experimentertab_1_1_read_file_a91713722baa9d2fffc69cadb4651b090}{process\+Files}} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1gui_1_1experimentertab_1_1_read_file_a91df3407cbfd376c80d7dc2676baa03d}\label{classmoa_1_1gui_1_1experimentertab_1_1_read_file_a91df3407cbfd376c80d7dc2676baa03d}} 
+String {\bfseries update\+Measures} (String alg\+Names\mbox{[}$\,$\mbox{]}, String stream)
+\item 
+Linked\+List$<$ String $>$ \mbox{\hyperlink{classmoa_1_1gui_1_1experimentertab_1_1_read_file_a02085d4190bf45ecd1f994abb10598ff}{get\+Alg\+Names}} ()
+\item 
+Linked\+List$<$ String $>$ \mbox{\hyperlink{classmoa_1_1gui_1_1experimentertab_1_1_read_file_a662fda5d9e512070f08b7735311f5dda}{get\+Measures}} ()
+\item 
+Linked\+List$<$ String $>$ \mbox{\hyperlink{classmoa_1_1gui_1_1experimentertab_1_1_read_file_ad002bd3bd798d9b0aa4fc0a324cc076c}{get\+Stream}} ()
+\item 
+Array\+List$<$ String $>$ \mbox{\hyperlink{classmoa_1_1gui_1_1experimentertab_1_1_read_file_acccbe5f26de405c5b071ff7325dfba72}{get\+Alg\+Short\+Names}} ()
+\item 
+String \mbox{\hyperlink{classmoa_1_1gui_1_1experimentertab_1_1_read_file_a56f3d4b1a8cc9a25dc4f30c616efc562}{get\+Path}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1gui_1_1experimentertab_1_1_read_file_abd343b5f65a781a4ba7613ec22835a1a}{set\+Path}} (String path)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classmoa_1_1gui_1_1experimentertab_1_1_read_file_a97caaa4f6a9ba47a3748a655b20f42ac}{delete\+Drectory}} (File directory)
+\item 
+static Array\+List$<$ String\mbox{[}$\,$\mbox{]}$>$ \mbox{\hyperlink{classmoa_1_1gui_1_1experimentertab_1_1_read_file_a9267629e685a34d99f641a5c64a7f8e5}{read\+C\+SV}} (String path)  throws Unsupported\+Encoding\+Exception, File\+Not\+Found\+Exception, I\+O\+Exception 
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class processes the results files of the algorithms in each directory.
+
+\begin{DoxyAuthor}{Author}
+Alberto Verdecia Cabrera (\href{mailto:averdeciac@gmail.com}{\texttt{ averdeciac@gmail.\+com}}). 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmoa_1_1gui_1_1experimentertab_1_1_read_file_a9f9de7e69ad7e0058eaab7e0d51f3a34}\label{classmoa_1_1gui_1_1experimentertab_1_1_read_file_a9f9de7e69ad7e0058eaab7e0d51f3a34}} 
+\index{moa.gui.experimentertab.ReadFile@{moa.gui.experimentertab.ReadFile}!ReadFile@{ReadFile}}
+\index{ReadFile@{ReadFile}!moa.gui.experimentertab.ReadFile@{moa.gui.experimentertab.ReadFile}}
+\doxysubsubsection{\texorpdfstring{ReadFile()}{ReadFile()}}
+{\footnotesize\ttfamily moa.\+gui.\+experimentertab.\+Read\+File.\+Read\+File (\begin{DoxyParamCaption}\item[{String}]{path }\end{DoxyParamCaption})}
+
+File Constructor
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1gui_1_1experimentertab_1_1_read_file_a97caaa4f6a9ba47a3748a655b20f42ac}\label{classmoa_1_1gui_1_1experimentertab_1_1_read_file_a97caaa4f6a9ba47a3748a655b20f42ac}} 
+\index{moa.gui.experimentertab.ReadFile@{moa.gui.experimentertab.ReadFile}!deleteDrectory@{deleteDrectory}}
+\index{deleteDrectory@{deleteDrectory}!moa.gui.experimentertab.ReadFile@{moa.gui.experimentertab.ReadFile}}
+\doxysubsubsection{\texorpdfstring{deleteDrectory()}{deleteDrectory()}}
+{\footnotesize\ttfamily static void moa.\+gui.\+experimentertab.\+Read\+File.\+delete\+Drectory (\begin{DoxyParamCaption}\item[{File}]{directory }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Delete the selected directory.
+
+
+\begin{DoxyParams}{Parameters}
+{\em directory} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmoa_1_1gui_1_1experimentertab_1_1_read_file_a02085d4190bf45ecd1f994abb10598ff}\label{classmoa_1_1gui_1_1experimentertab_1_1_read_file_a02085d4190bf45ecd1f994abb10598ff}} 
+\index{moa.gui.experimentertab.ReadFile@{moa.gui.experimentertab.ReadFile}!getAlgNames@{getAlgNames}}
+\index{getAlgNames@{getAlgNames}!moa.gui.experimentertab.ReadFile@{moa.gui.experimentertab.ReadFile}}
+\doxysubsubsection{\texorpdfstring{getAlgNames()}{getAlgNames()}}
+{\footnotesize\ttfamily Linked\+List$<$String$>$ moa.\+gui.\+experimentertab.\+Read\+File.\+get\+Alg\+Names (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the name of the algorithms.
+
+\begin{DoxyReturn}{Returns}
+a Linked\+List with the name of the algorithms. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmoa_1_1gui_1_1experimentertab_1_1_read_file_acccbe5f26de405c5b071ff7325dfba72}\label{classmoa_1_1gui_1_1experimentertab_1_1_read_file_acccbe5f26de405c5b071ff7325dfba72}} 
+\index{moa.gui.experimentertab.ReadFile@{moa.gui.experimentertab.ReadFile}!getAlgShortNames@{getAlgShortNames}}
+\index{getAlgShortNames@{getAlgShortNames}!moa.gui.experimentertab.ReadFile@{moa.gui.experimentertab.ReadFile}}
+\doxysubsubsection{\texorpdfstring{getAlgShortNames()}{getAlgShortNames()}}
+{\footnotesize\ttfamily Array\+List$<$String$>$ moa.\+gui.\+experimentertab.\+Read\+File.\+get\+Alg\+Short\+Names (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the short name of the algorithms.
+
+\begin{DoxyReturn}{Returns}
+an Array\+List with the short name of the algorithms. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmoa_1_1gui_1_1experimentertab_1_1_read_file_a662fda5d9e512070f08b7735311f5dda}\label{classmoa_1_1gui_1_1experimentertab_1_1_read_file_a662fda5d9e512070f08b7735311f5dda}} 
+\index{moa.gui.experimentertab.ReadFile@{moa.gui.experimentertab.ReadFile}!getMeasures@{getMeasures}}
+\index{getMeasures@{getMeasures}!moa.gui.experimentertab.ReadFile@{moa.gui.experimentertab.ReadFile}}
+\doxysubsubsection{\texorpdfstring{getMeasures()}{getMeasures()}}
+{\footnotesize\ttfamily Linked\+List$<$String$>$ moa.\+gui.\+experimentertab.\+Read\+File.\+get\+Measures (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the common measures to all algorithms.
+
+\begin{DoxyReturn}{Returns}
+a Linked\+List with the measures. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmoa_1_1gui_1_1experimentertab_1_1_read_file_a56f3d4b1a8cc9a25dc4f30c616efc562}\label{classmoa_1_1gui_1_1experimentertab_1_1_read_file_a56f3d4b1a8cc9a25dc4f30c616efc562}} 
+\index{moa.gui.experimentertab.ReadFile@{moa.gui.experimentertab.ReadFile}!getPath@{getPath}}
+\index{getPath@{getPath}!moa.gui.experimentertab.ReadFile@{moa.gui.experimentertab.ReadFile}}
+\doxysubsubsection{\texorpdfstring{getPath()}{getPath()}}
+{\footnotesize\ttfamily String moa.\+gui.\+experimentertab.\+Read\+File.\+get\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the path of the results.
+
+\begin{DoxyReturn}{Returns}
+the path of the results. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmoa_1_1gui_1_1experimentertab_1_1_read_file_ad002bd3bd798d9b0aa4fc0a324cc076c}\label{classmoa_1_1gui_1_1experimentertab_1_1_read_file_ad002bd3bd798d9b0aa4fc0a324cc076c}} 
+\index{moa.gui.experimentertab.ReadFile@{moa.gui.experimentertab.ReadFile}!getStream@{getStream}}
+\index{getStream@{getStream}!moa.gui.experimentertab.ReadFile@{moa.gui.experimentertab.ReadFile}}
+\doxysubsubsection{\texorpdfstring{getStream()}{getStream()}}
+{\footnotesize\ttfamily Linked\+List$<$String$>$ moa.\+gui.\+experimentertab.\+Read\+File.\+get\+Stream (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the name of the streams.
+
+\begin{DoxyReturn}{Returns}
+a Linked\+List with the streams. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmoa_1_1gui_1_1experimentertab_1_1_read_file_a91713722baa9d2fffc69cadb4651b090}\label{classmoa_1_1gui_1_1experimentertab_1_1_read_file_a91713722baa9d2fffc69cadb4651b090}} 
+\index{moa.gui.experimentertab.ReadFile@{moa.gui.experimentertab.ReadFile}!processFiles@{processFiles}}
+\index{processFiles@{processFiles}!moa.gui.experimentertab.ReadFile@{moa.gui.experimentertab.ReadFile}}
+\doxysubsubsection{\texorpdfstring{processFiles()}{processFiles()}}
+{\footnotesize\ttfamily String moa.\+gui.\+experimentertab.\+Read\+File.\+process\+Files (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Processes the results files of the algorithms in each directory.
+
+\begin{DoxyReturn}{Returns}
+If all the files were processed correctly it returns an empty string, else return the problem file. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmoa_1_1gui_1_1experimentertab_1_1_read_file_a9267629e685a34d99f641a5c64a7f8e5}\label{classmoa_1_1gui_1_1experimentertab_1_1_read_file_a9267629e685a34d99f641a5c64a7f8e5}} 
+\index{moa.gui.experimentertab.ReadFile@{moa.gui.experimentertab.ReadFile}!readCSV@{readCSV}}
+\index{readCSV@{readCSV}!moa.gui.experimentertab.ReadFile@{moa.gui.experimentertab.ReadFile}}
+\doxysubsubsection{\texorpdfstring{readCSV()}{readCSV()}}
+{\footnotesize\ttfamily static Array\+List$<$String\mbox{[}$\,$\mbox{]}$>$ moa.\+gui.\+experimentertab.\+Read\+File.\+read\+C\+SV (\begin{DoxyParamCaption}\item[{String}]{path }\end{DoxyParamCaption}) throws Unsupported\+Encoding\+Exception, File\+Not\+Found\+Exception, I\+O\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+Allow to read a csv file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Unsupported\+Encoding\+Exception} & \\
+\hline
+{\em File\+Not\+Found\+Exception} & \\
+\hline
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classmoa_1_1gui_1_1experimentertab_1_1_read_file_abd343b5f65a781a4ba7613ec22835a1a}\label{classmoa_1_1gui_1_1experimentertab_1_1_read_file_abd343b5f65a781a4ba7613ec22835a1a}} 
+\index{moa.gui.experimentertab.ReadFile@{moa.gui.experimentertab.ReadFile}!setPath@{setPath}}
+\index{setPath@{setPath}!moa.gui.experimentertab.ReadFile@{moa.gui.experimentertab.ReadFile}}
+\doxysubsubsection{\texorpdfstring{setPath()}{setPath()}}
+{\footnotesize\ttfamily void moa.\+gui.\+experimentertab.\+Read\+File.\+set\+Path (\begin{DoxyParamCaption}\item[{String}]{path }\end{DoxyParamCaption})}
+
+Sets the directory of the results file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/gui/experimentertab/Read\+File.\+java\end{DoxyCompactItemize}

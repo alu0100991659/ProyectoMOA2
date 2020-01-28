@@ -1,0 +1,81 @@
+\hypertarget{classmoa_1_1classifiers_1_1core_1_1_attribute_split_suggestion}{}\doxysection{moa.\+classifiers.\+core.\+Attribute\+Split\+Suggestion Class Reference}
+\label{classmoa_1_1classifiers_1_1core_1_1_attribute_split_suggestion}\index{moa.classifiers.core.AttributeSplitSuggestion@{moa.classifiers.core.AttributeSplitSuggestion}}
+
+
+Inheritance diagram for moa.\+classifiers.\+core.\+Attribute\+Split\+Suggestion\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+classifiers.\+core.\+Attribute\+Split\+Suggestion\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1_attribute_split_suggestion_af0f4af95c8ae3a44eb3ef7067ab83d9f}\label{classmoa_1_1classifiers_1_1core_1_1_attribute_split_suggestion_af0f4af95c8ae3a44eb3ef7067ab83d9f}} 
+{\bfseries Attribute\+Split\+Suggestion} (\mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1conditionaltests_1_1_instance_conditional_test}{Instance\+Conditional\+Test}} split\+Test, double\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} resulting\+Class\+Distributions, double merit)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1_attribute_split_suggestion_afcced50eef2981b7a7a30e2a40086e41}\label{classmoa_1_1classifiers_1_1core_1_1_attribute_split_suggestion_afcced50eef2981b7a7a30e2a40086e41}} 
+int {\bfseries num\+Splits} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1_attribute_split_suggestion_ae715b4c66ed0aa5f3d05e5a101c93a61}\label{classmoa_1_1classifiers_1_1core_1_1_attribute_split_suggestion_ae715b4c66ed0aa5f3d05e5a101c93a61}} 
+double\mbox{[}$\,$\mbox{]} {\bfseries resulting\+Class\+Distribution\+From\+Split} (int split\+Index)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1_attribute_split_suggestion_a07a7a408fbb6607ba8da99a91da55914}\label{classmoa_1_1classifiers_1_1core_1_1_attribute_split_suggestion_a07a7a408fbb6607ba8da99a91da55914}} 
+int {\bfseries compare\+To} (\mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1_attribute_split_suggestion}{Attribute\+Split\+Suggestion}} comp)
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1_attribute_split_suggestion_a854962b3de85f34a024fb845801ab816}{get\+Description}} (String\+Builder sb, int indent)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1_attribute_split_suggestion_a5f3ae3a12fdc128e8a86a1fa2ddafffc}\label{classmoa_1_1classifiers_1_1core_1_1_attribute_split_suggestion_a5f3ae3a12fdc128e8a86a1fa2ddafffc}} 
+\mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1conditionaltests_1_1_instance_conditional_test}{Instance\+Conditional\+Test}} {\bfseries split\+Test}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1_attribute_split_suggestion_a41937e1290dfc6a77bf74a4147f77332}\label{classmoa_1_1classifiers_1_1core_1_1_attribute_split_suggestion_a41937e1290dfc6a77bf74a4147f77332}} 
+double\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} {\bfseries resulting\+Class\+Distributions}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1_attribute_split_suggestion_a4ca19b144787ff01d446355dcb95fcdc}\label{classmoa_1_1classifiers_1_1core_1_1_attribute_split_suggestion_a4ca19b144787ff01d446355dcb95fcdc}} 
+double {\bfseries merit}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Class for computing attribute split suggestions given a split test.
+
+\begin{DoxyAuthor}{Author}
+Richard Kirkby (\href{mailto:rkirkby@cs.waikato.ac.nz}{\texttt{ rkirkby@cs.\+waikato.\+ac.\+nz}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+7 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1_attribute_split_suggestion_a854962b3de85f34a024fb845801ab816}\label{classmoa_1_1classifiers_1_1core_1_1_attribute_split_suggestion_a854962b3de85f34a024fb845801ab816}} 
+\index{moa.classifiers.core.AttributeSplitSuggestion@{moa.classifiers.core.AttributeSplitSuggestion}!getDescription@{getDescription}}
+\index{getDescription@{getDescription}!moa.classifiers.core.AttributeSplitSuggestion@{moa.classifiers.core.AttributeSplitSuggestion}}
+\doxysubsubsection{\texorpdfstring{getDescription()}{getDescription()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+core.\+Attribute\+Split\+Suggestion.\+get\+Description (\begin{DoxyParamCaption}\item[{String\+Builder}]{sb,  }\item[{int}]{indent }\end{DoxyParamCaption})}
+
+Returns a string representation of this object. Used in {\ttfamily \mbox{\hyperlink{classmoa_1_1_abstract_m_o_a_object_ac686fd3b07c734cf21f1894376fe402d}{Abstract\+M\+O\+A\+Object.\+to\+String}}} to give a string representation of the object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sb} & the stringbuilder to add the description \\
+\hline
+{\em indent} & the number of characters to indent \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1_m_o_a_object_afdaf5098f1fe6c852018ce64c28e17f5}{moa.\+M\+O\+A\+Object}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/classifiers/core/Attribute\+Split\+Suggestion.\+java\end{DoxyCompactItemize}

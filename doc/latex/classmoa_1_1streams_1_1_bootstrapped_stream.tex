@@ -1,0 +1,140 @@
+\hypertarget{classmoa_1_1streams_1_1_bootstrapped_stream}{}\doxysection{moa.\+streams.\+Bootstrapped\+Stream Class Reference}
+\label{classmoa_1_1streams_1_1_bootstrapped_stream}\index{moa.streams.BootstrappedStream@{moa.streams.BootstrappedStream}}
+
+
+Inheritance diagram for moa.\+streams.\+Bootstrapped\+Stream\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+streams.\+Bootstrapped\+Stream\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_bootstrapped_stream_a734bfcac60783c47669e0a9c30a48509}\label{classmoa_1_1streams_1_1_bootstrapped_stream_a734bfcac60783c47669e0a9c30a48509}} 
+\mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instances_header}{Instances\+Header}} {\bfseries get\+Header} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_bootstrapped_stream_a41660b5f6e5b49e42214a394d51f5b3d}\label{classmoa_1_1streams_1_1_bootstrapped_stream_a41660b5f6e5b49e42214a394d51f5b3d}} 
+long {\bfseries estimated\+Remaining\+Instances} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_bootstrapped_stream_ad92db5e2d33f153ffba26e1a754fb398}\label{classmoa_1_1streams_1_1_bootstrapped_stream_ad92db5e2d33f153ffba26e1a754fb398}} 
+boolean {\bfseries has\+More\+Instances} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_bootstrapped_stream_a953060011a5186521e4cb5c4c27966fb}\label{classmoa_1_1streams_1_1_bootstrapped_stream_a953060011a5186521e4cb5c4c27966fb}} 
+\mbox{\hyperlink{interfacemoa_1_1core_1_1_example}{Example}}$<$ \mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} $>$ {\bfseries next\+Instance} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_bootstrapped_stream_aa8a9e832970abe7c210233caee5dfa27}\label{classmoa_1_1streams_1_1_bootstrapped_stream_aa8a9e832970abe7c210233caee5dfa27}} 
+boolean {\bfseries is\+Restartable} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_bootstrapped_stream_ace076052ce151a9299e1590deee0cdb7}\label{classmoa_1_1streams_1_1_bootstrapped_stream_ace076052ce151a9299e1590deee0cdb7}} 
+void {\bfseries restart} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1streams_1_1_bootstrapped_stream_a253be654c60bf53ff85f6b71ae69427c}{get\+Description}} (String\+Builder sb, int indent)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} {\bfseries stream\+Option}
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_bootstrapped_stream_a4e6204d395fcbaf8e607de8b20101405}\label{classmoa_1_1streams_1_1_bootstrapped_stream_a4e6204d395fcbaf8e607de8b20101405}} 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries random\+Seed\+Option} = new \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}}(\char`\"{}random\+Seed\char`\"{},\textquotesingle{}r\textquotesingle{},\char`\"{}Seed for the random generator\char`\"{},1)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classmoa_1_1streams_1_1_bootstrapped_stream_a16953b8ee71a4d6b1c586263b131ccbf}{prepare\+For\+Use\+Impl}} (\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}} monitor, \mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}} repository)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_bootstrapped_stream_ad2d4af69591627f41bad9c2928654726}\label{classmoa_1_1streams_1_1_bootstrapped_stream_ad2d4af69591627f41bad9c2928654726}} 
+\mbox{\hyperlink{interfacemoa_1_1streams_1_1_multi_target_instance_stream}{Multi\+Target\+Instance\+Stream}} {\bfseries original\+Stream}
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_bootstrapped_stream_aab8abf4a16b38702c1abaa96d61b3bb9}\label{classmoa_1_1streams_1_1_bootstrapped_stream_aab8abf4a16b38702c1abaa96d61b3bb9}} 
+int {\bfseries waiting\+To\+Send}
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_bootstrapped_stream_a80e98afe69f01f01f90ad801f87b0930}\label{classmoa_1_1streams_1_1_bootstrapped_stream_a80e98afe69f01f01f90ad801f87b0930}} 
+\mbox{\hyperlink{interfacemoa_1_1core_1_1_example}{Example}}$<$ \mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} $>$ {\bfseries queued\+Instance}
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_bootstrapped_stream_aa8a82915d901c4a7a3829a9f03ae610b}\label{classmoa_1_1streams_1_1_bootstrapped_stream_aa8a82915d901c4a7a3829a9f03ae610b}} 
+Random {\bfseries random\+Generator}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Bootstrapped Stream
+
+\begin{DoxyAuthor}{Author}
+Joao Duarte 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+1
+\end{DoxyParagraph}
+$\ast$
+
+Bootstraps a data stream using the poisson distribution 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_bootstrapped_stream_a253be654c60bf53ff85f6b71ae69427c}\label{classmoa_1_1streams_1_1_bootstrapped_stream_a253be654c60bf53ff85f6b71ae69427c}} 
+\index{moa.streams.BootstrappedStream@{moa.streams.BootstrappedStream}!getDescription@{getDescription}}
+\index{getDescription@{getDescription}!moa.streams.BootstrappedStream@{moa.streams.BootstrappedStream}}
+\doxysubsubsection{\texorpdfstring{getDescription()}{getDescription()}}
+{\footnotesize\ttfamily void moa.\+streams.\+Bootstrapped\+Stream.\+get\+Description (\begin{DoxyParamCaption}\item[{String\+Builder}]{sb,  }\item[{int}]{indent }\end{DoxyParamCaption})}
+
+Returns a string representation of this object. Used in {\ttfamily \mbox{\hyperlink{classmoa_1_1_abstract_m_o_a_object_ac686fd3b07c734cf21f1894376fe402d}{Abstract\+M\+O\+A\+Object.\+to\+String}}} to give a string representation of the object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sb} & the stringbuilder to add the description \\
+\hline
+{\em indent} & the number of characters to indent \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1_m_o_a_object_afdaf5098f1fe6c852018ce64c28e17f5}{moa.\+M\+O\+A\+Object}}.
+
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_bootstrapped_stream_a16953b8ee71a4d6b1c586263b131ccbf}\label{classmoa_1_1streams_1_1_bootstrapped_stream_a16953b8ee71a4d6b1c586263b131ccbf}} 
+\index{moa.streams.BootstrappedStream@{moa.streams.BootstrappedStream}!prepareForUseImpl@{prepareForUseImpl}}
+\index{prepareForUseImpl@{prepareForUseImpl}!moa.streams.BootstrappedStream@{moa.streams.BootstrappedStream}}
+\doxysubsubsection{\texorpdfstring{prepareForUseImpl()}{prepareForUseImpl()}}
+{\footnotesize\ttfamily void moa.\+streams.\+Bootstrapped\+Stream.\+prepare\+For\+Use\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}}}]{monitor,  }\item[{\mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}}}]{repository }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+This method describes the implementation of how to prepare this object for use. All classes that extends this class have to implement {\ttfamily prepare\+For\+Use\+Impl} and not {\ttfamily prepare\+For\+Use} since {\ttfamily prepare\+For\+Use} calls {\ttfamily prepare\+For\+Use\+Impl}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em monitor} & the Task\+Monitor to use \\
+\hline
+{\em repository} & the Object\+Repository to use \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1options_1_1_abstract_option_handler_ad0e9c7d4b0e2b185749f36ce28540efb}{moa.\+options.\+Abstract\+Option\+Handler}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_bootstrapped_stream_a6709d5224fe40de2be76609292279356}\label{classmoa_1_1streams_1_1_bootstrapped_stream_a6709d5224fe40de2be76609292279356}} 
+\index{moa.streams.BootstrappedStream@{moa.streams.BootstrappedStream}!streamOption@{streamOption}}
+\index{streamOption@{streamOption}!moa.streams.BootstrappedStream@{moa.streams.BootstrappedStream}}
+\doxysubsubsection{\texorpdfstring{streamOption}{streamOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} moa.\+streams.\+Bootstrapped\+Stream.\+stream\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} ClassOption(\textcolor{stringliteral}{"stream"}, \textcolor{charliteral}{'s'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Stream to filter."}, MultiTargetInstanceStream.class,}
+\DoxyCodeLine{            MultiTargetArffFileStream.class.getName())}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/streams/Bootstrapped\+Stream.\+java\end{DoxyCompactItemize}

@@ -1,0 +1,55 @@
+digraph "moa.gui.visualization.DataPoint"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="moa.gui.visualization.Data\lPoint",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="com.yahoo.labs.samoa.instances.\lDenseInstance",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_dense_instance.html",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="com.yahoo.labs.samoa.instances.\lInstanceImpl",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance_impl.html",tooltip=" "];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="com.yahoo.labs.samoa.instances.\lMultiLabelInstance",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_multi_label_instance.html",tooltip=" "];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="com.yahoo.labs.samoa.instances.\lInstance",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance.html",tooltip=" "];
+  Node6 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Serializable",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node7 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" instanceHeader" ,fontname="Helvetica"];
+  Node7 [label="com.yahoo.labs.samoa.instances.\lInstancesHeader",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instances_header.html",tooltip=" "];
+  Node8 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="com.yahoo.labs.samoa.instances.\lInstances",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instances.html",tooltip=" "];
+  Node6 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 -> Node8 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" arff" ,fontname="Helvetica"];
+  Node9 [label="com.yahoo.labs.samoa.instances.\lArffLoader",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_arff_loader.html",tooltip=" "];
+  Node7 -> Node9 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" streamHeader" ,fontname="Helvetica"];
+  Node10 -> Node9 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" auxAttributes" ,fontname="Helvetica"];
+  Node10 [label="List\< com.yahoo.labs.samoa.instances.\lAttribute \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node11 -> Node9 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" instanceInformation" ,fontname="Helvetica"];
+  Node11 [label="com.yahoo.labs.samoa.instances.\lInstanceInformation",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance_information.html",tooltip=" "];
+  Node6 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 -> Node11 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" attributesInformation" ,fontname="Helvetica"];
+  Node12 [label="com.yahoo.labs.samoa.instances.\lAttributesInformation",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_attributes_information.html",tooltip=" "];
+  Node6 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 -> Node12 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" attributes\ndefaultNumericAttribute" ,fontname="Helvetica"];
+  Node13 [label="com.yahoo.labs.samoa.instances.\lAttribute",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_attribute.html",tooltip=" "];
+  Node6 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 -> Node13 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" attributeValues" ,fontname="Helvetica"];
+  Node14 [label="List\< String \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node15 -> Node13 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_DateFormat" ,fontname="Helvetica"];
+  Node15 [label="SimpleDateFormat",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node16 -> Node11 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" range" ,fontname="Helvetica"];
+  Node16 [label="com.yahoo.labs.samoa.instances.\lRange",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_range.html",tooltip=" "];
+  Node6 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 -> Node9 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" range" ,fontname="Helvetica"];
+  Node17 -> Node9 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" streamTokenizer" ,fontname="Helvetica"];
+  Node17 [label="StreamTokenizer",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node18 -> Node8 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" instances" ,fontname="Helvetica"];
+  Node18 [label="List\< com.yahoo.labs.samoa.instances.\lInstance \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node11 -> Node8 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" instanceInformation" ,fontname="Helvetica"];
+  Node19 -> Node8 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" hsAttributesIndices" ,fontname="Helvetica"];
+  Node19 [label="HashMap\< String, Integer \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node20 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" instanceData" ,fontname="Helvetica"];
+  Node20 [label="com.yahoo.labs.samoa.instances.\lInstanceData",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance_data.html",tooltip=" "];
+  Node6 -> Node20 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

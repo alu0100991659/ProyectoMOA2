@@ -1,0 +1,158 @@
+\hypertarget{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_adaptive_tree}{}\doxysection{moa.\+classifiers.\+trees.\+Hoeffding\+Adaptive\+Tree Class Reference}
+\label{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_adaptive_tree}\index{moa.classifiers.trees.HoeffdingAdaptiveTree@{moa.classifiers.trees.HoeffdingAdaptiveTree}}
+
+
+Inheritance diagram for moa.\+classifiers.\+trees.\+Hoeffding\+Adaptive\+Tree\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+classifiers.\+trees.\+Hoeffding\+Adaptive\+Tree\+:
+% FIG 1
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Ada\+Learning\+Node}
+\item 
+class {\bfseries Ada\+Split\+Node}
+\item 
+interface \mbox{\hyperlink{interfacemoa_1_1classifiers_1_1trees_1_1_hoeffding_adaptive_tree_1_1_new_node}{New\+Node}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_adaptive_tree_a4fad82d8b94be9e548ba860dca066703}{get\+Purpose\+String}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_adaptive_tree_aaac870e6ca79dd2d71d2d019f06a1080}{train\+On\+Instance\+Impl}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_adaptive_tree_a54a83cf8dfe4c853c955bde7ccb76d3f}\label{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_adaptive_tree_a54a83cf8dfe4c853c955bde7ccb76d3f}} 
+Found\+Node\mbox{[}$\,$\mbox{]} {\bfseries filter\+Instance\+To\+Leaves} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst, Split\+Node parent, int parent\+Branch, boolean update\+Splitter\+Counts)
+\item 
+double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_adaptive_tree_afef2fb53920a5863df9fa8c9032e9cf6}{get\+Votes\+For\+Instance}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst)
+\item 
+\mbox{\hyperlink{classmoa_1_1capabilities_1_1_immutable_capabilities}{Immutable\+Capabilities}} \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_adaptive_tree_af62596ab03402be9de840e36560668c3}{define\+Immutable\+Capabilities}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_adaptive_tree_a618d1b368bd48352c185c3640c72972f}\label{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_adaptive_tree_a618d1b368bd48352c185c3640c72972f}} 
+Learning\+Node {\bfseries new\+Learning\+Node} (double\mbox{[}$\,$\mbox{]} initial\+Class\+Observations)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_adaptive_tree_aa62e3c9617d5812fcaf4e3c9ec6852cf}\label{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_adaptive_tree_aa62e3c9617d5812fcaf4e3c9ec6852cf}} 
+Split\+Node {\bfseries new\+Split\+Node} (\mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1conditionaltests_1_1_instance_conditional_test}{Instance\+Conditional\+Test}} split\+Test, double\mbox{[}$\,$\mbox{]} class\+Observations, int size)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_adaptive_tree_a2afa5d53edfd2bc76ebbaf49641c1800}\label{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_adaptive_tree_a2afa5d53edfd2bc76ebbaf49641c1800}} 
+Split\+Node {\bfseries new\+Split\+Node} (\mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1conditionaltests_1_1_instance_conditional_test}{Instance\+Conditional\+Test}} split\+Test, double\mbox{[}$\,$\mbox{]} class\+Observations)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_adaptive_tree_aca5297f31c0be545c84c01a994b074e6}\label{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_adaptive_tree_aca5297f31c0be545c84c01a994b074e6}} 
+int {\bfseries alternate\+Trees}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_adaptive_tree_ac3ab20953d9528172da2c09c8e3774c1}\label{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_adaptive_tree_ac3ab20953d9528172da2c09c8e3774c1}} 
+int {\bfseries pruned\+Alternate\+Trees}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_adaptive_tree_a23ea5d56bca7210dfc4fe934c62d89e1}\label{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_adaptive_tree_a23ea5d56bca7210dfc4fe934c62d89e1}} 
+int {\bfseries switched\+Alternate\+Trees}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Hoeffding Adaptive Tree for evolving data streams.
+
+This adaptive Hoeffding Tree uses A\+D\+W\+IN to monitor performance of branches on the tree and to replace them with new branches when their accuracy decreases if the new branches are more accurate.
+
+See details in\+:
+
+Adaptive Learning from Evolving Data Streams. Albert Bifet, Ricard Gavaldà. I\+DA 2009
+
+
+\begin{DoxyItemize}
+\item Same parameters as {\ttfamily Hoeffding\+Tree\+N\+B\+Adaptive} 
+\item -\/l \+: Leaf prediction to use\+: Majority\+Class (MC), Naive Bayes (NB) or Naive\+Bayes adaptive (N\+B\+Adaptive). 
+\end{DoxyItemize}
+
+\begin{DoxyAuthor}{Author}
+Albert Bifet (abifet at cs dot waikato dot ac dot nz) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+7 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_adaptive_tree_af62596ab03402be9de840e36560668c3}\label{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_adaptive_tree_af62596ab03402be9de840e36560668c3}} 
+\index{moa.classifiers.trees.HoeffdingAdaptiveTree@{moa.classifiers.trees.HoeffdingAdaptiveTree}!defineImmutableCapabilities@{defineImmutableCapabilities}}
+\index{defineImmutableCapabilities@{defineImmutableCapabilities}!moa.classifiers.trees.HoeffdingAdaptiveTree@{moa.classifiers.trees.HoeffdingAdaptiveTree}}
+\doxysubsubsection{\texorpdfstring{defineImmutableCapabilities()}{defineImmutableCapabilities()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1capabilities_1_1_immutable_capabilities}{Immutable\+Capabilities}} moa.\+classifiers.\+trees.\+Hoeffding\+Adaptive\+Tree.\+define\+Immutable\+Capabilities (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Defines the set of capabilities the object has. Should be overridden if the object\textquotesingle{}s capabilities do not change.
+
+\begin{DoxyReturn}{Returns}
+The capabilities of the object. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_tree_a13869e69dfa9a5db1067a14a8ea8c525}{moa.\+classifiers.\+trees.\+Hoeffding\+Tree}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_adaptive_tree_a4fad82d8b94be9e548ba860dca066703}\label{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_adaptive_tree_a4fad82d8b94be9e548ba860dca066703}} 
+\index{moa.classifiers.trees.HoeffdingAdaptiveTree@{moa.classifiers.trees.HoeffdingAdaptiveTree}!getPurposeString@{getPurposeString}}
+\index{getPurposeString@{getPurposeString}!moa.classifiers.trees.HoeffdingAdaptiveTree@{moa.classifiers.trees.HoeffdingAdaptiveTree}}
+\doxysubsubsection{\texorpdfstring{getPurposeString()}{getPurposeString()}}
+{\footnotesize\ttfamily String moa.\+classifiers.\+trees.\+Hoeffding\+Adaptive\+Tree.\+get\+Purpose\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Options to handle Dictionary with option texts and objects 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_tree_a10408b9aa477cd7e98a4497d05b85a4d}{moa.\+classifiers.\+trees.\+Hoeffding\+Tree}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_adaptive_tree_afef2fb53920a5863df9fa8c9032e9cf6}\label{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_adaptive_tree_afef2fb53920a5863df9fa8c9032e9cf6}} 
+\index{moa.classifiers.trees.HoeffdingAdaptiveTree@{moa.classifiers.trees.HoeffdingAdaptiveTree}!getVotesForInstance@{getVotesForInstance}}
+\index{getVotesForInstance@{getVotesForInstance}!moa.classifiers.trees.HoeffdingAdaptiveTree@{moa.classifiers.trees.HoeffdingAdaptiveTree}}
+\doxysubsubsection{\texorpdfstring{getVotesForInstance()}{getVotesForInstance()}}
+{\footnotesize\ttfamily double \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+trees.\+Hoeffding\+Adaptive\+Tree.\+get\+Votes\+For\+Instance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{inst }\end{DoxyParamCaption})}
+
+Predicts the class memberships for a given instance. If an instance is unclassified, the returned array elements must be all zero.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & the instance to be classified \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an array containing the estimated membership probabilities of the test instance in each class 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_tree_a2bcda84a5c9a13d9d8baf06246a25354}{moa.\+classifiers.\+trees.\+Hoeffding\+Tree}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_adaptive_tree_aaac870e6ca79dd2d71d2d019f06a1080}\label{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_adaptive_tree_aaac870e6ca79dd2d71d2d019f06a1080}} 
+\index{moa.classifiers.trees.HoeffdingAdaptiveTree@{moa.classifiers.trees.HoeffdingAdaptiveTree}!trainOnInstanceImpl@{trainOnInstanceImpl}}
+\index{trainOnInstanceImpl@{trainOnInstanceImpl}!moa.classifiers.trees.HoeffdingAdaptiveTree@{moa.classifiers.trees.HoeffdingAdaptiveTree}}
+\doxysubsubsection{\texorpdfstring{trainOnInstanceImpl()}{trainOnInstanceImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+trees.\+Hoeffding\+Adaptive\+Tree.\+train\+On\+Instance\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{inst }\end{DoxyParamCaption})}
+
+Trains this classifier incrementally using the given instance.~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & the instance to be used for training \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_tree_ab13e136d761801002a42fa109b994f28}{moa.\+classifiers.\+trees.\+Hoeffding\+Tree}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/classifiers/trees/Hoeffding\+Adaptive\+Tree.\+java\end{DoxyCompactItemize}

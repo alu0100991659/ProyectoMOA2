@@ -1,0 +1,127 @@
+\hypertarget{classmoa_1_1tasks_1_1_measure_stream_speed}{}\doxysection{moa.\+tasks.\+Measure\+Stream\+Speed Class Reference}
+\label{classmoa_1_1tasks_1_1_measure_stream_speed}\index{moa.tasks.MeasureStreamSpeed@{moa.tasks.MeasureStreamSpeed}}
+
+
+Inheritance diagram for moa.\+tasks.\+Measure\+Stream\+Speed\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+tasks.\+Measure\+Stream\+Speed\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classmoa_1_1tasks_1_1_measure_stream_speed_af1adcca672cdf7d0156f5b3461b3a47c}{get\+Purpose\+String}} ()
+\item 
+Class$<$?$>$ \mbox{\hyperlink{classmoa_1_1tasks_1_1_measure_stream_speed_a2f534057f1060a5b568d219e2fa9565f}{get\+Task\+Result\+Type}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} {\bfseries stream\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries generate\+Size\+Option}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Object \mbox{\hyperlink{classmoa_1_1tasks_1_1_measure_stream_speed_a4a6c07d0fd25e948910b8b42df26f00a}{do\+Main\+Task}} (\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}} monitor, \mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}} repository)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task}{Task}} for measuring the speed of the stream.
+
+\begin{DoxyAuthor}{Author}
+Richard Kirkby (\href{mailto:rkirkby@cs.waikato.ac.nz}{\texttt{ rkirkby@cs.\+waikato.\+ac.\+nz}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+7 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_measure_stream_speed_a4a6c07d0fd25e948910b8b42df26f00a}\label{classmoa_1_1tasks_1_1_measure_stream_speed_a4a6c07d0fd25e948910b8b42df26f00a}} 
+\index{moa.tasks.MeasureStreamSpeed@{moa.tasks.MeasureStreamSpeed}!doMainTask@{doMainTask}}
+\index{doMainTask@{doMainTask}!moa.tasks.MeasureStreamSpeed@{moa.tasks.MeasureStreamSpeed}}
+\doxysubsubsection{\texorpdfstring{doMainTask()}{doMainTask()}}
+{\footnotesize\ttfamily Object moa.\+tasks.\+Measure\+Stream\+Speed.\+do\+Main\+Task (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}}}]{monitor,  }\item[{\mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}}}]{repository }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+This method performs this task. {\ttfamily \mbox{\hyperlink{classmoa_1_1tasks_1_1_abstract_task}{Abstract\+Task}}} implements {\ttfamily do\+Task}, that uses {\ttfamily do\+Task\+Impl}. {\ttfamily \mbox{\hyperlink{classmoa_1_1tasks_1_1_main_task}{Main\+Task}}} implements {\ttfamily do\+Task\+Impl} using {\ttfamily do\+Main\+Task} so its extensions only need to implement {\ttfamily do\+Main\+Task}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em monitor} & the \mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}} to use \\
+\hline
+{\em repository} & the Object\+Repository to use \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an object with the result of this task 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1tasks_1_1_main_task_afab790976c2ace902aa1e2f780442788}{moa.\+tasks.\+Main\+Task}}.
+
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_measure_stream_speed_af1adcca672cdf7d0156f5b3461b3a47c}\label{classmoa_1_1tasks_1_1_measure_stream_speed_af1adcca672cdf7d0156f5b3461b3a47c}} 
+\index{moa.tasks.MeasureStreamSpeed@{moa.tasks.MeasureStreamSpeed}!getPurposeString@{getPurposeString}}
+\index{getPurposeString@{getPurposeString}!moa.tasks.MeasureStreamSpeed@{moa.tasks.MeasureStreamSpeed}}
+\doxysubsubsection{\texorpdfstring{getPurposeString()}{getPurposeString()}}
+{\footnotesize\ttfamily String moa.\+tasks.\+Measure\+Stream\+Speed.\+get\+Purpose\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Options to handle Dictionary with option texts and objects 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1options_1_1_abstract_option_handler_abc8df69aea27ef85060557a9e918b2ca}{moa.\+options.\+Abstract\+Option\+Handler}}.
+
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_measure_stream_speed_a2f534057f1060a5b568d219e2fa9565f}\label{classmoa_1_1tasks_1_1_measure_stream_speed_a2f534057f1060a5b568d219e2fa9565f}} 
+\index{moa.tasks.MeasureStreamSpeed@{moa.tasks.MeasureStreamSpeed}!getTaskResultType@{getTaskResultType}}
+\index{getTaskResultType@{getTaskResultType}!moa.tasks.MeasureStreamSpeed@{moa.tasks.MeasureStreamSpeed}}
+\doxysubsubsection{\texorpdfstring{getTaskResultType()}{getTaskResultType()}}
+{\footnotesize\ttfamily Class$<$?$>$ moa.\+tasks.\+Measure\+Stream\+Speed.\+get\+Task\+Result\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the result type of this task. Tasks can return Learning\+Curve, Learning\+Evaluation, Classifier, String, Instances..
+
+\begin{DoxyReturn}{Returns}
+a class object of the result of this task 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_a568100cd931416820d1bcc81032301f6}{moa.\+tasks.\+Task}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_measure_stream_speed_a8be429523397840060dbf11cea661612}\label{classmoa_1_1tasks_1_1_measure_stream_speed_a8be429523397840060dbf11cea661612}} 
+\index{moa.tasks.MeasureStreamSpeed@{moa.tasks.MeasureStreamSpeed}!generateSizeOption@{generateSizeOption}}
+\index{generateSizeOption@{generateSizeOption}!moa.tasks.MeasureStreamSpeed@{moa.tasks.MeasureStreamSpeed}}
+\doxysubsubsection{\texorpdfstring{generateSizeOption}{generateSizeOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+tasks.\+Measure\+Stream\+Speed.\+generate\+Size\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(\textcolor{stringliteral}{"generateSize"}, \textcolor{charliteral}{'g'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Number of examples."}, 10000000, 0, Integer.MAX\_VALUE)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_measure_stream_speed_a0b10822c3319a4ed8dddb714496c1818}\label{classmoa_1_1tasks_1_1_measure_stream_speed_a0b10822c3319a4ed8dddb714496c1818}} 
+\index{moa.tasks.MeasureStreamSpeed@{moa.tasks.MeasureStreamSpeed}!streamOption@{streamOption}}
+\index{streamOption@{streamOption}!moa.tasks.MeasureStreamSpeed@{moa.tasks.MeasureStreamSpeed}}
+\doxysubsubsection{\texorpdfstring{streamOption}{streamOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} moa.\+tasks.\+Measure\+Stream\+Speed.\+stream\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} ClassOption(\textcolor{stringliteral}{"stream"}, \textcolor{charliteral}{'s'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Stream to measure."}, ExampleStream.class,}
+\DoxyCodeLine{            \textcolor{stringliteral}{"generators.RandomTreeGenerator"})}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/tasks/Measure\+Stream\+Speed.\+java\end{DoxyCompactItemize}

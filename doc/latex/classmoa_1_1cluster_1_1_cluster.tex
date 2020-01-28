@@ -1,0 +1,152 @@
+\hypertarget{classmoa_1_1cluster_1_1_cluster}{}\doxysection{moa.\+cluster.\+Cluster Class Reference}
+\label{classmoa_1_1cluster_1_1_cluster}\index{moa.cluster.Cluster@{moa.cluster.Cluster}}
+
+
+Inheritance diagram for moa.\+cluster.\+Cluster\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+cluster.\+Cluster\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1cluster_1_1_cluster_a509d165f6594aa388d878c77684e0870}{get\+Center}} ()
+\item 
+abstract double \mbox{\hyperlink{classmoa_1_1cluster_1_1_cluster_aeb8c006a27e4c642b7c735a8a8d1dd28}{get\+Weight}} ()
+\item 
+abstract double \mbox{\hyperlink{classmoa_1_1cluster_1_1_cluster_abf05802928ccf0ebe145e00c3568944b}{get\+Inclusion\+Probability}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} instance)
+\item 
+void \mbox{\hyperlink{classmoa_1_1cluster_1_1_cluster_ae5dc79756afc845860bfab7d0b6136f0}{get\+Description}} (String\+Builder sb, int i)
+\item 
+\mbox{\Hypertarget{classmoa_1_1cluster_1_1_cluster_ab2150fa98345a6891ed070c12f9ff809}\label{classmoa_1_1cluster_1_1_cluster_ab2150fa98345a6891ed070c12f9ff809}} 
+void {\bfseries set\+Id} (double id)
+\item 
+\mbox{\Hypertarget{classmoa_1_1cluster_1_1_cluster_aec009f106ed5a6940f956a07af28ffd2}\label{classmoa_1_1cluster_1_1_cluster_aec009f106ed5a6940f956a07af28ffd2}} 
+double {\bfseries get\+Id} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1cluster_1_1_cluster_a435299076132c217b06fa9851a2276aa}\label{classmoa_1_1cluster_1_1_cluster_a435299076132c217b06fa9851a2276aa}} 
+boolean {\bfseries is\+Ground\+Truth} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1cluster_1_1_cluster_ada31184ce2ef51b9563b4e2339834768}\label{classmoa_1_1cluster_1_1_cluster_ada31184ce2ef51b9563b4e2339834768}} 
+void {\bfseries set\+Ground\+Truth} (double truth)
+\item 
+\mbox{\Hypertarget{classmoa_1_1cluster_1_1_cluster_a8be46287f76d14e83567381c23581d3b}\label{classmoa_1_1cluster_1_1_cluster_a8be46287f76d14e83567381c23581d3b}} 
+double {\bfseries get\+Ground\+Truth} ()
+\item 
+abstract \mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} \mbox{\hyperlink{classmoa_1_1cluster_1_1_cluster_ab2e88cce0d9e1411358ac37cc26ff877}{sample}} (Random random)
+\item 
+\mbox{\Hypertarget{classmoa_1_1cluster_1_1_cluster_a1f98a5ae84ed5963a0fccc9c19deae2a}\label{classmoa_1_1cluster_1_1_cluster_a1f98a5ae84ed5963a0fccc9c19deae2a}} 
+void {\bfseries set\+Measure\+Value} (String measure\+Key, String value)
+\item 
+\mbox{\Hypertarget{classmoa_1_1cluster_1_1_cluster_a8cd27cc85539ea255cb1c877baf6a935}\label{classmoa_1_1cluster_1_1_cluster_a8cd27cc85539ea255cb1c877baf6a935}} 
+void {\bfseries set\+Measure\+Value} (String measure\+Key, double value)
+\item 
+\mbox{\Hypertarget{classmoa_1_1cluster_1_1_cluster_ae91d598b457dd078fc28c032e97e134a}\label{classmoa_1_1cluster_1_1_cluster_ae91d598b457dd078fc28c032e97e134a}} 
+String {\bfseries get\+Measure\+Value} (String measure\+Key)
+\item 
+\mbox{\Hypertarget{classmoa_1_1cluster_1_1_cluster_ab461c134806da6bb9244026d9430f20f}\label{classmoa_1_1cluster_1_1_cluster_ab461c134806da6bb9244026d9430f20f}} 
+String {\bfseries get\+Info} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1cluster_1_1_cluster_a3c19e768fd30570b83ff1e61227110d1}\label{classmoa_1_1cluster_1_1_cluster_a3c19e768fd30570b83ff1e61227110d1}} 
+void {\bfseries get\+Cluster\+Specific\+Info} (Array\+List$<$ String $>$ info\+Title, Array\+List$<$ String $>$ info\+Value)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1cluster_1_1_cluster_a509d165f6594aa388d878c77684e0870}\label{classmoa_1_1cluster_1_1_cluster_a509d165f6594aa388d878c77684e0870}} 
+\index{moa.cluster.Cluster@{moa.cluster.Cluster}!getCenter@{getCenter}}
+\index{getCenter@{getCenter}!moa.cluster.Cluster@{moa.cluster.Cluster}}
+\doxysubsubsection{\texorpdfstring{getCenter()}{getCenter()}}
+{\footnotesize\ttfamily abstract double \mbox{[}$\,$\mbox{]} moa.\+cluster.\+Cluster.\+get\+Center (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+\begin{DoxyReturn}{Returns}
+the center of the cluster 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classmoa_1_1clusterers_1_1clustree_1_1_clus_kernel_a7f902903111565ba68a1c1859f55b5c8}{moa.\+clusterers.\+clustree.\+Clus\+Kernel}}, \mbox{\hyperlink{classmoa_1_1cluster_1_1_sphere_cluster_aefb8b36adf18a65827154d4b617e867d}{moa.\+cluster.\+Sphere\+Cluster}}, \mbox{\hyperlink{classmoa_1_1clusterers_1_1clustream_1_1_clustream_kernel_ac45250efe83745aeb3024e3ec5cc7cfe}{moa.\+clusterers.\+clustream.\+Clustream\+Kernel}}, \mbox{\hyperlink{classmoa_1_1cluster_1_1_c_f_cluster_a069a204c378102769465b0cea5732973}{moa.\+cluster.\+C\+F\+Cluster}}, and \mbox{\hyperlink{classmoa_1_1clusterers_1_1denstream_1_1_micro_cluster_ad460f5938217c2ccb0fca12bc4fab13e}{moa.\+clusterers.\+denstream.\+Micro\+Cluster}}.
+
+\mbox{\Hypertarget{classmoa_1_1cluster_1_1_cluster_ae5dc79756afc845860bfab7d0b6136f0}\label{classmoa_1_1cluster_1_1_cluster_ae5dc79756afc845860bfab7d0b6136f0}} 
+\index{moa.cluster.Cluster@{moa.cluster.Cluster}!getDescription@{getDescription}}
+\index{getDescription@{getDescription}!moa.cluster.Cluster@{moa.cluster.Cluster}}
+\doxysubsubsection{\texorpdfstring{getDescription()}{getDescription()}}
+{\footnotesize\ttfamily void moa.\+cluster.\+Cluster.\+get\+Description (\begin{DoxyParamCaption}\item[{String\+Builder}]{sb,  }\item[{int}]{indent }\end{DoxyParamCaption})}
+
+Returns a string representation of this object. Used in {\ttfamily \mbox{\hyperlink{classmoa_1_1_abstract_m_o_a_object_ac686fd3b07c734cf21f1894376fe402d}{Abstract\+M\+O\+A\+Object.\+to\+String}}} to give a string representation of the object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sb} & the stringbuilder to add the description \\
+\hline
+{\em indent} & the number of characters to indent \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1_m_o_a_object_afdaf5098f1fe6c852018ce64c28e17f5}{moa.\+M\+O\+A\+Object}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classmoa_1_1clusterers_1_1kmeanspm_1_1_clustering_feature_ad758e682033cb32fde584ef2e0075cf5}{moa.\+clusterers.\+kmeanspm.\+Clustering\+Feature}}, and \mbox{\hyperlink{classmoa_1_1clusterers_1_1dstream_1_1_grid_cluster_a06b7155770089310b7ec2e1dd6f4ca28}{moa.\+clusterers.\+dstream.\+Grid\+Cluster}}.
+
+\mbox{\Hypertarget{classmoa_1_1cluster_1_1_cluster_abf05802928ccf0ebe145e00c3568944b}\label{classmoa_1_1cluster_1_1_cluster_abf05802928ccf0ebe145e00c3568944b}} 
+\index{moa.cluster.Cluster@{moa.cluster.Cluster}!getInclusionProbability@{getInclusionProbability}}
+\index{getInclusionProbability@{getInclusionProbability}!moa.cluster.Cluster@{moa.cluster.Cluster}}
+\doxysubsubsection{\texorpdfstring{getInclusionProbability()}{getInclusionProbability()}}
+{\footnotesize\ttfamily abstract double moa.\+cluster.\+Cluster.\+get\+Inclusion\+Probability (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{instance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Returns the probability of the given point belonging to this cluster.
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a value between 0 and 1 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classmoa_1_1clusterers_1_1dstream_1_1_grid_cluster_a8ce34a54dce66d71826b61f37bcd3710}{moa.\+clusterers.\+dstream.\+Grid\+Cluster}}, \mbox{\hyperlink{classmoa_1_1clusterers_1_1dstream_1_1_density_grid_ae99a1a96a67c574ca73b375ea64d6d81}{moa.\+clusterers.\+dstream.\+Density\+Grid}}, \mbox{\hyperlink{classmoa_1_1cluster_1_1_sphere_cluster_a56dd58fd155642bd7723cb9bd8f554d7}{moa.\+cluster.\+Sphere\+Cluster}}, \mbox{\hyperlink{classmoa_1_1clusterers_1_1clustree_1_1_clus_kernel_a1cc93640c3a7749309c5bac25a2d6132}{moa.\+clusterers.\+clustree.\+Clus\+Kernel}}, \mbox{\hyperlink{classmoa_1_1clusterers_1_1clustream_1_1_clustream_kernel_a0ea62d49b8213fb6f030e28d6c07ce31}{moa.\+clusterers.\+clustream.\+Clustream\+Kernel}}, \mbox{\hyperlink{classmoa_1_1clusterers_1_1denstream_1_1_micro_cluster_a5950f1621aee73fef0cd5040ec2acdf7}{moa.\+clusterers.\+denstream.\+Micro\+Cluster}}, \mbox{\hyperlink{classmoa_1_1cluster_1_1_c_f_cluster_aca8dd00574659c55dcf5249d320de96e}{moa.\+cluster.\+C\+F\+Cluster}}, and \mbox{\hyperlink{classmoa_1_1clusterers_1_1macro_1_1_non_convex_cluster_a6d0fd2f6ce2d63576ee8db4337272540}{moa.\+clusterers.\+macro.\+Non\+Convex\+Cluster}}.
+
+\mbox{\Hypertarget{classmoa_1_1cluster_1_1_cluster_aeb8c006a27e4c642b7c735a8a8d1dd28}\label{classmoa_1_1cluster_1_1_cluster_aeb8c006a27e4c642b7c735a8a8d1dd28}} 
+\index{moa.cluster.Cluster@{moa.cluster.Cluster}!getWeight@{getWeight}}
+\index{getWeight@{getWeight}!moa.cluster.Cluster@{moa.cluster.Cluster}}
+\doxysubsubsection{\texorpdfstring{getWeight()}{getWeight()}}
+{\footnotesize\ttfamily abstract double moa.\+cluster.\+Cluster.\+get\+Weight (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Returns the weight of this cluster, not neccessarily normalized. It could, for instance, simply return the number of points contined in this cluster. \begin{DoxyReturn}{Returns}
+the weight 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classmoa_1_1cluster_1_1_sphere_cluster_a94b7844a1aa98cb517d22d037a441628}{moa.\+cluster.\+Sphere\+Cluster}}, \mbox{\hyperlink{classmoa_1_1clusterers_1_1dstream_1_1_grid_cluster_abaa70820a89ba9680996344bb6d7c2e7}{moa.\+clusterers.\+dstream.\+Grid\+Cluster}}, \mbox{\hyperlink{classmoa_1_1clusterers_1_1clustree_1_1_clus_kernel_a3277ffc987fbb74b934cea2fab98f2c3}{moa.\+clusterers.\+clustree.\+Clus\+Kernel}}, \mbox{\hyperlink{classmoa_1_1cluster_1_1_c_f_cluster_a68239d734eed85b83dad00bd7e4004c4}{moa.\+cluster.\+C\+F\+Cluster}}, and \mbox{\hyperlink{classmoa_1_1clusterers_1_1denstream_1_1_micro_cluster_ab12208611469c5c58bab47ed318c065e}{moa.\+clusterers.\+denstream.\+Micro\+Cluster}}.
+
+\mbox{\Hypertarget{classmoa_1_1cluster_1_1_cluster_ab2e88cce0d9e1411358ac37cc26ff877}\label{classmoa_1_1cluster_1_1_cluster_ab2e88cce0d9e1411358ac37cc26ff877}} 
+\index{moa.cluster.Cluster@{moa.cluster.Cluster}!sample@{sample}}
+\index{sample@{sample}!moa.cluster.Cluster@{moa.cluster.Cluster}}
+\doxysubsubsection{\texorpdfstring{sample()}{sample()}}
+{\footnotesize\ttfamily abstract \mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} moa.\+cluster.\+Cluster.\+sample (\begin{DoxyParamCaption}\item[{Random}]{random }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Samples this cluster by returning a point from inside it. 
+\begin{DoxyParams}{Parameters}
+{\em random} & a random number source \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an Instance that lies inside this cluster 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classmoa_1_1cluster_1_1_sphere_cluster_a529f5300cf3e0485fcddcfe809dcc500}{moa.\+cluster.\+Sphere\+Cluster}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/cluster/Cluster.\+java\end{DoxyCompactItemize}

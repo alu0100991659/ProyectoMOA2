@@ -1,0 +1,134 @@
+\hypertarget{classmoa_1_1recommender_1_1dataset_1_1impl_1_1_jester_dataset}{}\doxysection{moa.\+recommender.\+dataset.\+impl.\+Jester\+Dataset Class Reference}
+\label{classmoa_1_1recommender_1_1dataset_1_1impl_1_1_jester_dataset}\index{moa.recommender.dataset.impl.JesterDataset@{moa.recommender.dataset.impl.JesterDataset}}
+
+
+Inheritance diagram for moa.\+recommender.\+dataset.\+impl.\+Jester\+Dataset\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+recommender.\+dataset.\+impl.\+Jester\+Dataset\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classmoa_1_1recommender_1_1dataset_1_1impl_1_1_jester_dataset_a7ba6deaec9f03da3e7d486f1beba4321}{get\+Purpose\+String}} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1recommender_1_1dataset_1_1impl_1_1_jester_dataset_a98fa4f847c5a8a6e6ccdb5773b9cd669}\label{classmoa_1_1recommender_1_1dataset_1_1impl_1_1_jester_dataset_a98fa4f847c5a8a6e6ccdb5773b9cd669}} 
+void {\bfseries init} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1recommender_1_1dataset_1_1impl_1_1_jester_dataset_a88c79a9fef594e588dc676394291626c}\label{classmoa_1_1recommender_1_1dataset_1_1impl_1_1_jester_dataset_a88c79a9fef594e588dc676394291626c}} 
+boolean {\bfseries next} ()
+\item 
+String \mbox{\hyperlink{classmoa_1_1recommender_1_1dataset_1_1impl_1_1_jester_dataset_a76cca73e9caedfa45f70fa09e68dc540}{to\+String}} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1recommender_1_1dataset_1_1impl_1_1_jester_dataset_a6c226fb01e82eacab28d5aa3ae6d0fa3}\label{classmoa_1_1recommender_1_1dataset_1_1impl_1_1_jester_dataset_a6c226fb01e82eacab28d5aa3ae6d0fa3}} 
+int {\bfseries cur\+User\+ID} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1recommender_1_1dataset_1_1impl_1_1_jester_dataset_af414d2f90f986b688c5b92d48a95998d}\label{classmoa_1_1recommender_1_1dataset_1_1impl_1_1_jester_dataset_af414d2f90f986b688c5b92d48a95998d}} 
+int {\bfseries cur\+Item\+ID} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1recommender_1_1dataset_1_1impl_1_1_jester_dataset_a7621c16af1e0dca26a1df77e1bd066e4}\label{classmoa_1_1recommender_1_1dataset_1_1impl_1_1_jester_dataset_a7621c16af1e0dca26a1df77e1bd066e4}} 
+double {\bfseries cur\+Rating} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1recommender_1_1dataset_1_1impl_1_1_jester_dataset_ae8dbcb484eb678cd7a1d6abb4c724b36}\label{classmoa_1_1recommender_1_1dataset_1_1impl_1_1_jester_dataset_ae8dbcb484eb678cd7a1d6abb4c724b36}} 
+void {\bfseries reset} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1recommender_1_1dataset_1_1impl_1_1_jester_dataset_a37f18ca62091a5886655479dc095c9b1}{get\+Description}} (String\+Builder sb, int indent)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_file_option}{File\+Option}} {\bfseries file\+Option}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classmoa_1_1recommender_1_1dataset_1_1impl_1_1_jester_dataset_aeae7904825b7e34e406a10aa958a9496}{prepare\+For\+Use\+Impl}} (\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}} monitor, \mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}} repository)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1recommender_1_1dataset_1_1impl_1_1_jester_dataset_a37f18ca62091a5886655479dc095c9b1}\label{classmoa_1_1recommender_1_1dataset_1_1impl_1_1_jester_dataset_a37f18ca62091a5886655479dc095c9b1}} 
+\index{moa.recommender.dataset.impl.JesterDataset@{moa.recommender.dataset.impl.JesterDataset}!getDescription@{getDescription}}
+\index{getDescription@{getDescription}!moa.recommender.dataset.impl.JesterDataset@{moa.recommender.dataset.impl.JesterDataset}}
+\doxysubsubsection{\texorpdfstring{getDescription()}{getDescription()}}
+{\footnotesize\ttfamily void moa.\+recommender.\+dataset.\+impl.\+Jester\+Dataset.\+get\+Description (\begin{DoxyParamCaption}\item[{String\+Builder}]{sb,  }\item[{int}]{indent }\end{DoxyParamCaption})}
+
+Returns a string representation of this object. Used in {\ttfamily \mbox{\hyperlink{classmoa_1_1_abstract_m_o_a_object_ac686fd3b07c734cf21f1894376fe402d}{Abstract\+M\+O\+A\+Object.\+to\+String}}} to give a string representation of the object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sb} & the stringbuilder to add the description \\
+\hline
+{\em indent} & the number of characters to indent \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1_m_o_a_object_afdaf5098f1fe6c852018ce64c28e17f5}{moa.\+M\+O\+A\+Object}}.
+
+\mbox{\Hypertarget{classmoa_1_1recommender_1_1dataset_1_1impl_1_1_jester_dataset_a7ba6deaec9f03da3e7d486f1beba4321}\label{classmoa_1_1recommender_1_1dataset_1_1impl_1_1_jester_dataset_a7ba6deaec9f03da3e7d486f1beba4321}} 
+\index{moa.recommender.dataset.impl.JesterDataset@{moa.recommender.dataset.impl.JesterDataset}!getPurposeString@{getPurposeString}}
+\index{getPurposeString@{getPurposeString}!moa.recommender.dataset.impl.JesterDataset@{moa.recommender.dataset.impl.JesterDataset}}
+\doxysubsubsection{\texorpdfstring{getPurposeString()}{getPurposeString()}}
+{\footnotesize\ttfamily String moa.\+recommender.\+dataset.\+impl.\+Jester\+Dataset.\+get\+Purpose\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Options to handle Dictionary with option texts and objects 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1options_1_1_abstract_option_handler_abc8df69aea27ef85060557a9e918b2ca}{moa.\+options.\+Abstract\+Option\+Handler}}.
+
+\mbox{\Hypertarget{classmoa_1_1recommender_1_1dataset_1_1impl_1_1_jester_dataset_aeae7904825b7e34e406a10aa958a9496}\label{classmoa_1_1recommender_1_1dataset_1_1impl_1_1_jester_dataset_aeae7904825b7e34e406a10aa958a9496}} 
+\index{moa.recommender.dataset.impl.JesterDataset@{moa.recommender.dataset.impl.JesterDataset}!prepareForUseImpl@{prepareForUseImpl}}
+\index{prepareForUseImpl@{prepareForUseImpl}!moa.recommender.dataset.impl.JesterDataset@{moa.recommender.dataset.impl.JesterDataset}}
+\doxysubsubsection{\texorpdfstring{prepareForUseImpl()}{prepareForUseImpl()}}
+{\footnotesize\ttfamily void moa.\+recommender.\+dataset.\+impl.\+Jester\+Dataset.\+prepare\+For\+Use\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}}}]{monitor,  }\item[{\mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}}}]{repository }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+This method describes the implementation of how to prepare this object for use. All classes that extends this class have to implement {\ttfamily prepare\+For\+Use\+Impl} and not {\ttfamily prepare\+For\+Use} since {\ttfamily prepare\+For\+Use} calls {\ttfamily prepare\+For\+Use\+Impl}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em monitor} & the Task\+Monitor to use \\
+\hline
+{\em repository} & the Object\+Repository to use \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1options_1_1_abstract_option_handler_ad0e9c7d4b0e2b185749f36ce28540efb}{moa.\+options.\+Abstract\+Option\+Handler}}.
+
+\mbox{\Hypertarget{classmoa_1_1recommender_1_1dataset_1_1impl_1_1_jester_dataset_a76cca73e9caedfa45f70fa09e68dc540}\label{classmoa_1_1recommender_1_1dataset_1_1impl_1_1_jester_dataset_a76cca73e9caedfa45f70fa09e68dc540}} 
+\index{moa.recommender.dataset.impl.JesterDataset@{moa.recommender.dataset.impl.JesterDataset}!toString@{toString}}
+\index{toString@{toString}!moa.recommender.dataset.impl.JesterDataset@{moa.recommender.dataset.impl.JesterDataset}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily String moa.\+recommender.\+dataset.\+impl.\+Jester\+Dataset.\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns a description of the object.
+
+\begin{DoxyReturn}{Returns}
+a description of the object 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1_abstract_m_o_a_object_ac686fd3b07c734cf21f1894376fe402d}{moa.\+Abstract\+M\+O\+A\+Object}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmoa_1_1recommender_1_1dataset_1_1impl_1_1_jester_dataset_ad29889a2f957c77f51e1f35061326676}\label{classmoa_1_1recommender_1_1dataset_1_1impl_1_1_jester_dataset_ad29889a2f957c77f51e1f35061326676}} 
+\index{moa.recommender.dataset.impl.JesterDataset@{moa.recommender.dataset.impl.JesterDataset}!fileOption@{fileOption}}
+\index{fileOption@{fileOption}!moa.recommender.dataset.impl.JesterDataset@{moa.recommender.dataset.impl.JesterDataset}}
+\doxysubsubsection{\texorpdfstring{fileOption}{fileOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_file_option}{File\+Option}} moa.\+recommender.\+dataset.\+impl.\+Jester\+Dataset.\+file\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FileOption(\textcolor{stringliteral}{"file"}, \textcolor{charliteral}{'f'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"File to load."}, \textcolor{stringliteral}{"/home/alicia/datasets/jester/jester\_ratings.dat"}, \textcolor{stringliteral}{"dat"}, \textcolor{keyword}{false})}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/recommender/dataset/impl/Jester\+Dataset.\+java\end{DoxyCompactItemize}

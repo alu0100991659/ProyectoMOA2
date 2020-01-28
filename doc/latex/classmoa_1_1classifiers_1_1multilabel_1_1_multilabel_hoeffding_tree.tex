@@ -1,0 +1,80 @@
+\hypertarget{classmoa_1_1classifiers_1_1multilabel_1_1_multilabel_hoeffding_tree}{}\doxysection{moa.\+classifiers.\+multilabel.\+Multilabel\+Hoeffding\+Tree Class Reference}
+\label{classmoa_1_1classifiers_1_1multilabel_1_1_multilabel_hoeffding_tree}\index{moa.classifiers.multilabel.MultilabelHoeffdingTree@{moa.classifiers.multilabel.MultilabelHoeffdingTree}}
+
+
+Inheritance diagram for moa.\+classifiers.\+multilabel.\+Multilabel\+Hoeffding\+Tree\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+classifiers.\+multilabel.\+Multilabel\+Hoeffding\+Tree\+:
+% FIG 1
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Multilabel\+Inactive\+Learning\+Node}
+\item 
+class \mbox{\hyperlink{classmoa_1_1classifiers_1_1multilabel_1_1_multilabel_hoeffding_tree_1_1_multilabel_learning_node_classifier}{Multilabel\+Learning\+Node\+Classifier}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1multilabel_1_1_multilabel_hoeffding_tree_a149c3674cd47ded4dc38859386e54ae1}\label{classmoa_1_1classifiers_1_1multilabel_1_1_multilabel_hoeffding_tree_a149c3674cd47ded4dc38859386e54ae1}} 
+\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_prediction}{Prediction}} {\bfseries get\+Prediction\+For\+Instance} (\mbox{\hyperlink{interfacemoa_1_1core_1_1_example}{Example}}$<$ \mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} $>$ example)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1multilabel_1_1_multilabel_hoeffding_tree_a5aa860fa5fc2cc597cc67576fc6f8cba}\label{classmoa_1_1classifiers_1_1multilabel_1_1_multilabel_hoeffding_tree_a5aa860fa5fc2cc597cc67576fc6f8cba}} 
+\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_prediction}{Prediction}} {\bfseries get\+Prediction\+For\+Instance} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_multi_label_instance}{Multi\+Label\+Instance}} inst)
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1multilabel_1_1_multilabel_hoeffding_tree_a5d54807bae9f9b4ad0e34ce51285c23a}{train\+On\+Instance}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1multilabel_1_1_multilabel_hoeffding_tree_a7eabc6de950e6660f1e407f5988e5015}\label{classmoa_1_1classifiers_1_1multilabel_1_1_multilabel_hoeffding_tree_a7eabc6de950e6660f1e407f5988e5015}} 
+void {\bfseries train\+On\+Instance\+Impl} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_multi_label_instance}{Multi\+Label\+Instance}} instance)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1multilabel_1_1_multilabel_hoeffding_tree_aa27f74380e5a07c493e4845a3d251c8f}\label{classmoa_1_1classifiers_1_1multilabel_1_1_multilabel_hoeffding_tree_aa27f74380e5a07c493e4845a3d251c8f}} 
+static List$<$ Integer $>$ {\bfseries get\+Relevant\+Labels} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} x)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1multilabel_1_1_multilabel_hoeffding_tree_a596ac3cfba538fa4731df0f1e74ce887}\label{classmoa_1_1classifiers_1_1multilabel_1_1_multilabel_hoeffding_tree_a596ac3cfba538fa4731df0f1e74ce887}} 
+Learning\+Node {\bfseries new\+Learning\+Node} (double\mbox{[}$\,$\mbox{]} initial\+Class\+Observations)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1multilabel_1_1_multilabel_hoeffding_tree_a3b458a5e5a997d426d7ddb20c284844a}\label{classmoa_1_1classifiers_1_1multilabel_1_1_multilabel_hoeffding_tree_a3b458a5e5a997d426d7ddb20c284844a}} 
+Learning\+Node {\bfseries new\+Learning\+Node} (double\mbox{[}$\,$\mbox{]} initial\+Class\+Observations, \mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier}{Classifier}} cl)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1multilabel_1_1_multilabel_hoeffding_tree_aa4ddc17c20a5ec07718d7f3281ab458b}\label{classmoa_1_1classifiers_1_1multilabel_1_1_multilabel_hoeffding_tree_aa4ddc17c20a5ec07718d7f3281ab458b}} 
+void {\bfseries deactivate\+Learning\+Node} (Active\+Learning\+Node to\+Deactivate, Split\+Node parent, int parent\+Branch)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Hoeffding Tree for classifying multi-\/label data.
+
+A Hoeffding tree is an incremental, anytime decision tree induction algorithm that is capable of learning from massive data streams, assuming that the distribution generating examples does not change over time. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1multilabel_1_1_multilabel_hoeffding_tree_a5d54807bae9f9b4ad0e34ce51285c23a}\label{classmoa_1_1classifiers_1_1multilabel_1_1_multilabel_hoeffding_tree_a5d54807bae9f9b4ad0e34ce51285c23a}} 
+\index{moa.classifiers.multilabel.MultilabelHoeffdingTree@{moa.classifiers.multilabel.MultilabelHoeffdingTree}!trainOnInstance@{trainOnInstance}}
+\index{trainOnInstance@{trainOnInstance}!moa.classifiers.multilabel.MultilabelHoeffdingTree@{moa.classifiers.multilabel.MultilabelHoeffdingTree}}
+\doxysubsubsection{\texorpdfstring{trainOnInstance()}{trainOnInstance()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+multilabel.\+Multilabel\+Hoeffding\+Tree.\+train\+On\+Instance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{inst }\end{DoxyParamCaption})}
+
+Trains this learner incrementally using the given example.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & the instance to be used for training \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier_ac28018bc307abe34a8ace54dba3ebff1}{moa.\+classifiers.\+Classifier}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/classifiers/multilabel/Multilabel\+Hoeffding\+Tree.\+java\end{DoxyCompactItemize}

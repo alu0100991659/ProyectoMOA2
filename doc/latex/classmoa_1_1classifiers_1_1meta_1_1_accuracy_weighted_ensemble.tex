@@ -1,0 +1,394 @@
+\hypertarget{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble}{}\doxysection{moa.\+classifiers.\+meta.\+Accuracy\+Weighted\+Ensemble Class Reference}
+\label{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble}\index{moa.classifiers.meta.AccuracyWeightedEnsemble@{moa.classifiers.meta.AccuracyWeightedEnsemble}}
+
+
+Inheritance diagram for moa.\+classifiers.\+meta.\+Accuracy\+Weighted\+Ensemble\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+classifiers.\+meta.\+Accuracy\+Weighted\+Ensemble\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_a8aa5a82270ccbcbe4bbaac7dc9564fdc}{get\+Purpose\+String}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_a2965f67d0fb02cf7ca35e57c3c137ea5}{prepare\+For\+Use\+Impl}} (\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}} monitor, \mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}} repository)
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_a1aa0a6d50e170a58d44ffd2594dc8300}{reset\+Learning\+Impl}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_a6a9e7fc9cd8ec254ae8058316756849f}{train\+On\+Instance\+Impl}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst)
+\item 
+double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_a3aa38fe0bc4c5f4beaf333efc6f98012}{get\+Votes\+For\+Instance}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst)
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_ad462b25a9dd8b802d99f73b843975867}{get\+Model\+Description}} (String\+Builder out, int indent)
+\item 
+boolean \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_ad57d78713c4793f1c9bb40d535a06f5e}{is\+Randomizable}} ()
+\item 
+\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier}{Classifier}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_a2b89b976bdc0aa5896c6cb84c1cc1a1b}{get\+Sub\+Classifiers}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_ad4a115f35bc6d42f5d6235b2bda717ed}{learner\+Option}} = new \mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}}(\char`\"{}learner\char`\"{}, \textquotesingle{}l\textquotesingle{}, \char`\"{}Classifier to train.\char`\"{}, Classifier.\+class, \char`\"{}trees.\+Hoeffding\+Tree -\/l NB -\/e 1000 -\/g 100 -\/c 0.\+01\char`\"{})
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_aa058822e3b9533986256f4cc8cfd2deb}{member\+Count\+Option}} = new \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}}(\char`\"{}member\+Count\char`\"{}, \textquotesingle{}n\textquotesingle{}, \char`\"{}The maximum number of classifier in an ensemble.\char`\"{}, 15, 1, Integer.\+M\+A\+X\+\_\+\+V\+A\+L\+UE)
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_aca5e100c6657aa73cacfc103afb3e38e}{stored\+Count\+Option}} = new \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}}(\char`\"{}stored\+Count\char`\"{}, \textquotesingle{}r\textquotesingle{}, \char`\"{}The maximum number of classifiers to store and choose from when creating an ensemble.\char`\"{}, 30, 1, Integer.\+M\+A\+X\+\_\+\+V\+A\+L\+UE)
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_a816c453766ca4f8fbc0efcfc61f2fefc}{chunk\+Size\+Option}} = new \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}}(\char`\"{}chunk\+Size\char`\"{}, \textquotesingle{}c\textquotesingle{}, \char`\"{}The chunk size used for classifier creation and evaluation.\char`\"{}, 500, 1, Integer.\+M\+A\+X\+\_\+\+V\+A\+L\+UE)
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_a0a12e19f1c398e1b66641ebefa8ba28c}{num\+Folds\+Option}} = new \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}}(\char`\"{}num\+Folds\char`\"{}, \textquotesingle{}f\textquotesingle{}, \char`\"{}Number of cross-\/validation folds for candidate classifier testing.\char`\"{}, 10, 1, Integer.\+M\+A\+X\+\_\+\+V\+A\+L\+UE)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_a016ca262b73e5e6d6c987c2f1e1c198d}{process\+Chunk}} ()
+\item 
+double \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_a8d1b05381d0898a70d4da8bd695514b5}{compute\+Candidate\+Weight}} (\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier}{Classifier}} candidate, \mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instances}{Instances}} chunk, int num\+Folds)
+\item 
+double \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_ab8ff00103d72fff5a88bf076915b6a4b}{compute\+Weight}} (\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier}{Classifier}} learner, \mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instances}{Instances}} chunk)
+\item 
+double \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_ad4ce206201ffdaaa4044fc344ffdd981}{compute\+MseR}} ()
+\item 
+\mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_aec1b3ecf47b924ed94340526b2a3df9e}{get\+Model\+Measurements\+Impl}} ()
+\item 
+\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier}{Classifier}} \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_aeaa8b79d8159e96f0f1d4217515e2cbf}{add\+To\+Stored}} (\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier}{Classifier}} new\+Classifier, double new\+Classifiers\+Weight)
+\item 
+int \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_af656e82eee79e36252fb10002c29eeef}{remove\+Poorest\+Model\+Bytes}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_a54334297a9cb885e70e569fca70e7322}{discard\+Model}} (int index)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_a678d4858297ac660d9b98c459c7cf71a}\label{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_a678d4858297ac660d9b98c459c7cf71a}} 
+long\mbox{[}$\,$\mbox{]} {\bfseries class\+Distributions}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_a45a56e2f824d1dc00bdf595c38855277}\label{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_a45a56e2f824d1dc00bdf595c38855277}} 
+\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier}{Classifier}}\mbox{[}$\,$\mbox{]} {\bfseries ensemble}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_ae45d8305e9615dd5c84314579b891919}\label{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_ae45d8305e9615dd5c84314579b891919}} 
+\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier}{Classifier}}\mbox{[}$\,$\mbox{]} {\bfseries stored\+Learners}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_aafbea603f186b8b1f76ff129475a52c1}\label{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_aafbea603f186b8b1f76ff129475a52c1}} 
+double\mbox{[}$\,$\mbox{]} {\bfseries ensemble\+Weights}
+\item 
+double\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_af1d7d6af53caf945631e29158033a8ee}{stored\+Weights}}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_a63e8621c74399107cd2753c86d6da174}\label{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_a63e8621c74399107cd2753c86d6da174}} 
+int {\bfseries processed\+Instances}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_a140eb3a6d0fe2e220aee35a0e6334b52}\label{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_a140eb3a6d0fe2e220aee35a0e6334b52}} 
+int {\bfseries chunk\+Size}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_ab84b8df0765edfe4d23fcd6070433e71}\label{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_ab84b8df0765edfe4d23fcd6070433e71}} 
+int {\bfseries num\+Folds}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_a67c76e5d1d96f09082e716a95954ce99}\label{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_a67c76e5d1d96f09082e716a95954ce99}} 
+int {\bfseries max\+Member\+Count}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_a5854d745b69e0d5a88b0098b60743210}\label{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_a5854d745b69e0d5a88b0098b60743210}} 
+int {\bfseries max\+Stored\+Count}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_a570cda4c2656a2647982d0aaa46afb4f}\label{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_a570cda4c2656a2647982d0aaa46afb4f}} 
+\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier}{Classifier}} {\bfseries candidate\+Classifier}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_ac1c8e8606942f600693f0a19c6ce3479}\label{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_ac1c8e8606942f600693f0a19c6ce3479}} 
+\mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instances}{Instances}} {\bfseries current\+Chunk}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static java.\+util.\+Comparator$<$ double\mbox{[}$\,$\mbox{]}$>$ \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_a664ebba6392b0f444cc5556660cc1c37}{weight\+Comparator}} = new Classifier\+Weight\+Comparator()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+The Accuracy Weighted Ensemble classifier as proposed by Wang et al. in \char`\"{}\+Mining concept-\/drifting data streams using ensemble classifiers\char`\"{}, K\+DD 2003. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_aeaa8b79d8159e96f0f1d4217515e2cbf}\label{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_aeaa8b79d8159e96f0f1d4217515e2cbf}} 
+\index{moa.classifiers.meta.AccuracyWeightedEnsemble@{moa.classifiers.meta.AccuracyWeightedEnsemble}!addToStored@{addToStored}}
+\index{addToStored@{addToStored}!moa.classifiers.meta.AccuracyWeightedEnsemble@{moa.classifiers.meta.AccuracyWeightedEnsemble}}
+\doxysubsubsection{\texorpdfstring{addToStored()}{addToStored()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier}{Classifier}} moa.\+classifiers.\+meta.\+Accuracy\+Weighted\+Ensemble.\+add\+To\+Stored (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier}{Classifier}}}]{new\+Classifier,  }\item[{double}]{new\+Classifiers\+Weight }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Adds a classifier to the storage.
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Classifier} & The classifier to add. \\
+\hline
+{\em new\+Classifiers\+Weight} & The new classifiers weight. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_a8d1b05381d0898a70d4da8bd695514b5}\label{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_a8d1b05381d0898a70d4da8bd695514b5}} 
+\index{moa.classifiers.meta.AccuracyWeightedEnsemble@{moa.classifiers.meta.AccuracyWeightedEnsemble}!computeCandidateWeight@{computeCandidateWeight}}
+\index{computeCandidateWeight@{computeCandidateWeight}!moa.classifiers.meta.AccuracyWeightedEnsemble@{moa.classifiers.meta.AccuracyWeightedEnsemble}}
+\doxysubsubsection{\texorpdfstring{computeCandidateWeight()}{computeCandidateWeight()}}
+{\footnotesize\ttfamily double moa.\+classifiers.\+meta.\+Accuracy\+Weighted\+Ensemble.\+compute\+Candidate\+Weight (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier}{Classifier}}}]{candidate,  }\item[{\mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instances}{Instances}}}]{chunk,  }\item[{int}]{num\+Folds }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Computes the weight of a candidate classifier.
+
+
+\begin{DoxyParams}{Parameters}
+{\em candidate} & Candidate classifier. \\
+\hline
+{\em chunk} & Data chunk of examples. \\
+\hline
+{\em num\+Folds} & Number of folds in candidate classifier cross-\/validation. \\
+\hline
+{\em use\+MseR} & Determines whether to use the M\+S\+Er threshold. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Candidate classifier weight. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_ad4ce206201ffdaaa4044fc344ffdd981}\label{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_ad4ce206201ffdaaa4044fc344ffdd981}} 
+\index{moa.classifiers.meta.AccuracyWeightedEnsemble@{moa.classifiers.meta.AccuracyWeightedEnsemble}!computeMseR@{computeMseR}}
+\index{computeMseR@{computeMseR}!moa.classifiers.meta.AccuracyWeightedEnsemble@{moa.classifiers.meta.AccuracyWeightedEnsemble}}
+\doxysubsubsection{\texorpdfstring{computeMseR()}{computeMseR()}}
+{\footnotesize\ttfamily double moa.\+classifiers.\+meta.\+Accuracy\+Weighted\+Ensemble.\+compute\+MseR (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Computes the M\+S\+Er threshold.
+
+\begin{DoxyReturn}{Returns}
+The M\+S\+Er threshold. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_ab8ff00103d72fff5a88bf076915b6a4b}\label{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_ab8ff00103d72fff5a88bf076915b6a4b}} 
+\index{moa.classifiers.meta.AccuracyWeightedEnsemble@{moa.classifiers.meta.AccuracyWeightedEnsemble}!computeWeight@{computeWeight}}
+\index{computeWeight@{computeWeight}!moa.classifiers.meta.AccuracyWeightedEnsemble@{moa.classifiers.meta.AccuracyWeightedEnsemble}}
+\doxysubsubsection{\texorpdfstring{computeWeight()}{computeWeight()}}
+{\footnotesize\ttfamily double moa.\+classifiers.\+meta.\+Accuracy\+Weighted\+Ensemble.\+compute\+Weight (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier}{Classifier}}}]{learner,  }\item[{\mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instances}{Instances}}}]{chunk }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Computes the weight of a given classifie.
+
+
+\begin{DoxyParams}{Parameters}
+{\em learner} & \mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier}{Classifier}} to calculate weight for. \\
+\hline
+{\em chunk} & Data chunk of examples. \\
+\hline
+{\em use\+MseR} & Determines whether to use the M\+S\+Er threshold. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The given classifier\textquotesingle{}s weight. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_a54334297a9cb885e70e569fca70e7322}\label{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_a54334297a9cb885e70e569fca70e7322}} 
+\index{moa.classifiers.meta.AccuracyWeightedEnsemble@{moa.classifiers.meta.AccuracyWeightedEnsemble}!discardModel@{discardModel}}
+\index{discardModel@{discardModel}!moa.classifiers.meta.AccuracyWeightedEnsemble@{moa.classifiers.meta.AccuracyWeightedEnsemble}}
+\doxysubsubsection{\texorpdfstring{discardModel()}{discardModel()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+meta.\+Accuracy\+Weighted\+Ensemble.\+discard\+Model (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Removes the classifier at a given index from the model, thus decreasing the models size.
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_ad462b25a9dd8b802d99f73b843975867}\label{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_ad462b25a9dd8b802d99f73b843975867}} 
+\index{moa.classifiers.meta.AccuracyWeightedEnsemble@{moa.classifiers.meta.AccuracyWeightedEnsemble}!getModelDescription@{getModelDescription}}
+\index{getModelDescription@{getModelDescription}!moa.classifiers.meta.AccuracyWeightedEnsemble@{moa.classifiers.meta.AccuracyWeightedEnsemble}}
+\doxysubsubsection{\texorpdfstring{getModelDescription()}{getModelDescription()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+meta.\+Accuracy\+Weighted\+Ensemble.\+get\+Model\+Description (\begin{DoxyParamCaption}\item[{String\+Builder}]{out,  }\item[{int}]{indent }\end{DoxyParamCaption})}
+
+Returns a string representation of the model.
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & the stringbuilder to add the description \\
+\hline
+{\em indent} & the number of characters to indent \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a30e5ff32bc8127dfb7436945776b7523}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_aec1b3ecf47b924ed94340526b2a3df9e}\label{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_aec1b3ecf47b924ed94340526b2a3df9e}} 
+\index{moa.classifiers.meta.AccuracyWeightedEnsemble@{moa.classifiers.meta.AccuracyWeightedEnsemble}!getModelMeasurementsImpl@{getModelMeasurementsImpl}}
+\index{getModelMeasurementsImpl@{getModelMeasurementsImpl}!moa.classifiers.meta.AccuracyWeightedEnsemble@{moa.classifiers.meta.AccuracyWeightedEnsemble}}
+\doxysubsubsection{\texorpdfstring{getModelMeasurementsImpl()}{getModelMeasurementsImpl()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}} \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+meta.\+Accuracy\+Weighted\+Ensemble.\+get\+Model\+Measurements\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Adds ensemble weights to the measurements. 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_ac2bebede21c9d2d8cd11d95a7e20e529}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_a8aa5a82270ccbcbe4bbaac7dc9564fdc}\label{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_a8aa5a82270ccbcbe4bbaac7dc9564fdc}} 
+\index{moa.classifiers.meta.AccuracyWeightedEnsemble@{moa.classifiers.meta.AccuracyWeightedEnsemble}!getPurposeString@{getPurposeString}}
+\index{getPurposeString@{getPurposeString}!moa.classifiers.meta.AccuracyWeightedEnsemble@{moa.classifiers.meta.AccuracyWeightedEnsemble}}
+\doxysubsubsection{\texorpdfstring{getPurposeString()}{getPurposeString()}}
+{\footnotesize\ttfamily String moa.\+classifiers.\+meta.\+Accuracy\+Weighted\+Ensemble.\+get\+Purpose\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Options to handle Dictionary with option texts and objects 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a3fc6ae11234b88e51941a77ddb879d8b}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_a2b89b976bdc0aa5896c6cb84c1cc1a1b}\label{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_a2b89b976bdc0aa5896c6cb84c1cc1a1b}} 
+\index{moa.classifiers.meta.AccuracyWeightedEnsemble@{moa.classifiers.meta.AccuracyWeightedEnsemble}!getSubClassifiers@{getSubClassifiers}}
+\index{getSubClassifiers@{getSubClassifiers}!moa.classifiers.meta.AccuracyWeightedEnsemble@{moa.classifiers.meta.AccuracyWeightedEnsemble}}
+\doxysubsubsection{\texorpdfstring{getSubClassifiers()}{getSubClassifiers()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier}{Classifier}} \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+meta.\+Accuracy\+Weighted\+Ensemble.\+get\+Sub\+Classifiers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the classifiers of this ensemble. Returns null if this learner is a single learner.
+
+\begin{DoxyReturn}{Returns}
+an array of the learners of the ensemble 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a5d7c5aadeaf3465785aa6bb2efb615f2}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_a3aa38fe0bc4c5f4beaf333efc6f98012}\label{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_a3aa38fe0bc4c5f4beaf333efc6f98012}} 
+\index{moa.classifiers.meta.AccuracyWeightedEnsemble@{moa.classifiers.meta.AccuracyWeightedEnsemble}!getVotesForInstance@{getVotesForInstance}}
+\index{getVotesForInstance@{getVotesForInstance}!moa.classifiers.meta.AccuracyWeightedEnsemble@{moa.classifiers.meta.AccuracyWeightedEnsemble}}
+\doxysubsubsection{\texorpdfstring{getVotesForInstance()}{getVotesForInstance()}}
+{\footnotesize\ttfamily double \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+meta.\+Accuracy\+Weighted\+Ensemble.\+get\+Votes\+For\+Instance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{inst }\end{DoxyParamCaption})}
+
+Predicts a class for an example. 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a0e3589c4fa6f088d82d64514afd9513c}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_ad57d78713c4793f1c9bb40d535a06f5e}\label{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_ad57d78713c4793f1c9bb40d535a06f5e}} 
+\index{moa.classifiers.meta.AccuracyWeightedEnsemble@{moa.classifiers.meta.AccuracyWeightedEnsemble}!isRandomizable@{isRandomizable}}
+\index{isRandomizable@{isRandomizable}!moa.classifiers.meta.AccuracyWeightedEnsemble@{moa.classifiers.meta.AccuracyWeightedEnsemble}}
+\doxysubsubsection{\texorpdfstring{isRandomizable()}{isRandomizable()}}
+{\footnotesize\ttfamily boolean moa.\+classifiers.\+meta.\+Accuracy\+Weighted\+Ensemble.\+is\+Randomizable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Determines whether the classifier is randomizable. 
+
+Implements \mbox{\hyperlink{interfacemoa_1_1learners_1_1_learner_a2f1ff9007b5eb5f53801f474b4d42a61}{moa.\+learners.\+Learner$<$ E extends Example $>$}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_a2965f67d0fb02cf7ca35e57c3c137ea5}\label{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_a2965f67d0fb02cf7ca35e57c3c137ea5}} 
+\index{moa.classifiers.meta.AccuracyWeightedEnsemble@{moa.classifiers.meta.AccuracyWeightedEnsemble}!prepareForUseImpl@{prepareForUseImpl}}
+\index{prepareForUseImpl@{prepareForUseImpl}!moa.classifiers.meta.AccuracyWeightedEnsemble@{moa.classifiers.meta.AccuracyWeightedEnsemble}}
+\doxysubsubsection{\texorpdfstring{prepareForUseImpl()}{prepareForUseImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+meta.\+Accuracy\+Weighted\+Ensemble.\+prepare\+For\+Use\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}}}]{monitor,  }\item[{\mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}}}]{repository }\end{DoxyParamCaption})}
+
+This method describes the implementation of how to prepare this object for use. All classes that extends this class have to implement {\ttfamily prepare\+For\+Use\+Impl} and not {\ttfamily prepare\+For\+Use} since {\ttfamily prepare\+For\+Use} calls {\ttfamily prepare\+For\+Use\+Impl}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em monitor} & the Task\+Monitor to use \\
+\hline
+{\em repository} & the Object\+Repository to use \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_af81677ce9db6e94f79321df05e7dc019}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_a016ca262b73e5e6d6c987c2f1e1c198d}\label{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_a016ca262b73e5e6d6c987c2f1e1c198d}} 
+\index{moa.classifiers.meta.AccuracyWeightedEnsemble@{moa.classifiers.meta.AccuracyWeightedEnsemble}!processChunk@{processChunk}}
+\index{processChunk@{processChunk}!moa.classifiers.meta.AccuracyWeightedEnsemble@{moa.classifiers.meta.AccuracyWeightedEnsemble}}
+\doxysubsubsection{\texorpdfstring{processChunk()}{processChunk()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+meta.\+Accuracy\+Weighted\+Ensemble.\+process\+Chunk (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Processes a chunk.
+
+
+\begin{DoxyParams}{Parameters}
+{\em use\+MseR} & Determines whether to use the M\+S\+Er threshold. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_af656e82eee79e36252fb10002c29eeef}\label{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_af656e82eee79e36252fb10002c29eeef}} 
+\index{moa.classifiers.meta.AccuracyWeightedEnsemble@{moa.classifiers.meta.AccuracyWeightedEnsemble}!removePoorestModelBytes@{removePoorestModelBytes}}
+\index{removePoorestModelBytes@{removePoorestModelBytes}!moa.classifiers.meta.AccuracyWeightedEnsemble@{moa.classifiers.meta.AccuracyWeightedEnsemble}}
+\doxysubsubsection{\texorpdfstring{removePoorestModelBytes()}{removePoorestModelBytes()}}
+{\footnotesize\ttfamily int moa.\+classifiers.\+meta.\+Accuracy\+Weighted\+Ensemble.\+remove\+Poorest\+Model\+Bytes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Removes the poorest classifier from the model, thus decreasing the models size.
+
+\begin{DoxyReturn}{Returns}
+the size of the removed classifier. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_a1aa0a6d50e170a58d44ffd2594dc8300}\label{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_a1aa0a6d50e170a58d44ffd2594dc8300}} 
+\index{moa.classifiers.meta.AccuracyWeightedEnsemble@{moa.classifiers.meta.AccuracyWeightedEnsemble}!resetLearningImpl@{resetLearningImpl}}
+\index{resetLearningImpl@{resetLearningImpl}!moa.classifiers.meta.AccuracyWeightedEnsemble@{moa.classifiers.meta.AccuracyWeightedEnsemble}}
+\doxysubsubsection{\texorpdfstring{resetLearningImpl()}{resetLearningImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+meta.\+Accuracy\+Weighted\+Ensemble.\+reset\+Learning\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Resets this classifier. It must be similar to starting a new classifier from scratch. ~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden. 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a099ffcf2417abb919d10d697c0648f29}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_a6a9e7fc9cd8ec254ae8058316756849f}\label{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_a6a9e7fc9cd8ec254ae8058316756849f}} 
+\index{moa.classifiers.meta.AccuracyWeightedEnsemble@{moa.classifiers.meta.AccuracyWeightedEnsemble}!trainOnInstanceImpl@{trainOnInstanceImpl}}
+\index{trainOnInstanceImpl@{trainOnInstanceImpl}!moa.classifiers.meta.AccuracyWeightedEnsemble@{moa.classifiers.meta.AccuracyWeightedEnsemble}}
+\doxysubsubsection{\texorpdfstring{trainOnInstanceImpl()}{trainOnInstanceImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+meta.\+Accuracy\+Weighted\+Ensemble.\+train\+On\+Instance\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{inst }\end{DoxyParamCaption})}
+
+Trains this classifier incrementally using the given instance.~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & the instance to be used for training \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_aceb24d2ddeab386f2ecead6e3c0d3543}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_a816c453766ca4f8fbc0efcfc61f2fefc}\label{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_a816c453766ca4f8fbc0efcfc61f2fefc}} 
+\index{moa.classifiers.meta.AccuracyWeightedEnsemble@{moa.classifiers.meta.AccuracyWeightedEnsemble}!chunkSizeOption@{chunkSizeOption}}
+\index{chunkSizeOption@{chunkSizeOption}!moa.classifiers.meta.AccuracyWeightedEnsemble@{moa.classifiers.meta.AccuracyWeightedEnsemble}}
+\doxysubsubsection{\texorpdfstring{chunkSizeOption}{chunkSizeOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+classifiers.\+meta.\+Accuracy\+Weighted\+Ensemble.\+chunk\+Size\+Option = new \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}}(\char`\"{}chunk\+Size\char`\"{}, \textquotesingle{}c\textquotesingle{}, \char`\"{}The chunk size used for classifier creation and evaluation.\char`\"{}, 500, 1, Integer.\+M\+A\+X\+\_\+\+V\+A\+L\+UE)}
+
+Chunk size. \mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_ad4a115f35bc6d42f5d6235b2bda717ed}\label{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_ad4a115f35bc6d42f5d6235b2bda717ed}} 
+\index{moa.classifiers.meta.AccuracyWeightedEnsemble@{moa.classifiers.meta.AccuracyWeightedEnsemble}!learnerOption@{learnerOption}}
+\index{learnerOption@{learnerOption}!moa.classifiers.meta.AccuracyWeightedEnsemble@{moa.classifiers.meta.AccuracyWeightedEnsemble}}
+\doxysubsubsection{\texorpdfstring{learnerOption}{learnerOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} moa.\+classifiers.\+meta.\+Accuracy\+Weighted\+Ensemble.\+learner\+Option = new \mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}}(\char`\"{}learner\char`\"{}, \textquotesingle{}l\textquotesingle{}, \char`\"{}Classifier to train.\char`\"{}, Classifier.\+class, \char`\"{}trees.\+Hoeffding\+Tree -\/l NB -\/e 1000 -\/g 100 -\/c 0.\+01\char`\"{})}
+
+Type of classifier to use as a component classifier. \mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_aa058822e3b9533986256f4cc8cfd2deb}\label{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_aa058822e3b9533986256f4cc8cfd2deb}} 
+\index{moa.classifiers.meta.AccuracyWeightedEnsemble@{moa.classifiers.meta.AccuracyWeightedEnsemble}!memberCountOption@{memberCountOption}}
+\index{memberCountOption@{memberCountOption}!moa.classifiers.meta.AccuracyWeightedEnsemble@{moa.classifiers.meta.AccuracyWeightedEnsemble}}
+\doxysubsubsection{\texorpdfstring{memberCountOption}{memberCountOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} moa.\+classifiers.\+meta.\+Accuracy\+Weighted\+Ensemble.\+member\+Count\+Option = new \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}}(\char`\"{}member\+Count\char`\"{}, \textquotesingle{}n\textquotesingle{}, \char`\"{}The maximum number of classifier in an ensemble.\char`\"{}, 15, 1, Integer.\+M\+A\+X\+\_\+\+V\+A\+L\+UE)}
+
+Number of component classifiers. \mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_a0a12e19f1c398e1b66641ebefa8ba28c}\label{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_a0a12e19f1c398e1b66641ebefa8ba28c}} 
+\index{moa.classifiers.meta.AccuracyWeightedEnsemble@{moa.classifiers.meta.AccuracyWeightedEnsemble}!numFoldsOption@{numFoldsOption}}
+\index{numFoldsOption@{numFoldsOption}!moa.classifiers.meta.AccuracyWeightedEnsemble@{moa.classifiers.meta.AccuracyWeightedEnsemble}}
+\doxysubsubsection{\texorpdfstring{numFoldsOption}{numFoldsOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+classifiers.\+meta.\+Accuracy\+Weighted\+Ensemble.\+num\+Folds\+Option = new \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}}(\char`\"{}num\+Folds\char`\"{}, \textquotesingle{}f\textquotesingle{}, \char`\"{}Number of cross-\/validation folds for candidate classifier testing.\char`\"{}, 10, 1, Integer.\+M\+A\+X\+\_\+\+V\+A\+L\+UE)}
+
+Number of folds in candidate classifier cross-\/validation. \mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_aca5e100c6657aa73cacfc103afb3e38e}\label{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_aca5e100c6657aa73cacfc103afb3e38e}} 
+\index{moa.classifiers.meta.AccuracyWeightedEnsemble@{moa.classifiers.meta.AccuracyWeightedEnsemble}!storedCountOption@{storedCountOption}}
+\index{storedCountOption@{storedCountOption}!moa.classifiers.meta.AccuracyWeightedEnsemble@{moa.classifiers.meta.AccuracyWeightedEnsemble}}
+\doxysubsubsection{\texorpdfstring{storedCountOption}{storedCountOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} moa.\+classifiers.\+meta.\+Accuracy\+Weighted\+Ensemble.\+stored\+Count\+Option = new \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}}(\char`\"{}stored\+Count\char`\"{}, \textquotesingle{}r\textquotesingle{}, \char`\"{}The maximum number of classifiers to store and choose from when creating an ensemble.\char`\"{}, 30, 1, Integer.\+M\+A\+X\+\_\+\+V\+A\+L\+UE)}
+
+Number of classifiers remembered and available for ensemble construction. \mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_af1d7d6af53caf945631e29158033a8ee}\label{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_af1d7d6af53caf945631e29158033a8ee}} 
+\index{moa.classifiers.meta.AccuracyWeightedEnsemble@{moa.classifiers.meta.AccuracyWeightedEnsemble}!storedWeights@{storedWeights}}
+\index{storedWeights@{storedWeights}!moa.classifiers.meta.AccuracyWeightedEnsemble@{moa.classifiers.meta.AccuracyWeightedEnsemble}}
+\doxysubsubsection{\texorpdfstring{storedWeights}{storedWeights}}
+{\footnotesize\ttfamily double \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} moa.\+classifiers.\+meta.\+Accuracy\+Weighted\+Ensemble.\+stored\+Weights\hspace{0.3cm}{\ttfamily [protected]}}
+
+The weights of stored classifiers. stored\+Weights\mbox{[}x\mbox{]}\mbox{[}0\mbox{]} = weight stored\+Weights\mbox{[}x\mbox{]}\mbox{[}1\mbox{]} = classifier \mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_a664ebba6392b0f444cc5556660cc1c37}\label{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_a664ebba6392b0f444cc5556660cc1c37}} 
+\index{moa.classifiers.meta.AccuracyWeightedEnsemble@{moa.classifiers.meta.AccuracyWeightedEnsemble}!weightComparator@{weightComparator}}
+\index{weightComparator@{weightComparator}!moa.classifiers.meta.AccuracyWeightedEnsemble@{moa.classifiers.meta.AccuracyWeightedEnsemble}}
+\doxysubsubsection{\texorpdfstring{weightComparator}{weightComparator}}
+{\footnotesize\ttfamily java.\+util.\+Comparator$<$double\mbox{[}$\,$\mbox{]}$>$ moa.\+classifiers.\+meta.\+Accuracy\+Weighted\+Ensemble.\+weight\+Comparator = new Classifier\+Weight\+Comparator()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Simple weight comparator. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/classifiers/meta/Accuracy\+Weighted\+Ensemble.\+java\end{DoxyCompactItemize}

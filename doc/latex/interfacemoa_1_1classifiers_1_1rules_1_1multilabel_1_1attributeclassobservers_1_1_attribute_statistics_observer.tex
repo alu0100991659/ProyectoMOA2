@@ -1,0 +1,82 @@
+\hypertarget{interfacemoa_1_1classifiers_1_1rules_1_1multilabel_1_1attributeclassobservers_1_1_attribute_statistics_observer}{}\doxysection{moa.\+classifiers.\+rules.\+multilabel.\+attributeclassobservers.\+Attribute\+Statistics\+Observer Interface Reference}
+\label{interfacemoa_1_1classifiers_1_1rules_1_1multilabel_1_1attributeclassobservers_1_1_attribute_statistics_observer}\index{moa.classifiers.rules.multilabel.attributeclassobservers.AttributeStatisticsObserver@{moa.classifiers.rules.multilabel.attributeclassobservers.AttributeStatisticsObserver}}
+
+
+Inheritance diagram for moa.\+classifiers.\+rules.\+multilabel.\+attributeclassobservers.\+Attribute\+Statistics\+Observer\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+classifiers.\+rules.\+multilabel.\+attributeclassobservers.\+Attribute\+Statistics\+Observer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interfacemoa_1_1classifiers_1_1rules_1_1multilabel_1_1attributeclassobservers_1_1_attribute_statistics_observer_a26e87f5b0980a209380c9423c21f6988}{observe\+Attribute}} (double input\+Attribute\+Value, \mbox{\hyperlink{classmoa_1_1core_1_1_double_vector}{Double\+Vector}}\mbox{[}$\,$\mbox{]} statistics)
+\item 
+\mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1core_1_1_attribute_expansion_suggestion}{Attribute\+Expansion\+Suggestion}} \mbox{\hyperlink{interfacemoa_1_1classifiers_1_1rules_1_1multilabel_1_1attributeclassobservers_1_1_attribute_statistics_observer_ad7a8309943c398580be4248cd16e533e}{get\+Best\+Evaluated\+Split\+Suggestion}} (\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1rules_1_1multilabel_1_1core_1_1splitcriteria_1_1_multi_label_split_criterion}{Multi\+Label\+Split\+Criterion}} criterion, \mbox{\hyperlink{classmoa_1_1core_1_1_double_vector}{Double\+Vector}}\mbox{[}$\,$\mbox{]} pre\+Split\+Statistics, int input\+Attribute\+Index)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface for observing the statistics for an attribute. This observer monitors the statistics for a given attribute. Used in A\+M\+Rules\+Multi\+Label\+Learners
+
+\begin{DoxyAuthor}{Author}
+João Duarte (\href{mailto:joaomaiaduarte@gmail.com}{\texttt{ joaomaiaduarte@gmail.\+com}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+1 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interfacemoa_1_1classifiers_1_1rules_1_1multilabel_1_1attributeclassobservers_1_1_attribute_statistics_observer_ad7a8309943c398580be4248cd16e533e}\label{interfacemoa_1_1classifiers_1_1rules_1_1multilabel_1_1attributeclassobservers_1_1_attribute_statistics_observer_ad7a8309943c398580be4248cd16e533e}} 
+\index{moa.classifiers.rules.multilabel.attributeclassobservers.AttributeStatisticsObserver@{moa.classifiers.rules.multilabel.attributeclassobservers.AttributeStatisticsObserver}!getBestEvaluatedSplitSuggestion@{getBestEvaluatedSplitSuggestion}}
+\index{getBestEvaluatedSplitSuggestion@{getBestEvaluatedSplitSuggestion}!moa.classifiers.rules.multilabel.attributeclassobservers.AttributeStatisticsObserver@{moa.classifiers.rules.multilabel.attributeclassobservers.AttributeStatisticsObserver}}
+\doxysubsubsection{\texorpdfstring{getBestEvaluatedSplitSuggestion()}{getBestEvaluatedSplitSuggestion()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1core_1_1_attribute_expansion_suggestion}{Attribute\+Expansion\+Suggestion}} moa.\+classifiers.\+rules.\+multilabel.\+attributeclassobservers.\+Attribute\+Statistics\+Observer.\+get\+Best\+Evaluated\+Split\+Suggestion (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1rules_1_1multilabel_1_1core_1_1splitcriteria_1_1_multi_label_split_criterion}{Multi\+Label\+Split\+Criterion}}}]{criterion,  }\item[{\mbox{\hyperlink{classmoa_1_1core_1_1_double_vector}{Double\+Vector}}\mbox{[}$\,$\mbox{]}}]{pre\+Split\+Statistics,  }\item[{int}]{input\+Attribute\+Index }\end{DoxyParamCaption})}
+
+Gets the best split suggestion given a criterion and a class distribution
+
+
+\begin{DoxyParams}{Parameters}
+{\em criterion} & the split criterion to use \\
+\hline
+{\em pre\+Split\+Dist} & the class distribution before the split \\
+\hline
+{\em att\+Index} & the input attribute index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+suggestion of best attribute split 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1attributeclassobservers_1_1_multi_label_nominal_attribute_observer_a307a6ceb0ea4717a362f9268b133bd46}{moa.\+classifiers.\+rules.\+multilabel.\+attributeclassobservers.\+Multi\+Label\+Nominal\+Attribute\+Observer}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1attributeclassobservers_1_1_multi_label_b_s_tree_a5cd61798f71ffce47cf4681b2cf19f69}{moa.\+classifiers.\+rules.\+multilabel.\+attributeclassobservers.\+Multi\+Label\+B\+S\+Tree}}, and \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1attributeclassobservers_1_1_multi_label_b_s_tree_float_afe945e4e303595b37d4560f6a975a3e9}{moa.\+classifiers.\+rules.\+multilabel.\+attributeclassobservers.\+Multi\+Label\+B\+S\+Tree\+Float}}.
+
+\mbox{\Hypertarget{interfacemoa_1_1classifiers_1_1rules_1_1multilabel_1_1attributeclassobservers_1_1_attribute_statistics_observer_a26e87f5b0980a209380c9423c21f6988}\label{interfacemoa_1_1classifiers_1_1rules_1_1multilabel_1_1attributeclassobservers_1_1_attribute_statistics_observer_a26e87f5b0980a209380c9423c21f6988}} 
+\index{moa.classifiers.rules.multilabel.attributeclassobservers.AttributeStatisticsObserver@{moa.classifiers.rules.multilabel.attributeclassobservers.AttributeStatisticsObserver}!observeAttribute@{observeAttribute}}
+\index{observeAttribute@{observeAttribute}!moa.classifiers.rules.multilabel.attributeclassobservers.AttributeStatisticsObserver@{moa.classifiers.rules.multilabel.attributeclassobservers.AttributeStatisticsObserver}}
+\doxysubsubsection{\texorpdfstring{observeAttribute()}{observeAttribute()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+rules.\+multilabel.\+attributeclassobservers.\+Attribute\+Statistics\+Observer.\+observe\+Attribute (\begin{DoxyParamCaption}\item[{double}]{input\+Attribute\+Value,  }\item[{\mbox{\hyperlink{classmoa_1_1core_1_1_double_vector}{Double\+Vector}}\mbox{[}$\,$\mbox{]}}]{statistics }\end{DoxyParamCaption})}
+
+Updates statistics of this observer given an attribute value, the index of the statistic and the weight of the instance observed
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Attribute\+Value} & the value for the attribute attribute \\
+\hline
+{\em statistics} & num\+Outputs x num\+Statistics the index of the statistic to store \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1attributeclassobservers_1_1_multi_label_b_s_tree_a69b6d1844c636ed7658a7144bbe5b3be}{moa.\+classifiers.\+rules.\+multilabel.\+attributeclassobservers.\+Multi\+Label\+B\+S\+Tree}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1attributeclassobservers_1_1_multi_label_b_s_tree_float_a1a4a1e0b5835463bfc31fd0454fc8dae}{moa.\+classifiers.\+rules.\+multilabel.\+attributeclassobservers.\+Multi\+Label\+B\+S\+Tree\+Float}}, and \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1attributeclassobservers_1_1_multi_label_nominal_attribute_observer_a15d73565f7db45102810a1656bce070f}{moa.\+classifiers.\+rules.\+multilabel.\+attributeclassobservers.\+Multi\+Label\+Nominal\+Attribute\+Observer}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/classifiers/rules/multilabel/attributeclassobservers/Attribute\+Statistics\+Observer.\+java\end{DoxyCompactItemize}

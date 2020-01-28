@@ -1,0 +1,249 @@
+\hypertarget{classmoa_1_1classifiers_1_1lazy_1_1k_n_n}{}\doxysection{moa.\+classifiers.\+lazy.\+k\+NN Class Reference}
+\label{classmoa_1_1classifiers_1_1lazy_1_1k_n_n}\index{moa.classifiers.lazy.kNN@{moa.classifiers.lazy.kNN}}
+
+
+Inheritance diagram for moa.\+classifiers.\+lazy.\+k\+NN\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+classifiers.\+lazy.\+k\+NN\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1k_n_n_acc94931c77ce0f346e6bfbeb7ad22095}{get\+Purpose\+String}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1k_n_n_a45b9ab6e1189a7f7b6b053ce99b31146}{set\+Model\+Context}} (\mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instances_header}{Instances\+Header}} context)
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1k_n_n_ae3637b5d28ff5ff15db163d0675dfaaa}{reset\+Learning\+Impl}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1k_n_n_a6b5406ff6620be7a9702327fab1c7528}{train\+On\+Instance\+Impl}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst)
+\item 
+double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1k_n_n_a0fe92c2e3e66586958cb2ef550d81f17}{get\+Votes\+For\+Instance}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst)
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1k_n_n_a9c19476576e3bf9e8347b02d5a72fafa}{get\+Model\+Description}} (String\+Builder out, int indent)
+\item 
+boolean \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1k_n_n_a0083237280b0af4afd290c1f06fe5002}{is\+Randomizable}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1lazy_1_1k_n_n_a1b2e527b3febf266884a3e7f136e00ab}\label{classmoa_1_1classifiers_1_1lazy_1_1k_n_n_a1b2e527b3febf266884a3e7f136e00ab}} 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries k\+Option} = new \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}}( \char`\"{}k\char`\"{}, \textquotesingle{}k\textquotesingle{}, \char`\"{}The number of neighbors\char`\"{}, 10, 1, Integer.\+M\+A\+X\+\_\+\+V\+A\+L\+UE)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1lazy_1_1k_n_n_a1c2efb05c436cfa4ae46e5e1b257cd6e}\label{classmoa_1_1classifiers_1_1lazy_1_1k_n_n_a1c2efb05c436cfa4ae46e5e1b257cd6e}} 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries limit\+Option} = new \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}}( \char`\"{}limit\char`\"{}, \textquotesingle{}w\textquotesingle{}, \char`\"{}The maximum number of instances to store\char`\"{}, 1000, 1, Integer.\+M\+A\+X\+\_\+\+V\+A\+L\+UE)
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_multi_choice_option}{Multi\+Choice\+Option}} {\bfseries nearest\+Neighbour\+Search\+Option}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1k_n_n_a0e05ae06b8d9ee7b8e37783ac1107e1f}{get\+Model\+Measurements\+Impl}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1lazy_1_1k_n_n_aaec01232cb32020ca584b9b7b012e43e}\label{classmoa_1_1classifiers_1_1lazy_1_1k_n_n_aaec01232cb32020ca584b9b7b012e43e}} 
+\mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instances}{Instances}} {\bfseries window}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+k Nearest Neighbor.
+
+Valid options are\+:
+
+-\/k number of neighbours ~\newline
+ -\/m max instances ~\newline
+
+
+\begin{DoxyAuthor}{Author}
+Jesse Read (\href{mailto:jesse@tsc.uc3m.es}{\texttt{ jesse@tsc.\+uc3m.\+es}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+03.\+2012 
+\end{DoxyVersion}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1lazy_1_1k_n_n_a9c19476576e3bf9e8347b02d5a72fafa}\label{classmoa_1_1classifiers_1_1lazy_1_1k_n_n_a9c19476576e3bf9e8347b02d5a72fafa}} 
+\index{moa.classifiers.lazy.kNN@{moa.classifiers.lazy.kNN}!getModelDescription@{getModelDescription}}
+\index{getModelDescription@{getModelDescription}!moa.classifiers.lazy.kNN@{moa.classifiers.lazy.kNN}}
+\doxysubsubsection{\texorpdfstring{getModelDescription()}{getModelDescription()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+lazy.\+k\+N\+N.\+get\+Model\+Description (\begin{DoxyParamCaption}\item[{String\+Builder}]{out,  }\item[{int}]{indent }\end{DoxyParamCaption})}
+
+Returns a string representation of the model.
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & the stringbuilder to add the description \\
+\hline
+{\em indent} & the number of characters to indent \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a30e5ff32bc8127dfb7436945776b7523}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1k_n_nwith_p_a_wand_a_d_w_i_n_aa19458a9d0bdf18adf2f6f1c039e1ff8}{moa.\+classifiers.\+lazy.\+k\+N\+Nwith\+P\+A\+Wand\+A\+D\+W\+IN}}, and \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1k_n_nwith_p_a_w_a25095c6b326849183689cba103b49b3f}{moa.\+classifiers.\+lazy.\+k\+N\+Nwith\+P\+AW}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1lazy_1_1k_n_n_a0e05ae06b8d9ee7b8e37783ac1107e1f}\label{classmoa_1_1classifiers_1_1lazy_1_1k_n_n_a0e05ae06b8d9ee7b8e37783ac1107e1f}} 
+\index{moa.classifiers.lazy.kNN@{moa.classifiers.lazy.kNN}!getModelMeasurementsImpl@{getModelMeasurementsImpl}}
+\index{getModelMeasurementsImpl@{getModelMeasurementsImpl}!moa.classifiers.lazy.kNN@{moa.classifiers.lazy.kNN}}
+\doxysubsubsection{\texorpdfstring{getModelMeasurementsImpl()}{getModelMeasurementsImpl()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}} \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+lazy.\+k\+N\+N.\+get\+Model\+Measurements\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Gets the current measurements of this classifier.~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden.
+
+\begin{DoxyReturn}{Returns}
+an array of measurements to be used in evaluation tasks 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_ac2bebede21c9d2d8cd11d95a7e20e529}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1lazy_1_1k_n_n_acc94931c77ce0f346e6bfbeb7ad22095}\label{classmoa_1_1classifiers_1_1lazy_1_1k_n_n_acc94931c77ce0f346e6bfbeb7ad22095}} 
+\index{moa.classifiers.lazy.kNN@{moa.classifiers.lazy.kNN}!getPurposeString@{getPurposeString}}
+\index{getPurposeString@{getPurposeString}!moa.classifiers.lazy.kNN@{moa.classifiers.lazy.kNN}}
+\doxysubsubsection{\texorpdfstring{getPurposeString()}{getPurposeString()}}
+{\footnotesize\ttfamily String moa.\+classifiers.\+lazy.\+k\+N\+N.\+get\+Purpose\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Options to handle Dictionary with option texts and objects 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a3fc6ae11234b88e51941a77ddb879d8b}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1k_n_nwith_p_a_wand_a_d_w_i_n_a61aec82e557d90aef04b055b1a975239}{moa.\+classifiers.\+lazy.\+k\+N\+Nwith\+P\+A\+Wand\+A\+D\+W\+IN}}, and \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1k_n_nwith_p_a_w_a293419468c7d8f693e8df87664fb1838}{moa.\+classifiers.\+lazy.\+k\+N\+Nwith\+P\+AW}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1lazy_1_1k_n_n_a0fe92c2e3e66586958cb2ef550d81f17}\label{classmoa_1_1classifiers_1_1lazy_1_1k_n_n_a0fe92c2e3e66586958cb2ef550d81f17}} 
+\index{moa.classifiers.lazy.kNN@{moa.classifiers.lazy.kNN}!getVotesForInstance@{getVotesForInstance}}
+\index{getVotesForInstance@{getVotesForInstance}!moa.classifiers.lazy.kNN@{moa.classifiers.lazy.kNN}}
+\doxysubsubsection{\texorpdfstring{getVotesForInstance()}{getVotesForInstance()}}
+{\footnotesize\ttfamily double \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+lazy.\+k\+N\+N.\+get\+Votes\+For\+Instance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{inst }\end{DoxyParamCaption})}
+
+Predicts the class memberships for a given instance. If an instance is unclassified, the returned array elements must be all zero.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & the instance to be classified \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an array containing the estimated membership probabilities of the test instance in each class 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a0e3589c4fa6f088d82d64514afd9513c}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1lazy_1_1k_n_n_a0083237280b0af4afd290c1f06fe5002}\label{classmoa_1_1classifiers_1_1lazy_1_1k_n_n_a0083237280b0af4afd290c1f06fe5002}} 
+\index{moa.classifiers.lazy.kNN@{moa.classifiers.lazy.kNN}!isRandomizable@{isRandomizable}}
+\index{isRandomizable@{isRandomizable}!moa.classifiers.lazy.kNN@{moa.classifiers.lazy.kNN}}
+\doxysubsubsection{\texorpdfstring{isRandomizable()}{isRandomizable()}}
+{\footnotesize\ttfamily boolean moa.\+classifiers.\+lazy.\+k\+N\+N.\+is\+Randomizable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets whether this learner needs a random seed. Examples of methods that needs a random seed are bagging and boosting.
+
+\begin{DoxyReturn}{Returns}
+true if the learner needs a random seed. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1learners_1_1_learner_a2f1ff9007b5eb5f53801f474b4d42a61}{moa.\+learners.\+Learner$<$ E extends Example $>$}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1k_n_nwith_p_a_wand_a_d_w_i_n_a1437c05d58ab7baebf898987c4145a11}{moa.\+classifiers.\+lazy.\+k\+N\+Nwith\+P\+A\+Wand\+A\+D\+W\+IN}}, and \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1k_n_nwith_p_a_w_ad579c69d6c23d83fcd8182097e939d5c}{moa.\+classifiers.\+lazy.\+k\+N\+Nwith\+P\+AW}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1lazy_1_1k_n_n_ae3637b5d28ff5ff15db163d0675dfaaa}\label{classmoa_1_1classifiers_1_1lazy_1_1k_n_n_ae3637b5d28ff5ff15db163d0675dfaaa}} 
+\index{moa.classifiers.lazy.kNN@{moa.classifiers.lazy.kNN}!resetLearningImpl@{resetLearningImpl}}
+\index{resetLearningImpl@{resetLearningImpl}!moa.classifiers.lazy.kNN@{moa.classifiers.lazy.kNN}}
+\doxysubsubsection{\texorpdfstring{resetLearningImpl()}{resetLearningImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+lazy.\+k\+N\+N.\+reset\+Learning\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Resets this classifier. It must be similar to starting a new classifier from scratch. ~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden. 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a099ffcf2417abb919d10d697c0648f29}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1k_n_nwith_p_a_wand_a_d_w_i_n_a684a904f813300a7e683502bfa875fff}{moa.\+classifiers.\+lazy.\+k\+N\+Nwith\+P\+A\+Wand\+A\+D\+W\+IN}}, and \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1k_n_nwith_p_a_w_adf014cdd6e20a6dd90650b7c55166876}{moa.\+classifiers.\+lazy.\+k\+N\+Nwith\+P\+AW}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1lazy_1_1k_n_n_a45b9ab6e1189a7f7b6b053ce99b31146}\label{classmoa_1_1classifiers_1_1lazy_1_1k_n_n_a45b9ab6e1189a7f7b6b053ce99b31146}} 
+\index{moa.classifiers.lazy.kNN@{moa.classifiers.lazy.kNN}!setModelContext@{setModelContext}}
+\index{setModelContext@{setModelContext}!moa.classifiers.lazy.kNN@{moa.classifiers.lazy.kNN}}
+\doxysubsubsection{\texorpdfstring{setModelContext()}{setModelContext()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+lazy.\+k\+N\+N.\+set\+Model\+Context (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instances_header}{Instances\+Header}}}]{ih }\end{DoxyParamCaption})}
+
+Sets the reference to the header of the data stream. The header of the data stream is extended from W\+E\+KA {\ttfamily Instances}. This header is needed to know the number of classes and attributes
+
+
+\begin{DoxyParams}{Parameters}
+{\em ih} & the reference to the data stream header \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_ace518fd29d1cdb5af4279aa1b642dbee}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1lazy_1_1k_n_n_a6b5406ff6620be7a9702327fab1c7528}\label{classmoa_1_1classifiers_1_1lazy_1_1k_n_n_a6b5406ff6620be7a9702327fab1c7528}} 
+\index{moa.classifiers.lazy.kNN@{moa.classifiers.lazy.kNN}!trainOnInstanceImpl@{trainOnInstanceImpl}}
+\index{trainOnInstanceImpl@{trainOnInstanceImpl}!moa.classifiers.lazy.kNN@{moa.classifiers.lazy.kNN}}
+\doxysubsubsection{\texorpdfstring{trainOnInstanceImpl()}{trainOnInstanceImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+lazy.\+k\+N\+N.\+train\+On\+Instance\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{inst }\end{DoxyParamCaption})}
+
+Trains this classifier incrementally using the given instance.~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & the instance to be used for training \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_aceb24d2ddeab386f2ecead6e3c0d3543}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1k_n_nwith_p_a_wand_a_d_w_i_n_aecdd2ed9114cb9b93f0388bbbc2b8d60}{moa.\+classifiers.\+lazy.\+k\+N\+Nwith\+P\+A\+Wand\+A\+D\+W\+IN}}, and \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1k_n_nwith_p_a_w_a7f34bc40364b35be2294ba401652fcb3}{moa.\+classifiers.\+lazy.\+k\+N\+Nwith\+P\+AW}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1lazy_1_1k_n_n_a872b2f14f08a5dcecc7a6b086734e0f5}\label{classmoa_1_1classifiers_1_1lazy_1_1k_n_n_a872b2f14f08a5dcecc7a6b086734e0f5}} 
+\index{moa.classifiers.lazy.kNN@{moa.classifiers.lazy.kNN}!nearestNeighbourSearchOption@{nearestNeighbourSearchOption}}
+\index{nearestNeighbourSearchOption@{nearestNeighbourSearchOption}!moa.classifiers.lazy.kNN@{moa.classifiers.lazy.kNN}}
+\doxysubsubsection{\texorpdfstring{nearestNeighbourSearchOption}{nearestNeighbourSearchOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_multi_choice_option}{Multi\+Choice\+Option}} moa.\+classifiers.\+lazy.\+k\+N\+N.\+nearest\+Neighbour\+Search\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} MultiChoiceOption(}
+\DoxyCodeLine{            \textcolor{stringliteral}{"nearestNeighbourSearch"}, \textcolor{charliteral}{'n'}, \textcolor{stringliteral}{"Nearest Neighbour Search to use"}, \textcolor{keyword}{new} String[]\{}
+\DoxyCodeLine{                \textcolor{stringliteral}{"LinearNN"}, \textcolor{stringliteral}{"KDTree"}\},}
+\DoxyCodeLine{            \textcolor{keyword}{new} String[]\{\textcolor{stringliteral}{"Brute force search algorithm for nearest neighbour search. "},}
+\DoxyCodeLine{                \textcolor{stringliteral}{"KDTree search algorithm for nearest neighbour search"}}
+\DoxyCodeLine{            \}, 0)}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/classifiers/lazy/k\+N\+N.\+java\end{DoxyCompactItemize}

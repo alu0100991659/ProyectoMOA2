@@ -1,0 +1,149 @@
+\hypertarget{interfacemoa_1_1streams_1_1_example_stream}{}\doxysection{moa.\+streams.\+Example\+Stream$<$ E extends Example $>$ Interface Template Reference}
+\label{interfacemoa_1_1streams_1_1_example_stream}\index{moa.streams.ExampleStream$<$ E extends Example $>$@{moa.streams.ExampleStream$<$ E extends Example $>$}}
+
+
+Inheritance diagram for moa.\+streams.\+Example\+Stream$<$ E extends Example $>$\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+streams.\+Example\+Stream$<$ E extends Example $>$\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instances_header}{Instances\+Header}} \mbox{\hyperlink{interfacemoa_1_1streams_1_1_example_stream_acc192788463f1aa804eb3391fb0b54a5}{get\+Header}} ()
+\item 
+long \mbox{\hyperlink{interfacemoa_1_1streams_1_1_example_stream_a90c778fc1efe6661cc4fe6ae5ae96b6c}{estimated\+Remaining\+Instances}} ()
+\item 
+boolean \mbox{\hyperlink{interfacemoa_1_1streams_1_1_example_stream_a2af98228834384da87c53459736ee86d}{has\+More\+Instances}} ()
+\item 
+E \mbox{\hyperlink{interfacemoa_1_1streams_1_1_example_stream_a7d7a2cfbc324b8367bea1afa30276387}{next\+Instance}} ()
+\item 
+boolean \mbox{\hyperlink{interfacemoa_1_1streams_1_1_example_stream_a086ea0c8c09f2383f68f9ae7d1ac4f58}{is\+Restartable}} ()
+\item 
+void \mbox{\hyperlink{interfacemoa_1_1streams_1_1_example_stream_a45d6cc4e00eb16debd7f366afab09b87}{restart}} ()
+\item 
+default \mbox{\hyperlink{classmoa_1_1capabilities_1_1_immutable_capabilities}{Immutable\+Capabilities}} \mbox{\hyperlink{interfacemoa_1_1streams_1_1_example_stream_a3e3e95e96db07173e5fe5dbdb85d4e94}{define\+Immutable\+Capabilities}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface representing a data stream of examples.
+
+\begin{DoxyAuthor}{Author}
+Richard Kirkby (\href{mailto:rkirkby@cs.waikato.ac.nz}{\texttt{ rkirkby@cs.\+waikato.\+ac.\+nz}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+7 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interfacemoa_1_1streams_1_1_example_stream_a3e3e95e96db07173e5fe5dbdb85d4e94}\label{interfacemoa_1_1streams_1_1_example_stream_a3e3e95e96db07173e5fe5dbdb85d4e94}} 
+\index{moa.streams.ExampleStream$<$ E extends Example $>$@{moa.streams.ExampleStream$<$ E extends Example $>$}!defineImmutableCapabilities@{defineImmutableCapabilities}}
+\index{defineImmutableCapabilities@{defineImmutableCapabilities}!moa.streams.ExampleStream$<$ E extends Example $>$@{moa.streams.ExampleStream$<$ E extends Example $>$}}
+\doxysubsubsection{\texorpdfstring{defineImmutableCapabilities()}{defineImmutableCapabilities()}}
+{\footnotesize\ttfamily default \mbox{\hyperlink{classmoa_1_1capabilities_1_1_immutable_capabilities}{Immutable\+Capabilities}} \mbox{\hyperlink{interfacemoa_1_1streams_1_1_example_stream}{moa.\+streams.\+Example\+Stream}}$<$ E extends \mbox{\hyperlink{interfacemoa_1_1core_1_1_example}{Example}} $>$.define\+Immutable\+Capabilities (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Defines the set of capabilities the object has. Should be overridden if the object\textquotesingle{}s capabilities do not change.
+
+\begin{DoxyReturn}{Returns}
+The capabilities of the object. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1capabilities_1_1_capabilities_handler_aa82d1befd5dbb958c9787b5304c9a82a}{moa.\+capabilities.\+Capabilities\+Handler}}.
+
+\mbox{\Hypertarget{interfacemoa_1_1streams_1_1_example_stream_a90c778fc1efe6661cc4fe6ae5ae96b6c}\label{interfacemoa_1_1streams_1_1_example_stream_a90c778fc1efe6661cc4fe6ae5ae96b6c}} 
+\index{moa.streams.ExampleStream$<$ E extends Example $>$@{moa.streams.ExampleStream$<$ E extends Example $>$}!estimatedRemainingInstances@{estimatedRemainingInstances}}
+\index{estimatedRemainingInstances@{estimatedRemainingInstances}!moa.streams.ExampleStream$<$ E extends Example $>$@{moa.streams.ExampleStream$<$ E extends Example $>$}}
+\doxysubsubsection{\texorpdfstring{estimatedRemainingInstances()}{estimatedRemainingInstances()}}
+{\footnotesize\ttfamily long \mbox{\hyperlink{interfacemoa_1_1streams_1_1_example_stream}{moa.\+streams.\+Example\+Stream}}$<$ E extends \mbox{\hyperlink{interfacemoa_1_1core_1_1_example}{Example}} $>$.estimated\+Remaining\+Instances (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the estimated number of remaining instances in this stream
+
+\begin{DoxyReturn}{Returns}
+the estimated number of instances to get from this stream 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classmoa_1_1streams_1_1_multi_filtered_stream_affa7e1a959bd924d3e1fa4b1ff3a78cd}{moa.\+streams.\+Multi\+Filtered\+Stream}}, \mbox{\hyperlink{classmoa_1_1streams_1_1_filtered_stream_acfbc44ec3b0fdca6803ab992b34b4f35}{moa.\+streams.\+Filtered\+Stream}}, \mbox{\hyperlink{classmoa_1_1streams_1_1_partitioning_stream_abc4aaf6cc9aa087e00275e99161bf0c9}{moa.\+streams.\+Partitioning\+Stream}}, and \mbox{\hyperlink{classmoa_1_1streams_1_1filters_1_1_abstract_stream_filter_ab715065de107455da43fbf5b7f7bf2a5}{moa.\+streams.\+filters.\+Abstract\+Stream\+Filter}}.
+
+\mbox{\Hypertarget{interfacemoa_1_1streams_1_1_example_stream_acc192788463f1aa804eb3391fb0b54a5}\label{interfacemoa_1_1streams_1_1_example_stream_acc192788463f1aa804eb3391fb0b54a5}} 
+\index{moa.streams.ExampleStream$<$ E extends Example $>$@{moa.streams.ExampleStream$<$ E extends Example $>$}!getHeader@{getHeader}}
+\index{getHeader@{getHeader}!moa.streams.ExampleStream$<$ E extends Example $>$@{moa.streams.ExampleStream$<$ E extends Example $>$}}
+\doxysubsubsection{\texorpdfstring{getHeader()}{getHeader()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instances_header}{Instances\+Header}} \mbox{\hyperlink{interfacemoa_1_1streams_1_1_example_stream}{moa.\+streams.\+Example\+Stream}}$<$ E extends \mbox{\hyperlink{interfacemoa_1_1core_1_1_example}{Example}} $>$.get\+Header (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the header of this stream. This is useful to know attributes and classes. Instances\+Header is an extension of weka.\+Instances.
+
+\begin{DoxyReturn}{Returns}
+the header of this stream 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classmoa_1_1streams_1_1filters_1_1_replacing_missing_values_filter_a12581a1978c37ef2b7d2068fe25e7885}{moa.\+streams.\+filters.\+Replacing\+Missing\+Values\+Filter}}, \mbox{\hyperlink{classmoa_1_1streams_1_1_multi_filtered_stream_aafb7967368be3f854580886ef6f5cd2f}{moa.\+streams.\+Multi\+Filtered\+Stream}}, \mbox{\hyperlink{classmoa_1_1streams_1_1_filtered_stream_ad15e185294ebd059588166ab009ba2ba}{moa.\+streams.\+Filtered\+Stream}}, \mbox{\hyperlink{classmoa_1_1streams_1_1filters_1_1_add_noise_filter_a8928dd32939636ec5618555512919f70}{moa.\+streams.\+filters.\+Add\+Noise\+Filter}}, \mbox{\hyperlink{classmoa_1_1streams_1_1_partitioning_stream_af44a06ee39c702c325491c3a9574ac33}{moa.\+streams.\+Partitioning\+Stream}}, \mbox{\hyperlink{classmoa_1_1streams_1_1filters_1_1_remove_discrete_attribute_filter_a6a1007a89917cb8b77686b21ae6af5dd}{moa.\+streams.\+filters.\+Remove\+Discrete\+Attribute\+Filter}}, \mbox{\hyperlink{classmoa_1_1streams_1_1filters_1_1_re_l_u_filter_a4805523fb27f41f0ac4087ae50e357a0}{moa.\+streams.\+filters.\+Re\+L\+U\+Filter}}, and \mbox{\hyperlink{classmoa_1_1streams_1_1filters_1_1_r_b_f_filter_aa410ce2cee1a224e68f1d0aeb2e4a1dc}{moa.\+streams.\+filters.\+R\+B\+F\+Filter}}.
+
+\mbox{\Hypertarget{interfacemoa_1_1streams_1_1_example_stream_a2af98228834384da87c53459736ee86d}\label{interfacemoa_1_1streams_1_1_example_stream_a2af98228834384da87c53459736ee86d}} 
+\index{moa.streams.ExampleStream$<$ E extends Example $>$@{moa.streams.ExampleStream$<$ E extends Example $>$}!hasMoreInstances@{hasMoreInstances}}
+\index{hasMoreInstances@{hasMoreInstances}!moa.streams.ExampleStream$<$ E extends Example $>$@{moa.streams.ExampleStream$<$ E extends Example $>$}}
+\doxysubsubsection{\texorpdfstring{hasMoreInstances()}{hasMoreInstances()}}
+{\footnotesize\ttfamily boolean \mbox{\hyperlink{interfacemoa_1_1streams_1_1_example_stream}{moa.\+streams.\+Example\+Stream}}$<$ E extends \mbox{\hyperlink{interfacemoa_1_1core_1_1_example}{Example}} $>$.has\+More\+Instances (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets whether this stream has more instances to output. This is useful when reading streams from files.
+
+\begin{DoxyReturn}{Returns}
+true if this stream has more instances to output 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classmoa_1_1streams_1_1_multi_filtered_stream_a8e0ead80bb9b301201ef40242261c642}{moa.\+streams.\+Multi\+Filtered\+Stream}}, \mbox{\hyperlink{classmoa_1_1streams_1_1_filtered_stream_a67fdf85b447e86f022785a08b79f95ca}{moa.\+streams.\+Filtered\+Stream}}, \mbox{\hyperlink{classmoa_1_1streams_1_1_partitioning_stream_aea3277c9791d2bc89cea172a6f6610ee}{moa.\+streams.\+Partitioning\+Stream}}, and \mbox{\hyperlink{classmoa_1_1streams_1_1filters_1_1_abstract_stream_filter_a583e826cc57831a50eadc28c1180e18b}{moa.\+streams.\+filters.\+Abstract\+Stream\+Filter}}.
+
+\mbox{\Hypertarget{interfacemoa_1_1streams_1_1_example_stream_a086ea0c8c09f2383f68f9ae7d1ac4f58}\label{interfacemoa_1_1streams_1_1_example_stream_a086ea0c8c09f2383f68f9ae7d1ac4f58}} 
+\index{moa.streams.ExampleStream$<$ E extends Example $>$@{moa.streams.ExampleStream$<$ E extends Example $>$}!isRestartable@{isRestartable}}
+\index{isRestartable@{isRestartable}!moa.streams.ExampleStream$<$ E extends Example $>$@{moa.streams.ExampleStream$<$ E extends Example $>$}}
+\doxysubsubsection{\texorpdfstring{isRestartable()}{isRestartable()}}
+{\footnotesize\ttfamily boolean \mbox{\hyperlink{interfacemoa_1_1streams_1_1_example_stream}{moa.\+streams.\+Example\+Stream}}$<$ E extends \mbox{\hyperlink{interfacemoa_1_1core_1_1_example}{Example}} $>$.is\+Restartable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets whether this stream can restart.
+
+\begin{DoxyReturn}{Returns}
+true if this stream can restart 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classmoa_1_1streams_1_1_multi_filtered_stream_ac21ecd3506fd9284279204c013dc090a}{moa.\+streams.\+Multi\+Filtered\+Stream}}, \mbox{\hyperlink{classmoa_1_1streams_1_1_partitioning_stream_af374c22e8793b12dea96470537861679}{moa.\+streams.\+Partitioning\+Stream}}, \mbox{\hyperlink{classmoa_1_1streams_1_1_filtered_stream_af072398783756a736b33edad2672762c}{moa.\+streams.\+Filtered\+Stream}}, and \mbox{\hyperlink{classmoa_1_1streams_1_1filters_1_1_abstract_stream_filter_a9186efb93b906faac01ab45a18aa41e5}{moa.\+streams.\+filters.\+Abstract\+Stream\+Filter}}.
+
+\mbox{\Hypertarget{interfacemoa_1_1streams_1_1_example_stream_a7d7a2cfbc324b8367bea1afa30276387}\label{interfacemoa_1_1streams_1_1_example_stream_a7d7a2cfbc324b8367bea1afa30276387}} 
+\index{moa.streams.ExampleStream$<$ E extends Example $>$@{moa.streams.ExampleStream$<$ E extends Example $>$}!nextInstance@{nextInstance}}
+\index{nextInstance@{nextInstance}!moa.streams.ExampleStream$<$ E extends Example $>$@{moa.streams.ExampleStream$<$ E extends Example $>$}}
+\doxysubsubsection{\texorpdfstring{nextInstance()}{nextInstance()}}
+{\footnotesize\ttfamily E \mbox{\hyperlink{interfacemoa_1_1streams_1_1_example_stream}{moa.\+streams.\+Example\+Stream}}$<$ E extends \mbox{\hyperlink{interfacemoa_1_1core_1_1_example}{Example}} $>$.next\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the next example from this stream.
+
+\begin{DoxyReturn}{Returns}
+the next example of this stream 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classmoa_1_1streams_1_1_multi_filtered_stream_a5ea55f4f4d5c7aa0cd9ca58f01d95395}{moa.\+streams.\+Multi\+Filtered\+Stream}}, \mbox{\hyperlink{classmoa_1_1streams_1_1filters_1_1_replacing_missing_values_filter_a91c5b45becbf530a828216e42bff3973}{moa.\+streams.\+filters.\+Replacing\+Missing\+Values\+Filter}}, \mbox{\hyperlink{classmoa_1_1streams_1_1_filtered_stream_af5798fc39b685a53ca468d0b69ac82e7}{moa.\+streams.\+Filtered\+Stream}}, \mbox{\hyperlink{classmoa_1_1streams_1_1_partitioning_stream_af8a16f8aca320847aa0efc43bd7d3093}{moa.\+streams.\+Partitioning\+Stream}}, \mbox{\hyperlink{classmoa_1_1streams_1_1filters_1_1_abstract_stream_filter_ad7247410872dd80d26081c9d45b5206f}{moa.\+streams.\+filters.\+Abstract\+Stream\+Filter}}, \mbox{\hyperlink{classmoa_1_1streams_1_1filters_1_1_remove_discrete_attribute_filter_adfbd8200f35de56b8b9016955802024f}{moa.\+streams.\+filters.\+Remove\+Discrete\+Attribute\+Filter}}, and \mbox{\hyperlink{classmoa_1_1streams_1_1filters_1_1_r_b_f_filter_a112c4188759399728906675cbbecba05}{moa.\+streams.\+filters.\+R\+B\+F\+Filter}}.
+
+\mbox{\Hypertarget{interfacemoa_1_1streams_1_1_example_stream_a45d6cc4e00eb16debd7f366afab09b87}\label{interfacemoa_1_1streams_1_1_example_stream_a45d6cc4e00eb16debd7f366afab09b87}} 
+\index{moa.streams.ExampleStream$<$ E extends Example $>$@{moa.streams.ExampleStream$<$ E extends Example $>$}!restart@{restart}}
+\index{restart@{restart}!moa.streams.ExampleStream$<$ E extends Example $>$@{moa.streams.ExampleStream$<$ E extends Example $>$}}
+\doxysubsubsection{\texorpdfstring{restart()}{restart()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{interfacemoa_1_1streams_1_1_example_stream}{moa.\+streams.\+Example\+Stream}}$<$ E extends \mbox{\hyperlink{interfacemoa_1_1core_1_1_example}{Example}} $>$.restart (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Restarts this stream. It must be similar to starting a new stream from scratch. 
+
+Implemented in \mbox{\hyperlink{classmoa_1_1streams_1_1_multi_filtered_stream_ae5eb8b6de9bdfe4d98222a7e116514f2}{moa.\+streams.\+Multi\+Filtered\+Stream}}, \mbox{\hyperlink{classmoa_1_1streams_1_1_partitioning_stream_a889744478a898cd760e01977a50a67e5}{moa.\+streams.\+Partitioning\+Stream}}, \mbox{\hyperlink{classmoa_1_1streams_1_1_filtered_stream_a2754b4f35ed4a3f958cd232dfbed2ad6}{moa.\+streams.\+Filtered\+Stream}}, and \mbox{\hyperlink{classmoa_1_1streams_1_1filters_1_1_abstract_stream_filter_a0514d0c02ecb80d40d7fd84513dc13d5}{moa.\+streams.\+filters.\+Abstract\+Stream\+Filter}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/streams/Example\+Stream.\+java\end{DoxyCompactItemize}

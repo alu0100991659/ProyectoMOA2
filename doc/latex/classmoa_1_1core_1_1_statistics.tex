@@ -1,0 +1,567 @@
+\hypertarget{classmoa_1_1core_1_1_statistics}{}\doxysection{moa.\+core.\+Statistics Class Reference}
+\label{classmoa_1_1core_1_1_statistics}\index{moa.core.Statistics@{moa.core.Statistics}}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static double \mbox{\hyperlink{classmoa_1_1core_1_1_statistics_a169fbe8ac02c0b658d4df7b8ea9e70c2}{binomial\+Standard\+Error}} (double p, int n)
+\item 
+static double \mbox{\hyperlink{classmoa_1_1core_1_1_statistics_aaa4292c3811d420c8dd04116882045c0}{chi\+Squared\+Probability}} (double x, double v)
+\item 
+static double \mbox{\hyperlink{classmoa_1_1core_1_1_statistics_ab658ea17f44637368061fe9bed8ab366}{F\+Probability}} (double F, int df1, int df2)
+\item 
+static double \mbox{\hyperlink{classmoa_1_1core_1_1_statistics_a119f23acee8c390e9cb71180cb55e9fb}{normal\+Probability}} (double a)
+\item 
+static double \mbox{\hyperlink{classmoa_1_1core_1_1_statistics_a1cef4e28f49f7317998628fd485c9e75}{normal\+Inverse}} (double y0)
+\item 
+static double \mbox{\hyperlink{classmoa_1_1core_1_1_statistics_ac7932d42009cac35d89f2a1db83b271f}{ln\+Gamma}} (double x)
+\item 
+static double \mbox{\hyperlink{classmoa_1_1core_1_1_statistics_ac806f3a87606598da8184c7e446a843f}{error\+Function}} (double x)
+\item 
+static double \mbox{\hyperlink{classmoa_1_1core_1_1_statistics_a2f12f8e8401d03dd3c80830821543c9d}{error\+Function\+Complemented}} (double a)
+\item 
+static double \mbox{\hyperlink{classmoa_1_1core_1_1_statistics_af106e29cd2b14532d87d57c89e3ad673}{p1evl}} (double x, double coef\mbox{[}$\,$\mbox{]}, int N)
+\item 
+static double \mbox{\hyperlink{classmoa_1_1core_1_1_statistics_a5b96ff5f5616f3018ef908f725dc3d3c}{polevl}} (double x, double coef\mbox{[}$\,$\mbox{]}, int N)
+\item 
+static double \mbox{\hyperlink{classmoa_1_1core_1_1_statistics_ade201354df63eb66c5523cf4b0d16f0f}{incomplete\+Gamma}} (double a, double x)
+\item 
+static double \mbox{\hyperlink{classmoa_1_1core_1_1_statistics_aa9e6ce81cc8e3c4ea11eaf6f347ab9da}{incomplete\+Gamma\+Complement}} (double a, double x)
+\item 
+static double \mbox{\hyperlink{classmoa_1_1core_1_1_statistics_a1c0a9df058c14c1b91e6743d930eb358}{gamma}} (double x)
+\item 
+static double \mbox{\hyperlink{classmoa_1_1core_1_1_statistics_a99f3c8490e1e543c65751209d1243797}{stirling\+Formula}} (double x)
+\item 
+static double \mbox{\hyperlink{classmoa_1_1core_1_1_statistics_a07fe8355c8af711ef9b0d44f930c96fa}{incomplete\+Beta}} (double aa, double bb, double xx)
+\item 
+static double \mbox{\hyperlink{classmoa_1_1core_1_1_statistics_a8b00e2d7003bd1bcf2ea5f38b384a6f6}{incomplete\+Beta\+Fraction1}} (double a, double b, double x)
+\item 
+static double \mbox{\hyperlink{classmoa_1_1core_1_1_statistics_a9b8588fc99bc4a23dfc24d813773616c}{incomplete\+Beta\+Fraction2}} (double a, double b, double x)
+\item 
+static double \mbox{\hyperlink{classmoa_1_1core_1_1_statistics_a7e9f4d82fc85193a3995d0b78d72ce12}{power\+Series}} (double a, double b, double x)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final double \mbox{\hyperlink{classmoa_1_1core_1_1_statistics_af59f17c8f56a9307d016a277a625b323}{M\+A\+C\+H\+EP}} = 1.\+11022302462515654042E-\/16
+\item 
+\mbox{\Hypertarget{classmoa_1_1core_1_1_statistics_a9b15b66c9be51aae8e190322674a44bf}\label{classmoa_1_1core_1_1_statistics_a9b15b66c9be51aae8e190322674a44bf}} 
+static final double {\bfseries M\+A\+X\+L\+OG} = 7.\+09782712893383996732E2
+\item 
+\mbox{\Hypertarget{classmoa_1_1core_1_1_statistics_ad5d762233787d775c21aabbd73c10529}\label{classmoa_1_1core_1_1_statistics_ad5d762233787d775c21aabbd73c10529}} 
+static final double {\bfseries M\+I\+N\+L\+OG} = -\/7.\+451332191019412076235E2
+\item 
+\mbox{\Hypertarget{classmoa_1_1core_1_1_statistics_a5f3160682e1dfb02f44806255de7dfe4}\label{classmoa_1_1core_1_1_statistics_a5f3160682e1dfb02f44806255de7dfe4}} 
+static final double {\bfseries M\+A\+X\+G\+AM} = 171.\+624376956302725
+\item 
+\mbox{\Hypertarget{classmoa_1_1core_1_1_statistics_aaba5eb2dd3f5b147835effc876f8a395}\label{classmoa_1_1core_1_1_statistics_aaba5eb2dd3f5b147835effc876f8a395}} 
+static final double {\bfseries S\+Q\+T\+PI} = 2.\+50662827463100050242E0
+\item 
+\mbox{\Hypertarget{classmoa_1_1core_1_1_statistics_a3e1a0c395add740630e66b042426a9a9}\label{classmoa_1_1core_1_1_statistics_a3e1a0c395add740630e66b042426a9a9}} 
+static final double {\bfseries S\+Q\+R\+TH} = 7.\+07106781186547524401E-\/1
+\item 
+\mbox{\Hypertarget{classmoa_1_1core_1_1_statistics_a893a0fb3096bff05c800129125749d2f}\label{classmoa_1_1core_1_1_statistics_a893a0fb3096bff05c800129125749d2f}} 
+static final double {\bfseries L\+O\+G\+PI} = 1.\+14472988584940017414
+\item 
+\mbox{\Hypertarget{classmoa_1_1core_1_1_statistics_a5b5fdf589bc38dd9528e9ed671a11266}\label{classmoa_1_1core_1_1_statistics_a5b5fdf589bc38dd9528e9ed671a11266}} 
+static final double {\bfseries big} = 4.\+503599627370496e15
+\item 
+\mbox{\Hypertarget{classmoa_1_1core_1_1_statistics_a5c8ec7c71b754372efda70bfaa609d76}\label{classmoa_1_1core_1_1_statistics_a5c8ec7c71b754372efda70bfaa609d76}} 
+static final double {\bfseries biginv} = 2.\+22044604925031308085e-\/16
+\item 
+static final double {\bfseries P0} \mbox{[}$\,$\mbox{]}
+\item 
+static final double {\bfseries Q0} \mbox{[}$\,$\mbox{]}
+\item 
+static final double {\bfseries P1} \mbox{[}$\,$\mbox{]}
+\item 
+static final double {\bfseries Q1} \mbox{[}$\,$\mbox{]}
+\item 
+static final double {\bfseries P2} \mbox{[}$\,$\mbox{]}
+\item 
+static final double {\bfseries Q2} \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class implementing some distributions, tests, etc. The code is mostly adapted from the C\+E\+RN Jet Java libraries\+:
+
+Copyright 2001 University of Waikato Copyright 1999 C\+E\+RN -\/ European Organization for Nuclear Research. Permission to use, copy, modify, distribute and sell this software and its documentation for any purpose is hereby granted without fee, provided that the above copyright notice appear in all copies and that both that copyright notice and this permission notice appear in supporting documentation. C\+E\+RN and the University of Waikato make no representations about the suitability of this software for any purpose. It is provided \char`\"{}as is\char`\"{} without expressed or implied warranty.
+
+\begin{DoxyAuthor}{Author}
+\href{mailto:peter.gedeck@pharma.Novartis.com}{\texttt{ peter.\+gedeck@pharma.\+Novartis.\+com}} 
+
+\href{mailto:wolfgang.hoschek@cern.ch}{\texttt{ wolfgang.\+hoschek@cern.\+ch}} 
+
+Eibe Frank (\href{mailto:eibe@cs.waikato.ac.nz}{\texttt{ eibe@cs.\+waikato.\+ac.\+nz}}) 
+
+Richard Kirkby (\href{mailto:rkirkby@cs.waikato.ac.nz}{\texttt{ rkirkby@cs.\+waikato.\+ac.\+nz}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+5616 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1core_1_1_statistics_a169fbe8ac02c0b658d4df7b8ea9e70c2}\label{classmoa_1_1core_1_1_statistics_a169fbe8ac02c0b658d4df7b8ea9e70c2}} 
+\index{moa.core.Statistics@{moa.core.Statistics}!binomialStandardError@{binomialStandardError}}
+\index{binomialStandardError@{binomialStandardError}!moa.core.Statistics@{moa.core.Statistics}}
+\doxysubsubsection{\texorpdfstring{binomialStandardError()}{binomialStandardError()}}
+{\footnotesize\ttfamily static double moa.\+core.\+Statistics.\+binomial\+Standard\+Error (\begin{DoxyParamCaption}\item[{double}]{p,  }\item[{int}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Computes standard error for observed values of a binomial random variable.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & the probability of success \\
+\hline
+{\em n} & the size of the sample \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the standard error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmoa_1_1core_1_1_statistics_aaa4292c3811d420c8dd04116882045c0}\label{classmoa_1_1core_1_1_statistics_aaa4292c3811d420c8dd04116882045c0}} 
+\index{moa.core.Statistics@{moa.core.Statistics}!chiSquaredProbability@{chiSquaredProbability}}
+\index{chiSquaredProbability@{chiSquaredProbability}!moa.core.Statistics@{moa.core.Statistics}}
+\doxysubsubsection{\texorpdfstring{chiSquaredProbability()}{chiSquaredProbability()}}
+{\footnotesize\ttfamily static double moa.\+core.\+Statistics.\+chi\+Squared\+Probability (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns chi-\/squared probability for given value and degrees of freedom. (The probability that the chi-\/squared variate will be greater than x for the given degrees of freedom.)
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & the value \\
+\hline
+{\em v} & the number of degrees of freedom \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the chi-\/squared probability 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmoa_1_1core_1_1_statistics_ac806f3a87606598da8184c7e446a843f}\label{classmoa_1_1core_1_1_statistics_ac806f3a87606598da8184c7e446a843f}} 
+\index{moa.core.Statistics@{moa.core.Statistics}!errorFunction@{errorFunction}}
+\index{errorFunction@{errorFunction}!moa.core.Statistics@{moa.core.Statistics}}
+\doxysubsubsection{\texorpdfstring{errorFunction()}{errorFunction()}}
+{\footnotesize\ttfamily static double moa.\+core.\+Statistics.\+error\+Function (\begin{DoxyParamCaption}\item[{double}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the error function of the normal distribution. The integral is 
+\begin{DoxyPre}
+                          x
+\begin{DoxyItemize}
+\item                 2         | |          2
+  erf(x)  =  -\/-\/-\/-\/-\/-\/-\/-\/     |    exp( -\/ t  ) dt.
+             sqrt(pi)   | |
+\end{DoxyItemize}\end{DoxyPre}
+
+
+
+\begin{DoxyPre}                          0
+\end{DoxyPre}
+ {\bfseries{Implementation\+:}} For {\ttfamily 0 $<$= $\vert$x$\vert$ $<$ 1, erf(x) = x $\ast$ P4(x$\ast$$\ast$2)/\+Q5(x$\ast$$\ast$2)}; otherwise {\ttfamily erf(x) = 1 -\/ erfc(x)}. 
+
+Code adapted from the \href{http://www.sci.usq.edu.au/staff/leighb/graph/Top.html}{\texttt{ Java 2D Graph Package 2.\+4}}, which in turn is a port from the \href{http://people.ne.mediaone.net/moshier/index.html\#Cephes}{\texttt{ Cephes 2.\+2}} Math Library (C).
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & the argument to the function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmoa_1_1core_1_1_statistics_a2f12f8e8401d03dd3c80830821543c9d}\label{classmoa_1_1core_1_1_statistics_a2f12f8e8401d03dd3c80830821543c9d}} 
+\index{moa.core.Statistics@{moa.core.Statistics}!errorFunctionComplemented@{errorFunctionComplemented}}
+\index{errorFunctionComplemented@{errorFunctionComplemented}!moa.core.Statistics@{moa.core.Statistics}}
+\doxysubsubsection{\texorpdfstring{errorFunctionComplemented()}{errorFunctionComplemented()}}
+{\footnotesize\ttfamily static double moa.\+core.\+Statistics.\+error\+Function\+Complemented (\begin{DoxyParamCaption}\item[{double}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the complementary Error function of the normal distribution. 
+\begin{DoxyPre}
+ 1 -\/ erf(x) =\end{DoxyPre}
+
+
+
+\begin{DoxyPre}                          inf.
+\begin{DoxyItemize}
+\item 2         | |          2
+  erfc(x)  =  -\/-\/-\/-\/-\/-\/-\/-\/     |    exp( -\/ t  ) dt
+              sqrt(pi)   | |
+\end{DoxyItemize}\end{DoxyPre}
+
+
+
+\begin{DoxyPre}                           x
+\end{DoxyPre}
+ {\bfseries{Implementation\+:}} For small x, {\ttfamily erfc(x) = 1 -\/ erf(x)}; otherwise rational approximations are computed. 
+
+Code adapted from the \href{http://www.sci.usq.edu.au/staff/leighb/graph/Top.html}{\texttt{ Java 2D Graph Package 2.\+4}}, which in turn is a port from the \href{http://people.ne.mediaone.net/moshier/index.html\#Cephes}{\texttt{ Cephes 2.\+2}} Math Library (C).
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & the argument to the function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmoa_1_1core_1_1_statistics_ab658ea17f44637368061fe9bed8ab366}\label{classmoa_1_1core_1_1_statistics_ab658ea17f44637368061fe9bed8ab366}} 
+\index{moa.core.Statistics@{moa.core.Statistics}!FProbability@{FProbability}}
+\index{FProbability@{FProbability}!moa.core.Statistics@{moa.core.Statistics}}
+\doxysubsubsection{\texorpdfstring{FProbability()}{FProbability()}}
+{\footnotesize\ttfamily static double moa.\+core.\+Statistics.\+F\+Probability (\begin{DoxyParamCaption}\item[{double}]{F,  }\item[{int}]{df1,  }\item[{int}]{df2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Computes probability of F-\/ratio.
+
+
+\begin{DoxyParams}{Parameters}
+{\em F} & the F-\/ratio \\
+\hline
+{\em df1} & the first number of degrees of freedom \\
+\hline
+{\em df2} & the second number of degrees of freedom \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the probability of the F-\/ratio. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmoa_1_1core_1_1_statistics_a1c0a9df058c14c1b91e6743d930eb358}\label{classmoa_1_1core_1_1_statistics_a1c0a9df058c14c1b91e6743d930eb358}} 
+\index{moa.core.Statistics@{moa.core.Statistics}!gamma@{gamma}}
+\index{gamma@{gamma}!moa.core.Statistics@{moa.core.Statistics}}
+\doxysubsubsection{\texorpdfstring{gamma()}{gamma()}}
+{\footnotesize\ttfamily static double moa.\+core.\+Statistics.\+gamma (\begin{DoxyParamCaption}\item[{double}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the Gamma function of the argument. \mbox{\Hypertarget{classmoa_1_1core_1_1_statistics_a07fe8355c8af711ef9b0d44f930c96fa}\label{classmoa_1_1core_1_1_statistics_a07fe8355c8af711ef9b0d44f930c96fa}} 
+\index{moa.core.Statistics@{moa.core.Statistics}!incompleteBeta@{incompleteBeta}}
+\index{incompleteBeta@{incompleteBeta}!moa.core.Statistics@{moa.core.Statistics}}
+\doxysubsubsection{\texorpdfstring{incompleteBeta()}{incompleteBeta()}}
+{\footnotesize\ttfamily static double moa.\+core.\+Statistics.\+incomplete\+Beta (\begin{DoxyParamCaption}\item[{double}]{aa,  }\item[{double}]{bb,  }\item[{double}]{xx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the Incomplete Beta Function evaluated from zero to {\ttfamily xx}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em aa} & the alpha parameter of the beta distribution. \\
+\hline
+{\em bb} & the beta parameter of the beta distribution. \\
+\hline
+{\em xx} & the integration end point. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmoa_1_1core_1_1_statistics_a8b00e2d7003bd1bcf2ea5f38b384a6f6}\label{classmoa_1_1core_1_1_statistics_a8b00e2d7003bd1bcf2ea5f38b384a6f6}} 
+\index{moa.core.Statistics@{moa.core.Statistics}!incompleteBetaFraction1@{incompleteBetaFraction1}}
+\index{incompleteBetaFraction1@{incompleteBetaFraction1}!moa.core.Statistics@{moa.core.Statistics}}
+\doxysubsubsection{\texorpdfstring{incompleteBetaFraction1()}{incompleteBetaFraction1()}}
+{\footnotesize\ttfamily static double moa.\+core.\+Statistics.\+incomplete\+Beta\+Fraction1 (\begin{DoxyParamCaption}\item[{double}]{a,  }\item[{double}]{b,  }\item[{double}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Continued fraction expansion \#1 for incomplete beta integral. \mbox{\Hypertarget{classmoa_1_1core_1_1_statistics_a9b8588fc99bc4a23dfc24d813773616c}\label{classmoa_1_1core_1_1_statistics_a9b8588fc99bc4a23dfc24d813773616c}} 
+\index{moa.core.Statistics@{moa.core.Statistics}!incompleteBetaFraction2@{incompleteBetaFraction2}}
+\index{incompleteBetaFraction2@{incompleteBetaFraction2}!moa.core.Statistics@{moa.core.Statistics}}
+\doxysubsubsection{\texorpdfstring{incompleteBetaFraction2()}{incompleteBetaFraction2()}}
+{\footnotesize\ttfamily static double moa.\+core.\+Statistics.\+incomplete\+Beta\+Fraction2 (\begin{DoxyParamCaption}\item[{double}]{a,  }\item[{double}]{b,  }\item[{double}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Continued fraction expansion \#2 for incomplete beta integral. \mbox{\Hypertarget{classmoa_1_1core_1_1_statistics_ade201354df63eb66c5523cf4b0d16f0f}\label{classmoa_1_1core_1_1_statistics_ade201354df63eb66c5523cf4b0d16f0f}} 
+\index{moa.core.Statistics@{moa.core.Statistics}!incompleteGamma@{incompleteGamma}}
+\index{incompleteGamma@{incompleteGamma}!moa.core.Statistics@{moa.core.Statistics}}
+\doxysubsubsection{\texorpdfstring{incompleteGamma()}{incompleteGamma()}}
+{\footnotesize\ttfamily static double moa.\+core.\+Statistics.\+incomplete\+Gamma (\begin{DoxyParamCaption}\item[{double}]{a,  }\item[{double}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the Incomplete Gamma function. 
+\begin{DoxyParams}{Parameters}
+{\em a} & the parameter of the gamma distribution. \\
+\hline
+{\em x} & the integration end point. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmoa_1_1core_1_1_statistics_aa9e6ce81cc8e3c4ea11eaf6f347ab9da}\label{classmoa_1_1core_1_1_statistics_aa9e6ce81cc8e3c4ea11eaf6f347ab9da}} 
+\index{moa.core.Statistics@{moa.core.Statistics}!incompleteGammaComplement@{incompleteGammaComplement}}
+\index{incompleteGammaComplement@{incompleteGammaComplement}!moa.core.Statistics@{moa.core.Statistics}}
+\doxysubsubsection{\texorpdfstring{incompleteGammaComplement()}{incompleteGammaComplement()}}
+{\footnotesize\ttfamily static double moa.\+core.\+Statistics.\+incomplete\+Gamma\+Complement (\begin{DoxyParamCaption}\item[{double}]{a,  }\item[{double}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the Complemented Incomplete Gamma function. 
+\begin{DoxyParams}{Parameters}
+{\em a} & the parameter of the gamma distribution. \\
+\hline
+{\em x} & the integration start point. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmoa_1_1core_1_1_statistics_ac7932d42009cac35d89f2a1db83b271f}\label{classmoa_1_1core_1_1_statistics_ac7932d42009cac35d89f2a1db83b271f}} 
+\index{moa.core.Statistics@{moa.core.Statistics}!lnGamma@{lnGamma}}
+\index{lnGamma@{lnGamma}!moa.core.Statistics@{moa.core.Statistics}}
+\doxysubsubsection{\texorpdfstring{lnGamma()}{lnGamma()}}
+{\footnotesize\ttfamily static double moa.\+core.\+Statistics.\+ln\+Gamma (\begin{DoxyParamCaption}\item[{double}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns natural logarithm of gamma function.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & the value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+natural logarithm of gamma function 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmoa_1_1core_1_1_statistics_a1cef4e28f49f7317998628fd485c9e75}\label{classmoa_1_1core_1_1_statistics_a1cef4e28f49f7317998628fd485c9e75}} 
+\index{moa.core.Statistics@{moa.core.Statistics}!normalInverse@{normalInverse}}
+\index{normalInverse@{normalInverse}!moa.core.Statistics@{moa.core.Statistics}}
+\doxysubsubsection{\texorpdfstring{normalInverse()}{normalInverse()}}
+{\footnotesize\ttfamily static double moa.\+core.\+Statistics.\+normal\+Inverse (\begin{DoxyParamCaption}\item[{double}]{y0 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the value, {\ttfamily x}, for which the area under the Normal (Gaussian) probability density function (integrated from minus infinity to {\ttfamily x}) is equal to the argument {\ttfamily y} (assumes mean is zero, variance is one). 
+
+For small arguments {\ttfamily 0 $<$ y $<$ exp(-\/2)}, the program computes {\ttfamily z = sqrt( -\/2.\+0 $\ast$ log(y) )}; then the approximation is {\ttfamily x = z -\/ log(z)/z -\/ (1/z) P(1/z) / Q(1/z)}. There are two rational functions P/Q, one for {\ttfamily 0 $<$ y $<$ exp(-\/32)} and the other for {\ttfamily y} up to {\ttfamily exp(-\/2)}. For larger arguments, {\ttfamily w = y -\/ 0.\+5}, and {\ttfamily x/sqrt(2pi) = w + w$\ast$$\ast$3 R(w$\ast$$\ast$2)/S(w$\ast$$\ast$2))}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em y0} & the area under the normal pdf \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the z-\/value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmoa_1_1core_1_1_statistics_a119f23acee8c390e9cb71180cb55e9fb}\label{classmoa_1_1core_1_1_statistics_a119f23acee8c390e9cb71180cb55e9fb}} 
+\index{moa.core.Statistics@{moa.core.Statistics}!normalProbability@{normalProbability}}
+\index{normalProbability@{normalProbability}!moa.core.Statistics@{moa.core.Statistics}}
+\doxysubsubsection{\texorpdfstring{normalProbability()}{normalProbability()}}
+{\footnotesize\ttfamily static double moa.\+core.\+Statistics.\+normal\+Probability (\begin{DoxyParamCaption}\item[{double}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the area under the Normal (Gaussian) probability density function, integrated from minus infinity to {\ttfamily x} (assumes mean is zero, variance is one). 
+\begin{DoxyPre}
+                           x
+\begin{DoxyItemize}
+\item                   1        | |          2
+ normal(x)  = -\/-\/-\/-\/-\/-\/-\/-\/-\/    |    exp( -\/ t /2 ) dt
+              sqrt(2pi)  | |
+\end{DoxyItemize}\end{DoxyPre}
+
+
+
+\begin{DoxyPre}                         -\/inf.\end{DoxyPre}
+
+
+
+\begin{DoxyPre}            =  ( 1 + erf(z) ) / 2
+            =  erfc(z) / 2
+\end{DoxyPre}
+ where {\ttfamily z = x/sqrt(2)}. Computation is via the functions {\ttfamily error\+Function} and {\ttfamily error\+Function\+Complement}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & the z-\/value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the probability of the z value according to the normal pdf 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmoa_1_1core_1_1_statistics_af106e29cd2b14532d87d57c89e3ad673}\label{classmoa_1_1core_1_1_statistics_af106e29cd2b14532d87d57c89e3ad673}} 
+\index{moa.core.Statistics@{moa.core.Statistics}!p1evl@{p1evl}}
+\index{p1evl@{p1evl}!moa.core.Statistics@{moa.core.Statistics}}
+\doxysubsubsection{\texorpdfstring{p1evl()}{p1evl()}}
+{\footnotesize\ttfamily static double moa.\+core.\+Statistics.\+p1evl (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{coef\mbox{[}$\,$\mbox{]},  }\item[{int}]{N }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Evaluates the given polynomial of degree {\ttfamily N} at {\ttfamily x}. Evaluates polynomial when coefficient of N is 1.\+0. Otherwise same as {\ttfamily \mbox{\hyperlink{classmoa_1_1core_1_1_statistics_a5b96ff5f5616f3018ef908f725dc3d3c}{polevl()}}}. 
+\begin{DoxyPre}
+                    2          N
+y  =  C  + C x + C x  +...+ C x
+       0    1     2          N\end{DoxyPre}
+
+
+
+\begin{DoxyPre}Coefficients are stored in reverse order:\end{DoxyPre}
+
+
+
+\begin{DoxyPre}coef[0] = C  , ..., coef[N] = C  .
+           N                   0
+\end{DoxyPre}
+ The function {\ttfamily \mbox{\hyperlink{classmoa_1_1core_1_1_statistics_af106e29cd2b14532d87d57c89e3ad673}{p1evl()}}} assumes that {\ttfamily coef\mbox{[}N\mbox{]} = 1.\+0} and is omitted from the array. Its calling arguments are otherwise the same as {\ttfamily \mbox{\hyperlink{classmoa_1_1core_1_1_statistics_a5b96ff5f5616f3018ef908f725dc3d3c}{polevl()}}}. 
+
+In the interest of speed, there are no checks for out of bounds arithmetic.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & argument to the polynomial. \\
+\hline
+{\em coef} & the coefficients of the polynomial. \\
+\hline
+{\em N} & the degree of the polynomial. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmoa_1_1core_1_1_statistics_a5b96ff5f5616f3018ef908f725dc3d3c}\label{classmoa_1_1core_1_1_statistics_a5b96ff5f5616f3018ef908f725dc3d3c}} 
+\index{moa.core.Statistics@{moa.core.Statistics}!polevl@{polevl}}
+\index{polevl@{polevl}!moa.core.Statistics@{moa.core.Statistics}}
+\doxysubsubsection{\texorpdfstring{polevl()}{polevl()}}
+{\footnotesize\ttfamily static double moa.\+core.\+Statistics.\+polevl (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{coef\mbox{[}$\,$\mbox{]},  }\item[{int}]{N }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Evaluates the given polynomial of degree {\ttfamily N} at {\ttfamily x}. 
+\begin{DoxyPre}
+                    2          N
+y  =  C  + C x + C x  +...+ C x
+       0    1     2          N\end{DoxyPre}
+
+
+
+\begin{DoxyPre}Coefficients are stored in reverse order:\end{DoxyPre}
+
+
+
+\begin{DoxyPre}coef[0] = C  , ..., coef[N] = C  .
+           N                   0
+\end{DoxyPre}
+ In the interest of speed, there are no checks for out of bounds arithmetic.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & argument to the polynomial. \\
+\hline
+{\em coef} & the coefficients of the polynomial. \\
+\hline
+{\em N} & the degree of the polynomial. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmoa_1_1core_1_1_statistics_a7e9f4d82fc85193a3995d0b78d72ce12}\label{classmoa_1_1core_1_1_statistics_a7e9f4d82fc85193a3995d0b78d72ce12}} 
+\index{moa.core.Statistics@{moa.core.Statistics}!powerSeries@{powerSeries}}
+\index{powerSeries@{powerSeries}!moa.core.Statistics@{moa.core.Statistics}}
+\doxysubsubsection{\texorpdfstring{powerSeries()}{powerSeries()}}
+{\footnotesize\ttfamily static double moa.\+core.\+Statistics.\+power\+Series (\begin{DoxyParamCaption}\item[{double}]{a,  }\item[{double}]{b,  }\item[{double}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Power series for incomplete beta integral. Use when b$\ast$x is small and x not too close to 1. ~\newline
+ \mbox{\Hypertarget{classmoa_1_1core_1_1_statistics_a99f3c8490e1e543c65751209d1243797}\label{classmoa_1_1core_1_1_statistics_a99f3c8490e1e543c65751209d1243797}} 
+\index{moa.core.Statistics@{moa.core.Statistics}!stirlingFormula@{stirlingFormula}}
+\index{stirlingFormula@{stirlingFormula}!moa.core.Statistics@{moa.core.Statistics}}
+\doxysubsubsection{\texorpdfstring{stirlingFormula()}{stirlingFormula()}}
+{\footnotesize\ttfamily static double moa.\+core.\+Statistics.\+stirling\+Formula (\begin{DoxyParamCaption}\item[{double}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the Gamma function computed by Stirling\textquotesingle{}s formula. The polynomial S\+T\+IR is valid for 33 $<$= x $<$= 172. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmoa_1_1core_1_1_statistics_af59f17c8f56a9307d016a277a625b323}\label{classmoa_1_1core_1_1_statistics_af59f17c8f56a9307d016a277a625b323}} 
+\index{moa.core.Statistics@{moa.core.Statistics}!MACHEP@{MACHEP}}
+\index{MACHEP@{MACHEP}!moa.core.Statistics@{moa.core.Statistics}}
+\doxysubsubsection{\texorpdfstring{MACHEP}{MACHEP}}
+{\footnotesize\ttfamily final double moa.\+core.\+Statistics.\+M\+A\+C\+H\+EP = 1.\+11022302462515654042E-\/16\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Some constants \mbox{\Hypertarget{classmoa_1_1core_1_1_statistics_ac41f8c6bde992fefa49778f9df9ccf77}\label{classmoa_1_1core_1_1_statistics_ac41f8c6bde992fefa49778f9df9ccf77}} 
+\index{moa.core.Statistics@{moa.core.Statistics}!P0@{P0}}
+\index{P0@{P0}!moa.core.Statistics@{moa.core.Statistics}}
+\doxysubsubsection{\texorpdfstring{P0}{P0}}
+{\footnotesize\ttfamily final double moa.\+core.\+Statistics.\+P0\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{    -\/5.99633501014107895267E1,}
+\DoxyCodeLine{    9.80010754185999661536E1,}
+\DoxyCodeLine{    -\/5.66762857469070293439E1,}
+\DoxyCodeLine{    1.39312609387279679503E1,}
+\DoxyCodeLine{    -\/1.23916583867381258016E0,}
+\DoxyCodeLine{  \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1core_1_1_statistics_a4de3956c0a7d9f41f335247af99ac071}\label{classmoa_1_1core_1_1_statistics_a4de3956c0a7d9f41f335247af99ac071}} 
+\index{moa.core.Statistics@{moa.core.Statistics}!P1@{P1}}
+\index{P1@{P1}!moa.core.Statistics@{moa.core.Statistics}}
+\doxysubsubsection{\texorpdfstring{P1}{P1}}
+{\footnotesize\ttfamily final double moa.\+core.\+Statistics.\+P1\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{    4.05544892305962419923E0,}
+\DoxyCodeLine{    3.15251094599893866154E1,}
+\DoxyCodeLine{    5.71628192246421288162E1,}
+\DoxyCodeLine{    4.40805073893200834700E1,}
+\DoxyCodeLine{    1.46849561928858024014E1,}
+\DoxyCodeLine{    2.18663306850790267539E0,}
+\DoxyCodeLine{    -\/1.40256079171354495875E-\/1,}
+\DoxyCodeLine{    -\/3.50424626827848203418E-\/2,}
+\DoxyCodeLine{    -\/8.57456785154685413611E-\/4,}
+\DoxyCodeLine{  \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1core_1_1_statistics_a4ae1da4ebf07bf6d4086196b65c5f835}\label{classmoa_1_1core_1_1_statistics_a4ae1da4ebf07bf6d4086196b65c5f835}} 
+\index{moa.core.Statistics@{moa.core.Statistics}!P2@{P2}}
+\index{P2@{P2}!moa.core.Statistics@{moa.core.Statistics}}
+\doxysubsubsection{\texorpdfstring{P2}{P2}}
+{\footnotesize\ttfamily final double moa.\+core.\+Statistics.\+P2\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{    3.23774891776946035970E0,}
+\DoxyCodeLine{    6.91522889068984211695E0,}
+\DoxyCodeLine{    3.93881025292474443415E0,}
+\DoxyCodeLine{    1.33303460815807542389E0,}
+\DoxyCodeLine{    2.01485389549179081538E-\/1,}
+\DoxyCodeLine{    1.23716634817820021358E-\/2,}
+\DoxyCodeLine{    3.01581553508235416007E-\/4,}
+\DoxyCodeLine{    2.65806974686737550832E-\/6,}
+\DoxyCodeLine{    6.23974539184983293730E-\/9,}
+\DoxyCodeLine{  \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1core_1_1_statistics_a47551461284a2f38df625736c70e6b82}\label{classmoa_1_1core_1_1_statistics_a47551461284a2f38df625736c70e6b82}} 
+\index{moa.core.Statistics@{moa.core.Statistics}!Q0@{Q0}}
+\index{Q0@{Q0}!moa.core.Statistics@{moa.core.Statistics}}
+\doxysubsubsection{\texorpdfstring{Q0}{Q0}}
+{\footnotesize\ttfamily final double moa.\+core.\+Statistics.\+Q0\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    1.95448858338141759834E0,}
+\DoxyCodeLine{    4.67627912898881538453E0,}
+\DoxyCodeLine{    8.63602421390890590575E1,}
+\DoxyCodeLine{    -\/2.25462687854119370527E2,}
+\DoxyCodeLine{    2.00260212380060660359E2,}
+\DoxyCodeLine{    -\/8.20372256168333339912E1,}
+\DoxyCodeLine{    1.59056225126211695515E1,}
+\DoxyCodeLine{    -\/1.18331621121330003142E0,}
+\DoxyCodeLine{  \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1core_1_1_statistics_a1c07e4d396ffde465e75ead4308025d1}\label{classmoa_1_1core_1_1_statistics_a1c07e4d396ffde465e75ead4308025d1}} 
+\index{moa.core.Statistics@{moa.core.Statistics}!Q1@{Q1}}
+\index{Q1@{Q1}!moa.core.Statistics@{moa.core.Statistics}}
+\doxysubsubsection{\texorpdfstring{Q1}{Q1}}
+{\footnotesize\ttfamily final double moa.\+core.\+Statistics.\+Q1\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    1.57799883256466749731E1,}
+\DoxyCodeLine{    4.53907635128879210584E1,}
+\DoxyCodeLine{    4.13172038254672030440E1,}
+\DoxyCodeLine{    1.50425385692907503408E1,}
+\DoxyCodeLine{    2.50464946208309415979E0,}
+\DoxyCodeLine{    -\/1.42182922854787788574E-\/1,}
+\DoxyCodeLine{    -\/3.80806407691578277194E-\/2,}
+\DoxyCodeLine{    -\/9.33259480895457427372E-\/4,}
+\DoxyCodeLine{  \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1core_1_1_statistics_a96d450b14b5230a27b74830123886062}\label{classmoa_1_1core_1_1_statistics_a96d450b14b5230a27b74830123886062}} 
+\index{moa.core.Statistics@{moa.core.Statistics}!Q2@{Q2}}
+\index{Q2@{Q2}!moa.core.Statistics@{moa.core.Statistics}}
+\doxysubsubsection{\texorpdfstring{Q2}{Q2}}
+{\footnotesize\ttfamily final double moa.\+core.\+Statistics.\+Q2\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    6.02427039364742014255E0,}
+\DoxyCodeLine{    3.67983563856160859403E0,}
+\DoxyCodeLine{    1.37702099489081330271E0,}
+\DoxyCodeLine{    2.16236993594496635890E-\/1,}
+\DoxyCodeLine{    1.34204006088543189037E-\/2,}
+\DoxyCodeLine{    3.28014464682127739104E-\/4,}
+\DoxyCodeLine{    2.89247864745380683936E-\/6,}
+\DoxyCodeLine{    6.79019408009981274425E-\/9,}
+\DoxyCodeLine{  \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/core/Statistics.\+java\end{DoxyCompactItemize}

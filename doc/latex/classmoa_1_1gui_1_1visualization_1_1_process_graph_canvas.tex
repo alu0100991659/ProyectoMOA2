@@ -1,0 +1,147 @@
+\hypertarget{classmoa_1_1gui_1_1visualization_1_1_process_graph_canvas}{}\doxysection{moa.\+gui.\+visualization.\+Process\+Graph\+Canvas Class Reference}
+\label{classmoa_1_1gui_1_1visualization_1_1_process_graph_canvas}\index{moa.gui.visualization.ProcessGraphCanvas@{moa.gui.visualization.ProcessGraphCanvas}}
+
+
+Inheritance diagram for moa.\+gui.\+visualization.\+Process\+Graph\+Canvas\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+gui.\+visualization.\+Process\+Graph\+Canvas\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1gui_1_1visualization_1_1_process_graph_canvas_a9c3cdbb501df213df525f2243a4678c1}{Process\+Graph\+Canvas}} ()
+\item 
+int \mbox{\hyperlink{classmoa_1_1gui_1_1visualization_1_1_process_graph_canvas_a3a032c78a32d8688c6ff00706720d11e}{get\+Min\+Process\+Frequency}} ()
+\item 
+int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1gui_1_1visualization_1_1_process_graph_canvas_ac46ab7a64e7e72e9c4a46071a5040465}{get\+Process\+Frequencies}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1gui_1_1visualization_1_1_process_graph_canvas_a2aa879fb4d8172301404f31a5716d1f1}{set\+Graph}} (\mbox{\hyperlink{classmoa_1_1evaluation_1_1_measure_collection}{Measure\+Collection}}\mbox{[}$\,$\mbox{]} measures, \mbox{\hyperlink{classmoa_1_1evaluation_1_1_measure_collection}{Measure\+Collection}}\mbox{[}$\,$\mbox{]} measure\+Stds, int\mbox{[}$\,$\mbox{]} process\+Frequencies, int min\+\_\+process\+Frequency, Color\mbox{[}$\,$\mbox{]} colors)
+\item 
+double \mbox{\hyperlink{classmoa_1_1gui_1_1visualization_1_1_process_graph_canvas_afaba33fada0544beec9d34b3a3b1b9b3}{get\+Min\+X\+Value}} ()
+\item 
+double \mbox{\hyperlink{classmoa_1_1gui_1_1visualization_1_1_process_graph_canvas_aaf5cb5adf353409717bf429326bfb25d}{get\+Max\+X\+Value}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1gui_1_1visualization_1_1_process_graph_canvas_af8149eb4357acfd5ad1a144e97f5fa14}{set\+Size}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1gui_1_1visualization_1_1_process_graph_canvas_a5d78b89263c9ecb5a1f457b10b5d1e1d}{set\+Preferred\+Size}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classmoa_1_1gui_1_1visualization_1_1_process_graph_canvas}{Process\+Graph\+Canvas}} is an implementation of \mbox{\hyperlink{classmoa_1_1gui_1_1visualization_1_1_abstract_graph_canvas}{Abstract\+Graph\+Canvas}}, showing one or multiple curves over a process.
+
+\begin{DoxyAuthor}{Author}
+Tim Sabsch (\href{mailto:tim.sabsch@ovgu.de}{\texttt{ tim.\+sabsch@ovgu.\+de}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+1 
+\end{DoxyParagraph}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classmoa_1_1gui_1_1visualization_1_1_abstract_graph_canvas}{Abstract\+Graph\+Canvas}} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmoa_1_1gui_1_1visualization_1_1_process_graph_canvas_a9c3cdbb501df213df525f2243a4678c1}\label{classmoa_1_1gui_1_1visualization_1_1_process_graph_canvas_a9c3cdbb501df213df525f2243a4678c1}} 
+\index{moa.gui.visualization.ProcessGraphCanvas@{moa.gui.visualization.ProcessGraphCanvas}!ProcessGraphCanvas@{ProcessGraphCanvas}}
+\index{ProcessGraphCanvas@{ProcessGraphCanvas}!moa.gui.visualization.ProcessGraphCanvas@{moa.gui.visualization.ProcessGraphCanvas}}
+\doxysubsubsection{\texorpdfstring{ProcessGraphCanvas()}{ProcessGraphCanvas()}}
+{\footnotesize\ttfamily moa.\+gui.\+visualization.\+Process\+Graph\+Canvas.\+Process\+Graph\+Canvas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Initialises a \mbox{\hyperlink{classmoa_1_1gui_1_1visualization_1_1_process_graph_canvas}{Process\+Graph\+Canvas}} by calling the super constructor with a \mbox{\hyperlink{classmoa_1_1gui_1_1visualization_1_1_process_graph_axes}{Process\+Graph\+Axes}} as instance of \mbox{\hyperlink{classmoa_1_1gui_1_1visualization_1_1_abstract_graph_axes}{Abstract\+Graph\+Axes}} and \mbox{\hyperlink{classmoa_1_1gui_1_1visualization_1_1_graph_multi_curve}{Graph\+Multi\+Curve}} as instance of \mbox{\hyperlink{classmoa_1_1gui_1_1visualization_1_1_abstract_graph_plot}{Abstract\+Graph\+Plot}}. Also sets the min\+\_\+processfrequency to initial value. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1gui_1_1visualization_1_1_process_graph_canvas_aaf5cb5adf353409717bf429326bfb25d}\label{classmoa_1_1gui_1_1visualization_1_1_process_graph_canvas_aaf5cb5adf353409717bf429326bfb25d}} 
+\index{moa.gui.visualization.ProcessGraphCanvas@{moa.gui.visualization.ProcessGraphCanvas}!getMaxXValue@{getMaxXValue}}
+\index{getMaxXValue@{getMaxXValue}!moa.gui.visualization.ProcessGraphCanvas@{moa.gui.visualization.ProcessGraphCanvas}}
+\doxysubsubsection{\texorpdfstring{getMaxXValue()}{getMaxXValue()}}
+{\footnotesize\ttfamily double moa.\+gui.\+visualization.\+Process\+Graph\+Canvas.\+get\+Max\+X\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the maximum value for the x-\/axis. 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1gui_1_1visualization_1_1_abstract_graph_canvas_afa4aeb2caa8e6f76d34fa1f190c8590d}{moa.\+gui.\+visualization.\+Abstract\+Graph\+Canvas}}.
+
+\mbox{\Hypertarget{classmoa_1_1gui_1_1visualization_1_1_process_graph_canvas_a3a032c78a32d8688c6ff00706720d11e}\label{classmoa_1_1gui_1_1visualization_1_1_process_graph_canvas_a3a032c78a32d8688c6ff00706720d11e}} 
+\index{moa.gui.visualization.ProcessGraphCanvas@{moa.gui.visualization.ProcessGraphCanvas}!getMinProcessFrequency@{getMinProcessFrequency}}
+\index{getMinProcessFrequency@{getMinProcessFrequency}!moa.gui.visualization.ProcessGraphCanvas@{moa.gui.visualization.ProcessGraphCanvas}}
+\doxysubsubsection{\texorpdfstring{getMinProcessFrequency()}{getMinProcessFrequency()}}
+{\footnotesize\ttfamily int moa.\+gui.\+visualization.\+Process\+Graph\+Canvas.\+get\+Min\+Process\+Frequency (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the minimum process frequency.
+
+\begin{DoxyReturn}{Returns}
+minimum process frequency 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmoa_1_1gui_1_1visualization_1_1_process_graph_canvas_afaba33fada0544beec9d34b3a3b1b9b3}\label{classmoa_1_1gui_1_1visualization_1_1_process_graph_canvas_afaba33fada0544beec9d34b3a3b1b9b3}} 
+\index{moa.gui.visualization.ProcessGraphCanvas@{moa.gui.visualization.ProcessGraphCanvas}!getMinXValue@{getMinXValue}}
+\index{getMinXValue@{getMinXValue}!moa.gui.visualization.ProcessGraphCanvas@{moa.gui.visualization.ProcessGraphCanvas}}
+\doxysubsubsection{\texorpdfstring{getMinXValue()}{getMinXValue()}}
+{\footnotesize\ttfamily double moa.\+gui.\+visualization.\+Process\+Graph\+Canvas.\+get\+Min\+X\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the minimum value for the x-\/axis. 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1gui_1_1visualization_1_1_abstract_graph_canvas_a653d3311b36ebda8726088b976f5e094}{moa.\+gui.\+visualization.\+Abstract\+Graph\+Canvas}}.
+
+\mbox{\Hypertarget{classmoa_1_1gui_1_1visualization_1_1_process_graph_canvas_ac46ab7a64e7e72e9c4a46071a5040465}\label{classmoa_1_1gui_1_1visualization_1_1_process_graph_canvas_ac46ab7a64e7e72e9c4a46071a5040465}} 
+\index{moa.gui.visualization.ProcessGraphCanvas@{moa.gui.visualization.ProcessGraphCanvas}!getProcessFrequencies@{getProcessFrequencies}}
+\index{getProcessFrequencies@{getProcessFrequencies}!moa.gui.visualization.ProcessGraphCanvas@{moa.gui.visualization.ProcessGraphCanvas}}
+\doxysubsubsection{\texorpdfstring{getProcessFrequencies()}{getProcessFrequencies()}}
+{\footnotesize\ttfamily int \mbox{[}$\,$\mbox{]} moa.\+gui.\+visualization.\+Process\+Graph\+Canvas.\+get\+Process\+Frequencies (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the list of registered process frequencies.
+
+\begin{DoxyReturn}{Returns}
+list of registered process frequencies 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmoa_1_1gui_1_1visualization_1_1_process_graph_canvas_a2aa879fb4d8172301404f31a5716d1f1}\label{classmoa_1_1gui_1_1visualization_1_1_process_graph_canvas_a2aa879fb4d8172301404f31a5716d1f1}} 
+\index{moa.gui.visualization.ProcessGraphCanvas@{moa.gui.visualization.ProcessGraphCanvas}!setGraph@{setGraph}}
+\index{setGraph@{setGraph}!moa.gui.visualization.ProcessGraphCanvas@{moa.gui.visualization.ProcessGraphCanvas}}
+\doxysubsubsection{\texorpdfstring{setGraph()}{setGraph()}}
+{\footnotesize\ttfamily void moa.\+gui.\+visualization.\+Process\+Graph\+Canvas.\+set\+Graph (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmoa_1_1evaluation_1_1_measure_collection}{Measure\+Collection}}\mbox{[}$\,$\mbox{]}}]{measures,  }\item[{\mbox{\hyperlink{classmoa_1_1evaluation_1_1_measure_collection}{Measure\+Collection}}\mbox{[}$\,$\mbox{]}}]{measure\+Stds,  }\item[{int\mbox{[}$\,$\mbox{]}}]{process\+Frequencies,  }\item[{int}]{min\+\_\+process\+Frequency,  }\item[{Color\mbox{[}$\,$\mbox{]}}]{colors }\end{DoxyParamCaption})}
+
+Sets the graph containing multiple curves.
+
+
+\begin{DoxyParams}{Parameters}
+{\em measures} & information about the curves \\
+\hline
+{\em measure\+Stds} & standard deviation values for the measures \\
+\hline
+{\em process\+Frequencies} & information about the process frequencies of the curves \\
+\hline
+{\em min\+\_\+process\+Frequency} & minimum process frequency \\
+\hline
+{\em colors} & color encodings for the curves \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmoa_1_1gui_1_1visualization_1_1_process_graph_canvas_a5d78b89263c9ecb5a1f457b10b5d1e1d}\label{classmoa_1_1gui_1_1visualization_1_1_process_graph_canvas_a5d78b89263c9ecb5a1f457b10b5d1e1d}} 
+\index{moa.gui.visualization.ProcessGraphCanvas@{moa.gui.visualization.ProcessGraphCanvas}!setPreferredSize@{setPreferredSize}}
+\index{setPreferredSize@{setPreferredSize}!moa.gui.visualization.ProcessGraphCanvas@{moa.gui.visualization.ProcessGraphCanvas}}
+\doxysubsubsection{\texorpdfstring{setPreferredSize()}{setPreferredSize()}}
+{\footnotesize\ttfamily void moa.\+gui.\+visualization.\+Process\+Graph\+Canvas.\+set\+Preferred\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Sets the preferred canvas size. 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1gui_1_1visualization_1_1_abstract_graph_canvas_a3e1154990222a1456b3124bea6f0b1a3}{moa.\+gui.\+visualization.\+Abstract\+Graph\+Canvas}}.
+
+\mbox{\Hypertarget{classmoa_1_1gui_1_1visualization_1_1_process_graph_canvas_af8149eb4357acfd5ad1a144e97f5fa14}\label{classmoa_1_1gui_1_1visualization_1_1_process_graph_canvas_af8149eb4357acfd5ad1a144e97f5fa14}} 
+\index{moa.gui.visualization.ProcessGraphCanvas@{moa.gui.visualization.ProcessGraphCanvas}!setSize@{setSize}}
+\index{setSize@{setSize}!moa.gui.visualization.ProcessGraphCanvas@{moa.gui.visualization.ProcessGraphCanvas}}
+\doxysubsubsection{\texorpdfstring{setSize()}{setSize()}}
+{\footnotesize\ttfamily void moa.\+gui.\+visualization.\+Process\+Graph\+Canvas.\+set\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Sets the canvas size. 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1gui_1_1visualization_1_1_abstract_graph_canvas_a7e312dd0b70c900a2005877ed72b4fcd}{moa.\+gui.\+visualization.\+Abstract\+Graph\+Canvas}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/gui/visualization/Process\+Graph\+Canvas.\+java\end{DoxyCompactItemize}

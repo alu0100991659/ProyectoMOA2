@@ -1,0 +1,109 @@
+\hypertarget{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_regressor_1_1_a_r_f_f_i_m_t_d_d_base_learner}{}\doxysection{moa.\+classifiers.\+meta.\+Adaptive\+Random\+Forest\+Regressor.\+A\+R\+F\+F\+I\+M\+T\+D\+D\+Base\+Learner Class Reference}
+\label{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_regressor_1_1_a_r_f_f_i_m_t_d_d_base_learner}\index{moa.classifiers.meta.AdaptiveRandomForestRegressor.ARFFIMTDDBaseLearner@{moa.classifiers.meta.AdaptiveRandomForestRegressor.ARFFIMTDDBaseLearner}}
+
+
+Inheritance diagram for moa.\+classifiers.\+meta.\+Adaptive\+Random\+Forest\+Regressor.\+A\+R\+F\+F\+I\+M\+T\+D\+D\+Base\+Learner\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+classifiers.\+meta.\+Adaptive\+Random\+Forest\+Regressor.\+A\+R\+F\+F\+I\+M\+T\+D\+D\+Base\+Learner\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_regressor_1_1_a_r_f_f_i_m_t_d_d_base_learner_a2a9b11438eaf80f884b1499a66eb1936}\label{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_regressor_1_1_a_r_f_f_i_m_t_d_d_base_learner_a2a9b11438eaf80f884b1499a66eb1936}} 
+{\bfseries A\+R\+F\+F\+I\+M\+T\+D\+D\+Base\+Learner} (int index\+Original, \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1_a_r_f_f_i_m_t_d_d}{A\+R\+F\+F\+I\+M\+T\+DD}} instantiated\+Classifier, \mbox{\hyperlink{classmoa_1_1evaluation_1_1_basic_regression_performance_evaluator}{Basic\+Regression\+Performance\+Evaluator}} evaluator\+Instantiated, long instances\+Seen, boolean use\+Bkg\+Learner, boolean use\+Drift\+Detector, \mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} drift\+Option, \mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} warning\+Option, boolean is\+Background\+Learner)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_regressor_1_1_a_r_f_f_i_m_t_d_d_base_learner_aa3f11a31aecf037a52c933db287296cf}\label{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_regressor_1_1_a_r_f_f_i_m_t_d_d_base_learner_aa3f11a31aecf037a52c933db287296cf}} 
+void {\bfseries reset} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_regressor_1_1_a_r_f_f_i_m_t_d_d_base_learner_aae847e8e6d1fc03273ea34d5216cac45}\label{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_regressor_1_1_a_r_f_f_i_m_t_d_d_base_learner_aae847e8e6d1fc03273ea34d5216cac45}} 
+void {\bfseries train\+On\+Instance} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} instance, double weight, long instances\+Seen)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_regressor_1_1_a_r_f_f_i_m_t_d_d_base_learner_a4e90502d1f2eea95f906747bb14e7332}\label{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_regressor_1_1_a_r_f_f_i_m_t_d_d_base_learner_a4e90502d1f2eea95f906747bb14e7332}} 
+double\mbox{[}$\,$\mbox{]} {\bfseries get\+Votes\+For\+Instance} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} instance)
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_regressor_1_1_a_r_f_f_i_m_t_d_d_base_learner_a13a12918bb211dbdafbfa8628b06f6eb}{get\+Description}} (String\+Builder sb, int indent)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_regressor_1_1_a_r_f_f_i_m_t_d_d_base_learner_a7dfdcf4b5413165583814f050502499b}\label{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_regressor_1_1_a_r_f_f_i_m_t_d_d_base_learner_a7dfdcf4b5413165583814f050502499b}} 
+int {\bfseries index\+Original}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_regressor_1_1_a_r_f_f_i_m_t_d_d_base_learner_aec0a6abe04e85147e2670e0a562efff7}\label{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_regressor_1_1_a_r_f_f_i_m_t_d_d_base_learner_aec0a6abe04e85147e2670e0a562efff7}} 
+long {\bfseries created\+On}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_regressor_1_1_a_r_f_f_i_m_t_d_d_base_learner_ad059813a6f3356f3adf7e5ebe6b387a4}\label{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_regressor_1_1_a_r_f_f_i_m_t_d_d_base_learner_ad059813a6f3356f3adf7e5ebe6b387a4}} 
+long {\bfseries last\+Drift\+On}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_regressor_1_1_a_r_f_f_i_m_t_d_d_base_learner_af6ad94cab269d740c2905339b19ea8f2}\label{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_regressor_1_1_a_r_f_f_i_m_t_d_d_base_learner_af6ad94cab269d740c2905339b19ea8f2}} 
+long {\bfseries last\+Warning\+On}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_regressor_1_1_a_r_f_f_i_m_t_d_d_base_learner_aef4ca2e74a53cd0961ba4509088438df}\label{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_regressor_1_1_a_r_f_f_i_m_t_d_d_base_learner_aef4ca2e74a53cd0961ba4509088438df}} 
+\mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1_a_r_f_f_i_m_t_d_d}{A\+R\+F\+F\+I\+M\+T\+DD}} {\bfseries classifier}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_regressor_1_1_a_r_f_f_i_m_t_d_d_base_learner_a712b1f591c1828e266deb04b5c8ed082}\label{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_regressor_1_1_a_r_f_f_i_m_t_d_d_base_learner_a712b1f591c1828e266deb04b5c8ed082}} 
+boolean {\bfseries is\+Background\+Learner}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_regressor_1_1_a_r_f_f_i_m_t_d_d_base_learner_af340341624fbd297941be2c24654f0d3}\label{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_regressor_1_1_a_r_f_f_i_m_t_d_d_base_learner_af340341624fbd297941be2c24654f0d3}} 
+boolean {\bfseries use\+Bkg\+Learner}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_regressor_1_1_a_r_f_f_i_m_t_d_d_base_learner_a3e97d363c55858fc963023a0d78dbce0}\label{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_regressor_1_1_a_r_f_f_i_m_t_d_d_base_learner_a3e97d363c55858fc963023a0d78dbce0}} 
+boolean {\bfseries use\+Drift\+Detector}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_regressor_1_1_a_r_f_f_i_m_t_d_d_base_learner_a426fafe9eedff574f873b9d3d31ed155}\label{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_regressor_1_1_a_r_f_f_i_m_t_d_d_base_learner_a426fafe9eedff574f873b9d3d31ed155}} 
+\mbox{\hyperlink{classmoa_1_1evaluation_1_1_basic_regression_performance_evaluator}{Basic\+Regression\+Performance\+Evaluator}} {\bfseries evaluator}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_regressor_1_1_a_r_f_f_i_m_t_d_d_base_learner_a205dca68818255d15ab7fcc0aded0023}\label{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_regressor_1_1_a_r_f_f_i_m_t_d_d_base_learner_a205dca68818255d15ab7fcc0aded0023}} 
+\mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} {\bfseries drift\+Option}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_regressor_1_1_a_r_f_f_i_m_t_d_d_base_learner_a2d1c8d6a6baedbdfadd4303416aba6c0}\label{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_regressor_1_1_a_r_f_f_i_m_t_d_d_base_learner_a2d1c8d6a6baedbdfadd4303416aba6c0}} 
+\mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} {\bfseries warning\+Option}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_regressor_1_1_a_r_f_f_i_m_t_d_d_base_learner_ad9108f7db609cf58fbd41a8a68827c2b}\label{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_regressor_1_1_a_r_f_f_i_m_t_d_d_base_learner_ad9108f7db609cf58fbd41a8a68827c2b}} 
+\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1core_1_1driftdetection_1_1_change_detector}{Change\+Detector}} {\bfseries drift\+Detection\+Method}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_regressor_1_1_a_r_f_f_i_m_t_d_d_base_learner_aab2b04f1682830bfc4d880f374ec7968}\label{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_regressor_1_1_a_r_f_f_i_m_t_d_d_base_learner_aab2b04f1682830bfc4d880f374ec7968}} 
+\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1core_1_1driftdetection_1_1_change_detector}{Change\+Detector}} {\bfseries warning\+Detection\+Method}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_regressor_1_1_a_r_f_f_i_m_t_d_d_base_learner_a03f78abe16d4c737eba3ad0e6248c009}\label{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_regressor_1_1_a_r_f_f_i_m_t_d_d_base_learner_a03f78abe16d4c737eba3ad0e6248c009}} 
+\mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_regressor_1_1_a_r_f_f_i_m_t_d_d_base_learner}{A\+R\+F\+F\+I\+M\+T\+D\+D\+Base\+Learner}} {\bfseries bkg\+Learner}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_regressor_1_1_a_r_f_f_i_m_t_d_d_base_learner_abefc4de944cb1464c209281cf343b030}\label{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_regressor_1_1_a_r_f_f_i_m_t_d_d_base_learner_abefc4de944cb1464c209281cf343b030}} 
+int {\bfseries number\+Of\+Drifts\+Detected}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_regressor_1_1_a_r_f_f_i_m_t_d_d_base_learner_a28a7917adfdefd34aef9e6209033a422}\label{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_regressor_1_1_a_r_f_f_i_m_t_d_d_base_learner_a28a7917adfdefd34aef9e6209033a422}} 
+int {\bfseries number\+Of\+Warnings\+Detected}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_regressor_1_1_a_r_f_f_i_m_t_d_d_base_learner_a13a12918bb211dbdafbfa8628b06f6eb}\label{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_regressor_1_1_a_r_f_f_i_m_t_d_d_base_learner_a13a12918bb211dbdafbfa8628b06f6eb}} 
+\index{moa.classifiers.meta.AdaptiveRandomForestRegressor.ARFFIMTDDBaseLearner@{moa.classifiers.meta.AdaptiveRandomForestRegressor.ARFFIMTDDBaseLearner}!getDescription@{getDescription}}
+\index{getDescription@{getDescription}!moa.classifiers.meta.AdaptiveRandomForestRegressor.ARFFIMTDDBaseLearner@{moa.classifiers.meta.AdaptiveRandomForestRegressor.ARFFIMTDDBaseLearner}}
+\doxysubsubsection{\texorpdfstring{getDescription()}{getDescription()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+meta.\+Adaptive\+Random\+Forest\+Regressor.\+A\+R\+F\+F\+I\+M\+T\+D\+D\+Base\+Learner.\+get\+Description (\begin{DoxyParamCaption}\item[{String\+Builder}]{sb,  }\item[{int}]{indent }\end{DoxyParamCaption})}
+
+Returns a string representation of this object. Used in {\ttfamily \mbox{\hyperlink{classmoa_1_1_abstract_m_o_a_object_ac686fd3b07c734cf21f1894376fe402d}{Abstract\+M\+O\+A\+Object.\+to\+String}}} to give a string representation of the object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sb} & the stringbuilder to add the description \\
+\hline
+{\em indent} & the number of characters to indent \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1_m_o_a_object_afdaf5098f1fe6c852018ce64c28e17f5}{moa.\+M\+O\+A\+Object}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/classifiers/meta/Adaptive\+Random\+Forest\+Regressor.\+java\end{DoxyCompactItemize}

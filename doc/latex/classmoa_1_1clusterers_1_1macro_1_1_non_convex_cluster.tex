@@ -1,0 +1,81 @@
+\hypertarget{classmoa_1_1clusterers_1_1macro_1_1_non_convex_cluster}{}\doxysection{moa.\+clusterers.\+macro.\+Non\+Convex\+Cluster Class Reference}
+\label{classmoa_1_1clusterers_1_1macro_1_1_non_convex_cluster}\index{moa.clusterers.macro.NonConvexCluster@{moa.clusterers.macro.NonConvexCluster}}
+
+
+Inheritance diagram for moa.\+clusterers.\+macro.\+Non\+Convex\+Cluster\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+clusterers.\+macro.\+Non\+Convex\+Cluster\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1clusterers_1_1macro_1_1_non_convex_cluster_a4bd009703370642fe5ade46d4c077c93}\label{classmoa_1_1clusterers_1_1macro_1_1_non_convex_cluster_a4bd009703370642fe5ade46d4c077c93}} 
+{\bfseries Non\+Convex\+Cluster} (\mbox{\hyperlink{classmoa_1_1cluster_1_1_c_f_cluster}{C\+F\+Cluster}} cluster, List$<$ \mbox{\hyperlink{classmoa_1_1cluster_1_1_c_f_cluster}{C\+F\+Cluster}} $>$ microclusters)
+\item 
+\mbox{\Hypertarget{classmoa_1_1clusterers_1_1macro_1_1_non_convex_cluster_a95e4bc67945c0db7f83e0776eb78eebe}\label{classmoa_1_1clusterers_1_1macro_1_1_non_convex_cluster_a95e4bc67945c0db7f83e0776eb78eebe}} 
+\mbox{\hyperlink{classmoa_1_1cluster_1_1_c_f_cluster}{C\+F\+Cluster}} {\bfseries get\+CF} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1clusterers_1_1macro_1_1_non_convex_cluster_ab0ff42abaca5717b8237279d9e83d270}\label{classmoa_1_1clusterers_1_1macro_1_1_non_convex_cluster_ab0ff42abaca5717b8237279d9e83d270}} 
+void {\bfseries insert} (\mbox{\hyperlink{classmoa_1_1cluster_1_1_c_f_cluster}{C\+F\+Cluster}} cf)
+\item 
+\mbox{\Hypertarget{classmoa_1_1clusterers_1_1macro_1_1_non_convex_cluster_aceceef5cd4832e36971b4aa2a30522da}\label{classmoa_1_1clusterers_1_1macro_1_1_non_convex_cluster_aceceef5cd4832e36971b4aa2a30522da}} 
+void {\bfseries remove} (\mbox{\hyperlink{classmoa_1_1cluster_1_1_c_f_cluster}{C\+F\+Cluster}} cf)
+\item 
+double \mbox{\hyperlink{classmoa_1_1clusterers_1_1macro_1_1_non_convex_cluster_a6d0fd2f6ce2d63576ee8db4337272540}{get\+Inclusion\+Probability}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} instance)
+\item 
+double \mbox{\hyperlink{classmoa_1_1clusterers_1_1macro_1_1_non_convex_cluster_ac2ff5c17bb62b0f2e8a6b9c87e373f66}{get\+Radius}} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1clusterers_1_1macro_1_1_non_convex_cluster_a5cdcfef2b18838a845b410f2e2322102}\label{classmoa_1_1clusterers_1_1macro_1_1_non_convex_cluster_a5cdcfef2b18838a845b410f2e2322102}} 
+\mbox{\hyperlink{classmoa_1_1cluster_1_1_clustering}{Clustering}} {\bfseries get\+Clustering} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1clusterers_1_1macro_1_1_non_convex_cluster_ac44dbca24bf943f3316932e06fd895d7}\label{classmoa_1_1clusterers_1_1macro_1_1_non_convex_cluster_ac44dbca24bf943f3316932e06fd895d7}} 
+List$<$ \mbox{\hyperlink{classmoa_1_1cluster_1_1_c_f_cluster}{C\+F\+Cluster}} $>$ {\bfseries get\+Micro\+Clusters} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1clusterers_1_1macro_1_1_non_convex_cluster_a6d0fd2f6ce2d63576ee8db4337272540}\label{classmoa_1_1clusterers_1_1macro_1_1_non_convex_cluster_a6d0fd2f6ce2d63576ee8db4337272540}} 
+\index{moa.clusterers.macro.NonConvexCluster@{moa.clusterers.macro.NonConvexCluster}!getInclusionProbability@{getInclusionProbability}}
+\index{getInclusionProbability@{getInclusionProbability}!moa.clusterers.macro.NonConvexCluster@{moa.clusterers.macro.NonConvexCluster}}
+\doxysubsubsection{\texorpdfstring{getInclusionProbability()}{getInclusionProbability()}}
+{\footnotesize\ttfamily double moa.\+clusterers.\+macro.\+Non\+Convex\+Cluster.\+get\+Inclusion\+Probability (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{instance }\end{DoxyParamCaption})}
+
+Returns the probability of the given point belonging to this cluster.
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a value between 0 and 1 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1cluster_1_1_c_f_cluster_aca8dd00574659c55dcf5249d320de96e}{moa.\+cluster.\+C\+F\+Cluster}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classmoa_1_1clusterers_1_1dstream_1_1_grid_cluster_a8ce34a54dce66d71826b61f37bcd3710}{moa.\+clusterers.\+dstream.\+Grid\+Cluster}}.
+
+\mbox{\Hypertarget{classmoa_1_1clusterers_1_1macro_1_1_non_convex_cluster_ac2ff5c17bb62b0f2e8a6b9c87e373f66}\label{classmoa_1_1clusterers_1_1macro_1_1_non_convex_cluster_ac2ff5c17bb62b0f2e8a6b9c87e373f66}} 
+\index{moa.clusterers.macro.NonConvexCluster@{moa.clusterers.macro.NonConvexCluster}!getRadius@{getRadius}}
+\index{getRadius@{getRadius}!moa.clusterers.macro.NonConvexCluster@{moa.clusterers.macro.NonConvexCluster}}
+\doxysubsubsection{\texorpdfstring{getRadius()}{getRadius()}}
+{\footnotesize\ttfamily double moa.\+clusterers.\+macro.\+Non\+Convex\+Cluster.\+get\+Radius (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+See interface {\ttfamily Cluster} \begin{DoxyReturn}{Returns}
+The radius of the cluster. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1cluster_1_1_c_f_cluster_ad2f74302afb3b716707ce3e6a1a8d7c7}{moa.\+cluster.\+C\+F\+Cluster}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/clusterers/macro/Non\+Convex\+Cluster.\+java\end{DoxyCompactItemize}

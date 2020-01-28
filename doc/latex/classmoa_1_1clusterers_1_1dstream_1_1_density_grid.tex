@@ -1,0 +1,216 @@
+\hypertarget{classmoa_1_1clusterers_1_1dstream_1_1_density_grid}{}\doxysection{moa.\+clusterers.\+dstream.\+Density\+Grid Class Reference}
+\label{classmoa_1_1clusterers_1_1dstream_1_1_density_grid}\index{moa.clusterers.dstream.DensityGrid@{moa.clusterers.dstream.DensityGrid}}
+
+
+Inheritance diagram for moa.\+clusterers.\+dstream.\+Density\+Grid\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+clusterers.\+dstream.\+Density\+Grid\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1clusterers_1_1dstream_1_1_density_grid_aade65fe220dcaba89c16c4846c529686}{Density\+Grid}} (int\mbox{[}$\,$\mbox{]}c)
+\item 
+\mbox{\hyperlink{classmoa_1_1clusterers_1_1dstream_1_1_density_grid_ac5dbdc1b8377e79e999187cbfd2630e4}{Density\+Grid}} (\mbox{\hyperlink{classmoa_1_1clusterers_1_1dstream_1_1_density_grid}{Density\+Grid}} dg)
+\item 
+boolean \mbox{\hyperlink{classmoa_1_1clusterers_1_1dstream_1_1_density_grid_ae02bb39e0fd37c0e8890af7a448af1a0}{equals}} (Object o)
+\item 
+int \mbox{\hyperlink{classmoa_1_1clusterers_1_1dstream_1_1_density_grid_a26ce9f8c29524705e89ff6538081df33}{hash\+Code}} ()
+\item 
+Array\+List$<$ \mbox{\hyperlink{classmoa_1_1clusterers_1_1dstream_1_1_density_grid}{Density\+Grid}} $>$ \mbox{\hyperlink{classmoa_1_1clusterers_1_1dstream_1_1_density_grid_abe5e3427823d805f91bf1f455ebf9535}{get\+Neighbours}} ()
+\item 
+int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1clusterers_1_1dstream_1_1_density_grid_aad48c0c531d6a36f18e3bc2667f7e1fd}{get\+Coordinates}} ()
+\item 
+int \mbox{\hyperlink{classmoa_1_1clusterers_1_1dstream_1_1_density_grid_a95ad2223cafb02d5874ede93ee4504b2}{get\+Dimensions}} ()
+\item 
+String \mbox{\hyperlink{classmoa_1_1clusterers_1_1dstream_1_1_density_grid_a2311e50e198bdf84ce88f2c3c7a620fb}{to\+String}} ()
+\item 
+\mbox{\hyperlink{classmoa_1_1cluster_1_1_c_f_cluster}{C\+F\+Cluster}} \mbox{\hyperlink{classmoa_1_1clusterers_1_1dstream_1_1_density_grid_ae638a97527897abfd07a0ebb926e9e31}{get\+CF}} ()
+\item 
+double \mbox{\hyperlink{classmoa_1_1clusterers_1_1dstream_1_1_density_grid_ae99a1a96a67c574ca73b375ea64d6d81}{get\+Inclusion\+Probability}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} instance)
+\item 
+double \mbox{\hyperlink{classmoa_1_1clusterers_1_1dstream_1_1_density_grid_a3a0063ab1d5af1bfb2398be2accc736c}{get\+Radius}} ()
+\item 
+boolean \mbox{\hyperlink{classmoa_1_1clusterers_1_1dstream_1_1_density_grid_a0988cfe01a296df1a74224612ccd97a6}{is\+Visited}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1clusterers_1_1dstream_1_1_density_grid_adb944efb1d345ce45c5e17c2b017f524}{set\+Visited}} (boolean is\+Visited)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Density Grids are defined in equation 3 (section 3.\+1) of Chen and Tu 2007 as\+: In D-\/\+Stream, we partition the d−dimensional space S into density grids. Suppose for each dimension, its space Si, i =1, ··· ,d is divided into pi partitions as Si = Si,1 U Si,2 U ··· U Si,pi (2) then the data space S is partitioned into N = P\+R\+O\+D\+U\+CT (i=1..d) pi density grids. For a density grid g that is composed of S1,j1 ×\+S2,j2 ···×\+Sd,jd , ji =1, ...,pi, we denote it as g =(j1,j2, ··· ,jd). (3)
+
+Citation\+: Y. Chen and L. Tu, “\+Density-\/\+Based Clustering for Real-\/\+Time Stream Data,” in Proceedings of the 13th A\+CM S\+I\+G\+K\+DD international conference on Knowledge discovery and data mining, 2007, pp. 133–142. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmoa_1_1clusterers_1_1dstream_1_1_density_grid_aade65fe220dcaba89c16c4846c529686}\label{classmoa_1_1clusterers_1_1dstream_1_1_density_grid_aade65fe220dcaba89c16c4846c529686}} 
+\index{moa.clusterers.dstream.DensityGrid@{moa.clusterers.dstream.DensityGrid}!DensityGrid@{DensityGrid}}
+\index{DensityGrid@{DensityGrid}!moa.clusterers.dstream.DensityGrid@{moa.clusterers.dstream.DensityGrid}}
+\doxysubsubsection{\texorpdfstring{DensityGrid()}{DensityGrid()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily moa.\+clusterers.\+dstream.\+Density\+Grid.\+Density\+Grid (\begin{DoxyParamCaption}\item[{int\mbox{[}$\,$\mbox{]}}]{c }\end{DoxyParamCaption})}
+
+A constructor method for a density grid
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & the coordinates of the density grid \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmoa_1_1clusterers_1_1dstream_1_1_density_grid_ac5dbdc1b8377e79e999187cbfd2630e4}\label{classmoa_1_1clusterers_1_1dstream_1_1_density_grid_ac5dbdc1b8377e79e999187cbfd2630e4}} 
+\index{moa.clusterers.dstream.DensityGrid@{moa.clusterers.dstream.DensityGrid}!DensityGrid@{DensityGrid}}
+\index{DensityGrid@{DensityGrid}!moa.clusterers.dstream.DensityGrid@{moa.clusterers.dstream.DensityGrid}}
+\doxysubsubsection{\texorpdfstring{DensityGrid()}{DensityGrid()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily moa.\+clusterers.\+dstream.\+Density\+Grid.\+Density\+Grid (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmoa_1_1clusterers_1_1dstream_1_1_density_grid}{Density\+Grid}}}]{dg }\end{DoxyParamCaption})}
+
+A constructor method for a density grid
+
+
+\begin{DoxyParams}{Parameters}
+{\em dg} & the density grid to copy \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1clusterers_1_1dstream_1_1_density_grid_ae02bb39e0fd37c0e8890af7a448af1a0}\label{classmoa_1_1clusterers_1_1dstream_1_1_density_grid_ae02bb39e0fd37c0e8890af7a448af1a0}} 
+\index{moa.clusterers.dstream.DensityGrid@{moa.clusterers.dstream.DensityGrid}!equals@{equals}}
+\index{equals@{equals}!moa.clusterers.dstream.DensityGrid@{moa.clusterers.dstream.DensityGrid}}
+\doxysubsubsection{\texorpdfstring{equals()}{equals()}}
+{\footnotesize\ttfamily boolean moa.\+clusterers.\+dstream.\+Density\+Grid.\+equals (\begin{DoxyParamCaption}\item[{Object}]{o }\end{DoxyParamCaption})}
+
+Overrides Object\textquotesingle{}s method equals to declare that two Density\+Grids are equal iff their dimensions are the same and each of their corresponding coordinates are the same.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & the object being compared for equality \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T\+R\+UE if the objects being compared are equal; F\+A\+L\+SE otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmoa_1_1clusterers_1_1dstream_1_1_density_grid_ae638a97527897abfd07a0ebb926e9e31}\label{classmoa_1_1clusterers_1_1dstream_1_1_density_grid_ae638a97527897abfd07a0ebb926e9e31}} 
+\index{moa.clusterers.dstream.DensityGrid@{moa.clusterers.dstream.DensityGrid}!getCF@{getCF}}
+\index{getCF@{getCF}!moa.clusterers.dstream.DensityGrid@{moa.clusterers.dstream.DensityGrid}}
+\doxysubsubsection{\texorpdfstring{getCF()}{getCF()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1cluster_1_1_c_f_cluster}{C\+F\+Cluster}} moa.\+clusterers.\+dstream.\+Density\+Grid.\+get\+CF (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns a reference to the \mbox{\hyperlink{classmoa_1_1clusterers_1_1dstream_1_1_density_grid}{Density\+Grid}}.
+
+\begin{DoxyReturn}{Returns}
+this density grid. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1cluster_1_1_c_f_cluster}{moa.\+cluster.\+C\+F\+Cluster}}.
+
+\mbox{\Hypertarget{classmoa_1_1clusterers_1_1dstream_1_1_density_grid_aad48c0c531d6a36f18e3bc2667f7e1fd}\label{classmoa_1_1clusterers_1_1dstream_1_1_density_grid_aad48c0c531d6a36f18e3bc2667f7e1fd}} 
+\index{moa.clusterers.dstream.DensityGrid@{moa.clusterers.dstream.DensityGrid}!getCoordinates@{getCoordinates}}
+\index{getCoordinates@{getCoordinates}!moa.clusterers.dstream.DensityGrid@{moa.clusterers.dstream.DensityGrid}}
+\doxysubsubsection{\texorpdfstring{getCoordinates()}{getCoordinates()}}
+{\footnotesize\ttfamily int \mbox{[}$\,$\mbox{]} moa.\+clusterers.\+dstream.\+Density\+Grid.\+get\+Coordinates (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+coordinates the coordinates of the density grid 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmoa_1_1clusterers_1_1dstream_1_1_density_grid_a95ad2223cafb02d5874ede93ee4504b2}\label{classmoa_1_1clusterers_1_1dstream_1_1_density_grid_a95ad2223cafb02d5874ede93ee4504b2}} 
+\index{moa.clusterers.dstream.DensityGrid@{moa.clusterers.dstream.DensityGrid}!getDimensions@{getDimensions}}
+\index{getDimensions@{getDimensions}!moa.clusterers.dstream.DensityGrid@{moa.clusterers.dstream.DensityGrid}}
+\doxysubsubsection{\texorpdfstring{getDimensions()}{getDimensions()}}
+{\footnotesize\ttfamily int moa.\+clusterers.\+dstream.\+Density\+Grid.\+get\+Dimensions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+dimensions the number of dimensions for the density grid 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmoa_1_1clusterers_1_1dstream_1_1_density_grid_ae99a1a96a67c574ca73b375ea64d6d81}\label{classmoa_1_1clusterers_1_1dstream_1_1_density_grid_ae99a1a96a67c574ca73b375ea64d6d81}} 
+\index{moa.clusterers.dstream.DensityGrid@{moa.clusterers.dstream.DensityGrid}!getInclusionProbability@{getInclusionProbability}}
+\index{getInclusionProbability@{getInclusionProbability}!moa.clusterers.dstream.DensityGrid@{moa.clusterers.dstream.DensityGrid}}
+\doxysubsubsection{\texorpdfstring{getInclusionProbability()}{getInclusionProbability()}}
+{\footnotesize\ttfamily double moa.\+clusterers.\+dstream.\+Density\+Grid.\+get\+Inclusion\+Probability (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{instance }\end{DoxyParamCaption})}
+
+Provides the probability of the argument instance belonging to the density grid in question.
+
+\begin{DoxyReturn}{Returns}
+1.\+0 if the instance equals the density grid\textquotesingle{}s coordinates; 0.\+0 otherwise. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1cluster_1_1_c_f_cluster_aca8dd00574659c55dcf5249d320de96e}{moa.\+cluster.\+C\+F\+Cluster}}.
+
+\mbox{\Hypertarget{classmoa_1_1clusterers_1_1dstream_1_1_density_grid_abe5e3427823d805f91bf1f455ebf9535}\label{classmoa_1_1clusterers_1_1dstream_1_1_density_grid_abe5e3427823d805f91bf1f455ebf9535}} 
+\index{moa.clusterers.dstream.DensityGrid@{moa.clusterers.dstream.DensityGrid}!getNeighbours@{getNeighbours}}
+\index{getNeighbours@{getNeighbours}!moa.clusterers.dstream.DensityGrid@{moa.clusterers.dstream.DensityGrid}}
+\doxysubsubsection{\texorpdfstring{getNeighbours()}{getNeighbours()}}
+{\footnotesize\ttfamily Array\+List$<$\mbox{\hyperlink{classmoa_1_1clusterers_1_1dstream_1_1_density_grid}{Density\+Grid}}$>$ moa.\+clusterers.\+dstream.\+Density\+Grid.\+get\+Neighbours (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Generates an Array List of neighbours for this density grid by varying each coordinate by one in either direction. Does not test whether the generated neighbours are valid as \mbox{\hyperlink{classmoa_1_1clusterers_1_1dstream_1_1_density_grid}{Density\+Grid}} is not aware of the number of partitions in each dimension.
+
+\begin{DoxyReturn}{Returns}
+an Array List of neighbours for this density grid 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmoa_1_1clusterers_1_1dstream_1_1_density_grid_a3a0063ab1d5af1bfb2398be2accc736c}\label{classmoa_1_1clusterers_1_1dstream_1_1_density_grid_a3a0063ab1d5af1bfb2398be2accc736c}} 
+\index{moa.clusterers.dstream.DensityGrid@{moa.clusterers.dstream.DensityGrid}!getRadius@{getRadius}}
+\index{getRadius@{getRadius}!moa.clusterers.dstream.DensityGrid@{moa.clusterers.dstream.DensityGrid}}
+\doxysubsubsection{\texorpdfstring{getRadius()}{getRadius()}}
+{\footnotesize\ttfamily double moa.\+clusterers.\+dstream.\+Density\+Grid.\+get\+Radius (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Provides the radius of a density grid.
+
+\begin{DoxyReturn}{Returns}
+1.\+0, approximating a unit hypercube of dimension d. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1cluster_1_1_c_f_cluster_ad2f74302afb3b716707ce3e6a1a8d7c7}{moa.\+cluster.\+C\+F\+Cluster}}.
+
+\mbox{\Hypertarget{classmoa_1_1clusterers_1_1dstream_1_1_density_grid_a26ce9f8c29524705e89ff6538081df33}\label{classmoa_1_1clusterers_1_1dstream_1_1_density_grid_a26ce9f8c29524705e89ff6538081df33}} 
+\index{moa.clusterers.dstream.DensityGrid@{moa.clusterers.dstream.DensityGrid}!hashCode@{hashCode}}
+\index{hashCode@{hashCode}!moa.clusterers.dstream.DensityGrid@{moa.clusterers.dstream.DensityGrid}}
+\doxysubsubsection{\texorpdfstring{hashCode()}{hashCode()}}
+{\footnotesize\ttfamily int moa.\+clusterers.\+dstream.\+Density\+Grid.\+hash\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Overrides Object\textquotesingle{}s method hash\+Code to generate a hash\+Code for Density\+Grids based on their coordinates.
+
+\begin{DoxyReturn}{Returns}
+hc the Object\textquotesingle{}s hash code 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmoa_1_1clusterers_1_1dstream_1_1_density_grid_a0988cfe01a296df1a74224612ccd97a6}\label{classmoa_1_1clusterers_1_1dstream_1_1_density_grid_a0988cfe01a296df1a74224612ccd97a6}} 
+\index{moa.clusterers.dstream.DensityGrid@{moa.clusterers.dstream.DensityGrid}!isVisited@{isVisited}}
+\index{isVisited@{isVisited}!moa.clusterers.dstream.DensityGrid@{moa.clusterers.dstream.DensityGrid}}
+\doxysubsubsection{\texorpdfstring{isVisited()}{isVisited()}}
+{\footnotesize\ttfamily boolean moa.\+clusterers.\+dstream.\+Density\+Grid.\+is\+Visited (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+the is\+Visited 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmoa_1_1clusterers_1_1dstream_1_1_density_grid_adb944efb1d345ce45c5e17c2b017f524}\label{classmoa_1_1clusterers_1_1dstream_1_1_density_grid_adb944efb1d345ce45c5e17c2b017f524}} 
+\index{moa.clusterers.dstream.DensityGrid@{moa.clusterers.dstream.DensityGrid}!setVisited@{setVisited}}
+\index{setVisited@{setVisited}!moa.clusterers.dstream.DensityGrid@{moa.clusterers.dstream.DensityGrid}}
+\doxysubsubsection{\texorpdfstring{setVisited()}{setVisited()}}
+{\footnotesize\ttfamily void moa.\+clusterers.\+dstream.\+Density\+Grid.\+set\+Visited (\begin{DoxyParamCaption}\item[{boolean}]{is\+Visited }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em is\+Visited} & the is\+Visited to set \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmoa_1_1clusterers_1_1dstream_1_1_density_grid_a2311e50e198bdf84ce88f2c3c7a620fb}\label{classmoa_1_1clusterers_1_1dstream_1_1_density_grid_a2311e50e198bdf84ce88f2c3c7a620fb}} 
+\index{moa.clusterers.dstream.DensityGrid@{moa.clusterers.dstream.DensityGrid}!toString@{toString}}
+\index{toString@{toString}!moa.clusterers.dstream.DensityGrid@{moa.clusterers.dstream.DensityGrid}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily String moa.\+clusterers.\+dstream.\+Density\+Grid.\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+a String listing each coordinate of the density grid 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1_abstract_m_o_a_object_ac686fd3b07c734cf21f1894376fe402d}{moa.\+Abstract\+M\+O\+A\+Object}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/clusterers/dstream/Density\+Grid.\+java\end{DoxyCompactItemize}

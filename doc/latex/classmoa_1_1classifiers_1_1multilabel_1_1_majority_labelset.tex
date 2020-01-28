@@ -1,0 +1,132 @@
+\hypertarget{classmoa_1_1classifiers_1_1multilabel_1_1_majority_labelset}{}\doxysection{moa.\+classifiers.\+multilabel.\+Majority\+Labelset Class Reference}
+\label{classmoa_1_1classifiers_1_1multilabel_1_1_majority_labelset}\index{moa.classifiers.multilabel.MajorityLabelset@{moa.classifiers.multilabel.MajorityLabelset}}
+
+
+Inheritance diagram for moa.\+classifiers.\+multilabel.\+Majority\+Labelset\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+classifiers.\+multilabel.\+Majority\+Labelset\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classmoa_1_1classifiers_1_1multilabel_1_1_majority_labelset_a4aa43e83ecb87fc2dc22fab33d10c3a9}{get\+Purpose\+String}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1multilabel_1_1_majority_labelset_a511396c902e37b2591f00e5af0602544}{reset\+Learning\+Impl}} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1multilabel_1_1_majority_labelset_a462d12a5b6058a984d710d955f7f7f8d}\label{classmoa_1_1classifiers_1_1multilabel_1_1_majority_labelset_a462d12a5b6058a984d710d955f7f7f8d}} 
+void {\bfseries train\+On\+Instance\+Impl} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_multi_label_instance}{Multi\+Label\+Instance}} x)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1multilabel_1_1_majority_labelset_a5b36dbf0520d88cdb2291a600518b960}\label{classmoa_1_1classifiers_1_1multilabel_1_1_majority_labelset_a5b36dbf0520d88cdb2291a600518b960}} 
+\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_prediction}{Prediction}} {\bfseries get\+Prediction\+For\+Instance} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_multi_label_instance}{Multi\+Label\+Instance}} x)
+\item 
+boolean \mbox{\hyperlink{classmoa_1_1classifiers_1_1multilabel_1_1_majority_labelset_ad160ec07aa94f8e6821b933ed4b5dd98}{is\+Randomizable}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1multilabel_1_1_majority_labelset_abb9f82d0cb9199e96a09ed15670aaedb}{get\+Model\+Description}} (String\+Builder out, int indent)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1multilabel_1_1_majority_labelset_abff6a9ce7f8a966959936ce73cfea2f1}{get\+Model\+Measurements\+Impl}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Majority Labelset classifier. Each labelset combination of relevances, e.\+g. \mbox{[}0,0,1,1,0,0\mbox{]}, is treated as a single class value.
+
+\begin{DoxyAuthor}{Author}
+Jesse Read (\href{mailto:jesse@tsc.uc3m.es}{\texttt{ jesse@tsc.\+uc3m.\+es}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+1 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1multilabel_1_1_majority_labelset_abb9f82d0cb9199e96a09ed15670aaedb}\label{classmoa_1_1classifiers_1_1multilabel_1_1_majority_labelset_abb9f82d0cb9199e96a09ed15670aaedb}} 
+\index{moa.classifiers.multilabel.MajorityLabelset@{moa.classifiers.multilabel.MajorityLabelset}!getModelDescription@{getModelDescription}}
+\index{getModelDescription@{getModelDescription}!moa.classifiers.multilabel.MajorityLabelset@{moa.classifiers.multilabel.MajorityLabelset}}
+\doxysubsubsection{\texorpdfstring{getModelDescription()}{getModelDescription()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+multilabel.\+Majority\+Labelset.\+get\+Model\+Description (\begin{DoxyParamCaption}\item[{String\+Builder}]{out,  }\item[{int}]{indent }\end{DoxyParamCaption})}
+
+Returns a string representation of the model.
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & the stringbuilder to add the description \\
+\hline
+{\em indent} & the number of characters to indent \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a30e5ff32bc8127dfb7436945776b7523}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1multilabel_1_1_majority_labelset_abff6a9ce7f8a966959936ce73cfea2f1}\label{classmoa_1_1classifiers_1_1multilabel_1_1_majority_labelset_abff6a9ce7f8a966959936ce73cfea2f1}} 
+\index{moa.classifiers.multilabel.MajorityLabelset@{moa.classifiers.multilabel.MajorityLabelset}!getModelMeasurementsImpl@{getModelMeasurementsImpl}}
+\index{getModelMeasurementsImpl@{getModelMeasurementsImpl}!moa.classifiers.multilabel.MajorityLabelset@{moa.classifiers.multilabel.MajorityLabelset}}
+\doxysubsubsection{\texorpdfstring{getModelMeasurementsImpl()}{getModelMeasurementsImpl()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}} \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+multilabel.\+Majority\+Labelset.\+get\+Model\+Measurements\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Gets the current measurements of this classifier.~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden.
+
+\begin{DoxyReturn}{Returns}
+an array of measurements to be used in evaluation tasks 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_ac2bebede21c9d2d8cd11d95a7e20e529}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1multilabel_1_1_majority_labelset_a4aa43e83ecb87fc2dc22fab33d10c3a9}\label{classmoa_1_1classifiers_1_1multilabel_1_1_majority_labelset_a4aa43e83ecb87fc2dc22fab33d10c3a9}} 
+\index{moa.classifiers.multilabel.MajorityLabelset@{moa.classifiers.multilabel.MajorityLabelset}!getPurposeString@{getPurposeString}}
+\index{getPurposeString@{getPurposeString}!moa.classifiers.multilabel.MajorityLabelset@{moa.classifiers.multilabel.MajorityLabelset}}
+\doxysubsubsection{\texorpdfstring{getPurposeString()}{getPurposeString()}}
+{\footnotesize\ttfamily String moa.\+classifiers.\+multilabel.\+Majority\+Labelset.\+get\+Purpose\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Options to handle Dictionary with option texts and objects 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a3fc6ae11234b88e51941a77ddb879d8b}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1multilabel_1_1_majority_labelset_ad160ec07aa94f8e6821b933ed4b5dd98}\label{classmoa_1_1classifiers_1_1multilabel_1_1_majority_labelset_ad160ec07aa94f8e6821b933ed4b5dd98}} 
+\index{moa.classifiers.multilabel.MajorityLabelset@{moa.classifiers.multilabel.MajorityLabelset}!isRandomizable@{isRandomizable}}
+\index{isRandomizable@{isRandomizable}!moa.classifiers.multilabel.MajorityLabelset@{moa.classifiers.multilabel.MajorityLabelset}}
+\doxysubsubsection{\texorpdfstring{isRandomizable()}{isRandomizable()}}
+{\footnotesize\ttfamily boolean moa.\+classifiers.\+multilabel.\+Majority\+Labelset.\+is\+Randomizable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets whether this learner needs a random seed. Examples of methods that needs a random seed are bagging and boosting.
+
+\begin{DoxyReturn}{Returns}
+true if the learner needs a random seed. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1learners_1_1_learner_a2f1ff9007b5eb5f53801f474b4d42a61}{moa.\+learners.\+Learner$<$ E extends Example $>$}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1multilabel_1_1_majority_labelset_a511396c902e37b2591f00e5af0602544}\label{classmoa_1_1classifiers_1_1multilabel_1_1_majority_labelset_a511396c902e37b2591f00e5af0602544}} 
+\index{moa.classifiers.multilabel.MajorityLabelset@{moa.classifiers.multilabel.MajorityLabelset}!resetLearningImpl@{resetLearningImpl}}
+\index{resetLearningImpl@{resetLearningImpl}!moa.classifiers.multilabel.MajorityLabelset@{moa.classifiers.multilabel.MajorityLabelset}}
+\doxysubsubsection{\texorpdfstring{resetLearningImpl()}{resetLearningImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+multilabel.\+Majority\+Labelset.\+reset\+Learning\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Resets this classifier. It must be similar to starting a new classifier from scratch. ~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden. 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a099ffcf2417abb919d10d697c0648f29}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/classifiers/multilabel/Majority\+Labelset.\+java\end{DoxyCompactItemize}

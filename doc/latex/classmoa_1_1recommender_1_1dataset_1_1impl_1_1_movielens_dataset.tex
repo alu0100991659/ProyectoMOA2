@@ -1,0 +1,134 @@
+\hypertarget{classmoa_1_1recommender_1_1dataset_1_1impl_1_1_movielens_dataset}{}\doxysection{moa.\+recommender.\+dataset.\+impl.\+Movielens\+Dataset Class Reference}
+\label{classmoa_1_1recommender_1_1dataset_1_1impl_1_1_movielens_dataset}\index{moa.recommender.dataset.impl.MovielensDataset@{moa.recommender.dataset.impl.MovielensDataset}}
+
+
+Inheritance diagram for moa.\+recommender.\+dataset.\+impl.\+Movielens\+Dataset\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+recommender.\+dataset.\+impl.\+Movielens\+Dataset\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classmoa_1_1recommender_1_1dataset_1_1impl_1_1_movielens_dataset_aa52f5537e5e9ccfae1bf667702518d6d}{get\+Purpose\+String}} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1recommender_1_1dataset_1_1impl_1_1_movielens_dataset_afc8eb4b17052fc0db9caac8cb697bd81}\label{classmoa_1_1recommender_1_1dataset_1_1impl_1_1_movielens_dataset_afc8eb4b17052fc0db9caac8cb697bd81}} 
+void {\bfseries init} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1recommender_1_1dataset_1_1impl_1_1_movielens_dataset_a01235988814b552486b2c1d49c24b032}\label{classmoa_1_1recommender_1_1dataset_1_1impl_1_1_movielens_dataset_a01235988814b552486b2c1d49c24b032}} 
+boolean {\bfseries next} ()
+\item 
+String \mbox{\hyperlink{classmoa_1_1recommender_1_1dataset_1_1impl_1_1_movielens_dataset_aee07fabf2f908c73f7f1a4efe6ae67f7}{to\+String}} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1recommender_1_1dataset_1_1impl_1_1_movielens_dataset_ad4ae5bd61c30187b1f813fe4deb92b88}\label{classmoa_1_1recommender_1_1dataset_1_1impl_1_1_movielens_dataset_ad4ae5bd61c30187b1f813fe4deb92b88}} 
+int {\bfseries cur\+User\+ID} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1recommender_1_1dataset_1_1impl_1_1_movielens_dataset_a388cffdc1eade1f80c53af501c5decbb}\label{classmoa_1_1recommender_1_1dataset_1_1impl_1_1_movielens_dataset_a388cffdc1eade1f80c53af501c5decbb}} 
+int {\bfseries cur\+Item\+ID} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1recommender_1_1dataset_1_1impl_1_1_movielens_dataset_ae9c9bf840b33cda3178c50aa56323823}\label{classmoa_1_1recommender_1_1dataset_1_1impl_1_1_movielens_dataset_ae9c9bf840b33cda3178c50aa56323823}} 
+double {\bfseries cur\+Rating} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1recommender_1_1dataset_1_1impl_1_1_movielens_dataset_aa9557abf658e48ac6e2afc836988639d}\label{classmoa_1_1recommender_1_1dataset_1_1impl_1_1_movielens_dataset_aa9557abf658e48ac6e2afc836988639d}} 
+void {\bfseries reset} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1recommender_1_1dataset_1_1impl_1_1_movielens_dataset_a2cc38cce78ddc089cc3fc8149121fa79}{get\+Description}} (String\+Builder sb, int indent)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_file_option}{File\+Option}} {\bfseries file\+Option}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classmoa_1_1recommender_1_1dataset_1_1impl_1_1_movielens_dataset_a3777f5bce362405fb0151953d9e30c70}{prepare\+For\+Use\+Impl}} (\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}} monitor, \mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}} repository)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1recommender_1_1dataset_1_1impl_1_1_movielens_dataset_a2cc38cce78ddc089cc3fc8149121fa79}\label{classmoa_1_1recommender_1_1dataset_1_1impl_1_1_movielens_dataset_a2cc38cce78ddc089cc3fc8149121fa79}} 
+\index{moa.recommender.dataset.impl.MovielensDataset@{moa.recommender.dataset.impl.MovielensDataset}!getDescription@{getDescription}}
+\index{getDescription@{getDescription}!moa.recommender.dataset.impl.MovielensDataset@{moa.recommender.dataset.impl.MovielensDataset}}
+\doxysubsubsection{\texorpdfstring{getDescription()}{getDescription()}}
+{\footnotesize\ttfamily void moa.\+recommender.\+dataset.\+impl.\+Movielens\+Dataset.\+get\+Description (\begin{DoxyParamCaption}\item[{String\+Builder}]{sb,  }\item[{int}]{indent }\end{DoxyParamCaption})}
+
+Returns a string representation of this object. Used in {\ttfamily \mbox{\hyperlink{classmoa_1_1_abstract_m_o_a_object_ac686fd3b07c734cf21f1894376fe402d}{Abstract\+M\+O\+A\+Object.\+to\+String}}} to give a string representation of the object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sb} & the stringbuilder to add the description \\
+\hline
+{\em indent} & the number of characters to indent \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1_m_o_a_object_afdaf5098f1fe6c852018ce64c28e17f5}{moa.\+M\+O\+A\+Object}}.
+
+\mbox{\Hypertarget{classmoa_1_1recommender_1_1dataset_1_1impl_1_1_movielens_dataset_aa52f5537e5e9ccfae1bf667702518d6d}\label{classmoa_1_1recommender_1_1dataset_1_1impl_1_1_movielens_dataset_aa52f5537e5e9ccfae1bf667702518d6d}} 
+\index{moa.recommender.dataset.impl.MovielensDataset@{moa.recommender.dataset.impl.MovielensDataset}!getPurposeString@{getPurposeString}}
+\index{getPurposeString@{getPurposeString}!moa.recommender.dataset.impl.MovielensDataset@{moa.recommender.dataset.impl.MovielensDataset}}
+\doxysubsubsection{\texorpdfstring{getPurposeString()}{getPurposeString()}}
+{\footnotesize\ttfamily String moa.\+recommender.\+dataset.\+impl.\+Movielens\+Dataset.\+get\+Purpose\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Options to handle Dictionary with option texts and objects 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1options_1_1_abstract_option_handler_abc8df69aea27ef85060557a9e918b2ca}{moa.\+options.\+Abstract\+Option\+Handler}}.
+
+\mbox{\Hypertarget{classmoa_1_1recommender_1_1dataset_1_1impl_1_1_movielens_dataset_a3777f5bce362405fb0151953d9e30c70}\label{classmoa_1_1recommender_1_1dataset_1_1impl_1_1_movielens_dataset_a3777f5bce362405fb0151953d9e30c70}} 
+\index{moa.recommender.dataset.impl.MovielensDataset@{moa.recommender.dataset.impl.MovielensDataset}!prepareForUseImpl@{prepareForUseImpl}}
+\index{prepareForUseImpl@{prepareForUseImpl}!moa.recommender.dataset.impl.MovielensDataset@{moa.recommender.dataset.impl.MovielensDataset}}
+\doxysubsubsection{\texorpdfstring{prepareForUseImpl()}{prepareForUseImpl()}}
+{\footnotesize\ttfamily void moa.\+recommender.\+dataset.\+impl.\+Movielens\+Dataset.\+prepare\+For\+Use\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}}}]{monitor,  }\item[{\mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}}}]{repository }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+This method describes the implementation of how to prepare this object for use. All classes that extends this class have to implement {\ttfamily prepare\+For\+Use\+Impl} and not {\ttfamily prepare\+For\+Use} since {\ttfamily prepare\+For\+Use} calls {\ttfamily prepare\+For\+Use\+Impl}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em monitor} & the Task\+Monitor to use \\
+\hline
+{\em repository} & the Object\+Repository to use \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1options_1_1_abstract_option_handler_ad0e9c7d4b0e2b185749f36ce28540efb}{moa.\+options.\+Abstract\+Option\+Handler}}.
+
+\mbox{\Hypertarget{classmoa_1_1recommender_1_1dataset_1_1impl_1_1_movielens_dataset_aee07fabf2f908c73f7f1a4efe6ae67f7}\label{classmoa_1_1recommender_1_1dataset_1_1impl_1_1_movielens_dataset_aee07fabf2f908c73f7f1a4efe6ae67f7}} 
+\index{moa.recommender.dataset.impl.MovielensDataset@{moa.recommender.dataset.impl.MovielensDataset}!toString@{toString}}
+\index{toString@{toString}!moa.recommender.dataset.impl.MovielensDataset@{moa.recommender.dataset.impl.MovielensDataset}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily String moa.\+recommender.\+dataset.\+impl.\+Movielens\+Dataset.\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns a description of the object.
+
+\begin{DoxyReturn}{Returns}
+a description of the object 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1_abstract_m_o_a_object_ac686fd3b07c734cf21f1894376fe402d}{moa.\+Abstract\+M\+O\+A\+Object}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmoa_1_1recommender_1_1dataset_1_1impl_1_1_movielens_dataset_a76b332272469a7bc8ee677d972e93bae}\label{classmoa_1_1recommender_1_1dataset_1_1impl_1_1_movielens_dataset_a76b332272469a7bc8ee677d972e93bae}} 
+\index{moa.recommender.dataset.impl.MovielensDataset@{moa.recommender.dataset.impl.MovielensDataset}!fileOption@{fileOption}}
+\index{fileOption@{fileOption}!moa.recommender.dataset.impl.MovielensDataset@{moa.recommender.dataset.impl.MovielensDataset}}
+\doxysubsubsection{\texorpdfstring{fileOption}{fileOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_file_option}{File\+Option}} moa.\+recommender.\+dataset.\+impl.\+Movielens\+Dataset.\+file\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FileOption(\textcolor{stringliteral}{"file"}, \textcolor{charliteral}{'f'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"File to load."}, \textcolor{stringliteral}{"/Users/abifet/Downloads/ml-\/1M/ratings.dat"}, \textcolor{stringliteral}{"dat"}, \textcolor{keyword}{false})}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/recommender/dataset/impl/Movielens\+Dataset.\+java\end{DoxyCompactItemize}

@@ -1,0 +1,238 @@
+\hypertarget{classmoa_1_1classifiers_1_1oneclass_1_1_nearest_neighbour_description}{}\doxysection{moa.\+classifiers.\+oneclass.\+Nearest\+Neighbour\+Description Class Reference}
+\label{classmoa_1_1classifiers_1_1oneclass_1_1_nearest_neighbour_description}\index{moa.classifiers.oneclass.NearestNeighbourDescription@{moa.classifiers.oneclass.NearestNeighbourDescription}}
+
+
+Inheritance diagram for moa.\+classifiers.\+oneclass.\+Nearest\+Neighbour\+Description\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+classifiers.\+oneclass.\+Nearest\+Neighbour\+Description\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classmoa_1_1classifiers_1_1oneclass_1_1_nearest_neighbour_description_adb5d0656eec37b167d786b31fd7d987a}{get\+Purpose\+String}} ()
+\item 
+\mbox{\hyperlink{classmoa_1_1classifiers_1_1oneclass_1_1_nearest_neighbour_description_a73ae943e67d3c9ba0c7a748a34986470}{Nearest\+Neighbour\+Description}} (List$<$ \mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} $>$ training\+Set)
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1oneclass_1_1_nearest_neighbour_description_a5c3d4c9facc2669146162bf2070c730a}{reset\+Learning\+Impl}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1oneclass_1_1_nearest_neighbour_description_aa279c484f24531020967081048e37add}{train\+On\+Instance\+Impl}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst)
+\item 
+double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1oneclass_1_1_nearest_neighbour_description_a242ffec99d392f6aa4f76479c9b943fa}{get\+Votes\+For\+Instance}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst)
+\item 
+double \mbox{\hyperlink{classmoa_1_1classifiers_1_1oneclass_1_1_nearest_neighbour_description_afa970858ba9dada2e266efca13c33fc0}{get\+Anomaly\+Score}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst)
+\item 
+boolean \mbox{\hyperlink{classmoa_1_1classifiers_1_1oneclass_1_1_nearest_neighbour_description_a032184a5432a1a7f93a7a1e436994f34}{is\+Randomizable}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1oneclass_1_1_nearest_neighbour_description_a95629f74b4d23335030905cc48d897fd}{get\+Model\+Description}} (String\+Builder out, int indent)
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1oneclass_1_1_nearest_neighbour_description_a501948cef24976c2954ab28d0ee118c3}{initialize}} (Collection$<$ \mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} $>$ training\+Points)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries neighbourhood\+Size\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} {\bfseries threshold\+Option}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1oneclass_1_1_nearest_neighbour_description_a07793d0fc5bb1546801090dd3110d143}{get\+Model\+Measurements\+Impl}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Implements David Tax\textquotesingle{}s Nearest Neighbour Description method described in Section 3.\+4.\+2 of D. M. J. Tax, “\+One-\/\+Class Classification\+: Concept-\/learning in the absence of counter-\/examples,” Delft University of Technology, 2001 with adaptations for the data stream environment.
+
+\begin{DoxyAuthor}{Author}
+Richard Hugh Moulton 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1oneclass_1_1_nearest_neighbour_description_a73ae943e67d3c9ba0c7a748a34986470}\label{classmoa_1_1classifiers_1_1oneclass_1_1_nearest_neighbour_description_a73ae943e67d3c9ba0c7a748a34986470}} 
+\index{moa.classifiers.oneclass.NearestNeighbourDescription@{moa.classifiers.oneclass.NearestNeighbourDescription}!NearestNeighbourDescription@{NearestNeighbourDescription}}
+\index{NearestNeighbourDescription@{NearestNeighbourDescription}!moa.classifiers.oneclass.NearestNeighbourDescription@{moa.classifiers.oneclass.NearestNeighbourDescription}}
+\doxysubsubsection{\texorpdfstring{NearestNeighbourDescription()}{NearestNeighbourDescription()}}
+{\footnotesize\ttfamily moa.\+classifiers.\+oneclass.\+Nearest\+Neighbour\+Description.\+Nearest\+Neighbour\+Description (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} $>$}]{training\+Set }\end{DoxyParamCaption})}
+
+Constructor for a Nearest Neighbour Description classifier based on an argument training set of instances.
+
+
+\begin{DoxyParams}{Parameters}
+{\em training\+Set} & the instances on which to train the classifier \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1oneclass_1_1_nearest_neighbour_description_afa970858ba9dada2e266efca13c33fc0}\label{classmoa_1_1classifiers_1_1oneclass_1_1_nearest_neighbour_description_afa970858ba9dada2e266efca13c33fc0}} 
+\index{moa.classifiers.oneclass.NearestNeighbourDescription@{moa.classifiers.oneclass.NearestNeighbourDescription}!getAnomalyScore@{getAnomalyScore}}
+\index{getAnomalyScore@{getAnomalyScore}!moa.classifiers.oneclass.NearestNeighbourDescription@{moa.classifiers.oneclass.NearestNeighbourDescription}}
+\doxysubsubsection{\texorpdfstring{getAnomalyScore()}{getAnomalyScore()}}
+{\footnotesize\ttfamily double moa.\+classifiers.\+oneclass.\+Nearest\+Neighbour\+Description.\+get\+Anomaly\+Score (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{inst }\end{DoxyParamCaption})}
+
+Returns the anomaly score for an argument instance based on the distance from it to its nearest neighbour compared to the distance from its nearest neighbour to the neighbour\textquotesingle{}s nearest neighbour.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & the argument instance\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+d(inst, inst\+N\+N) / d(inst\+N\+N, inst\+N\+N\+N\+N) 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_one_class_classifier_a45de155b079d7768d1d94620a180fe9d}{moa.\+classifiers.\+One\+Class\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1oneclass_1_1_nearest_neighbour_description_a95629f74b4d23335030905cc48d897fd}\label{classmoa_1_1classifiers_1_1oneclass_1_1_nearest_neighbour_description_a95629f74b4d23335030905cc48d897fd}} 
+\index{moa.classifiers.oneclass.NearestNeighbourDescription@{moa.classifiers.oneclass.NearestNeighbourDescription}!getModelDescription@{getModelDescription}}
+\index{getModelDescription@{getModelDescription}!moa.classifiers.oneclass.NearestNeighbourDescription@{moa.classifiers.oneclass.NearestNeighbourDescription}}
+\doxysubsubsection{\texorpdfstring{getModelDescription()}{getModelDescription()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+oneclass.\+Nearest\+Neighbour\+Description.\+get\+Model\+Description (\begin{DoxyParamCaption}\item[{String\+Builder}]{out,  }\item[{int}]{indent }\end{DoxyParamCaption})}
+
+Returns a string representation of the model.
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & the stringbuilder to add the description \\
+\hline
+{\em indent} & the number of characters to indent \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a30e5ff32bc8127dfb7436945776b7523}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1oneclass_1_1_nearest_neighbour_description_a07793d0fc5bb1546801090dd3110d143}\label{classmoa_1_1classifiers_1_1oneclass_1_1_nearest_neighbour_description_a07793d0fc5bb1546801090dd3110d143}} 
+\index{moa.classifiers.oneclass.NearestNeighbourDescription@{moa.classifiers.oneclass.NearestNeighbourDescription}!getModelMeasurementsImpl@{getModelMeasurementsImpl}}
+\index{getModelMeasurementsImpl@{getModelMeasurementsImpl}!moa.classifiers.oneclass.NearestNeighbourDescription@{moa.classifiers.oneclass.NearestNeighbourDescription}}
+\doxysubsubsection{\texorpdfstring{getModelMeasurementsImpl()}{getModelMeasurementsImpl()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}} \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+oneclass.\+Nearest\+Neighbour\+Description.\+get\+Model\+Measurements\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Gets the current measurements of this classifier.~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden.
+
+\begin{DoxyReturn}{Returns}
+an array of measurements to be used in evaluation tasks 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_ac2bebede21c9d2d8cd11d95a7e20e529}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1oneclass_1_1_nearest_neighbour_description_adb5d0656eec37b167d786b31fd7d987a}\label{classmoa_1_1classifiers_1_1oneclass_1_1_nearest_neighbour_description_adb5d0656eec37b167d786b31fd7d987a}} 
+\index{moa.classifiers.oneclass.NearestNeighbourDescription@{moa.classifiers.oneclass.NearestNeighbourDescription}!getPurposeString@{getPurposeString}}
+\index{getPurposeString@{getPurposeString}!moa.classifiers.oneclass.NearestNeighbourDescription@{moa.classifiers.oneclass.NearestNeighbourDescription}}
+\doxysubsubsection{\texorpdfstring{getPurposeString()}{getPurposeString()}}
+{\footnotesize\ttfamily String moa.\+classifiers.\+oneclass.\+Nearest\+Neighbour\+Description.\+get\+Purpose\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Options to handle Dictionary with option texts and objects 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a3fc6ae11234b88e51941a77ddb879d8b}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1oneclass_1_1_nearest_neighbour_description_a242ffec99d392f6aa4f76479c9b943fa}\label{classmoa_1_1classifiers_1_1oneclass_1_1_nearest_neighbour_description_a242ffec99d392f6aa4f76479c9b943fa}} 
+\index{moa.classifiers.oneclass.NearestNeighbourDescription@{moa.classifiers.oneclass.NearestNeighbourDescription}!getVotesForInstance@{getVotesForInstance}}
+\index{getVotesForInstance@{getVotesForInstance}!moa.classifiers.oneclass.NearestNeighbourDescription@{moa.classifiers.oneclass.NearestNeighbourDescription}}
+\doxysubsubsection{\texorpdfstring{getVotesForInstance()}{getVotesForInstance()}}
+{\footnotesize\ttfamily double \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+oneclass.\+Nearest\+Neighbour\+Description.\+get\+Votes\+For\+Instance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{inst }\end{DoxyParamCaption})}
+
+Calculates the distance between the argument instance and its nearest neighbour as well as the distance between that nearest neighbour and its own nearest neighbour. The ratio of these distances is compared to the threshold value, tau, and converted into a vote score.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & the instance to get votes for.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the votes for the instance\textquotesingle{}s label \mbox{[}normal, outlier\mbox{]} 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a0e3589c4fa6f088d82d64514afd9513c}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1oneclass_1_1_nearest_neighbour_description_a501948cef24976c2954ab28d0ee118c3}\label{classmoa_1_1classifiers_1_1oneclass_1_1_nearest_neighbour_description_a501948cef24976c2954ab28d0ee118c3}} 
+\index{moa.classifiers.oneclass.NearestNeighbourDescription@{moa.classifiers.oneclass.NearestNeighbourDescription}!initialize@{initialize}}
+\index{initialize@{initialize}!moa.classifiers.oneclass.NearestNeighbourDescription@{moa.classifiers.oneclass.NearestNeighbourDescription}}
+\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+oneclass.\+Nearest\+Neighbour\+Description.\+initialize (\begin{DoxyParamCaption}\item[{Collection$<$ \mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} $>$}]{training\+Points }\end{DoxyParamCaption})}
+
+Initializes the Nearest Neighbour Distance (N\+N-\/d) classifier with the argument training points.
+
+
+\begin{DoxyParams}{Parameters}
+{\em training\+Points} & the Collection of instances on which to initialize the N\+N-\/d classifier. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_one_class_classifier_a4ff73e92da76b79bbe7ed7b6be724c37}{moa.\+classifiers.\+One\+Class\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1oneclass_1_1_nearest_neighbour_description_a032184a5432a1a7f93a7a1e436994f34}\label{classmoa_1_1classifiers_1_1oneclass_1_1_nearest_neighbour_description_a032184a5432a1a7f93a7a1e436994f34}} 
+\index{moa.classifiers.oneclass.NearestNeighbourDescription@{moa.classifiers.oneclass.NearestNeighbourDescription}!isRandomizable@{isRandomizable}}
+\index{isRandomizable@{isRandomizable}!moa.classifiers.oneclass.NearestNeighbourDescription@{moa.classifiers.oneclass.NearestNeighbourDescription}}
+\doxysubsubsection{\texorpdfstring{isRandomizable()}{isRandomizable()}}
+{\footnotesize\ttfamily boolean moa.\+classifiers.\+oneclass.\+Nearest\+Neighbour\+Description.\+is\+Randomizable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Nearest Neighbour Description is not randomizable. 
+
+Implements \mbox{\hyperlink{interfacemoa_1_1learners_1_1_learner_a2f1ff9007b5eb5f53801f474b4d42a61}{moa.\+learners.\+Learner$<$ E extends Example $>$}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1oneclass_1_1_nearest_neighbour_description_a5c3d4c9facc2669146162bf2070c730a}\label{classmoa_1_1classifiers_1_1oneclass_1_1_nearest_neighbour_description_a5c3d4c9facc2669146162bf2070c730a}} 
+\index{moa.classifiers.oneclass.NearestNeighbourDescription@{moa.classifiers.oneclass.NearestNeighbourDescription}!resetLearningImpl@{resetLearningImpl}}
+\index{resetLearningImpl@{resetLearningImpl}!moa.classifiers.oneclass.NearestNeighbourDescription@{moa.classifiers.oneclass.NearestNeighbourDescription}}
+\doxysubsubsection{\texorpdfstring{resetLearningImpl()}{resetLearningImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+oneclass.\+Nearest\+Neighbour\+Description.\+reset\+Learning\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Resets the implementation\textquotesingle{}s parameters and data structures. 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a099ffcf2417abb919d10d697c0648f29}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1oneclass_1_1_nearest_neighbour_description_aa279c484f24531020967081048e37add}\label{classmoa_1_1classifiers_1_1oneclass_1_1_nearest_neighbour_description_aa279c484f24531020967081048e37add}} 
+\index{moa.classifiers.oneclass.NearestNeighbourDescription@{moa.classifiers.oneclass.NearestNeighbourDescription}!trainOnInstanceImpl@{trainOnInstanceImpl}}
+\index{trainOnInstanceImpl@{trainOnInstanceImpl}!moa.classifiers.oneclass.NearestNeighbourDescription@{moa.classifiers.oneclass.NearestNeighbourDescription}}
+\doxysubsubsection{\texorpdfstring{trainOnInstanceImpl()}{trainOnInstanceImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+oneclass.\+Nearest\+Neighbour\+Description.\+train\+On\+Instance\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{inst }\end{DoxyParamCaption})}
+
+The classifier adds the argument instance to its neighbourhood. If the neighbourhood is full, then the Fixed\+Length\+List removes the oldest instance in it to accommodate the new instance. 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_aceb24d2ddeab386f2ecead6e3c0d3543}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1oneclass_1_1_nearest_neighbour_description_afd6d114372e87e740d839d2e2bf9b1d2}\label{classmoa_1_1classifiers_1_1oneclass_1_1_nearest_neighbour_description_afd6d114372e87e740d839d2e2bf9b1d2}} 
+\index{moa.classifiers.oneclass.NearestNeighbourDescription@{moa.classifiers.oneclass.NearestNeighbourDescription}!neighbourhoodSizeOption@{neighbourhoodSizeOption}}
+\index{neighbourhoodSizeOption@{neighbourhoodSizeOption}!moa.classifiers.oneclass.NearestNeighbourDescription@{moa.classifiers.oneclass.NearestNeighbourDescription}}
+\doxysubsubsection{\texorpdfstring{neighbourhoodSizeOption}{neighbourhoodSizeOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+classifiers.\+oneclass.\+Nearest\+Neighbour\+Description.\+neighbourhood\+Size\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(\textcolor{stringliteral}{"neighbourhoodSize"}, \textcolor{charliteral}{'n'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"The number of instances to store in the neighbourhood."}, 200, 1, Integer.MAX\_VALUE)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1oneclass_1_1_nearest_neighbour_description_af74e2f3a0bc91b297fd8ce8b43bbc9c3}\label{classmoa_1_1classifiers_1_1oneclass_1_1_nearest_neighbour_description_af74e2f3a0bc91b297fd8ce8b43bbc9c3}} 
+\index{moa.classifiers.oneclass.NearestNeighbourDescription@{moa.classifiers.oneclass.NearestNeighbourDescription}!thresholdOption@{thresholdOption}}
+\index{thresholdOption@{thresholdOption}!moa.classifiers.oneclass.NearestNeighbourDescription@{moa.classifiers.oneclass.NearestNeighbourDescription}}
+\doxysubsubsection{\texorpdfstring{thresholdOption}{thresholdOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} moa.\+classifiers.\+oneclass.\+Nearest\+Neighbour\+Description.\+threshold\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FloatOption(\textcolor{stringliteral}{"tau"}, \textcolor{charliteral}{'t'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"The threshold value to determine whether an instance is a member of the target class or an outlier"}, 1.0)}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/classifiers/oneclass/Nearest\+Neighbour\+Description.\+java\end{DoxyCompactItemize}

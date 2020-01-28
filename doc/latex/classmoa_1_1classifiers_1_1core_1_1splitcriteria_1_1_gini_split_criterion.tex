@@ -1,0 +1,136 @@
+\hypertarget{classmoa_1_1classifiers_1_1core_1_1splitcriteria_1_1_gini_split_criterion}{}\doxysection{moa.\+classifiers.\+core.\+splitcriteria.\+Gini\+Split\+Criterion Class Reference}
+\label{classmoa_1_1classifiers_1_1core_1_1splitcriteria_1_1_gini_split_criterion}\index{moa.classifiers.core.splitcriteria.GiniSplitCriterion@{moa.classifiers.core.splitcriteria.GiniSplitCriterion}}
+
+
+Inheritance diagram for moa.\+classifiers.\+core.\+splitcriteria.\+Gini\+Split\+Criterion\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+classifiers.\+core.\+splitcriteria.\+Gini\+Split\+Criterion\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1splitcriteria_1_1_gini_split_criterion_abf91e3eda1603b3a653ce446d36530ec}{get\+Merit\+Of\+Split}} (double\mbox{[}$\,$\mbox{]} pre\+Split\+Dist, double\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} post\+Split\+Dists)
+\item 
+double \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1splitcriteria_1_1_gini_split_criterion_a5c1cb1c811422e497820151bc9cd2819}{get\+Range\+Of\+Merit}} (double\mbox{[}$\,$\mbox{]} pre\+Split\+Dist)
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1splitcriteria_1_1_gini_split_criterion_a33d4440acc82155d1da44d72548d4062}{get\+Description}} (String\+Builder sb, int indent)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1splitcriteria_1_1_gini_split_criterion_af9829bbfda048f5ec50a20846eec9300}\label{classmoa_1_1classifiers_1_1core_1_1splitcriteria_1_1_gini_split_criterion_af9829bbfda048f5ec50a20846eec9300}} 
+static double {\bfseries compute\+Gini} (double\mbox{[}$\,$\mbox{]} dist, double dist\+Sum\+Of\+Weights)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1splitcriteria_1_1_gini_split_criterion_a40a07a47d631833290f57219b1c2f8c7}\label{classmoa_1_1classifiers_1_1core_1_1splitcriteria_1_1_gini_split_criterion_a40a07a47d631833290f57219b1c2f8c7}} 
+static double {\bfseries compute\+Gini} (double\mbox{[}$\,$\mbox{]} dist)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1splitcriteria_1_1_gini_split_criterion_a6bcb26772443d70320718aa1c3dee268}{prepare\+For\+Use\+Impl}} (\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}} monitor, \mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}} repository)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Class for computing splitting criteria using Gini with respect to distributions of class values. The split criterion is used as a parameter on decision trees and decision stumps.
+
+\begin{DoxyAuthor}{Author}
+Richard Kirkby (\href{mailto:rkirkby@cs.waikato.ac.nz}{\texttt{ rkirkby@cs.\+waikato.\+ac.\+nz}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+7 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1splitcriteria_1_1_gini_split_criterion_a33d4440acc82155d1da44d72548d4062}\label{classmoa_1_1classifiers_1_1core_1_1splitcriteria_1_1_gini_split_criterion_a33d4440acc82155d1da44d72548d4062}} 
+\index{moa.classifiers.core.splitcriteria.GiniSplitCriterion@{moa.classifiers.core.splitcriteria.GiniSplitCriterion}!getDescription@{getDescription}}
+\index{getDescription@{getDescription}!moa.classifiers.core.splitcriteria.GiniSplitCriterion@{moa.classifiers.core.splitcriteria.GiniSplitCriterion}}
+\doxysubsubsection{\texorpdfstring{getDescription()}{getDescription()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+core.\+splitcriteria.\+Gini\+Split\+Criterion.\+get\+Description (\begin{DoxyParamCaption}\item[{String\+Builder}]{sb,  }\item[{int}]{indent }\end{DoxyParamCaption})}
+
+Returns a string representation of this object. Used in {\ttfamily \mbox{\hyperlink{classmoa_1_1_abstract_m_o_a_object_ac686fd3b07c734cf21f1894376fe402d}{Abstract\+M\+O\+A\+Object.\+to\+String}}} to give a string representation of the object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sb} & the stringbuilder to add the description \\
+\hline
+{\em indent} & the number of characters to indent \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1_m_o_a_object_afdaf5098f1fe6c852018ce64c28e17f5}{moa.\+M\+O\+A\+Object}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1splitcriteria_1_1_gini_split_criterion_abf91e3eda1603b3a653ce446d36530ec}\label{classmoa_1_1classifiers_1_1core_1_1splitcriteria_1_1_gini_split_criterion_abf91e3eda1603b3a653ce446d36530ec}} 
+\index{moa.classifiers.core.splitcriteria.GiniSplitCriterion@{moa.classifiers.core.splitcriteria.GiniSplitCriterion}!getMeritOfSplit@{getMeritOfSplit}}
+\index{getMeritOfSplit@{getMeritOfSplit}!moa.classifiers.core.splitcriteria.GiniSplitCriterion@{moa.classifiers.core.splitcriteria.GiniSplitCriterion}}
+\doxysubsubsection{\texorpdfstring{getMeritOfSplit()}{getMeritOfSplit()}}
+{\footnotesize\ttfamily double moa.\+classifiers.\+core.\+splitcriteria.\+Gini\+Split\+Criterion.\+get\+Merit\+Of\+Split (\begin{DoxyParamCaption}\item[{double\mbox{[}$\,$\mbox{]}}]{pre\+Split\+Dist,  }\item[{double}]{post\+Split\+Dists\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+Computes the merit of splitting for a given ditribution before the split and after it.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pre\+Split\+Dist} & the class distribution before the split \\
+\hline
+{\em post\+Split\+Dist} & the class distribution after the split \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+value of the merit of splitting 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1classifiers_1_1core_1_1splitcriteria_1_1_split_criterion_a82f5cb7ad49c396d4f50615a55300b36}{moa.\+classifiers.\+core.\+splitcriteria.\+Split\+Criterion}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1splitcriteria_1_1_gini_split_criterion_a5c1cb1c811422e497820151bc9cd2819}\label{classmoa_1_1classifiers_1_1core_1_1splitcriteria_1_1_gini_split_criterion_a5c1cb1c811422e497820151bc9cd2819}} 
+\index{moa.classifiers.core.splitcriteria.GiniSplitCriterion@{moa.classifiers.core.splitcriteria.GiniSplitCriterion}!getRangeOfMerit@{getRangeOfMerit}}
+\index{getRangeOfMerit@{getRangeOfMerit}!moa.classifiers.core.splitcriteria.GiniSplitCriterion@{moa.classifiers.core.splitcriteria.GiniSplitCriterion}}
+\doxysubsubsection{\texorpdfstring{getRangeOfMerit()}{getRangeOfMerit()}}
+{\footnotesize\ttfamily double moa.\+classifiers.\+core.\+splitcriteria.\+Gini\+Split\+Criterion.\+get\+Range\+Of\+Merit (\begin{DoxyParamCaption}\item[{double\mbox{[}$\,$\mbox{]}}]{pre\+Split\+Dist }\end{DoxyParamCaption})}
+
+Computes the range of splitting merit
+
+
+\begin{DoxyParams}{Parameters}
+{\em pre\+Split\+Dist} & the class distribution before the split \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+value of the range of splitting merit 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1classifiers_1_1core_1_1splitcriteria_1_1_split_criterion_af4602783ac8df6d5fed77c9b828aa4b4}{moa.\+classifiers.\+core.\+splitcriteria.\+Split\+Criterion}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1splitcriteria_1_1_gini_split_criterion_a6bcb26772443d70320718aa1c3dee268}\label{classmoa_1_1classifiers_1_1core_1_1splitcriteria_1_1_gini_split_criterion_a6bcb26772443d70320718aa1c3dee268}} 
+\index{moa.classifiers.core.splitcriteria.GiniSplitCriterion@{moa.classifiers.core.splitcriteria.GiniSplitCriterion}!prepareForUseImpl@{prepareForUseImpl}}
+\index{prepareForUseImpl@{prepareForUseImpl}!moa.classifiers.core.splitcriteria.GiniSplitCriterion@{moa.classifiers.core.splitcriteria.GiniSplitCriterion}}
+\doxysubsubsection{\texorpdfstring{prepareForUseImpl()}{prepareForUseImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+core.\+splitcriteria.\+Gini\+Split\+Criterion.\+prepare\+For\+Use\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}}}]{monitor,  }\item[{\mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}}}]{repository }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+This method describes the implementation of how to prepare this object for use. All classes that extends this class have to implement {\ttfamily prepare\+For\+Use\+Impl} and not {\ttfamily prepare\+For\+Use} since {\ttfamily prepare\+For\+Use} calls {\ttfamily prepare\+For\+Use\+Impl}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em monitor} & the Task\+Monitor to use \\
+\hline
+{\em repository} & the Object\+Repository to use \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1options_1_1_abstract_option_handler_ad0e9c7d4b0e2b185749f36ce28540efb}{moa.\+options.\+Abstract\+Option\+Handler}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/classifiers/core/splitcriteria/Gini\+Split\+Criterion.\+java\end{DoxyCompactItemize}

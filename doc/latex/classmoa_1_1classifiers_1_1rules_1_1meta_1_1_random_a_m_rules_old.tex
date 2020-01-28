@@ -1,0 +1,327 @@
+\hypertarget{classmoa_1_1classifiers_1_1rules_1_1meta_1_1_random_a_m_rules_old}{}\doxysection{moa.\+classifiers.\+rules.\+meta.\+Random\+A\+M\+Rules\+Old Class Reference}
+\label{classmoa_1_1classifiers_1_1rules_1_1meta_1_1_random_a_m_rules_old}\index{moa.classifiers.rules.meta.RandomAMRulesOld@{moa.classifiers.rules.meta.RandomAMRulesOld}}
+
+
+Inheritance diagram for moa.\+classifiers.\+rules.\+meta.\+Random\+A\+M\+Rules\+Old\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+classifiers.\+rules.\+meta.\+Random\+A\+M\+Rules\+Old\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1meta_1_1_random_a_m_rules_old_a85647d0cd8d850f6c0c2defbb44daac7}{reset\+Learning\+Impl}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1meta_1_1_random_a_m_rules_old_af158a48f47f31a3062a033c1103b4a2a}{train\+On\+Instance\+Impl}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} instance)
+\item 
+double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1meta_1_1_random_a_m_rules_old_a8cf3a862f4828a095466f92c7b06f26e}{get\+Votes\+For\+Instance}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst)
+\item 
+boolean \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1meta_1_1_random_a_m_rules_old_ae633f7a8c41a954b189c84aa243361b6}{is\+Randomizable}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1meta_1_1_random_a_m_rules_old_a29230fd6779bef5f9ee51654271ab622}{get\+Model\+Description}} (String\+Builder out, int indent)
+\item 
+\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier}{Classifier}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1meta_1_1_random_a_m_rules_old_ac0024af9c0d1e027885acf776778bdce}{get\+Sub\+Classifiers}} ()
+\item 
+String \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1meta_1_1_random_a_m_rules_old_ad437d0f4e9dc534b39d904889000be94}{get\+Purpose\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries Verbosity\+Option}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1meta_1_1_random_a_m_rules_old_a1364f1ea2098eb7af23efaf0dde1d411}\label{classmoa_1_1classifiers_1_1rules_1_1meta_1_1_random_a_m_rules_old_a1364f1ea2098eb7af23efaf0dde1d411}} 
+\mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} {\bfseries base\+Learner\+Option} = new \mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}}(\char`\"{}base\+Learner\char`\"{}, \textquotesingle{}l\textquotesingle{}, \char`\"{}Classifier to train.\char`\"{}, Abstract\+A\+M\+Rules.\+class, A\+M\+Rules\+Regressor\+Old.\+class.\+get\+Name())
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries ensemble\+Size\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} {\bfseries num\+Attributes\+Percentage\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_flag_option}{Flag\+Option}} {\bfseries use\+Bagging\+Option}
+\item 
+\mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} {\bfseries voting\+Function\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_multi_choice_option}{Multi\+Choice\+Option}} {\bfseries voting\+Type\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} {\bfseries fading\+Error\+Factor\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries random\+Seed\+Option}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1meta_1_1_random_a_m_rules_old_ad6372dce5363cb162b319b123878b299}{get\+Model\+Measurements\+Impl}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1meta_1_1_random_a_m_rules_old_a4e19c5d83e3ad48112e8e29c37d00e7b}\label{classmoa_1_1classifiers_1_1rules_1_1meta_1_1_random_a_m_rules_old_a4e19c5d83e3ad48112e8e29c37d00e7b}} 
+\mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1_abstract_a_m_rules}{Abstract\+A\+M\+Rules}}\mbox{[}$\,$\mbox{]} {\bfseries ensemble}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1meta_1_1_random_a_m_rules_old_a485e353bbbb5525e4526403a89d16a51}\label{classmoa_1_1classifiers_1_1rules_1_1meta_1_1_random_a_m_rules_old_a485e353bbbb5525e4526403a89d16a51}} 
+double\mbox{[}$\,$\mbox{]} {\bfseries sum\+Error}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1meta_1_1_random_a_m_rules_old_a4bd0e5c2d7f4f68e27ce393bdff032a8}\label{classmoa_1_1classifiers_1_1rules_1_1meta_1_1_random_a_m_rules_old_a4bd0e5c2d7f4f68e27ce393bdff032a8}} 
+double\mbox{[}$\,$\mbox{]} {\bfseries n\+Error}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1meta_1_1_random_a_m_rules_old_a383c1429e34de547d449d018da1dd4b7}\label{classmoa_1_1classifiers_1_1rules_1_1meta_1_1_random_a_m_rules_old_a383c1429e34de547d449d018da1dd4b7}} 
+boolean {\bfseries is\+Regression}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1meta_1_1_random_a_m_rules_old_aacde5432d9d73357a06705617e3d8f87}\label{classmoa_1_1classifiers_1_1rules_1_1meta_1_1_random_a_m_rules_old_aacde5432d9d73357a06705617e3d8f87}} 
+int\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} {\bfseries list\+Attributes}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1meta_1_1_random_a_m_rules_old_abd9d1cb2186c202c8737cdd7aca1c35b}\label{classmoa_1_1classifiers_1_1rules_1_1meta_1_1_random_a_m_rules_old_abd9d1cb2186c202c8737cdd7aca1c35b}} 
+int {\bfseries num\+Attributes}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1meta_1_1_random_a_m_rules_old_a0fefce5eb247c98d48af9dda08aa87c4}\label{classmoa_1_1classifiers_1_1rules_1_1meta_1_1_random_a_m_rules_old_a0fefce5eb247c98d48af9dda08aa87c4}} 
+\mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instances_header}{Instances\+Header}}\mbox{[}$\,$\mbox{]} {\bfseries dataset}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1meta_1_1_random_a_m_rules_old_a29230fd6779bef5f9ee51654271ab622}\label{classmoa_1_1classifiers_1_1rules_1_1meta_1_1_random_a_m_rules_old_a29230fd6779bef5f9ee51654271ab622}} 
+\index{moa.classifiers.rules.meta.RandomAMRulesOld@{moa.classifiers.rules.meta.RandomAMRulesOld}!getModelDescription@{getModelDescription}}
+\index{getModelDescription@{getModelDescription}!moa.classifiers.rules.meta.RandomAMRulesOld@{moa.classifiers.rules.meta.RandomAMRulesOld}}
+\doxysubsubsection{\texorpdfstring{getModelDescription()}{getModelDescription()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+rules.\+meta.\+Random\+A\+M\+Rules\+Old.\+get\+Model\+Description (\begin{DoxyParamCaption}\item[{String\+Builder}]{out,  }\item[{int}]{indent }\end{DoxyParamCaption})}
+
+Returns a string representation of the model.
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & the stringbuilder to add the description \\
+\hline
+{\em indent} & the number of characters to indent \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a30e5ff32bc8127dfb7436945776b7523}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1meta_1_1_random_a_m_rules_old_ad6372dce5363cb162b319b123878b299}\label{classmoa_1_1classifiers_1_1rules_1_1meta_1_1_random_a_m_rules_old_ad6372dce5363cb162b319b123878b299}} 
+\index{moa.classifiers.rules.meta.RandomAMRulesOld@{moa.classifiers.rules.meta.RandomAMRulesOld}!getModelMeasurementsImpl@{getModelMeasurementsImpl}}
+\index{getModelMeasurementsImpl@{getModelMeasurementsImpl}!moa.classifiers.rules.meta.RandomAMRulesOld@{moa.classifiers.rules.meta.RandomAMRulesOld}}
+\doxysubsubsection{\texorpdfstring{getModelMeasurementsImpl()}{getModelMeasurementsImpl()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}} \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+rules.\+meta.\+Random\+A\+M\+Rules\+Old.\+get\+Model\+Measurements\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Gets the current measurements of this classifier.~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden.
+
+\begin{DoxyReturn}{Returns}
+an array of measurements to be used in evaluation tasks 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_ac2bebede21c9d2d8cd11d95a7e20e529}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1meta_1_1_random_a_m_rules_old_ad437d0f4e9dc534b39d904889000be94}\label{classmoa_1_1classifiers_1_1rules_1_1meta_1_1_random_a_m_rules_old_ad437d0f4e9dc534b39d904889000be94}} 
+\index{moa.classifiers.rules.meta.RandomAMRulesOld@{moa.classifiers.rules.meta.RandomAMRulesOld}!getPurposeString@{getPurposeString}}
+\index{getPurposeString@{getPurposeString}!moa.classifiers.rules.meta.RandomAMRulesOld@{moa.classifiers.rules.meta.RandomAMRulesOld}}
+\doxysubsubsection{\texorpdfstring{getPurposeString()}{getPurposeString()}}
+{\footnotesize\ttfamily String moa.\+classifiers.\+rules.\+meta.\+Random\+A\+M\+Rules\+Old.\+get\+Purpose\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Options to handle Dictionary with option texts and objects 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a3fc6ae11234b88e51941a77ddb879d8b}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1meta_1_1_random_a_m_rules_old_ac0024af9c0d1e027885acf776778bdce}\label{classmoa_1_1classifiers_1_1rules_1_1meta_1_1_random_a_m_rules_old_ac0024af9c0d1e027885acf776778bdce}} 
+\index{moa.classifiers.rules.meta.RandomAMRulesOld@{moa.classifiers.rules.meta.RandomAMRulesOld}!getSubClassifiers@{getSubClassifiers}}
+\index{getSubClassifiers@{getSubClassifiers}!moa.classifiers.rules.meta.RandomAMRulesOld@{moa.classifiers.rules.meta.RandomAMRulesOld}}
+\doxysubsubsection{\texorpdfstring{getSubClassifiers()}{getSubClassifiers()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier}{Classifier}} \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+rules.\+meta.\+Random\+A\+M\+Rules\+Old.\+get\+Sub\+Classifiers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the classifiers of this ensemble. Returns null if this learner is a single learner.
+
+\begin{DoxyReturn}{Returns}
+an array of the learners of the ensemble 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a5d7c5aadeaf3465785aa6bb2efb615f2}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1meta_1_1_random_a_m_rules_old_a8cf3a862f4828a095466f92c7b06f26e}\label{classmoa_1_1classifiers_1_1rules_1_1meta_1_1_random_a_m_rules_old_a8cf3a862f4828a095466f92c7b06f26e}} 
+\index{moa.classifiers.rules.meta.RandomAMRulesOld@{moa.classifiers.rules.meta.RandomAMRulesOld}!getVotesForInstance@{getVotesForInstance}}
+\index{getVotesForInstance@{getVotesForInstance}!moa.classifiers.rules.meta.RandomAMRulesOld@{moa.classifiers.rules.meta.RandomAMRulesOld}}
+\doxysubsubsection{\texorpdfstring{getVotesForInstance()}{getVotesForInstance()}}
+{\footnotesize\ttfamily double \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+rules.\+meta.\+Random\+A\+M\+Rules\+Old.\+get\+Votes\+For\+Instance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{inst }\end{DoxyParamCaption})}
+
+Predicts the class memberships for a given instance. If an instance is unclassified, the returned array elements must be all zero.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & the instance to be classified \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an array containing the estimated membership probabilities of the test instance in each class 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a0e3589c4fa6f088d82d64514afd9513c}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1meta_1_1_random_a_m_rules_old_ae633f7a8c41a954b189c84aa243361b6}\label{classmoa_1_1classifiers_1_1rules_1_1meta_1_1_random_a_m_rules_old_ae633f7a8c41a954b189c84aa243361b6}} 
+\index{moa.classifiers.rules.meta.RandomAMRulesOld@{moa.classifiers.rules.meta.RandomAMRulesOld}!isRandomizable@{isRandomizable}}
+\index{isRandomizable@{isRandomizable}!moa.classifiers.rules.meta.RandomAMRulesOld@{moa.classifiers.rules.meta.RandomAMRulesOld}}
+\doxysubsubsection{\texorpdfstring{isRandomizable()}{isRandomizable()}}
+{\footnotesize\ttfamily boolean moa.\+classifiers.\+rules.\+meta.\+Random\+A\+M\+Rules\+Old.\+is\+Randomizable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets whether this learner needs a random seed. Examples of methods that needs a random seed are bagging and boosting.
+
+\begin{DoxyReturn}{Returns}
+true if the learner needs a random seed. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1learners_1_1_learner_a2f1ff9007b5eb5f53801f474b4d42a61}{moa.\+learners.\+Learner$<$ E extends Example $>$}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1meta_1_1_random_a_m_rules_old_a85647d0cd8d850f6c0c2defbb44daac7}\label{classmoa_1_1classifiers_1_1rules_1_1meta_1_1_random_a_m_rules_old_a85647d0cd8d850f6c0c2defbb44daac7}} 
+\index{moa.classifiers.rules.meta.RandomAMRulesOld@{moa.classifiers.rules.meta.RandomAMRulesOld}!resetLearningImpl@{resetLearningImpl}}
+\index{resetLearningImpl@{resetLearningImpl}!moa.classifiers.rules.meta.RandomAMRulesOld@{moa.classifiers.rules.meta.RandomAMRulesOld}}
+\doxysubsubsection{\texorpdfstring{resetLearningImpl()}{resetLearningImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+rules.\+meta.\+Random\+A\+M\+Rules\+Old.\+reset\+Learning\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Resets this classifier. It must be similar to starting a new classifier from scratch. ~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden. 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a099ffcf2417abb919d10d697c0648f29}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1meta_1_1_random_a_m_rules_old_af158a48f47f31a3062a033c1103b4a2a}\label{classmoa_1_1classifiers_1_1rules_1_1meta_1_1_random_a_m_rules_old_af158a48f47f31a3062a033c1103b4a2a}} 
+\index{moa.classifiers.rules.meta.RandomAMRulesOld@{moa.classifiers.rules.meta.RandomAMRulesOld}!trainOnInstanceImpl@{trainOnInstanceImpl}}
+\index{trainOnInstanceImpl@{trainOnInstanceImpl}!moa.classifiers.rules.meta.RandomAMRulesOld@{moa.classifiers.rules.meta.RandomAMRulesOld}}
+\doxysubsubsection{\texorpdfstring{trainOnInstanceImpl()}{trainOnInstanceImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+rules.\+meta.\+Random\+A\+M\+Rules\+Old.\+train\+On\+Instance\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{inst }\end{DoxyParamCaption})}
+
+Trains this classifier incrementally using the given instance.~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & the instance to be used for training \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_aceb24d2ddeab386f2ecead6e3c0d3543}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1meta_1_1_random_a_m_rules_old_af155b689ec6fb5744293b4b7efae8c97}\label{classmoa_1_1classifiers_1_1rules_1_1meta_1_1_random_a_m_rules_old_af155b689ec6fb5744293b4b7efae8c97}} 
+\index{moa.classifiers.rules.meta.RandomAMRulesOld@{moa.classifiers.rules.meta.RandomAMRulesOld}!ensembleSizeOption@{ensembleSizeOption}}
+\index{ensembleSizeOption@{ensembleSizeOption}!moa.classifiers.rules.meta.RandomAMRulesOld@{moa.classifiers.rules.meta.RandomAMRulesOld}}
+\doxysubsubsection{\texorpdfstring{ensembleSizeOption}{ensembleSizeOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+classifiers.\+rules.\+meta.\+Random\+A\+M\+Rules\+Old.\+ensemble\+Size\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(\textcolor{stringliteral}{"ensembleSize"}, \textcolor{charliteral}{'s'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"The number of models in the bag."}, 10, 1, Integer.MAX\_VALUE)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1meta_1_1_random_a_m_rules_old_a5ea5ef3e8f8b84057f67db741d277d9e}\label{classmoa_1_1classifiers_1_1rules_1_1meta_1_1_random_a_m_rules_old_a5ea5ef3e8f8b84057f67db741d277d9e}} 
+\index{moa.classifiers.rules.meta.RandomAMRulesOld@{moa.classifiers.rules.meta.RandomAMRulesOld}!fadingErrorFactorOption@{fadingErrorFactorOption}}
+\index{fadingErrorFactorOption@{fadingErrorFactorOption}!moa.classifiers.rules.meta.RandomAMRulesOld@{moa.classifiers.rules.meta.RandomAMRulesOld}}
+\doxysubsubsection{\texorpdfstring{fadingErrorFactorOption}{fadingErrorFactorOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} moa.\+classifiers.\+rules.\+meta.\+Random\+A\+M\+Rules\+Old.\+fading\+Error\+Factor\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FloatOption(}
+\DoxyCodeLine{            \textcolor{stringliteral}{"fadingErrorFactor"}, \textcolor{charliteral}{'e'}, }
+\DoxyCodeLine{            \textcolor{stringliteral}{"Fading error factor for the accumulated error"}, 0.99, 0, 1)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1meta_1_1_random_a_m_rules_old_a82dfa21036b6808245fe344115581874}\label{classmoa_1_1classifiers_1_1rules_1_1meta_1_1_random_a_m_rules_old_a82dfa21036b6808245fe344115581874}} 
+\index{moa.classifiers.rules.meta.RandomAMRulesOld@{moa.classifiers.rules.meta.RandomAMRulesOld}!numAttributesPercentageOption@{numAttributesPercentageOption}}
+\index{numAttributesPercentageOption@{numAttributesPercentageOption}!moa.classifiers.rules.meta.RandomAMRulesOld@{moa.classifiers.rules.meta.RandomAMRulesOld}}
+\doxysubsubsection{\texorpdfstring{numAttributesPercentageOption}{numAttributesPercentageOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} moa.\+classifiers.\+rules.\+meta.\+Random\+A\+M\+Rules\+Old.\+num\+Attributes\+Percentage\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FloatOption(\textcolor{stringliteral}{"numAttributesPercentage"}, \textcolor{charliteral}{'n'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"The number of attributes to use per model."}, 63.2, 0, 100)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1meta_1_1_random_a_m_rules_old_a61e1d387e6c97aeb95fe74ec8a64b66f}\label{classmoa_1_1classifiers_1_1rules_1_1meta_1_1_random_a_m_rules_old_a61e1d387e6c97aeb95fe74ec8a64b66f}} 
+\index{moa.classifiers.rules.meta.RandomAMRulesOld@{moa.classifiers.rules.meta.RandomAMRulesOld}!randomSeedOption@{randomSeedOption}}
+\index{randomSeedOption@{randomSeedOption}!moa.classifiers.rules.meta.RandomAMRulesOld@{moa.classifiers.rules.meta.RandomAMRulesOld}}
+\doxysubsubsection{\texorpdfstring{randomSeedOption}{randomSeedOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+classifiers.\+rules.\+meta.\+Random\+A\+M\+Rules\+Old.\+random\+Seed\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(\textcolor{stringliteral}{"randomSeed"}, \textcolor{charliteral}{'r'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Seed for random behaviour of the classifier."}, 1)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1meta_1_1_random_a_m_rules_old_afefcddebe35d2138be15df49d2ba55a9}\label{classmoa_1_1classifiers_1_1rules_1_1meta_1_1_random_a_m_rules_old_afefcddebe35d2138be15df49d2ba55a9}} 
+\index{moa.classifiers.rules.meta.RandomAMRulesOld@{moa.classifiers.rules.meta.RandomAMRulesOld}!useBaggingOption@{useBaggingOption}}
+\index{useBaggingOption@{useBaggingOption}!moa.classifiers.rules.meta.RandomAMRulesOld@{moa.classifiers.rules.meta.RandomAMRulesOld}}
+\doxysubsubsection{\texorpdfstring{useBaggingOption}{useBaggingOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_flag_option}{Flag\+Option}} moa.\+classifiers.\+rules.\+meta.\+Random\+A\+M\+Rules\+Old.\+use\+Bagging\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FlagOption(\textcolor{stringliteral}{"useBagging"}, \textcolor{charliteral}{'p'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Use Bagging."})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1meta_1_1_random_a_m_rules_old_add1213de280142d395e5f0b6d57a99c1}\label{classmoa_1_1classifiers_1_1rules_1_1meta_1_1_random_a_m_rules_old_add1213de280142d395e5f0b6d57a99c1}} 
+\index{moa.classifiers.rules.meta.RandomAMRulesOld@{moa.classifiers.rules.meta.RandomAMRulesOld}!VerbosityOption@{VerbosityOption}}
+\index{VerbosityOption@{VerbosityOption}!moa.classifiers.rules.meta.RandomAMRulesOld@{moa.classifiers.rules.meta.RandomAMRulesOld}}
+\doxysubsubsection{\texorpdfstring{VerbosityOption}{VerbosityOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+classifiers.\+rules.\+meta.\+Random\+A\+M\+Rules\+Old.\+Verbosity\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(}
+\DoxyCodeLine{            \textcolor{stringliteral}{"verbosity"},}
+\DoxyCodeLine{            \textcolor{charliteral}{'v'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Output Verbosity Control Level. 1 (Less) to 2 (More)"},}
+\DoxyCodeLine{            1, 1, 2)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1meta_1_1_random_a_m_rules_old_a94e032e01760b2d02b44cd8cda5b606b}\label{classmoa_1_1classifiers_1_1rules_1_1meta_1_1_random_a_m_rules_old_a94e032e01760b2d02b44cd8cda5b606b}} 
+\index{moa.classifiers.rules.meta.RandomAMRulesOld@{moa.classifiers.rules.meta.RandomAMRulesOld}!votingFunctionOption@{votingFunctionOption}}
+\index{votingFunctionOption@{votingFunctionOption}!moa.classifiers.rules.meta.RandomAMRulesOld@{moa.classifiers.rules.meta.RandomAMRulesOld}}
+\doxysubsubsection{\texorpdfstring{votingFunctionOption}{votingFunctionOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} moa.\+classifiers.\+rules.\+meta.\+Random\+A\+M\+Rules\+Old.\+voting\+Function\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} ClassOption(\textcolor{stringliteral}{"votingFunction"},}
+\DoxyCodeLine{            \textcolor{charliteral}{'V'}, \textcolor{stringliteral}{"Voting Function."}, }
+\DoxyCodeLine{            ErrorWeightedVote.class,}
+\DoxyCodeLine{            \textcolor{stringliteral}{"UniformWeightedVote"})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1meta_1_1_random_a_m_rules_old_a9c27e603038f7bbc1b9e7c05150fa54a}\label{classmoa_1_1classifiers_1_1rules_1_1meta_1_1_random_a_m_rules_old_a9c27e603038f7bbc1b9e7c05150fa54a}} 
+\index{moa.classifiers.rules.meta.RandomAMRulesOld@{moa.classifiers.rules.meta.RandomAMRulesOld}!votingTypeOption@{votingTypeOption}}
+\index{votingTypeOption@{votingTypeOption}!moa.classifiers.rules.meta.RandomAMRulesOld@{moa.classifiers.rules.meta.RandomAMRulesOld}}
+\doxysubsubsection{\texorpdfstring{votingTypeOption}{votingTypeOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_multi_choice_option}{Multi\+Choice\+Option}} moa.\+classifiers.\+rules.\+meta.\+Random\+A\+M\+Rules\+Old.\+voting\+Type\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} MultiChoiceOption(}
+\DoxyCodeLine{            \textcolor{stringliteral}{"votingTypeOption"}, \textcolor{charliteral}{'C'}, \textcolor{stringliteral}{"Select whether the base learner error is computed as the overall error os only the error of the rules that cover the example."}, \textcolor{keyword}{new} String[]\{}
+\DoxyCodeLine{                    \textcolor{stringliteral}{"Overall"},\textcolor{stringliteral}{"Only rules covered"}\}, \textcolor{keyword}{new} String[]\{}
+\DoxyCodeLine{                    \textcolor{stringliteral}{"Overall"},\textcolor{stringliteral}{"Covered"}\}, 0)}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/classifiers/rules/meta/Random\+A\+M\+Rules\+Old.\+java\end{DoxyCompactItemize}

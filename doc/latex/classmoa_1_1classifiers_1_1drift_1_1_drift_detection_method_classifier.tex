@@ -1,0 +1,281 @@
+\hypertarget{classmoa_1_1classifiers_1_1drift_1_1_drift_detection_method_classifier}{}\doxysection{moa.\+classifiers.\+drift.\+Drift\+Detection\+Method\+Classifier Class Reference}
+\label{classmoa_1_1classifiers_1_1drift_1_1_drift_detection_method_classifier}\index{moa.classifiers.drift.DriftDetectionMethodClassifier@{moa.classifiers.drift.DriftDetectionMethodClassifier}}
+
+
+Inheritance diagram for moa.\+classifiers.\+drift.\+Drift\+Detection\+Method\+Classifier\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+classifiers.\+drift.\+Drift\+Detection\+Method\+Classifier\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classmoa_1_1classifiers_1_1drift_1_1_drift_detection_method_classifier_a02cb4a8cfc333cd199fbc3b1ff300344}{get\+Purpose\+String}} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1drift_1_1_drift_detection_method_classifier_a737b2ea8e018fa1c36b70f6171665da3}\label{classmoa_1_1classifiers_1_1drift_1_1_drift_detection_method_classifier_a737b2ea8e018fa1c36b70f6171665da3}} 
+boolean {\bfseries is\+Warning\+Detected} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1drift_1_1_drift_detection_method_classifier_ae229d90400b4524dbf69eee5a422c5d1}\label{classmoa_1_1classifiers_1_1drift_1_1_drift_detection_method_classifier_ae229d90400b4524dbf69eee5a422c5d1}} 
+boolean {\bfseries is\+Change\+Detected} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1drift_1_1_drift_detection_method_classifier_af810cd4f027889c4ab8d4681b4d0cee2}{reset\+Learning\+Impl}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1drift_1_1_drift_detection_method_classifier_ab732eaf2d787b3ff4b53789591e9aa36}{train\+On\+Instance\+Impl}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst)
+\item 
+double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1drift_1_1_drift_detection_method_classifier_ad019b405e40ab7a5150910733588ab6b}{get\+Votes\+For\+Instance}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst)
+\item 
+boolean \mbox{\hyperlink{classmoa_1_1classifiers_1_1drift_1_1_drift_detection_method_classifier_a1a99b7d2affb5bcb9a0c338e00548244}{is\+Randomizable}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1drift_1_1_drift_detection_method_classifier_a464dbe938c70e23180a4773a0832268a}{get\+Model\+Description}} (String\+Builder out, int indent)
+\item 
+\mbox{\hyperlink{classmoa_1_1capabilities_1_1_immutable_capabilities}{Immutable\+Capabilities}} \mbox{\hyperlink{classmoa_1_1classifiers_1_1drift_1_1_drift_detection_method_classifier_affb7928023e4c11a0eaafab0edbf33df}{define\+Immutable\+Capabilities}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} {\bfseries base\+Learner\+Option}
+\item 
+\mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} {\bfseries drift\+Detection\+Method\+Option}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1drift_1_1_drift_detection_method_classifier_a02ee4ca27893c815747c6b61ef420ee6}\label{classmoa_1_1classifiers_1_1drift_1_1_drift_detection_method_classifier_a02ee4ca27893c815747c6b61ef420ee6}} 
+static final int {\bfseries D\+D\+M\+\_\+\+I\+N\+C\+O\+N\+T\+R\+O\+L\+\_\+\+L\+E\+V\+EL} = 0
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1drift_1_1_drift_detection_method_classifier_af8afd3cbce0e9ea6ac16499d1f9d8d79}\label{classmoa_1_1classifiers_1_1drift_1_1_drift_detection_method_classifier_af8afd3cbce0e9ea6ac16499d1f9d8d79}} 
+static final int {\bfseries D\+D\+M\+\_\+\+W\+A\+R\+N\+I\+N\+G\+\_\+\+L\+E\+V\+EL} = 1
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1drift_1_1_drift_detection_method_classifier_a3a520d10aefce172339bb815688a2a62}\label{classmoa_1_1classifiers_1_1drift_1_1_drift_detection_method_classifier_a3a520d10aefce172339bb815688a2a62}} 
+static final int {\bfseries D\+D\+M\+\_\+\+O\+U\+T\+C\+O\+N\+T\+R\+O\+L\+\_\+\+L\+E\+V\+EL} = 2
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1drift_1_1_drift_detection_method_classifier_ac874ec71606e354b20e73ec7db6859bf}{get\+Model\+Measurements\+Impl}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1drift_1_1_drift_detection_method_classifier_a2dd2b6ece8b20b61c378a64d5b76a93b}\label{classmoa_1_1classifiers_1_1drift_1_1_drift_detection_method_classifier_a2dd2b6ece8b20b61c378a64d5b76a93b}} 
+\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier}{Classifier}} {\bfseries classifier}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1drift_1_1_drift_detection_method_classifier_a8edce34fbde5fb991c498ac6c14351e7}\label{classmoa_1_1classifiers_1_1drift_1_1_drift_detection_method_classifier_a8edce34fbde5fb991c498ac6c14351e7}} 
+\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier}{Classifier}} {\bfseries newclassifier}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1drift_1_1_drift_detection_method_classifier_a116cd8d2912261c6076472e848e02a8c}\label{classmoa_1_1classifiers_1_1drift_1_1_drift_detection_method_classifier_a116cd8d2912261c6076472e848e02a8c}} 
+\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1core_1_1driftdetection_1_1_change_detector}{Change\+Detector}} {\bfseries drift\+Detection\+Method}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1drift_1_1_drift_detection_method_classifier_a6e3c4e69ddc6421a6ccbea573803a0a7}\label{classmoa_1_1classifiers_1_1drift_1_1_drift_detection_method_classifier_a6e3c4e69ddc6421a6ccbea573803a0a7}} 
+boolean {\bfseries new\+Classifier\+Reset}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1drift_1_1_drift_detection_method_classifier_acd587096e842762ed8f0046b3160fd5a}\label{classmoa_1_1classifiers_1_1drift_1_1_drift_detection_method_classifier_acd587096e842762ed8f0046b3160fd5a}} 
+int {\bfseries ddm\+Level}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1drift_1_1_drift_detection_method_classifier_a0dc0b1941735ac0508d39a11c26b0967}\label{classmoa_1_1classifiers_1_1drift_1_1_drift_detection_method_classifier_a0dc0b1941735ac0508d39a11c26b0967}} 
+int {\bfseries change\+Detected} = 0
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1drift_1_1_drift_detection_method_classifier_ad89ba4ef9bf1b131b07b408ad06abb3f}\label{classmoa_1_1classifiers_1_1drift_1_1_drift_detection_method_classifier_ad89ba4ef9bf1b131b07b408ad06abb3f}} 
+int {\bfseries warning\+Detected} = 0
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Class for handling concept drift datasets with a wrapper on a classifier.
+
+Valid options are\+:
+
+-\/l classname ~\newline
+ Specify the full class name of a classifier as the basis for the concept drift classifier.
+
+-\/d Drift detection method to use~\newline
+
+
+\begin{DoxyAuthor}{Author}
+Manuel Baena (\href{mailto:mbaena@lcc.uma.es}{\texttt{ mbaena@lcc.\+uma.\+es}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+1 
+\end{DoxyVersion}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1drift_1_1_drift_detection_method_classifier_affb7928023e4c11a0eaafab0edbf33df}\label{classmoa_1_1classifiers_1_1drift_1_1_drift_detection_method_classifier_affb7928023e4c11a0eaafab0edbf33df}} 
+\index{moa.classifiers.drift.DriftDetectionMethodClassifier@{moa.classifiers.drift.DriftDetectionMethodClassifier}!defineImmutableCapabilities@{defineImmutableCapabilities}}
+\index{defineImmutableCapabilities@{defineImmutableCapabilities}!moa.classifiers.drift.DriftDetectionMethodClassifier@{moa.classifiers.drift.DriftDetectionMethodClassifier}}
+\doxysubsubsection{\texorpdfstring{defineImmutableCapabilities()}{defineImmutableCapabilities()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1capabilities_1_1_immutable_capabilities}{Immutable\+Capabilities}} moa.\+classifiers.\+drift.\+Drift\+Detection\+Method\+Classifier.\+define\+Immutable\+Capabilities (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Defines the set of capabilities the object has. Should be overridden if the object\textquotesingle{}s capabilities do not change.
+
+\begin{DoxyReturn}{Returns}
+The capabilities of the object. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1capabilities_1_1_capabilities_handler_aa82d1befd5dbb958c9787b5304c9a82a}{moa.\+capabilities.\+Capabilities\+Handler}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1drift_1_1_drift_detection_method_classifier_a464dbe938c70e23180a4773a0832268a}\label{classmoa_1_1classifiers_1_1drift_1_1_drift_detection_method_classifier_a464dbe938c70e23180a4773a0832268a}} 
+\index{moa.classifiers.drift.DriftDetectionMethodClassifier@{moa.classifiers.drift.DriftDetectionMethodClassifier}!getModelDescription@{getModelDescription}}
+\index{getModelDescription@{getModelDescription}!moa.classifiers.drift.DriftDetectionMethodClassifier@{moa.classifiers.drift.DriftDetectionMethodClassifier}}
+\doxysubsubsection{\texorpdfstring{getModelDescription()}{getModelDescription()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+drift.\+Drift\+Detection\+Method\+Classifier.\+get\+Model\+Description (\begin{DoxyParamCaption}\item[{String\+Builder}]{out,  }\item[{int}]{indent }\end{DoxyParamCaption})}
+
+Returns a string representation of the model.
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & the stringbuilder to add the description \\
+\hline
+{\em indent} & the number of characters to indent \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a30e5ff32bc8127dfb7436945776b7523}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1drift_1_1_drift_detection_method_classifier_ac874ec71606e354b20e73ec7db6859bf}\label{classmoa_1_1classifiers_1_1drift_1_1_drift_detection_method_classifier_ac874ec71606e354b20e73ec7db6859bf}} 
+\index{moa.classifiers.drift.DriftDetectionMethodClassifier@{moa.classifiers.drift.DriftDetectionMethodClassifier}!getModelMeasurementsImpl@{getModelMeasurementsImpl}}
+\index{getModelMeasurementsImpl@{getModelMeasurementsImpl}!moa.classifiers.drift.DriftDetectionMethodClassifier@{moa.classifiers.drift.DriftDetectionMethodClassifier}}
+\doxysubsubsection{\texorpdfstring{getModelMeasurementsImpl()}{getModelMeasurementsImpl()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}} \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+drift.\+Drift\+Detection\+Method\+Classifier.\+get\+Model\+Measurements\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Gets the current measurements of this classifier.~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden.
+
+\begin{DoxyReturn}{Returns}
+an array of measurements to be used in evaluation tasks 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_ac2bebede21c9d2d8cd11d95a7e20e529}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1drift_1_1_drift_detection_method_classifier_a02cb4a8cfc333cd199fbc3b1ff300344}\label{classmoa_1_1classifiers_1_1drift_1_1_drift_detection_method_classifier_a02cb4a8cfc333cd199fbc3b1ff300344}} 
+\index{moa.classifiers.drift.DriftDetectionMethodClassifier@{moa.classifiers.drift.DriftDetectionMethodClassifier}!getPurposeString@{getPurposeString}}
+\index{getPurposeString@{getPurposeString}!moa.classifiers.drift.DriftDetectionMethodClassifier@{moa.classifiers.drift.DriftDetectionMethodClassifier}}
+\doxysubsubsection{\texorpdfstring{getPurposeString()}{getPurposeString()}}
+{\footnotesize\ttfamily String moa.\+classifiers.\+drift.\+Drift\+Detection\+Method\+Classifier.\+get\+Purpose\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Options to handle Dictionary with option texts and objects 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a3fc6ae11234b88e51941a77ddb879d8b}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1drift_1_1_drift_detection_method_classifier_ad019b405e40ab7a5150910733588ab6b}\label{classmoa_1_1classifiers_1_1drift_1_1_drift_detection_method_classifier_ad019b405e40ab7a5150910733588ab6b}} 
+\index{moa.classifiers.drift.DriftDetectionMethodClassifier@{moa.classifiers.drift.DriftDetectionMethodClassifier}!getVotesForInstance@{getVotesForInstance}}
+\index{getVotesForInstance@{getVotesForInstance}!moa.classifiers.drift.DriftDetectionMethodClassifier@{moa.classifiers.drift.DriftDetectionMethodClassifier}}
+\doxysubsubsection{\texorpdfstring{getVotesForInstance()}{getVotesForInstance()}}
+{\footnotesize\ttfamily double \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+drift.\+Drift\+Detection\+Method\+Classifier.\+get\+Votes\+For\+Instance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{inst }\end{DoxyParamCaption})}
+
+Predicts the class memberships for a given instance. If an instance is unclassified, the returned array elements must be all zero.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & the instance to be classified \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an array containing the estimated membership probabilities of the test instance in each class 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a0e3589c4fa6f088d82d64514afd9513c}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_r_c_d_a3604a189645075a36112481f32e5af0b}{moa.\+classifiers.\+meta.\+R\+CD}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1drift_1_1_drift_detection_method_classifier_a1a99b7d2affb5bcb9a0c338e00548244}\label{classmoa_1_1classifiers_1_1drift_1_1_drift_detection_method_classifier_a1a99b7d2affb5bcb9a0c338e00548244}} 
+\index{moa.classifiers.drift.DriftDetectionMethodClassifier@{moa.classifiers.drift.DriftDetectionMethodClassifier}!isRandomizable@{isRandomizable}}
+\index{isRandomizable@{isRandomizable}!moa.classifiers.drift.DriftDetectionMethodClassifier@{moa.classifiers.drift.DriftDetectionMethodClassifier}}
+\doxysubsubsection{\texorpdfstring{isRandomizable()}{isRandomizable()}}
+{\footnotesize\ttfamily boolean moa.\+classifiers.\+drift.\+Drift\+Detection\+Method\+Classifier.\+is\+Randomizable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets whether this learner needs a random seed. Examples of methods that needs a random seed are bagging and boosting.
+
+\begin{DoxyReturn}{Returns}
+true if the learner needs a random seed. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1learners_1_1_learner_a2f1ff9007b5eb5f53801f474b4d42a61}{moa.\+learners.\+Learner$<$ E extends Example $>$}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1drift_1_1_drift_detection_method_classifier_af810cd4f027889c4ab8d4681b4d0cee2}\label{classmoa_1_1classifiers_1_1drift_1_1_drift_detection_method_classifier_af810cd4f027889c4ab8d4681b4d0cee2}} 
+\index{moa.classifiers.drift.DriftDetectionMethodClassifier@{moa.classifiers.drift.DriftDetectionMethodClassifier}!resetLearningImpl@{resetLearningImpl}}
+\index{resetLearningImpl@{resetLearningImpl}!moa.classifiers.drift.DriftDetectionMethodClassifier@{moa.classifiers.drift.DriftDetectionMethodClassifier}}
+\doxysubsubsection{\texorpdfstring{resetLearningImpl()}{resetLearningImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+drift.\+Drift\+Detection\+Method\+Classifier.\+reset\+Learning\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Resets this classifier. It must be similar to starting a new classifier from scratch. ~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden. 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a099ffcf2417abb919d10d697c0648f29}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_r_c_d_aa21407b5894dd3835cc615efbab22685}{moa.\+classifiers.\+meta.\+R\+CD}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1drift_1_1_drift_detection_method_classifier_ab732eaf2d787b3ff4b53789591e9aa36}\label{classmoa_1_1classifiers_1_1drift_1_1_drift_detection_method_classifier_ab732eaf2d787b3ff4b53789591e9aa36}} 
+\index{moa.classifiers.drift.DriftDetectionMethodClassifier@{moa.classifiers.drift.DriftDetectionMethodClassifier}!trainOnInstanceImpl@{trainOnInstanceImpl}}
+\index{trainOnInstanceImpl@{trainOnInstanceImpl}!moa.classifiers.drift.DriftDetectionMethodClassifier@{moa.classifiers.drift.DriftDetectionMethodClassifier}}
+\doxysubsubsection{\texorpdfstring{trainOnInstanceImpl()}{trainOnInstanceImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+drift.\+Drift\+Detection\+Method\+Classifier.\+train\+On\+Instance\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{inst }\end{DoxyParamCaption})}
+
+Trains this classifier incrementally using the given instance.~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & the instance to be used for training \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_aceb24d2ddeab386f2ecead6e3c0d3543}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_r_c_d_a9b495a95c072d20a52f777edae0ec017}{moa.\+classifiers.\+meta.\+R\+CD}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1drift_1_1_drift_detection_method_classifier_a07cabd809ad59d4434c02dc7f2d541f1}\label{classmoa_1_1classifiers_1_1drift_1_1_drift_detection_method_classifier_a07cabd809ad59d4434c02dc7f2d541f1}} 
+\index{moa.classifiers.drift.DriftDetectionMethodClassifier@{moa.classifiers.drift.DriftDetectionMethodClassifier}!baseLearnerOption@{baseLearnerOption}}
+\index{baseLearnerOption@{baseLearnerOption}!moa.classifiers.drift.DriftDetectionMethodClassifier@{moa.classifiers.drift.DriftDetectionMethodClassifier}}
+\doxysubsubsection{\texorpdfstring{baseLearnerOption}{baseLearnerOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} moa.\+classifiers.\+drift.\+Drift\+Detection\+Method\+Classifier.\+base\+Learner\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} ClassOption(\textcolor{stringliteral}{"baseLearner"}, \textcolor{charliteral}{'l'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Classifier to train."}, Classifier.class, \textcolor{stringliteral}{"bayes.NaiveBayes"})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1drift_1_1_drift_detection_method_classifier_a5f633639341e7287cdc6556b1b662e83}\label{classmoa_1_1classifiers_1_1drift_1_1_drift_detection_method_classifier_a5f633639341e7287cdc6556b1b662e83}} 
+\index{moa.classifiers.drift.DriftDetectionMethodClassifier@{moa.classifiers.drift.DriftDetectionMethodClassifier}!driftDetectionMethodOption@{driftDetectionMethodOption}}
+\index{driftDetectionMethodOption@{driftDetectionMethodOption}!moa.classifiers.drift.DriftDetectionMethodClassifier@{moa.classifiers.drift.DriftDetectionMethodClassifier}}
+\doxysubsubsection{\texorpdfstring{driftDetectionMethodOption}{driftDetectionMethodOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} moa.\+classifiers.\+drift.\+Drift\+Detection\+Method\+Classifier.\+drift\+Detection\+Method\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} ClassOption(\textcolor{stringliteral}{"driftDetectionMethod"}, \textcolor{charliteral}{'d'},}
+\DoxyCodeLine{             \textcolor{stringliteral}{"Drift detection method to use."}, ChangeDetector.class, \textcolor{stringliteral}{"DDM"})}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/classifiers/drift/Drift\+Detection\+Method\+Classifier.\+java\end{DoxyCompactItemize}

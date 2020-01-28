@@ -1,0 +1,65 @@
+\hypertarget{classmoa_1_1classifiers_1_1rules_1_1featureranking_1_1_weighted_majority_feature_ranking}{}\doxysection{moa.\+classifiers.\+rules.\+featureranking.\+Weighted\+Majority\+Feature\+Ranking Class Reference}
+\label{classmoa_1_1classifiers_1_1rules_1_1featureranking_1_1_weighted_majority_feature_ranking}\index{moa.classifiers.rules.featureranking.WeightedMajorityFeatureRanking@{moa.classifiers.rules.featureranking.WeightedMajorityFeatureRanking}}
+
+
+Inheritance diagram for moa.\+classifiers.\+rules.\+featureranking.\+Weighted\+Majority\+Feature\+Ranking\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+classifiers.\+rules.\+featureranking.\+Weighted\+Majority\+Feature\+Ranking\+:
+% FIG 1
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1featureranking_1_1_weighted_majority_feature_ranking_1_1_rule_information}{Rule\+Information}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1featureranking_1_1_weighted_majority_feature_ranking_ad11214af35bc219f7ab48ea41bacd06e}\label{classmoa_1_1classifiers_1_1rules_1_1featureranking_1_1_weighted_majority_feature_ranking_ad11214af35bc219f7ab48ea41bacd06e}} 
+void {\bfseries update} (\mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1core_1_1_observable_m_o_a_object}{Observable\+M\+O\+A\+Object}} o, Object arg)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1featureranking_1_1_weighted_majority_feature_ranking_a38ae488390560b1b52b78e6a448a8ad2}\label{classmoa_1_1classifiers_1_1rules_1_1featureranking_1_1_weighted_majority_feature_ranking_a38ae488390560b1b52b78e6a448a8ad2}} 
+\mbox{\hyperlink{classmoa_1_1core_1_1_double_vector}{Double\+Vector}} {\bfseries get\+Feature\+Rankings} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} {\bfseries merit\+Threshold\+Option}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1featureranking_1_1_weighted_majority_feature_ranking_a6b8c3a3951b4a7dd181c175e7b06507a}\label{classmoa_1_1classifiers_1_1rules_1_1featureranking_1_1_weighted_majority_feature_ranking_a6b8c3a3951b4a7dd181c175e7b06507a}} 
+double\mbox{[}$\,$\mbox{]} {\bfseries attribute\+Importance}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1featureranking_1_1_weighted_majority_feature_ranking_a1f7659f55a13068215c9d8950dc94adc}\label{classmoa_1_1classifiers_1_1rules_1_1featureranking_1_1_weighted_majority_feature_ranking_a1f7659f55a13068215c9d8950dc94adc}} 
+Hash\+Map$<$ \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1core_1_1_observable_m_o_a_object}{Observable\+M\+O\+A\+Object}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1featureranking_1_1_weighted_majority_feature_ranking_1_1_rule_information}{Rule\+Information}} $>$ {\bfseries rule\+Information}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Weighted Majority Feature Ranking method João Duarte, João Gama,Feature ranking in hoeffding algorithms for regression. S\+AC 2017\+: 836-\/841 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1featureranking_1_1_weighted_majority_feature_ranking_a7032b564cb5e0b9ec03d39d83f084dd8}\label{classmoa_1_1classifiers_1_1rules_1_1featureranking_1_1_weighted_majority_feature_ranking_a7032b564cb5e0b9ec03d39d83f084dd8}} 
+\index{moa.classifiers.rules.featureranking.WeightedMajorityFeatureRanking@{moa.classifiers.rules.featureranking.WeightedMajorityFeatureRanking}!meritThresholdOption@{meritThresholdOption}}
+\index{meritThresholdOption@{meritThresholdOption}!moa.classifiers.rules.featureranking.WeightedMajorityFeatureRanking@{moa.classifiers.rules.featureranking.WeightedMajorityFeatureRanking}}
+\doxysubsubsection{\texorpdfstring{meritThresholdOption}{meritThresholdOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} moa.\+classifiers.\+rules.\+featureranking.\+Weighted\+Majority\+Feature\+Ranking.\+merit\+Threshold\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FloatOption(}
+\DoxyCodeLine{            \textcolor{stringliteral}{"meritThreshold"},}
+\DoxyCodeLine{            \textcolor{charliteral}{'m'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Merit threshold value. If the merit of an input attribute is below the threshold its importance will decrease"},}
+\DoxyCodeLine{            0.01, 0.0, 1.0)}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/classifiers/rules/featureranking/Weighted\+Majority\+Feature\+Ranking.\+java\end{DoxyCompactItemize}

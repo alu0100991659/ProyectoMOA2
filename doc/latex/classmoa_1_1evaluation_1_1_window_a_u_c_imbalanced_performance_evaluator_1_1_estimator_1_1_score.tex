@@ -1,0 +1,84 @@
+\hypertarget{classmoa_1_1evaluation_1_1_window_a_u_c_imbalanced_performance_evaluator_1_1_estimator_1_1_score}{}\doxysection{moa.\+evaluation.\+Window\+A\+U\+C\+Imbalanced\+Performance\+Evaluator.\+Estimator.\+Score Class Reference}
+\label{classmoa_1_1evaluation_1_1_window_a_u_c_imbalanced_performance_evaluator_1_1_estimator_1_1_score}\index{moa.evaluation.WindowAUCImbalancedPerformanceEvaluator.Estimator.Score@{moa.evaluation.WindowAUCImbalancedPerformanceEvaluator.Estimator.Score}}
+
+
+Inheritance diagram for moa.\+evaluation.\+Window\+A\+U\+C\+Imbalanced\+Performance\+Evaluator.\+Estimator.\+Score\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+evaluation.\+Window\+A\+U\+C\+Imbalanced\+Performance\+Evaluator.\+Estimator.\+Score\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1evaluation_1_1_window_a_u_c_imbalanced_performance_evaluator_1_1_estimator_1_1_score_a027f21963d52b958c0622eaf7ee24d6b}{Score}} (double \mbox{\hyperlink{classmoa_1_1evaluation_1_1_window_a_u_c_imbalanced_performance_evaluator_1_1_estimator_1_1_score_a50a38fc33a1ce80031a2aa26ece72816}{value}}, int position, boolean \mbox{\hyperlink{classmoa_1_1evaluation_1_1_window_a_u_c_imbalanced_performance_evaluator_1_1_estimator_1_1_score_ad824f22791bc91641579b7222e3cb400}{is\+Positive}})
+\item 
+int \mbox{\hyperlink{classmoa_1_1evaluation_1_1_window_a_u_c_imbalanced_performance_evaluator_1_1_estimator_1_1_score_a31b40c2841a94a30ae0a45c28bb6dc21}{compare\+To}} (\mbox{\hyperlink{classmoa_1_1evaluation_1_1_window_a_u_c_imbalanced_performance_evaluator_1_1_estimator_1_1_score}{Score}} o)
+\item 
+\mbox{\Hypertarget{classmoa_1_1evaluation_1_1_window_a_u_c_imbalanced_performance_evaluator_1_1_estimator_1_1_score_aa83fadec336c60a5166dc519d685ca48}\label{classmoa_1_1evaluation_1_1_window_a_u_c_imbalanced_performance_evaluator_1_1_estimator_1_1_score_aa83fadec336c60a5166dc519d685ca48}} 
+boolean {\bfseries equals} (Object o)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{classmoa_1_1evaluation_1_1_window_a_u_c_imbalanced_performance_evaluator_1_1_estimator_1_1_score_a50a38fc33a1ce80031a2aa26ece72816}{value}}
+\item 
+int \mbox{\hyperlink{classmoa_1_1evaluation_1_1_window_a_u_c_imbalanced_performance_evaluator_1_1_estimator_1_1_score_a791484d0c528d5741c317e660f42730a}{pos\+Window}}
+\item 
+boolean \mbox{\hyperlink{classmoa_1_1evaluation_1_1_window_a_u_c_imbalanced_performance_evaluator_1_1_estimator_1_1_score_ad824f22791bc91641579b7222e3cb400}{is\+Positive}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmoa_1_1evaluation_1_1_window_a_u_c_imbalanced_performance_evaluator_1_1_estimator_1_1_score_a027f21963d52b958c0622eaf7ee24d6b}\label{classmoa_1_1evaluation_1_1_window_a_u_c_imbalanced_performance_evaluator_1_1_estimator_1_1_score_a027f21963d52b958c0622eaf7ee24d6b}} 
+\index{moa.evaluation.WindowAUCImbalancedPerformanceEvaluator.Estimator.Score@{moa.evaluation.WindowAUCImbalancedPerformanceEvaluator.Estimator.Score}!Score@{Score}}
+\index{Score@{Score}!moa.evaluation.WindowAUCImbalancedPerformanceEvaluator.Estimator.Score@{moa.evaluation.WindowAUCImbalancedPerformanceEvaluator.Estimator.Score}}
+\doxysubsubsection{\texorpdfstring{Score()}{Score()}}
+{\footnotesize\ttfamily moa.\+evaluation.\+Window\+A\+U\+C\+Imbalanced\+Performance\+Evaluator.\+Estimator.\+Score.\+Score (\begin{DoxyParamCaption}\item[{double}]{value,  }\item[{int}]{position,  }\item[{boolean}]{is\+Positive }\end{DoxyParamCaption})}
+
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & score value \\
+\hline
+{\em position} & score position in window (defines its age) \\
+\hline
+{\em is\+Positive} & true if the example\textquotesingle{}s true label is positive \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1evaluation_1_1_window_a_u_c_imbalanced_performance_evaluator_1_1_estimator_1_1_score_a31b40c2841a94a30ae0a45c28bb6dc21}\label{classmoa_1_1evaluation_1_1_window_a_u_c_imbalanced_performance_evaluator_1_1_estimator_1_1_score_a31b40c2841a94a30ae0a45c28bb6dc21}} 
+\index{moa.evaluation.WindowAUCImbalancedPerformanceEvaluator.Estimator.Score@{moa.evaluation.WindowAUCImbalancedPerformanceEvaluator.Estimator.Score}!compareTo@{compareTo}}
+\index{compareTo@{compareTo}!moa.evaluation.WindowAUCImbalancedPerformanceEvaluator.Estimator.Score@{moa.evaluation.WindowAUCImbalancedPerformanceEvaluator.Estimator.Score}}
+\doxysubsubsection{\texorpdfstring{compareTo()}{compareTo()}}
+{\footnotesize\ttfamily int moa.\+evaluation.\+Window\+A\+U\+C\+Imbalanced\+Performance\+Evaluator.\+Estimator.\+Score.\+compare\+To (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmoa_1_1evaluation_1_1_window_a_u_c_imbalanced_performance_evaluator_1_1_estimator_1_1_score}{Score}}}]{o }\end{DoxyParamCaption})}
+
+Sort descending based on score value. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmoa_1_1evaluation_1_1_window_a_u_c_imbalanced_performance_evaluator_1_1_estimator_1_1_score_ad824f22791bc91641579b7222e3cb400}\label{classmoa_1_1evaluation_1_1_window_a_u_c_imbalanced_performance_evaluator_1_1_estimator_1_1_score_ad824f22791bc91641579b7222e3cb400}} 
+\index{moa.evaluation.WindowAUCImbalancedPerformanceEvaluator.Estimator.Score@{moa.evaluation.WindowAUCImbalancedPerformanceEvaluator.Estimator.Score}!isPositive@{isPositive}}
+\index{isPositive@{isPositive}!moa.evaluation.WindowAUCImbalancedPerformanceEvaluator.Estimator.Score@{moa.evaluation.WindowAUCImbalancedPerformanceEvaluator.Estimator.Score}}
+\doxysubsubsection{\texorpdfstring{isPositive}{isPositive}}
+{\footnotesize\ttfamily boolean moa.\+evaluation.\+Window\+A\+U\+C\+Imbalanced\+Performance\+Evaluator.\+Estimator.\+Score.\+is\+Positive\hspace{0.3cm}{\ttfamily [protected]}}
+
+True if example\textquotesingle{}s true label is positive \mbox{\Hypertarget{classmoa_1_1evaluation_1_1_window_a_u_c_imbalanced_performance_evaluator_1_1_estimator_1_1_score_a791484d0c528d5741c317e660f42730a}\label{classmoa_1_1evaluation_1_1_window_a_u_c_imbalanced_performance_evaluator_1_1_estimator_1_1_score_a791484d0c528d5741c317e660f42730a}} 
+\index{moa.evaluation.WindowAUCImbalancedPerformanceEvaluator.Estimator.Score@{moa.evaluation.WindowAUCImbalancedPerformanceEvaluator.Estimator.Score}!posWindow@{posWindow}}
+\index{posWindow@{posWindow}!moa.evaluation.WindowAUCImbalancedPerformanceEvaluator.Estimator.Score@{moa.evaluation.WindowAUCImbalancedPerformanceEvaluator.Estimator.Score}}
+\doxysubsubsection{\texorpdfstring{posWindow}{posWindow}}
+{\footnotesize\ttfamily int moa.\+evaluation.\+Window\+A\+U\+C\+Imbalanced\+Performance\+Evaluator.\+Estimator.\+Score.\+pos\+Window\hspace{0.3cm}{\ttfamily [protected]}}
+
+Age of example -\/ position in the window where the example was added \mbox{\Hypertarget{classmoa_1_1evaluation_1_1_window_a_u_c_imbalanced_performance_evaluator_1_1_estimator_1_1_score_a50a38fc33a1ce80031a2aa26ece72816}\label{classmoa_1_1evaluation_1_1_window_a_u_c_imbalanced_performance_evaluator_1_1_estimator_1_1_score_a50a38fc33a1ce80031a2aa26ece72816}} 
+\index{moa.evaluation.WindowAUCImbalancedPerformanceEvaluator.Estimator.Score@{moa.evaluation.WindowAUCImbalancedPerformanceEvaluator.Estimator.Score}!value@{value}}
+\index{value@{value}!moa.evaluation.WindowAUCImbalancedPerformanceEvaluator.Estimator.Score@{moa.evaluation.WindowAUCImbalancedPerformanceEvaluator.Estimator.Score}}
+\doxysubsubsection{\texorpdfstring{value}{value}}
+{\footnotesize\ttfamily double moa.\+evaluation.\+Window\+A\+U\+C\+Imbalanced\+Performance\+Evaluator.\+Estimator.\+Score.\+value\hspace{0.3cm}{\ttfamily [protected]}}
+
+Predicted score of the example 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/evaluation/Window\+A\+U\+C\+Imbalanced\+Performance\+Evaluator.\+java\end{DoxyCompactItemize}

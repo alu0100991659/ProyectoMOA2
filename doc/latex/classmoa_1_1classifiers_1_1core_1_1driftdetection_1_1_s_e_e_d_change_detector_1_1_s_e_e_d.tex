@@ -1,0 +1,68 @@
+\hypertarget{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_s_e_e_d_change_detector_1_1_s_e_e_d}{}\doxysection{moa.\+classifiers.\+core.\+driftdetection.\+S\+E\+E\+D\+Change\+Detector.\+S\+E\+ED Class Reference}
+\label{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_s_e_e_d_change_detector_1_1_s_e_e_d}\index{moa.classifiers.core.driftdetection.SEEDChangeDetector.SEED@{moa.classifiers.core.driftdetection.SEEDChangeDetector.SEED}}
+
+
+Collaboration diagram for moa.\+classifiers.\+core.\+driftdetection.\+S\+E\+E\+D\+Change\+Detector.\+S\+E\+ED\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_s_e_e_d_change_detector_1_1_s_e_e_d_a58179af92a6034ecc1915e821983229c}{S\+E\+ED}} (double delta, int block\+Size, double epsilon\+Prime, double alpha, int term)
+\item 
+boolean \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_s_e_e_d_change_detector_1_1_s_e_e_d_ab8a6068c8eabaa47955c895665c29ac5}{set\+Input}} (double input\+Value)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_s_e_e_d_change_detector_1_1_s_e_e_d_adc063b040ea1f50da02a63470cd11c93}\label{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_s_e_e_d_change_detector_1_1_s_e_e_d_adc063b040ea1f50da02a63470cd11c93}} 
+void {\bfseries add\+Element} (double value)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_s_e_e_d_change_detector_1_1_s_e_e_d_adc244ff41dafe33208726b190a36dce0}\label{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_s_e_e_d_change_detector_1_1_s_e_e_d_adc244ff41dafe33208726b190a36dce0}} 
+\mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_s_e_e_d_change_detector_1_1_s_e_e_d_window}{S\+E\+E\+D\+Window}} {\bfseries window}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_s_e_e_d_change_detector_1_1_s_e_e_d_a58179af92a6034ecc1915e821983229c}\label{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_s_e_e_d_change_detector_1_1_s_e_e_d_a58179af92a6034ecc1915e821983229c}} 
+\index{moa.classifiers.core.driftdetection.SEEDChangeDetector.SEED@{moa.classifiers.core.driftdetection.SEEDChangeDetector.SEED}!SEED@{SEED}}
+\index{SEED@{SEED}!moa.classifiers.core.driftdetection.SEEDChangeDetector.SEED@{moa.classifiers.core.driftdetection.SEEDChangeDetector.SEED}}
+\doxysubsubsection{\texorpdfstring{SEED()}{SEED()}}
+{\footnotesize\ttfamily moa.\+classifiers.\+core.\+driftdetection.\+S\+E\+E\+D\+Change\+Detector.\+S\+E\+E\+D.\+S\+E\+ED (\begin{DoxyParamCaption}\item[{double}]{delta,  }\item[{int}]{block\+Size,  }\item[{double}]{epsilon\+Prime,  }\item[{double}]{alpha,  }\item[{int}]{term }\end{DoxyParamCaption})}
+
+Constructor for all required parameters. 
+\begin{DoxyParams}{Parameters}
+{\em delta} & \\
+\hline
+{\em block\+Size} & Recommended value\+: 32 \\
+\hline
+{\em epsilon\+Prime} & Recommended values between \mbox{[}0.\+0025, 0.\+01\mbox{]} \\
+\hline
+{\em alpha} & Growth parameter -\/ Recommended values between \mbox{[}0.\+2, 0.\+8\mbox{]} \\
+\hline
+{\em compressionterm} & Recommended values between \mbox{[}50, 100\mbox{]} \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_s_e_e_d_change_detector_1_1_s_e_e_d_ab8a6068c8eabaa47955c895665c29ac5}\label{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_s_e_e_d_change_detector_1_1_s_e_e_d_ab8a6068c8eabaa47955c895665c29ac5}} 
+\index{moa.classifiers.core.driftdetection.SEEDChangeDetector.SEED@{moa.classifiers.core.driftdetection.SEEDChangeDetector.SEED}!setInput@{setInput}}
+\index{setInput@{setInput}!moa.classifiers.core.driftdetection.SEEDChangeDetector.SEED@{moa.classifiers.core.driftdetection.SEEDChangeDetector.SEED}}
+\doxysubsubsection{\texorpdfstring{setInput()}{setInput()}}
+{\footnotesize\ttfamily boolean moa.\+classifiers.\+core.\+driftdetection.\+S\+E\+E\+D\+Change\+Detector.\+S\+E\+E\+D.\+set\+Input (\begin{DoxyParamCaption}\item[{double}]{input\+Value }\end{DoxyParamCaption})}
+
+Main method for passing in input values and performing drift detection
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Value} & instance from the stream \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean value true or false signaling whether a drift has occurred 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/classifiers/core/driftdetection/S\+E\+E\+D\+Change\+Detector.\+java\end{DoxyCompactItemize}

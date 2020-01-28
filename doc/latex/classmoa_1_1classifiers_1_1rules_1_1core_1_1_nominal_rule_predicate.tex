@@ -1,0 +1,84 @@
+\hypertarget{classmoa_1_1classifiers_1_1rules_1_1core_1_1_nominal_rule_predicate}{}\doxysection{moa.\+classifiers.\+rules.\+core.\+Nominal\+Rule\+Predicate Class Reference}
+\label{classmoa_1_1classifiers_1_1rules_1_1core_1_1_nominal_rule_predicate}\index{moa.classifiers.rules.core.NominalRulePredicate@{moa.classifiers.rules.core.NominalRulePredicate}}
+
+
+Inheritance diagram for moa.\+classifiers.\+rules.\+core.\+Nominal\+Rule\+Predicate\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+classifiers.\+rules.\+core.\+Nominal\+Rule\+Predicate\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1core_1_1_nominal_rule_predicate_a3b6c5c759f697192b2695f66d2f02feb}\label{classmoa_1_1classifiers_1_1rules_1_1core_1_1_nominal_rule_predicate_a3b6c5c759f697192b2695f66d2f02feb}} 
+{\bfseries Nominal\+Rule\+Predicate} (int input\+Attribute\+Index, double attribute\+Value, boolean is\+Equal)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1core_1_1_nominal_rule_predicate_a1fdfda40a3545322cd20e1736218ee87}\label{classmoa_1_1classifiers_1_1rules_1_1core_1_1_nominal_rule_predicate_a1fdfda40a3545322cd20e1736218ee87}} 
+boolean {\bfseries evaluate} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} instance)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1core_1_1_nominal_rule_predicate_a3fcb0d43af39cc7d17cf6269aaffcf8c}\label{classmoa_1_1classifiers_1_1rules_1_1core_1_1_nominal_rule_predicate_a3fcb0d43af39cc7d17cf6269aaffcf8c}} 
+boolean {\bfseries evaluate} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_multi_label_instance}{Multi\+Label\+Instance}} instance)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1core_1_1_nominal_rule_predicate_a9760f37c5df2afa5509eca233b0b9c6c}\label{classmoa_1_1classifiers_1_1rules_1_1core_1_1_nominal_rule_predicate_a9760f37c5df2afa5509eca233b0b9c6c}} 
+void {\bfseries negate\+Condition} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1core_1_1_nominal_rule_predicate_a99a7e559447d80f92eef38a2ebc1a042}{get\+Description}} (String\+Builder sb, int indent)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1core_1_1_nominal_rule_predicate_aa488a506c0344415fad34a3a39a2aaf5}\label{classmoa_1_1classifiers_1_1rules_1_1core_1_1_nominal_rule_predicate_aa488a506c0344415fad34a3a39a2aaf5}} 
+void {\bfseries get\+Description} (String\+Builder sb, int indent, \mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance_information}{Instance\+Information}} inst\+Information)
+\item 
+String \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1core_1_1_nominal_rule_predicate_a2bdfac782a86adba58670e88238e83d8}{to\+String}} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1core_1_1_nominal_rule_predicate_ab5bf6836718174d2b5c59c2c51061a9a}\label{classmoa_1_1classifiers_1_1rules_1_1core_1_1_nominal_rule_predicate_ab5bf6836718174d2b5c59c2c51061a9a}} 
+int {\bfseries get\+Attribute\+Index} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1core_1_1_nominal_rule_predicate_a72e8f5adbbe99013e0458c660328cef7}\label{classmoa_1_1classifiers_1_1rules_1_1core_1_1_nominal_rule_predicate_a72e8f5adbbe99013e0458c660328cef7}} 
+boolean {\bfseries is\+Equal\+Or\+Less} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Class that contains the literal information for a nominal variable 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1core_1_1_nominal_rule_predicate_a99a7e559447d80f92eef38a2ebc1a042}\label{classmoa_1_1classifiers_1_1rules_1_1core_1_1_nominal_rule_predicate_a99a7e559447d80f92eef38a2ebc1a042}} 
+\index{moa.classifiers.rules.core.NominalRulePredicate@{moa.classifiers.rules.core.NominalRulePredicate}!getDescription@{getDescription}}
+\index{getDescription@{getDescription}!moa.classifiers.rules.core.NominalRulePredicate@{moa.classifiers.rules.core.NominalRulePredicate}}
+\doxysubsubsection{\texorpdfstring{getDescription()}{getDescription()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+rules.\+core.\+Nominal\+Rule\+Predicate.\+get\+Description (\begin{DoxyParamCaption}\item[{String\+Builder}]{sb,  }\item[{int}]{indent }\end{DoxyParamCaption})}
+
+Returns a string representation of this object. Used in {\ttfamily \mbox{\hyperlink{classmoa_1_1_abstract_m_o_a_object_ac686fd3b07c734cf21f1894376fe402d}{Abstract\+M\+O\+A\+Object.\+to\+String}}} to give a string representation of the object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sb} & the stringbuilder to add the description \\
+\hline
+{\em indent} & the number of characters to indent \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1_m_o_a_object_afdaf5098f1fe6c852018ce64c28e17f5}{moa.\+M\+O\+A\+Object}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1core_1_1_nominal_rule_predicate_a2bdfac782a86adba58670e88238e83d8}\label{classmoa_1_1classifiers_1_1rules_1_1core_1_1_nominal_rule_predicate_a2bdfac782a86adba58670e88238e83d8}} 
+\index{moa.classifiers.rules.core.NominalRulePredicate@{moa.classifiers.rules.core.NominalRulePredicate}!toString@{toString}}
+\index{toString@{toString}!moa.classifiers.rules.core.NominalRulePredicate@{moa.classifiers.rules.core.NominalRulePredicate}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily String moa.\+classifiers.\+rules.\+core.\+Nominal\+Rule\+Predicate.\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns a description of the object.
+
+\begin{DoxyReturn}{Returns}
+a description of the object 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1_abstract_m_o_a_object_ac686fd3b07c734cf21f1894376fe402d}{moa.\+Abstract\+M\+O\+A\+Object}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/classifiers/rules/core/Nominal\+Rule\+Predicate.\+java\end{DoxyCompactItemize}

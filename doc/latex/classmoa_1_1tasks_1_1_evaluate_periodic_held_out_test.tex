@@ -1,0 +1,248 @@
+\hypertarget{classmoa_1_1tasks_1_1_evaluate_periodic_held_out_test}{}\doxysection{moa.\+tasks.\+Evaluate\+Periodic\+Held\+Out\+Test Class Reference}
+\label{classmoa_1_1tasks_1_1_evaluate_periodic_held_out_test}\index{moa.tasks.EvaluatePeriodicHeldOutTest@{moa.tasks.EvaluatePeriodicHeldOutTest}}
+
+
+Inheritance diagram for moa.\+tasks.\+Evaluate\+Periodic\+Held\+Out\+Test\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+tasks.\+Evaluate\+Periodic\+Held\+Out\+Test\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classmoa_1_1tasks_1_1_evaluate_periodic_held_out_test_aa28623276ebe1b8bcbdae45a2ebd87ba}{get\+Purpose\+String}} ()
+\item 
+Class$<$?$>$ \mbox{\hyperlink{classmoa_1_1tasks_1_1_evaluate_periodic_held_out_test_a337b9f78e7995f668b5898f8cf0cc081}{get\+Task\+Result\+Type}} ()
+\item 
+\mbox{\hyperlink{classmoa_1_1capabilities_1_1_immutable_capabilities}{Immutable\+Capabilities}} \mbox{\hyperlink{classmoa_1_1tasks_1_1_evaluate_periodic_held_out_test_a27f7ecda8aad8532c39bff120a73bd6b}{define\+Immutable\+Capabilities}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} {\bfseries learner\+Option}
+\item 
+\mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} {\bfseries stream\+Option}
+\item 
+\mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} {\bfseries evaluator\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries test\+Size\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries train\+Size\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries train\+Time\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries sample\+Frequency\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_file_option}{File\+Option}} {\bfseries dump\+File\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_flag_option}{Flag\+Option}} {\bfseries cache\+Test\+Option}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Object \mbox{\hyperlink{classmoa_1_1tasks_1_1_evaluate_periodic_held_out_test_a71f8d46e07fbec833b8f4bf669ac5854}{do\+Main\+Task}} (\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}} monitor, \mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}} repository)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task}{Task}} for evaluating a classifier on a stream by periodically testing on a heldout set.
+
+\begin{DoxyAuthor}{Author}
+Richard Kirkby (\href{mailto:rkirkby@cs.waikato.ac.nz}{\texttt{ rkirkby@cs.\+waikato.\+ac.\+nz}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+7 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_periodic_held_out_test_a27f7ecda8aad8532c39bff120a73bd6b}\label{classmoa_1_1tasks_1_1_evaluate_periodic_held_out_test_a27f7ecda8aad8532c39bff120a73bd6b}} 
+\index{moa.tasks.EvaluatePeriodicHeldOutTest@{moa.tasks.EvaluatePeriodicHeldOutTest}!defineImmutableCapabilities@{defineImmutableCapabilities}}
+\index{defineImmutableCapabilities@{defineImmutableCapabilities}!moa.tasks.EvaluatePeriodicHeldOutTest@{moa.tasks.EvaluatePeriodicHeldOutTest}}
+\doxysubsubsection{\texorpdfstring{defineImmutableCapabilities()}{defineImmutableCapabilities()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1capabilities_1_1_immutable_capabilities}{Immutable\+Capabilities}} moa.\+tasks.\+Evaluate\+Periodic\+Held\+Out\+Test.\+define\+Immutable\+Capabilities (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Defines the set of capabilities the object has. Should be overridden if the object\textquotesingle{}s capabilities do not change.
+
+\begin{DoxyReturn}{Returns}
+The capabilities of the object. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1tasks_1_1_classification_main_task_a06bfdc54fba70f28d51cf33b04c9d8c2}{moa.\+tasks.\+Classification\+Main\+Task}}.
+
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_periodic_held_out_test_a71f8d46e07fbec833b8f4bf669ac5854}\label{classmoa_1_1tasks_1_1_evaluate_periodic_held_out_test_a71f8d46e07fbec833b8f4bf669ac5854}} 
+\index{moa.tasks.EvaluatePeriodicHeldOutTest@{moa.tasks.EvaluatePeriodicHeldOutTest}!doMainTask@{doMainTask}}
+\index{doMainTask@{doMainTask}!moa.tasks.EvaluatePeriodicHeldOutTest@{moa.tasks.EvaluatePeriodicHeldOutTest}}
+\doxysubsubsection{\texorpdfstring{doMainTask()}{doMainTask()}}
+{\footnotesize\ttfamily Object moa.\+tasks.\+Evaluate\+Periodic\+Held\+Out\+Test.\+do\+Main\+Task (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}}}]{monitor,  }\item[{\mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}}}]{repository }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+This method performs this task. {\ttfamily \mbox{\hyperlink{classmoa_1_1tasks_1_1_abstract_task}{Abstract\+Task}}} implements {\ttfamily do\+Task}, that uses {\ttfamily do\+Task\+Impl}. {\ttfamily \mbox{\hyperlink{classmoa_1_1tasks_1_1_main_task}{Main\+Task}}} implements {\ttfamily do\+Task\+Impl} using {\ttfamily do\+Main\+Task} so its extensions only need to implement {\ttfamily do\+Main\+Task}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em monitor} & the \mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}} to use \\
+\hline
+{\em repository} & the Object\+Repository to use \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an object with the result of this task 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1tasks_1_1_main_task_afab790976c2ace902aa1e2f780442788}{moa.\+tasks.\+Main\+Task}}.
+
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_periodic_held_out_test_aa28623276ebe1b8bcbdae45a2ebd87ba}\label{classmoa_1_1tasks_1_1_evaluate_periodic_held_out_test_aa28623276ebe1b8bcbdae45a2ebd87ba}} 
+\index{moa.tasks.EvaluatePeriodicHeldOutTest@{moa.tasks.EvaluatePeriodicHeldOutTest}!getPurposeString@{getPurposeString}}
+\index{getPurposeString@{getPurposeString}!moa.tasks.EvaluatePeriodicHeldOutTest@{moa.tasks.EvaluatePeriodicHeldOutTest}}
+\doxysubsubsection{\texorpdfstring{getPurposeString()}{getPurposeString()}}
+{\footnotesize\ttfamily String moa.\+tasks.\+Evaluate\+Periodic\+Held\+Out\+Test.\+get\+Purpose\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Options to handle Dictionary with option texts and objects 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1options_1_1_abstract_option_handler_abc8df69aea27ef85060557a9e918b2ca}{moa.\+options.\+Abstract\+Option\+Handler}}.
+
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_periodic_held_out_test_a337b9f78e7995f668b5898f8cf0cc081}\label{classmoa_1_1tasks_1_1_evaluate_periodic_held_out_test_a337b9f78e7995f668b5898f8cf0cc081}} 
+\index{moa.tasks.EvaluatePeriodicHeldOutTest@{moa.tasks.EvaluatePeriodicHeldOutTest}!getTaskResultType@{getTaskResultType}}
+\index{getTaskResultType@{getTaskResultType}!moa.tasks.EvaluatePeriodicHeldOutTest@{moa.tasks.EvaluatePeriodicHeldOutTest}}
+\doxysubsubsection{\texorpdfstring{getTaskResultType()}{getTaskResultType()}}
+{\footnotesize\ttfamily Class$<$?$>$ moa.\+tasks.\+Evaluate\+Periodic\+Held\+Out\+Test.\+get\+Task\+Result\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the result type of this task. Tasks can return Learning\+Curve, Learning\+Evaluation, Classifier, String, Instances..
+
+\begin{DoxyReturn}{Returns}
+a class object of the result of this task 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_a568100cd931416820d1bcc81032301f6}{moa.\+tasks.\+Task}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_periodic_held_out_test_a3344dbaa4f7204f72a3d852dd332a1f6}\label{classmoa_1_1tasks_1_1_evaluate_periodic_held_out_test_a3344dbaa4f7204f72a3d852dd332a1f6}} 
+\index{moa.tasks.EvaluatePeriodicHeldOutTest@{moa.tasks.EvaluatePeriodicHeldOutTest}!cacheTestOption@{cacheTestOption}}
+\index{cacheTestOption@{cacheTestOption}!moa.tasks.EvaluatePeriodicHeldOutTest@{moa.tasks.EvaluatePeriodicHeldOutTest}}
+\doxysubsubsection{\texorpdfstring{cacheTestOption}{cacheTestOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_flag_option}{Flag\+Option}} moa.\+tasks.\+Evaluate\+Periodic\+Held\+Out\+Test.\+cache\+Test\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FlagOption(\textcolor{stringliteral}{"cacheTest"}, \textcolor{charliteral}{'c'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Cache test instances in memory."})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_periodic_held_out_test_acaeb81627288d949fc133ffe7956a2ea}\label{classmoa_1_1tasks_1_1_evaluate_periodic_held_out_test_acaeb81627288d949fc133ffe7956a2ea}} 
+\index{moa.tasks.EvaluatePeriodicHeldOutTest@{moa.tasks.EvaluatePeriodicHeldOutTest}!dumpFileOption@{dumpFileOption}}
+\index{dumpFileOption@{dumpFileOption}!moa.tasks.EvaluatePeriodicHeldOutTest@{moa.tasks.EvaluatePeriodicHeldOutTest}}
+\doxysubsubsection{\texorpdfstring{dumpFileOption}{dumpFileOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_file_option}{File\+Option}} moa.\+tasks.\+Evaluate\+Periodic\+Held\+Out\+Test.\+dump\+File\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FileOption(\textcolor{stringliteral}{"dumpFile"}, \textcolor{charliteral}{'d'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"File to append intermediate csv results to."}, \textcolor{keyword}{null}, \textcolor{stringliteral}{"csv"}, \textcolor{keyword}{true})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_periodic_held_out_test_a2dd101089c697bbde147d5184c631a15}\label{classmoa_1_1tasks_1_1_evaluate_periodic_held_out_test_a2dd101089c697bbde147d5184c631a15}} 
+\index{moa.tasks.EvaluatePeriodicHeldOutTest@{moa.tasks.EvaluatePeriodicHeldOutTest}!evaluatorOption@{evaluatorOption}}
+\index{evaluatorOption@{evaluatorOption}!moa.tasks.EvaluatePeriodicHeldOutTest@{moa.tasks.EvaluatePeriodicHeldOutTest}}
+\doxysubsubsection{\texorpdfstring{evaluatorOption}{evaluatorOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} moa.\+tasks.\+Evaluate\+Periodic\+Held\+Out\+Test.\+evaluator\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} ClassOption(\textcolor{stringliteral}{"evaluator"}, \textcolor{charliteral}{'e'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Learning performance evaluation method."},}
+\DoxyCodeLine{            LearningPerformanceEvaluator.class,}
+\DoxyCodeLine{            \textcolor{stringliteral}{"BasicClassificationPerformanceEvaluator"})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_periodic_held_out_test_af14c671bcb395343f01f4cdf763471c5}\label{classmoa_1_1tasks_1_1_evaluate_periodic_held_out_test_af14c671bcb395343f01f4cdf763471c5}} 
+\index{moa.tasks.EvaluatePeriodicHeldOutTest@{moa.tasks.EvaluatePeriodicHeldOutTest}!learnerOption@{learnerOption}}
+\index{learnerOption@{learnerOption}!moa.tasks.EvaluatePeriodicHeldOutTest@{moa.tasks.EvaluatePeriodicHeldOutTest}}
+\doxysubsubsection{\texorpdfstring{learnerOption}{learnerOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} moa.\+tasks.\+Evaluate\+Periodic\+Held\+Out\+Test.\+learner\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} ClassOption(\textcolor{stringliteral}{"learner"}, \textcolor{charliteral}{'l'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Classifier to train."}, MultiClassClassifier.class, \textcolor{stringliteral}{"moa.classifiers.trees.HoeffdingTree"})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_periodic_held_out_test_a9f0c72337874e7ce974250d9125e29b6}\label{classmoa_1_1tasks_1_1_evaluate_periodic_held_out_test_a9f0c72337874e7ce974250d9125e29b6}} 
+\index{moa.tasks.EvaluatePeriodicHeldOutTest@{moa.tasks.EvaluatePeriodicHeldOutTest}!sampleFrequencyOption@{sampleFrequencyOption}}
+\index{sampleFrequencyOption@{sampleFrequencyOption}!moa.tasks.EvaluatePeriodicHeldOutTest@{moa.tasks.EvaluatePeriodicHeldOutTest}}
+\doxysubsubsection{\texorpdfstring{sampleFrequencyOption}{sampleFrequencyOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+tasks.\+Evaluate\+Periodic\+Held\+Out\+Test.\+sample\+Frequency\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(}
+\DoxyCodeLine{            \textcolor{stringliteral}{"sampleFrequency"},}
+\DoxyCodeLine{            \textcolor{charliteral}{'f'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Number of training examples between samples of learning performance."},}
+\DoxyCodeLine{            100000, 0, Integer.MAX\_VALUE)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_periodic_held_out_test_a8686dd35843dc9b11d03b996594f559f}\label{classmoa_1_1tasks_1_1_evaluate_periodic_held_out_test_a8686dd35843dc9b11d03b996594f559f}} 
+\index{moa.tasks.EvaluatePeriodicHeldOutTest@{moa.tasks.EvaluatePeriodicHeldOutTest}!streamOption@{streamOption}}
+\index{streamOption@{streamOption}!moa.tasks.EvaluatePeriodicHeldOutTest@{moa.tasks.EvaluatePeriodicHeldOutTest}}
+\doxysubsubsection{\texorpdfstring{streamOption}{streamOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} moa.\+tasks.\+Evaluate\+Periodic\+Held\+Out\+Test.\+stream\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} ClassOption(\textcolor{stringliteral}{"stream"}, \textcolor{charliteral}{'s'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Stream to learn from."}, ExampleStream.class,}
+\DoxyCodeLine{            \textcolor{stringliteral}{"generators.RandomTreeGenerator"})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_periodic_held_out_test_a6494ae511c16074a99f33c17bf6df7fc}\label{classmoa_1_1tasks_1_1_evaluate_periodic_held_out_test_a6494ae511c16074a99f33c17bf6df7fc}} 
+\index{moa.tasks.EvaluatePeriodicHeldOutTest@{moa.tasks.EvaluatePeriodicHeldOutTest}!testSizeOption@{testSizeOption}}
+\index{testSizeOption@{testSizeOption}!moa.tasks.EvaluatePeriodicHeldOutTest@{moa.tasks.EvaluatePeriodicHeldOutTest}}
+\doxysubsubsection{\texorpdfstring{testSizeOption}{testSizeOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+tasks.\+Evaluate\+Periodic\+Held\+Out\+Test.\+test\+Size\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(\textcolor{stringliteral}{"testSize"}, \textcolor{charliteral}{'n'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Number of testing examples."}, 1000000, 0, Integer.MAX\_VALUE)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_periodic_held_out_test_a8def0aaf624cc3669f6d98950f1b65b3}\label{classmoa_1_1tasks_1_1_evaluate_periodic_held_out_test_a8def0aaf624cc3669f6d98950f1b65b3}} 
+\index{moa.tasks.EvaluatePeriodicHeldOutTest@{moa.tasks.EvaluatePeriodicHeldOutTest}!trainSizeOption@{trainSizeOption}}
+\index{trainSizeOption@{trainSizeOption}!moa.tasks.EvaluatePeriodicHeldOutTest@{moa.tasks.EvaluatePeriodicHeldOutTest}}
+\doxysubsubsection{\texorpdfstring{trainSizeOption}{trainSizeOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+tasks.\+Evaluate\+Periodic\+Held\+Out\+Test.\+train\+Size\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(\textcolor{stringliteral}{"trainSize"}, \textcolor{charliteral}{'i'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Number of training examples, <1 = unlimited."}, 0, 0,}
+\DoxyCodeLine{            Integer.MAX\_VALUE)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_periodic_held_out_test_aef5dc8564f73dcc6324c11eb13fa1b67}\label{classmoa_1_1tasks_1_1_evaluate_periodic_held_out_test_aef5dc8564f73dcc6324c11eb13fa1b67}} 
+\index{moa.tasks.EvaluatePeriodicHeldOutTest@{moa.tasks.EvaluatePeriodicHeldOutTest}!trainTimeOption@{trainTimeOption}}
+\index{trainTimeOption@{trainTimeOption}!moa.tasks.EvaluatePeriodicHeldOutTest@{moa.tasks.EvaluatePeriodicHeldOutTest}}
+\doxysubsubsection{\texorpdfstring{trainTimeOption}{trainTimeOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+tasks.\+Evaluate\+Periodic\+Held\+Out\+Test.\+train\+Time\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(\textcolor{stringliteral}{"trainTime"}, \textcolor{charliteral}{'t'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Number of training seconds."}, 10 * 60 * 60, 0, Integer.MAX\_VALUE)}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/tasks/Evaluate\+Periodic\+Held\+Out\+Test.\+java\end{DoxyCompactItemize}

@@ -1,0 +1,134 @@
+\hypertarget{classmoa_1_1classifiers_1_1core_1_1conditionaltests_1_1_instance_conditional_test}{}\doxysection{moa.\+classifiers.\+core.\+conditionaltests.\+Instance\+Conditional\+Test Class Reference}
+\label{classmoa_1_1classifiers_1_1core_1_1conditionaltests_1_1_instance_conditional_test}\index{moa.classifiers.core.conditionaltests.InstanceConditionalTest@{moa.classifiers.core.conditionaltests.InstanceConditionalTest}}
+
+
+Inheritance diagram for moa.\+classifiers.\+core.\+conditionaltests.\+Instance\+Conditional\+Test\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+classifiers.\+core.\+conditionaltests.\+Instance\+Conditional\+Test\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract int \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1conditionaltests_1_1_instance_conditional_test_a76dc81c568124d9dc97b08e51506bfe5}{branch\+For\+Instance}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst)
+\item 
+boolean \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1conditionaltests_1_1_instance_conditional_test_a5fd87e93bbd9154472d93a1cce8c53ab}{result\+Known\+For\+Instance}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst)
+\item 
+abstract int \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1conditionaltests_1_1_instance_conditional_test_adda57438d3e9a6990d6ccb80fe78d6b6}{max\+Branches}} ()
+\item 
+abstract String \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1conditionaltests_1_1_instance_conditional_test_add42f603fd27c74a75f5d2d542d233ca}{describe\+Condition\+For\+Branch}} (int branch, \mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instances_header}{Instances\+Header}} context)
+\item 
+abstract int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1conditionaltests_1_1_instance_conditional_test_af3a4e494b9e2e3f981b45a237858f4cd}{get\+Atts\+Test\+Depends\+On}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Abstract conditional test for instances to use to split nodes in Hoeffding trees.
+
+\begin{DoxyAuthor}{Author}
+Richard Kirkby (\href{mailto:rkirkby@cs.waikato.ac.nz}{\texttt{ rkirkby@cs.\+waikato.\+ac.\+nz}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+7 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1conditionaltests_1_1_instance_conditional_test_a76dc81c568124d9dc97b08e51506bfe5}\label{classmoa_1_1classifiers_1_1core_1_1conditionaltests_1_1_instance_conditional_test_a76dc81c568124d9dc97b08e51506bfe5}} 
+\index{moa.classifiers.core.conditionaltests.InstanceConditionalTest@{moa.classifiers.core.conditionaltests.InstanceConditionalTest}!branchForInstance@{branchForInstance}}
+\index{branchForInstance@{branchForInstance}!moa.classifiers.core.conditionaltests.InstanceConditionalTest@{moa.classifiers.core.conditionaltests.InstanceConditionalTest}}
+\doxysubsubsection{\texorpdfstring{branchForInstance()}{branchForInstance()}}
+{\footnotesize\ttfamily abstract int moa.\+classifiers.\+core.\+conditionaltests.\+Instance\+Conditional\+Test.\+branch\+For\+Instance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{inst }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Returns the number of the branch for an instance, -\/1 if unknown.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & the instance to be used \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the number of the branch for an instance, -\/1 if unknown. 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1core_1_1conditionaltests_1_1_numeric_attribute_binary_rule_predicate_a02cbea627eb642abce582ac0273c2989}{moa.\+classifiers.\+rules.\+core.\+conditionaltests.\+Numeric\+Attribute\+Binary\+Rule\+Predicate}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1conditionaltests_1_1_numeric_attribute_binary_test_a6f9471276037c5ad3ff7551d15ac61e4}{moa.\+classifiers.\+core.\+conditionaltests.\+Numeric\+Attribute\+Binary\+Test}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1conditionaltests_1_1_nominal_attribute_binary_test_a8495676ce7df83daf609b8bd199702cd}{moa.\+classifiers.\+core.\+conditionaltests.\+Nominal\+Attribute\+Binary\+Test}}, and \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1conditionaltests_1_1_nominal_attribute_multiway_test_aee50d95c743b8207003dfe675aabd75b}{moa.\+classifiers.\+core.\+conditionaltests.\+Nominal\+Attribute\+Multiway\+Test}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1conditionaltests_1_1_instance_conditional_test_add42f603fd27c74a75f5d2d542d233ca}\label{classmoa_1_1classifiers_1_1core_1_1conditionaltests_1_1_instance_conditional_test_add42f603fd27c74a75f5d2d542d233ca}} 
+\index{moa.classifiers.core.conditionaltests.InstanceConditionalTest@{moa.classifiers.core.conditionaltests.InstanceConditionalTest}!describeConditionForBranch@{describeConditionForBranch}}
+\index{describeConditionForBranch@{describeConditionForBranch}!moa.classifiers.core.conditionaltests.InstanceConditionalTest@{moa.classifiers.core.conditionaltests.InstanceConditionalTest}}
+\doxysubsubsection{\texorpdfstring{describeConditionForBranch()}{describeConditionForBranch()}}
+{\footnotesize\ttfamily abstract String moa.\+classifiers.\+core.\+conditionaltests.\+Instance\+Conditional\+Test.\+describe\+Condition\+For\+Branch (\begin{DoxyParamCaption}\item[{int}]{branch,  }\item[{\mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instances_header}{Instances\+Header}}}]{context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Gets the text that describes the condition of a branch. It is used to describe the branch.
+
+
+\begin{DoxyParams}{Parameters}
+{\em branch} & the number of the branch to describe \\
+\hline
+{\em context} & the context or header of the data stream \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the text that describes the condition of the branch 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1core_1_1conditionaltests_1_1_numeric_attribute_binary_rule_predicate_a13141914bd1bffec7a75f83adf0800ea}{moa.\+classifiers.\+rules.\+core.\+conditionaltests.\+Numeric\+Attribute\+Binary\+Rule\+Predicate}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1conditionaltests_1_1_numeric_attribute_binary_test_a52fd1018c77e323ae88e49ecec0e3897}{moa.\+classifiers.\+core.\+conditionaltests.\+Numeric\+Attribute\+Binary\+Test}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1conditionaltests_1_1_nominal_attribute_binary_test_abc03518192e40b151ff731c4e6c07f15}{moa.\+classifiers.\+core.\+conditionaltests.\+Nominal\+Attribute\+Binary\+Test}}, and \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1conditionaltests_1_1_nominal_attribute_multiway_test_a788c1f905fb519c118e6464a35b6f979}{moa.\+classifiers.\+core.\+conditionaltests.\+Nominal\+Attribute\+Multiway\+Test}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1conditionaltests_1_1_instance_conditional_test_af3a4e494b9e2e3f981b45a237858f4cd}\label{classmoa_1_1classifiers_1_1core_1_1conditionaltests_1_1_instance_conditional_test_af3a4e494b9e2e3f981b45a237858f4cd}} 
+\index{moa.classifiers.core.conditionaltests.InstanceConditionalTest@{moa.classifiers.core.conditionaltests.InstanceConditionalTest}!getAttsTestDependsOn@{getAttsTestDependsOn}}
+\index{getAttsTestDependsOn@{getAttsTestDependsOn}!moa.classifiers.core.conditionaltests.InstanceConditionalTest@{moa.classifiers.core.conditionaltests.InstanceConditionalTest}}
+\doxysubsubsection{\texorpdfstring{getAttsTestDependsOn()}{getAttsTestDependsOn()}}
+{\footnotesize\ttfamily abstract int \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+core.\+conditionaltests.\+Instance\+Conditional\+Test.\+get\+Atts\+Test\+Depends\+On (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Returns an array with the attributes that the test depends on.
+
+\begin{DoxyReturn}{Returns}
+an array with the attributes that the test depends on 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1core_1_1conditionaltests_1_1_numeric_attribute_binary_rule_predicate_a7b4535f2210e2d9b207bd04b4a967cda}{moa.\+classifiers.\+rules.\+core.\+conditionaltests.\+Numeric\+Attribute\+Binary\+Rule\+Predicate}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1conditionaltests_1_1_numeric_attribute_binary_test_a88682c16f827e856e77a0e25735b6d1b}{moa.\+classifiers.\+core.\+conditionaltests.\+Numeric\+Attribute\+Binary\+Test}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1conditionaltests_1_1_nominal_attribute_binary_test_aa53a191ebe3d94a15531951fa837c468}{moa.\+classifiers.\+core.\+conditionaltests.\+Nominal\+Attribute\+Binary\+Test}}, and \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1conditionaltests_1_1_nominal_attribute_multiway_test_add67ed2f381bcb4271ffa04cb0b19aa9}{moa.\+classifiers.\+core.\+conditionaltests.\+Nominal\+Attribute\+Multiway\+Test}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1conditionaltests_1_1_instance_conditional_test_adda57438d3e9a6990d6ccb80fe78d6b6}\label{classmoa_1_1classifiers_1_1core_1_1conditionaltests_1_1_instance_conditional_test_adda57438d3e9a6990d6ccb80fe78d6b6}} 
+\index{moa.classifiers.core.conditionaltests.InstanceConditionalTest@{moa.classifiers.core.conditionaltests.InstanceConditionalTest}!maxBranches@{maxBranches}}
+\index{maxBranches@{maxBranches}!moa.classifiers.core.conditionaltests.InstanceConditionalTest@{moa.classifiers.core.conditionaltests.InstanceConditionalTest}}
+\doxysubsubsection{\texorpdfstring{maxBranches()}{maxBranches()}}
+{\footnotesize\ttfamily abstract int moa.\+classifiers.\+core.\+conditionaltests.\+Instance\+Conditional\+Test.\+max\+Branches (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Gets the number of maximum branches, -\/1 if unknown.
+
+\begin{DoxyReturn}{Returns}
+the number of maximum branches, -\/1 if unknown.. 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1conditionaltests_1_1_nominal_attribute_multiway_test_a30fbaea782abba95c119524c384cc7c6}{moa.\+classifiers.\+core.\+conditionaltests.\+Nominal\+Attribute\+Multiway\+Test}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem_nominal_attribute_multiway_test_ac120f088f1c938f02873ea61c3b16a84}{moa.\+classifiers.\+trees.\+iadem.\+Iadem\+Nominal\+Attribute\+Multiway\+Test}}, and \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1conditionaltests_1_1_instance_conditional_binary_test_a5e9a0dc384e474129b3bcbac7528be81}{moa.\+classifiers.\+core.\+conditionaltests.\+Instance\+Conditional\+Binary\+Test}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1conditionaltests_1_1_instance_conditional_test_a5fd87e93bbd9154472d93a1cce8c53ab}\label{classmoa_1_1classifiers_1_1core_1_1conditionaltests_1_1_instance_conditional_test_a5fd87e93bbd9154472d93a1cce8c53ab}} 
+\index{moa.classifiers.core.conditionaltests.InstanceConditionalTest@{moa.classifiers.core.conditionaltests.InstanceConditionalTest}!resultKnownForInstance@{resultKnownForInstance}}
+\index{resultKnownForInstance@{resultKnownForInstance}!moa.classifiers.core.conditionaltests.InstanceConditionalTest@{moa.classifiers.core.conditionaltests.InstanceConditionalTest}}
+\doxysubsubsection{\texorpdfstring{resultKnownForInstance()}{resultKnownForInstance()}}
+{\footnotesize\ttfamily boolean moa.\+classifiers.\+core.\+conditionaltests.\+Instance\+Conditional\+Test.\+result\+Known\+For\+Instance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{inst }\end{DoxyParamCaption})}
+
+Gets whether the number of the branch for an instance is known.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the number of the branch for an instance is known 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/classifiers/core/conditionaltests/Instance\+Conditional\+Test.\+java\end{DoxyCompactItemize}

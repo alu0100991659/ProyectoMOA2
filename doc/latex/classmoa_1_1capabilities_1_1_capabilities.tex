@@ -1,0 +1,167 @@
+\hypertarget{classmoa_1_1capabilities_1_1_capabilities}{}\doxysection{moa.\+capabilities.\+Capabilities Class Reference}
+\label{classmoa_1_1capabilities_1_1_capabilities}\index{moa.capabilities.Capabilities@{moa.capabilities.Capabilities}}
+
+
+Inheritance diagram for moa.\+capabilities.\+Capabilities\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+capabilities.\+Capabilities\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1capabilities_1_1_capabilities_a6b66eac95ceebcd70b0f019be94defba}{Capabilities}} ()
+\item 
+\mbox{\hyperlink{classmoa_1_1capabilities_1_1_capabilities_afcadbefed62e7de6c47c50ea791e6be3}{Capabilities}} (Capability... capabilities)
+\item 
+void \mbox{\hyperlink{classmoa_1_1capabilities_1_1_capabilities_ae5c685acbb68ca446f90438e3d4c5438}{add\+Capabilities}} (Capability... capabilities)
+\item 
+void \mbox{\hyperlink{classmoa_1_1capabilities_1_1_capabilities_a07e9a954c9ea1d4ade3c6e14706edffa}{add\+Capabilities}} (Collection$<$ \mbox{\hyperlink{enummoa_1_1capabilities_1_1_capability}{Capability}} $>$ capabilities)
+\item 
+void \mbox{\hyperlink{classmoa_1_1capabilities_1_1_capabilities_a76e3b78075581c8e3b38e00edca4cd31}{add\+Capabilities}} (\mbox{\hyperlink{classmoa_1_1capabilities_1_1_capabilities}{Capabilities}} other)
+\item 
+void \mbox{\hyperlink{classmoa_1_1capabilities_1_1_capabilities_aeae00411f2893dbc89f55326d4915bcc}{add\+Capability}} (\mbox{\hyperlink{enummoa_1_1capabilities_1_1_capability}{Capability}} capability)
+\item 
+boolean \mbox{\hyperlink{classmoa_1_1capabilities_1_1_capabilities_aae8a425f69258db8b7c0dd5968dce3a8}{has\+Capability}} (\mbox{\hyperlink{enummoa_1_1capabilities_1_1_capability}{Capability}} capability)
+\item 
+\mbox{\Hypertarget{classmoa_1_1capabilities_1_1_capabilities_a194a03257b3a5917df34d063b46bab14}\label{classmoa_1_1capabilities_1_1_capabilities_a194a03257b3a5917df34d063b46bab14}} 
+boolean {\bfseries equals} (Object other)
+\item 
+\mbox{\Hypertarget{classmoa_1_1capabilities_1_1_capabilities_aee845f8658cbeabf53882791057773d2}\label{classmoa_1_1capabilities_1_1_capabilities_aee845f8658cbeabf53882791057773d2}} 
+boolean {\bfseries equals} (\mbox{\hyperlink{classmoa_1_1capabilities_1_1_capabilities}{Capabilities}} other)
+\item 
+\mbox{\Hypertarget{classmoa_1_1capabilities_1_1_capabilities_a545014ba9004b4a90fa8299ac89a7845}\label{classmoa_1_1capabilities_1_1_capabilities_a545014ba9004b4a90fa8299ac89a7845}} 
+boolean {\bfseries equals} (\mbox{\hyperlink{enummoa_1_1capabilities_1_1_capability}{Capability}} other)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Set$<$ \mbox{\hyperlink{enummoa_1_1capabilities_1_1_capability}{Capability}} $>$ \mbox{\hyperlink{classmoa_1_1capabilities_1_1_capabilities_a56a6e6db74f038678ec0b690b08c1c46}{m\+\_\+\+Capabilities}} = new Hash\+Set$<$$>$()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Container class representing the set of capabilities an object has.
+
+\begin{DoxyAuthor}{Author}
+Corey Sterling (csterlin at waikato dot ac dot nz) 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmoa_1_1capabilities_1_1_capabilities_a6b66eac95ceebcd70b0f019be94defba}\label{classmoa_1_1capabilities_1_1_capabilities_a6b66eac95ceebcd70b0f019be94defba}} 
+\index{moa.capabilities.Capabilities@{moa.capabilities.Capabilities}!Capabilities@{Capabilities}}
+\index{Capabilities@{Capabilities}!moa.capabilities.Capabilities@{moa.capabilities.Capabilities}}
+\doxysubsubsection{\texorpdfstring{Capabilities()}{Capabilities()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily moa.\+capabilities.\+Capabilities.\+Capabilities (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates a capabilities object with no capabilities. \mbox{\Hypertarget{classmoa_1_1capabilities_1_1_capabilities_afcadbefed62e7de6c47c50ea791e6be3}\label{classmoa_1_1capabilities_1_1_capabilities_afcadbefed62e7de6c47c50ea791e6be3}} 
+\index{moa.capabilities.Capabilities@{moa.capabilities.Capabilities}!Capabilities@{Capabilities}}
+\index{Capabilities@{Capabilities}!moa.capabilities.Capabilities@{moa.capabilities.Capabilities}}
+\doxysubsubsection{\texorpdfstring{Capabilities()}{Capabilities()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily moa.\+capabilities.\+Capabilities.\+Capabilities (\begin{DoxyParamCaption}\item[{Capability...}]{capabilities }\end{DoxyParamCaption})}
+
+Creates a capabilities object with the given capabilities.
+
+
+\begin{DoxyParams}{Parameters}
+{\em capabilities} & The capabilities to initially have. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1capabilities_1_1_capabilities_a76e3b78075581c8e3b38e00edca4cd31}\label{classmoa_1_1capabilities_1_1_capabilities_a76e3b78075581c8e3b38e00edca4cd31}} 
+\index{moa.capabilities.Capabilities@{moa.capabilities.Capabilities}!addCapabilities@{addCapabilities}}
+\index{addCapabilities@{addCapabilities}!moa.capabilities.Capabilities@{moa.capabilities.Capabilities}}
+\doxysubsubsection{\texorpdfstring{addCapabilities()}{addCapabilities()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void moa.\+capabilities.\+Capabilities.\+add\+Capabilities (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmoa_1_1capabilities_1_1_capabilities}{Capabilities}}}]{other }\end{DoxyParamCaption})}
+
+Augments this capabilities object with the given capabilities.
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The capabilities to add. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{classmoa_1_1capabilities_1_1_immutable_capabilities_a64ac6758fd2327f9c853b1baa282d070}{moa.\+capabilities.\+Immutable\+Capabilities}}.
+
+\mbox{\Hypertarget{classmoa_1_1capabilities_1_1_capabilities_ae5c685acbb68ca446f90438e3d4c5438}\label{classmoa_1_1capabilities_1_1_capabilities_ae5c685acbb68ca446f90438e3d4c5438}} 
+\index{moa.capabilities.Capabilities@{moa.capabilities.Capabilities}!addCapabilities@{addCapabilities}}
+\index{addCapabilities@{addCapabilities}!moa.capabilities.Capabilities@{moa.capabilities.Capabilities}}
+\doxysubsubsection{\texorpdfstring{addCapabilities()}{addCapabilities()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void moa.\+capabilities.\+Capabilities.\+add\+Capabilities (\begin{DoxyParamCaption}\item[{Capability...}]{capabilities }\end{DoxyParamCaption})}
+
+Augments this capabilities object with the given capabilities.
+
+
+\begin{DoxyParams}{Parameters}
+{\em capabilities} & The capabilities to add. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{classmoa_1_1capabilities_1_1_immutable_capabilities_aa8514a43089ed53002be7ff6341cc2d4}{moa.\+capabilities.\+Immutable\+Capabilities}}.
+
+\mbox{\Hypertarget{classmoa_1_1capabilities_1_1_capabilities_a07e9a954c9ea1d4ade3c6e14706edffa}\label{classmoa_1_1capabilities_1_1_capabilities_a07e9a954c9ea1d4ade3c6e14706edffa}} 
+\index{moa.capabilities.Capabilities@{moa.capabilities.Capabilities}!addCapabilities@{addCapabilities}}
+\index{addCapabilities@{addCapabilities}!moa.capabilities.Capabilities@{moa.capabilities.Capabilities}}
+\doxysubsubsection{\texorpdfstring{addCapabilities()}{addCapabilities()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void moa.\+capabilities.\+Capabilities.\+add\+Capabilities (\begin{DoxyParamCaption}\item[{Collection$<$ \mbox{\hyperlink{enummoa_1_1capabilities_1_1_capability}{Capability}} $>$}]{capabilities }\end{DoxyParamCaption})}
+
+Augments this capabilities object with the given capabilities.
+
+
+\begin{DoxyParams}{Parameters}
+{\em capabilities} & The capabilities to add. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{classmoa_1_1capabilities_1_1_immutable_capabilities_aae651b97e95e4170095ea6b553fe669a}{moa.\+capabilities.\+Immutable\+Capabilities}}.
+
+\mbox{\Hypertarget{classmoa_1_1capabilities_1_1_capabilities_aeae00411f2893dbc89f55326d4915bcc}\label{classmoa_1_1capabilities_1_1_capabilities_aeae00411f2893dbc89f55326d4915bcc}} 
+\index{moa.capabilities.Capabilities@{moa.capabilities.Capabilities}!addCapability@{addCapability}}
+\index{addCapability@{addCapability}!moa.capabilities.Capabilities@{moa.capabilities.Capabilities}}
+\doxysubsubsection{\texorpdfstring{addCapability()}{addCapability()}}
+{\footnotesize\ttfamily void moa.\+capabilities.\+Capabilities.\+add\+Capability (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{enummoa_1_1capabilities_1_1_capability}{Capability}}}]{capability }\end{DoxyParamCaption})}
+
+Augments this capabilities object with the given capability.
+
+
+\begin{DoxyParams}{Parameters}
+{\em capability} & The capability to add. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{classmoa_1_1capabilities_1_1_immutable_capabilities_aeb7a175f4765d54b1218e6622166be3e}{moa.\+capabilities.\+Immutable\+Capabilities}}.
+
+\mbox{\Hypertarget{classmoa_1_1capabilities_1_1_capabilities_aae8a425f69258db8b7c0dd5968dce3a8}\label{classmoa_1_1capabilities_1_1_capabilities_aae8a425f69258db8b7c0dd5968dce3a8}} 
+\index{moa.capabilities.Capabilities@{moa.capabilities.Capabilities}!hasCapability@{hasCapability}}
+\index{hasCapability@{hasCapability}!moa.capabilities.Capabilities@{moa.capabilities.Capabilities}}
+\doxysubsubsection{\texorpdfstring{hasCapability()}{hasCapability()}}
+{\footnotesize\ttfamily boolean moa.\+capabilities.\+Capabilities.\+has\+Capability (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{enummoa_1_1capabilities_1_1_capability}{Capability}}}]{capability }\end{DoxyParamCaption})}
+
+Returns whether this capabilities object contains the given capability.
+
+\begin{DoxyReturn}{Returns}
+True if this capabilities object contains the given capability, false if not. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmoa_1_1capabilities_1_1_capabilities_a56a6e6db74f038678ec0b690b08c1c46}\label{classmoa_1_1capabilities_1_1_capabilities_a56a6e6db74f038678ec0b690b08c1c46}} 
+\index{moa.capabilities.Capabilities@{moa.capabilities.Capabilities}!m\_Capabilities@{m\_Capabilities}}
+\index{m\_Capabilities@{m\_Capabilities}!moa.capabilities.Capabilities@{moa.capabilities.Capabilities}}
+\doxysubsubsection{\texorpdfstring{m\_Capabilities}{m\_Capabilities}}
+{\footnotesize\ttfamily Set$<$\mbox{\hyperlink{enummoa_1_1capabilities_1_1_capability}{Capability}}$>$ moa.\+capabilities.\+Capabilities.\+m\+\_\+\+Capabilities = new Hash\+Set$<$$>$()\hspace{0.3cm}{\ttfamily [protected]}}
+
+The set of capabilities. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/capabilities/Capabilities.\+java\end{DoxyCompactItemize}

@@ -1,0 +1,136 @@
+\hypertarget{classmoa_1_1classifiers_1_1core_1_1conditionaltests_1_1_nominal_attribute_binary_test}{}\doxysection{moa.\+classifiers.\+core.\+conditionaltests.\+Nominal\+Attribute\+Binary\+Test Class Reference}
+\label{classmoa_1_1classifiers_1_1core_1_1conditionaltests_1_1_nominal_attribute_binary_test}\index{moa.classifiers.core.conditionaltests.NominalAttributeBinaryTest@{moa.classifiers.core.conditionaltests.NominalAttributeBinaryTest}}
+
+
+Inheritance diagram for moa.\+classifiers.\+core.\+conditionaltests.\+Nominal\+Attribute\+Binary\+Test\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+classifiers.\+core.\+conditionaltests.\+Nominal\+Attribute\+Binary\+Test\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1conditionaltests_1_1_nominal_attribute_binary_test_ac75c71bb475905786dfa8b7dd15611bc}\label{classmoa_1_1classifiers_1_1core_1_1conditionaltests_1_1_nominal_attribute_binary_test_ac75c71bb475905786dfa8b7dd15611bc}} 
+{\bfseries Nominal\+Attribute\+Binary\+Test} (int att\+Index, int att\+Value)
+\item 
+int \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1conditionaltests_1_1_nominal_attribute_binary_test_a8495676ce7df83daf609b8bd199702cd}{branch\+For\+Instance}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst)
+\item 
+String \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1conditionaltests_1_1_nominal_attribute_binary_test_abc03518192e40b151ff731c4e6c07f15}{describe\+Condition\+For\+Branch}} (int branch, \mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instances_header}{Instances\+Header}} context)
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1conditionaltests_1_1_nominal_attribute_binary_test_a211a5d6ed9a353c23c1448ff33984620}{get\+Description}} (String\+Builder sb, int indent)
+\item 
+int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1conditionaltests_1_1_nominal_attribute_binary_test_aa53a191ebe3d94a15531951fa837c468}{get\+Atts\+Test\+Depends\+On}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1conditionaltests_1_1_nominal_attribute_binary_test_ad4a9f3f4621365b8775a472f47e1a398}\label{classmoa_1_1classifiers_1_1core_1_1conditionaltests_1_1_nominal_attribute_binary_test_ad4a9f3f4621365b8775a472f47e1a398}} 
+int {\bfseries att\+Index}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1conditionaltests_1_1_nominal_attribute_binary_test_a116f863e3d154fa03342d0d4fed1753e}\label{classmoa_1_1classifiers_1_1core_1_1conditionaltests_1_1_nominal_attribute_binary_test_a116f863e3d154fa03342d0d4fed1753e}} 
+int {\bfseries att\+Value}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Nominal binary conditional test for instances to use to split nodes in Hoeffding trees.
+
+\begin{DoxyAuthor}{Author}
+Richard Kirkby (\href{mailto:rkirkby@cs.waikato.ac.nz}{\texttt{ rkirkby@cs.\+waikato.\+ac.\+nz}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+7 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1conditionaltests_1_1_nominal_attribute_binary_test_a8495676ce7df83daf609b8bd199702cd}\label{classmoa_1_1classifiers_1_1core_1_1conditionaltests_1_1_nominal_attribute_binary_test_a8495676ce7df83daf609b8bd199702cd}} 
+\index{moa.classifiers.core.conditionaltests.NominalAttributeBinaryTest@{moa.classifiers.core.conditionaltests.NominalAttributeBinaryTest}!branchForInstance@{branchForInstance}}
+\index{branchForInstance@{branchForInstance}!moa.classifiers.core.conditionaltests.NominalAttributeBinaryTest@{moa.classifiers.core.conditionaltests.NominalAttributeBinaryTest}}
+\doxysubsubsection{\texorpdfstring{branchForInstance()}{branchForInstance()}}
+{\footnotesize\ttfamily int moa.\+classifiers.\+core.\+conditionaltests.\+Nominal\+Attribute\+Binary\+Test.\+branch\+For\+Instance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{inst }\end{DoxyParamCaption})}
+
+Returns the number of the branch for an instance, -\/1 if unknown.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & the instance to be used \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the number of the branch for an instance, -\/1 if unknown. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1conditionaltests_1_1_instance_conditional_test_a76dc81c568124d9dc97b08e51506bfe5}{moa.\+classifiers.\+core.\+conditionaltests.\+Instance\+Conditional\+Test}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1conditionaltests_1_1_nominal_attribute_binary_test_abc03518192e40b151ff731c4e6c07f15}\label{classmoa_1_1classifiers_1_1core_1_1conditionaltests_1_1_nominal_attribute_binary_test_abc03518192e40b151ff731c4e6c07f15}} 
+\index{moa.classifiers.core.conditionaltests.NominalAttributeBinaryTest@{moa.classifiers.core.conditionaltests.NominalAttributeBinaryTest}!describeConditionForBranch@{describeConditionForBranch}}
+\index{describeConditionForBranch@{describeConditionForBranch}!moa.classifiers.core.conditionaltests.NominalAttributeBinaryTest@{moa.classifiers.core.conditionaltests.NominalAttributeBinaryTest}}
+\doxysubsubsection{\texorpdfstring{describeConditionForBranch()}{describeConditionForBranch()}}
+{\footnotesize\ttfamily String moa.\+classifiers.\+core.\+conditionaltests.\+Nominal\+Attribute\+Binary\+Test.\+describe\+Condition\+For\+Branch (\begin{DoxyParamCaption}\item[{int}]{branch,  }\item[{\mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instances_header}{Instances\+Header}}}]{context }\end{DoxyParamCaption})}
+
+Gets the text that describes the condition of a branch. It is used to describe the branch.
+
+
+\begin{DoxyParams}{Parameters}
+{\em branch} & the number of the branch to describe \\
+\hline
+{\em context} & the context or header of the data stream \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the text that describes the condition of the branch 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1conditionaltests_1_1_instance_conditional_test_add42f603fd27c74a75f5d2d542d233ca}{moa.\+classifiers.\+core.\+conditionaltests.\+Instance\+Conditional\+Test}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1conditionaltests_1_1_nominal_attribute_binary_test_aa53a191ebe3d94a15531951fa837c468}\label{classmoa_1_1classifiers_1_1core_1_1conditionaltests_1_1_nominal_attribute_binary_test_aa53a191ebe3d94a15531951fa837c468}} 
+\index{moa.classifiers.core.conditionaltests.NominalAttributeBinaryTest@{moa.classifiers.core.conditionaltests.NominalAttributeBinaryTest}!getAttsTestDependsOn@{getAttsTestDependsOn}}
+\index{getAttsTestDependsOn@{getAttsTestDependsOn}!moa.classifiers.core.conditionaltests.NominalAttributeBinaryTest@{moa.classifiers.core.conditionaltests.NominalAttributeBinaryTest}}
+\doxysubsubsection{\texorpdfstring{getAttsTestDependsOn()}{getAttsTestDependsOn()}}
+{\footnotesize\ttfamily int \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+core.\+conditionaltests.\+Nominal\+Attribute\+Binary\+Test.\+get\+Atts\+Test\+Depends\+On (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns an array with the attributes that the test depends on.
+
+\begin{DoxyReturn}{Returns}
+an array with the attributes that the test depends on 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1conditionaltests_1_1_instance_conditional_test_af3a4e494b9e2e3f981b45a237858f4cd}{moa.\+classifiers.\+core.\+conditionaltests.\+Instance\+Conditional\+Test}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1conditionaltests_1_1_nominal_attribute_binary_test_a211a5d6ed9a353c23c1448ff33984620}\label{classmoa_1_1classifiers_1_1core_1_1conditionaltests_1_1_nominal_attribute_binary_test_a211a5d6ed9a353c23c1448ff33984620}} 
+\index{moa.classifiers.core.conditionaltests.NominalAttributeBinaryTest@{moa.classifiers.core.conditionaltests.NominalAttributeBinaryTest}!getDescription@{getDescription}}
+\index{getDescription@{getDescription}!moa.classifiers.core.conditionaltests.NominalAttributeBinaryTest@{moa.classifiers.core.conditionaltests.NominalAttributeBinaryTest}}
+\doxysubsubsection{\texorpdfstring{getDescription()}{getDescription()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+core.\+conditionaltests.\+Nominal\+Attribute\+Binary\+Test.\+get\+Description (\begin{DoxyParamCaption}\item[{String\+Builder}]{sb,  }\item[{int}]{indent }\end{DoxyParamCaption})}
+
+Returns a string representation of this object. Used in {\ttfamily \mbox{\hyperlink{classmoa_1_1_abstract_m_o_a_object_ac686fd3b07c734cf21f1894376fe402d}{Abstract\+M\+O\+A\+Object.\+to\+String}}} to give a string representation of the object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sb} & the stringbuilder to add the description \\
+\hline
+{\em indent} & the number of characters to indent \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1_m_o_a_object_afdaf5098f1fe6c852018ce64c28e17f5}{moa.\+M\+O\+A\+Object}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1core_1_1conditionaltests_1_1_nominal_attribute_binary_rule_predicate_a35deabb9f67c4f179af8ed38ae59c50f}{moa.\+classifiers.\+rules.\+core.\+conditionaltests.\+Nominal\+Attribute\+Binary\+Rule\+Predicate}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/classifiers/core/conditionaltests/Nominal\+Attribute\+Binary\+Test.\+java\end{DoxyCompactItemize}

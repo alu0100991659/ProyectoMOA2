@@ -1,0 +1,161 @@
+\hypertarget{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1attributeclassobservers_1_1_multi_label_b_s_tree}{}\doxysection{moa.\+classifiers.\+rules.\+multilabel.\+attributeclassobservers.\+Multi\+Label\+B\+S\+Tree Class Reference}
+\label{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1attributeclassobservers_1_1_multi_label_b_s_tree}\index{moa.classifiers.rules.multilabel.attributeclassobservers.MultiLabelBSTree@{moa.classifiers.rules.multilabel.attributeclassobservers.MultiLabelBSTree}}
+
+
+Inheritance diagram for moa.\+classifiers.\+rules.\+multilabel.\+attributeclassobservers.\+Multi\+Label\+B\+S\+Tree\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+classifiers.\+rules.\+multilabel.\+attributeclassobservers.\+Multi\+Label\+B\+S\+Tree\+:
+% FIG 1
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1attributeclassobservers_1_1_multi_label_b_s_tree_1_1_node}{Node}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1attributeclassobservers_1_1_multi_label_b_s_tree_a69b6d1844c636ed7658a7144bbe5b3be}{observe\+Attribute}} (double input\+Attribute\+Value, \mbox{\hyperlink{classmoa_1_1core_1_1_double_vector}{Double\+Vector}}\mbox{[}$\,$\mbox{]} statistics)
+\item 
+\mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1core_1_1_attribute_expansion_suggestion}{Attribute\+Expansion\+Suggestion}} \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1attributeclassobservers_1_1_multi_label_b_s_tree_a5cd61798f71ffce47cf4681b2cf19f69}{get\+Best\+Evaluated\+Split\+Suggestion}} (\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1rules_1_1multilabel_1_1core_1_1splitcriteria_1_1_multi_label_split_criterion}{Multi\+Label\+Split\+Criterion}} criterion, \mbox{\hyperlink{classmoa_1_1core_1_1_double_vector}{Double\+Vector}}\mbox{[}$\,$\mbox{]} pre\+Split\+Statistics, int input\+Attribute\+Index)
+\item 
+String \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1attributeclassobservers_1_1_multi_label_b_s_tree_aacc5686e1f2edd385677a0a3b150ed76}{get\+Purpose\+String}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1attributeclassobservers_1_1_multi_label_b_s_tree_abf37b515a9e7417d5795c4f03bb3810c}{get\+Description}} (String\+Builder sb, int indent)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1attributeclassobservers_1_1_multi_label_b_s_tree_a55ae57c22a2e6dd45acb712e1e56943a}\label{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1attributeclassobservers_1_1_multi_label_b_s_tree_a55ae57c22a2e6dd45acb712e1e56943a}} 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries max\+Nodes\+Option} = new \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}}(\char`\"{}max\+Nodes\+Option\char`\"{}, \textquotesingle{}z\textquotesingle{}, \char`\"{}Maximum number of nodes\char`\"{}, 50, 0, Integer.\+M\+A\+X\+\_\+\+V\+A\+L\+UE)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1attributeclassobservers_1_1_multi_label_b_s_tree_a3e279e44656aa1609adb931cc1742831}\label{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1attributeclassobservers_1_1_multi_label_b_s_tree_a3e279e44656aa1609adb931cc1742831}} 
+\mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1core_1_1_attribute_expansion_suggestion}{Attribute\+Expansion\+Suggestion}} {\bfseries search\+For\+Best\+Split\+Option} (\mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1attributeclassobservers_1_1_multi_label_b_s_tree_1_1_node}{Node}} current\+Node, \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1core_1_1_attribute_expansion_suggestion}{Attribute\+Expansion\+Suggestion}} current\+Best\+Option, \mbox{\hyperlink{interfacemoa_1_1classifiers_1_1rules_1_1multilabel_1_1core_1_1splitcriteria_1_1_multi_label_split_criterion}{Multi\+Label\+Split\+Criterion}} criterion, \mbox{\hyperlink{classmoa_1_1core_1_1_double_vector}{Double\+Vector}}\mbox{[}$\,$\mbox{]} pre\+Split\+Statistics, int input\+Attribute\+Index)
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1attributeclassobservers_1_1_multi_label_b_s_tree_ac1a9dfafff4e1457746e1f88f9576b33}{prepare\+For\+Use\+Impl}} (\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}} monitor, \mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}} repository)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1attributeclassobservers_1_1_multi_label_b_s_tree_a1e2e3bbdaf4ed7f1427019600b02b2cb}\label{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1attributeclassobservers_1_1_multi_label_b_s_tree_a1e2e3bbdaf4ed7f1427019600b02b2cb}} 
+int {\bfseries max\+Nodes}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1attributeclassobservers_1_1_multi_label_b_s_tree_a03071998428712994a6955df97f68c4a}\label{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1attributeclassobservers_1_1_multi_label_b_s_tree_a03071998428712994a6955df97f68c4a}} 
+int {\bfseries num\+Nodes}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1attributeclassobservers_1_1_multi_label_b_s_tree_afd82fb3848d4141cfce3330564bc448a}\label{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1attributeclassobservers_1_1_multi_label_b_s_tree_afd82fb3848d4141cfce3330564bc448a}} 
+\mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1attributeclassobservers_1_1_multi_label_b_s_tree_1_1_node}{Node}} {\bfseries root} = null
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1attributeclassobservers_1_1_multi_label_b_s_tree_a14f421557a86c9cded9c568afdb6dbce}\label{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1attributeclassobservers_1_1_multi_label_b_s_tree_a14f421557a86c9cded9c568afdb6dbce}} 
+\mbox{\hyperlink{classmoa_1_1core_1_1_double_vector}{Double\+Vector}}\mbox{[}$\,$\mbox{]} {\bfseries left\+Statistics}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1attributeclassobservers_1_1_multi_label_b_s_tree_abc7617a87e768ea7756ceb179ebca737}\label{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1attributeclassobservers_1_1_multi_label_b_s_tree_abc7617a87e768ea7756ceb179ebca737}} 
+\mbox{\hyperlink{classmoa_1_1core_1_1_double_vector}{Double\+Vector}}\mbox{[}$\,$\mbox{]} {\bfseries right\+Statistics}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Binary search tree for A\+M\+Rules splitting points determination 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1attributeclassobservers_1_1_multi_label_b_s_tree_a5cd61798f71ffce47cf4681b2cf19f69}\label{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1attributeclassobservers_1_1_multi_label_b_s_tree_a5cd61798f71ffce47cf4681b2cf19f69}} 
+\index{moa.classifiers.rules.multilabel.attributeclassobservers.MultiLabelBSTree@{moa.classifiers.rules.multilabel.attributeclassobservers.MultiLabelBSTree}!getBestEvaluatedSplitSuggestion@{getBestEvaluatedSplitSuggestion}}
+\index{getBestEvaluatedSplitSuggestion@{getBestEvaluatedSplitSuggestion}!moa.classifiers.rules.multilabel.attributeclassobservers.MultiLabelBSTree@{moa.classifiers.rules.multilabel.attributeclassobservers.MultiLabelBSTree}}
+\doxysubsubsection{\texorpdfstring{getBestEvaluatedSplitSuggestion()}{getBestEvaluatedSplitSuggestion()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1core_1_1_attribute_expansion_suggestion}{Attribute\+Expansion\+Suggestion}} moa.\+classifiers.\+rules.\+multilabel.\+attributeclassobservers.\+Multi\+Label\+B\+S\+Tree.\+get\+Best\+Evaluated\+Split\+Suggestion (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1rules_1_1multilabel_1_1core_1_1splitcriteria_1_1_multi_label_split_criterion}{Multi\+Label\+Split\+Criterion}}}]{criterion,  }\item[{\mbox{\hyperlink{classmoa_1_1core_1_1_double_vector}{Double\+Vector}}\mbox{[}$\,$\mbox{]}}]{pre\+Split\+Statistics,  }\item[{int}]{input\+Attribute\+Index }\end{DoxyParamCaption})}
+
+Gets the best split suggestion given a criterion and a class distribution
+
+
+\begin{DoxyParams}{Parameters}
+{\em criterion} & the split criterion to use \\
+\hline
+{\em pre\+Split\+Dist} & the class distribution before the split \\
+\hline
+{\em att\+Index} & the input attribute index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+suggestion of best attribute split 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1classifiers_1_1rules_1_1multilabel_1_1attributeclassobservers_1_1_attribute_statistics_observer_ad7a8309943c398580be4248cd16e533e}{moa.\+classifiers.\+rules.\+multilabel.\+attributeclassobservers.\+Attribute\+Statistics\+Observer}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1attributeclassobservers_1_1_multi_label_b_s_tree_abf37b515a9e7417d5795c4f03bb3810c}\label{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1attributeclassobservers_1_1_multi_label_b_s_tree_abf37b515a9e7417d5795c4f03bb3810c}} 
+\index{moa.classifiers.rules.multilabel.attributeclassobservers.MultiLabelBSTree@{moa.classifiers.rules.multilabel.attributeclassobservers.MultiLabelBSTree}!getDescription@{getDescription}}
+\index{getDescription@{getDescription}!moa.classifiers.rules.multilabel.attributeclassobservers.MultiLabelBSTree@{moa.classifiers.rules.multilabel.attributeclassobservers.MultiLabelBSTree}}
+\doxysubsubsection{\texorpdfstring{getDescription()}{getDescription()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+rules.\+multilabel.\+attributeclassobservers.\+Multi\+Label\+B\+S\+Tree.\+get\+Description (\begin{DoxyParamCaption}\item[{String\+Builder}]{sb,  }\item[{int}]{indent }\end{DoxyParamCaption})}
+
+Returns a string representation of this object. Used in {\ttfamily \mbox{\hyperlink{classmoa_1_1_abstract_m_o_a_object_ac686fd3b07c734cf21f1894376fe402d}{Abstract\+M\+O\+A\+Object.\+to\+String}}} to give a string representation of the object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sb} & the stringbuilder to add the description \\
+\hline
+{\em indent} & the number of characters to indent \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1_m_o_a_object_afdaf5098f1fe6c852018ce64c28e17f5}{moa.\+M\+O\+A\+Object}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1attributeclassobservers_1_1_multi_label_b_s_tree_aacc5686e1f2edd385677a0a3b150ed76}\label{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1attributeclassobservers_1_1_multi_label_b_s_tree_aacc5686e1f2edd385677a0a3b150ed76}} 
+\index{moa.classifiers.rules.multilabel.attributeclassobservers.MultiLabelBSTree@{moa.classifiers.rules.multilabel.attributeclassobservers.MultiLabelBSTree}!getPurposeString@{getPurposeString}}
+\index{getPurposeString@{getPurposeString}!moa.classifiers.rules.multilabel.attributeclassobservers.MultiLabelBSTree@{moa.classifiers.rules.multilabel.attributeclassobservers.MultiLabelBSTree}}
+\doxysubsubsection{\texorpdfstring{getPurposeString()}{getPurposeString()}}
+{\footnotesize\ttfamily String moa.\+classifiers.\+rules.\+multilabel.\+attributeclassobservers.\+Multi\+Label\+B\+S\+Tree.\+get\+Purpose\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Options to handle Dictionary with option texts and objects 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1options_1_1_abstract_option_handler_abc8df69aea27ef85060557a9e918b2ca}{moa.\+options.\+Abstract\+Option\+Handler}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1attributeclassobservers_1_1_multi_label_b_s_tree_a69b6d1844c636ed7658a7144bbe5b3be}\label{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1attributeclassobservers_1_1_multi_label_b_s_tree_a69b6d1844c636ed7658a7144bbe5b3be}} 
+\index{moa.classifiers.rules.multilabel.attributeclassobservers.MultiLabelBSTree@{moa.classifiers.rules.multilabel.attributeclassobservers.MultiLabelBSTree}!observeAttribute@{observeAttribute}}
+\index{observeAttribute@{observeAttribute}!moa.classifiers.rules.multilabel.attributeclassobservers.MultiLabelBSTree@{moa.classifiers.rules.multilabel.attributeclassobservers.MultiLabelBSTree}}
+\doxysubsubsection{\texorpdfstring{observeAttribute()}{observeAttribute()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+rules.\+multilabel.\+attributeclassobservers.\+Multi\+Label\+B\+S\+Tree.\+observe\+Attribute (\begin{DoxyParamCaption}\item[{double}]{input\+Attribute\+Value,  }\item[{\mbox{\hyperlink{classmoa_1_1core_1_1_double_vector}{Double\+Vector}}\mbox{[}$\,$\mbox{]}}]{statistics }\end{DoxyParamCaption})}
+
+Updates statistics of this observer given an attribute value, the index of the statistic and the weight of the instance observed
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Attribute\+Value} & the value for the attribute attribute \\
+\hline
+{\em statistics} & num\+Outputs x num\+Statistics the index of the statistic to store \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1classifiers_1_1rules_1_1multilabel_1_1attributeclassobservers_1_1_attribute_statistics_observer_a26e87f5b0980a209380c9423c21f6988}{moa.\+classifiers.\+rules.\+multilabel.\+attributeclassobservers.\+Attribute\+Statistics\+Observer}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1attributeclassobservers_1_1_multi_label_b_s_tree_ac1a9dfafff4e1457746e1f88f9576b33}\label{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1attributeclassobservers_1_1_multi_label_b_s_tree_ac1a9dfafff4e1457746e1f88f9576b33}} 
+\index{moa.classifiers.rules.multilabel.attributeclassobservers.MultiLabelBSTree@{moa.classifiers.rules.multilabel.attributeclassobservers.MultiLabelBSTree}!prepareForUseImpl@{prepareForUseImpl}}
+\index{prepareForUseImpl@{prepareForUseImpl}!moa.classifiers.rules.multilabel.attributeclassobservers.MultiLabelBSTree@{moa.classifiers.rules.multilabel.attributeclassobservers.MultiLabelBSTree}}
+\doxysubsubsection{\texorpdfstring{prepareForUseImpl()}{prepareForUseImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+rules.\+multilabel.\+attributeclassobservers.\+Multi\+Label\+B\+S\+Tree.\+prepare\+For\+Use\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}}}]{monitor,  }\item[{\mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}}}]{repository }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+This method describes the implementation of how to prepare this object for use. All classes that extends this class have to implement {\ttfamily prepare\+For\+Use\+Impl} and not {\ttfamily prepare\+For\+Use} since {\ttfamily prepare\+For\+Use} calls {\ttfamily prepare\+For\+Use\+Impl}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em monitor} & the Task\+Monitor to use \\
+\hline
+{\em repository} & the Object\+Repository to use \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1options_1_1_abstract_option_handler_ad0e9c7d4b0e2b185749f36ce28540efb}{moa.\+options.\+Abstract\+Option\+Handler}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/classifiers/rules/multilabel/attributeclassobservers/Multi\+Label\+B\+S\+Tree.\+java\end{DoxyCompactItemize}

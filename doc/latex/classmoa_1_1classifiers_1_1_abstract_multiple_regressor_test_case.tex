@@ -1,0 +1,204 @@
+\hypertarget{classmoa_1_1classifiers_1_1_abstract_multiple_regressor_test_case}{}\doxysection{moa.\+classifiers.\+Abstract\+Multiple\+Regressor\+Test\+Case Class Reference}
+\label{classmoa_1_1classifiers_1_1_abstract_multiple_regressor_test_case}\index{moa.classifiers.AbstractMultipleRegressorTestCase@{moa.classifiers.AbstractMultipleRegressorTestCase}}
+
+
+Inheritance diagram for moa.\+classifiers.\+Abstract\+Multiple\+Regressor\+Test\+Case\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+classifiers.\+Abstract\+Multiple\+Regressor\+Test\+Case\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_multiple_regressor_test_case_a0ea6f86e5a55e4ca267bd6527b0700a4}{Abstract\+Multiple\+Regressor\+Test\+Case}} (String name)
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_multiple_regressor_test_case_a705772411bcc86719f84920f75299dd8}{set\+Number\+Tests}} (int number\+Tests)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_multiple_regressor_test_case_ae3626e6c2f49b7a12d73791d282939cf}{set\+Up}} ()  throws Exception 
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_multiple_regressor_test_case_ac5b6f24a25fa411be814f976c6a3419d}{tear\+Down}} ()  throws Exception 
+\item 
+String\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_multiple_regressor_test_case_ad450a402970c4bdadcd619f5cc6f13b8}{get\+Regression\+Input\+Files}} ()
+\item 
+int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_multiple_regressor_test_case_a8e10386232cf6af75f52eba651ffb3b7}{get\+Regression\+Input\+Class\+Index}} ()
+\item 
+int\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_multiple_regressor_test_case_af7e833d0680ce3b501b00ee0e3a797cd}{get\+Regression\+Inspection\+Points}} ()
+\item 
+abstract \mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier}{Classifier}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_multiple_regressor_test_case_a4200f401810fc4cdf03d709454686df3}{get\+Regression\+Classifier\+Setups}} ()
+\item 
+\mbox{\hyperlink{interfacemoa_1_1evaluation_1_1_learning_performance_evaluator}{Learning\+Performance\+Evaluator}}$<$ \mbox{\hyperlink{interfacemoa_1_1core_1_1_example}{Example}}$<$ \mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} $>$ $>$\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_multiple_regressor_test_case_a00aa91f0c19e62758a801d3bfd40939d}{get\+Regression\+Evaluator\+Setups}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1_abstract_multiple_regressor_test_case_aadcab39e90f0127e96ef32a4e694d3b4}\label{classmoa_1_1classifiers_1_1_abstract_multiple_regressor_test_case_aadcab39e90f0127e96ef32a4e694d3b4}} 
+int {\bfseries number\+Tests} = 1
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Ancestor that defines a setting to test a classifier several times with different parameters using this predefined same setting.
+
+\begin{DoxyAuthor}{Author}
+fracpete (fracpete at waikato dot ac dot nz) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+\$\+Revision\$ 
+\end{DoxyVersion}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1_abstract_multiple_regressor_test_case_a0ea6f86e5a55e4ca267bd6527b0700a4}\label{classmoa_1_1classifiers_1_1_abstract_multiple_regressor_test_case_a0ea6f86e5a55e4ca267bd6527b0700a4}} 
+\index{moa.classifiers.AbstractMultipleRegressorTestCase@{moa.classifiers.AbstractMultipleRegressorTestCase}!AbstractMultipleRegressorTestCase@{AbstractMultipleRegressorTestCase}}
+\index{AbstractMultipleRegressorTestCase@{AbstractMultipleRegressorTestCase}!moa.classifiers.AbstractMultipleRegressorTestCase@{moa.classifiers.AbstractMultipleRegressorTestCase}}
+\doxysubsubsection{\texorpdfstring{AbstractMultipleRegressorTestCase()}{AbstractMultipleRegressorTestCase()}}
+{\footnotesize\ttfamily moa.\+classifiers.\+Abstract\+Multiple\+Regressor\+Test\+Case.\+Abstract\+Multiple\+Regressor\+Test\+Case (\begin{DoxyParamCaption}\item[{String}]{name }\end{DoxyParamCaption})}
+
+Constructs the test case. Called by subclasses.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & the name of the test \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1_abstract_multiple_regressor_test_case_a4200f401810fc4cdf03d709454686df3}\label{classmoa_1_1classifiers_1_1_abstract_multiple_regressor_test_case_a4200f401810fc4cdf03d709454686df3}} 
+\index{moa.classifiers.AbstractMultipleRegressorTestCase@{moa.classifiers.AbstractMultipleRegressorTestCase}!getRegressionClassifierSetups@{getRegressionClassifierSetups}}
+\index{getRegressionClassifierSetups@{getRegressionClassifierSetups}!moa.classifiers.AbstractMultipleRegressorTestCase@{moa.classifiers.AbstractMultipleRegressorTestCase}}
+\doxysubsubsection{\texorpdfstring{getRegressionClassifierSetups()}{getRegressionClassifierSetups()}}
+{\footnotesize\ttfamily abstract \mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier}{Classifier}} \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+Abstract\+Multiple\+Regressor\+Test\+Case.\+get\+Regression\+Classifier\+Setups (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}, {\ttfamily [protected]}}
+
+Returns the classifier setups to use in the regression test.
+
+\begin{DoxyReturn}{Returns}
+the setups 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_test_case_a6c6d5f83aabc6db19c940dbe34450c52}{moa.\+classifiers.\+Abstract\+Classifier\+Test\+Case}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1_a_m_rules_multi_target_regressor_semi_super_test_afc7c5081ddcf49a6a3fb577783e47094}{moa.\+classifiers.\+rules.\+multilabel.\+A\+M\+Rules\+Multi\+Target\+Regressor\+Semi\+Super\+Test}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1_a_m_rules_regressor_test_a18782bfc7ff1869e5c4623f691973db0}{moa.\+classifiers.\+rules.\+A\+M\+Rules\+Regressor\+Test}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_test_a3a95c70e587dbf8aba5ea34661148933}{moa.\+classifiers.\+trees.\+F\+I\+M\+T\+D\+D\+Test}}, and \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1_o_r_t_o_test_adc679f0c5eaab9cecbac483fa7294515}{moa.\+classifiers.\+trees.\+O\+R\+T\+O\+Test}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1_abstract_multiple_regressor_test_case_a00aa91f0c19e62758a801d3bfd40939d}\label{classmoa_1_1classifiers_1_1_abstract_multiple_regressor_test_case_a00aa91f0c19e62758a801d3bfd40939d}} 
+\index{moa.classifiers.AbstractMultipleRegressorTestCase@{moa.classifiers.AbstractMultipleRegressorTestCase}!getRegressionEvaluatorSetups@{getRegressionEvaluatorSetups}}
+\index{getRegressionEvaluatorSetups@{getRegressionEvaluatorSetups}!moa.classifiers.AbstractMultipleRegressorTestCase@{moa.classifiers.AbstractMultipleRegressorTestCase}}
+\doxysubsubsection{\texorpdfstring{getRegressionEvaluatorSetups()}{getRegressionEvaluatorSetups()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacemoa_1_1evaluation_1_1_learning_performance_evaluator}{Learning\+Performance\+Evaluator}}$<$\mbox{\hyperlink{interfacemoa_1_1core_1_1_example}{Example}}$<$\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}$>$ $>$ \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+Abstract\+Multiple\+Regressor\+Test\+Case.\+get\+Regression\+Evaluator\+Setups (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns the evaluator setups to use in the regression test.
+
+\begin{DoxyReturn}{Returns}
+the setups 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_test_case_ad336f6e6e4c7b05779d6e05c74e8322b}{moa.\+classifiers.\+Abstract\+Classifier\+Test\+Case}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1_abstract_multiple_regressor_test_case_a8e10386232cf6af75f52eba651ffb3b7}\label{classmoa_1_1classifiers_1_1_abstract_multiple_regressor_test_case_a8e10386232cf6af75f52eba651ffb3b7}} 
+\index{moa.classifiers.AbstractMultipleRegressorTestCase@{moa.classifiers.AbstractMultipleRegressorTestCase}!getRegressionInputClassIndex@{getRegressionInputClassIndex}}
+\index{getRegressionInputClassIndex@{getRegressionInputClassIndex}!moa.classifiers.AbstractMultipleRegressorTestCase@{moa.classifiers.AbstractMultipleRegressorTestCase}}
+\doxysubsubsection{\texorpdfstring{getRegressionInputClassIndex()}{getRegressionInputClassIndex()}}
+{\footnotesize\ttfamily int \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+Abstract\+Multiple\+Regressor\+Test\+Case.\+get\+Regression\+Input\+Class\+Index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns the class index for the datasets.
+
+\begin{DoxyReturn}{Returns}
+the class indices (0-\/based) 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_test_case_a16247afefb42612b3db9fb665e84f8fc}{moa.\+classifiers.\+Abstract\+Classifier\+Test\+Case}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1_abstract_multiple_regressor_test_case_ad450a402970c4bdadcd619f5cc6f13b8}\label{classmoa_1_1classifiers_1_1_abstract_multiple_regressor_test_case_ad450a402970c4bdadcd619f5cc6f13b8}} 
+\index{moa.classifiers.AbstractMultipleRegressorTestCase@{moa.classifiers.AbstractMultipleRegressorTestCase}!getRegressionInputFiles@{getRegressionInputFiles}}
+\index{getRegressionInputFiles@{getRegressionInputFiles}!moa.classifiers.AbstractMultipleRegressorTestCase@{moa.classifiers.AbstractMultipleRegressorTestCase}}
+\doxysubsubsection{\texorpdfstring{getRegressionInputFiles()}{getRegressionInputFiles()}}
+{\footnotesize\ttfamily String \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+Abstract\+Multiple\+Regressor\+Test\+Case.\+get\+Regression\+Input\+Files (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns the filenames (without path) of the input data files to use in the regression test.
+
+\begin{DoxyReturn}{Returns}
+the filenames 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_test_case_a99e7ce23923bfbdbd89493ca49c20dd0}{moa.\+classifiers.\+Abstract\+Classifier\+Test\+Case}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1_abstract_multiple_regressor_test_case_af7e833d0680ce3b501b00ee0e3a797cd}\label{classmoa_1_1classifiers_1_1_abstract_multiple_regressor_test_case_af7e833d0680ce3b501b00ee0e3a797cd}} 
+\index{moa.classifiers.AbstractMultipleRegressorTestCase@{moa.classifiers.AbstractMultipleRegressorTestCase}!getRegressionInspectionPoints@{getRegressionInspectionPoints}}
+\index{getRegressionInspectionPoints@{getRegressionInspectionPoints}!moa.classifiers.AbstractMultipleRegressorTestCase@{moa.classifiers.AbstractMultipleRegressorTestCase}}
+\doxysubsubsection{\texorpdfstring{getRegressionInspectionPoints()}{getRegressionInspectionPoints()}}
+{\footnotesize\ttfamily int \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} moa.\+classifiers.\+Abstract\+Multiple\+Regressor\+Test\+Case.\+get\+Regression\+Inspection\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns the index of the instances in the stream to inspect the performance/classification output of the classifiers.
+
+\begin{DoxyReturn}{Returns}
+the inspection indices 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_test_case_a09be1cb71f33ba4fb80cba38bad00017}{moa.\+classifiers.\+Abstract\+Classifier\+Test\+Case}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1_abstract_multiple_regressor_test_case_a705772411bcc86719f84920f75299dd8}\label{classmoa_1_1classifiers_1_1_abstract_multiple_regressor_test_case_a705772411bcc86719f84920f75299dd8}} 
+\index{moa.classifiers.AbstractMultipleRegressorTestCase@{moa.classifiers.AbstractMultipleRegressorTestCase}!setNumberTests@{setNumberTests}}
+\index{setNumberTests@{setNumberTests}!moa.classifiers.AbstractMultipleRegressorTestCase@{moa.classifiers.AbstractMultipleRegressorTestCase}}
+\doxysubsubsection{\texorpdfstring{setNumberTests()}{setNumberTests()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+Abstract\+Multiple\+Regressor\+Test\+Case.\+set\+Number\+Tests (\begin{DoxyParamCaption}\item[{int}]{number\+Tests }\end{DoxyParamCaption})}
+
+Sets the number of tests to run with this classifier.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & the name of the test \\
+\hline
+{\em number\+Tests} & the numbers of tests to run \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1_abstract_multiple_regressor_test_case_ae3626e6c2f49b7a12d73791d282939cf}\label{classmoa_1_1classifiers_1_1_abstract_multiple_regressor_test_case_ae3626e6c2f49b7a12d73791d282939cf}} 
+\index{moa.classifiers.AbstractMultipleRegressorTestCase@{moa.classifiers.AbstractMultipleRegressorTestCase}!setUp@{setUp}}
+\index{setUp@{setUp}!moa.classifiers.AbstractMultipleRegressorTestCase@{moa.classifiers.AbstractMultipleRegressorTestCase}}
+\doxysubsubsection{\texorpdfstring{setUp()}{setUp()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+Abstract\+Multiple\+Regressor\+Test\+Case.\+set\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Exception\hspace{0.3cm}{\ttfamily [protected]}}
+
+Called by J\+Unit before each test method.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & if an error occurs. \\
+\hline
+\end{DoxyExceptions}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1test_1_1_moa_test_case_a6c9a00a65f8d8c0f171750020ce723af}{moa.\+test.\+Moa\+Test\+Case}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1_abstract_multiple_regressor_test_case_ac5b6f24a25fa411be814f976c6a3419d}\label{classmoa_1_1classifiers_1_1_abstract_multiple_regressor_test_case_ac5b6f24a25fa411be814f976c6a3419d}} 
+\index{moa.classifiers.AbstractMultipleRegressorTestCase@{moa.classifiers.AbstractMultipleRegressorTestCase}!tearDown@{tearDown}}
+\index{tearDown@{tearDown}!moa.classifiers.AbstractMultipleRegressorTestCase@{moa.classifiers.AbstractMultipleRegressorTestCase}}
+\doxysubsubsection{\texorpdfstring{tearDown()}{tearDown()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+Abstract\+Multiple\+Regressor\+Test\+Case.\+tear\+Down (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Exception\hspace{0.3cm}{\ttfamily [protected]}}
+
+Called by J\+Unit after each test method.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & if tear-\/down fails \\
+\hline
+\end{DoxyExceptions}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1test_1_1_moa_test_case_a0ec3ee78bfade9112cbd54579cb5738b}{moa.\+test.\+Moa\+Test\+Case}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/test/java/moa/classifiers/Abstract\+Multiple\+Regressor\+Test\+Case.\+java\end{DoxyCompactItemize}

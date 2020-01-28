@@ -1,0 +1,58 @@
+\hypertarget{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_tree_classif_leaves}{}\doxysection{moa.\+classifiers.\+trees.\+Hoeffding\+Tree\+Classif\+Leaves Class Reference}
+\label{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_tree_classif_leaves}\index{moa.classifiers.trees.HoeffdingTreeClassifLeaves@{moa.classifiers.trees.HoeffdingTreeClassifLeaves}}
+
+
+Inheritance diagram for moa.\+classifiers.\+trees.\+Hoeffding\+Tree\+Classif\+Leaves\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+classifiers.\+trees.\+Hoeffding\+Tree\+Classif\+Leaves\+:
+% FIG 1
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_tree_classif_leaves_1_1_learning_node_classifier}{Learning\+Node\+Classifier}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} {\bfseries learner\+Option}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_tree_classif_leaves_a004312be80125cc57923bf868cb43d50}\label{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_tree_classif_leaves_a004312be80125cc57923bf868cb43d50}} 
+Learning\+Node {\bfseries new\+Learning\+Node} (double\mbox{[}$\,$\mbox{]} initial\+Class\+Observations)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_tree_classif_leaves_a8677e22b1071b985d12df1f4b62427d4}\label{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_tree_classif_leaves_a8677e22b1071b985d12df1f4b62427d4}} 
+Learning\+Node {\bfseries new\+Learning\+Node} (double\mbox{[}$\,$\mbox{]} initial\+Class\+Observations, \mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier}{Classifier}} cl)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_tree_classif_leaves_a4392210ffdd0e54d240b4840cf31a286}\label{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_tree_classif_leaves_a4392210ffdd0e54d240b4840cf31a286}} 
+void {\bfseries attempt\+To\+Split} (Active\+Learning\+Node node, Split\+Node parent, int parent\+Index)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Hoeffding Tree that have a classifier at the leaves.
+
+A Hoeffding tree is an incremental, anytime decision tree induction algorithm that is capable of learning from massive data streams, assuming that the distribution generating examples does not change over time. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_tree_classif_leaves_a725e80d6a5f3d3f2acd72d9e1ee9af8b}\label{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_tree_classif_leaves_a725e80d6a5f3d3f2acd72d9e1ee9af8b}} 
+\index{moa.classifiers.trees.HoeffdingTreeClassifLeaves@{moa.classifiers.trees.HoeffdingTreeClassifLeaves}!learnerOption@{learnerOption}}
+\index{learnerOption@{learnerOption}!moa.classifiers.trees.HoeffdingTreeClassifLeaves@{moa.classifiers.trees.HoeffdingTreeClassifLeaves}}
+\doxysubsubsection{\texorpdfstring{learnerOption}{learnerOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} moa.\+classifiers.\+trees.\+Hoeffding\+Tree\+Classif\+Leaves.\+learner\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} ClassOption(\textcolor{stringliteral}{"learner"}, \textcolor{charliteral}{'a'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Classifier to train."}, Classifier.class, \textcolor{stringliteral}{"bayes.NaiveBayes"})}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/classifiers/trees/Hoeffding\+Tree\+Classif\+Leaves.\+java\end{DoxyCompactItemize}

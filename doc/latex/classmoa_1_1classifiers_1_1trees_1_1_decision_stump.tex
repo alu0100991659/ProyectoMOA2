@@ -1,0 +1,256 @@
+\hypertarget{classmoa_1_1classifiers_1_1trees_1_1_decision_stump}{}\doxysection{moa.\+classifiers.\+trees.\+Decision\+Stump Class Reference}
+\label{classmoa_1_1classifiers_1_1trees_1_1_decision_stump}\index{moa.classifiers.trees.DecisionStump@{moa.classifiers.trees.DecisionStump}}
+
+
+Inheritance diagram for moa.\+classifiers.\+trees.\+Decision\+Stump\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+classifiers.\+trees.\+Decision\+Stump\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1_decision_stump_a2546f5399f363afb674321ac3c8bc23d}{get\+Purpose\+String}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1_decision_stump_aa081f44a55cf75c5065634999da6678a}{reset\+Learning\+Impl}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1_decision_stump_af8f1c15276f17cac6afdae88d521c6b0}{get\+Model\+Description}} (String\+Builder out, int indent)
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1_decision_stump_a32067bc75ba3bd5e5a56955740a091cb}{train\+On\+Instance\+Impl}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst)
+\item 
+double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1_decision_stump_a47c4e10523e3e9c893baee6015268fd0}{get\+Votes\+For\+Instance}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst)
+\item 
+boolean \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1_decision_stump_a75a51b83c4d771fc86897db928e1e3be}{is\+Randomizable}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries grace\+Period\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_flag_option}{Flag\+Option}} {\bfseries binary\+Splits\+Option}
+\item 
+\mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} {\bfseries split\+Criterion\+Option}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1_decision_stump_ad5f35d2d56ede47e3f60d62e857001ce}{get\+Model\+Measurements\+Impl}} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_decision_stump_a1b829ccf8fb34b502a9b756b735bdb2d}\label{classmoa_1_1classifiers_1_1trees_1_1_decision_stump_a1b829ccf8fb34b502a9b756b735bdb2d}} 
+\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_attribute_class_observer}{Attribute\+Class\+Observer}} {\bfseries new\+Nominal\+Class\+Observer} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_decision_stump_af7c45056f6fc4431efb16e9c60cf9818}\label{classmoa_1_1classifiers_1_1trees_1_1_decision_stump_af7c45056f6fc4431efb16e9c60cf9818}} 
+\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_attribute_class_observer}{Attribute\+Class\+Observer}} {\bfseries new\+Numeric\+Class\+Observer} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_decision_stump_a24de43fe3b957eb794da553a04211af5}\label{classmoa_1_1classifiers_1_1trees_1_1_decision_stump_a24de43fe3b957eb794da553a04211af5}} 
+\mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1_attribute_split_suggestion}{Attribute\+Split\+Suggestion}} {\bfseries find\+Best\+Split} (\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1core_1_1splitcriteria_1_1_split_criterion}{Split\+Criterion}} criterion)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_decision_stump_aa2cdbae74d11be2d1bf042c9e9f0fd44}\label{classmoa_1_1classifiers_1_1trees_1_1_decision_stump_aa2cdbae74d11be2d1bf042c9e9f0fd44}} 
+\mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1_attribute_split_suggestion}{Attribute\+Split\+Suggestion}} {\bfseries best\+Split}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_decision_stump_af2cf9abfd6f1bcaea2fc3f146ba35269}\label{classmoa_1_1classifiers_1_1trees_1_1_decision_stump_af2cf9abfd6f1bcaea2fc3f146ba35269}} 
+\mbox{\hyperlink{classmoa_1_1core_1_1_double_vector}{Double\+Vector}} {\bfseries observed\+Class\+Distribution}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_decision_stump_a58a015e3890f78af909ad37efc854e95}\label{classmoa_1_1classifiers_1_1trees_1_1_decision_stump_a58a015e3890f78af909ad37efc854e95}} 
+\mbox{\hyperlink{classmoa_1_1core_1_1_auto_expand_vector}{Auto\+Expand\+Vector}}$<$ \mbox{\hyperlink{interfacemoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_attribute_class_observer}{Attribute\+Class\+Observer}} $>$ {\bfseries attribute\+Observers}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_decision_stump_afa224a6cc3be5a0dea5f568857699213}\label{classmoa_1_1classifiers_1_1trees_1_1_decision_stump_afa224a6cc3be5a0dea5f568857699213}} 
+double {\bfseries weight\+Seen\+At\+Last\+Split}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Decision trees of one level.~\newline
+
+
+Parameters\+:
+
+
+\begin{DoxyItemize}
+\item -\/g \+: The number of instances to observe between model changes 
+\item -\/b \+: Only allow binary splits 
+\item -\/c \+: Split criterion to use. Example \+: Info\+Gain\+Split\+Criterion 
+\item -\/r \+: Seed for random behaviour of the classifier 
+\end{DoxyItemize}
+
+\begin{DoxyAuthor}{Author}
+Richard Kirkby (\href{mailto:rkirkby@cs.waikato.ac.nz}{\texttt{ rkirkby@cs.\+waikato.\+ac.\+nz}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+7 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_decision_stump_af8f1c15276f17cac6afdae88d521c6b0}\label{classmoa_1_1classifiers_1_1trees_1_1_decision_stump_af8f1c15276f17cac6afdae88d521c6b0}} 
+\index{moa.classifiers.trees.DecisionStump@{moa.classifiers.trees.DecisionStump}!getModelDescription@{getModelDescription}}
+\index{getModelDescription@{getModelDescription}!moa.classifiers.trees.DecisionStump@{moa.classifiers.trees.DecisionStump}}
+\doxysubsubsection{\texorpdfstring{getModelDescription()}{getModelDescription()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+trees.\+Decision\+Stump.\+get\+Model\+Description (\begin{DoxyParamCaption}\item[{String\+Builder}]{out,  }\item[{int}]{indent }\end{DoxyParamCaption})}
+
+Returns a string representation of the model.
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & the stringbuilder to add the description \\
+\hline
+{\em indent} & the number of characters to indent \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a30e5ff32bc8127dfb7436945776b7523}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_decision_stump_ad5f35d2d56ede47e3f60d62e857001ce}\label{classmoa_1_1classifiers_1_1trees_1_1_decision_stump_ad5f35d2d56ede47e3f60d62e857001ce}} 
+\index{moa.classifiers.trees.DecisionStump@{moa.classifiers.trees.DecisionStump}!getModelMeasurementsImpl@{getModelMeasurementsImpl}}
+\index{getModelMeasurementsImpl@{getModelMeasurementsImpl}!moa.classifiers.trees.DecisionStump@{moa.classifiers.trees.DecisionStump}}
+\doxysubsubsection{\texorpdfstring{getModelMeasurementsImpl()}{getModelMeasurementsImpl()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}} \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+trees.\+Decision\+Stump.\+get\+Model\+Measurements\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Gets the current measurements of this classifier.~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden.
+
+\begin{DoxyReturn}{Returns}
+an array of measurements to be used in evaluation tasks 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_ac2bebede21c9d2d8cd11d95a7e20e529}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_decision_stump_a2546f5399f363afb674321ac3c8bc23d}\label{classmoa_1_1classifiers_1_1trees_1_1_decision_stump_a2546f5399f363afb674321ac3c8bc23d}} 
+\index{moa.classifiers.trees.DecisionStump@{moa.classifiers.trees.DecisionStump}!getPurposeString@{getPurposeString}}
+\index{getPurposeString@{getPurposeString}!moa.classifiers.trees.DecisionStump@{moa.classifiers.trees.DecisionStump}}
+\doxysubsubsection{\texorpdfstring{getPurposeString()}{getPurposeString()}}
+{\footnotesize\ttfamily String moa.\+classifiers.\+trees.\+Decision\+Stump.\+get\+Purpose\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Options to handle Dictionary with option texts and objects 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a3fc6ae11234b88e51941a77ddb879d8b}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_decision_stump_a47c4e10523e3e9c893baee6015268fd0}\label{classmoa_1_1classifiers_1_1trees_1_1_decision_stump_a47c4e10523e3e9c893baee6015268fd0}} 
+\index{moa.classifiers.trees.DecisionStump@{moa.classifiers.trees.DecisionStump}!getVotesForInstance@{getVotesForInstance}}
+\index{getVotesForInstance@{getVotesForInstance}!moa.classifiers.trees.DecisionStump@{moa.classifiers.trees.DecisionStump}}
+\doxysubsubsection{\texorpdfstring{getVotesForInstance()}{getVotesForInstance()}}
+{\footnotesize\ttfamily double \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+trees.\+Decision\+Stump.\+get\+Votes\+For\+Instance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{inst }\end{DoxyParamCaption})}
+
+Predicts the class memberships for a given instance. If an instance is unclassified, the returned array elements must be all zero.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & the instance to be classified \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an array containing the estimated membership probabilities of the test instance in each class 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a0e3589c4fa6f088d82d64514afd9513c}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_decision_stump_a75a51b83c4d771fc86897db928e1e3be}\label{classmoa_1_1classifiers_1_1trees_1_1_decision_stump_a75a51b83c4d771fc86897db928e1e3be}} 
+\index{moa.classifiers.trees.DecisionStump@{moa.classifiers.trees.DecisionStump}!isRandomizable@{isRandomizable}}
+\index{isRandomizable@{isRandomizable}!moa.classifiers.trees.DecisionStump@{moa.classifiers.trees.DecisionStump}}
+\doxysubsubsection{\texorpdfstring{isRandomizable()}{isRandomizable()}}
+{\footnotesize\ttfamily boolean moa.\+classifiers.\+trees.\+Decision\+Stump.\+is\+Randomizable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets whether this learner needs a random seed. Examples of methods that needs a random seed are bagging and boosting.
+
+\begin{DoxyReturn}{Returns}
+true if the learner needs a random seed. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1learners_1_1_learner_a2f1ff9007b5eb5f53801f474b4d42a61}{moa.\+learners.\+Learner$<$ E extends Example $>$}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_decision_stump_aa081f44a55cf75c5065634999da6678a}\label{classmoa_1_1classifiers_1_1trees_1_1_decision_stump_aa081f44a55cf75c5065634999da6678a}} 
+\index{moa.classifiers.trees.DecisionStump@{moa.classifiers.trees.DecisionStump}!resetLearningImpl@{resetLearningImpl}}
+\index{resetLearningImpl@{resetLearningImpl}!moa.classifiers.trees.DecisionStump@{moa.classifiers.trees.DecisionStump}}
+\doxysubsubsection{\texorpdfstring{resetLearningImpl()}{resetLearningImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+trees.\+Decision\+Stump.\+reset\+Learning\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Resets this classifier. It must be similar to starting a new classifier from scratch. ~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden. 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a099ffcf2417abb919d10d697c0648f29}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_decision_stump_a32067bc75ba3bd5e5a56955740a091cb}\label{classmoa_1_1classifiers_1_1trees_1_1_decision_stump_a32067bc75ba3bd5e5a56955740a091cb}} 
+\index{moa.classifiers.trees.DecisionStump@{moa.classifiers.trees.DecisionStump}!trainOnInstanceImpl@{trainOnInstanceImpl}}
+\index{trainOnInstanceImpl@{trainOnInstanceImpl}!moa.classifiers.trees.DecisionStump@{moa.classifiers.trees.DecisionStump}}
+\doxysubsubsection{\texorpdfstring{trainOnInstanceImpl()}{trainOnInstanceImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+trees.\+Decision\+Stump.\+train\+On\+Instance\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{inst }\end{DoxyParamCaption})}
+
+Trains this classifier incrementally using the given instance.~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & the instance to be used for training \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_aceb24d2ddeab386f2ecead6e3c0d3543}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_decision_stump_ae1bde16059c25772958520326c355274}\label{classmoa_1_1classifiers_1_1trees_1_1_decision_stump_ae1bde16059c25772958520326c355274}} 
+\index{moa.classifiers.trees.DecisionStump@{moa.classifiers.trees.DecisionStump}!binarySplitsOption@{binarySplitsOption}}
+\index{binarySplitsOption@{binarySplitsOption}!moa.classifiers.trees.DecisionStump@{moa.classifiers.trees.DecisionStump}}
+\doxysubsubsection{\texorpdfstring{binarySplitsOption}{binarySplitsOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_flag_option}{Flag\+Option}} moa.\+classifiers.\+trees.\+Decision\+Stump.\+binary\+Splits\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FlagOption(\textcolor{stringliteral}{"binarySplits"}, \textcolor{charliteral}{'b'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Only allow binary splits."})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_decision_stump_a3f301667ffce4249c30f6cdd1145375d}\label{classmoa_1_1classifiers_1_1trees_1_1_decision_stump_a3f301667ffce4249c30f6cdd1145375d}} 
+\index{moa.classifiers.trees.DecisionStump@{moa.classifiers.trees.DecisionStump}!gracePeriodOption@{gracePeriodOption}}
+\index{gracePeriodOption@{gracePeriodOption}!moa.classifiers.trees.DecisionStump@{moa.classifiers.trees.DecisionStump}}
+\doxysubsubsection{\texorpdfstring{gracePeriodOption}{gracePeriodOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+classifiers.\+trees.\+Decision\+Stump.\+grace\+Period\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(\textcolor{stringliteral}{"gracePeriod"}, \textcolor{charliteral}{'g'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"The number of instances to observe between model changes."}, 1000,}
+\DoxyCodeLine{            0, Integer.MAX\_VALUE)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_decision_stump_a1965e7f623d64e7e8865552fb5afc131}\label{classmoa_1_1classifiers_1_1trees_1_1_decision_stump_a1965e7f623d64e7e8865552fb5afc131}} 
+\index{moa.classifiers.trees.DecisionStump@{moa.classifiers.trees.DecisionStump}!splitCriterionOption@{splitCriterionOption}}
+\index{splitCriterionOption@{splitCriterionOption}!moa.classifiers.trees.DecisionStump@{moa.classifiers.trees.DecisionStump}}
+\doxysubsubsection{\texorpdfstring{splitCriterionOption}{splitCriterionOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} moa.\+classifiers.\+trees.\+Decision\+Stump.\+split\+Criterion\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} ClassOption(\textcolor{stringliteral}{"splitCriterion"},}
+\DoxyCodeLine{            \textcolor{charliteral}{'c'}, \textcolor{stringliteral}{"Split criterion to use."}, SplitCriterion.class,}
+\DoxyCodeLine{            \textcolor{stringliteral}{"InfoGainSplitCriterion"})}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/classifiers/trees/Decision\+Stump.\+java\end{DoxyCompactItemize}

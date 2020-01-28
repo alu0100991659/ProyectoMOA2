@@ -1,0 +1,251 @@
+\hypertarget{classmoa_1_1tasks_1_1_evaluate_interleaved_test_then_train}{}\doxysection{moa.\+tasks.\+Evaluate\+Interleaved\+Test\+Then\+Train Class Reference}
+\label{classmoa_1_1tasks_1_1_evaluate_interleaved_test_then_train}\index{moa.tasks.EvaluateInterleavedTestThenTrain@{moa.tasks.EvaluateInterleavedTestThenTrain}}
+
+
+Inheritance diagram for moa.\+tasks.\+Evaluate\+Interleaved\+Test\+Then\+Train\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+tasks.\+Evaluate\+Interleaved\+Test\+Then\+Train\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classmoa_1_1tasks_1_1_evaluate_interleaved_test_then_train_aacc46db210228370b1e80b99653d16bc}{get\+Purpose\+String}} ()
+\item 
+Class$<$?$>$ \mbox{\hyperlink{classmoa_1_1tasks_1_1_evaluate_interleaved_test_then_train_ac57c1c9cd714000b4224316c214f1e6b}{get\+Task\+Result\+Type}} ()
+\item 
+\mbox{\hyperlink{classmoa_1_1capabilities_1_1_immutable_capabilities}{Immutable\+Capabilities}} \mbox{\hyperlink{classmoa_1_1tasks_1_1_evaluate_interleaved_test_then_train_a0965ffdaac4995d21104f4552a8b2613}{define\+Immutable\+Capabilities}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} {\bfseries learner\+Option}
+\item 
+\mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} {\bfseries stream\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries random\+Seed\+Option}
+\item 
+\mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} {\bfseries evaluator\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries instance\+Limit\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries time\+Limit\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries sample\+Frequency\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries mem\+Check\+Frequency\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_file_option}{File\+Option}} {\bfseries dump\+File\+Option}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Object \mbox{\hyperlink{classmoa_1_1tasks_1_1_evaluate_interleaved_test_then_train_a6b487518dd5bfdc97abe37263f725610}{do\+Main\+Task}} (\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}} monitor, \mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}} repository)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task}{Task}} for evaluating a classifier on a stream by testing then training with each example in sequence.
+
+\begin{DoxyAuthor}{Author}
+Richard Kirkby (\href{mailto:rkirkby@cs.waikato.ac.nz}{\texttt{ rkirkby@cs.\+waikato.\+ac.\+nz}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+7 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_interleaved_test_then_train_a0965ffdaac4995d21104f4552a8b2613}\label{classmoa_1_1tasks_1_1_evaluate_interleaved_test_then_train_a0965ffdaac4995d21104f4552a8b2613}} 
+\index{moa.tasks.EvaluateInterleavedTestThenTrain@{moa.tasks.EvaluateInterleavedTestThenTrain}!defineImmutableCapabilities@{defineImmutableCapabilities}}
+\index{defineImmutableCapabilities@{defineImmutableCapabilities}!moa.tasks.EvaluateInterleavedTestThenTrain@{moa.tasks.EvaluateInterleavedTestThenTrain}}
+\doxysubsubsection{\texorpdfstring{defineImmutableCapabilities()}{defineImmutableCapabilities()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1capabilities_1_1_immutable_capabilities}{Immutable\+Capabilities}} moa.\+tasks.\+Evaluate\+Interleaved\+Test\+Then\+Train.\+define\+Immutable\+Capabilities (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Defines the set of capabilities the object has. Should be overridden if the object\textquotesingle{}s capabilities do not change.
+
+\begin{DoxyReturn}{Returns}
+The capabilities of the object. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1tasks_1_1_classification_main_task_a06bfdc54fba70f28d51cf33b04c9d8c2}{moa.\+tasks.\+Classification\+Main\+Task}}.
+
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_interleaved_test_then_train_a6b487518dd5bfdc97abe37263f725610}\label{classmoa_1_1tasks_1_1_evaluate_interleaved_test_then_train_a6b487518dd5bfdc97abe37263f725610}} 
+\index{moa.tasks.EvaluateInterleavedTestThenTrain@{moa.tasks.EvaluateInterleavedTestThenTrain}!doMainTask@{doMainTask}}
+\index{doMainTask@{doMainTask}!moa.tasks.EvaluateInterleavedTestThenTrain@{moa.tasks.EvaluateInterleavedTestThenTrain}}
+\doxysubsubsection{\texorpdfstring{doMainTask()}{doMainTask()}}
+{\footnotesize\ttfamily Object moa.\+tasks.\+Evaluate\+Interleaved\+Test\+Then\+Train.\+do\+Main\+Task (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}}}]{monitor,  }\item[{\mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}}}]{repository }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+This method performs this task. {\ttfamily \mbox{\hyperlink{classmoa_1_1tasks_1_1_abstract_task}{Abstract\+Task}}} implements {\ttfamily do\+Task}, that uses {\ttfamily do\+Task\+Impl}. {\ttfamily \mbox{\hyperlink{classmoa_1_1tasks_1_1_main_task}{Main\+Task}}} implements {\ttfamily do\+Task\+Impl} using {\ttfamily do\+Main\+Task} so its extensions only need to implement {\ttfamily do\+Main\+Task}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em monitor} & the \mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}} to use \\
+\hline
+{\em repository} & the Object\+Repository to use \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an object with the result of this task 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1tasks_1_1_main_task_afab790976c2ace902aa1e2f780442788}{moa.\+tasks.\+Main\+Task}}.
+
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_interleaved_test_then_train_aacc46db210228370b1e80b99653d16bc}\label{classmoa_1_1tasks_1_1_evaluate_interleaved_test_then_train_aacc46db210228370b1e80b99653d16bc}} 
+\index{moa.tasks.EvaluateInterleavedTestThenTrain@{moa.tasks.EvaluateInterleavedTestThenTrain}!getPurposeString@{getPurposeString}}
+\index{getPurposeString@{getPurposeString}!moa.tasks.EvaluateInterleavedTestThenTrain@{moa.tasks.EvaluateInterleavedTestThenTrain}}
+\doxysubsubsection{\texorpdfstring{getPurposeString()}{getPurposeString()}}
+{\footnotesize\ttfamily String moa.\+tasks.\+Evaluate\+Interleaved\+Test\+Then\+Train.\+get\+Purpose\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Options to handle Dictionary with option texts and objects 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1options_1_1_abstract_option_handler_abc8df69aea27ef85060557a9e918b2ca}{moa.\+options.\+Abstract\+Option\+Handler}}.
+
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_interleaved_test_then_train_ac57c1c9cd714000b4224316c214f1e6b}\label{classmoa_1_1tasks_1_1_evaluate_interleaved_test_then_train_ac57c1c9cd714000b4224316c214f1e6b}} 
+\index{moa.tasks.EvaluateInterleavedTestThenTrain@{moa.tasks.EvaluateInterleavedTestThenTrain}!getTaskResultType@{getTaskResultType}}
+\index{getTaskResultType@{getTaskResultType}!moa.tasks.EvaluateInterleavedTestThenTrain@{moa.tasks.EvaluateInterleavedTestThenTrain}}
+\doxysubsubsection{\texorpdfstring{getTaskResultType()}{getTaskResultType()}}
+{\footnotesize\ttfamily Class$<$?$>$ moa.\+tasks.\+Evaluate\+Interleaved\+Test\+Then\+Train.\+get\+Task\+Result\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the result type of this task. Tasks can return Learning\+Curve, Learning\+Evaluation, Classifier, String, Instances..
+
+\begin{DoxyReturn}{Returns}
+a class object of the result of this task 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_a568100cd931416820d1bcc81032301f6}{moa.\+tasks.\+Task}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_interleaved_test_then_train_a7e391302e94c7a0c71f6259d0a637673}\label{classmoa_1_1tasks_1_1_evaluate_interleaved_test_then_train_a7e391302e94c7a0c71f6259d0a637673}} 
+\index{moa.tasks.EvaluateInterleavedTestThenTrain@{moa.tasks.EvaluateInterleavedTestThenTrain}!dumpFileOption@{dumpFileOption}}
+\index{dumpFileOption@{dumpFileOption}!moa.tasks.EvaluateInterleavedTestThenTrain@{moa.tasks.EvaluateInterleavedTestThenTrain}}
+\doxysubsubsection{\texorpdfstring{dumpFileOption}{dumpFileOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_file_option}{File\+Option}} moa.\+tasks.\+Evaluate\+Interleaved\+Test\+Then\+Train.\+dump\+File\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FileOption(\textcolor{stringliteral}{"dumpFile"}, \textcolor{charliteral}{'d'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"File to append intermediate csv reslts to."}, \textcolor{keyword}{null}, \textcolor{stringliteral}{"csv"}, \textcolor{keyword}{true})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_interleaved_test_then_train_a2d746aae904bbe27bbd8d703fbb9741f}\label{classmoa_1_1tasks_1_1_evaluate_interleaved_test_then_train_a2d746aae904bbe27bbd8d703fbb9741f}} 
+\index{moa.tasks.EvaluateInterleavedTestThenTrain@{moa.tasks.EvaluateInterleavedTestThenTrain}!evaluatorOption@{evaluatorOption}}
+\index{evaluatorOption@{evaluatorOption}!moa.tasks.EvaluateInterleavedTestThenTrain@{moa.tasks.EvaluateInterleavedTestThenTrain}}
+\doxysubsubsection{\texorpdfstring{evaluatorOption}{evaluatorOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} moa.\+tasks.\+Evaluate\+Interleaved\+Test\+Then\+Train.\+evaluator\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} ClassOption(\textcolor{stringliteral}{"evaluator"}, \textcolor{charliteral}{'e'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Classification performance evaluation method."},}
+\DoxyCodeLine{            LearningPerformanceEvaluator.class,}
+\DoxyCodeLine{            \textcolor{stringliteral}{"BasicClassificationPerformanceEvaluator"})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_interleaved_test_then_train_a53e655d8febf85225f8065536f465be9}\label{classmoa_1_1tasks_1_1_evaluate_interleaved_test_then_train_a53e655d8febf85225f8065536f465be9}} 
+\index{moa.tasks.EvaluateInterleavedTestThenTrain@{moa.tasks.EvaluateInterleavedTestThenTrain}!instanceLimitOption@{instanceLimitOption}}
+\index{instanceLimitOption@{instanceLimitOption}!moa.tasks.EvaluateInterleavedTestThenTrain@{moa.tasks.EvaluateInterleavedTestThenTrain}}
+\doxysubsubsection{\texorpdfstring{instanceLimitOption}{instanceLimitOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+tasks.\+Evaluate\+Interleaved\+Test\+Then\+Train.\+instance\+Limit\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(\textcolor{stringliteral}{"instanceLimit"}, \textcolor{charliteral}{'i'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Maximum number of instances to test/train on  (-\/1 = no limit)."},}
+\DoxyCodeLine{            100000000, -\/1, Integer.MAX\_VALUE)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_interleaved_test_then_train_ab3fa69c5dd2faff3b89dd6ddd6c7db4a}\label{classmoa_1_1tasks_1_1_evaluate_interleaved_test_then_train_ab3fa69c5dd2faff3b89dd6ddd6c7db4a}} 
+\index{moa.tasks.EvaluateInterleavedTestThenTrain@{moa.tasks.EvaluateInterleavedTestThenTrain}!learnerOption@{learnerOption}}
+\index{learnerOption@{learnerOption}!moa.tasks.EvaluateInterleavedTestThenTrain@{moa.tasks.EvaluateInterleavedTestThenTrain}}
+\doxysubsubsection{\texorpdfstring{learnerOption}{learnerOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} moa.\+tasks.\+Evaluate\+Interleaved\+Test\+Then\+Train.\+learner\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} ClassOption(\textcolor{stringliteral}{"learner"}, \textcolor{charliteral}{'l'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Learner to train."}, MultiClassClassifier.class, \textcolor{stringliteral}{"moa.classifiers.bayes.NaiveBayes"})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_interleaved_test_then_train_a1e81d45fef8746e5bf71cd2ac63671f5}\label{classmoa_1_1tasks_1_1_evaluate_interleaved_test_then_train_a1e81d45fef8746e5bf71cd2ac63671f5}} 
+\index{moa.tasks.EvaluateInterleavedTestThenTrain@{moa.tasks.EvaluateInterleavedTestThenTrain}!memCheckFrequencyOption@{memCheckFrequencyOption}}
+\index{memCheckFrequencyOption@{memCheckFrequencyOption}!moa.tasks.EvaluateInterleavedTestThenTrain@{moa.tasks.EvaluateInterleavedTestThenTrain}}
+\doxysubsubsection{\texorpdfstring{memCheckFrequencyOption}{memCheckFrequencyOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+tasks.\+Evaluate\+Interleaved\+Test\+Then\+Train.\+mem\+Check\+Frequency\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(}
+\DoxyCodeLine{            \textcolor{stringliteral}{"memCheckFrequency"}, \textcolor{charliteral}{'q'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"How many instances between memory bound checks."}, 100000, 0,}
+\DoxyCodeLine{            Integer.MAX\_VALUE)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_interleaved_test_then_train_a16b9563acf2ecbc2631ce57f07c4cf49}\label{classmoa_1_1tasks_1_1_evaluate_interleaved_test_then_train_a16b9563acf2ecbc2631ce57f07c4cf49}} 
+\index{moa.tasks.EvaluateInterleavedTestThenTrain@{moa.tasks.EvaluateInterleavedTestThenTrain}!randomSeedOption@{randomSeedOption}}
+\index{randomSeedOption@{randomSeedOption}!moa.tasks.EvaluateInterleavedTestThenTrain@{moa.tasks.EvaluateInterleavedTestThenTrain}}
+\doxysubsubsection{\texorpdfstring{randomSeedOption}{randomSeedOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+tasks.\+Evaluate\+Interleaved\+Test\+Then\+Train.\+random\+Seed\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(}
+\DoxyCodeLine{            \textcolor{stringliteral}{"instanceRandomSeed"}, \textcolor{charliteral}{'r'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Seed for random generation of instances."}, 1)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_interleaved_test_then_train_a2c6091e8ba993fff5379a932b892f193}\label{classmoa_1_1tasks_1_1_evaluate_interleaved_test_then_train_a2c6091e8ba993fff5379a932b892f193}} 
+\index{moa.tasks.EvaluateInterleavedTestThenTrain@{moa.tasks.EvaluateInterleavedTestThenTrain}!sampleFrequencyOption@{sampleFrequencyOption}}
+\index{sampleFrequencyOption@{sampleFrequencyOption}!moa.tasks.EvaluateInterleavedTestThenTrain@{moa.tasks.EvaluateInterleavedTestThenTrain}}
+\doxysubsubsection{\texorpdfstring{sampleFrequencyOption}{sampleFrequencyOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+tasks.\+Evaluate\+Interleaved\+Test\+Then\+Train.\+sample\+Frequency\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(\textcolor{stringliteral}{"sampleFrequency"},}
+\DoxyCodeLine{            \textcolor{charliteral}{'f'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"How many instances between samples of the learning performance."},}
+\DoxyCodeLine{            100000, 0, Integer.MAX\_VALUE)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_interleaved_test_then_train_a3cbcc7b392e91b3deeacc47a257b6d11}\label{classmoa_1_1tasks_1_1_evaluate_interleaved_test_then_train_a3cbcc7b392e91b3deeacc47a257b6d11}} 
+\index{moa.tasks.EvaluateInterleavedTestThenTrain@{moa.tasks.EvaluateInterleavedTestThenTrain}!streamOption@{streamOption}}
+\index{streamOption@{streamOption}!moa.tasks.EvaluateInterleavedTestThenTrain@{moa.tasks.EvaluateInterleavedTestThenTrain}}
+\doxysubsubsection{\texorpdfstring{streamOption}{streamOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} moa.\+tasks.\+Evaluate\+Interleaved\+Test\+Then\+Train.\+stream\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} ClassOption(\textcolor{stringliteral}{"stream"}, \textcolor{charliteral}{'s'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Stream to learn from."}, ExampleStream.class,}
+\DoxyCodeLine{            \textcolor{stringliteral}{"generators.RandomTreeGenerator"})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_interleaved_test_then_train_a6c824cba450ea92ec64df7a49f4a7fad}\label{classmoa_1_1tasks_1_1_evaluate_interleaved_test_then_train_a6c824cba450ea92ec64df7a49f4a7fad}} 
+\index{moa.tasks.EvaluateInterleavedTestThenTrain@{moa.tasks.EvaluateInterleavedTestThenTrain}!timeLimitOption@{timeLimitOption}}
+\index{timeLimitOption@{timeLimitOption}!moa.tasks.EvaluateInterleavedTestThenTrain@{moa.tasks.EvaluateInterleavedTestThenTrain}}
+\doxysubsubsection{\texorpdfstring{timeLimitOption}{timeLimitOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+tasks.\+Evaluate\+Interleaved\+Test\+Then\+Train.\+time\+Limit\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(\textcolor{stringliteral}{"timeLimit"}, \textcolor{charliteral}{'t'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Maximum number of seconds to test/train for (-\/1 = no limit)."}, -\/1,}
+\DoxyCodeLine{            -\/1, Integer.MAX\_VALUE)}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/tasks/Evaluate\+Interleaved\+Test\+Then\+Train.\+java\end{DoxyCompactItemize}

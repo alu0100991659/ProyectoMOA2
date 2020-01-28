@@ -1,0 +1,267 @@
+\hypertarget{classmoa_1_1classifiers_1_1meta_1_1_online_smooth_boost}{}\doxysection{moa.\+classifiers.\+meta.\+Online\+Smooth\+Boost Class Reference}
+\label{classmoa_1_1classifiers_1_1meta_1_1_online_smooth_boost}\index{moa.classifiers.meta.OnlineSmoothBoost@{moa.classifiers.meta.OnlineSmoothBoost}}
+
+
+Inheritance diagram for moa.\+classifiers.\+meta.\+Online\+Smooth\+Boost\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+classifiers.\+meta.\+Online\+Smooth\+Boost\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_online_smooth_boost_a2d09e81855fb7ff69e8e058f6f6ab70f}{get\+Purpose\+String}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_online_smooth_boost_a294596c654fa95ad3d3a10620109bf00}{reset\+Learning\+Impl}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_online_smooth_boost_af514fd6d62ad920df4b627f4ab265f80}{train\+On\+Instance\+Impl}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst)
+\item 
+double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_online_smooth_boost_a95716f04d900f6d510a28f6b46bd86d8}{get\+Votes\+For\+Instance}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst)
+\item 
+boolean \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_online_smooth_boost_aa5f74948d1f009e6342074e4e9a36bed}{is\+Randomizable}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_online_smooth_boost_ad792a7bdb60dce80bbb0f356c3070ce5}{get\+Model\+Description}} (String\+Builder out, int indent)
+\item 
+\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier}{Classifier}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_online_smooth_boost_aa827cb49acde4bd21deabe2a7c27eaea}{get\+Sub\+Classifiers}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} {\bfseries base\+Learner\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries ensemble\+Size\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} {\bfseries gamma\+Option}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_online_smooth_boost_a44069381f535f3d483b1cc6fc51f9153}\label{classmoa_1_1classifiers_1_1meta_1_1_online_smooth_boost_a44069381f535f3d483b1cc6fc51f9153}} 
+double {\bfseries get\+Ensemble\+Member\+Weight} (int i)
+\item 
+\mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_online_smooth_boost_a4688514fea5e292272dfb1df59296574}{get\+Model\+Measurements\+Impl}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_online_smooth_boost_a5ec40dc179a1e5d8a463804621ac0913}\label{classmoa_1_1classifiers_1_1meta_1_1_online_smooth_boost_a5ec40dc179a1e5d8a463804621ac0913}} 
+\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier}{Classifier}}\mbox{[}$\,$\mbox{]} {\bfseries ensemble}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_online_smooth_boost_ad1988236eefba85c6f5228336714cf82}\label{classmoa_1_1classifiers_1_1meta_1_1_online_smooth_boost_ad1988236eefba85c6f5228336714cf82}} 
+double\mbox{[}$\,$\mbox{]} {\bfseries alpha}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_online_smooth_boost_a8fb504bfc4479802a5e5125959e6022a}\label{classmoa_1_1classifiers_1_1meta_1_1_online_smooth_boost_a8fb504bfc4479802a5e5125959e6022a}} 
+double {\bfseries gamma}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_online_smooth_boost_a7daa20b7f99074c760f3882bae44b3e9}\label{classmoa_1_1classifiers_1_1meta_1_1_online_smooth_boost_a7daa20b7f99074c760f3882bae44b3e9}} 
+double {\bfseries theta}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Incremental on-\/line boosting with Theoretical Justifications of Shang-\/\+Tse Chen, Hsuan-\/\+Tien Lin and Chi-\/\+Jen Lu.
+
+See details in\+:~\newline
+ 
+
+Parameters\+:
+
+
+\begin{DoxyItemize}
+\item -\/l \+: Classiﬁer to train 
+\item -\/s \+: The number of models to boost 
+\end{DoxyItemize}
+
+\begin{DoxyAuthor}{Author}
+Richard Kirkby (\href{mailto:rkirkby@cs.waikato.ac.nz}{\texttt{ rkirkby@cs.\+waikato.\+ac.\+nz}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+7 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_online_smooth_boost_ad792a7bdb60dce80bbb0f356c3070ce5}\label{classmoa_1_1classifiers_1_1meta_1_1_online_smooth_boost_ad792a7bdb60dce80bbb0f356c3070ce5}} 
+\index{moa.classifiers.meta.OnlineSmoothBoost@{moa.classifiers.meta.OnlineSmoothBoost}!getModelDescription@{getModelDescription}}
+\index{getModelDescription@{getModelDescription}!moa.classifiers.meta.OnlineSmoothBoost@{moa.classifiers.meta.OnlineSmoothBoost}}
+\doxysubsubsection{\texorpdfstring{getModelDescription()}{getModelDescription()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+meta.\+Online\+Smooth\+Boost.\+get\+Model\+Description (\begin{DoxyParamCaption}\item[{String\+Builder}]{out,  }\item[{int}]{indent }\end{DoxyParamCaption})}
+
+Returns a string representation of the model.
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & the stringbuilder to add the description \\
+\hline
+{\em indent} & the number of characters to indent \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a30e5ff32bc8127dfb7436945776b7523}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_online_smooth_boost_a4688514fea5e292272dfb1df59296574}\label{classmoa_1_1classifiers_1_1meta_1_1_online_smooth_boost_a4688514fea5e292272dfb1df59296574}} 
+\index{moa.classifiers.meta.OnlineSmoothBoost@{moa.classifiers.meta.OnlineSmoothBoost}!getModelMeasurementsImpl@{getModelMeasurementsImpl}}
+\index{getModelMeasurementsImpl@{getModelMeasurementsImpl}!moa.classifiers.meta.OnlineSmoothBoost@{moa.classifiers.meta.OnlineSmoothBoost}}
+\doxysubsubsection{\texorpdfstring{getModelMeasurementsImpl()}{getModelMeasurementsImpl()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}} \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+meta.\+Online\+Smooth\+Boost.\+get\+Model\+Measurements\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Gets the current measurements of this classifier.~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden.
+
+\begin{DoxyReturn}{Returns}
+an array of measurements to be used in evaluation tasks 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_ac2bebede21c9d2d8cd11d95a7e20e529}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_online_smooth_boost_a2d09e81855fb7ff69e8e058f6f6ab70f}\label{classmoa_1_1classifiers_1_1meta_1_1_online_smooth_boost_a2d09e81855fb7ff69e8e058f6f6ab70f}} 
+\index{moa.classifiers.meta.OnlineSmoothBoost@{moa.classifiers.meta.OnlineSmoothBoost}!getPurposeString@{getPurposeString}}
+\index{getPurposeString@{getPurposeString}!moa.classifiers.meta.OnlineSmoothBoost@{moa.classifiers.meta.OnlineSmoothBoost}}
+\doxysubsubsection{\texorpdfstring{getPurposeString()}{getPurposeString()}}
+{\footnotesize\ttfamily String moa.\+classifiers.\+meta.\+Online\+Smooth\+Boost.\+get\+Purpose\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Options to handle Dictionary with option texts and objects 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a3fc6ae11234b88e51941a77ddb879d8b}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_online_smooth_boost_aa827cb49acde4bd21deabe2a7c27eaea}\label{classmoa_1_1classifiers_1_1meta_1_1_online_smooth_boost_aa827cb49acde4bd21deabe2a7c27eaea}} 
+\index{moa.classifiers.meta.OnlineSmoothBoost@{moa.classifiers.meta.OnlineSmoothBoost}!getSubClassifiers@{getSubClassifiers}}
+\index{getSubClassifiers@{getSubClassifiers}!moa.classifiers.meta.OnlineSmoothBoost@{moa.classifiers.meta.OnlineSmoothBoost}}
+\doxysubsubsection{\texorpdfstring{getSubClassifiers()}{getSubClassifiers()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier}{Classifier}} \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+meta.\+Online\+Smooth\+Boost.\+get\+Sub\+Classifiers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the classifiers of this ensemble. Returns null if this learner is a single learner.
+
+\begin{DoxyReturn}{Returns}
+an array of the learners of the ensemble 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a5d7c5aadeaf3465785aa6bb2efb615f2}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_online_smooth_boost_a95716f04d900f6d510a28f6b46bd86d8}\label{classmoa_1_1classifiers_1_1meta_1_1_online_smooth_boost_a95716f04d900f6d510a28f6b46bd86d8}} 
+\index{moa.classifiers.meta.OnlineSmoothBoost@{moa.classifiers.meta.OnlineSmoothBoost}!getVotesForInstance@{getVotesForInstance}}
+\index{getVotesForInstance@{getVotesForInstance}!moa.classifiers.meta.OnlineSmoothBoost@{moa.classifiers.meta.OnlineSmoothBoost}}
+\doxysubsubsection{\texorpdfstring{getVotesForInstance()}{getVotesForInstance()}}
+{\footnotesize\ttfamily double \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+meta.\+Online\+Smooth\+Boost.\+get\+Votes\+For\+Instance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{inst }\end{DoxyParamCaption})}
+
+Predicts the class memberships for a given instance. If an instance is unclassified, the returned array elements must be all zero.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & the instance to be classified \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an array containing the estimated membership probabilities of the test instance in each class 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a0e3589c4fa6f088d82d64514afd9513c}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_online_smooth_boost_aa5f74948d1f009e6342074e4e9a36bed}\label{classmoa_1_1classifiers_1_1meta_1_1_online_smooth_boost_aa5f74948d1f009e6342074e4e9a36bed}} 
+\index{moa.classifiers.meta.OnlineSmoothBoost@{moa.classifiers.meta.OnlineSmoothBoost}!isRandomizable@{isRandomizable}}
+\index{isRandomizable@{isRandomizable}!moa.classifiers.meta.OnlineSmoothBoost@{moa.classifiers.meta.OnlineSmoothBoost}}
+\doxysubsubsection{\texorpdfstring{isRandomizable()}{isRandomizable()}}
+{\footnotesize\ttfamily boolean moa.\+classifiers.\+meta.\+Online\+Smooth\+Boost.\+is\+Randomizable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets whether this learner needs a random seed. Examples of methods that needs a random seed are bagging and boosting.
+
+\begin{DoxyReturn}{Returns}
+true if the learner needs a random seed. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1learners_1_1_learner_a2f1ff9007b5eb5f53801f474b4d42a61}{moa.\+learners.\+Learner$<$ E extends Example $>$}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_online_smooth_boost_a294596c654fa95ad3d3a10620109bf00}\label{classmoa_1_1classifiers_1_1meta_1_1_online_smooth_boost_a294596c654fa95ad3d3a10620109bf00}} 
+\index{moa.classifiers.meta.OnlineSmoothBoost@{moa.classifiers.meta.OnlineSmoothBoost}!resetLearningImpl@{resetLearningImpl}}
+\index{resetLearningImpl@{resetLearningImpl}!moa.classifiers.meta.OnlineSmoothBoost@{moa.classifiers.meta.OnlineSmoothBoost}}
+\doxysubsubsection{\texorpdfstring{resetLearningImpl()}{resetLearningImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+meta.\+Online\+Smooth\+Boost.\+reset\+Learning\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Resets this classifier. It must be similar to starting a new classifier from scratch. ~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden. 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a099ffcf2417abb919d10d697c0648f29}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_online_smooth_boost_af514fd6d62ad920df4b627f4ab265f80}\label{classmoa_1_1classifiers_1_1meta_1_1_online_smooth_boost_af514fd6d62ad920df4b627f4ab265f80}} 
+\index{moa.classifiers.meta.OnlineSmoothBoost@{moa.classifiers.meta.OnlineSmoothBoost}!trainOnInstanceImpl@{trainOnInstanceImpl}}
+\index{trainOnInstanceImpl@{trainOnInstanceImpl}!moa.classifiers.meta.OnlineSmoothBoost@{moa.classifiers.meta.OnlineSmoothBoost}}
+\doxysubsubsection{\texorpdfstring{trainOnInstanceImpl()}{trainOnInstanceImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+meta.\+Online\+Smooth\+Boost.\+train\+On\+Instance\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{inst }\end{DoxyParamCaption})}
+
+Trains this classifier incrementally using the given instance.~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & the instance to be used for training \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_aceb24d2ddeab386f2ecead6e3c0d3543}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_online_smooth_boost_a3f14f8b168ed048ad1a00cfffb0ea0b3}\label{classmoa_1_1classifiers_1_1meta_1_1_online_smooth_boost_a3f14f8b168ed048ad1a00cfffb0ea0b3}} 
+\index{moa.classifiers.meta.OnlineSmoothBoost@{moa.classifiers.meta.OnlineSmoothBoost}!baseLearnerOption@{baseLearnerOption}}
+\index{baseLearnerOption@{baseLearnerOption}!moa.classifiers.meta.OnlineSmoothBoost@{moa.classifiers.meta.OnlineSmoothBoost}}
+\doxysubsubsection{\texorpdfstring{baseLearnerOption}{baseLearnerOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} moa.\+classifiers.\+meta.\+Online\+Smooth\+Boost.\+base\+Learner\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} ClassOption(\textcolor{stringliteral}{"baseLearner"}, \textcolor{charliteral}{'l'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Classifier to train."}, Classifier.class, \textcolor{stringliteral}{"trees.HoeffdingTree"})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_online_smooth_boost_ae2f446e10d4e07f330d4e5d4c02c78ec}\label{classmoa_1_1classifiers_1_1meta_1_1_online_smooth_boost_ae2f446e10d4e07f330d4e5d4c02c78ec}} 
+\index{moa.classifiers.meta.OnlineSmoothBoost@{moa.classifiers.meta.OnlineSmoothBoost}!ensembleSizeOption@{ensembleSizeOption}}
+\index{ensembleSizeOption@{ensembleSizeOption}!moa.classifiers.meta.OnlineSmoothBoost@{moa.classifiers.meta.OnlineSmoothBoost}}
+\doxysubsubsection{\texorpdfstring{ensembleSizeOption}{ensembleSizeOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+classifiers.\+meta.\+Online\+Smooth\+Boost.\+ensemble\+Size\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(\textcolor{stringliteral}{"ensembleSize"}, \textcolor{charliteral}{'s'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"The number of models to boost."}, 10, 1, Integer.MAX\_VALUE)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_online_smooth_boost_af5204739ce82b271de758167cf3b7a62}\label{classmoa_1_1classifiers_1_1meta_1_1_online_smooth_boost_af5204739ce82b271de758167cf3b7a62}} 
+\index{moa.classifiers.meta.OnlineSmoothBoost@{moa.classifiers.meta.OnlineSmoothBoost}!gammaOption@{gammaOption}}
+\index{gammaOption@{gammaOption}!moa.classifiers.meta.OnlineSmoothBoost@{moa.classifiers.meta.OnlineSmoothBoost}}
+\doxysubsubsection{\texorpdfstring{gammaOption}{gammaOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} moa.\+classifiers.\+meta.\+Online\+Smooth\+Boost.\+gamma\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FloatOption(\textcolor{stringliteral}{"gamma"},}
+\DoxyCodeLine{            \textcolor{charliteral}{'g'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"The value of the gamma parameter."},}
+\DoxyCodeLine{            0.1, 0.0, 1.0)}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/classifiers/meta/Online\+Smooth\+Boost.\+java\end{DoxyCompactItemize}

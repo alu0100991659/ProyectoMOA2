@@ -1,0 +1,265 @@
+\hypertarget{classmoa_1_1classifiers_1_1meta_1_1_oza_boost}{}\doxysection{moa.\+classifiers.\+meta.\+Oza\+Boost Class Reference}
+\label{classmoa_1_1classifiers_1_1meta_1_1_oza_boost}\index{moa.classifiers.meta.OzaBoost@{moa.classifiers.meta.OzaBoost}}
+
+
+Inheritance diagram for moa.\+classifiers.\+meta.\+Oza\+Boost\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+classifiers.\+meta.\+Oza\+Boost\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_oza_boost_a3eed8d5c0ef08bafb3d62dd26ad29865}{get\+Purpose\+String}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_oza_boost_a5ea640e3feeb1f991e173a86d5178b2b}{reset\+Learning\+Impl}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_oza_boost_a9e8a0fd13afb9ac290cccbc60ca465ee}{train\+On\+Instance\+Impl}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst)
+\item 
+double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_oza_boost_a3ad325dd3d8d927a4efbb87cf4196c39}{get\+Votes\+For\+Instance}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst)
+\item 
+boolean \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_oza_boost_a52ecd1fcf9cf7a626db8d12b4f1b2a8c}{is\+Randomizable}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_oza_boost_a30839557329ab591de0c87a9023c151f}{get\+Model\+Description}} (String\+Builder out, int indent)
+\item 
+\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier}{Classifier}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_oza_boost_a3a8bf1f675ab12180c17d10b5d574511}{get\+Sub\+Classifiers}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} {\bfseries base\+Learner\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries ensemble\+Size\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_flag_option}{Flag\+Option}} {\bfseries pure\+Boost\+Option}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_oza_boost_a0efefbb7076ae3fe6ae8d6fd8d47a14e}\label{classmoa_1_1classifiers_1_1meta_1_1_oza_boost_a0efefbb7076ae3fe6ae8d6fd8d47a14e}} 
+double {\bfseries get\+Ensemble\+Member\+Weight} (int i)
+\item 
+\mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_oza_boost_a06e121e950a9a98b52cc2de26db21aac}{get\+Model\+Measurements\+Impl}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_oza_boost_aee50bbda850097fde860288c54ddfc77}\label{classmoa_1_1classifiers_1_1meta_1_1_oza_boost_aee50bbda850097fde860288c54ddfc77}} 
+\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier}{Classifier}}\mbox{[}$\,$\mbox{]} {\bfseries ensemble}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_oza_boost_a3b4d365c62cf8035be568a2229f74352}\label{classmoa_1_1classifiers_1_1meta_1_1_oza_boost_a3b4d365c62cf8035be568a2229f74352}} 
+double\mbox{[}$\,$\mbox{]} {\bfseries scms}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_oza_boost_a0b91211af404f81074edaca5e6985146}\label{classmoa_1_1classifiers_1_1meta_1_1_oza_boost_a0b91211af404f81074edaca5e6985146}} 
+double\mbox{[}$\,$\mbox{]} {\bfseries swms}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Incremental on-\/line boosting of Oza and Russell.
+
+See details in\+:~\newline
+ N. Oza and S. Russell. Online bagging and boosting. In Artiﬁcial Intelligence and Statistics 2001, pages 105–112. Morgan Kaufmann, 2001.
+
+For the boosting method, Oza and Russell note that the weighting procedure of Ada\+Boost actually divides the total example weight into two halves – half of the weight is assigned to the correctly classiﬁed examples, and the other half goes to the misclassiﬁed examples. They use the Poisson distribution for deciding the random probability that an example is used for training, only this time the parameter changes according to the boosting weight of the example as it is passed through each model in sequence.
+
+Parameters\+:
+
+
+\begin{DoxyItemize}
+\item -\/l \+: Classiﬁer to train 
+\item -\/s \+: The number of models to boost 
+\item -\/p \+: Boost with weights only; no poisson 
+\end{DoxyItemize}
+
+\begin{DoxyAuthor}{Author}
+Richard Kirkby (\href{mailto:rkirkby@cs.waikato.ac.nz}{\texttt{ rkirkby@cs.\+waikato.\+ac.\+nz}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+7 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_oza_boost_a30839557329ab591de0c87a9023c151f}\label{classmoa_1_1classifiers_1_1meta_1_1_oza_boost_a30839557329ab591de0c87a9023c151f}} 
+\index{moa.classifiers.meta.OzaBoost@{moa.classifiers.meta.OzaBoost}!getModelDescription@{getModelDescription}}
+\index{getModelDescription@{getModelDescription}!moa.classifiers.meta.OzaBoost@{moa.classifiers.meta.OzaBoost}}
+\doxysubsubsection{\texorpdfstring{getModelDescription()}{getModelDescription()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+meta.\+Oza\+Boost.\+get\+Model\+Description (\begin{DoxyParamCaption}\item[{String\+Builder}]{out,  }\item[{int}]{indent }\end{DoxyParamCaption})}
+
+Returns a string representation of the model.
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & the stringbuilder to add the description \\
+\hline
+{\em indent} & the number of characters to indent \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a30e5ff32bc8127dfb7436945776b7523}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_oza_boost_a06e121e950a9a98b52cc2de26db21aac}\label{classmoa_1_1classifiers_1_1meta_1_1_oza_boost_a06e121e950a9a98b52cc2de26db21aac}} 
+\index{moa.classifiers.meta.OzaBoost@{moa.classifiers.meta.OzaBoost}!getModelMeasurementsImpl@{getModelMeasurementsImpl}}
+\index{getModelMeasurementsImpl@{getModelMeasurementsImpl}!moa.classifiers.meta.OzaBoost@{moa.classifiers.meta.OzaBoost}}
+\doxysubsubsection{\texorpdfstring{getModelMeasurementsImpl()}{getModelMeasurementsImpl()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}} \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+meta.\+Oza\+Boost.\+get\+Model\+Measurements\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Gets the current measurements of this classifier.~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden.
+
+\begin{DoxyReturn}{Returns}
+an array of measurements to be used in evaluation tasks 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_ac2bebede21c9d2d8cd11d95a7e20e529}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_oza_boost_a3eed8d5c0ef08bafb3d62dd26ad29865}\label{classmoa_1_1classifiers_1_1meta_1_1_oza_boost_a3eed8d5c0ef08bafb3d62dd26ad29865}} 
+\index{moa.classifiers.meta.OzaBoost@{moa.classifiers.meta.OzaBoost}!getPurposeString@{getPurposeString}}
+\index{getPurposeString@{getPurposeString}!moa.classifiers.meta.OzaBoost@{moa.classifiers.meta.OzaBoost}}
+\doxysubsubsection{\texorpdfstring{getPurposeString()}{getPurposeString()}}
+{\footnotesize\ttfamily String moa.\+classifiers.\+meta.\+Oza\+Boost.\+get\+Purpose\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Options to handle Dictionary with option texts and objects 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a3fc6ae11234b88e51941a77ddb879d8b}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_oza_boost_a3a8bf1f675ab12180c17d10b5d574511}\label{classmoa_1_1classifiers_1_1meta_1_1_oza_boost_a3a8bf1f675ab12180c17d10b5d574511}} 
+\index{moa.classifiers.meta.OzaBoost@{moa.classifiers.meta.OzaBoost}!getSubClassifiers@{getSubClassifiers}}
+\index{getSubClassifiers@{getSubClassifiers}!moa.classifiers.meta.OzaBoost@{moa.classifiers.meta.OzaBoost}}
+\doxysubsubsection{\texorpdfstring{getSubClassifiers()}{getSubClassifiers()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier}{Classifier}} \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+meta.\+Oza\+Boost.\+get\+Sub\+Classifiers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the classifiers of this ensemble. Returns null if this learner is a single learner.
+
+\begin{DoxyReturn}{Returns}
+an array of the learners of the ensemble 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a5d7c5aadeaf3465785aa6bb2efb615f2}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_oza_boost_a3ad325dd3d8d927a4efbb87cf4196c39}\label{classmoa_1_1classifiers_1_1meta_1_1_oza_boost_a3ad325dd3d8d927a4efbb87cf4196c39}} 
+\index{moa.classifiers.meta.OzaBoost@{moa.classifiers.meta.OzaBoost}!getVotesForInstance@{getVotesForInstance}}
+\index{getVotesForInstance@{getVotesForInstance}!moa.classifiers.meta.OzaBoost@{moa.classifiers.meta.OzaBoost}}
+\doxysubsubsection{\texorpdfstring{getVotesForInstance()}{getVotesForInstance()}}
+{\footnotesize\ttfamily double \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+meta.\+Oza\+Boost.\+get\+Votes\+For\+Instance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{inst }\end{DoxyParamCaption})}
+
+Predicts the class memberships for a given instance. If an instance is unclassified, the returned array elements must be all zero.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & the instance to be classified \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an array containing the estimated membership probabilities of the test instance in each class 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a0e3589c4fa6f088d82d64514afd9513c}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_oza_boost_a52ecd1fcf9cf7a626db8d12b4f1b2a8c}\label{classmoa_1_1classifiers_1_1meta_1_1_oza_boost_a52ecd1fcf9cf7a626db8d12b4f1b2a8c}} 
+\index{moa.classifiers.meta.OzaBoost@{moa.classifiers.meta.OzaBoost}!isRandomizable@{isRandomizable}}
+\index{isRandomizable@{isRandomizable}!moa.classifiers.meta.OzaBoost@{moa.classifiers.meta.OzaBoost}}
+\doxysubsubsection{\texorpdfstring{isRandomizable()}{isRandomizable()}}
+{\footnotesize\ttfamily boolean moa.\+classifiers.\+meta.\+Oza\+Boost.\+is\+Randomizable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets whether this learner needs a random seed. Examples of methods that needs a random seed are bagging and boosting.
+
+\begin{DoxyReturn}{Returns}
+true if the learner needs a random seed. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1learners_1_1_learner_a2f1ff9007b5eb5f53801f474b4d42a61}{moa.\+learners.\+Learner$<$ E extends Example $>$}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_oza_boost_a5ea640e3feeb1f991e173a86d5178b2b}\label{classmoa_1_1classifiers_1_1meta_1_1_oza_boost_a5ea640e3feeb1f991e173a86d5178b2b}} 
+\index{moa.classifiers.meta.OzaBoost@{moa.classifiers.meta.OzaBoost}!resetLearningImpl@{resetLearningImpl}}
+\index{resetLearningImpl@{resetLearningImpl}!moa.classifiers.meta.OzaBoost@{moa.classifiers.meta.OzaBoost}}
+\doxysubsubsection{\texorpdfstring{resetLearningImpl()}{resetLearningImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+meta.\+Oza\+Boost.\+reset\+Learning\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Resets this classifier. It must be similar to starting a new classifier from scratch. ~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden. 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a099ffcf2417abb919d10d697c0648f29}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_oza_boost_a9e8a0fd13afb9ac290cccbc60ca465ee}\label{classmoa_1_1classifiers_1_1meta_1_1_oza_boost_a9e8a0fd13afb9ac290cccbc60ca465ee}} 
+\index{moa.classifiers.meta.OzaBoost@{moa.classifiers.meta.OzaBoost}!trainOnInstanceImpl@{trainOnInstanceImpl}}
+\index{trainOnInstanceImpl@{trainOnInstanceImpl}!moa.classifiers.meta.OzaBoost@{moa.classifiers.meta.OzaBoost}}
+\doxysubsubsection{\texorpdfstring{trainOnInstanceImpl()}{trainOnInstanceImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+meta.\+Oza\+Boost.\+train\+On\+Instance\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{inst }\end{DoxyParamCaption})}
+
+Trains this classifier incrementally using the given instance.~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & the instance to be used for training \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_aceb24d2ddeab386f2ecead6e3c0d3543}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_oza_boost_a5126c1638eb40cf6f0bfedfa4eecf2ac}\label{classmoa_1_1classifiers_1_1meta_1_1_oza_boost_a5126c1638eb40cf6f0bfedfa4eecf2ac}} 
+\index{moa.classifiers.meta.OzaBoost@{moa.classifiers.meta.OzaBoost}!baseLearnerOption@{baseLearnerOption}}
+\index{baseLearnerOption@{baseLearnerOption}!moa.classifiers.meta.OzaBoost@{moa.classifiers.meta.OzaBoost}}
+\doxysubsubsection{\texorpdfstring{baseLearnerOption}{baseLearnerOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} moa.\+classifiers.\+meta.\+Oza\+Boost.\+base\+Learner\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} ClassOption(\textcolor{stringliteral}{"baseLearner"}, \textcolor{charliteral}{'l'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Classifier to train."}, Classifier.class, \textcolor{stringliteral}{"trees.HoeffdingTree"})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_oza_boost_a64f4fbe137c5afd7e9807a3d32e4b927}\label{classmoa_1_1classifiers_1_1meta_1_1_oza_boost_a64f4fbe137c5afd7e9807a3d32e4b927}} 
+\index{moa.classifiers.meta.OzaBoost@{moa.classifiers.meta.OzaBoost}!ensembleSizeOption@{ensembleSizeOption}}
+\index{ensembleSizeOption@{ensembleSizeOption}!moa.classifiers.meta.OzaBoost@{moa.classifiers.meta.OzaBoost}}
+\doxysubsubsection{\texorpdfstring{ensembleSizeOption}{ensembleSizeOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+classifiers.\+meta.\+Oza\+Boost.\+ensemble\+Size\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(\textcolor{stringliteral}{"ensembleSize"}, \textcolor{charliteral}{'s'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"The number of models to boost."}, 10, 1, Integer.MAX\_VALUE)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_oza_boost_a870ec455103ee1a93069f3d07ebcc037}\label{classmoa_1_1classifiers_1_1meta_1_1_oza_boost_a870ec455103ee1a93069f3d07ebcc037}} 
+\index{moa.classifiers.meta.OzaBoost@{moa.classifiers.meta.OzaBoost}!pureBoostOption@{pureBoostOption}}
+\index{pureBoostOption@{pureBoostOption}!moa.classifiers.meta.OzaBoost@{moa.classifiers.meta.OzaBoost}}
+\doxysubsubsection{\texorpdfstring{pureBoostOption}{pureBoostOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_flag_option}{Flag\+Option}} moa.\+classifiers.\+meta.\+Oza\+Boost.\+pure\+Boost\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FlagOption(\textcolor{stringliteral}{"pureBoost"}, \textcolor{charliteral}{'p'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Boost with weights only; no poisson."})}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/classifiers/meta/Oza\+Boost.\+java\end{DoxyCompactItemize}

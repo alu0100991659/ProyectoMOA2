@@ -1,0 +1,80 @@
+\hypertarget{classmoa_1_1gui_1_1_class_option_selection_panel}{}\doxysection{moa.\+gui.\+Class\+Option\+Selection\+Panel Class Reference}
+\label{classmoa_1_1gui_1_1_class_option_selection_panel}\index{moa.gui.ClassOptionSelectionPanel@{moa.gui.ClassOptionSelectionPanel}}
+
+
+Inheritance diagram for moa.\+gui.\+Class\+Option\+Selection\+Panel\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+gui.\+Class\+Option\+Selection\+Panel\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1gui_1_1_class_option_selection_panel_a2a4b8441ab88838697463d39b36fba2f}\label{classmoa_1_1gui_1_1_class_option_selection_panel_a2a4b8441ab88838697463d39b36fba2f}} 
+{\bfseries Class\+Option\+Selection\+Panel} (Class$<$?$>$ required\+Type, String initial\+C\+L\+I\+String, String null\+String)
+\item 
+\mbox{\Hypertarget{classmoa_1_1gui_1_1_class_option_selection_panel_a6d44d73c26c6b511089533bde1f88c64}\label{classmoa_1_1gui_1_1_class_option_selection_panel_a6d44d73c26c6b511089533bde1f88c64}} 
+Class$<$?$>$\mbox{[}$\,$\mbox{]} {\bfseries find\+Suitable\+Classes} (Class$<$?$>$ required\+Type)
+\item 
+\mbox{\Hypertarget{classmoa_1_1gui_1_1_class_option_selection_panel_a3414315eb0d22c3569772633d5f1dc3d}\label{classmoa_1_1gui_1_1_class_option_selection_panel_a3414315eb0d22c3569772633d5f1dc3d}} 
+String {\bfseries get\+Chosen\+Object\+C\+L\+I\+String} (Class$<$?$>$ required\+Type)
+\item 
+\mbox{\Hypertarget{classmoa_1_1gui_1_1_class_option_selection_panel_ab719294dd102789b200584d1148f10b6}\label{classmoa_1_1gui_1_1_class_option_selection_panel_ab719294dd102789b200584d1148f10b6}} 
+void {\bfseries class\+Choice\+Changed} (Object chosen)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classmoa_1_1gui_1_1_class_option_selection_panel_a575d9101ac75695a2991766a3e788b34}{set\+Required\+Capabilities}} (\mbox{\hyperlink{classmoa_1_1capabilities_1_1_capability_requirement}{Capability\+Requirement}} requirements)
+\item 
+\mbox{\Hypertarget{classmoa_1_1gui_1_1_class_option_selection_panel_a746b0c5c26f3a627a792a3a92b205dd5}\label{classmoa_1_1gui_1_1_class_option_selection_panel_a746b0c5c26f3a627a792a3a92b205dd5}} 
+static String {\bfseries show\+Select\+Class\+Dialog} (Component parent, String title, Class$<$?$>$ required\+Type, String initial\+C\+L\+I\+String, String null\+String)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1gui_1_1_class_option_selection_panel_a79da9aaa04b514029121bbe02c49bc12}\label{classmoa_1_1gui_1_1_class_option_selection_panel_a79da9aaa04b514029121bbe02c49bc12}} 
+J\+Combo\+Box {\bfseries class\+Choice\+Box}
+\item 
+\mbox{\Hypertarget{classmoa_1_1gui_1_1_class_option_selection_panel_a49291a2a69838eac811d67bb97d5d15f}\label{classmoa_1_1gui_1_1_class_option_selection_panel_a49291a2a69838eac811d67bb97d5d15f}} 
+J\+Component {\bfseries chosen\+Object\+Editor}
+\item 
+\mbox{\Hypertarget{classmoa_1_1gui_1_1_class_option_selection_panel_a8b96c587983f8bc6f60b366529e6aff3}\label{classmoa_1_1gui_1_1_class_option_selection_panel_a8b96c587983f8bc6f60b366529e6aff3}} 
+Object {\bfseries chosen\+Object}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Creates a panel that displays the classes available, letting the user select a class.
+
+\begin{DoxyAuthor}{Author}
+Richard Kirkby (\href{mailto:rkirkby@cs.waikato.ac.nz}{\texttt{ rkirkby@cs.\+waikato.\+ac.\+nz}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+7 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1gui_1_1_class_option_selection_panel_a575d9101ac75695a2991766a3e788b34}\label{classmoa_1_1gui_1_1_class_option_selection_panel_a575d9101ac75695a2991766a3e788b34}} 
+\index{moa.gui.ClassOptionSelectionPanel@{moa.gui.ClassOptionSelectionPanel}!setRequiredCapabilities@{setRequiredCapabilities}}
+\index{setRequiredCapabilities@{setRequiredCapabilities}!moa.gui.ClassOptionSelectionPanel@{moa.gui.ClassOptionSelectionPanel}}
+\doxysubsubsection{\texorpdfstring{setRequiredCapabilities()}{setRequiredCapabilities()}}
+{\footnotesize\ttfamily static void moa.\+gui.\+Class\+Option\+Selection\+Panel.\+set\+Required\+Capabilities (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmoa_1_1capabilities_1_1_capability_requirement}{Capability\+Requirement}}}]{requirements }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Sets the capability requirement of listed classes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em requirements} & The capability requirements. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/gui/Class\+Option\+Selection\+Panel.\+java\end{DoxyCompactItemize}

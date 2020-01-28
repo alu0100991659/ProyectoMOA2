@@ -1,0 +1,150 @@
+\hypertarget{classmoa_1_1evaluation_1_1_c_m_m___g_t_analysis}{}\doxysection{moa.\+evaluation.\+C\+M\+M\+\_\+\+G\+T\+Analysis Class Reference}
+\label{classmoa_1_1evaluation_1_1_c_m_m___g_t_analysis}\index{moa.evaluation.CMM\_GTAnalysis@{moa.evaluation.CMM\_GTAnalysis}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classmoa_1_1evaluation_1_1_c_m_m___g_t_analysis_1_1_c_m_m_point}{C\+M\+M\+Point}}
+\item 
+class \mbox{\hyperlink{classmoa_1_1evaluation_1_1_c_m_m___g_t_analysis_1_1_g_t_cluster}{G\+T\+Cluster}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1evaluation_1_1_c_m_m___g_t_analysis_af80b5acd2a6d1578a4d3bb13d3e65140}{C\+M\+M\+\_\+\+G\+T\+Analysis}} (\mbox{\hyperlink{classmoa_1_1cluster_1_1_clustering}{Clustering}} true\+Clustering, Array\+List$<$ \mbox{\hyperlink{classmoa_1_1gui_1_1visualization_1_1_data_point}{Data\+Point}} $>$ points, boolean enable\+Class\+Merge)
+\item 
+double \mbox{\hyperlink{classmoa_1_1evaluation_1_1_c_m_m___g_t_analysis_a1cd4b963a4b6b34f7f7eb5ab5bb5877e}{get\+Class\+Separability}} ()
+\item 
+double \mbox{\hyperlink{classmoa_1_1evaluation_1_1_c_m_m___g_t_analysis_a5f44be6f2df9384d281d5ac9fb741bb9}{get\+Noise\+Separability}} ()
+\item 
+double \mbox{\hyperlink{classmoa_1_1evaluation_1_1_c_m_m___g_t_analysis_ac62e2f616277de082896f6b0708451b9}{get\+Model\+Quality}} ()
+\item 
+String \mbox{\hyperlink{classmoa_1_1evaluation_1_1_c_m_m___g_t_analysis_aa64e316da13b9a001554536d4d72d1da}{get\+Parameter\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{classmoa_1_1evaluation_1_1_c_m_m___g_t_analysis_a794b653c2c7b7335127f6ca7720ec5ab}{get\+Connection\+Value}} (\mbox{\hyperlink{classmoa_1_1evaluation_1_1_c_m_m___g_t_analysis_1_1_c_m_m_point}{C\+M\+M\+Point}} cmmp, int cluster\+ID)
+\item 
+\mbox{\hyperlink{classmoa_1_1evaluation_1_1_c_m_m___g_t_analysis_1_1_c_m_m_point}{C\+M\+M\+Point}} \mbox{\hyperlink{classmoa_1_1evaluation_1_1_c_m_m___g_t_analysis_ab51995be418ac5ce4804c20c03ccfdec}{get\+Point}} (int index)
+\item 
+\mbox{\hyperlink{classmoa_1_1evaluation_1_1_c_m_m___g_t_analysis_1_1_g_t_cluster}{G\+T\+Cluster}} \mbox{\hyperlink{classmoa_1_1evaluation_1_1_c_m_m___g_t_analysis_a2be0eba421cfefb98188c587657d17ac}{get\+G\+T0\+Cluster}} (int index)
+\item 
+int \mbox{\hyperlink{classmoa_1_1evaluation_1_1_c_m_m___g_t_analysis_a46eb1352fe6d1ce88523316e5545ae0d}{get\+Number\+Of\+G\+T0\+Classes}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmoa_1_1evaluation_1_1_c_m_m___g_t_analysis_af80b5acd2a6d1578a4d3bb13d3e65140}\label{classmoa_1_1evaluation_1_1_c_m_m___g_t_analysis_af80b5acd2a6d1578a4d3bb13d3e65140}} 
+\index{moa.evaluation.CMM\_GTAnalysis@{moa.evaluation.CMM\_GTAnalysis}!CMM\_GTAnalysis@{CMM\_GTAnalysis}}
+\index{CMM\_GTAnalysis@{CMM\_GTAnalysis}!moa.evaluation.CMM\_GTAnalysis@{moa.evaluation.CMM\_GTAnalysis}}
+\doxysubsubsection{\texorpdfstring{CMM\_GTAnalysis()}{CMM\_GTAnalysis()}}
+{\footnotesize\ttfamily moa.\+evaluation.\+C\+M\+M\+\_\+\+G\+T\+Analysis.\+C\+M\+M\+\_\+\+G\+T\+Analysis (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmoa_1_1cluster_1_1_clustering}{Clustering}}}]{true\+Clustering,  }\item[{Array\+List$<$ \mbox{\hyperlink{classmoa_1_1gui_1_1visualization_1_1_data_point}{Data\+Point}} $>$}]{points,  }\item[{boolean}]{enable\+Class\+Merge }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em true\+Clustering} & the ground truth clustering \\
+\hline
+{\em points} & data points \\
+\hline
+{\em enable\+Class\+Merge} & allow class merging (should be set to true on default) \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1evaluation_1_1_c_m_m___g_t_analysis_a1cd4b963a4b6b34f7f7eb5ab5bb5877e}\label{classmoa_1_1evaluation_1_1_c_m_m___g_t_analysis_a1cd4b963a4b6b34f7f7eb5ab5bb5877e}} 
+\index{moa.evaluation.CMM\_GTAnalysis@{moa.evaluation.CMM\_GTAnalysis}!getClassSeparability@{getClassSeparability}}
+\index{getClassSeparability@{getClassSeparability}!moa.evaluation.CMM\_GTAnalysis@{moa.evaluation.CMM\_GTAnalysis}}
+\doxysubsubsection{\texorpdfstring{getClassSeparability()}{getClassSeparability()}}
+{\footnotesize\ttfamily double moa.\+evaluation.\+C\+M\+M\+\_\+\+G\+T\+Analysis.\+get\+Class\+Separability (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Calculates how well the original clusters are separable. Small values indicate bad separability, values close to 1 indicate good separability \begin{DoxyReturn}{Returns}
+index of seperability 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmoa_1_1evaluation_1_1_c_m_m___g_t_analysis_a794b653c2c7b7335127f6ca7720ec5ab}\label{classmoa_1_1evaluation_1_1_c_m_m___g_t_analysis_a794b653c2c7b7335127f6ca7720ec5ab}} 
+\index{moa.evaluation.CMM\_GTAnalysis@{moa.evaluation.CMM\_GTAnalysis}!getConnectionValue@{getConnectionValue}}
+\index{getConnectionValue@{getConnectionValue}!moa.evaluation.CMM\_GTAnalysis@{moa.evaluation.CMM\_GTAnalysis}}
+\doxysubsubsection{\texorpdfstring{getConnectionValue()}{getConnectionValue()}}
+{\footnotesize\ttfamily double moa.\+evaluation.\+C\+M\+M\+\_\+\+G\+T\+Analysis.\+get\+Connection\+Value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmoa_1_1evaluation_1_1_c_m_m___g_t_analysis_1_1_c_m_m_point}{C\+M\+M\+Point}}}]{cmmp,  }\item[{int}]{cluster\+ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Calculate the connection of a point to a cluster
+
+
+\begin{DoxyParams}{Parameters}
+{\em cmmp} & the point to calculate the connection for \\
+\hline
+{\em cluster\+ID} & the corresponding cluster \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the connection value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmoa_1_1evaluation_1_1_c_m_m___g_t_analysis_a2be0eba421cfefb98188c587657d17ac}\label{classmoa_1_1evaluation_1_1_c_m_m___g_t_analysis_a2be0eba421cfefb98188c587657d17ac}} 
+\index{moa.evaluation.CMM\_GTAnalysis@{moa.evaluation.CMM\_GTAnalysis}!getGT0Cluster@{getGT0Cluster}}
+\index{getGT0Cluster@{getGT0Cluster}!moa.evaluation.CMM\_GTAnalysis@{moa.evaluation.CMM\_GTAnalysis}}
+\doxysubsubsection{\texorpdfstring{getGT0Cluster()}{getGT0Cluster()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1evaluation_1_1_c_m_m___g_t_analysis_1_1_g_t_cluster}{G\+T\+Cluster}} moa.\+evaluation.\+C\+M\+M\+\_\+\+G\+T\+Analysis.\+get\+G\+T0\+Cluster (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Return cluster 
+\begin{DoxyParams}{Parameters}
+{\em index} & of the cluster to return \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+cluster 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmoa_1_1evaluation_1_1_c_m_m___g_t_analysis_ac62e2f616277de082896f6b0708451b9}\label{classmoa_1_1evaluation_1_1_c_m_m___g_t_analysis_ac62e2f616277de082896f6b0708451b9}} 
+\index{moa.evaluation.CMM\_GTAnalysis@{moa.evaluation.CMM\_GTAnalysis}!getModelQuality@{getModelQuality}}
+\index{getModelQuality@{getModelQuality}!moa.evaluation.CMM\_GTAnalysis@{moa.evaluation.CMM\_GTAnalysis}}
+\doxysubsubsection{\texorpdfstring{getModelQuality()}{getModelQuality()}}
+{\footnotesize\ttfamily double moa.\+evaluation.\+C\+M\+M\+\_\+\+G\+T\+Analysis.\+get\+Model\+Quality (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Calculates the relative number of errors being caused by the underlying cluster model \begin{DoxyReturn}{Returns}
+quality of the model 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmoa_1_1evaluation_1_1_c_m_m___g_t_analysis_a5f44be6f2df9384d281d5ac9fb741bb9}\label{classmoa_1_1evaluation_1_1_c_m_m___g_t_analysis_a5f44be6f2df9384d281d5ac9fb741bb9}} 
+\index{moa.evaluation.CMM\_GTAnalysis@{moa.evaluation.CMM\_GTAnalysis}!getNoiseSeparability@{getNoiseSeparability}}
+\index{getNoiseSeparability@{getNoiseSeparability}!moa.evaluation.CMM\_GTAnalysis@{moa.evaluation.CMM\_GTAnalysis}}
+\doxysubsubsection{\texorpdfstring{getNoiseSeparability()}{getNoiseSeparability()}}
+{\footnotesize\ttfamily double moa.\+evaluation.\+C\+M\+M\+\_\+\+G\+T\+Analysis.\+get\+Noise\+Separability (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Calculates how well noise is separable from the given clusters Small values indicate bad separability, values close to 1 indicate good separability \begin{DoxyReturn}{Returns}
+index of noise separability 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmoa_1_1evaluation_1_1_c_m_m___g_t_analysis_a46eb1352fe6d1ce88523316e5545ae0d}\label{classmoa_1_1evaluation_1_1_c_m_m___g_t_analysis_a46eb1352fe6d1ce88523316e5545ae0d}} 
+\index{moa.evaluation.CMM\_GTAnalysis@{moa.evaluation.CMM\_GTAnalysis}!getNumberOfGT0Classes@{getNumberOfGT0Classes}}
+\index{getNumberOfGT0Classes@{getNumberOfGT0Classes}!moa.evaluation.CMM\_GTAnalysis@{moa.evaluation.CMM\_GTAnalysis}}
+\doxysubsubsection{\texorpdfstring{getNumberOfGT0Classes()}{getNumberOfGT0Classes()}}
+{\footnotesize\ttfamily int moa.\+evaluation.\+C\+M\+M\+\_\+\+G\+T\+Analysis.\+get\+Number\+Of\+G\+T0\+Classes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Number of classes/clusters of the new clustering \begin{DoxyReturn}{Returns}
+number of new clusters 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmoa_1_1evaluation_1_1_c_m_m___g_t_analysis_aa64e316da13b9a001554536d4d72d1da}\label{classmoa_1_1evaluation_1_1_c_m_m___g_t_analysis_aa64e316da13b9a001554536d4d72d1da}} 
+\index{moa.evaluation.CMM\_GTAnalysis@{moa.evaluation.CMM\_GTAnalysis}!getParameterString@{getParameterString}}
+\index{getParameterString@{getParameterString}!moa.evaluation.CMM\_GTAnalysis@{moa.evaluation.CMM\_GTAnalysis}}
+\doxysubsubsection{\texorpdfstring{getParameterString()}{getParameterString()}}
+{\footnotesize\ttfamily String moa.\+evaluation.\+C\+M\+M\+\_\+\+G\+T\+Analysis.\+get\+Parameter\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+String with main \mbox{\hyperlink{classmoa_1_1evaluation_1_1_c_m_m}{C\+MM}} parameters \begin{DoxyReturn}{Returns}
+main \mbox{\hyperlink{classmoa_1_1evaluation_1_1_c_m_m}{C\+MM}} parameter 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmoa_1_1evaluation_1_1_c_m_m___g_t_analysis_ab51995be418ac5ce4804c20c03ccfdec}\label{classmoa_1_1evaluation_1_1_c_m_m___g_t_analysis_ab51995be418ac5ce4804c20c03ccfdec}} 
+\index{moa.evaluation.CMM\_GTAnalysis@{moa.evaluation.CMM\_GTAnalysis}!getPoint@{getPoint}}
+\index{getPoint@{getPoint}!moa.evaluation.CMM\_GTAnalysis@{moa.evaluation.CMM\_GTAnalysis}}
+\doxysubsubsection{\texorpdfstring{getPoint()}{getPoint()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1evaluation_1_1_c_m_m___g_t_analysis_1_1_c_m_m_point}{C\+M\+M\+Point}} moa.\+evaluation.\+C\+M\+M\+\_\+\+G\+T\+Analysis.\+get\+Point (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get \mbox{\hyperlink{classmoa_1_1evaluation_1_1_c_m_m}{C\+MM}} internal point 
+\begin{DoxyParams}{Parameters}
+{\em index} & of the point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+cmm point 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/evaluation/C\+M\+M\+\_\+\+G\+T\+Analysis.\+java\end{DoxyCompactItemize}

@@ -1,0 +1,252 @@
+\hypertarget{classmoa_1_1streams_1_1_concept_drift_real_stream}{}\doxysection{moa.\+streams.\+Concept\+Drift\+Real\+Stream Class Reference}
+\label{classmoa_1_1streams_1_1_concept_drift_real_stream}\index{moa.streams.ConceptDriftRealStream@{moa.streams.ConceptDriftRealStream}}
+
+
+Inheritance diagram for moa.\+streams.\+Concept\+Drift\+Real\+Stream\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+streams.\+Concept\+Drift\+Real\+Stream\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classmoa_1_1streams_1_1_concept_drift_real_stream_a11881ddb96c8c529dd4c7b68584f32d1}{get\+Purpose\+String}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1streams_1_1_concept_drift_real_stream_a52f614f44e7faf104bd770cd04426188}{prepare\+For\+Use\+Impl}} (\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}} monitor, \mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}} repository)
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_concept_drift_real_stream_a2e8cf0636ab406db2d775fc5efa2625f}\label{classmoa_1_1streams_1_1_concept_drift_real_stream_a2e8cf0636ab406db2d775fc5efa2625f}} 
+long {\bfseries estimated\+Remaining\+Instances} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_concept_drift_real_stream_a961cbff7e9de2c7e2211aa7bb621f680}\label{classmoa_1_1streams_1_1_concept_drift_real_stream_a961cbff7e9de2c7e2211aa7bb621f680}} 
+boolean {\bfseries has\+More\+Instances} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_concept_drift_real_stream_a8da5b076fbf76106e4c3f2327e45438f}\label{classmoa_1_1streams_1_1_concept_drift_real_stream_a8da5b076fbf76106e4c3f2327e45438f}} 
+\mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instances_header}{Instances\+Header}} {\bfseries get\+Header} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_concept_drift_real_stream_af57d21e5e0003054f5576a197e2dba9c}\label{classmoa_1_1streams_1_1_concept_drift_real_stream_af57d21e5e0003054f5576a197e2dba9c}} 
+boolean {\bfseries is\+Restartable} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_concept_drift_real_stream_a8a7c4e9be0800760c7d1600ddffb896f}\label{classmoa_1_1streams_1_1_concept_drift_real_stream_a8a7c4e9be0800760c7d1600ddffb896f}} 
+\mbox{\hyperlink{classmoa_1_1core_1_1_instance_example}{Instance\+Example}} {\bfseries next\+Instance} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_concept_drift_real_stream_a4b1b3ad6b4a165524c2e23e62756a9b9}\label{classmoa_1_1streams_1_1_concept_drift_real_stream_a4b1b3ad6b4a165524c2e23e62756a9b9}} 
+void {\bfseries restart} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1streams_1_1_concept_drift_real_stream_a3cec23c1a2c81b0da0745b4968c314d3}{get\+Description}} (String\+Builder sb, int indent)
+\item 
+\mbox{\hyperlink{classmoa_1_1capabilities_1_1_immutable_capabilities}{Immutable\+Capabilities}} \mbox{\hyperlink{classmoa_1_1streams_1_1_concept_drift_real_stream_a978b5213d5e3bda3abdb7b706f59c03a}{define\+Immutable\+Capabilities}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} {\bfseries stream\+Option}
+\item 
+\mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} {\bfseries driftstream\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} {\bfseries alpha\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries position\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries width\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries random\+Seed\+Option}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_concept_drift_real_stream_abe6082970767f69135ae8028fab8b119}\label{classmoa_1_1streams_1_1_concept_drift_real_stream_abe6082970767f69135ae8028fab8b119}} 
+\mbox{\hyperlink{interfacemoa_1_1streams_1_1_instance_stream}{Instance\+Stream}} {\bfseries input\+Stream}
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_concept_drift_real_stream_a5a047291b9d29ce3def5bf46e88a8e72}\label{classmoa_1_1streams_1_1_concept_drift_real_stream_a5a047291b9d29ce3def5bf46e88a8e72}} 
+\mbox{\hyperlink{interfacemoa_1_1streams_1_1_instance_stream}{Instance\+Stream}} {\bfseries drift\+Stream}
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_concept_drift_real_stream_a5ea1758af676273d5aeb92956e089662}\label{classmoa_1_1streams_1_1_concept_drift_real_stream_a5ea1758af676273d5aeb92956e089662}} 
+Random {\bfseries random}
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_concept_drift_real_stream_ae2a570414fb52007a5c069812db7fe6a}\label{classmoa_1_1streams_1_1_concept_drift_real_stream_ae2a570414fb52007a5c069812db7fe6a}} 
+int {\bfseries number\+Instance\+Stream}
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_concept_drift_real_stream_abc40c29c76b12d73e169b29602092dc4}\label{classmoa_1_1streams_1_1_concept_drift_real_stream_abc40c29c76b12d73e169b29602092dc4}} 
+\mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instances_header}{Instances\+Header}} {\bfseries stream\+Header}
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_concept_drift_real_stream_a37619f9472d018fbd65e2d625248477e}\label{classmoa_1_1streams_1_1_concept_drift_real_stream_a37619f9472d018fbd65e2d625248477e}} 
+\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} {\bfseries input\+Instance}
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_concept_drift_real_stream_a88afa0f2e7c2436315ed0a68cc88e3cd}\label{classmoa_1_1streams_1_1_concept_drift_real_stream_a88afa0f2e7c2436315ed0a68cc88e3cd}} 
+\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} {\bfseries drift\+Instance}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Stream generator that adds concept drift to examples in a stream with different classes and attributes. Example\+: real datasets. ~\newline
+~\newline
+ Example\+: ~\newline
+~\newline
+ {\ttfamily \mbox{\hyperlink{classmoa_1_1streams_1_1_concept_drift_real_stream}{Concept\+Drift\+Real\+Stream}} -\/s (\mbox{\hyperlink{classmoa_1_1streams_1_1_arff_file_stream}{Arff\+File\+Stream}} -\/f covtype.\+arff) \textbackslash{} ~\newline
+ -\/d (\mbox{\hyperlink{classmoa_1_1streams_1_1_concept_drift_real_stream}{Concept\+Drift\+Real\+Stream}} -\/s (\mbox{\hyperlink{classmoa_1_1streams_1_1_arff_file_stream}{Arff\+File\+Stream}} -\/f Poker\+Orig.\+arff) $<$br/$>$ -\/d (\mbox{\hyperlink{classmoa_1_1streams_1_1_arff_file_stream}{Arff\+File\+Stream}} -\/f elec.\+arff) -\/w 5000 -\/p 1000000 ) -\/w 5000 -\/p 581012} ~\newline
+~\newline
+ s \+: Stream ~\newline
+ d \+: Concept drift Stream~\newline
+ p \+: Central position of concept drift change~\newline
+ w \+: Width of concept drift change~\newline
+
+
+\begin{DoxyAuthor}{Author}
+Albert Bifet (abifet at cs dot waikato dot ac dot nz) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+7 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_concept_drift_real_stream_a978b5213d5e3bda3abdb7b706f59c03a}\label{classmoa_1_1streams_1_1_concept_drift_real_stream_a978b5213d5e3bda3abdb7b706f59c03a}} 
+\index{moa.streams.ConceptDriftRealStream@{moa.streams.ConceptDriftRealStream}!defineImmutableCapabilities@{defineImmutableCapabilities}}
+\index{defineImmutableCapabilities@{defineImmutableCapabilities}!moa.streams.ConceptDriftRealStream@{moa.streams.ConceptDriftRealStream}}
+\doxysubsubsection{\texorpdfstring{defineImmutableCapabilities()}{defineImmutableCapabilities()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1capabilities_1_1_immutable_capabilities}{Immutable\+Capabilities}} moa.\+streams.\+Concept\+Drift\+Real\+Stream.\+define\+Immutable\+Capabilities (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Defines the set of capabilities the object has. Should be overridden if the object\textquotesingle{}s capabilities do not change.
+
+\begin{DoxyReturn}{Returns}
+The capabilities of the object. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1capabilities_1_1_capabilities_handler_aa82d1befd5dbb958c9787b5304c9a82a}{moa.\+capabilities.\+Capabilities\+Handler}}.
+
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_concept_drift_real_stream_a3cec23c1a2c81b0da0745b4968c314d3}\label{classmoa_1_1streams_1_1_concept_drift_real_stream_a3cec23c1a2c81b0da0745b4968c314d3}} 
+\index{moa.streams.ConceptDriftRealStream@{moa.streams.ConceptDriftRealStream}!getDescription@{getDescription}}
+\index{getDescription@{getDescription}!moa.streams.ConceptDriftRealStream@{moa.streams.ConceptDriftRealStream}}
+\doxysubsubsection{\texorpdfstring{getDescription()}{getDescription()}}
+{\footnotesize\ttfamily void moa.\+streams.\+Concept\+Drift\+Real\+Stream.\+get\+Description (\begin{DoxyParamCaption}\item[{String\+Builder}]{sb,  }\item[{int}]{indent }\end{DoxyParamCaption})}
+
+Returns a string representation of this object. Used in {\ttfamily \mbox{\hyperlink{classmoa_1_1_abstract_m_o_a_object_ac686fd3b07c734cf21f1894376fe402d}{Abstract\+M\+O\+A\+Object.\+to\+String}}} to give a string representation of the object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sb} & the stringbuilder to add the description \\
+\hline
+{\em indent} & the number of characters to indent \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1_m_o_a_object_afdaf5098f1fe6c852018ce64c28e17f5}{moa.\+M\+O\+A\+Object}}.
+
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_concept_drift_real_stream_a11881ddb96c8c529dd4c7b68584f32d1}\label{classmoa_1_1streams_1_1_concept_drift_real_stream_a11881ddb96c8c529dd4c7b68584f32d1}} 
+\index{moa.streams.ConceptDriftRealStream@{moa.streams.ConceptDriftRealStream}!getPurposeString@{getPurposeString}}
+\index{getPurposeString@{getPurposeString}!moa.streams.ConceptDriftRealStream@{moa.streams.ConceptDriftRealStream}}
+\doxysubsubsection{\texorpdfstring{getPurposeString()}{getPurposeString()}}
+{\footnotesize\ttfamily String moa.\+streams.\+Concept\+Drift\+Real\+Stream.\+get\+Purpose\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Options to handle Dictionary with option texts and objects 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1options_1_1_abstract_option_handler_abc8df69aea27ef85060557a9e918b2ca}{moa.\+options.\+Abstract\+Option\+Handler}}.
+
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_concept_drift_real_stream_a52f614f44e7faf104bd770cd04426188}\label{classmoa_1_1streams_1_1_concept_drift_real_stream_a52f614f44e7faf104bd770cd04426188}} 
+\index{moa.streams.ConceptDriftRealStream@{moa.streams.ConceptDriftRealStream}!prepareForUseImpl@{prepareForUseImpl}}
+\index{prepareForUseImpl@{prepareForUseImpl}!moa.streams.ConceptDriftRealStream@{moa.streams.ConceptDriftRealStream}}
+\doxysubsubsection{\texorpdfstring{prepareForUseImpl()}{prepareForUseImpl()}}
+{\footnotesize\ttfamily void moa.\+streams.\+Concept\+Drift\+Real\+Stream.\+prepare\+For\+Use\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}}}]{monitor,  }\item[{\mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}}}]{repository }\end{DoxyParamCaption})}
+
+This method describes the implementation of how to prepare this object for use. All classes that extends this class have to implement {\ttfamily prepare\+For\+Use\+Impl} and not {\ttfamily prepare\+For\+Use} since {\ttfamily prepare\+For\+Use} calls {\ttfamily prepare\+For\+Use\+Impl}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em monitor} & the Task\+Monitor to use \\
+\hline
+{\em repository} & the Object\+Repository to use \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1options_1_1_abstract_option_handler_ad0e9c7d4b0e2b185749f36ce28540efb}{moa.\+options.\+Abstract\+Option\+Handler}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_concept_drift_real_stream_a1fcb3e62c521cd998092e8e80b913ff2}\label{classmoa_1_1streams_1_1_concept_drift_real_stream_a1fcb3e62c521cd998092e8e80b913ff2}} 
+\index{moa.streams.ConceptDriftRealStream@{moa.streams.ConceptDriftRealStream}!alphaOption@{alphaOption}}
+\index{alphaOption@{alphaOption}!moa.streams.ConceptDriftRealStream@{moa.streams.ConceptDriftRealStream}}
+\doxysubsubsection{\texorpdfstring{alphaOption}{alphaOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} moa.\+streams.\+Concept\+Drift\+Real\+Stream.\+alpha\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FloatOption(\textcolor{stringliteral}{"alpha"},}
+\DoxyCodeLine{            \textcolor{charliteral}{'a'}, \textcolor{stringliteral}{"Angle alpha of change grade."}, 0.0, 0.0, 90.0)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_concept_drift_real_stream_a8fd11e556877624340663ef1cd659f19}\label{classmoa_1_1streams_1_1_concept_drift_real_stream_a8fd11e556877624340663ef1cd659f19}} 
+\index{moa.streams.ConceptDriftRealStream@{moa.streams.ConceptDriftRealStream}!driftstreamOption@{driftstreamOption}}
+\index{driftstreamOption@{driftstreamOption}!moa.streams.ConceptDriftRealStream@{moa.streams.ConceptDriftRealStream}}
+\doxysubsubsection{\texorpdfstring{driftstreamOption}{driftstreamOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} moa.\+streams.\+Concept\+Drift\+Real\+Stream.\+driftstream\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} ClassOption(\textcolor{stringliteral}{"driftstream"}, \textcolor{charliteral}{'d'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Concept drift Stream."}, ExampleStream.class,}
+\DoxyCodeLine{            \textcolor{stringliteral}{"generators.RandomTreeGenerator"})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_concept_drift_real_stream_a07f968ed38617d4000a58537059ed5fa}\label{classmoa_1_1streams_1_1_concept_drift_real_stream_a07f968ed38617d4000a58537059ed5fa}} 
+\index{moa.streams.ConceptDriftRealStream@{moa.streams.ConceptDriftRealStream}!positionOption@{positionOption}}
+\index{positionOption@{positionOption}!moa.streams.ConceptDriftRealStream@{moa.streams.ConceptDriftRealStream}}
+\doxysubsubsection{\texorpdfstring{positionOption}{positionOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+streams.\+Concept\+Drift\+Real\+Stream.\+position\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(\textcolor{stringliteral}{"position"},}
+\DoxyCodeLine{            \textcolor{charliteral}{'p'}, \textcolor{stringliteral}{"Central position of concept drift change."}, 0)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_concept_drift_real_stream_a0d478d3ac033fca405b04dcadfff3d29}\label{classmoa_1_1streams_1_1_concept_drift_real_stream_a0d478d3ac033fca405b04dcadfff3d29}} 
+\index{moa.streams.ConceptDriftRealStream@{moa.streams.ConceptDriftRealStream}!randomSeedOption@{randomSeedOption}}
+\index{randomSeedOption@{randomSeedOption}!moa.streams.ConceptDriftRealStream@{moa.streams.ConceptDriftRealStream}}
+\doxysubsubsection{\texorpdfstring{randomSeedOption}{randomSeedOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+streams.\+Concept\+Drift\+Real\+Stream.\+random\+Seed\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(\textcolor{stringliteral}{"randomSeed"}, \textcolor{charliteral}{'r'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Seed for random noise."}, 1)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_concept_drift_real_stream_a5b62fa1c0a5c08eccd43795386871c5f}\label{classmoa_1_1streams_1_1_concept_drift_real_stream_a5b62fa1c0a5c08eccd43795386871c5f}} 
+\index{moa.streams.ConceptDriftRealStream@{moa.streams.ConceptDriftRealStream}!streamOption@{streamOption}}
+\index{streamOption@{streamOption}!moa.streams.ConceptDriftRealStream@{moa.streams.ConceptDriftRealStream}}
+\doxysubsubsection{\texorpdfstring{streamOption}{streamOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} moa.\+streams.\+Concept\+Drift\+Real\+Stream.\+stream\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} ClassOption(\textcolor{stringliteral}{"stream"}, \textcolor{charliteral}{'s'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Stream to add concept drift."}, ExampleStream.class,}
+\DoxyCodeLine{            \textcolor{stringliteral}{"generators.RandomTreeGenerator"})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_concept_drift_real_stream_adc2ec461f5d73c4f2e336a340821595c}\label{classmoa_1_1streams_1_1_concept_drift_real_stream_adc2ec461f5d73c4f2e336a340821595c}} 
+\index{moa.streams.ConceptDriftRealStream@{moa.streams.ConceptDriftRealStream}!widthOption@{widthOption}}
+\index{widthOption@{widthOption}!moa.streams.ConceptDriftRealStream@{moa.streams.ConceptDriftRealStream}}
+\doxysubsubsection{\texorpdfstring{widthOption}{widthOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+streams.\+Concept\+Drift\+Real\+Stream.\+width\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(\textcolor{stringliteral}{"width"},}
+\DoxyCodeLine{            \textcolor{charliteral}{'w'}, \textcolor{stringliteral}{"Width of concept drift change."}, 1000)}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/streams/Concept\+Drift\+Real\+Stream.\+java\end{DoxyCompactItemize}

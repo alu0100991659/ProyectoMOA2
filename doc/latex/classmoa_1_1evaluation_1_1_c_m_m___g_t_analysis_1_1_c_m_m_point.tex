@@ -1,0 +1,98 @@
+\hypertarget{classmoa_1_1evaluation_1_1_c_m_m___g_t_analysis_1_1_c_m_m_point}{}\doxysection{moa.\+evaluation.\+C\+M\+M\+\_\+\+G\+T\+Analysis.\+C\+M\+M\+Point Class Reference}
+\label{classmoa_1_1evaluation_1_1_c_m_m___g_t_analysis_1_1_c_m_m_point}\index{moa.evaluation.CMM\_GTAnalysis.CMMPoint@{moa.evaluation.CMM\_GTAnalysis.CMMPoint}}
+
+
+Inheritance diagram for moa.\+evaluation.\+C\+M\+M\+\_\+\+G\+T\+Analysis.\+C\+M\+M\+Point\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+evaluation.\+C\+M\+M\+\_\+\+G\+T\+Analysis.\+C\+M\+M\+Point\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1evaluation_1_1_c_m_m___g_t_analysis_1_1_c_m_m_point_a82a654c1c25083ecc71ec857edbb9baf}\label{classmoa_1_1evaluation_1_1_c_m_m___g_t_analysis_1_1_c_m_m_point_a82a654c1c25083ecc71ec857edbb9baf}} 
+{\bfseries C\+M\+M\+Point} (\mbox{\hyperlink{classmoa_1_1gui_1_1visualization_1_1_data_point}{Data\+Point}} point, int id)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classmoa_1_1evaluation_1_1_c_m_m___g_t_analysis_1_1_c_m_m_point_ae69d6c93ab345ead82db85e885af44ad}{workclass}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1gui_1_1visualization_1_1_data_point}{Data\+Point}} \mbox{\hyperlink{classmoa_1_1evaluation_1_1_c_m_m___g_t_analysis_1_1_c_m_m_point_a63b8005f05e1980f211e5966e43abfbe}{p}} = null
+\item 
+int \mbox{\hyperlink{classmoa_1_1evaluation_1_1_c_m_m___g_t_analysis_1_1_c_m_m_point_a6ceb48d5c944fe18c1d75a8f46f28a49}{p\+ID}} = 0
+\item 
+int \mbox{\hyperlink{classmoa_1_1evaluation_1_1_c_m_m___g_t_analysis_1_1_c_m_m_point_a91ffbd91a4000e61410340ef9415ad2b}{true\+Class}} = -\/1
+\item 
+double \mbox{\hyperlink{classmoa_1_1evaluation_1_1_c_m_m___g_t_analysis_1_1_c_m_m_point_ae661e81945ef9785f9b0777665010dc2}{connectivity}} = 1.\+0
+\item 
+double \mbox{\hyperlink{classmoa_1_1evaluation_1_1_c_m_m___g_t_analysis_1_1_c_m_m_point_a962d32dd976cd174852774733f5f88f4}{knn\+In\+Cluster}} = 0.\+0
+\item 
+Array\+List$<$ Integer $>$ \mbox{\hyperlink{classmoa_1_1evaluation_1_1_c_m_m___g_t_analysis_1_1_c_m_m_point_affb2e52824c5e843f3714c0aaed0c945}{knn\+Indices}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Wrapper class for data points to store \mbox{\hyperlink{classmoa_1_1evaluation_1_1_c_m_m}{C\+MM}} relevant attributes 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1evaluation_1_1_c_m_m___g_t_analysis_1_1_c_m_m_point_ae69d6c93ab345ead82db85e885af44ad}\label{classmoa_1_1evaluation_1_1_c_m_m___g_t_analysis_1_1_c_m_m_point_ae69d6c93ab345ead82db85e885af44ad}} 
+\index{moa.evaluation.CMM\_GTAnalysis.CMMPoint@{moa.evaluation.CMM\_GTAnalysis.CMMPoint}!workclass@{workclass}}
+\index{workclass@{workclass}!moa.evaluation.CMM\_GTAnalysis.CMMPoint@{moa.evaluation.CMM\_GTAnalysis.CMMPoint}}
+\doxysubsubsection{\texorpdfstring{workclass()}{workclass()}}
+{\footnotesize\ttfamily int moa.\+evaluation.\+C\+M\+M\+\_\+\+G\+T\+Analysis.\+C\+M\+M\+Point.\+workclass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Retruns the current working label of the cluster the point belongs to. The label can change due to merging of clusters. ~\newline
+
+
+\begin{DoxyReturn}{Returns}
+the current working class label 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmoa_1_1evaluation_1_1_c_m_m___g_t_analysis_1_1_c_m_m_point_ae661e81945ef9785f9b0777665010dc2}\label{classmoa_1_1evaluation_1_1_c_m_m___g_t_analysis_1_1_c_m_m_point_ae661e81945ef9785f9b0777665010dc2}} 
+\index{moa.evaluation.CMM\_GTAnalysis.CMMPoint@{moa.evaluation.CMM\_GTAnalysis.CMMPoint}!connectivity@{connectivity}}
+\index{connectivity@{connectivity}!moa.evaluation.CMM\_GTAnalysis.CMMPoint@{moa.evaluation.CMM\_GTAnalysis.CMMPoint}}
+\doxysubsubsection{\texorpdfstring{connectivity}{connectivity}}
+{\footnotesize\ttfamily double moa.\+evaluation.\+C\+M\+M\+\_\+\+G\+T\+Analysis.\+C\+M\+M\+Point.\+connectivity = 1.\+0\hspace{0.3cm}{\ttfamily [protected]}}
+
+the connectivity of the point to its cluster \mbox{\Hypertarget{classmoa_1_1evaluation_1_1_c_m_m___g_t_analysis_1_1_c_m_m_point_a962d32dd976cd174852774733f5f88f4}\label{classmoa_1_1evaluation_1_1_c_m_m___g_t_analysis_1_1_c_m_m_point_a962d32dd976cd174852774733f5f88f4}} 
+\index{moa.evaluation.CMM\_GTAnalysis.CMMPoint@{moa.evaluation.CMM\_GTAnalysis.CMMPoint}!knnInCluster@{knnInCluster}}
+\index{knnInCluster@{knnInCluster}!moa.evaluation.CMM\_GTAnalysis.CMMPoint@{moa.evaluation.CMM\_GTAnalysis.CMMPoint}}
+\doxysubsubsection{\texorpdfstring{knnInCluster}{knnInCluster}}
+{\footnotesize\ttfamily double moa.\+evaluation.\+C\+M\+M\+\_\+\+G\+T\+Analysis.\+C\+M\+M\+Point.\+knn\+In\+Cluster = 0.\+0\hspace{0.3cm}{\ttfamily [protected]}}
+
+knn distnace within own cluster \mbox{\Hypertarget{classmoa_1_1evaluation_1_1_c_m_m___g_t_analysis_1_1_c_m_m_point_affb2e52824c5e843f3714c0aaed0c945}\label{classmoa_1_1evaluation_1_1_c_m_m___g_t_analysis_1_1_c_m_m_point_affb2e52824c5e843f3714c0aaed0c945}} 
+\index{moa.evaluation.CMM\_GTAnalysis.CMMPoint@{moa.evaluation.CMM\_GTAnalysis.CMMPoint}!knnIndices@{knnIndices}}
+\index{knnIndices@{knnIndices}!moa.evaluation.CMM\_GTAnalysis.CMMPoint@{moa.evaluation.CMM\_GTAnalysis.CMMPoint}}
+\doxysubsubsection{\texorpdfstring{knnIndices}{knnIndices}}
+{\footnotesize\ttfamily Array\+List$<$Integer$>$ moa.\+evaluation.\+C\+M\+M\+\_\+\+G\+T\+Analysis.\+C\+M\+M\+Point.\+knn\+Indices\hspace{0.3cm}{\ttfamily [protected]}}
+
+knn indices (for debugging only) \mbox{\Hypertarget{classmoa_1_1evaluation_1_1_c_m_m___g_t_analysis_1_1_c_m_m_point_a63b8005f05e1980f211e5966e43abfbe}\label{classmoa_1_1evaluation_1_1_c_m_m___g_t_analysis_1_1_c_m_m_point_a63b8005f05e1980f211e5966e43abfbe}} 
+\index{moa.evaluation.CMM\_GTAnalysis.CMMPoint@{moa.evaluation.CMM\_GTAnalysis.CMMPoint}!p@{p}}
+\index{p@{p}!moa.evaluation.CMM\_GTAnalysis.CMMPoint@{moa.evaluation.CMM\_GTAnalysis.CMMPoint}}
+\doxysubsubsection{\texorpdfstring{p}{p}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1gui_1_1visualization_1_1_data_point}{Data\+Point}} moa.\+evaluation.\+C\+M\+M\+\_\+\+G\+T\+Analysis.\+C\+M\+M\+Point.\+p = null\hspace{0.3cm}{\ttfamily [protected]}}
+
+Reference to original point \mbox{\Hypertarget{classmoa_1_1evaluation_1_1_c_m_m___g_t_analysis_1_1_c_m_m_point_a6ceb48d5c944fe18c1d75a8f46f28a49}\label{classmoa_1_1evaluation_1_1_c_m_m___g_t_analysis_1_1_c_m_m_point_a6ceb48d5c944fe18c1d75a8f46f28a49}} 
+\index{moa.evaluation.CMM\_GTAnalysis.CMMPoint@{moa.evaluation.CMM\_GTAnalysis.CMMPoint}!pID@{pID}}
+\index{pID@{pID}!moa.evaluation.CMM\_GTAnalysis.CMMPoint@{moa.evaluation.CMM\_GTAnalysis.CMMPoint}}
+\doxysubsubsection{\texorpdfstring{pID}{pID}}
+{\footnotesize\ttfamily int moa.\+evaluation.\+C\+M\+M\+\_\+\+G\+T\+Analysis.\+C\+M\+M\+Point.\+p\+ID = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+point ID \mbox{\Hypertarget{classmoa_1_1evaluation_1_1_c_m_m___g_t_analysis_1_1_c_m_m_point_a91ffbd91a4000e61410340ef9415ad2b}\label{classmoa_1_1evaluation_1_1_c_m_m___g_t_analysis_1_1_c_m_m_point_a91ffbd91a4000e61410340ef9415ad2b}} 
+\index{moa.evaluation.CMM\_GTAnalysis.CMMPoint@{moa.evaluation.CMM\_GTAnalysis.CMMPoint}!trueClass@{trueClass}}
+\index{trueClass@{trueClass}!moa.evaluation.CMM\_GTAnalysis.CMMPoint@{moa.evaluation.CMM\_GTAnalysis.CMMPoint}}
+\doxysubsubsection{\texorpdfstring{trueClass}{trueClass}}
+{\footnotesize\ttfamily int moa.\+evaluation.\+C\+M\+M\+\_\+\+G\+T\+Analysis.\+C\+M\+M\+Point.\+true\+Class = -\/1\hspace{0.3cm}{\ttfamily [protected]}}
+
+true class label 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/evaluation/C\+M\+M\+\_\+\+G\+T\+Analysis.\+java\end{DoxyCompactItemize}

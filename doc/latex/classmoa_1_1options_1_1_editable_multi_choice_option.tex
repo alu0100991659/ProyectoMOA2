@@ -1,0 +1,87 @@
+\hypertarget{classmoa_1_1options_1_1_editable_multi_choice_option}{}\doxysection{moa.\+options.\+Editable\+Multi\+Choice\+Option Class Reference}
+\label{classmoa_1_1options_1_1_editable_multi_choice_option}\index{moa.options.EditableMultiChoiceOption@{moa.options.EditableMultiChoiceOption}}
+
+
+Inheritance diagram for moa.\+options.\+Editable\+Multi\+Choice\+Option\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+options.\+Editable\+Multi\+Choice\+Option\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1options_1_1_editable_multi_choice_option_a00ca34f34ba8d128c61ce31e3b8ad9b5}\label{classmoa_1_1options_1_1_editable_multi_choice_option_a00ca34f34ba8d128c61ce31e3b8ad9b5}} 
+{\bfseries Editable\+Multi\+Choice\+Option} (String \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_abstract_option_a181280926677126f0b1dbd87646da0c4}{name}}, char \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_abstract_option_a34be6c4bfced39039271660dbbf438aa}{cli\+Char}}, String \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_abstract_option_ab669672fb408dbbb639394e8628518b5}{purpose}}, String\mbox{[}$\,$\mbox{]} option\+Labels, String\mbox{[}$\,$\mbox{]} option\+Descriptions, int default\+Option\+Index)
+\item 
+void \mbox{\hyperlink{classmoa_1_1options_1_1_editable_multi_choice_option_ada117af2a5ef5452281d79d8f7707910}{register\+Edit\+Component}} (\mbox{\hyperlink{classmoa_1_1gui_1_1_editable_multi_choice_option_edit_component}{Editable\+Multi\+Choice\+Option\+Edit\+Component}} \mbox{\hyperlink{classmoa_1_1options_1_1_editable_multi_choice_option_a582f26ce7ec77e2c37d5fc4e2d931132}{edit\+Component}})
+\item 
+void \mbox{\hyperlink{classmoa_1_1options_1_1_editable_multi_choice_option_a33ef077600180ec2dfc5ad8e60730022}{set\+Options}} (String\mbox{[}$\,$\mbox{]} labels, String\mbox{[}$\,$\mbox{]} descriptions, int default\+Index)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1gui_1_1_editable_multi_choice_option_edit_component}{Editable\+Multi\+Choice\+Option\+Edit\+Component}} \mbox{\hyperlink{classmoa_1_1options_1_1_editable_multi_choice_option_a582f26ce7ec77e2c37d5fc4e2d931132}{edit\+Component}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Multi\+Choice\+Option that can have changing options.
+
+\begin{DoxyAuthor}{Author}
+Cornelius Styp von Rekowski (\href{mailto:cornelius.styp@ovgu.de}{\texttt{ cornelius.\+styp@ovgu.\+de}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+1 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1options_1_1_editable_multi_choice_option_ada117af2a5ef5452281d79d8f7707910}\label{classmoa_1_1options_1_1_editable_multi_choice_option_ada117af2a5ef5452281d79d8f7707910}} 
+\index{moa.options.EditableMultiChoiceOption@{moa.options.EditableMultiChoiceOption}!registerEditComponent@{registerEditComponent}}
+\index{registerEditComponent@{registerEditComponent}!moa.options.EditableMultiChoiceOption@{moa.options.EditableMultiChoiceOption}}
+\doxysubsubsection{\texorpdfstring{registerEditComponent()}{registerEditComponent()}}
+{\footnotesize\ttfamily void moa.\+options.\+Editable\+Multi\+Choice\+Option.\+register\+Edit\+Component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmoa_1_1gui_1_1_editable_multi_choice_option_edit_component}{Editable\+Multi\+Choice\+Option\+Edit\+Component}}}]{edit\+Component }\end{DoxyParamCaption})}
+
+Register the corresponding UI component, so that it can be refreshed when options have changed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em edit\+Component} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmoa_1_1options_1_1_editable_multi_choice_option_a33ef077600180ec2dfc5ad8e60730022}\label{classmoa_1_1options_1_1_editable_multi_choice_option_a33ef077600180ec2dfc5ad8e60730022}} 
+\index{moa.options.EditableMultiChoiceOption@{moa.options.EditableMultiChoiceOption}!setOptions@{setOptions}}
+\index{setOptions@{setOptions}!moa.options.EditableMultiChoiceOption@{moa.options.EditableMultiChoiceOption}}
+\doxysubsubsection{\texorpdfstring{setOptions()}{setOptions()}}
+{\footnotesize\ttfamily void moa.\+options.\+Editable\+Multi\+Choice\+Option.\+set\+Options (\begin{DoxyParamCaption}\item[{String\mbox{[}$\,$\mbox{]}}]{labels,  }\item[{String\mbox{[}$\,$\mbox{]}}]{descriptions,  }\item[{int}]{default\+Index }\end{DoxyParamCaption})}
+
+Set new options for this Multi\+Choice\+Option and refresh the edit component.
+
+
+\begin{DoxyParams}{Parameters}
+{\em labels} & \\
+\hline
+{\em descriptions} & \\
+\hline
+{\em default\+Index} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmoa_1_1options_1_1_editable_multi_choice_option_a582f26ce7ec77e2c37d5fc4e2d931132}\label{classmoa_1_1options_1_1_editable_multi_choice_option_a582f26ce7ec77e2c37d5fc4e2d931132}} 
+\index{moa.options.EditableMultiChoiceOption@{moa.options.EditableMultiChoiceOption}!editComponent@{editComponent}}
+\index{editComponent@{editComponent}!moa.options.EditableMultiChoiceOption@{moa.options.EditableMultiChoiceOption}}
+\doxysubsubsection{\texorpdfstring{editComponent}{editComponent}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1gui_1_1_editable_multi_choice_option_edit_component}{Editable\+Multi\+Choice\+Option\+Edit\+Component}} moa.\+options.\+Editable\+Multi\+Choice\+Option.\+edit\+Component\hspace{0.3cm}{\ttfamily [protected]}}
+
+The corresponding UI component 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/options/Editable\+Multi\+Choice\+Option.\+java\end{DoxyCompactItemize}

@@ -1,0 +1,260 @@
+\hypertarget{classmoa_1_1classifiers_1_1meta_1_1_a_d_a_c_c}{}\doxysection{moa.\+classifiers.\+meta.\+A\+D\+A\+CC Class Reference}
+\label{classmoa_1_1classifiers_1_1meta_1_1_a_d_a_c_c}\index{moa.classifiers.meta.ADACC@{moa.classifiers.meta.ADACC}}
+
+
+Inheritance diagram for moa.\+classifiers.\+meta.\+A\+D\+A\+CC\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+classifiers.\+meta.\+A\+D\+A\+CC\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_a_d_a_c_c_a7612b473e1b98667996db15dd1c0cceb}{get\+Purpose\+String}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_a_d_a_c_c_afac7020458c562ced7fb327021d15e92}{train\+On\+Instance\+Impl}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst)
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_a_d_a_c_c_ad0097e7452b5feb5e9d9f167cc01dc3f}{get\+Model\+Description}} (String\+Builder out, int indent)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_a_d_a_c_c_a0d07487c92ef9fd5fd460cb25ab71c1d}{tau\+Size\+Option}}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_a_d_a_c_c_af741d58b62fca5aa03f45222e9ba3857}{stab\+Index\+Size\+Option}}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_a_d_a_c_c_a1278820a4f7a5163f337e72ffc55f04a}{equiv\+Index\+Size\+Option}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_a_d_a_c_c_ade941c409c1e3c01287c1c3d9de0c0dd}{init\+Variables}} ()
+\item 
+\mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_a_d_a_c_c_a7a4eab6d34c8f63ab5cba11e4b444936}{get\+Model\+Measurements\+Impl}} ()
+\item 
+int \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_a_d_a_c_c_a4252cee065fe7e1881982ee1d57f1cfd}{get\+Nb\+Active\+Classifiers}} ()
+\item 
+int \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_a_d_a_c_c_a4144c4c26fa6fee6be9f777d16af4dbc}{get\+Nb\+Adaptive\+Classifiers}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_a_d_a_c_c_ab95da15d576dfcc68d73b768bd16d76e}{tau\+\_\+size}} = 0
+\item 
+\mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instances}{Instances}} \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_a_d_a_c_c_a3cdd9c1a660c26393c5acdaa0a2248f0}{recent\+Chunk}}
+\item 
+double \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_a_d_a_c_c_a16bd0b0b647ea51b953e0961cb6afc98}{theta\+\_\+stab}}
+\item 
+double \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_a_d_a_c_c_aa42824d83a744ab3458661c343e80ac4}{index}}
+\item 
+int \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_a_d_a_c_c_aa80279c16a581246063d9d150a5dd90f}{added\+Permanent}} = 0
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final int \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_a_d_a_c_c_ac1b3f4b8b127c660c22ab40a100fd1c8}{M\+A\+X\+P\+E\+R\+M\+A\+N\+E\+NT}} = 100
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Anticipative and Dynamic Adaptation to Concept Changes. Ensemble method for data streams that adapts to concept changes and deals with concept recurrence.
+
+Reference\+: J\+A\+B\+ER, G., C\+O\+R\+N\+U\+E\+J\+O\+LS, A., and T\+A\+R\+R\+O\+UX, P. A New On-\/\+Line Learning Method for Coping with Recurring Concepts\+: The \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_a_d_a_c_c}{A\+D\+A\+CC}} System. In \+: Neural Information Processing. Springer Berlin Heidelberg, 2013. p. 595-\/604.
+
+\begin{DoxyAuthor}{Author}
+Ghazal Jaber (\href{mailto:ghazal.jaber@gmail.com}{\texttt{ ghazal.\+jaber@gmail.\+com}}) 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_a_d_a_c_c_ad0097e7452b5feb5e9d9f167cc01dc3f}\label{classmoa_1_1classifiers_1_1meta_1_1_a_d_a_c_c_ad0097e7452b5feb5e9d9f167cc01dc3f}} 
+\index{moa.classifiers.meta.ADACC@{moa.classifiers.meta.ADACC}!getModelDescription@{getModelDescription}}
+\index{getModelDescription@{getModelDescription}!moa.classifiers.meta.ADACC@{moa.classifiers.meta.ADACC}}
+\doxysubsubsection{\texorpdfstring{getModelDescription()}{getModelDescription()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+meta.\+A\+D\+A\+C\+C.\+get\+Model\+Description (\begin{DoxyParamCaption}\item[{String\+Builder}]{out,  }\item[{int}]{indent }\end{DoxyParamCaption})}
+
+Returns a string representation of the model.
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & the stringbuilder to add the description \\
+\hline
+{\em indent} & the number of characters to indent \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_acdca385dd3f8c7f1b10980c5e5b1ffba}{moa.\+classifiers.\+meta.\+D\+A\+CC}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_a_d_a_c_c_a7a4eab6d34c8f63ab5cba11e4b444936}\label{classmoa_1_1classifiers_1_1meta_1_1_a_d_a_c_c_a7a4eab6d34c8f63ab5cba11e4b444936}} 
+\index{moa.classifiers.meta.ADACC@{moa.classifiers.meta.ADACC}!getModelMeasurementsImpl@{getModelMeasurementsImpl}}
+\index{getModelMeasurementsImpl@{getModelMeasurementsImpl}!moa.classifiers.meta.ADACC@{moa.classifiers.meta.ADACC}}
+\doxysubsubsection{\texorpdfstring{getModelMeasurementsImpl()}{getModelMeasurementsImpl()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}} \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+meta.\+A\+D\+A\+C\+C.\+get\+Model\+Measurements\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Gets the current measurements of this classifier.~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden.
+
+\begin{DoxyReturn}{Returns}
+an array of measurements to be used in evaluation tasks 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_a1926a90ec970b4a5958c22acafd0a52e}{moa.\+classifiers.\+meta.\+D\+A\+CC}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_a_d_a_c_c_a4252cee065fe7e1881982ee1d57f1cfd}\label{classmoa_1_1classifiers_1_1meta_1_1_a_d_a_c_c_a4252cee065fe7e1881982ee1d57f1cfd}} 
+\index{moa.classifiers.meta.ADACC@{moa.classifiers.meta.ADACC}!getNbActiveClassifiers@{getNbActiveClassifiers}}
+\index{getNbActiveClassifiers@{getNbActiveClassifiers}!moa.classifiers.meta.ADACC@{moa.classifiers.meta.ADACC}}
+\doxysubsubsection{\texorpdfstring{getNbActiveClassifiers()}{getNbActiveClassifiers()}}
+{\footnotesize\ttfamily int moa.\+classifiers.\+meta.\+A\+D\+A\+C\+C.\+get\+Nb\+Active\+Classifiers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns the number of classifiers used for prediction which includes the adaptive learners and the snapshots in \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_a_d_a_c_c}{A\+D\+A\+CC}} \begin{DoxyReturn}{Returns}
+the number of classifiers used for prediction 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_a55bb8c305911d5e5c327ad90e3386851}{moa.\+classifiers.\+meta.\+D\+A\+CC}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_a_d_a_c_c_a4144c4c26fa6fee6be9f777d16af4dbc}\label{classmoa_1_1classifiers_1_1meta_1_1_a_d_a_c_c_a4144c4c26fa6fee6be9f777d16af4dbc}} 
+\index{moa.classifiers.meta.ADACC@{moa.classifiers.meta.ADACC}!getNbAdaptiveClassifiers@{getNbAdaptiveClassifiers}}
+\index{getNbAdaptiveClassifiers@{getNbAdaptiveClassifiers}!moa.classifiers.meta.ADACC@{moa.classifiers.meta.ADACC}}
+\doxysubsubsection{\texorpdfstring{getNbAdaptiveClassifiers()}{getNbAdaptiveClassifiers()}}
+{\footnotesize\ttfamily int moa.\+classifiers.\+meta.\+A\+D\+A\+C\+C.\+get\+Nb\+Adaptive\+Classifiers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns the number of adaptive classifiers in the ensemble which excludes the static snapshots in \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_a_d_a_c_c}{A\+D\+A\+CC}} ~\newline
+ \begin{DoxyReturn}{Returns}
+the number of adaptive classifiers 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_a7ef02a33bdd764f2750b25a38c1dc996}{moa.\+classifiers.\+meta.\+D\+A\+CC}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_a_d_a_c_c_a7612b473e1b98667996db15dd1c0cceb}\label{classmoa_1_1classifiers_1_1meta_1_1_a_d_a_c_c_a7612b473e1b98667996db15dd1c0cceb}} 
+\index{moa.classifiers.meta.ADACC@{moa.classifiers.meta.ADACC}!getPurposeString@{getPurposeString}}
+\index{getPurposeString@{getPurposeString}!moa.classifiers.meta.ADACC@{moa.classifiers.meta.ADACC}}
+\doxysubsubsection{\texorpdfstring{getPurposeString()}{getPurposeString()}}
+{\footnotesize\ttfamily String moa.\+classifiers.\+meta.\+A\+D\+A\+C\+C.\+get\+Purpose\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Options to handle Dictionary with option texts and objects 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_ac14b47d35b39219fd2a0b62a67057fc8}{moa.\+classifiers.\+meta.\+D\+A\+CC}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_a_d_a_c_c_ade941c409c1e3c01287c1c3d9de0c0dd}\label{classmoa_1_1classifiers_1_1meta_1_1_a_d_a_c_c_ade941c409c1e3c01287c1c3d9de0c0dd}} 
+\index{moa.classifiers.meta.ADACC@{moa.classifiers.meta.ADACC}!initVariables@{initVariables}}
+\index{initVariables@{initVariables}!moa.classifiers.meta.ADACC@{moa.classifiers.meta.ADACC}}
+\doxysubsubsection{\texorpdfstring{initVariables()}{initVariables()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+meta.\+A\+D\+A\+C\+C.\+init\+Variables (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Initializes the method variables 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_a4cbdd2984257008d48f01bd1d0e61a6a}{moa.\+classifiers.\+meta.\+D\+A\+CC}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_a_d_a_c_c_afac7020458c562ced7fb327021d15e92}\label{classmoa_1_1classifiers_1_1meta_1_1_a_d_a_c_c_afac7020458c562ced7fb327021d15e92}} 
+\index{moa.classifiers.meta.ADACC@{moa.classifiers.meta.ADACC}!trainOnInstanceImpl@{trainOnInstanceImpl}}
+\index{trainOnInstanceImpl@{trainOnInstanceImpl}!moa.classifiers.meta.ADACC@{moa.classifiers.meta.ADACC}}
+\doxysubsubsection{\texorpdfstring{trainOnInstanceImpl()}{trainOnInstanceImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+meta.\+A\+D\+A\+C\+C.\+train\+On\+Instance\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{inst }\end{DoxyParamCaption})}
+
+Trains this classifier incrementally using the given instance.~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & the instance to be used for training \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_aaf6e169006f8f249b9cee1db427930ec}{moa.\+classifiers.\+meta.\+D\+A\+CC}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_a_d_a_c_c_aa80279c16a581246063d9d150a5dd90f}\label{classmoa_1_1classifiers_1_1meta_1_1_a_d_a_c_c_aa80279c16a581246063d9d150a5dd90f}} 
+\index{moa.classifiers.meta.ADACC@{moa.classifiers.meta.ADACC}!addedPermanent@{addedPermanent}}
+\index{addedPermanent@{addedPermanent}!moa.classifiers.meta.ADACC@{moa.classifiers.meta.ADACC}}
+\doxysubsubsection{\texorpdfstring{addedPermanent}{addedPermanent}}
+{\footnotesize\ttfamily int moa.\+classifiers.\+meta.\+A\+D\+A\+C\+C.\+added\+Permanent = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+Number of added snapshots \mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_a_d_a_c_c_a1278820a4f7a5163f337e72ffc55f04a}\label{classmoa_1_1classifiers_1_1meta_1_1_a_d_a_c_c_a1278820a4f7a5163f337e72ffc55f04a}} 
+\index{moa.classifiers.meta.ADACC@{moa.classifiers.meta.ADACC}!equivIndexSizeOption@{equivIndexSizeOption}}
+\index{equivIndexSizeOption@{equivIndexSizeOption}!moa.classifiers.meta.ADACC@{moa.classifiers.meta.ADACC}}
+\doxysubsubsection{\texorpdfstring{equivIndexSizeOption}{equivIndexSizeOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} moa.\+classifiers.\+meta.\+A\+D\+A\+C\+C.\+equiv\+Index\+Size\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FloatOption(\textcolor{stringliteral}{"CeThr"}, \textcolor{charliteral}{'q'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"The threshold for concept equivalence"}, 0.7, 0, 1)}
+
+\end{DoxyCode}
+Threshold for concept equivalence \mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_a_d_a_c_c_aa42824d83a744ab3458661c343e80ac4}\label{classmoa_1_1classifiers_1_1meta_1_1_a_d_a_c_c_aa42824d83a744ab3458661c343e80ac4}} 
+\index{moa.classifiers.meta.ADACC@{moa.classifiers.meta.ADACC}!index@{index}}
+\index{index@{index}!moa.classifiers.meta.ADACC@{moa.classifiers.meta.ADACC}}
+\doxysubsubsection{\texorpdfstring{index}{index}}
+{\footnotesize\ttfamily double moa.\+classifiers.\+meta.\+A\+D\+A\+C\+C.\+index\hspace{0.3cm}{\ttfamily [protected]}}
+
+Current stability index \mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_a_d_a_c_c_ac1b3f4b8b127c660c22ab40a100fd1c8}\label{classmoa_1_1classifiers_1_1meta_1_1_a_d_a_c_c_ac1b3f4b8b127c660c22ab40a100fd1c8}} 
+\index{moa.classifiers.meta.ADACC@{moa.classifiers.meta.ADACC}!MAXPERMANENT@{MAXPERMANENT}}
+\index{MAXPERMANENT@{MAXPERMANENT}!moa.classifiers.meta.ADACC@{moa.classifiers.meta.ADACC}}
+\doxysubsubsection{\texorpdfstring{MAXPERMANENT}{MAXPERMANENT}}
+{\footnotesize\ttfamily final int moa.\+classifiers.\+meta.\+A\+D\+A\+C\+C.\+M\+A\+X\+P\+E\+R\+M\+A\+N\+E\+NT = 100\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Maximum number of snapshots (copies of classifiers kept in case of recurrence) \mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_a_d_a_c_c_a3cdd9c1a660c26393c5acdaa0a2248f0}\label{classmoa_1_1classifiers_1_1meta_1_1_a_d_a_c_c_a3cdd9c1a660c26393c5acdaa0a2248f0}} 
+\index{moa.classifiers.meta.ADACC@{moa.classifiers.meta.ADACC}!recentChunk@{recentChunk}}
+\index{recentChunk@{recentChunk}!moa.classifiers.meta.ADACC@{moa.classifiers.meta.ADACC}}
+\doxysubsubsection{\texorpdfstring{recentChunk}{recentChunk}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instances}{Instances}} moa.\+classifiers.\+meta.\+A\+D\+A\+C\+C.\+recent\+Chunk\hspace{0.3cm}{\ttfamily [protected]}}
+
+Last chunk of data of size (tau\+\_\+size) to compute the stability index ~\newline
+ \mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_a_d_a_c_c_af741d58b62fca5aa03f45222e9ba3857}\label{classmoa_1_1classifiers_1_1meta_1_1_a_d_a_c_c_af741d58b62fca5aa03f45222e9ba3857}} 
+\index{moa.classifiers.meta.ADACC@{moa.classifiers.meta.ADACC}!stabIndexSizeOption@{stabIndexSizeOption}}
+\index{stabIndexSizeOption@{stabIndexSizeOption}!moa.classifiers.meta.ADACC@{moa.classifiers.meta.ADACC}}
+\doxysubsubsection{\texorpdfstring{stabIndexSizeOption}{stabIndexSizeOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} moa.\+classifiers.\+meta.\+A\+D\+A\+C\+C.\+stab\+Index\+Size\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FloatOption(\textcolor{stringliteral}{"StabThr"}, \textcolor{charliteral}{'z'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"The threshold for stability"}, 0.8, 0, 1)}
+
+\end{DoxyCode}
+Threshold for the stability index \mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_a_d_a_c_c_ab95da15d576dfcc68d73b768bd16d76e}\label{classmoa_1_1classifiers_1_1meta_1_1_a_d_a_c_c_ab95da15d576dfcc68d73b768bd16d76e}} 
+\index{moa.classifiers.meta.ADACC@{moa.classifiers.meta.ADACC}!tau\_size@{tau\_size}}
+\index{tau\_size@{tau\_size}!moa.classifiers.meta.ADACC@{moa.classifiers.meta.ADACC}}
+\doxysubsubsection{\texorpdfstring{tau\_size}{tau\_size}}
+{\footnotesize\ttfamily int moa.\+classifiers.\+meta.\+A\+D\+A\+C\+C.\+tau\+\_\+size = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+Size of the evaluation window to compute the stability index ~\newline
+ \mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_a_d_a_c_c_a0d07487c92ef9fd5fd460cb25ab71c1d}\label{classmoa_1_1classifiers_1_1meta_1_1_a_d_a_c_c_a0d07487c92ef9fd5fd460cb25ab71c1d}} 
+\index{moa.classifiers.meta.ADACC@{moa.classifiers.meta.ADACC}!tauSizeOption@{tauSizeOption}}
+\index{tauSizeOption@{tauSizeOption}!moa.classifiers.meta.ADACC@{moa.classifiers.meta.ADACC}}
+\doxysubsubsection{\texorpdfstring{tauSizeOption}{tauSizeOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+classifiers.\+meta.\+A\+D\+A\+C\+C.\+tau\+Size\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(\textcolor{stringliteral}{"tau"}, \textcolor{charliteral}{'t'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"The size of the evaluation window for the meta-\/learning."}, 100, 1, 10000)}
+
+\end{DoxyCode}
+Evaluation window for the stability index computation ~\newline
+ \mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_a_d_a_c_c_a16bd0b0b647ea51b953e0961cb6afc98}\label{classmoa_1_1classifiers_1_1meta_1_1_a_d_a_c_c_a16bd0b0b647ea51b953e0961cb6afc98}} 
+\index{moa.classifiers.meta.ADACC@{moa.classifiers.meta.ADACC}!theta\_stab@{theta\_stab}}
+\index{theta\_stab@{theta\_stab}!moa.classifiers.meta.ADACC@{moa.classifiers.meta.ADACC}}
+\doxysubsubsection{\texorpdfstring{theta\_stab}{theta\_stab}}
+{\footnotesize\ttfamily double moa.\+classifiers.\+meta.\+A\+D\+A\+C\+C.\+theta\+\_\+stab\hspace{0.3cm}{\ttfamily [protected]}}
+
+Threshold values for the stability index and concept equivalence 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/classifiers/meta/A\+D\+A\+C\+C.\+java\end{DoxyCompactItemize}

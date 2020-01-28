@@ -1,0 +1,231 @@
+\hypertarget{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1core_1_1voting_1_1_abstract_error_weighted_vote_multi_label}{}\doxysection{moa.\+classifiers.\+rules.\+multilabel.\+core.\+voting.\+Abstract\+Error\+Weighted\+Vote\+Multi\+Label Class Reference}
+\label{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1core_1_1voting_1_1_abstract_error_weighted_vote_multi_label}\index{moa.classifiers.rules.multilabel.core.voting.AbstractErrorWeightedVoteMultiLabel@{moa.classifiers.rules.multilabel.core.voting.AbstractErrorWeightedVoteMultiLabel}}
+
+
+Inheritance diagram for moa.\+classifiers.\+rules.\+multilabel.\+core.\+voting.\+Abstract\+Error\+Weighted\+Vote\+Multi\+Label\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+classifiers.\+rules.\+multilabel.\+core.\+voting.\+Abstract\+Error\+Weighted\+Vote\+Multi\+Label\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1core_1_1voting_1_1_abstract_error_weighted_vote_multi_label_a12fbca04b562118376c4a75116b521ea}{add\+Vote}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_prediction}{Prediction}} vote, double\mbox{[}$\,$\mbox{]} error)
+\item 
+abstract \mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_prediction}{Prediction}} \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1core_1_1voting_1_1_abstract_error_weighted_vote_multi_label_a524a8db99ecce47debed9a492f67fef3}{compute\+Weighted\+Vote}} ()
+\item 
+double \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1core_1_1voting_1_1_abstract_error_weighted_vote_multi_label_ae8fdbca345d6f6d0bb094ddd5b337aea}{get\+Weighted\+Error}} ()
+\item 
+double\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1core_1_1voting_1_1_abstract_error_weighted_vote_multi_label_afc35bd615883f2c853c2f27ac0193264}{get\+Weights}} ()
+\item 
+int \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1core_1_1voting_1_1_abstract_error_weighted_vote_multi_label_a0d6c8f579e9eaab6bd5ee9a83f174cc6}{get\+Number\+Votes}} ()
+\item 
+int \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1core_1_1voting_1_1_abstract_error_weighted_vote_multi_label_a866b96956d48b91637f305e0eb547217}{get\+Number\+Votes}} (int output\+Attribute)
+\item 
+double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1core_1_1voting_1_1_abstract_error_weighted_vote_multi_label_a4c778325cad3c91a14fe09edec3b3279}{get\+Output\+Attributes\+Errors}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1core_1_1voting_1_1_abstract_error_weighted_vote_multi_label_a670711e0b017f9381a14bc81a0568278}{get\+Description}} (String\+Builder sb, int indent)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1core_1_1voting_1_1_abstract_error_weighted_vote_multi_label_aeac09f27dccb8382a97a8dbb0957ea74}\label{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1core_1_1voting_1_1_abstract_error_weighted_vote_multi_label_aeac09f27dccb8382a97a8dbb0957ea74}} 
+\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_prediction}{Prediction}} {\bfseries get\+Prediction} ()
+\item 
+boolean \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1core_1_1voting_1_1_abstract_error_weighted_vote_multi_label_af12dbb3e40f8248ea62dbea486abad74}{covers\+All\+Outputs}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1core_1_1voting_1_1_abstract_error_weighted_vote_multi_label_a82b27bb2ded5f9c3c57a272cb07de4b9}\label{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1core_1_1voting_1_1_abstract_error_weighted_vote_multi_label_a82b27bb2ded5f9c3c57a272cb07de4b9}} 
+List$<$ \mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_prediction}{Prediction}} $>$ {\bfseries votes}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1core_1_1voting_1_1_abstract_error_weighted_vote_multi_label_a7699a7957f55fa50559adbca50152682}\label{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1core_1_1voting_1_1_abstract_error_weighted_vote_multi_label_a7699a7957f55fa50559adbca50152682}} 
+List$<$ double\mbox{[}$\,$\mbox{]}$>$ {\bfseries errors}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1core_1_1voting_1_1_abstract_error_weighted_vote_multi_label_a5f2f7f0c5ab9ffdb8c2f6754d86f7aca}\label{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1core_1_1voting_1_1_abstract_error_weighted_vote_multi_label_a5f2f7f0c5ab9ffdb8c2f6754d86f7aca}} 
+double\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} {\bfseries weights}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1core_1_1voting_1_1_abstract_error_weighted_vote_multi_label_aff2c1f1da15f5a079e5426baa8ee8c90}\label{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1core_1_1voting_1_1_abstract_error_weighted_vote_multi_label_aff2c1f1da15f5a079e5426baa8ee8c90}} 
+int\mbox{[}$\,$\mbox{]} {\bfseries output\+Attributes\+Count}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1core_1_1voting_1_1_abstract_error_weighted_vote_multi_label_a9053b5d832a08db93a44ef5010ea37fa}\label{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1core_1_1voting_1_1_abstract_error_weighted_vote_multi_label_a9053b5d832a08db93a44ef5010ea37fa}} 
+\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_prediction}{Prediction}} {\bfseries weighted\+Vote} =null
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Abstract\+Error\+Weighted\+Vote class for weighted votes based on estimates of errors.
+
+\begin{DoxyAuthor}{Author}
+João Duarte (\href{mailto:jmduarte@inescporto.pt}{\texttt{ jmduarte@inescporto.\+pt}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+1 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1core_1_1voting_1_1_abstract_error_weighted_vote_multi_label_a12fbca04b562118376c4a75116b521ea}\label{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1core_1_1voting_1_1_abstract_error_weighted_vote_multi_label_a12fbca04b562118376c4a75116b521ea}} 
+\index{moa.classifiers.rules.multilabel.core.voting.AbstractErrorWeightedVoteMultiLabel@{moa.classifiers.rules.multilabel.core.voting.AbstractErrorWeightedVoteMultiLabel}!addVote@{addVote}}
+\index{addVote@{addVote}!moa.classifiers.rules.multilabel.core.voting.AbstractErrorWeightedVoteMultiLabel@{moa.classifiers.rules.multilabel.core.voting.AbstractErrorWeightedVoteMultiLabel}}
+\doxysubsubsection{\texorpdfstring{addVote()}{addVote()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+rules.\+multilabel.\+core.\+voting.\+Abstract\+Error\+Weighted\+Vote\+Multi\+Label.\+add\+Vote (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_prediction}{Prediction}}}]{prediction,  }\item[{double\mbox{[}$\,$\mbox{]}}]{error }\end{DoxyParamCaption})}
+
+Adds a vote and the corresponding error for the computation of the weighted vote and respective weighted error.
+
+
+\begin{DoxyParams}{Parameters}
+{\em vote} & -\/ a vote returned by a classifier \\
+\hline
+{\em error} & -\/ the error associated to the vote \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1classifiers_1_1rules_1_1multilabel_1_1core_1_1voting_1_1_error_weighted_vote_multi_label_ad638c47fba25538cf042d2662aa967dd}{moa.\+classifiers.\+rules.\+multilabel.\+core.\+voting.\+Error\+Weighted\+Vote\+Multi\+Label}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1core_1_1voting_1_1_abstract_error_weighted_vote_multi_label_a524a8db99ecce47debed9a492f67fef3}\label{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1core_1_1voting_1_1_abstract_error_weighted_vote_multi_label_a524a8db99ecce47debed9a492f67fef3}} 
+\index{moa.classifiers.rules.multilabel.core.voting.AbstractErrorWeightedVoteMultiLabel@{moa.classifiers.rules.multilabel.core.voting.AbstractErrorWeightedVoteMultiLabel}!computeWeightedVote@{computeWeightedVote}}
+\index{computeWeightedVote@{computeWeightedVote}!moa.classifiers.rules.multilabel.core.voting.AbstractErrorWeightedVoteMultiLabel@{moa.classifiers.rules.multilabel.core.voting.AbstractErrorWeightedVoteMultiLabel}}
+\doxysubsubsection{\texorpdfstring{computeWeightedVote()}{computeWeightedVote()}}
+{\footnotesize\ttfamily abstract \mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_prediction}{Prediction}} moa.\+classifiers.\+rules.\+multilabel.\+core.\+voting.\+Abstract\+Error\+Weighted\+Vote\+Multi\+Label.\+compute\+Weighted\+Vote (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Computes the weighted vote. Also updates the weights of the votes.
+
+\begin{DoxyReturn}{Returns}
+the weighted vote 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1classifiers_1_1rules_1_1multilabel_1_1core_1_1voting_1_1_error_weighted_vote_multi_label_ac5c5bde78a2d850542674eeab28fc677}{moa.\+classifiers.\+rules.\+multilabel.\+core.\+voting.\+Error\+Weighted\+Vote\+Multi\+Label}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1core_1_1voting_1_1_inverse_error_weighted_vote_multi_label_a0c0e5410d4f7ae75b1212bb1d04fe24d}{moa.\+classifiers.\+rules.\+multilabel.\+core.\+voting.\+Inverse\+Error\+Weighted\+Vote\+Multi\+Label}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1core_1_1voting_1_1_first_hit_vote_multi_label_a1e7ed2b48de8acddc22f29f1a3a90680}{moa.\+classifiers.\+rules.\+multilabel.\+core.\+voting.\+First\+Hit\+Vote\+Multi\+Label}}, and \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1core_1_1voting_1_1_uniform_weighted_vote_multi_label_ab1445aca5050890d9bd997f84d0a494c}{moa.\+classifiers.\+rules.\+multilabel.\+core.\+voting.\+Uniform\+Weighted\+Vote\+Multi\+Label}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1core_1_1voting_1_1_abstract_error_weighted_vote_multi_label_af12dbb3e40f8248ea62dbea486abad74}\label{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1core_1_1voting_1_1_abstract_error_weighted_vote_multi_label_af12dbb3e40f8248ea62dbea486abad74}} 
+\index{moa.classifiers.rules.multilabel.core.voting.AbstractErrorWeightedVoteMultiLabel@{moa.classifiers.rules.multilabel.core.voting.AbstractErrorWeightedVoteMultiLabel}!coversAllOutputs@{coversAllOutputs}}
+\index{coversAllOutputs@{coversAllOutputs}!moa.classifiers.rules.multilabel.core.voting.AbstractErrorWeightedVoteMultiLabel@{moa.classifiers.rules.multilabel.core.voting.AbstractErrorWeightedVoteMultiLabel}}
+\doxysubsubsection{\texorpdfstring{coversAllOutputs()}{coversAllOutputs()}}
+{\footnotesize\ttfamily boolean moa.\+classifiers.\+rules.\+multilabel.\+core.\+voting.\+Abstract\+Error\+Weighted\+Vote\+Multi\+Label.\+covers\+All\+Outputs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Check if vote has a value for each output 
+
+Implements \mbox{\hyperlink{interfacemoa_1_1classifiers_1_1rules_1_1multilabel_1_1core_1_1voting_1_1_error_weighted_vote_multi_label_a7f59ae930a20bb49fd1fcfd8ffbc3785}{moa.\+classifiers.\+rules.\+multilabel.\+core.\+voting.\+Error\+Weighted\+Vote\+Multi\+Label}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1core_1_1voting_1_1_abstract_error_weighted_vote_multi_label_a670711e0b017f9381a14bc81a0568278}\label{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1core_1_1voting_1_1_abstract_error_weighted_vote_multi_label_a670711e0b017f9381a14bc81a0568278}} 
+\index{moa.classifiers.rules.multilabel.core.voting.AbstractErrorWeightedVoteMultiLabel@{moa.classifiers.rules.multilabel.core.voting.AbstractErrorWeightedVoteMultiLabel}!getDescription@{getDescription}}
+\index{getDescription@{getDescription}!moa.classifiers.rules.multilabel.core.voting.AbstractErrorWeightedVoteMultiLabel@{moa.classifiers.rules.multilabel.core.voting.AbstractErrorWeightedVoteMultiLabel}}
+\doxysubsubsection{\texorpdfstring{getDescription()}{getDescription()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+rules.\+multilabel.\+core.\+voting.\+Abstract\+Error\+Weighted\+Vote\+Multi\+Label.\+get\+Description (\begin{DoxyParamCaption}\item[{String\+Builder}]{sb,  }\item[{int}]{indent }\end{DoxyParamCaption})}
+
+Returns a string representation of this object. Used in {\ttfamily \mbox{\hyperlink{classmoa_1_1_abstract_m_o_a_object_ac686fd3b07c734cf21f1894376fe402d}{Abstract\+M\+O\+A\+Object.\+to\+String}}} to give a string representation of the object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sb} & the stringbuilder to add the description \\
+\hline
+{\em indent} & the number of characters to indent \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1_m_o_a_object_afdaf5098f1fe6c852018ce64c28e17f5}{moa.\+M\+O\+A\+Object}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1core_1_1voting_1_1_abstract_error_weighted_vote_multi_label_a0d6c8f579e9eaab6bd5ee9a83f174cc6}\label{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1core_1_1voting_1_1_abstract_error_weighted_vote_multi_label_a0d6c8f579e9eaab6bd5ee9a83f174cc6}} 
+\index{moa.classifiers.rules.multilabel.core.voting.AbstractErrorWeightedVoteMultiLabel@{moa.classifiers.rules.multilabel.core.voting.AbstractErrorWeightedVoteMultiLabel}!getNumberVotes@{getNumberVotes}}
+\index{getNumberVotes@{getNumberVotes}!moa.classifiers.rules.multilabel.core.voting.AbstractErrorWeightedVoteMultiLabel@{moa.classifiers.rules.multilabel.core.voting.AbstractErrorWeightedVoteMultiLabel}}
+\doxysubsubsection{\texorpdfstring{getNumberVotes()}{getNumberVotes()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int moa.\+classifiers.\+rules.\+multilabel.\+core.\+voting.\+Abstract\+Error\+Weighted\+Vote\+Multi\+Label.\+get\+Number\+Votes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The number of votes added so far.
+
+\begin{DoxyReturn}{Returns}
+the number of votes 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1classifiers_1_1rules_1_1multilabel_1_1core_1_1voting_1_1_error_weighted_vote_multi_label_aaa9d8afc0a4d264dfcf764428c13d79e}{moa.\+classifiers.\+rules.\+multilabel.\+core.\+voting.\+Error\+Weighted\+Vote\+Multi\+Label}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1core_1_1voting_1_1_abstract_error_weighted_vote_multi_label_a866b96956d48b91637f305e0eb547217}\label{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1core_1_1voting_1_1_abstract_error_weighted_vote_multi_label_a866b96956d48b91637f305e0eb547217}} 
+\index{moa.classifiers.rules.multilabel.core.voting.AbstractErrorWeightedVoteMultiLabel@{moa.classifiers.rules.multilabel.core.voting.AbstractErrorWeightedVoteMultiLabel}!getNumberVotes@{getNumberVotes}}
+\index{getNumberVotes@{getNumberVotes}!moa.classifiers.rules.multilabel.core.voting.AbstractErrorWeightedVoteMultiLabel@{moa.classifiers.rules.multilabel.core.voting.AbstractErrorWeightedVoteMultiLabel}}
+\doxysubsubsection{\texorpdfstring{getNumberVotes()}{getNumberVotes()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int moa.\+classifiers.\+rules.\+multilabel.\+core.\+voting.\+Abstract\+Error\+Weighted\+Vote\+Multi\+Label.\+get\+Number\+Votes (\begin{DoxyParamCaption}\item[{int}]{output\+Attribute }\end{DoxyParamCaption})}
+
+The number of votes for a given output attribute.
+
+
+\begin{DoxyParams}{Parameters}
+{\em output\+Attribute} & the index of the output attribute\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the number of votes 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1classifiers_1_1rules_1_1multilabel_1_1core_1_1voting_1_1_error_weighted_vote_multi_label_a741f14ff5be518a203bf4a8187028858}{moa.\+classifiers.\+rules.\+multilabel.\+core.\+voting.\+Error\+Weighted\+Vote\+Multi\+Label}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1core_1_1voting_1_1_abstract_error_weighted_vote_multi_label_a4c778325cad3c91a14fe09edec3b3279}\label{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1core_1_1voting_1_1_abstract_error_weighted_vote_multi_label_a4c778325cad3c91a14fe09edec3b3279}} 
+\index{moa.classifiers.rules.multilabel.core.voting.AbstractErrorWeightedVoteMultiLabel@{moa.classifiers.rules.multilabel.core.voting.AbstractErrorWeightedVoteMultiLabel}!getOutputAttributesErrors@{getOutputAttributesErrors}}
+\index{getOutputAttributesErrors@{getOutputAttributesErrors}!moa.classifiers.rules.multilabel.core.voting.AbstractErrorWeightedVoteMultiLabel@{moa.classifiers.rules.multilabel.core.voting.AbstractErrorWeightedVoteMultiLabel}}
+\doxysubsubsection{\texorpdfstring{getOutputAttributesErrors()}{getOutputAttributesErrors()}}
+{\footnotesize\ttfamily double \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+rules.\+multilabel.\+core.\+voting.\+Abstract\+Error\+Weighted\+Vote\+Multi\+Label.\+get\+Output\+Attributes\+Errors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the weighted error.
+
+\begin{DoxyPrecond}{Precondition}
+\mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1core_1_1voting_1_1_abstract_error_weighted_vote_multi_label_a524a8db99ecce47debed9a492f67fef3}{compute\+Weighted\+Vote()}} 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+the weighted error for each output attribute 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1classifiers_1_1rules_1_1multilabel_1_1core_1_1voting_1_1_error_weighted_vote_multi_label_ae1dfabceb43309c6d797f2a7474278eb}{moa.\+classifiers.\+rules.\+multilabel.\+core.\+voting.\+Error\+Weighted\+Vote\+Multi\+Label}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1core_1_1voting_1_1_abstract_error_weighted_vote_multi_label_ae8fdbca345d6f6d0bb094ddd5b337aea}\label{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1core_1_1voting_1_1_abstract_error_weighted_vote_multi_label_ae8fdbca345d6f6d0bb094ddd5b337aea}} 
+\index{moa.classifiers.rules.multilabel.core.voting.AbstractErrorWeightedVoteMultiLabel@{moa.classifiers.rules.multilabel.core.voting.AbstractErrorWeightedVoteMultiLabel}!getWeightedError@{getWeightedError}}
+\index{getWeightedError@{getWeightedError}!moa.classifiers.rules.multilabel.core.voting.AbstractErrorWeightedVoteMultiLabel@{moa.classifiers.rules.multilabel.core.voting.AbstractErrorWeightedVoteMultiLabel}}
+\doxysubsubsection{\texorpdfstring{getWeightedError()}{getWeightedError()}}
+{\footnotesize\ttfamily double moa.\+classifiers.\+rules.\+multilabel.\+core.\+voting.\+Abstract\+Error\+Weighted\+Vote\+Multi\+Label.\+get\+Weighted\+Error (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the weighted error.
+
+\begin{DoxyPrecond}{Precondition}
+\mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1core_1_1voting_1_1_abstract_error_weighted_vote_multi_label_a524a8db99ecce47debed9a492f67fef3}{compute\+Weighted\+Vote()}} 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+the weighted error 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1classifiers_1_1rules_1_1multilabel_1_1core_1_1voting_1_1_error_weighted_vote_multi_label_a468ccb4a79ad9e8fe475e641cf863309}{moa.\+classifiers.\+rules.\+multilabel.\+core.\+voting.\+Error\+Weighted\+Vote\+Multi\+Label}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1core_1_1voting_1_1_abstract_error_weighted_vote_multi_label_afc35bd615883f2c853c2f27ac0193264}\label{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1core_1_1voting_1_1_abstract_error_weighted_vote_multi_label_afc35bd615883f2c853c2f27ac0193264}} 
+\index{moa.classifiers.rules.multilabel.core.voting.AbstractErrorWeightedVoteMultiLabel@{moa.classifiers.rules.multilabel.core.voting.AbstractErrorWeightedVoteMultiLabel}!getWeights@{getWeights}}
+\index{getWeights@{getWeights}!moa.classifiers.rules.multilabel.core.voting.AbstractErrorWeightedVoteMultiLabel@{moa.classifiers.rules.multilabel.core.voting.AbstractErrorWeightedVoteMultiLabel}}
+\doxysubsubsection{\texorpdfstring{getWeights()}{getWeights()}}
+{\footnotesize\ttfamily double \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} moa.\+classifiers.\+rules.\+multilabel.\+core.\+voting.\+Abstract\+Error\+Weighted\+Vote\+Multi\+Label.\+get\+Weights (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Return the weights error.
+
+\begin{DoxyPrecond}{Precondition}
+\mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1core_1_1voting_1_1_abstract_error_weighted_vote_multi_label_a524a8db99ecce47debed9a492f67fef3}{compute\+Weighted\+Vote()}} 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+the weights for each output attribute 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1classifiers_1_1rules_1_1multilabel_1_1core_1_1voting_1_1_error_weighted_vote_multi_label_a2cfe88540183e2d76a351e6989ba7315}{moa.\+classifiers.\+rules.\+multilabel.\+core.\+voting.\+Error\+Weighted\+Vote\+Multi\+Label}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/classifiers/rules/multilabel/core/voting/Abstract\+Error\+Weighted\+Vote\+Multi\+Label.\+java\end{DoxyCompactItemize}

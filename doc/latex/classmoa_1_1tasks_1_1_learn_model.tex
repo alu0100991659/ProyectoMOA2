@@ -1,0 +1,190 @@
+\hypertarget{classmoa_1_1tasks_1_1_learn_model}{}\doxysection{moa.\+tasks.\+Learn\+Model Class Reference}
+\label{classmoa_1_1tasks_1_1_learn_model}\index{moa.tasks.LearnModel@{moa.tasks.LearnModel}}
+
+
+Inheritance diagram for moa.\+tasks.\+Learn\+Model\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+tasks.\+Learn\+Model\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classmoa_1_1tasks_1_1_learn_model_a6c6ac2cd591fdac8e00bf823422345eb}{get\+Purpose\+String}} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_learn_model_a40033e92291733c0593b759bf489d155}\label{classmoa_1_1tasks_1_1_learn_model_a40033e92291733c0593b759bf489d155}} 
+{\bfseries Learn\+Model} (\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier}{Classifier}} learner, \mbox{\hyperlink{interfacemoa_1_1streams_1_1_instance_stream}{Instance\+Stream}} stream, int max\+Instances, int num\+Passes)
+\item 
+Class$<$?$>$ \mbox{\hyperlink{classmoa_1_1tasks_1_1_learn_model_a6beb31f9af29a246c01186ef632d5235}{get\+Task\+Result\+Type}} ()
+\item 
+Object \mbox{\hyperlink{classmoa_1_1tasks_1_1_learn_model_a458fb13420761f68401ac4ae6b3605d8}{do\+Main\+Task}} (\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}} monitor, \mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}} repository)
+\item 
+\mbox{\hyperlink{classmoa_1_1capabilities_1_1_immutable_capabilities}{Immutable\+Capabilities}} \mbox{\hyperlink{classmoa_1_1tasks_1_1_learn_model_a13498468df668cd7544437ecb33c549a}{define\+Immutable\+Capabilities}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} {\bfseries learner\+Option}
+\item 
+\mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} {\bfseries stream\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries max\+Instances\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries num\+Passes\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries mem\+Check\+Frequency\+Option}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task}{Task}} for learning a model without any evaluation.
+
+\begin{DoxyAuthor}{Author}
+Richard Kirkby (\href{mailto:rkirkby@cs.waikato.ac.nz}{\texttt{ rkirkby@cs.\+waikato.\+ac.\+nz}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+7 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_learn_model_a13498468df668cd7544437ecb33c549a}\label{classmoa_1_1tasks_1_1_learn_model_a13498468df668cd7544437ecb33c549a}} 
+\index{moa.tasks.LearnModel@{moa.tasks.LearnModel}!defineImmutableCapabilities@{defineImmutableCapabilities}}
+\index{defineImmutableCapabilities@{defineImmutableCapabilities}!moa.tasks.LearnModel@{moa.tasks.LearnModel}}
+\doxysubsubsection{\texorpdfstring{defineImmutableCapabilities()}{defineImmutableCapabilities()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1capabilities_1_1_immutable_capabilities}{Immutable\+Capabilities}} moa.\+tasks.\+Learn\+Model.\+define\+Immutable\+Capabilities (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Defines the set of capabilities the object has. Should be overridden if the object\textquotesingle{}s capabilities do not change.
+
+\begin{DoxyReturn}{Returns}
+The capabilities of the object. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1capabilities_1_1_capabilities_handler_aa82d1befd5dbb958c9787b5304c9a82a}{moa.\+capabilities.\+Capabilities\+Handler}}.
+
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_learn_model_a458fb13420761f68401ac4ae6b3605d8}\label{classmoa_1_1tasks_1_1_learn_model_a458fb13420761f68401ac4ae6b3605d8}} 
+\index{moa.tasks.LearnModel@{moa.tasks.LearnModel}!doMainTask@{doMainTask}}
+\index{doMainTask@{doMainTask}!moa.tasks.LearnModel@{moa.tasks.LearnModel}}
+\doxysubsubsection{\texorpdfstring{doMainTask()}{doMainTask()}}
+{\footnotesize\ttfamily Object moa.\+tasks.\+Learn\+Model.\+do\+Main\+Task (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}}}]{monitor,  }\item[{\mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}}}]{repository }\end{DoxyParamCaption})}
+
+This method performs this task. {\ttfamily \mbox{\hyperlink{classmoa_1_1tasks_1_1_abstract_task}{Abstract\+Task}}} implements {\ttfamily do\+Task}, that uses {\ttfamily do\+Task\+Impl}. {\ttfamily \mbox{\hyperlink{classmoa_1_1tasks_1_1_main_task}{Main\+Task}}} implements {\ttfamily do\+Task\+Impl} using {\ttfamily do\+Main\+Task} so its extensions only need to implement {\ttfamily do\+Main\+Task}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em monitor} & the \mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}} to use \\
+\hline
+{\em repository} & the Object\+Repository to use \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an object with the result of this task 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1tasks_1_1_main_task_afab790976c2ace902aa1e2f780442788}{moa.\+tasks.\+Main\+Task}}.
+
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_learn_model_a6c6ac2cd591fdac8e00bf823422345eb}\label{classmoa_1_1tasks_1_1_learn_model_a6c6ac2cd591fdac8e00bf823422345eb}} 
+\index{moa.tasks.LearnModel@{moa.tasks.LearnModel}!getPurposeString@{getPurposeString}}
+\index{getPurposeString@{getPurposeString}!moa.tasks.LearnModel@{moa.tasks.LearnModel}}
+\doxysubsubsection{\texorpdfstring{getPurposeString()}{getPurposeString()}}
+{\footnotesize\ttfamily String moa.\+tasks.\+Learn\+Model.\+get\+Purpose\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Options to handle Dictionary with option texts and objects 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1options_1_1_abstract_option_handler_abc8df69aea27ef85060557a9e918b2ca}{moa.\+options.\+Abstract\+Option\+Handler}}.
+
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_learn_model_a6beb31f9af29a246c01186ef632d5235}\label{classmoa_1_1tasks_1_1_learn_model_a6beb31f9af29a246c01186ef632d5235}} 
+\index{moa.tasks.LearnModel@{moa.tasks.LearnModel}!getTaskResultType@{getTaskResultType}}
+\index{getTaskResultType@{getTaskResultType}!moa.tasks.LearnModel@{moa.tasks.LearnModel}}
+\doxysubsubsection{\texorpdfstring{getTaskResultType()}{getTaskResultType()}}
+{\footnotesize\ttfamily Class$<$?$>$ moa.\+tasks.\+Learn\+Model.\+get\+Task\+Result\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the result type of this task. Tasks can return Learning\+Curve, Learning\+Evaluation, Classifier, String, Instances..
+
+\begin{DoxyReturn}{Returns}
+a class object of the result of this task 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_a568100cd931416820d1bcc81032301f6}{moa.\+tasks.\+Task}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_learn_model_a4890fc1b1bc918187b6f47e870ab0f23}\label{classmoa_1_1tasks_1_1_learn_model_a4890fc1b1bc918187b6f47e870ab0f23}} 
+\index{moa.tasks.LearnModel@{moa.tasks.LearnModel}!learnerOption@{learnerOption}}
+\index{learnerOption@{learnerOption}!moa.tasks.LearnModel@{moa.tasks.LearnModel}}
+\doxysubsubsection{\texorpdfstring{learnerOption}{learnerOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} moa.\+tasks.\+Learn\+Model.\+learner\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} ClassOption(\textcolor{stringliteral}{"learner"}, \textcolor{charliteral}{'l'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Classifier to train."}, MultiClassClassifier.class, \textcolor{stringliteral}{"moa.classifiers.bayes.NaiveBayes"})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_learn_model_ad9b740b3ea305c6e4df3a1301d57eed3}\label{classmoa_1_1tasks_1_1_learn_model_ad9b740b3ea305c6e4df3a1301d57eed3}} 
+\index{moa.tasks.LearnModel@{moa.tasks.LearnModel}!maxInstancesOption@{maxInstancesOption}}
+\index{maxInstancesOption@{maxInstancesOption}!moa.tasks.LearnModel@{moa.tasks.LearnModel}}
+\doxysubsubsection{\texorpdfstring{maxInstancesOption}{maxInstancesOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+tasks.\+Learn\+Model.\+max\+Instances\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(\textcolor{stringliteral}{"maxInstances"}, \textcolor{charliteral}{'m'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Maximum number of instances to train on per pass over the data."},}
+\DoxyCodeLine{            10000000, 0, Integer.MAX\_VALUE)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_learn_model_a3f13a17ac23c99ed2005ff79b92fc46a}\label{classmoa_1_1tasks_1_1_learn_model_a3f13a17ac23c99ed2005ff79b92fc46a}} 
+\index{moa.tasks.LearnModel@{moa.tasks.LearnModel}!memCheckFrequencyOption@{memCheckFrequencyOption}}
+\index{memCheckFrequencyOption@{memCheckFrequencyOption}!moa.tasks.LearnModel@{moa.tasks.LearnModel}}
+\doxysubsubsection{\texorpdfstring{memCheckFrequencyOption}{memCheckFrequencyOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+tasks.\+Learn\+Model.\+mem\+Check\+Frequency\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(}
+\DoxyCodeLine{            \textcolor{stringliteral}{"memCheckFrequency"}, \textcolor{charliteral}{'q'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"How many instances between memory bound checks."}, 100000, 0,}
+\DoxyCodeLine{            Integer.MAX\_VALUE)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_learn_model_aa4d61c31ed2fedc2d3b29755c9d76b45}\label{classmoa_1_1tasks_1_1_learn_model_aa4d61c31ed2fedc2d3b29755c9d76b45}} 
+\index{moa.tasks.LearnModel@{moa.tasks.LearnModel}!numPassesOption@{numPassesOption}}
+\index{numPassesOption@{numPassesOption}!moa.tasks.LearnModel@{moa.tasks.LearnModel}}
+\doxysubsubsection{\texorpdfstring{numPassesOption}{numPassesOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+tasks.\+Learn\+Model.\+num\+Passes\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(\textcolor{stringliteral}{"numPasses"}, \textcolor{charliteral}{'p'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"The number of passes to do over the data."}, 1, 1,}
+\DoxyCodeLine{            Integer.MAX\_VALUE)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_learn_model_a681a1c82dc5f23b06afe4b26297fa441}\label{classmoa_1_1tasks_1_1_learn_model_a681a1c82dc5f23b06afe4b26297fa441}} 
+\index{moa.tasks.LearnModel@{moa.tasks.LearnModel}!streamOption@{streamOption}}
+\index{streamOption@{streamOption}!moa.tasks.LearnModel@{moa.tasks.LearnModel}}
+\doxysubsubsection{\texorpdfstring{streamOption}{streamOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} moa.\+tasks.\+Learn\+Model.\+stream\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} ClassOption(\textcolor{stringliteral}{"stream"}, \textcolor{charliteral}{'s'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Stream to learn from."}, ExampleStream.class,}
+\DoxyCodeLine{            \textcolor{stringliteral}{"generators.RandomTreeGenerator"})}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/tasks/Learn\+Model.\+java\end{DoxyCompactItemize}

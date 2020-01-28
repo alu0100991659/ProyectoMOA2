@@ -1,0 +1,52 @@
+digraph "moa.tasks.AuxiliarMainTask"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="moa.tasks.AuxiliarMainTask",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="moa.tasks.MainTask",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classmoa_1_1tasks_1_1_main_task.html",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="moa.tasks.AbstractTask",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classmoa_1_1tasks_1_1_abstract_task.html",tooltip=" "];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="moa.options.AbstractOption\lHandler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classmoa_1_1options_1_1_abstract_option_handler.html",tooltip=" "];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="moa.AbstractMOAObject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classmoa_1_1_abstract_m_o_a_object.html",tooltip=" "];
+  Node6 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="moa.MOAObject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interfacemoa_1_1_m_o_a_object.html",tooltip=" "];
+  Node7 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="Serializable",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node8 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="moa.options.OptionHandler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interfacemoa_1_1options_1_1_option_handler.html",tooltip=" "];
+  Node6 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node9 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="com.github.javacliparser.\lConfigurable",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interfacecom_1_1github_1_1javacliparser_1_1_configurable.html",tooltip=" "];
+  Node7 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node10 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" config" ];
+  Node10 [label="moa.options.OptionsHandler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classmoa_1_1options_1_1_options_handler.html",tooltip=" "];
+  Node11 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node11 [label="com.github.javacliparser.\lJavaCLIParser",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcom_1_1github_1_1javacliparser_1_1_java_c_l_i_parser.html",tooltip=" "];
+  Node7 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node12 -> Node11 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" options" ];
+  Node12 [label="com.github.javacliparser.\lOptions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcom_1_1github_1_1javacliparser_1_1_options.html",tooltip=" "];
+  Node7 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node13 -> Node12 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" optionList" ];
+  Node13 [label="List\< com.github.javacliparser.\lOption \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node14 -> Node11 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" classOptionNamesToPrepared\lObjects" ];
+  Node14 [label="Map\< String, Object \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node15 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node15 [label="moa.tasks.Task",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interfacemoa_1_1tasks_1_1_task.html",tooltip=" "];
+  Node6 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node16 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" outputFileOption" ];
+  Node16 [label="com.github.javacliparser.\lFileOption",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcom_1_1github_1_1javacliparser_1_1_file_option.html",tooltip=" "];
+  Node17 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node17 [label="com.github.javacliparser.\lStringOption",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcom_1_1github_1_1javacliparser_1_1_string_option.html",tooltip=" "];
+  Node18 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node18 [label="com.github.javacliparser.\lAbstractOption",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcom_1_1github_1_1javacliparser_1_1_abstract_option.html",tooltip=" "];
+  Node19 -> Node18 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node19 [label="com.github.javacliparser.\lOption",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interfacecom_1_1github_1_1javacliparser_1_1_option.html",tooltip=" "];
+  Node7 -> Node19 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node20 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" events" ];
+  Node20 [label="ArrayList\< moa.streams.clustering.\lClusterEvent \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+}

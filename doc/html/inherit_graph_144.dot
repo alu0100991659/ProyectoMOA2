@@ -1,0 +1,8 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="moa.evaluation.CMM\l_GTAnalysis.GTCluster",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classmoa_1_1evaluation_1_1_c_m_m___g_t_analysis_1_1_g_t_cluster.html",tooltip=" "];
+}

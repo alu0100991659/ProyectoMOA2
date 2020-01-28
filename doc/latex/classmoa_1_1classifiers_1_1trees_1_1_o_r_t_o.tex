@@ -1,0 +1,188 @@
+\hypertarget{classmoa_1_1classifiers_1_1trees_1_1_o_r_t_o}{}\doxysection{moa.\+classifiers.\+trees.\+O\+R\+TO Class Reference}
+\label{classmoa_1_1classifiers_1_1trees_1_1_o_r_t_o}\index{moa.classifiers.trees.ORTO@{moa.classifiers.trees.ORTO}}
+
+
+Inheritance diagram for moa.\+classifiers.\+trees.\+O\+R\+TO\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+classifiers.\+trees.\+O\+R\+TO\+:
+% FIG 1
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Option\+Node}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1_o_r_t_o_aabc5c6a58b58646c9afeb1b4f2a67496}{get\+Purpose\+String}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1_o_r_t_o_a9702308f5e34f6cefe77deb7111d3b27}{reset\+Learning\+Impl}} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_o_r_t_o_ac491107c08dce663552584cc6dd236f1}\label{classmoa_1_1classifiers_1_1trees_1_1_o_r_t_o_ac491107c08dce663552584cc6dd236f1}} 
+void {\bfseries process\+Instance} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst, Node node, double prediction, double normal\+Error, boolean growth\+Allowed, boolean in\+Alternate)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_o_r_t_o_a758c793f55ca97ccc0939a05664ade3c}\label{classmoa_1_1classifiers_1_1trees_1_1_o_r_t_o_a758c793f55ca97ccc0939a05664ade3c}} 
+void {\bfseries process\+Instance\+Option\+Node} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst, Option\+Node node, double prediction, double normal\+Error, boolean growth\+Allowed, boolean in\+Alternate)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries max\+Trees\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries max\+Option\+Level\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} {\bfseries option\+Decay\+Factor\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_multi_choice_option}{Multi\+Choice\+Option}} {\bfseries option\+Node\+Aggregation\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} {\bfseries option\+Fading\+Factor\+Option}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1_o_r_t_o_a3a3119eac5b836e2082b971a07a4e3eb}{get\+Model\+Measurements\+Impl}} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_o_r_t_o_a4252e70d38b592a5e131f7e83ba216b2}\label{classmoa_1_1classifiers_1_1trees_1_1_o_r_t_o_a4252e70d38b592a5e131f7e83ba216b2}} 
+Option\+Node {\bfseries new\+Option\+Node} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_o_r_t_o_a44e6baae8aadefd10f9970e2211858e6}\label{classmoa_1_1classifiers_1_1trees_1_1_o_r_t_o_a44e6baae8aadefd10f9970e2211858e6}} 
+void {\bfseries attempt\+To\+Split} (Leaf\+Node node, Node parent, int parent\+Index)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_o_r_t_o_af9948c11298edfaa749ba0b2dd9ae947}\label{classmoa_1_1classifiers_1_1trees_1_1_o_r_t_o_af9948c11298edfaa749ba0b2dd9ae947}} 
+Node {\bfseries find\+Worst\+Option} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_o_r_t_o_a7506ae1182bd74162036c2007cf2c5ca}\label{classmoa_1_1classifiers_1_1trees_1_1_o_r_t_o_a7506ae1182bd74162036c2007cf2c5ca}} 
+void {\bfseries remove\+Excess\+Trees} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_o_r_t_o_a3a3119eac5b836e2082b971a07a4e3eb}\label{classmoa_1_1classifiers_1_1trees_1_1_o_r_t_o_a3a3119eac5b836e2082b971a07a4e3eb}} 
+\index{moa.classifiers.trees.ORTO@{moa.classifiers.trees.ORTO}!getModelMeasurementsImpl@{getModelMeasurementsImpl}}
+\index{getModelMeasurementsImpl@{getModelMeasurementsImpl}!moa.classifiers.trees.ORTO@{moa.classifiers.trees.ORTO}}
+\doxysubsubsection{\texorpdfstring{getModelMeasurementsImpl()}{getModelMeasurementsImpl()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}} \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+trees.\+O\+R\+T\+O.\+get\+Model\+Measurements\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Gets the current measurements of this classifier.~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden.
+
+\begin{DoxyReturn}{Returns}
+an array of measurements to be used in evaluation tasks 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_ab0119099c2d4c1dcfdb494594fbd16f6}{moa.\+classifiers.\+trees.\+F\+I\+M\+T\+DD}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_o_r_t_o_aabc5c6a58b58646c9afeb1b4f2a67496}\label{classmoa_1_1classifiers_1_1trees_1_1_o_r_t_o_aabc5c6a58b58646c9afeb1b4f2a67496}} 
+\index{moa.classifiers.trees.ORTO@{moa.classifiers.trees.ORTO}!getPurposeString@{getPurposeString}}
+\index{getPurposeString@{getPurposeString}!moa.classifiers.trees.ORTO@{moa.classifiers.trees.ORTO}}
+\doxysubsubsection{\texorpdfstring{getPurposeString()}{getPurposeString()}}
+{\footnotesize\ttfamily String moa.\+classifiers.\+trees.\+O\+R\+T\+O.\+get\+Purpose\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Options to handle Dictionary with option texts and objects 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_a6a47b798a7a1b090fe2a3ccd3f69a93b}{moa.\+classifiers.\+trees.\+F\+I\+M\+T\+DD}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_o_r_t_o_a9702308f5e34f6cefe77deb7111d3b27}\label{classmoa_1_1classifiers_1_1trees_1_1_o_r_t_o_a9702308f5e34f6cefe77deb7111d3b27}} 
+\index{moa.classifiers.trees.ORTO@{moa.classifiers.trees.ORTO}!resetLearningImpl@{resetLearningImpl}}
+\index{resetLearningImpl@{resetLearningImpl}!moa.classifiers.trees.ORTO@{moa.classifiers.trees.ORTO}}
+\doxysubsubsection{\texorpdfstring{resetLearningImpl()}{resetLearningImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+trees.\+O\+R\+T\+O.\+reset\+Learning\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Resets this classifier. It must be similar to starting a new classifier from scratch. ~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden. 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_a75f38e22d615d7a19e72d2926f178ca5}{moa.\+classifiers.\+trees.\+F\+I\+M\+T\+DD}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_o_r_t_o_aa09df7a51b377a0e63d86cefeee39da6}\label{classmoa_1_1classifiers_1_1trees_1_1_o_r_t_o_aa09df7a51b377a0e63d86cefeee39da6}} 
+\index{moa.classifiers.trees.ORTO@{moa.classifiers.trees.ORTO}!maxOptionLevelOption@{maxOptionLevelOption}}
+\index{maxOptionLevelOption@{maxOptionLevelOption}!moa.classifiers.trees.ORTO@{moa.classifiers.trees.ORTO}}
+\doxysubsubsection{\texorpdfstring{maxOptionLevelOption}{maxOptionLevelOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+classifiers.\+trees.\+O\+R\+T\+O.\+max\+Option\+Level\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(}
+\DoxyCodeLine{            \textcolor{stringliteral}{"maxOptionLevel"},}
+\DoxyCodeLine{            \textcolor{charliteral}{'x'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"The maximal depth at which option nodes can be created."},}
+\DoxyCodeLine{            10, 0, Integer.MAX\_VALUE)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_o_r_t_o_a4c7244f17ea8b2675dd397f11ac87e2b}\label{classmoa_1_1classifiers_1_1trees_1_1_o_r_t_o_a4c7244f17ea8b2675dd397f11ac87e2b}} 
+\index{moa.classifiers.trees.ORTO@{moa.classifiers.trees.ORTO}!maxTreesOption@{maxTreesOption}}
+\index{maxTreesOption@{maxTreesOption}!moa.classifiers.trees.ORTO@{moa.classifiers.trees.ORTO}}
+\doxysubsubsection{\texorpdfstring{maxTreesOption}{maxTreesOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+classifiers.\+trees.\+O\+R\+T\+O.\+max\+Trees\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(}
+\DoxyCodeLine{            \textcolor{stringliteral}{"maxTrees"},}
+\DoxyCodeLine{            \textcolor{charliteral}{'m'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"The maximum number of trees contained in the option tree."},}
+\DoxyCodeLine{            10, 1, Integer.MAX\_VALUE)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_o_r_t_o_aa318f8df126c25e3974c7cdd823cce18}\label{classmoa_1_1classifiers_1_1trees_1_1_o_r_t_o_aa318f8df126c25e3974c7cdd823cce18}} 
+\index{moa.classifiers.trees.ORTO@{moa.classifiers.trees.ORTO}!optionDecayFactorOption@{optionDecayFactorOption}}
+\index{optionDecayFactorOption@{optionDecayFactorOption}!moa.classifiers.trees.ORTO@{moa.classifiers.trees.ORTO}}
+\doxysubsubsection{\texorpdfstring{optionDecayFactorOption}{optionDecayFactorOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} moa.\+classifiers.\+trees.\+O\+R\+T\+O.\+option\+Decay\+Factor\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FloatOption(}
+\DoxyCodeLine{            \textcolor{stringliteral}{"optionDecayFactor"},}
+\DoxyCodeLine{            \textcolor{charliteral}{'z'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"The option decay factor that determines how many options can be selected at a given level."},}
+\DoxyCodeLine{            0.9, 0.0, 1.0)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_o_r_t_o_aec5c62f676e9b6795c8cf10bcc9e59dd}\label{classmoa_1_1classifiers_1_1trees_1_1_o_r_t_o_aec5c62f676e9b6795c8cf10bcc9e59dd}} 
+\index{moa.classifiers.trees.ORTO@{moa.classifiers.trees.ORTO}!optionFadingFactorOption@{optionFadingFactorOption}}
+\index{optionFadingFactorOption@{optionFadingFactorOption}!moa.classifiers.trees.ORTO@{moa.classifiers.trees.ORTO}}
+\doxysubsubsection{\texorpdfstring{optionFadingFactorOption}{optionFadingFactorOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} moa.\+classifiers.\+trees.\+O\+R\+T\+O.\+option\+Fading\+Factor\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FloatOption(}
+\DoxyCodeLine{            \textcolor{stringliteral}{"optionFadingFactor"},}
+\DoxyCodeLine{            \textcolor{charliteral}{'q'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"The fading factor used for comparing subtrees of an option node."},}
+\DoxyCodeLine{            0.9995, 0.0, 1.0)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1_o_r_t_o_a9ed58e2cb64f7711cd9c137df461d643}\label{classmoa_1_1classifiers_1_1trees_1_1_o_r_t_o_a9ed58e2cb64f7711cd9c137df461d643}} 
+\index{moa.classifiers.trees.ORTO@{moa.classifiers.trees.ORTO}!optionNodeAggregationOption@{optionNodeAggregationOption}}
+\index{optionNodeAggregationOption@{optionNodeAggregationOption}!moa.classifiers.trees.ORTO@{moa.classifiers.trees.ORTO}}
+\doxysubsubsection{\texorpdfstring{optionNodeAggregationOption}{optionNodeAggregationOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_multi_choice_option}{Multi\+Choice\+Option}} moa.\+classifiers.\+trees.\+O\+R\+T\+O.\+option\+Node\+Aggregation\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} MultiChoiceOption(}
+\DoxyCodeLine{            \textcolor{stringliteral}{"optionNodeAggregation"},}
+\DoxyCodeLine{            \textcolor{charliteral}{'o'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"The aggregation method used to combine predictions in option nodes."}, }
+\DoxyCodeLine{            \textcolor{keyword}{new} String[]\{\textcolor{stringliteral}{"average"}, \textcolor{stringliteral}{"bestTree"}\}, \textcolor{keyword}{new} String[]\{\textcolor{stringliteral}{"Average"}, \textcolor{stringliteral}{"Best tree"}\}, 0)}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/classifiers/trees/O\+R\+T\+O.\+java\end{DoxyCompactItemize}

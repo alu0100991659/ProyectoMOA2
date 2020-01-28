@@ -1,0 +1,295 @@
+\hypertarget{interfacemoa_1_1tasks_1_1_task_monitor}{}\doxysection{moa.\+tasks.\+Task\+Monitor Interface Reference}
+\label{interfacemoa_1_1tasks_1_1_task_monitor}\index{moa.tasks.TaskMonitor@{moa.tasks.TaskMonitor}}
+
+
+Inheritance diagram for moa.\+tasks.\+Task\+Monitor\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor_aa5eff409d63bfacd92fe2f062d373781}{set\+Current\+Activity}} (String activity\+Description, double frac\+Complete)
+\item 
+void \mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor_a71c91ae9dd97de7531b2f273ee9968d3}{set\+Current\+Activity\+Description}} (String activity)
+\item 
+void \mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor_a250c782c4d19dc5609afc32a96ac90f8}{set\+Current\+Activity\+Fraction\+Complete}} (double frac\+Complete)
+\item 
+boolean \mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor_af2758f6ce28872acf61d6b3495cd4439}{task\+Should\+Abort}} ()
+\item 
+boolean \mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor_af0081392613c25cb1a31b3e5a45674d1}{result\+Preview\+Requested}} ()
+\item 
+void \mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor_a1b6f9b951f02111a3461e26c9a6c2936}{set\+Latest\+Result\+Preview}} (Object latest\+Preview)
+\item 
+String \mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor_ad5a9c248fc2506cc2a74b663e2511c63}{get\+Current\+Activity\+Description}} ()
+\item 
+double \mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor_a46b980aaa2bb8de7a23c24916b31e843}{get\+Current\+Activity\+Fraction\+Complete}} ()
+\item 
+void \mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor_a2c851e1eec10c5a7846317717f8626f3}{request\+Pause}} ()
+\item 
+void \mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor_a088eb910db3332fa8fccd22f0366692e}{request\+Resume}} ()
+\item 
+void \mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor_af6e04a69e6559350c6e603517ccf9268}{request\+Cancel}} ()
+\item 
+boolean \mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor_a64587d9d0449f1957599debdbd45321c}{is\+Paused}} ()
+\item 
+boolean \mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor_ab4956c1088eaf4619b0150324d6f762f}{is\+Cancelled}} ()
+\item 
+void \mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor_a05380c543320d94e16754e9b352e8d1a}{request\+Result\+Preview}} ()
+\item 
+void \mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor_adb3dae0b16b48e6ab0ecbce76331160c}{request\+Result\+Preview}} (\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_result_preview_listener}{Result\+Preview\+Listener}} to\+Inform)
+\item 
+Object \mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor_aaeac700f78168fdd9edff1b9daa8411b}{get\+Latest\+Result\+Preview}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface representing a task monitor.
+
+\begin{DoxyAuthor}{Author}
+Richard Kirkby (\href{mailto:rkirkby@cs.waikato.ac.nz}{\texttt{ rkirkby@cs.\+waikato.\+ac.\+nz}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+7 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interfacemoa_1_1tasks_1_1_task_monitor_ad5a9c248fc2506cc2a74b663e2511c63}\label{interfacemoa_1_1tasks_1_1_task_monitor_ad5a9c248fc2506cc2a74b663e2511c63}} 
+\index{moa.tasks.TaskMonitor@{moa.tasks.TaskMonitor}!getCurrentActivityDescription@{getCurrentActivityDescription}}
+\index{getCurrentActivityDescription@{getCurrentActivityDescription}!moa.tasks.TaskMonitor@{moa.tasks.TaskMonitor}}
+\doxysubsubsection{\texorpdfstring{getCurrentActivityDescription()}{getCurrentActivityDescription()}}
+{\footnotesize\ttfamily String moa.\+tasks.\+Task\+Monitor.\+get\+Current\+Activity\+Description (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the description of the current activity.
+
+\begin{DoxyReturn}{Returns}
+the description of the current activity 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classmoa_1_1tasks_1_1_standard_task_monitor_a8c7a346b8b0f1c83f79c73ca651b5114}{moa.\+tasks.\+Standard\+Task\+Monitor}}, and \mbox{\hyperlink{classmoa_1_1tasks_1_1_null_monitor_a3595169cbe8b27c6c519aac4b7ca1a69}{moa.\+tasks.\+Null\+Monitor}}.
+
+\mbox{\Hypertarget{interfacemoa_1_1tasks_1_1_task_monitor_a46b980aaa2bb8de7a23c24916b31e843}\label{interfacemoa_1_1tasks_1_1_task_monitor_a46b980aaa2bb8de7a23c24916b31e843}} 
+\index{moa.tasks.TaskMonitor@{moa.tasks.TaskMonitor}!getCurrentActivityFractionComplete@{getCurrentActivityFractionComplete}}
+\index{getCurrentActivityFractionComplete@{getCurrentActivityFractionComplete}!moa.tasks.TaskMonitor@{moa.tasks.TaskMonitor}}
+\doxysubsubsection{\texorpdfstring{getCurrentActivityFractionComplete()}{getCurrentActivityFractionComplete()}}
+{\footnotesize\ttfamily double moa.\+tasks.\+Task\+Monitor.\+get\+Current\+Activity\+Fraction\+Complete (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the percentage done of the current activity
+
+\begin{DoxyReturn}{Returns}
+the percentage done of the current activity 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classmoa_1_1tasks_1_1_standard_task_monitor_aad57d7c4e24b32a1e9f07332d4156155}{moa.\+tasks.\+Standard\+Task\+Monitor}}, and \mbox{\hyperlink{classmoa_1_1tasks_1_1_null_monitor_a6c6570751d39697c85f3c209d74bb5de}{moa.\+tasks.\+Null\+Monitor}}.
+
+\mbox{\Hypertarget{interfacemoa_1_1tasks_1_1_task_monitor_aaeac700f78168fdd9edff1b9daa8411b}\label{interfacemoa_1_1tasks_1_1_task_monitor_aaeac700f78168fdd9edff1b9daa8411b}} 
+\index{moa.tasks.TaskMonitor@{moa.tasks.TaskMonitor}!getLatestResultPreview@{getLatestResultPreview}}
+\index{getLatestResultPreview@{getLatestResultPreview}!moa.tasks.TaskMonitor@{moa.tasks.TaskMonitor}}
+\doxysubsubsection{\texorpdfstring{getLatestResultPreview()}{getLatestResultPreview()}}
+{\footnotesize\ttfamily Object moa.\+tasks.\+Task\+Monitor.\+get\+Latest\+Result\+Preview (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the current result to preview
+
+\begin{DoxyReturn}{Returns}
+the result to preview 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classmoa_1_1tasks_1_1_standard_task_monitor_a0100e598199f79c4fb2218d7706a7a89}{moa.\+tasks.\+Standard\+Task\+Monitor}}, and \mbox{\hyperlink{classmoa_1_1tasks_1_1_null_monitor_a43fe7674027ee64e87927b267e96bd64}{moa.\+tasks.\+Null\+Monitor}}.
+
+\mbox{\Hypertarget{interfacemoa_1_1tasks_1_1_task_monitor_ab4956c1088eaf4619b0150324d6f762f}\label{interfacemoa_1_1tasks_1_1_task_monitor_ab4956c1088eaf4619b0150324d6f762f}} 
+\index{moa.tasks.TaskMonitor@{moa.tasks.TaskMonitor}!isCancelled@{isCancelled}}
+\index{isCancelled@{isCancelled}!moa.tasks.TaskMonitor@{moa.tasks.TaskMonitor}}
+\doxysubsubsection{\texorpdfstring{isCancelled()}{isCancelled()}}
+{\footnotesize\ttfamily boolean moa.\+tasks.\+Task\+Monitor.\+is\+Cancelled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets whether the task monitored is cancelled.
+
+\begin{DoxyReturn}{Returns}
+true if the task is cancelled 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classmoa_1_1tasks_1_1_standard_task_monitor_ab236dcae4e35e40bb8c16d419b411ce2}{moa.\+tasks.\+Standard\+Task\+Monitor}}, and \mbox{\hyperlink{classmoa_1_1tasks_1_1_null_monitor_ac39eef03918b6f2239df4ad2284fbf4f}{moa.\+tasks.\+Null\+Monitor}}.
+
+\mbox{\Hypertarget{interfacemoa_1_1tasks_1_1_task_monitor_a64587d9d0449f1957599debdbd45321c}\label{interfacemoa_1_1tasks_1_1_task_monitor_a64587d9d0449f1957599debdbd45321c}} 
+\index{moa.tasks.TaskMonitor@{moa.tasks.TaskMonitor}!isPaused@{isPaused}}
+\index{isPaused@{isPaused}!moa.tasks.TaskMonitor@{moa.tasks.TaskMonitor}}
+\doxysubsubsection{\texorpdfstring{isPaused()}{isPaused()}}
+{\footnotesize\ttfamily boolean moa.\+tasks.\+Task\+Monitor.\+is\+Paused (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets whether the task monitored is paused.
+
+\begin{DoxyReturn}{Returns}
+true if the task is paused 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classmoa_1_1tasks_1_1_standard_task_monitor_aad7649321557a966c0eac48eb4503a49}{moa.\+tasks.\+Standard\+Task\+Monitor}}, and \mbox{\hyperlink{classmoa_1_1tasks_1_1_null_monitor_a64df344f2713c1f4518618f7d175467a}{moa.\+tasks.\+Null\+Monitor}}.
+
+\mbox{\Hypertarget{interfacemoa_1_1tasks_1_1_task_monitor_af6e04a69e6559350c6e603517ccf9268}\label{interfacemoa_1_1tasks_1_1_task_monitor_af6e04a69e6559350c6e603517ccf9268}} 
+\index{moa.tasks.TaskMonitor@{moa.tasks.TaskMonitor}!requestCancel@{requestCancel}}
+\index{requestCancel@{requestCancel}!moa.tasks.TaskMonitor@{moa.tasks.TaskMonitor}}
+\doxysubsubsection{\texorpdfstring{requestCancel()}{requestCancel()}}
+{\footnotesize\ttfamily void moa.\+tasks.\+Task\+Monitor.\+request\+Cancel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Requests the task monitored to cancel. 
+
+Implemented in \mbox{\hyperlink{classmoa_1_1tasks_1_1_standard_task_monitor_af1192089b63c96d961d551537f34231e}{moa.\+tasks.\+Standard\+Task\+Monitor}}, and \mbox{\hyperlink{classmoa_1_1tasks_1_1_null_monitor_a3614d2db6b7c318d87d6c6793a3f4a96}{moa.\+tasks.\+Null\+Monitor}}.
+
+\mbox{\Hypertarget{interfacemoa_1_1tasks_1_1_task_monitor_a2c851e1eec10c5a7846317717f8626f3}\label{interfacemoa_1_1tasks_1_1_task_monitor_a2c851e1eec10c5a7846317717f8626f3}} 
+\index{moa.tasks.TaskMonitor@{moa.tasks.TaskMonitor}!requestPause@{requestPause}}
+\index{requestPause@{requestPause}!moa.tasks.TaskMonitor@{moa.tasks.TaskMonitor}}
+\doxysubsubsection{\texorpdfstring{requestPause()}{requestPause()}}
+{\footnotesize\ttfamily void moa.\+tasks.\+Task\+Monitor.\+request\+Pause (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Requests the task monitored to pause. 
+
+Implemented in \mbox{\hyperlink{classmoa_1_1tasks_1_1_standard_task_monitor_a0a3eee8928dc49a5c82ffee02cbee8ab}{moa.\+tasks.\+Standard\+Task\+Monitor}}, and \mbox{\hyperlink{classmoa_1_1tasks_1_1_null_monitor_a30361c2597bead058a487b19bb3d9be8}{moa.\+tasks.\+Null\+Monitor}}.
+
+\mbox{\Hypertarget{interfacemoa_1_1tasks_1_1_task_monitor_a05380c543320d94e16754e9b352e8d1a}\label{interfacemoa_1_1tasks_1_1_task_monitor_a05380c543320d94e16754e9b352e8d1a}} 
+\index{moa.tasks.TaskMonitor@{moa.tasks.TaskMonitor}!requestResultPreview@{requestResultPreview}}
+\index{requestResultPreview@{requestResultPreview}!moa.tasks.TaskMonitor@{moa.tasks.TaskMonitor}}
+\doxysubsubsection{\texorpdfstring{requestResultPreview()}{requestResultPreview()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void moa.\+tasks.\+Task\+Monitor.\+request\+Result\+Preview (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Requests to preview the task result. 
+
+Implemented in \mbox{\hyperlink{classmoa_1_1tasks_1_1_standard_task_monitor_a89adac2fdf7d7e9790090cfacf386c96}{moa.\+tasks.\+Standard\+Task\+Monitor}}, and \mbox{\hyperlink{classmoa_1_1tasks_1_1_null_monitor_ab0c940f44c6d94c4650689a59224ac40}{moa.\+tasks.\+Null\+Monitor}}.
+
+\mbox{\Hypertarget{interfacemoa_1_1tasks_1_1_task_monitor_adb3dae0b16b48e6ab0ecbce76331160c}\label{interfacemoa_1_1tasks_1_1_task_monitor_adb3dae0b16b48e6ab0ecbce76331160c}} 
+\index{moa.tasks.TaskMonitor@{moa.tasks.TaskMonitor}!requestResultPreview@{requestResultPreview}}
+\index{requestResultPreview@{requestResultPreview}!moa.tasks.TaskMonitor@{moa.tasks.TaskMonitor}}
+\doxysubsubsection{\texorpdfstring{requestResultPreview()}{requestResultPreview()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void moa.\+tasks.\+Task\+Monitor.\+request\+Result\+Preview (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_result_preview_listener}{Result\+Preview\+Listener}}}]{to\+Inform }\end{DoxyParamCaption})}
+
+Requests to preview the task result.
+
+
+\begin{DoxyParams}{Parameters}
+{\em to\+Inform} & the listener of the changes in the preview of the result \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classmoa_1_1tasks_1_1_standard_task_monitor_afbd023f90c5b2b8fe6c927b511118257}{moa.\+tasks.\+Standard\+Task\+Monitor}}, and \mbox{\hyperlink{classmoa_1_1tasks_1_1_null_monitor_ae788136010211e4ec0fc3741db6d56c3}{moa.\+tasks.\+Null\+Monitor}}.
+
+\mbox{\Hypertarget{interfacemoa_1_1tasks_1_1_task_monitor_a088eb910db3332fa8fccd22f0366692e}\label{interfacemoa_1_1tasks_1_1_task_monitor_a088eb910db3332fa8fccd22f0366692e}} 
+\index{moa.tasks.TaskMonitor@{moa.tasks.TaskMonitor}!requestResume@{requestResume}}
+\index{requestResume@{requestResume}!moa.tasks.TaskMonitor@{moa.tasks.TaskMonitor}}
+\doxysubsubsection{\texorpdfstring{requestResume()}{requestResume()}}
+{\footnotesize\ttfamily void moa.\+tasks.\+Task\+Monitor.\+request\+Resume (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Requests the task monitored to resume. 
+
+Implemented in \mbox{\hyperlink{classmoa_1_1tasks_1_1_standard_task_monitor_a84fd77a57451a2087743ee22cbaa5a01}{moa.\+tasks.\+Standard\+Task\+Monitor}}, and \mbox{\hyperlink{classmoa_1_1tasks_1_1_null_monitor_ade566edb12a2c7db2bff1b5a2e1343b6}{moa.\+tasks.\+Null\+Monitor}}.
+
+\mbox{\Hypertarget{interfacemoa_1_1tasks_1_1_task_monitor_af0081392613c25cb1a31b3e5a45674d1}\label{interfacemoa_1_1tasks_1_1_task_monitor_af0081392613c25cb1a31b3e5a45674d1}} 
+\index{moa.tasks.TaskMonitor@{moa.tasks.TaskMonitor}!resultPreviewRequested@{resultPreviewRequested}}
+\index{resultPreviewRequested@{resultPreviewRequested}!moa.tasks.TaskMonitor@{moa.tasks.TaskMonitor}}
+\doxysubsubsection{\texorpdfstring{resultPreviewRequested()}{resultPreviewRequested()}}
+{\footnotesize\ttfamily boolean moa.\+tasks.\+Task\+Monitor.\+result\+Preview\+Requested (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets whether there is a request for preview the task result.
+
+\begin{DoxyReturn}{Returns}
+true if there is a request for preview the task result 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classmoa_1_1tasks_1_1_standard_task_monitor_ad2c6883719fa263e206fed07679dee14}{moa.\+tasks.\+Standard\+Task\+Monitor}}, and \mbox{\hyperlink{classmoa_1_1tasks_1_1_null_monitor_a37a07af70e280ef8a2cf94a39eddc2fe}{moa.\+tasks.\+Null\+Monitor}}.
+
+\mbox{\Hypertarget{interfacemoa_1_1tasks_1_1_task_monitor_aa5eff409d63bfacd92fe2f062d373781}\label{interfacemoa_1_1tasks_1_1_task_monitor_aa5eff409d63bfacd92fe2f062d373781}} 
+\index{moa.tasks.TaskMonitor@{moa.tasks.TaskMonitor}!setCurrentActivity@{setCurrentActivity}}
+\index{setCurrentActivity@{setCurrentActivity}!moa.tasks.TaskMonitor@{moa.tasks.TaskMonitor}}
+\doxysubsubsection{\texorpdfstring{setCurrentActivity()}{setCurrentActivity()}}
+{\footnotesize\ttfamily void moa.\+tasks.\+Task\+Monitor.\+set\+Current\+Activity (\begin{DoxyParamCaption}\item[{String}]{activity\+Description,  }\item[{double}]{frac\+Complete }\end{DoxyParamCaption})}
+
+Sets the description and the percentage done of the current activity.
+
+
+\begin{DoxyParams}{Parameters}
+{\em activity} & the description of the current activity \\
+\hline
+{\em frac\+Complete} & the percentage done of the current activity \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classmoa_1_1tasks_1_1_standard_task_monitor_a25c15163fbe137ce7dc7c7793d391501}{moa.\+tasks.\+Standard\+Task\+Monitor}}, and \mbox{\hyperlink{classmoa_1_1tasks_1_1_null_monitor_ad852b70e9d2b4cfed0aa92b6b853acf2}{moa.\+tasks.\+Null\+Monitor}}.
+
+\mbox{\Hypertarget{interfacemoa_1_1tasks_1_1_task_monitor_a71c91ae9dd97de7531b2f273ee9968d3}\label{interfacemoa_1_1tasks_1_1_task_monitor_a71c91ae9dd97de7531b2f273ee9968d3}} 
+\index{moa.tasks.TaskMonitor@{moa.tasks.TaskMonitor}!setCurrentActivityDescription@{setCurrentActivityDescription}}
+\index{setCurrentActivityDescription@{setCurrentActivityDescription}!moa.tasks.TaskMonitor@{moa.tasks.TaskMonitor}}
+\doxysubsubsection{\texorpdfstring{setCurrentActivityDescription()}{setCurrentActivityDescription()}}
+{\footnotesize\ttfamily void moa.\+tasks.\+Task\+Monitor.\+set\+Current\+Activity\+Description (\begin{DoxyParamCaption}\item[{String}]{activity }\end{DoxyParamCaption})}
+
+Sets the description of the current activity.
+
+
+\begin{DoxyParams}{Parameters}
+{\em activity} & the description of the current activity \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classmoa_1_1tasks_1_1_standard_task_monitor_a85bc6b4150d3136c8dd5eacf3f1ed05b}{moa.\+tasks.\+Standard\+Task\+Monitor}}, and \mbox{\hyperlink{classmoa_1_1tasks_1_1_null_monitor_a5fbaa1c7f5f03690c52a2137ab90b1e8}{moa.\+tasks.\+Null\+Monitor}}.
+
+\mbox{\Hypertarget{interfacemoa_1_1tasks_1_1_task_monitor_a250c782c4d19dc5609afc32a96ac90f8}\label{interfacemoa_1_1tasks_1_1_task_monitor_a250c782c4d19dc5609afc32a96ac90f8}} 
+\index{moa.tasks.TaskMonitor@{moa.tasks.TaskMonitor}!setCurrentActivityFractionComplete@{setCurrentActivityFractionComplete}}
+\index{setCurrentActivityFractionComplete@{setCurrentActivityFractionComplete}!moa.tasks.TaskMonitor@{moa.tasks.TaskMonitor}}
+\doxysubsubsection{\texorpdfstring{setCurrentActivityFractionComplete()}{setCurrentActivityFractionComplete()}}
+{\footnotesize\ttfamily void moa.\+tasks.\+Task\+Monitor.\+set\+Current\+Activity\+Fraction\+Complete (\begin{DoxyParamCaption}\item[{double}]{frac\+Complete }\end{DoxyParamCaption})}
+
+Sets the percentage done of the current activity
+
+
+\begin{DoxyParams}{Parameters}
+{\em frac\+Complete} & the percentage done of the current activity \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classmoa_1_1tasks_1_1_standard_task_monitor_a87b661a4e6927b9bfba567a84f49e7de}{moa.\+tasks.\+Standard\+Task\+Monitor}}, and \mbox{\hyperlink{classmoa_1_1tasks_1_1_null_monitor_a7f701333be8d1ae07ed4d59b295c018c}{moa.\+tasks.\+Null\+Monitor}}.
+
+\mbox{\Hypertarget{interfacemoa_1_1tasks_1_1_task_monitor_a1b6f9b951f02111a3461e26c9a6c2936}\label{interfacemoa_1_1tasks_1_1_task_monitor_a1b6f9b951f02111a3461e26c9a6c2936}} 
+\index{moa.tasks.TaskMonitor@{moa.tasks.TaskMonitor}!setLatestResultPreview@{setLatestResultPreview}}
+\index{setLatestResultPreview@{setLatestResultPreview}!moa.tasks.TaskMonitor@{moa.tasks.TaskMonitor}}
+\doxysubsubsection{\texorpdfstring{setLatestResultPreview()}{setLatestResultPreview()}}
+{\footnotesize\ttfamily void moa.\+tasks.\+Task\+Monitor.\+set\+Latest\+Result\+Preview (\begin{DoxyParamCaption}\item[{Object}]{latest\+Preview }\end{DoxyParamCaption})}
+
+Sets the current result to preview
+
+
+\begin{DoxyParams}{Parameters}
+{\em latest\+Preview} & the result to preview \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classmoa_1_1tasks_1_1_standard_task_monitor_ad054a98aabfbeb67857f94ca4af85418}{moa.\+tasks.\+Standard\+Task\+Monitor}}, and \mbox{\hyperlink{classmoa_1_1tasks_1_1_null_monitor_a8117ee7e028d8e247322f7879a6e5a82}{moa.\+tasks.\+Null\+Monitor}}.
+
+\mbox{\Hypertarget{interfacemoa_1_1tasks_1_1_task_monitor_af2758f6ce28872acf61d6b3495cd4439}\label{interfacemoa_1_1tasks_1_1_task_monitor_af2758f6ce28872acf61d6b3495cd4439}} 
+\index{moa.tasks.TaskMonitor@{moa.tasks.TaskMonitor}!taskShouldAbort@{taskShouldAbort}}
+\index{taskShouldAbort@{taskShouldAbort}!moa.tasks.TaskMonitor@{moa.tasks.TaskMonitor}}
+\doxysubsubsection{\texorpdfstring{taskShouldAbort()}{taskShouldAbort()}}
+{\footnotesize\ttfamily boolean moa.\+tasks.\+Task\+Monitor.\+task\+Should\+Abort (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets whether the task should abort.
+
+\begin{DoxyReturn}{Returns}
+true if the task should abort 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classmoa_1_1tasks_1_1_standard_task_monitor_a9061ee1821d6ffdebb8da2389cf0a048}{moa.\+tasks.\+Standard\+Task\+Monitor}}, and \mbox{\hyperlink{classmoa_1_1tasks_1_1_null_monitor_a338a930fe28e0f8799561c089af1285c}{moa.\+tasks.\+Null\+Monitor}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/tasks/Task\+Monitor.\+java\end{DoxyCompactItemize}

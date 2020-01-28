@@ -1,0 +1,86 @@
+\hypertarget{classmoa_1_1evaluation_1_1_basic_multi_label_performance_evaluator}{}\doxysection{moa.\+evaluation.\+Basic\+Multi\+Label\+Performance\+Evaluator Class Reference}
+\label{classmoa_1_1evaluation_1_1_basic_multi_label_performance_evaluator}\index{moa.evaluation.BasicMultiLabelPerformanceEvaluator@{moa.evaluation.BasicMultiLabelPerformanceEvaluator}}
+
+
+Inheritance diagram for moa.\+evaluation.\+Basic\+Multi\+Label\+Performance\+Evaluator\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+evaluation.\+Basic\+Multi\+Label\+Performance\+Evaluator\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1evaluation_1_1_basic_multi_label_performance_evaluator_ade9060957b6839387872d0d9e539a012}\label{classmoa_1_1evaluation_1_1_basic_multi_label_performance_evaluator_ade9060957b6839387872d0d9e539a012}} 
+void {\bfseries reset} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1evaluation_1_1_basic_multi_label_performance_evaluator_a66fc4372a894c58a2bef5ae7e37d1611}\label{classmoa_1_1evaluation_1_1_basic_multi_label_performance_evaluator_a66fc4372a894c58a2bef5ae7e37d1611}} 
+void {\bfseries add\+Result} (\mbox{\hyperlink{interfacemoa_1_1core_1_1_example}{Example}}$<$ \mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} $>$ example, \mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_prediction}{Prediction}} y)
+\item 
+\mbox{\Hypertarget{classmoa_1_1evaluation_1_1_basic_multi_label_performance_evaluator_a7afb5e161246f8e6e9eb1ca96aae71d3}\label{classmoa_1_1evaluation_1_1_basic_multi_label_performance_evaluator_a7afb5e161246f8e6e9eb1ca96aae71d3}} 
+\mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}}\mbox{[}$\,$\mbox{]} {\bfseries get\+Performance\+Measurements} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1evaluation_1_1_basic_multi_label_performance_evaluator_a1cae51eb42ebd787e05c20faf489b3a9}{get\+Description}} (String\+Builder sb, int indent)
+\item 
+\mbox{\Hypertarget{classmoa_1_1evaluation_1_1_basic_multi_label_performance_evaluator_ad51ae293ebb45b4ec1b2a17c6e1dc745}\label{classmoa_1_1evaluation_1_1_basic_multi_label_performance_evaluator_ad51ae293ebb45b4ec1b2a17c6e1dc745}} 
+void {\bfseries add\+Result} (\mbox{\hyperlink{interfacemoa_1_1core_1_1_example}{Example}}$<$ \mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} $>$ example, double\mbox{[}$\,$\mbox{]} class\+Votes)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1evaluation_1_1_basic_multi_label_performance_evaluator_a6cef32fe6403b93ad31ba26524cb47ca}\label{classmoa_1_1evaluation_1_1_basic_multi_label_performance_evaluator_a6cef32fe6403b93ad31ba26524cb47ca}} 
+int {\bfseries L}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Multilabel Window Classification Performance Evaluator.
+
+\begin{DoxyAuthor}{Author}
+Jesse Read (\href{mailto:jesse@tsc.uc3m.es}{\texttt{ jesse@tsc.\+uc3m.\+es}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+1 
+\end{DoxyParagraph}
+
+
+Added instance based F-\/\+Measure, Recall, Precision and \mbox{\hyperlink{classmoa_1_1evaluation_1_1_accuracy}{Accuracy}} \begin{DoxyAuthor}{Author}
+R. Sousa, J.\+Gama 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+2 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1evaluation_1_1_basic_multi_label_performance_evaluator_a1cae51eb42ebd787e05c20faf489b3a9}\label{classmoa_1_1evaluation_1_1_basic_multi_label_performance_evaluator_a1cae51eb42ebd787e05c20faf489b3a9}} 
+\index{moa.evaluation.BasicMultiLabelPerformanceEvaluator@{moa.evaluation.BasicMultiLabelPerformanceEvaluator}!getDescription@{getDescription}}
+\index{getDescription@{getDescription}!moa.evaluation.BasicMultiLabelPerformanceEvaluator@{moa.evaluation.BasicMultiLabelPerformanceEvaluator}}
+\doxysubsubsection{\texorpdfstring{getDescription()}{getDescription()}}
+{\footnotesize\ttfamily void moa.\+evaluation.\+Basic\+Multi\+Label\+Performance\+Evaluator.\+get\+Description (\begin{DoxyParamCaption}\item[{String\+Builder}]{sb,  }\item[{int}]{indent }\end{DoxyParamCaption})}
+
+Returns a string representation of this object. Used in {\ttfamily \mbox{\hyperlink{classmoa_1_1_abstract_m_o_a_object_ac686fd3b07c734cf21f1894376fe402d}{Abstract\+M\+O\+A\+Object.\+to\+String}}} to give a string representation of the object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sb} & the stringbuilder to add the description \\
+\hline
+{\em indent} & the number of characters to indent \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1_m_o_a_object_afdaf5098f1fe6c852018ce64c28e17f5}{moa.\+M\+O\+A\+Object}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/evaluation/Basic\+Multi\+Label\+Performance\+Evaluator.\+java\end{DoxyCompactItemize}

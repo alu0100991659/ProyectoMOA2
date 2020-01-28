@@ -1,0 +1,149 @@
+\hypertarget{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_f_i_m_t_d_d_numeric_attribute_class_observer}{}\doxysection{moa.\+classifiers.\+core.\+attributeclassobservers.\+F\+I\+M\+T\+D\+D\+Numeric\+Attribute\+Class\+Observer Class Reference}
+\label{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_f_i_m_t_d_d_numeric_attribute_class_observer}\index{moa.classifiers.core.attributeclassobservers.FIMTDDNumericAttributeClassObserver@{moa.classifiers.core.attributeclassobservers.FIMTDDNumericAttributeClassObserver}}
+
+
+Inheritance diagram for moa.\+classifiers.\+core.\+attributeclassobservers.\+F\+I\+M\+T\+D\+D\+Numeric\+Attribute\+Class\+Observer\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+classifiers.\+core.\+attributeclassobservers.\+F\+I\+M\+T\+D\+D\+Numeric\+Attribute\+Class\+Observer\+:
+% FIG 1
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_f_i_m_t_d_d_numeric_attribute_class_observer_1_1_node}{Node}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_f_i_m_t_d_d_numeric_attribute_class_observer_a81e8c77db9c52f08de7ecb760e238e43}\label{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_f_i_m_t_d_d_numeric_attribute_class_observer_a81e8c77db9c52f08de7ecb760e238e43}} 
+void {\bfseries observe\+Attribute\+Class} (double att\+Val, double class\+Val, double weight)
+\item 
+double \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_f_i_m_t_d_d_numeric_attribute_class_observer_a94e818aa0bb54e4824d7f5237166d131}{probability\+Of\+Attribute\+Value\+Given\+Class}} (double att\+Val, int class\+Val)
+\item 
+\mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1_attribute_split_suggestion}{Attribute\+Split\+Suggestion}} \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_f_i_m_t_d_d_numeric_attribute_class_observer_a2ae74d10f0af25fcfa2e816e311e9623}{get\+Best\+Evaluated\+Split\+Suggestion}} (\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1core_1_1splitcriteria_1_1_split_criterion}{Split\+Criterion}} criterion, double\mbox{[}$\,$\mbox{]} pre\+Split\+Dist, int att\+Index, boolean binary\+Only)
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_f_i_m_t_d_d_numeric_attribute_class_observer_aca8fe89c50cf0da660030f0943292858}{remove\+Bad\+Splits}} (\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1core_1_1splitcriteria_1_1_split_criterion}{Split\+Criterion}} criterion, double last\+Check\+Ratio, double last\+Check\+S\+DR, double last\+CheckE)
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_f_i_m_t_d_d_numeric_attribute_class_observer_a33810a1859488e6a36c1d7440b7a7bfd}{get\+Description}} (String\+Builder sb, int indent)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1_attribute_split_suggestion}{Attribute\+Split\+Suggestion}} \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_f_i_m_t_d_d_numeric_attribute_class_observer_a7f84915a0b61842c9d8ad6d19a542308}{search\+For\+Best\+Split\+Option}} (\mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_f_i_m_t_d_d_numeric_attribute_class_observer_1_1_node}{Node}} current\+Node, \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1_attribute_split_suggestion}{Attribute\+Split\+Suggestion}} current\+Best\+Option, \mbox{\hyperlink{interfacemoa_1_1classifiers_1_1core_1_1splitcriteria_1_1_split_criterion}{Split\+Criterion}} criterion, int att\+Index)
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_f_i_m_t_d_d_numeric_attribute_class_observer_adf31079079cbafa8bf189f5c600fe3f1}{prepare\+For\+Use\+Impl}} (\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}} monitor, \mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}} repository)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_f_i_m_t_d_d_numeric_attribute_class_observer_a21ee8d8b214066497e7d5f7717102224}\label{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_f_i_m_t_d_d_numeric_attribute_class_observer_a21ee8d8b214066497e7d5f7717102224}} 
+\mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_f_i_m_t_d_d_numeric_attribute_class_observer_1_1_node}{Node}} {\bfseries root} = null
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_f_i_m_t_d_d_numeric_attribute_class_observer_a2ae74d10f0af25fcfa2e816e311e9623}\label{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_f_i_m_t_d_d_numeric_attribute_class_observer_a2ae74d10f0af25fcfa2e816e311e9623}} 
+\index{moa.classifiers.core.attributeclassobservers.FIMTDDNumericAttributeClassObserver@{moa.classifiers.core.attributeclassobservers.FIMTDDNumericAttributeClassObserver}!getBestEvaluatedSplitSuggestion@{getBestEvaluatedSplitSuggestion}}
+\index{getBestEvaluatedSplitSuggestion@{getBestEvaluatedSplitSuggestion}!moa.classifiers.core.attributeclassobservers.FIMTDDNumericAttributeClassObserver@{moa.classifiers.core.attributeclassobservers.FIMTDDNumericAttributeClassObserver}}
+\doxysubsubsection{\texorpdfstring{getBestEvaluatedSplitSuggestion()}{getBestEvaluatedSplitSuggestion()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1_attribute_split_suggestion}{Attribute\+Split\+Suggestion}} moa.\+classifiers.\+core.\+attributeclassobservers.\+F\+I\+M\+T\+D\+D\+Numeric\+Attribute\+Class\+Observer.\+get\+Best\+Evaluated\+Split\+Suggestion (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1core_1_1splitcriteria_1_1_split_criterion}{Split\+Criterion}}}]{criterion,  }\item[{double\mbox{[}$\,$\mbox{]}}]{pre\+Split\+Dist,  }\item[{int}]{att\+Index,  }\item[{boolean}]{binary\+Only }\end{DoxyParamCaption})}
+
+Gets the best split suggestion given a criterion and a class distribution
+
+
+\begin{DoxyParams}{Parameters}
+{\em criterion} & the split criterion to use \\
+\hline
+{\em pre\+Split\+Dist} & the class distribution before the split \\
+\hline
+{\em att\+Index} & the attribute index \\
+\hline
+{\em binary\+Only} & true to use binary splits \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+suggestion of best attribute split 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_binary_tree_numeric_attribute_class_observer_a277b0eaa682a243ad4d97075ad8a4691}{moa.\+classifiers.\+core.\+attributeclassobservers.\+Binary\+Tree\+Numeric\+Attribute\+Class\+Observer}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_f_i_m_t_d_d_numeric_attribute_class_observer_a33810a1859488e6a36c1d7440b7a7bfd}\label{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_f_i_m_t_d_d_numeric_attribute_class_observer_a33810a1859488e6a36c1d7440b7a7bfd}} 
+\index{moa.classifiers.core.attributeclassobservers.FIMTDDNumericAttributeClassObserver@{moa.classifiers.core.attributeclassobservers.FIMTDDNumericAttributeClassObserver}!getDescription@{getDescription}}
+\index{getDescription@{getDescription}!moa.classifiers.core.attributeclassobservers.FIMTDDNumericAttributeClassObserver@{moa.classifiers.core.attributeclassobservers.FIMTDDNumericAttributeClassObserver}}
+\doxysubsubsection{\texorpdfstring{getDescription()}{getDescription()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+core.\+attributeclassobservers.\+F\+I\+M\+T\+D\+D\+Numeric\+Attribute\+Class\+Observer.\+get\+Description (\begin{DoxyParamCaption}\item[{String\+Builder}]{sb,  }\item[{int}]{indent }\end{DoxyParamCaption})}
+
+Returns a string representation of this object. Used in {\ttfamily \mbox{\hyperlink{classmoa_1_1_abstract_m_o_a_object_ac686fd3b07c734cf21f1894376fe402d}{Abstract\+M\+O\+A\+Object.\+to\+String}}} to give a string representation of the object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sb} & the stringbuilder to add the description \\
+\hline
+{\em indent} & the number of characters to indent \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_binary_tree_numeric_attribute_class_observer_abef8593fb382f5cb2f7531d7fa18eeae}{moa.\+classifiers.\+core.\+attributeclassobservers.\+Binary\+Tree\+Numeric\+Attribute\+Class\+Observer}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_f_i_m_t_d_d_numeric_attribute_class_observer_adf31079079cbafa8bf189f5c600fe3f1}\label{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_f_i_m_t_d_d_numeric_attribute_class_observer_adf31079079cbafa8bf189f5c600fe3f1}} 
+\index{moa.classifiers.core.attributeclassobservers.FIMTDDNumericAttributeClassObserver@{moa.classifiers.core.attributeclassobservers.FIMTDDNumericAttributeClassObserver}!prepareForUseImpl@{prepareForUseImpl}}
+\index{prepareForUseImpl@{prepareForUseImpl}!moa.classifiers.core.attributeclassobservers.FIMTDDNumericAttributeClassObserver@{moa.classifiers.core.attributeclassobservers.FIMTDDNumericAttributeClassObserver}}
+\doxysubsubsection{\texorpdfstring{prepareForUseImpl()}{prepareForUseImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+core.\+attributeclassobservers.\+F\+I\+M\+T\+D\+D\+Numeric\+Attribute\+Class\+Observer.\+prepare\+For\+Use\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}}}]{monitor,  }\item[{\mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}}}]{repository }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+This method describes the implementation of how to prepare this object for use. All classes that extends this class have to implement {\ttfamily prepare\+For\+Use\+Impl} and not {\ttfamily prepare\+For\+Use} since {\ttfamily prepare\+For\+Use} calls {\ttfamily prepare\+For\+Use\+Impl}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em monitor} & the Task\+Monitor to use \\
+\hline
+{\em repository} & the Object\+Repository to use \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_binary_tree_numeric_attribute_class_observer_a075b46aa43b5581dca84ad39bf6767d4}{moa.\+classifiers.\+core.\+attributeclassobservers.\+Binary\+Tree\+Numeric\+Attribute\+Class\+Observer}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_f_i_m_t_d_d_numeric_attribute_class_observer_a94e818aa0bb54e4824d7f5237166d131}\label{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_f_i_m_t_d_d_numeric_attribute_class_observer_a94e818aa0bb54e4824d7f5237166d131}} 
+\index{moa.classifiers.core.attributeclassobservers.FIMTDDNumericAttributeClassObserver@{moa.classifiers.core.attributeclassobservers.FIMTDDNumericAttributeClassObserver}!probabilityOfAttributeValueGivenClass@{probabilityOfAttributeValueGivenClass}}
+\index{probabilityOfAttributeValueGivenClass@{probabilityOfAttributeValueGivenClass}!moa.classifiers.core.attributeclassobservers.FIMTDDNumericAttributeClassObserver@{moa.classifiers.core.attributeclassobservers.FIMTDDNumericAttributeClassObserver}}
+\doxysubsubsection{\texorpdfstring{probabilityOfAttributeValueGivenClass()}{probabilityOfAttributeValueGivenClass()}}
+{\footnotesize\ttfamily double moa.\+classifiers.\+core.\+attributeclassobservers.\+F\+I\+M\+T\+D\+D\+Numeric\+Attribute\+Class\+Observer.\+probability\+Of\+Attribute\+Value\+Given\+Class (\begin{DoxyParamCaption}\item[{double}]{att\+Val,  }\item[{int}]{class\+Val }\end{DoxyParamCaption})}
+
+Gets the probability for an attribute value given a class
+
+
+\begin{DoxyParams}{Parameters}
+{\em att\+Val} & the attribute value \\
+\hline
+{\em class\+Val} & the class \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+probability for an attribute value given a class 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_binary_tree_numeric_attribute_class_observer_af876ca88dfb73720347f9aa7409d0e29}{moa.\+classifiers.\+core.\+attributeclassobservers.\+Binary\+Tree\+Numeric\+Attribute\+Class\+Observer}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_f_i_m_t_d_d_numeric_attribute_class_observer_aca8fe89c50cf0da660030f0943292858}\label{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_f_i_m_t_d_d_numeric_attribute_class_observer_aca8fe89c50cf0da660030f0943292858}} 
+\index{moa.classifiers.core.attributeclassobservers.FIMTDDNumericAttributeClassObserver@{moa.classifiers.core.attributeclassobservers.FIMTDDNumericAttributeClassObserver}!removeBadSplits@{removeBadSplits}}
+\index{removeBadSplits@{removeBadSplits}!moa.classifiers.core.attributeclassobservers.FIMTDDNumericAttributeClassObserver@{moa.classifiers.core.attributeclassobservers.FIMTDDNumericAttributeClassObserver}}
+\doxysubsubsection{\texorpdfstring{removeBadSplits()}{removeBadSplits()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+core.\+attributeclassobservers.\+F\+I\+M\+T\+D\+D\+Numeric\+Attribute\+Class\+Observer.\+remove\+Bad\+Splits (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1core_1_1splitcriteria_1_1_split_criterion}{Split\+Criterion}}}]{criterion,  }\item[{double}]{last\+Check\+Ratio,  }\item[{double}]{last\+Check\+S\+DR,  }\item[{double}]{last\+CheckE }\end{DoxyParamCaption})}
+
+A method to remove all nodes in the E-\/\+B\+ST in which it and all it\textquotesingle{}s children represent \textquotesingle{}bad\textquotesingle{} split points \mbox{\Hypertarget{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_f_i_m_t_d_d_numeric_attribute_class_observer_a7f84915a0b61842c9d8ad6d19a542308}\label{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_f_i_m_t_d_d_numeric_attribute_class_observer_a7f84915a0b61842c9d8ad6d19a542308}} 
+\index{moa.classifiers.core.attributeclassobservers.FIMTDDNumericAttributeClassObserver@{moa.classifiers.core.attributeclassobservers.FIMTDDNumericAttributeClassObserver}!searchForBestSplitOption@{searchForBestSplitOption}}
+\index{searchForBestSplitOption@{searchForBestSplitOption}!moa.classifiers.core.attributeclassobservers.FIMTDDNumericAttributeClassObserver@{moa.classifiers.core.attributeclassobservers.FIMTDDNumericAttributeClassObserver}}
+\doxysubsubsection{\texorpdfstring{searchForBestSplitOption()}{searchForBestSplitOption()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1_attribute_split_suggestion}{Attribute\+Split\+Suggestion}} moa.\+classifiers.\+core.\+attributeclassobservers.\+F\+I\+M\+T\+D\+D\+Numeric\+Attribute\+Class\+Observer.\+search\+For\+Best\+Split\+Option (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1attributeclassobservers_1_1_f_i_m_t_d_d_numeric_attribute_class_observer_1_1_node}{Node}}}]{current\+Node,  }\item[{\mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1_attribute_split_suggestion}{Attribute\+Split\+Suggestion}}}]{current\+Best\+Option,  }\item[{\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1core_1_1splitcriteria_1_1_split_criterion}{Split\+Criterion}}}]{criterion,  }\item[{int}]{att\+Index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Implementation of the Find\+Best\+Split algorithm from E.\+Ikonomovska et al. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/classifiers/core/attributeclassobservers/F\+I\+M\+T\+D\+D\+Numeric\+Attribute\+Class\+Observer.\+java\end{DoxyCompactItemize}

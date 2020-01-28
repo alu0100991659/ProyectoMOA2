@@ -1,0 +1,340 @@
+\hypertarget{classmoa_1_1classifiers_1_1meta_1_1_accuracy_updated_ensemble}{}\doxysection{moa.\+classifiers.\+meta.\+Accuracy\+Updated\+Ensemble Class Reference}
+\label{classmoa_1_1classifiers_1_1meta_1_1_accuracy_updated_ensemble}\index{moa.classifiers.meta.AccuracyUpdatedEnsemble@{moa.classifiers.meta.AccuracyUpdatedEnsemble}}
+
+
+Inheritance diagram for moa.\+classifiers.\+meta.\+Accuracy\+Updated\+Ensemble\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+classifiers.\+meta.\+Accuracy\+Updated\+Ensemble\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_accuracy_updated_ensemble_a6335de5ed1faf199466b504e902ba44c}{prepare\+For\+Use\+Impl}} (\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}} monitor, \mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}} repository)
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_accuracy_updated_ensemble_ae6d248ed95d01e3b721929036577ad2a}{reset\+Learning\+Impl}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_accuracy_updated_ensemble_a33bb916df8bd328e65fe78e8702be5e2}{train\+On\+Instance\+Impl}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst)
+\item 
+boolean \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_accuracy_updated_ensemble_aa7870d4962aa8dd980da763783aefa5d}{is\+Randomizable}} ()
+\item 
+double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_accuracy_updated_ensemble_a023b446ff571d202d2d9f5e2b86a181f}{get\+Votes\+For\+Instance}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst)
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_accuracy_updated_ensemble_aa15451f6044a6662acf1ce97f79d93b1}{get\+Model\+Description}} (String\+Builder out, int indent)
+\item 
+\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier}{Classifier}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_accuracy_updated_ensemble_a65dcf13bac7f2e08da32992912d2e872}{get\+Sub\+Classifiers}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_accuracy_updated_ensemble_a667df6e236cf971d8332ec3078735193}{learner\+Option}}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_accuracy_updated_ensemble_a4a5652243db51ea7841e4721a0290e36}{member\+Count\+Option}}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_accuracy_updated_ensemble_a60f5b464dc5a273af7cc8b437dae52e1}{chunk\+Size\+Option}}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_accuracy_updated_ensemble_a2d630784b96f58bc1edcf16c4013d793}{max\+Byte\+Size\+Option}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_accuracy_updated_ensemble_aa4428eea9ffc47929ed71197b089f880}{process\+Chunk}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_accuracy_updated_ensemble_a70ea6430b3d6779eb7e80a2d5d09f3bc}{enforce\+Memory\+Limit}} ()
+\item 
+double \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_accuracy_updated_ensemble_af6b76710a6ce7eb227b1342ce552ffbd}{compute\+MseR}} ()
+\item 
+double \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_accuracy_updated_ensemble_a8a121b98754b6525b42f9c59c7be4c67}{compute\+Mse}} (\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier}{Classifier}} learner, \mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instances}{Instances}} chunk)
+\item 
+\mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_accuracy_updated_ensemble_a3342f2ab04a85b721fa9068344040e8b}{get\+Model\+Measurements\+Impl}} ()
+\item 
+\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier}{Classifier}} \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_accuracy_updated_ensemble_a00e2169306d60a3a795fa9c1c048eccc}{add\+To\+Stored}} (\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier}{Classifier}} new\+Classifier, double new\+Classifiers\+Weight)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_accuracy_updated_ensemble_a52c0e3e9f596ed86ef0f9be2a54685ea}{weights}}
+\item 
+long\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_accuracy_updated_ensemble_ae500ff835860d6ae2a0e53e785ac39c8}{class\+Distributions}}
+\item 
+\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier}{Classifier}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_accuracy_updated_ensemble_a62d075d7f4938f7d42868856cd161859}{learners}}
+\item 
+int \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_accuracy_updated_ensemble_abe3fad7f49696bc7b0e056b1bf210bba}{processed\+Instances}}
+\item 
+\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier}{Classifier}} \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_accuracy_updated_ensemble_a55cf2b6e54b64b9509d4432f0e8be88e}{candidate}}
+\item 
+\mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instances}{Instances}} \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_accuracy_updated_ensemble_a655b698a5a2aa35c546b87d8e0b9c9cd}{current\+Chunk}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+The revised version of the Accuracy Updated Ensemble as proposed by Brzezinski and Stefanowski in \char`\"{}\+Reacting to Different Types of Concept Drift\+:
+\+The Accuracy Updated Ensemble Algorithm\char`\"{}, I\+E\+EE Trans. Neural Netw, 2013. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_accuracy_updated_ensemble_a00e2169306d60a3a795fa9c1c048eccc}\label{classmoa_1_1classifiers_1_1meta_1_1_accuracy_updated_ensemble_a00e2169306d60a3a795fa9c1c048eccc}} 
+\index{moa.classifiers.meta.AccuracyUpdatedEnsemble@{moa.classifiers.meta.AccuracyUpdatedEnsemble}!addToStored@{addToStored}}
+\index{addToStored@{addToStored}!moa.classifiers.meta.AccuracyUpdatedEnsemble@{moa.classifiers.meta.AccuracyUpdatedEnsemble}}
+\doxysubsubsection{\texorpdfstring{addToStored()}{addToStored()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier}{Classifier}} moa.\+classifiers.\+meta.\+Accuracy\+Updated\+Ensemble.\+add\+To\+Stored (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier}{Classifier}}}]{new\+Classifier,  }\item[{double}]{new\+Classifiers\+Weight }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Adds a classifier to the storage.
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Classifier} & The classifier to add. \\
+\hline
+{\em new\+Classifiers\+Weight} & The new classifiers weight. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_accuracy_updated_ensemble_a8a121b98754b6525b42f9c59c7be4c67}\label{classmoa_1_1classifiers_1_1meta_1_1_accuracy_updated_ensemble_a8a121b98754b6525b42f9c59c7be4c67}} 
+\index{moa.classifiers.meta.AccuracyUpdatedEnsemble@{moa.classifiers.meta.AccuracyUpdatedEnsemble}!computeMse@{computeMse}}
+\index{computeMse@{computeMse}!moa.classifiers.meta.AccuracyUpdatedEnsemble@{moa.classifiers.meta.AccuracyUpdatedEnsemble}}
+\doxysubsubsection{\texorpdfstring{computeMse()}{computeMse()}}
+{\footnotesize\ttfamily double moa.\+classifiers.\+meta.\+Accuracy\+Updated\+Ensemble.\+compute\+Mse (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier}{Classifier}}}]{learner,  }\item[{\mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instances}{Instances}}}]{chunk }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Computes the M\+SE of a learner for a given chunk of examples. 
+\begin{DoxyParams}{Parameters}
+{\em learner} & classifier to compute error \\
+\hline
+{\em chunk} & chunk of examples \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the computed error. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_accuracy_updated_ensemble_af6b76710a6ce7eb227b1342ce552ffbd}\label{classmoa_1_1classifiers_1_1meta_1_1_accuracy_updated_ensemble_af6b76710a6ce7eb227b1342ce552ffbd}} 
+\index{moa.classifiers.meta.AccuracyUpdatedEnsemble@{moa.classifiers.meta.AccuracyUpdatedEnsemble}!computeMseR@{computeMseR}}
+\index{computeMseR@{computeMseR}!moa.classifiers.meta.AccuracyUpdatedEnsemble@{moa.classifiers.meta.AccuracyUpdatedEnsemble}}
+\doxysubsubsection{\texorpdfstring{computeMseR()}{computeMseR()}}
+{\footnotesize\ttfamily double moa.\+classifiers.\+meta.\+Accuracy\+Updated\+Ensemble.\+compute\+MseR (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Computes the M\+S\+Er threshold.
+
+\begin{DoxyReturn}{Returns}
+The M\+S\+Er threshold. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_accuracy_updated_ensemble_a70ea6430b3d6779eb7e80a2d5d09f3bc}\label{classmoa_1_1classifiers_1_1meta_1_1_accuracy_updated_ensemble_a70ea6430b3d6779eb7e80a2d5d09f3bc}} 
+\index{moa.classifiers.meta.AccuracyUpdatedEnsemble@{moa.classifiers.meta.AccuracyUpdatedEnsemble}!enforceMemoryLimit@{enforceMemoryLimit}}
+\index{enforceMemoryLimit@{enforceMemoryLimit}!moa.classifiers.meta.AccuracyUpdatedEnsemble@{moa.classifiers.meta.AccuracyUpdatedEnsemble}}
+\doxysubsubsection{\texorpdfstring{enforceMemoryLimit()}{enforceMemoryLimit()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+meta.\+Accuracy\+Updated\+Ensemble.\+enforce\+Memory\+Limit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Checks if the memory limit is exceeded and if so prunes the classifiers in the ensemble. \mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_accuracy_updated_ensemble_aa15451f6044a6662acf1ce97f79d93b1}\label{classmoa_1_1classifiers_1_1meta_1_1_accuracy_updated_ensemble_aa15451f6044a6662acf1ce97f79d93b1}} 
+\index{moa.classifiers.meta.AccuracyUpdatedEnsemble@{moa.classifiers.meta.AccuracyUpdatedEnsemble}!getModelDescription@{getModelDescription}}
+\index{getModelDescription@{getModelDescription}!moa.classifiers.meta.AccuracyUpdatedEnsemble@{moa.classifiers.meta.AccuracyUpdatedEnsemble}}
+\doxysubsubsection{\texorpdfstring{getModelDescription()}{getModelDescription()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+meta.\+Accuracy\+Updated\+Ensemble.\+get\+Model\+Description (\begin{DoxyParamCaption}\item[{String\+Builder}]{out,  }\item[{int}]{indent }\end{DoxyParamCaption})}
+
+Returns a string representation of the model.
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & the stringbuilder to add the description \\
+\hline
+{\em indent} & the number of characters to indent \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a30e5ff32bc8127dfb7436945776b7523}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_accuracy_updated_ensemble_a3342f2ab04a85b721fa9068344040e8b}\label{classmoa_1_1classifiers_1_1meta_1_1_accuracy_updated_ensemble_a3342f2ab04a85b721fa9068344040e8b}} 
+\index{moa.classifiers.meta.AccuracyUpdatedEnsemble@{moa.classifiers.meta.AccuracyUpdatedEnsemble}!getModelMeasurementsImpl@{getModelMeasurementsImpl}}
+\index{getModelMeasurementsImpl@{getModelMeasurementsImpl}!moa.classifiers.meta.AccuracyUpdatedEnsemble@{moa.classifiers.meta.AccuracyUpdatedEnsemble}}
+\doxysubsubsection{\texorpdfstring{getModelMeasurementsImpl()}{getModelMeasurementsImpl()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}} \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+meta.\+Accuracy\+Updated\+Ensemble.\+get\+Model\+Measurements\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Adds ensemble weights to the measurements. 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_ac2bebede21c9d2d8cd11d95a7e20e529}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_accuracy_updated_ensemble_a65dcf13bac7f2e08da32992912d2e872}\label{classmoa_1_1classifiers_1_1meta_1_1_accuracy_updated_ensemble_a65dcf13bac7f2e08da32992912d2e872}} 
+\index{moa.classifiers.meta.AccuracyUpdatedEnsemble@{moa.classifiers.meta.AccuracyUpdatedEnsemble}!getSubClassifiers@{getSubClassifiers}}
+\index{getSubClassifiers@{getSubClassifiers}!moa.classifiers.meta.AccuracyUpdatedEnsemble@{moa.classifiers.meta.AccuracyUpdatedEnsemble}}
+\doxysubsubsection{\texorpdfstring{getSubClassifiers()}{getSubClassifiers()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier}{Classifier}} \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+meta.\+Accuracy\+Updated\+Ensemble.\+get\+Sub\+Classifiers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the classifiers of this ensemble. Returns null if this learner is a single learner.
+
+\begin{DoxyReturn}{Returns}
+an array of the learners of the ensemble 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a5d7c5aadeaf3465785aa6bb2efb615f2}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_accuracy_updated_ensemble_a023b446ff571d202d2d9f5e2b86a181f}\label{classmoa_1_1classifiers_1_1meta_1_1_accuracy_updated_ensemble_a023b446ff571d202d2d9f5e2b86a181f}} 
+\index{moa.classifiers.meta.AccuracyUpdatedEnsemble@{moa.classifiers.meta.AccuracyUpdatedEnsemble}!getVotesForInstance@{getVotesForInstance}}
+\index{getVotesForInstance@{getVotesForInstance}!moa.classifiers.meta.AccuracyUpdatedEnsemble@{moa.classifiers.meta.AccuracyUpdatedEnsemble}}
+\doxysubsubsection{\texorpdfstring{getVotesForInstance()}{getVotesForInstance()}}
+{\footnotesize\ttfamily double \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+meta.\+Accuracy\+Updated\+Ensemble.\+get\+Votes\+For\+Instance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{inst }\end{DoxyParamCaption})}
+
+Predicts a class for an example. 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a0e3589c4fa6f088d82d64514afd9513c}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_accuracy_updated_ensemble_aa7870d4962aa8dd980da763783aefa5d}\label{classmoa_1_1classifiers_1_1meta_1_1_accuracy_updated_ensemble_aa7870d4962aa8dd980da763783aefa5d}} 
+\index{moa.classifiers.meta.AccuracyUpdatedEnsemble@{moa.classifiers.meta.AccuracyUpdatedEnsemble}!isRandomizable@{isRandomizable}}
+\index{isRandomizable@{isRandomizable}!moa.classifiers.meta.AccuracyUpdatedEnsemble@{moa.classifiers.meta.AccuracyUpdatedEnsemble}}
+\doxysubsubsection{\texorpdfstring{isRandomizable()}{isRandomizable()}}
+{\footnotesize\ttfamily boolean moa.\+classifiers.\+meta.\+Accuracy\+Updated\+Ensemble.\+is\+Randomizable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Determines whether the classifier is randomizable. 
+
+Implements \mbox{\hyperlink{interfacemoa_1_1learners_1_1_learner_a2f1ff9007b5eb5f53801f474b4d42a61}{moa.\+learners.\+Learner$<$ E extends Example $>$}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_accuracy_updated_ensemble_a6335de5ed1faf199466b504e902ba44c}\label{classmoa_1_1classifiers_1_1meta_1_1_accuracy_updated_ensemble_a6335de5ed1faf199466b504e902ba44c}} 
+\index{moa.classifiers.meta.AccuracyUpdatedEnsemble@{moa.classifiers.meta.AccuracyUpdatedEnsemble}!prepareForUseImpl@{prepareForUseImpl}}
+\index{prepareForUseImpl@{prepareForUseImpl}!moa.classifiers.meta.AccuracyUpdatedEnsemble@{moa.classifiers.meta.AccuracyUpdatedEnsemble}}
+\doxysubsubsection{\texorpdfstring{prepareForUseImpl()}{prepareForUseImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+meta.\+Accuracy\+Updated\+Ensemble.\+prepare\+For\+Use\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}}}]{monitor,  }\item[{\mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}}}]{repository }\end{DoxyParamCaption})}
+
+This method describes the implementation of how to prepare this object for use. All classes that extends this class have to implement {\ttfamily prepare\+For\+Use\+Impl} and not {\ttfamily prepare\+For\+Use} since {\ttfamily prepare\+For\+Use} calls {\ttfamily prepare\+For\+Use\+Impl}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em monitor} & the Task\+Monitor to use \\
+\hline
+{\em repository} & the Object\+Repository to use \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_af81677ce9db6e94f79321df05e7dc019}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_accuracy_updated_ensemble_aa4428eea9ffc47929ed71197b089f880}\label{classmoa_1_1classifiers_1_1meta_1_1_accuracy_updated_ensemble_aa4428eea9ffc47929ed71197b089f880}} 
+\index{moa.classifiers.meta.AccuracyUpdatedEnsemble@{moa.classifiers.meta.AccuracyUpdatedEnsemble}!processChunk@{processChunk}}
+\index{processChunk@{processChunk}!moa.classifiers.meta.AccuracyUpdatedEnsemble@{moa.classifiers.meta.AccuracyUpdatedEnsemble}}
+\doxysubsubsection{\texorpdfstring{processChunk()}{processChunk()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+meta.\+Accuracy\+Updated\+Ensemble.\+process\+Chunk (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Processes a chunk of instances. This method is called after collecting a chunk of examples. \mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_accuracy_updated_ensemble_ae6d248ed95d01e3b721929036577ad2a}\label{classmoa_1_1classifiers_1_1meta_1_1_accuracy_updated_ensemble_ae6d248ed95d01e3b721929036577ad2a}} 
+\index{moa.classifiers.meta.AccuracyUpdatedEnsemble@{moa.classifiers.meta.AccuracyUpdatedEnsemble}!resetLearningImpl@{resetLearningImpl}}
+\index{resetLearningImpl@{resetLearningImpl}!moa.classifiers.meta.AccuracyUpdatedEnsemble@{moa.classifiers.meta.AccuracyUpdatedEnsemble}}
+\doxysubsubsection{\texorpdfstring{resetLearningImpl()}{resetLearningImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+meta.\+Accuracy\+Updated\+Ensemble.\+reset\+Learning\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Resets this classifier. It must be similar to starting a new classifier from scratch. ~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden. 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a099ffcf2417abb919d10d697c0648f29}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_accuracy_updated_ensemble_a33bb916df8bd328e65fe78e8702be5e2}\label{classmoa_1_1classifiers_1_1meta_1_1_accuracy_updated_ensemble_a33bb916df8bd328e65fe78e8702be5e2}} 
+\index{moa.classifiers.meta.AccuracyUpdatedEnsemble@{moa.classifiers.meta.AccuracyUpdatedEnsemble}!trainOnInstanceImpl@{trainOnInstanceImpl}}
+\index{trainOnInstanceImpl@{trainOnInstanceImpl}!moa.classifiers.meta.AccuracyUpdatedEnsemble@{moa.classifiers.meta.AccuracyUpdatedEnsemble}}
+\doxysubsubsection{\texorpdfstring{trainOnInstanceImpl()}{trainOnInstanceImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+meta.\+Accuracy\+Updated\+Ensemble.\+train\+On\+Instance\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{inst }\end{DoxyParamCaption})}
+
+Trains this classifier incrementally using the given instance.~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & the instance to be used for training \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_aceb24d2ddeab386f2ecead6e3c0d3543}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_accuracy_updated_ensemble_a55cf2b6e54b64b9509d4432f0e8be88e}\label{classmoa_1_1classifiers_1_1meta_1_1_accuracy_updated_ensemble_a55cf2b6e54b64b9509d4432f0e8be88e}} 
+\index{moa.classifiers.meta.AccuracyUpdatedEnsemble@{moa.classifiers.meta.AccuracyUpdatedEnsemble}!candidate@{candidate}}
+\index{candidate@{candidate}!moa.classifiers.meta.AccuracyUpdatedEnsemble@{moa.classifiers.meta.AccuracyUpdatedEnsemble}}
+\doxysubsubsection{\texorpdfstring{candidate}{candidate}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier}{Classifier}} moa.\+classifiers.\+meta.\+Accuracy\+Updated\+Ensemble.\+candidate\hspace{0.3cm}{\ttfamily [protected]}}
+
+Candidate classifier. \mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_accuracy_updated_ensemble_a60f5b464dc5a273af7cc8b437dae52e1}\label{classmoa_1_1classifiers_1_1meta_1_1_accuracy_updated_ensemble_a60f5b464dc5a273af7cc8b437dae52e1}} 
+\index{moa.classifiers.meta.AccuracyUpdatedEnsemble@{moa.classifiers.meta.AccuracyUpdatedEnsemble}!chunkSizeOption@{chunkSizeOption}}
+\index{chunkSizeOption@{chunkSizeOption}!moa.classifiers.meta.AccuracyUpdatedEnsemble@{moa.classifiers.meta.AccuracyUpdatedEnsemble}}
+\doxysubsubsection{\texorpdfstring{chunkSizeOption}{chunkSizeOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+classifiers.\+meta.\+Accuracy\+Updated\+Ensemble.\+chunk\+Size\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(\textcolor{stringliteral}{"chunkSize"}, \textcolor{charliteral}{'c'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"The chunk size used for classifier creation and evaluation."}, 500, 1, Integer.MAX\_VALUE)}
+
+\end{DoxyCode}
+Chunk size. \mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_accuracy_updated_ensemble_ae500ff835860d6ae2a0e53e785ac39c8}\label{classmoa_1_1classifiers_1_1meta_1_1_accuracy_updated_ensemble_ae500ff835860d6ae2a0e53e785ac39c8}} 
+\index{moa.classifiers.meta.AccuracyUpdatedEnsemble@{moa.classifiers.meta.AccuracyUpdatedEnsemble}!classDistributions@{classDistributions}}
+\index{classDistributions@{classDistributions}!moa.classifiers.meta.AccuracyUpdatedEnsemble@{moa.classifiers.meta.AccuracyUpdatedEnsemble}}
+\doxysubsubsection{\texorpdfstring{classDistributions}{classDistributions}}
+{\footnotesize\ttfamily long \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+meta.\+Accuracy\+Updated\+Ensemble.\+class\+Distributions\hspace{0.3cm}{\ttfamily [protected]}}
+
+Class distributions. \mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_accuracy_updated_ensemble_a655b698a5a2aa35c546b87d8e0b9c9cd}\label{classmoa_1_1classifiers_1_1meta_1_1_accuracy_updated_ensemble_a655b698a5a2aa35c546b87d8e0b9c9cd}} 
+\index{moa.classifiers.meta.AccuracyUpdatedEnsemble@{moa.classifiers.meta.AccuracyUpdatedEnsemble}!currentChunk@{currentChunk}}
+\index{currentChunk@{currentChunk}!moa.classifiers.meta.AccuracyUpdatedEnsemble@{moa.classifiers.meta.AccuracyUpdatedEnsemble}}
+\doxysubsubsection{\texorpdfstring{currentChunk}{currentChunk}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instances}{Instances}} moa.\+classifiers.\+meta.\+Accuracy\+Updated\+Ensemble.\+current\+Chunk\hspace{0.3cm}{\ttfamily [protected]}}
+
+Current chunk of instances. \mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_accuracy_updated_ensemble_a667df6e236cf971d8332ec3078735193}\label{classmoa_1_1classifiers_1_1meta_1_1_accuracy_updated_ensemble_a667df6e236cf971d8332ec3078735193}} 
+\index{moa.classifiers.meta.AccuracyUpdatedEnsemble@{moa.classifiers.meta.AccuracyUpdatedEnsemble}!learnerOption@{learnerOption}}
+\index{learnerOption@{learnerOption}!moa.classifiers.meta.AccuracyUpdatedEnsemble@{moa.classifiers.meta.AccuracyUpdatedEnsemble}}
+\doxysubsubsection{\texorpdfstring{learnerOption}{learnerOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} moa.\+classifiers.\+meta.\+Accuracy\+Updated\+Ensemble.\+learner\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} ClassOption(\textcolor{stringliteral}{"learner"}, \textcolor{charliteral}{'l'}, \textcolor{stringliteral}{"Classifier to train."}, Classifier.class, }
+\DoxyCodeLine{            \textcolor{stringliteral}{"trees.HoeffdingTree -\/e 2000000 -\/g 100 -\/c 0.01"})}
+
+\end{DoxyCode}
+Type of classifier to use as a component classifier. \mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_accuracy_updated_ensemble_a62d075d7f4938f7d42868856cd161859}\label{classmoa_1_1classifiers_1_1meta_1_1_accuracy_updated_ensemble_a62d075d7f4938f7d42868856cd161859}} 
+\index{moa.classifiers.meta.AccuracyUpdatedEnsemble@{moa.classifiers.meta.AccuracyUpdatedEnsemble}!learners@{learners}}
+\index{learners@{learners}!moa.classifiers.meta.AccuracyUpdatedEnsemble@{moa.classifiers.meta.AccuracyUpdatedEnsemble}}
+\doxysubsubsection{\texorpdfstring{learners}{learners}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier}{Classifier}} \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+meta.\+Accuracy\+Updated\+Ensemble.\+learners\hspace{0.3cm}{\ttfamily [protected]}}
+
+Ensemble classifiers. \mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_accuracy_updated_ensemble_a2d630784b96f58bc1edcf16c4013d793}\label{classmoa_1_1classifiers_1_1meta_1_1_accuracy_updated_ensemble_a2d630784b96f58bc1edcf16c4013d793}} 
+\index{moa.classifiers.meta.AccuracyUpdatedEnsemble@{moa.classifiers.meta.AccuracyUpdatedEnsemble}!maxByteSizeOption@{maxByteSizeOption}}
+\index{maxByteSizeOption@{maxByteSizeOption}!moa.classifiers.meta.AccuracyUpdatedEnsemble@{moa.classifiers.meta.AccuracyUpdatedEnsemble}}
+\doxysubsubsection{\texorpdfstring{maxByteSizeOption}{maxByteSizeOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+classifiers.\+meta.\+Accuracy\+Updated\+Ensemble.\+max\+Byte\+Size\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(\textcolor{stringliteral}{"maxByteSize"}, \textcolor{charliteral}{'m'}, \textcolor{stringliteral}{"Maximum memory consumed by ensemble."},}
+\DoxyCodeLine{            33554432, 0, Integer.MAX\_VALUE)}
+
+\end{DoxyCode}
+Determines the maximum size of model (evaluated after every chunk). In effect only for Hoeffding\+Tree-\/based component classifiers. \mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_accuracy_updated_ensemble_a4a5652243db51ea7841e4721a0290e36}\label{classmoa_1_1classifiers_1_1meta_1_1_accuracy_updated_ensemble_a4a5652243db51ea7841e4721a0290e36}} 
+\index{moa.classifiers.meta.AccuracyUpdatedEnsemble@{moa.classifiers.meta.AccuracyUpdatedEnsemble}!memberCountOption@{memberCountOption}}
+\index{memberCountOption@{memberCountOption}!moa.classifiers.meta.AccuracyUpdatedEnsemble@{moa.classifiers.meta.AccuracyUpdatedEnsemble}}
+\doxysubsubsection{\texorpdfstring{memberCountOption}{memberCountOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+classifiers.\+meta.\+Accuracy\+Updated\+Ensemble.\+member\+Count\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(\textcolor{stringliteral}{"memberCount"}, \textcolor{charliteral}{'n'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"The maximum number of classifiers in an ensemble."}, 10, 1, Integer.MAX\_VALUE)}
+
+\end{DoxyCode}
+Number of component classifiers. \mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_accuracy_updated_ensemble_abe3fad7f49696bc7b0e056b1bf210bba}\label{classmoa_1_1classifiers_1_1meta_1_1_accuracy_updated_ensemble_abe3fad7f49696bc7b0e056b1bf210bba}} 
+\index{moa.classifiers.meta.AccuracyUpdatedEnsemble@{moa.classifiers.meta.AccuracyUpdatedEnsemble}!processedInstances@{processedInstances}}
+\index{processedInstances@{processedInstances}!moa.classifiers.meta.AccuracyUpdatedEnsemble@{moa.classifiers.meta.AccuracyUpdatedEnsemble}}
+\doxysubsubsection{\texorpdfstring{processedInstances}{processedInstances}}
+{\footnotesize\ttfamily int moa.\+classifiers.\+meta.\+Accuracy\+Updated\+Ensemble.\+processed\+Instances\hspace{0.3cm}{\ttfamily [protected]}}
+
+Number of processed examples. \mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_accuracy_updated_ensemble_a52c0e3e9f596ed86ef0f9be2a54685ea}\label{classmoa_1_1classifiers_1_1meta_1_1_accuracy_updated_ensemble_a52c0e3e9f596ed86ef0f9be2a54685ea}} 
+\index{moa.classifiers.meta.AccuracyUpdatedEnsemble@{moa.classifiers.meta.AccuracyUpdatedEnsemble}!weights@{weights}}
+\index{weights@{weights}!moa.classifiers.meta.AccuracyUpdatedEnsemble@{moa.classifiers.meta.AccuracyUpdatedEnsemble}}
+\doxysubsubsection{\texorpdfstring{weights}{weights}}
+{\footnotesize\ttfamily double \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} moa.\+classifiers.\+meta.\+Accuracy\+Updated\+Ensemble.\+weights\hspace{0.3cm}{\ttfamily [protected]}}
+
+The weights of stored classifiers. weights\mbox{[}x\mbox{]}\mbox{[}0\mbox{]} = weight weights\mbox{[}x\mbox{]}\mbox{[}1\mbox{]} = classifier number in learners 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/classifiers/meta/Accuracy\+Updated\+Ensemble.\+java\end{DoxyCompactItemize}

@@ -1,0 +1,176 @@
+\hypertarget{classmoa_1_1tasks_1_1_run_stream_tasks}{}\doxysection{moa.\+tasks.\+Run\+Stream\+Tasks Class Reference}
+\label{classmoa_1_1tasks_1_1_run_stream_tasks}\index{moa.tasks.RunStreamTasks@{moa.tasks.RunStreamTasks}}
+
+
+Inheritance diagram for moa.\+tasks.\+Run\+Stream\+Tasks\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+tasks.\+Run\+Stream\+Tasks\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classmoa_1_1tasks_1_1_run_stream_tasks_a23d238dfda284fc9d067141fada6aef5}{get\+Purpose\+String}} ()
+\item 
+Class$<$?$>$ \mbox{\hyperlink{classmoa_1_1tasks_1_1_run_stream_tasks_a76fbc887272ed28aa6f3424c02fb6f20}{get\+Task\+Result\+Type}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} {\bfseries task\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_string_option}{String\+Option}} {\bfseries stream\+Parameter\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} {\bfseries first\+Value\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} {\bfseries last\+Value\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} {\bfseries increment\+Value\+Option}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Object \mbox{\hyperlink{classmoa_1_1tasks_1_1_run_stream_tasks_adb25510ef77f62cc169be32270462ae6}{do\+Main\+Task}} (\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}} monitor, \mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}} repository)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_run_stream_tasks_ad0a52bbf0cf7a72eac6bc04a1f199599}\label{classmoa_1_1tasks_1_1_run_stream_tasks_ad0a52bbf0cf7a72eac6bc04a1f199599}} 
+\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task}{Task}} {\bfseries task}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task}{Task}} for running several experiments modifying values of parameters.
+
+\begin{DoxyAuthor}{Author}
+Richard Kirkby (\href{mailto:rkirkby@cs.waikato.ac.nz}{\texttt{ rkirkby@cs.\+waikato.\+ac.\+nz}}) 
+
+Albert Bifet (abifet at cs dot waikato dot ac dot nz) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+7 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_run_stream_tasks_adb25510ef77f62cc169be32270462ae6}\label{classmoa_1_1tasks_1_1_run_stream_tasks_adb25510ef77f62cc169be32270462ae6}} 
+\index{moa.tasks.RunStreamTasks@{moa.tasks.RunStreamTasks}!doMainTask@{doMainTask}}
+\index{doMainTask@{doMainTask}!moa.tasks.RunStreamTasks@{moa.tasks.RunStreamTasks}}
+\doxysubsubsection{\texorpdfstring{doMainTask()}{doMainTask()}}
+{\footnotesize\ttfamily Object moa.\+tasks.\+Run\+Stream\+Tasks.\+do\+Main\+Task (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}}}]{monitor,  }\item[{\mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}}}]{repository }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+This method performs this task. {\ttfamily \mbox{\hyperlink{classmoa_1_1tasks_1_1_abstract_task}{Abstract\+Task}}} implements {\ttfamily do\+Task}, that uses {\ttfamily do\+Task\+Impl}. {\ttfamily \mbox{\hyperlink{classmoa_1_1tasks_1_1_main_task}{Main\+Task}}} implements {\ttfamily do\+Task\+Impl} using {\ttfamily do\+Main\+Task} so its extensions only need to implement {\ttfamily do\+Main\+Task}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em monitor} & the \mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}} to use \\
+\hline
+{\em repository} & the Object\+Repository to use \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an object with the result of this task 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1tasks_1_1_main_task_afab790976c2ace902aa1e2f780442788}{moa.\+tasks.\+Main\+Task}}.
+
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_run_stream_tasks_a23d238dfda284fc9d067141fada6aef5}\label{classmoa_1_1tasks_1_1_run_stream_tasks_a23d238dfda284fc9d067141fada6aef5}} 
+\index{moa.tasks.RunStreamTasks@{moa.tasks.RunStreamTasks}!getPurposeString@{getPurposeString}}
+\index{getPurposeString@{getPurposeString}!moa.tasks.RunStreamTasks@{moa.tasks.RunStreamTasks}}
+\doxysubsubsection{\texorpdfstring{getPurposeString()}{getPurposeString()}}
+{\footnotesize\ttfamily String moa.\+tasks.\+Run\+Stream\+Tasks.\+get\+Purpose\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Options to handle Dictionary with option texts and objects 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1options_1_1_abstract_option_handler_abc8df69aea27ef85060557a9e918b2ca}{moa.\+options.\+Abstract\+Option\+Handler}}.
+
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_run_stream_tasks_a76fbc887272ed28aa6f3424c02fb6f20}\label{classmoa_1_1tasks_1_1_run_stream_tasks_a76fbc887272ed28aa6f3424c02fb6f20}} 
+\index{moa.tasks.RunStreamTasks@{moa.tasks.RunStreamTasks}!getTaskResultType@{getTaskResultType}}
+\index{getTaskResultType@{getTaskResultType}!moa.tasks.RunStreamTasks@{moa.tasks.RunStreamTasks}}
+\doxysubsubsection{\texorpdfstring{getTaskResultType()}{getTaskResultType()}}
+{\footnotesize\ttfamily Class$<$?$>$ moa.\+tasks.\+Run\+Stream\+Tasks.\+get\+Task\+Result\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the result type of this task. Tasks can return Learning\+Curve, Learning\+Evaluation, Classifier, String, Instances..
+
+\begin{DoxyReturn}{Returns}
+a class object of the result of this task 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_a568100cd931416820d1bcc81032301f6}{moa.\+tasks.\+Task}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_run_stream_tasks_ae80f77fbeb739eeed573eb1a0518eb3e}\label{classmoa_1_1tasks_1_1_run_stream_tasks_ae80f77fbeb739eeed573eb1a0518eb3e}} 
+\index{moa.tasks.RunStreamTasks@{moa.tasks.RunStreamTasks}!firstValueOption@{firstValueOption}}
+\index{firstValueOption@{firstValueOption}!moa.tasks.RunStreamTasks@{moa.tasks.RunStreamTasks}}
+\doxysubsubsection{\texorpdfstring{firstValueOption}{firstValueOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} moa.\+tasks.\+Run\+Stream\+Tasks.\+first\+Value\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FloatOption(\textcolor{stringliteral}{"firstValue"},}
+\DoxyCodeLine{            \textcolor{charliteral}{'f'}, \textcolor{stringliteral}{"First value"}, 0.0)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_run_stream_tasks_ac5f1b76cfeef03846fbf535d015fb215}\label{classmoa_1_1tasks_1_1_run_stream_tasks_ac5f1b76cfeef03846fbf535d015fb215}} 
+\index{moa.tasks.RunStreamTasks@{moa.tasks.RunStreamTasks}!incrementValueOption@{incrementValueOption}}
+\index{incrementValueOption@{incrementValueOption}!moa.tasks.RunStreamTasks@{moa.tasks.RunStreamTasks}}
+\doxysubsubsection{\texorpdfstring{incrementValueOption}{incrementValueOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} moa.\+tasks.\+Run\+Stream\+Tasks.\+increment\+Value\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FloatOption(\textcolor{stringliteral}{"incrementValue"},}
+\DoxyCodeLine{            \textcolor{charliteral}{'i'}, \textcolor{stringliteral}{"Increment value"}, 0.1)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_run_stream_tasks_a6a92730e94c6dac2e1bace8dc4e0b293}\label{classmoa_1_1tasks_1_1_run_stream_tasks_a6a92730e94c6dac2e1bace8dc4e0b293}} 
+\index{moa.tasks.RunStreamTasks@{moa.tasks.RunStreamTasks}!lastValueOption@{lastValueOption}}
+\index{lastValueOption@{lastValueOption}!moa.tasks.RunStreamTasks@{moa.tasks.RunStreamTasks}}
+\doxysubsubsection{\texorpdfstring{lastValueOption}{lastValueOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} moa.\+tasks.\+Run\+Stream\+Tasks.\+last\+Value\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FloatOption(\textcolor{stringliteral}{"lastValue"},}
+\DoxyCodeLine{            \textcolor{charliteral}{'l'}, \textcolor{stringliteral}{"Last value"}, 1.0)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_run_stream_tasks_ae0a5267b6f13999713500156e38cb196}\label{classmoa_1_1tasks_1_1_run_stream_tasks_ae0a5267b6f13999713500156e38cb196}} 
+\index{moa.tasks.RunStreamTasks@{moa.tasks.RunStreamTasks}!streamParameterOption@{streamParameterOption}}
+\index{streamParameterOption@{streamParameterOption}!moa.tasks.RunStreamTasks@{moa.tasks.RunStreamTasks}}
+\doxysubsubsection{\texorpdfstring{streamParameterOption}{streamParameterOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_string_option}{String\+Option}} moa.\+tasks.\+Run\+Stream\+Tasks.\+stream\+Parameter\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} StringOption(\textcolor{stringliteral}{"streamParameter"}, \textcolor{charliteral}{'p'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Stream parameter to vary."}, \textcolor{stringliteral}{"b"})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_run_stream_tasks_a9667dd4c8a51212230769fb42617af04}\label{classmoa_1_1tasks_1_1_run_stream_tasks_a9667dd4c8a51212230769fb42617af04}} 
+\index{moa.tasks.RunStreamTasks@{moa.tasks.RunStreamTasks}!taskOption@{taskOption}}
+\index{taskOption@{taskOption}!moa.tasks.RunStreamTasks@{moa.tasks.RunStreamTasks}}
+\doxysubsubsection{\texorpdfstring{taskOption}{taskOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} moa.\+tasks.\+Run\+Stream\+Tasks.\+task\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} ClassOption(\textcolor{stringliteral}{"task"}, \textcolor{charliteral}{'t'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Task to do."}, Task.class, \textcolor{stringliteral}{"EvaluatePrequential -\/l active.ALUncertainty -\/i 1000000 -\/d temp.txt"})}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/tasks/Run\+Stream\+Tasks.\+java\end{DoxyCompactItemize}

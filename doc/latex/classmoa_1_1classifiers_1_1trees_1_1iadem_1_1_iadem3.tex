@@ -1,0 +1,220 @@
+\hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3}{}\doxysection{moa.\+classifiers.\+trees.\+iadem.\+Iadem3 Class Reference}
+\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3}\index{moa.classifiers.trees.iadem.Iadem3@{moa.classifiers.trees.iadem.Iadem3}}
+
+
+Inheritance diagram for moa.\+classifiers.\+trees.\+iadem.\+Iadem3\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+classifiers.\+trees.\+iadem.\+Iadem3\+:
+% FIG 1
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_1_1_adaptive_leaf_node}{Adaptive\+Leaf\+Node}}
+\item 
+class \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_1_1_adaptive_leaf_node_n_b}{Adaptive\+Leaf\+Node\+NB}}
+\item 
+class \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_1_1_adaptive_leaf_node_n_b_adaptive}{Adaptive\+Leaf\+Node\+N\+B\+Adaptive}}
+\item 
+class \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_1_1_adaptive_leaf_node_n_b_kirkby}{Adaptive\+Leaf\+Node\+N\+B\+Kirkby}}
+\item 
+class \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_1_1_adaptive_leaf_node_weighted_vote}{Adaptive\+Leaf\+Node\+Weighted\+Vote}}
+\item 
+class \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_1_1_adaptive_nominal_virtual_node}{Adaptive\+Nominal\+Virtual\+Node}}
+\item 
+class \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_1_1_adaptive_numeric_virtual_node}{Adaptive\+Numeric\+Virtual\+Node}}
+\item 
+class \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_1_1_adaptive_split_node}{Adaptive\+Split\+Node}}
+\item 
+interface \mbox{\hyperlink{interfacemoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_1_1restarts_variables_at_drift}{restarts\+Variables\+At\+Drift}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_a4220cbab41f3776920a3187a3349db49}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_a4220cbab41f3776920a3187a3349db49}} 
+\mbox{\hyperlink{classmoa_1_1classifiers_1_1core_1_1driftdetection_1_1_abstract_change_detector}{Abstract\+Change\+Detector}} {\bfseries get\+Estimator\+Copy} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_a23d99d159504c21f3f2fa7982d0226f7}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_a23d99d159504c21f3f2fa7982d0226f7}} 
+void {\bfseries create\+Root} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} instance)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_aa704afde93cb887bf9c0068d62f3d0b5}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_aa704afde93cb887bf9c0068d62f3d0b5}} 
+void {\bfseries add\+Subtree} (\mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_subtree}{Iadem3\+Subtree}} subtree)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_a4ee83efcf89748fd1bca9e6f8bdcb600}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_a4ee83efcf89748fd1bca9e6f8bdcb600}} 
+void {\bfseries remove\+Subtree} (\mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_subtree}{Iadem3\+Subtree}} subtree)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_ad9e73b5a20a252991751ebc813d6be37}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_ad9e73b5a20a252991751ebc813d6be37}} 
+boolean {\bfseries can\+Create\+Subtree} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_a499b87ae362558a878eebb5b05e3ecb7}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_a499b87ae362558a878eebb5b05e3ecb7}} 
+\mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_1_1_leaf_node}{Leaf\+Node}} {\bfseries new\+Leaf\+Node} (\mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_1_1_node}{Node}} parent, long inst\+Tree\+Count\+Since\+Virtual, long inst\+Node\+Count\+Since\+Virtual, double\mbox{[}$\,$\mbox{]} initial\+Class\+Count, \mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} instance)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_a1078f81b50007b35cb8695249bf4edc3}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_a1078f81b50007b35cb8695249bf4edc3}} 
+int {\bfseries get\+Tree\+Level} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_ad7f7fcc05af9d7cb620b077d0896f638}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_ad7f7fcc05af9d7cb620b077d0896f638}} 
+int {\bfseries get\+Max\+Alt\+Subtrees\+Per\+Node} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_ab242227473d393c03efc7e149fd38127}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_ab242227473d393c03efc7e149fd38127}} 
+int {\bfseries get\+Max\+Nesting\+Levels} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_afcf4bb7a6bd9e758418b6103be8c906a}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_afcf4bb7a6bd9e758418b6103be8c906a}} 
+boolean {\bfseries is\+Restaurar\+Vectores\+Prediccion} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_a06303c157fe03ce819a7b651833a26f9}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_a06303c157fe03ce819a7b651833a26f9}} 
+int {\bfseries num\+Deleted\+Trees} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_af2bdeff2d9407913dd40e27f60ce53b7}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_af2bdeff2d9407913dd40e27f60ce53b7}} 
+int {\bfseries num\+Trees} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_ab6c203ee5746ec958ee094caa93874e4}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_ab6c203ee5746ec958ee094caa93874e4}} 
+void {\bfseries new\+Tree\+Change} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_a629101033bea654b5723dbc248c89041}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_a629101033bea654b5723dbc248c89041}} 
+void {\bfseries new\+Deleted\+Tree} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_a272f30641a5c3ab4559b764458575ca2}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_a272f30641a5c3ab4559b764458575ca2}} 
+int {\bfseries num\+Subtrees} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_a8d5317b022727b8882f4ce1f790afa30}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_a8d5317b022727b8882f4ce1f790afa30}} 
+void {\bfseries learn\+From\+Instance} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} instance)  throws Iadem\+Exception 
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_a3ccbc790dba1da93fa1cd76abe01b806}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_a3ccbc790dba1da93fa1cd76abe01b806}} 
+void {\bfseries copy\+Tree} (\mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_subtree}{Iadem3\+Subtree}} arbol)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_a4ef17d53a7895f03dc9d7ad68f6d850a}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_a4ef17d53a7895f03dc9d7ad68f6d850a}} 
+int {\bfseries get\+Changed\+Trees} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_aef9f731e8ba8aaa210dfc46ddde118f7}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_aef9f731e8ba8aaa210dfc46ddde118f7}} 
+double\mbox{[}$\,$\mbox{]} {\bfseries get\+Class\+Votes} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} instance)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_a70252f655cd6bd3fe6611e2408e56f61}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_a70252f655cd6bd3fe6611e2408e56f61}} 
+int {\bfseries get\+Number\+Of\+Subtrees} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_a293da0a5d538f9e595769ae48629b476}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_a293da0a5d538f9e595769ae48629b476}} 
+void {\bfseries update\+Number\+Of\+Leaves} (int amount)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_a993743d9a3002e85be0573fac261dad4}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_a993743d9a3002e85be0573fac261dad4}} 
+void {\bfseries update\+Number\+Of\+Nodes} (int amount)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_ae612698340a4a31477f9560156515d52}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_ae612698340a4a31477f9560156515d52}} 
+void {\bfseries update\+Number\+Of\+Nodes\+Split\+By\+Tie\+Breaking} (int amount)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries max\+Nesting\+Level\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries max\+Subtrees\+Per\+Node\+Option}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_a07f466ddf23ab7de2ad7a0abcdf29a10}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_a07f466ddf23ab7de2ad7a0abcdf29a10}} 
+int {\bfseries num\+Splits\+By\+Breaking\+Ties} = 0
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_a5a184e0217c583a15084bce05de1bf7d}{get\+Model\+Measurements\+Impl}} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_a17ecead0d188e757468062e6c4ca90e7}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_a17ecead0d188e757468062e6c4ca90e7}} 
+boolean {\bfseries has\+Tree} (\mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_1_1_node}{Node}} node)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_a1101ff8b780e0b39203fdf26a5591c49}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_a1101ff8b780e0b39203fdf26a5591c49}} 
+void {\bfseries get\+Class\+Votes\+From\+Leaf} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} instance)
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_a815e7a5a7ea92fb0f8b79768234adf49}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_a815e7a5a7ea92fb0f8b79768234adf49}} 
+\mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3}{Iadem3}} {\bfseries get\+Main\+Tree} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_abac71a759d1943de4dffd8b4309dbcb3}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_abac71a759d1943de4dffd8b4309dbcb3}} 
+final boolean {\bfseries restart\+At\+Drift} = true
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_aa3bd1b2a6d486340ae077014c64bc1b6}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_aa3bd1b2a6d486340ae077014c64bc1b6}} 
+int {\bfseries interchanged\+Trees} = 0
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_abfd7321e9e35e61d14a806ae248b5fe5}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_abfd7321e9e35e61d14a806ae248b5fe5}} 
+int {\bfseries deleted\+Trees} = 0
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_a25b3c42bfbb2845c83d95f7bbf726077}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_a25b3c42bfbb2845c83d95f7bbf726077}} 
+int {\bfseries num\+Trees} = 0
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_a33ddb5e670eb41c35b2f2b94a2453ebf}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_a33ddb5e670eb41c35b2f2b94a2453ebf}} 
+int {\bfseries last\+Prediction} = -\/1
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_a9b2364acafc0d77bf30269da45a2968b}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_a9b2364acafc0d77bf30269da45a2968b}} 
+int {\bfseries tree\+Level} = 0
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_a8effc4f37b49d9f087209977fcc2340f}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_a8effc4f37b49d9f087209977fcc2340f}} 
+\mbox{\hyperlink{classmoa_1_1core_1_1_auto_expand_vector}{Auto\+Expand\+Vector}}$<$ \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_subtree}{Iadem3\+Subtree}} $>$ {\bfseries subtree\+List} = new \mbox{\hyperlink{classmoa_1_1core_1_1_auto_expand_vector}{Auto\+Expand\+Vector}}$<$\mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_subtree}{Iadem3\+Subtree}}$>$()
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_a7da610d1314cd8b0ba5bdac412632d0a}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_a7da610d1314cd8b0ba5bdac412632d0a}} 
+int {\bfseries current\+Split\+State} = -\/1
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_a8aced8c58c9e528a7e34b6340a5ad7c1}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_a8aced8c58c9e528a7e34b6340a5ad7c1}} 
+final int {\bfseries S\+P\+L\+I\+T\+\_\+\+B\+Y\+\_\+\+T\+I\+E\+\_\+\+B\+R\+E\+A\+K\+I\+NG} = 0
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Isvani Frías Blanco (ifriasb at hotmail dot com) 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_a5a184e0217c583a15084bce05de1bf7d}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_a5a184e0217c583a15084bce05de1bf7d}} 
+\index{moa.classifiers.trees.iadem.Iadem3@{moa.classifiers.trees.iadem.Iadem3}!getModelMeasurementsImpl@{getModelMeasurementsImpl}}
+\index{getModelMeasurementsImpl@{getModelMeasurementsImpl}!moa.classifiers.trees.iadem.Iadem3@{moa.classifiers.trees.iadem.Iadem3}}
+\doxysubsubsection{\texorpdfstring{getModelMeasurementsImpl()}{getModelMeasurementsImpl()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}} \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+trees.\+iadem.\+Iadem3.\+get\+Model\+Measurements\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Gets the current measurements of this classifier.~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden.
+
+\begin{DoxyReturn}{Returns}
+an array of measurements to be used in evaluation tasks 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem2_a0e39e81cb07f88ff2659d90c2f687f78}{moa.\+classifiers.\+trees.\+iadem.\+Iadem2}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_aea84cef53657065f06c4c304d7cfae16}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_aea84cef53657065f06c4c304d7cfae16}} 
+\index{moa.classifiers.trees.iadem.Iadem3@{moa.classifiers.trees.iadem.Iadem3}!maxNestingLevelOption@{maxNestingLevelOption}}
+\index{maxNestingLevelOption@{maxNestingLevelOption}!moa.classifiers.trees.iadem.Iadem3@{moa.classifiers.trees.iadem.Iadem3}}
+\doxysubsubsection{\texorpdfstring{maxNestingLevelOption}{maxNestingLevelOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+classifiers.\+trees.\+iadem.\+Iadem3.\+max\+Nesting\+Level\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(\textcolor{stringliteral}{"maxNestingLevel"}, \textcolor{charliteral}{'p'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Maximum level of nesting for alternative subtrees (-\/1 => unbounded)."},}
+\DoxyCodeLine{            1, -\/1, Integer.MAX\_VALUE)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_ac8de1ec2ba510bc5a0e06f8abfa8181f}\label{classmoa_1_1classifiers_1_1trees_1_1iadem_1_1_iadem3_ac8de1ec2ba510bc5a0e06f8abfa8181f}} 
+\index{moa.classifiers.trees.iadem.Iadem3@{moa.classifiers.trees.iadem.Iadem3}!maxSubtreesPerNodeOption@{maxSubtreesPerNodeOption}}
+\index{maxSubtreesPerNodeOption@{maxSubtreesPerNodeOption}!moa.classifiers.trees.iadem.Iadem3@{moa.classifiers.trees.iadem.Iadem3}}
+\doxysubsubsection{\texorpdfstring{maxSubtreesPerNodeOption}{maxSubtreesPerNodeOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+classifiers.\+trees.\+iadem.\+Iadem3.\+max\+Subtrees\+Per\+Node\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(\textcolor{stringliteral}{"maxSubtreesPerNode"}, \textcolor{charliteral}{'w'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Maximum number of alternative subtrees per split node (-\/1 => unbounded)."},}
+\DoxyCodeLine{            1, -\/1, Integer.MAX\_VALUE)}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/classifiers/trees/iadem/Iadem3.\+java\end{DoxyCompactItemize}

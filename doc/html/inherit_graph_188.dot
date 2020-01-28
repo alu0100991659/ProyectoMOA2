@@ -1,0 +1,14 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1008 [label="Iterator",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node1008 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="moa.recommender.rc.data.impl.\lMemRecommenderData.RatingIterator",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classmoa_1_1recommender_1_1rc_1_1data_1_1impl_1_1_mem_recommender_data_1_1_rating_iterator.html",tooltip=" "];
+  Node1008 -> Node1010 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1010 [label="moa.recommender.rc.utils.\lDenseVector.DenseVectorIterator",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classmoa_1_1recommender_1_1rc_1_1utils_1_1_dense_vector_1_1_dense_vector_iterator.html",tooltip=" "];
+  Node1008 -> Node1011 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1011 [label="moa.recommender.rc.utils.\lSparseVector.SparseVectorIterator",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classmoa_1_1recommender_1_1rc_1_1utils_1_1_sparse_vector_1_1_sparse_vector_iterator.html",tooltip=" "];
+}

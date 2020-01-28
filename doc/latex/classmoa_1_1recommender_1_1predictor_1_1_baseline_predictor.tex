@@ -1,0 +1,111 @@
+\hypertarget{classmoa_1_1recommender_1_1predictor_1_1_baseline_predictor}{}\doxysection{moa.\+recommender.\+predictor.\+Baseline\+Predictor Class Reference}
+\label{classmoa_1_1recommender_1_1predictor_1_1_baseline_predictor}\index{moa.recommender.predictor.BaselinePredictor@{moa.recommender.predictor.BaselinePredictor}}
+
+
+Inheritance diagram for moa.\+recommender.\+predictor.\+Baseline\+Predictor\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+recommender.\+predictor.\+Baseline\+Predictor\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classmoa_1_1recommender_1_1predictor_1_1_baseline_predictor_a179771ff2b095c56d69296c890b3aec8}{get\+Description}} (String\+Builder sb, int indent)
+\item 
+\mbox{\Hypertarget{classmoa_1_1recommender_1_1predictor_1_1_baseline_predictor_a51244d6ec99ca89c0ce0414df2021d4a}\label{classmoa_1_1recommender_1_1predictor_1_1_baseline_predictor_a51244d6ec99ca89c0ce0414df2021d4a}} 
+double {\bfseries predict\+Rating} (Integer user, Integer item)
+\item 
+\mbox{\Hypertarget{classmoa_1_1recommender_1_1predictor_1_1_baseline_predictor_af7dad4bc5a96e5ae5c73a3430f5b4d92}\label{classmoa_1_1recommender_1_1predictor_1_1_baseline_predictor_af7dad4bc5a96e5ae5c73a3430f5b4d92}} 
+\mbox{\hyperlink{interfacemoa_1_1recommender_1_1rc_1_1data_1_1_recommender_data}{moa.\+recommender.\+rc.\+data.\+Recommender\+Data}} {\bfseries get\+Data} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1recommender_1_1predictor_1_1_baseline_predictor_a2f63b65dacfb86b3c3879bab4d5ef5a3}\label{classmoa_1_1recommender_1_1predictor_1_1_baseline_predictor_a2f63b65dacfb86b3c3879bab4d5ef5a3}} 
+double {\bfseries predict\+Rating} (int user\+ID, int item\+ID)
+\item 
+\mbox{\Hypertarget{classmoa_1_1recommender_1_1predictor_1_1_baseline_predictor_a42fd922f3ed13da0cff183658d0014c9}\label{classmoa_1_1recommender_1_1predictor_1_1_baseline_predictor_a42fd922f3ed13da0cff183658d0014c9}} 
+List$<$ Double $>$ {\bfseries predict\+Ratings} (int user\+ID, List$<$ Integer $>$ item\+I\+DS)
+\item 
+\mbox{\Hypertarget{classmoa_1_1recommender_1_1predictor_1_1_baseline_predictor_a408f8dc38a5bfc6249a0416e69751a3f}\label{classmoa_1_1recommender_1_1predictor_1_1_baseline_predictor_a408f8dc38a5bfc6249a0416e69751a3f}} 
+void {\bfseries train} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} {\bfseries data\+Option}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classmoa_1_1recommender_1_1predictor_1_1_baseline_predictor_a40fb14258d707dca7e0f6ba12ee328f6}{prepare\+For\+Use\+Impl}} (\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}} monitor, \mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}} repository)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1recommender_1_1predictor_1_1_baseline_predictor_a259c83ba3edf42ae865c34facf5d225b}\label{classmoa_1_1recommender_1_1predictor_1_1_baseline_predictor_a259c83ba3edf42ae865c34facf5d225b}} 
+\mbox{\hyperlink{classmoa_1_1recommender_1_1rc_1_1predictor_1_1impl_1_1_baseline_predictor}{moa.\+recommender.\+rc.\+predictor.\+impl.\+Baseline\+Predictor}} {\bfseries rp}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A naive algorithm which combines the global mean of all the existing ratings, the mean rating of the user and the mean rating of the item to make a prediction. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1recommender_1_1predictor_1_1_baseline_predictor_a179771ff2b095c56d69296c890b3aec8}\label{classmoa_1_1recommender_1_1predictor_1_1_baseline_predictor_a179771ff2b095c56d69296c890b3aec8}} 
+\index{moa.recommender.predictor.BaselinePredictor@{moa.recommender.predictor.BaselinePredictor}!getDescription@{getDescription}}
+\index{getDescription@{getDescription}!moa.recommender.predictor.BaselinePredictor@{moa.recommender.predictor.BaselinePredictor}}
+\doxysubsubsection{\texorpdfstring{getDescription()}{getDescription()}}
+{\footnotesize\ttfamily void moa.\+recommender.\+predictor.\+Baseline\+Predictor.\+get\+Description (\begin{DoxyParamCaption}\item[{String\+Builder}]{sb,  }\item[{int}]{indent }\end{DoxyParamCaption})}
+
+Returns a string representation of this object. Used in {\ttfamily \mbox{\hyperlink{classmoa_1_1_abstract_m_o_a_object_ac686fd3b07c734cf21f1894376fe402d}{Abstract\+M\+O\+A\+Object.\+to\+String}}} to give a string representation of the object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sb} & the stringbuilder to add the description \\
+\hline
+{\em indent} & the number of characters to indent \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1_m_o_a_object_afdaf5098f1fe6c852018ce64c28e17f5}{moa.\+M\+O\+A\+Object}}.
+
+\mbox{\Hypertarget{classmoa_1_1recommender_1_1predictor_1_1_baseline_predictor_a40fb14258d707dca7e0f6ba12ee328f6}\label{classmoa_1_1recommender_1_1predictor_1_1_baseline_predictor_a40fb14258d707dca7e0f6ba12ee328f6}} 
+\index{moa.recommender.predictor.BaselinePredictor@{moa.recommender.predictor.BaselinePredictor}!prepareForUseImpl@{prepareForUseImpl}}
+\index{prepareForUseImpl@{prepareForUseImpl}!moa.recommender.predictor.BaselinePredictor@{moa.recommender.predictor.BaselinePredictor}}
+\doxysubsubsection{\texorpdfstring{prepareForUseImpl()}{prepareForUseImpl()}}
+{\footnotesize\ttfamily void moa.\+recommender.\+predictor.\+Baseline\+Predictor.\+prepare\+For\+Use\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}}}]{monitor,  }\item[{\mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}}}]{repository }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+This method describes the implementation of how to prepare this object for use. All classes that extends this class have to implement {\ttfamily prepare\+For\+Use\+Impl} and not {\ttfamily prepare\+For\+Use} since {\ttfamily prepare\+For\+Use} calls {\ttfamily prepare\+For\+Use\+Impl}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em monitor} & the Task\+Monitor to use \\
+\hline
+{\em repository} & the Object\+Repository to use \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1options_1_1_abstract_option_handler_ad0e9c7d4b0e2b185749f36ce28540efb}{moa.\+options.\+Abstract\+Option\+Handler}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmoa_1_1recommender_1_1predictor_1_1_baseline_predictor_a4ee987c2f42b3234fb1f6a2ae6c96f55}\label{classmoa_1_1recommender_1_1predictor_1_1_baseline_predictor_a4ee987c2f42b3234fb1f6a2ae6c96f55}} 
+\index{moa.recommender.predictor.BaselinePredictor@{moa.recommender.predictor.BaselinePredictor}!dataOption@{dataOption}}
+\index{dataOption@{dataOption}!moa.recommender.predictor.BaselinePredictor@{moa.recommender.predictor.BaselinePredictor}}
+\doxysubsubsection{\texorpdfstring{dataOption}{dataOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} moa.\+recommender.\+predictor.\+Baseline\+Predictor.\+data\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} ClassOption(\textcolor{stringliteral}{"data"}, \textcolor{charliteral}{'d'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Data"}, moa.recommender.data.RecommenderData.class, \textcolor{stringliteral}{"moa.recommender.data.MemRecommenderData"})}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/recommender/predictor/Baseline\+Predictor.\+java\end{DoxyCompactItemize}

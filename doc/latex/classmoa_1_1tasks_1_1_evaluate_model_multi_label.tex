@@ -1,0 +1,172 @@
+\hypertarget{classmoa_1_1tasks_1_1_evaluate_model_multi_label}{}\doxysection{moa.\+tasks.\+Evaluate\+Model\+Multi\+Label Class Reference}
+\label{classmoa_1_1tasks_1_1_evaluate_model_multi_label}\index{moa.tasks.EvaluateModelMultiLabel@{moa.tasks.EvaluateModelMultiLabel}}
+
+
+Inheritance diagram for moa.\+tasks.\+Evaluate\+Model\+Multi\+Label\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+tasks.\+Evaluate\+Model\+Multi\+Label\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classmoa_1_1tasks_1_1_evaluate_model_multi_label_a23e96dda9382c4c71ef501c8d26af459}{get\+Purpose\+String}} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_model_multi_label_a000ca6ffbaa3b6c30a56ef98b8348879}\label{classmoa_1_1tasks_1_1_evaluate_model_multi_label_a000ca6ffbaa3b6c30a56ef98b8348879}} 
+{\bfseries Evaluate\+Model\+Multi\+Label} (\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier}{Classifier}} model, \mbox{\hyperlink{interfacemoa_1_1streams_1_1_instance_stream}{Instance\+Stream}} stream, \mbox{\hyperlink{interfacemoa_1_1evaluation_1_1_learning_performance_evaluator}{Learning\+Performance\+Evaluator}} evaluator, int max\+Instances)
+\item 
+Class$<$?$>$ \mbox{\hyperlink{classmoa_1_1tasks_1_1_evaluate_model_multi_label_a888331b4dcbb118061604b90a8e2e6a6}{get\+Task\+Result\+Type}} ()
+\item 
+Object \mbox{\hyperlink{classmoa_1_1tasks_1_1_evaluate_model_multi_label_aa835a4bbf57074e9da7f9d2a8666cc85}{do\+Main\+Task}} (\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}} monitor, \mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}} repository)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} {\bfseries model\+Option}
+\item 
+\mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} {\bfseries stream\+Option}
+\item 
+\mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} {\bfseries evaluator\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries max\+Instances\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_file_option}{File\+Option}} {\bfseries output\+Prediction\+File\+Option}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task}{Task}} for evaluating a static model on a stream.
+
+\begin{DoxyAuthor}{Author}
+Richard Kirkby (\href{mailto:rkirkby@cs.waikato.ac.nz}{\texttt{ rkirkby@cs.\+waikato.\+ac.\+nz}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+7 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_model_multi_label_aa835a4bbf57074e9da7f9d2a8666cc85}\label{classmoa_1_1tasks_1_1_evaluate_model_multi_label_aa835a4bbf57074e9da7f9d2a8666cc85}} 
+\index{moa.tasks.EvaluateModelMultiLabel@{moa.tasks.EvaluateModelMultiLabel}!doMainTask@{doMainTask}}
+\index{doMainTask@{doMainTask}!moa.tasks.EvaluateModelMultiLabel@{moa.tasks.EvaluateModelMultiLabel}}
+\doxysubsubsection{\texorpdfstring{doMainTask()}{doMainTask()}}
+{\footnotesize\ttfamily Object moa.\+tasks.\+Evaluate\+Model\+Multi\+Label.\+do\+Main\+Task (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}}}]{monitor,  }\item[{\mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}}}]{repository }\end{DoxyParamCaption})}
+
+This method performs this task. {\ttfamily \mbox{\hyperlink{classmoa_1_1tasks_1_1_abstract_task}{Abstract\+Task}}} implements {\ttfamily do\+Task}, that uses {\ttfamily do\+Task\+Impl}. {\ttfamily \mbox{\hyperlink{classmoa_1_1tasks_1_1_main_task}{Main\+Task}}} implements {\ttfamily do\+Task\+Impl} using {\ttfamily do\+Main\+Task} so its extensions only need to implement {\ttfamily do\+Main\+Task}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em monitor} & the \mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}} to use \\
+\hline
+{\em repository} & the Object\+Repository to use \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an object with the result of this task 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1tasks_1_1_main_task_afab790976c2ace902aa1e2f780442788}{moa.\+tasks.\+Main\+Task}}.
+
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_model_multi_label_a23e96dda9382c4c71ef501c8d26af459}\label{classmoa_1_1tasks_1_1_evaluate_model_multi_label_a23e96dda9382c4c71ef501c8d26af459}} 
+\index{moa.tasks.EvaluateModelMultiLabel@{moa.tasks.EvaluateModelMultiLabel}!getPurposeString@{getPurposeString}}
+\index{getPurposeString@{getPurposeString}!moa.tasks.EvaluateModelMultiLabel@{moa.tasks.EvaluateModelMultiLabel}}
+\doxysubsubsection{\texorpdfstring{getPurposeString()}{getPurposeString()}}
+{\footnotesize\ttfamily String moa.\+tasks.\+Evaluate\+Model\+Multi\+Label.\+get\+Purpose\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Options to handle Dictionary with option texts and objects 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1options_1_1_abstract_option_handler_abc8df69aea27ef85060557a9e918b2ca}{moa.\+options.\+Abstract\+Option\+Handler}}.
+
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_model_multi_label_a888331b4dcbb118061604b90a8e2e6a6}\label{classmoa_1_1tasks_1_1_evaluate_model_multi_label_a888331b4dcbb118061604b90a8e2e6a6}} 
+\index{moa.tasks.EvaluateModelMultiLabel@{moa.tasks.EvaluateModelMultiLabel}!getTaskResultType@{getTaskResultType}}
+\index{getTaskResultType@{getTaskResultType}!moa.tasks.EvaluateModelMultiLabel@{moa.tasks.EvaluateModelMultiLabel}}
+\doxysubsubsection{\texorpdfstring{getTaskResultType()}{getTaskResultType()}}
+{\footnotesize\ttfamily Class$<$?$>$ moa.\+tasks.\+Evaluate\+Model\+Multi\+Label.\+get\+Task\+Result\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the result type of this task. Tasks can return Learning\+Curve, Learning\+Evaluation, Classifier, String, Instances..
+
+\begin{DoxyReturn}{Returns}
+a class object of the result of this task 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_a568100cd931416820d1bcc81032301f6}{moa.\+tasks.\+Task}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_model_multi_label_ac75bf4fdf6a7ee45e05213fa1589da30}\label{classmoa_1_1tasks_1_1_evaluate_model_multi_label_ac75bf4fdf6a7ee45e05213fa1589da30}} 
+\index{moa.tasks.EvaluateModelMultiLabel@{moa.tasks.EvaluateModelMultiLabel}!evaluatorOption@{evaluatorOption}}
+\index{evaluatorOption@{evaluatorOption}!moa.tasks.EvaluateModelMultiLabel@{moa.tasks.EvaluateModelMultiLabel}}
+\doxysubsubsection{\texorpdfstring{evaluatorOption}{evaluatorOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} moa.\+tasks.\+Evaluate\+Model\+Multi\+Label.\+evaluator\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} ClassOption(\textcolor{stringliteral}{"evaluator"}, \textcolor{charliteral}{'e'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Classification performance evaluation method."},}
+\DoxyCodeLine{            MultiTargetPerformanceEvaluator.class,}
+\DoxyCodeLine{            \textcolor{stringliteral}{"BasicMultiLabelPerformanceEvaluator"})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_model_multi_label_a630b90cec98a59c20b435d8cc01ba3b1}\label{classmoa_1_1tasks_1_1_evaluate_model_multi_label_a630b90cec98a59c20b435d8cc01ba3b1}} 
+\index{moa.tasks.EvaluateModelMultiLabel@{moa.tasks.EvaluateModelMultiLabel}!maxInstancesOption@{maxInstancesOption}}
+\index{maxInstancesOption@{maxInstancesOption}!moa.tasks.EvaluateModelMultiLabel@{moa.tasks.EvaluateModelMultiLabel}}
+\doxysubsubsection{\texorpdfstring{maxInstancesOption}{maxInstancesOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+tasks.\+Evaluate\+Model\+Multi\+Label.\+max\+Instances\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(\textcolor{stringliteral}{"maxInstances"}, \textcolor{charliteral}{'i'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Maximum number of instances to test."}, 1000000, 0,}
+\DoxyCodeLine{            Integer.MAX\_VALUE)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_model_multi_label_ac4dee81cc366bc8dcc3d53894c69d467}\label{classmoa_1_1tasks_1_1_evaluate_model_multi_label_ac4dee81cc366bc8dcc3d53894c69d467}} 
+\index{moa.tasks.EvaluateModelMultiLabel@{moa.tasks.EvaluateModelMultiLabel}!modelOption@{modelOption}}
+\index{modelOption@{modelOption}!moa.tasks.EvaluateModelMultiLabel@{moa.tasks.EvaluateModelMultiLabel}}
+\doxysubsubsection{\texorpdfstring{modelOption}{modelOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} moa.\+tasks.\+Evaluate\+Model\+Multi\+Label.\+model\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} ClassOption(\textcolor{stringliteral}{"model"}, \textcolor{charliteral}{'m'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Learner to evaluate."}, MultiLabelClassifier.class, MultiLabelNaiveBayes.class.getName())}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_model_multi_label_a9b6642f76ce7aae18eba1adab8dde1e0}\label{classmoa_1_1tasks_1_1_evaluate_model_multi_label_a9b6642f76ce7aae18eba1adab8dde1e0}} 
+\index{moa.tasks.EvaluateModelMultiLabel@{moa.tasks.EvaluateModelMultiLabel}!outputPredictionFileOption@{outputPredictionFileOption}}
+\index{outputPredictionFileOption@{outputPredictionFileOption}!moa.tasks.EvaluateModelMultiLabel@{moa.tasks.EvaluateModelMultiLabel}}
+\doxysubsubsection{\texorpdfstring{outputPredictionFileOption}{outputPredictionFileOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_file_option}{File\+Option}} moa.\+tasks.\+Evaluate\+Model\+Multi\+Label.\+output\+Prediction\+File\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FileOption(\textcolor{stringliteral}{"outputPredictionFile"}, \textcolor{charliteral}{'o'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"File to append output predictions to."}, \textcolor{keyword}{null}, \textcolor{stringliteral}{"pred"}, \textcolor{keyword}{true})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1tasks_1_1_evaluate_model_multi_label_ae99faf34565d5baae70e69415492342d}\label{classmoa_1_1tasks_1_1_evaluate_model_multi_label_ae99faf34565d5baae70e69415492342d}} 
+\index{moa.tasks.EvaluateModelMultiLabel@{moa.tasks.EvaluateModelMultiLabel}!streamOption@{streamOption}}
+\index{streamOption@{streamOption}!moa.tasks.EvaluateModelMultiLabel@{moa.tasks.EvaluateModelMultiLabel}}
+\doxysubsubsection{\texorpdfstring{streamOption}{streamOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} moa.\+tasks.\+Evaluate\+Model\+Multi\+Label.\+stream\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} ClassOption(\textcolor{stringliteral}{"stream"}, \textcolor{charliteral}{'s'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Stream to learn from."}, MultiTargetInstanceStream.class,}
+\DoxyCodeLine{            \textcolor{stringliteral}{"MultiTargetArffFileStream"})}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/tasks/Evaluate\+Model\+Multi\+Label.\+java\end{DoxyCompactItemize}

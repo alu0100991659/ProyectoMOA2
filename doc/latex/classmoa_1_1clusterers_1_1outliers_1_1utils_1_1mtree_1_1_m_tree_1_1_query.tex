@@ -1,0 +1,32 @@
+\hypertarget{classmoa_1_1clusterers_1_1outliers_1_1utils_1_1mtree_1_1_m_tree_1_1_query}{}\doxysection{moa.\+clusterers.\+outliers.\+utils.\+mtree.\+M\+Tree$<$ D\+A\+TA $>$.Query Class Reference}
+\label{classmoa_1_1clusterers_1_1outliers_1_1utils_1_1mtree_1_1_m_tree_1_1_query}\index{moa.clusterers.outliers.utils.mtree.MTree$<$ DATA $>$.Query@{moa.clusterers.outliers.utils.mtree.MTree$<$ DATA $>$.Query}}
+
+
+Inheritance diagram for moa.\+clusterers.\+outliers.\+utils.\+mtree.\+M\+Tree$<$ D\+A\+TA $>$.Query\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+clusterers.\+outliers.\+utils.\+mtree.\+M\+Tree$<$ D\+A\+TA $>$.Query\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1clusterers_1_1outliers_1_1utils_1_1mtree_1_1_m_tree_1_1_query_aff1d7c522426afdeeabf6181ed2c74cb}\label{classmoa_1_1clusterers_1_1outliers_1_1utils_1_1mtree_1_1_m_tree_1_1_query_aff1d7c522426afdeeabf6181ed2c74cb}} 
+Iterator$<$ \mbox{\hyperlink{classmoa_1_1clusterers_1_1outliers_1_1utils_1_1mtree_1_1_m_tree_1_1_result_item}{Result\+Item}} $>$ {\bfseries iterator} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An \mbox{\hyperlink{}{Iterable}} class which can be iterated to fetch the results of a nearest-\/neighbors query.
+
+The neighbors are presented in non-\/decreasing order from the
+\begin{DoxyCode}{0}
+\DoxyCodeLine{queryData }
+\end{DoxyCode}
+ argument to the \mbox{\hyperlink{}{get\+Nearest$\ast$()}} call.
+
+The query on the M-\/\+Tree is executed during the iteration, as the results are fetched. It means that, by the time when the {\itshape n}-\/th result is fetched, the next result may still not be known, and the resources allocated were only the necessary to identify the {\itshape n} first results. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/clusterers/outliers/utils/mtree/M\+Tree.\+java\end{DoxyCompactItemize}

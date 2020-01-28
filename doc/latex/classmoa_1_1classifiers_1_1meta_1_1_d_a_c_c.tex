@@ -1,0 +1,448 @@
+\hypertarget{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c}{}\doxysection{moa.\+classifiers.\+meta.\+D\+A\+CC Class Reference}
+\label{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c}\index{moa.classifiers.meta.DACC@{moa.classifiers.meta.DACC}}
+
+
+Inheritance diagram for moa.\+classifiers.\+meta.\+D\+A\+CC\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+classifiers.\+meta.\+D\+A\+CC\+:
+% FIG 1
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_1_1_pair}{Pair}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_ac14b47d35b39219fd2a0b62a67057fc8}{get\+Purpose\+String}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_a1e4b55f70f3fd47068747fb231dde4e8}{reset\+Learning\+Impl}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_aaf6e169006f8f249b9cee1db427930ec}{train\+On\+Instance\+Impl}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst)
+\item 
+double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_a98e1d9e368b0f8f97435e27bf4593083}{get\+Votes\+For\+Instance}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst)
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_a94ebd59ce6ef93b8705628f74d927b28}{discard\+Model}} (int index)
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_acdca385dd3f8c7f1b10980c5e5b1ffba}{get\+Model\+Description}} (String\+Builder out, int indent)
+\item 
+boolean \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_a553e77720bef4915e6b7d0b6cbe3c931}{is\+Randomizable}} ()
+\item 
+\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier}{Classifier}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_a45c94e815ca1eb36809c3b5214337de2}{get\+Sub\+Classifiers}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_a7cfebdfb171ff657e8fb9efe314ac981}{learner\+Option}}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_a34c39976ec8025d766c7dae1da0d43fb}{member\+Count\+Option}} = new \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}}(\char`\"{}ensemble\+Size\char`\"{}, \textquotesingle{}n\textquotesingle{}, \char`\"{}The maximum number of classifiers in an ensemble.\char`\"{}, 20, 1, Integer.\+M\+A\+X\+\_\+\+V\+A\+L\+UE)
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_a613b5b3d4039fca08eb4962ec17af88b}{maturity\+Option}}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_a97573ea090708d39f60d4256254d8472}{evaluation\+Size\+Option}}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_multi_choice_option}{Multi\+Choice\+Option}} \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_acbafe92fe0781f3d91914f0002da332c}{combination\+Option}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_a4cbdd2984257008d48f01bd1d0e61a6a}{init\+Variables}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_aeb1bb224682626d5c6b9b3812c269291}{train\+And\+Classify}} (\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} inst)
+\item 
+double \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_a1d70365bb8e464d73a0c0c9f4b6e3706}{update\+Evaluation\+Window}} (int index, int val)
+\item 
+\mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_1_1_pair}{Pair}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_a389ab0280ca9867802adca462d97114e}{get\+Half}} (boolean best\+Half)
+\item 
+Array\+List$<$ Integer $>$ \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_ad830eb635b00c528fc3ca92918d7b0ba}{get\+M\+A\+X\+Indexes}} ()
+\item 
+Array\+List$<$ Integer $>$ \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_a4b39c9394a35b77ff18011b2217e390e}{get\+W\+V\+D\+Indexes}} ()
+\item 
+int \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_a55bb8c305911d5e5c327ad90e3386851}{get\+Nb\+Active\+Classifiers}} ()
+\item 
+int \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_a7ef02a33bdd764f2750b25a38c1dc996}{get\+Nb\+Adaptive\+Classifiers}} ()
+\item 
+\mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_a1926a90ec970b4a5958c22acafd0a52e}{get\+Model\+Measurements\+Impl}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier}{Classifier}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_a8440c2aea1d0f16cae106712d8646b0a}{ensemble}}
+\item 
+\mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_1_1_pair}{Pair}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_a3b9ced87ba3387be52f74dac68893c12}{ensemble\+Weights}}
+\item 
+double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_ad14ecc44dc1eb294085b129f5731a0be}{ensemble\+Ages}}
+\item 
+int\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_a94c7bbeaff099486c599fa52d68ddcaa}{ensemble\+Windows}}
+\item 
+int \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_a02b2354871ce5dc651d90c2ffeed9a38}{nb\+Instances}} = 0
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Dynamic Adaptation to Concept Changes. Ensemble method for data streams that adapts to concept changes.
+
+Reference\+: J\+A\+B\+ER, G., C\+O\+R\+N\+U\+E\+J\+O\+LS, A., and T\+A\+R\+R\+O\+UX, P. A New On-\/\+Line Learning Method for Coping with Recurring Concepts\+: The \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_a_d_a_c_c}{A\+D\+A\+CC}} System. In \+: Neural Information Processing. Springer Berlin Heidelberg, 2013. p. 595-\/604.
+
+\begin{DoxyAuthor}{Author}
+Ghazal Jaber (\href{mailto:ghazal.jaber@gmail.com}{\texttt{ ghazal.\+jaber@gmail.\+com}}) 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_a94ebd59ce6ef93b8705628f74d927b28}\label{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_a94ebd59ce6ef93b8705628f74d927b28}} 
+\index{moa.classifiers.meta.DACC@{moa.classifiers.meta.DACC}!discardModel@{discardModel}}
+\index{discardModel@{discardModel}!moa.classifiers.meta.DACC@{moa.classifiers.meta.DACC}}
+\doxysubsubsection{\texorpdfstring{discardModel()}{discardModel()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+meta.\+D\+A\+C\+C.\+discard\+Model (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
+
+Resets a classifier in the ensemble 
+\begin{DoxyParams}{Parameters}
+{\em index} & the index of the classifier in the ensemble \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_a389ab0280ca9867802adca462d97114e}\label{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_a389ab0280ca9867802adca462d97114e}} 
+\index{moa.classifiers.meta.DACC@{moa.classifiers.meta.DACC}!getHalf@{getHalf}}
+\index{getHalf@{getHalf}!moa.classifiers.meta.DACC@{moa.classifiers.meta.DACC}}
+\doxysubsubsection{\texorpdfstring{getHalf()}{getHalf()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_1_1_pair}{Pair}} \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+meta.\+D\+A\+C\+C.\+get\+Half (\begin{DoxyParamCaption}\item[{boolean}]{best\+Half }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns the best (or worst) half of classifiers in the adaptive ensemble. The best classifiers are used to compute the stability index in \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_a_d_a_c_c}{A\+D\+A\+CC}}. The worst classifiers are returned in order to select a classifier for deletion. ~\newline
+ 
+\begin{DoxyParams}{Parameters}
+{\em best\+Half} & boolean value set to true (false) if we want to return the best (worst) half of adaptive classifiers. ~\newline
+ \\
+\hline
+{\em horizon} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an array containing the weight values of the corresponding classifiers and their indexes in the ensemble. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_ad830eb635b00c528fc3ca92918d7b0ba}\label{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_ad830eb635b00c528fc3ca92918d7b0ba}} 
+\index{moa.classifiers.meta.DACC@{moa.classifiers.meta.DACC}!getMAXIndexes@{getMAXIndexes}}
+\index{getMAXIndexes@{getMAXIndexes}!moa.classifiers.meta.DACC@{moa.classifiers.meta.DACC}}
+\doxysubsubsection{\texorpdfstring{getMAXIndexes()}{getMAXIndexes()}}
+{\footnotesize\ttfamily Array\+List$<$Integer$>$ moa.\+classifiers.\+meta.\+D\+A\+C\+C.\+get\+M\+A\+X\+Indexes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns the classifiers that vote for the final prediction when the M\+AX combination function is selected \begin{DoxyReturn}{Returns}
+the classifiers with the highest weight value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_acdca385dd3f8c7f1b10980c5e5b1ffba}\label{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_acdca385dd3f8c7f1b10980c5e5b1ffba}} 
+\index{moa.classifiers.meta.DACC@{moa.classifiers.meta.DACC}!getModelDescription@{getModelDescription}}
+\index{getModelDescription@{getModelDescription}!moa.classifiers.meta.DACC@{moa.classifiers.meta.DACC}}
+\doxysubsubsection{\texorpdfstring{getModelDescription()}{getModelDescription()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+meta.\+D\+A\+C\+C.\+get\+Model\+Description (\begin{DoxyParamCaption}\item[{String\+Builder}]{out,  }\item[{int}]{indent }\end{DoxyParamCaption})}
+
+Returns a string representation of the model.
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & the stringbuilder to add the description \\
+\hline
+{\em indent} & the number of characters to indent \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a30e5ff32bc8127dfb7436945776b7523}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_a_d_a_c_c_ad0097e7452b5feb5e9d9f167cc01dc3f}{moa.\+classifiers.\+meta.\+A\+D\+A\+CC}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_a1926a90ec970b4a5958c22acafd0a52e}\label{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_a1926a90ec970b4a5958c22acafd0a52e}} 
+\index{moa.classifiers.meta.DACC@{moa.classifiers.meta.DACC}!getModelMeasurementsImpl@{getModelMeasurementsImpl}}
+\index{getModelMeasurementsImpl@{getModelMeasurementsImpl}!moa.classifiers.meta.DACC@{moa.classifiers.meta.DACC}}
+\doxysubsubsection{\texorpdfstring{getModelMeasurementsImpl()}{getModelMeasurementsImpl()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1core_1_1_measurement}{Measurement}} \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+meta.\+D\+A\+C\+C.\+get\+Model\+Measurements\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Gets the current measurements of this classifier.~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden.
+
+\begin{DoxyReturn}{Returns}
+an array of measurements to be used in evaluation tasks 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_ac2bebede21c9d2d8cd11d95a7e20e529}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_a_d_a_c_c_a7a4eab6d34c8f63ab5cba11e4b444936}{moa.\+classifiers.\+meta.\+A\+D\+A\+CC}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_a55bb8c305911d5e5c327ad90e3386851}\label{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_a55bb8c305911d5e5c327ad90e3386851}} 
+\index{moa.classifiers.meta.DACC@{moa.classifiers.meta.DACC}!getNbActiveClassifiers@{getNbActiveClassifiers}}
+\index{getNbActiveClassifiers@{getNbActiveClassifiers}!moa.classifiers.meta.DACC@{moa.classifiers.meta.DACC}}
+\doxysubsubsection{\texorpdfstring{getNbActiveClassifiers()}{getNbActiveClassifiers()}}
+{\footnotesize\ttfamily int moa.\+classifiers.\+meta.\+D\+A\+C\+C.\+get\+Nb\+Active\+Classifiers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns the number of classifiers used for prediction which includes the adaptive learners and the snapshots in \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_a_d_a_c_c}{A\+D\+A\+CC}} \begin{DoxyReturn}{Returns}
+the number of classifiers used for prediction 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_a_d_a_c_c_a4252cee065fe7e1881982ee1d57f1cfd}{moa.\+classifiers.\+meta.\+A\+D\+A\+CC}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_a7ef02a33bdd764f2750b25a38c1dc996}\label{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_a7ef02a33bdd764f2750b25a38c1dc996}} 
+\index{moa.classifiers.meta.DACC@{moa.classifiers.meta.DACC}!getNbAdaptiveClassifiers@{getNbAdaptiveClassifiers}}
+\index{getNbAdaptiveClassifiers@{getNbAdaptiveClassifiers}!moa.classifiers.meta.DACC@{moa.classifiers.meta.DACC}}
+\doxysubsubsection{\texorpdfstring{getNbAdaptiveClassifiers()}{getNbAdaptiveClassifiers()}}
+{\footnotesize\ttfamily int moa.\+classifiers.\+meta.\+D\+A\+C\+C.\+get\+Nb\+Adaptive\+Classifiers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns the number of adaptive classifiers in the ensemble which excludes the static snapshots in \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_a_d_a_c_c}{A\+D\+A\+CC}} ~\newline
+ \begin{DoxyReturn}{Returns}
+the number of adaptive classifiers 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_a_d_a_c_c_a4144c4c26fa6fee6be9f777d16af4dbc}{moa.\+classifiers.\+meta.\+A\+D\+A\+CC}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_ac14b47d35b39219fd2a0b62a67057fc8}\label{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_ac14b47d35b39219fd2a0b62a67057fc8}} 
+\index{moa.classifiers.meta.DACC@{moa.classifiers.meta.DACC}!getPurposeString@{getPurposeString}}
+\index{getPurposeString@{getPurposeString}!moa.classifiers.meta.DACC@{moa.classifiers.meta.DACC}}
+\doxysubsubsection{\texorpdfstring{getPurposeString()}{getPurposeString()}}
+{\footnotesize\ttfamily String moa.\+classifiers.\+meta.\+D\+A\+C\+C.\+get\+Purpose\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Options to handle Dictionary with option texts and objects 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a3fc6ae11234b88e51941a77ddb879d8b}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_a_d_a_c_c_a7612b473e1b98667996db15dd1c0cceb}{moa.\+classifiers.\+meta.\+A\+D\+A\+CC}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_a45c94e815ca1eb36809c3b5214337de2}\label{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_a45c94e815ca1eb36809c3b5214337de2}} 
+\index{moa.classifiers.meta.DACC@{moa.classifiers.meta.DACC}!getSubClassifiers@{getSubClassifiers}}
+\index{getSubClassifiers@{getSubClassifiers}!moa.classifiers.meta.DACC@{moa.classifiers.meta.DACC}}
+\doxysubsubsection{\texorpdfstring{getSubClassifiers()}{getSubClassifiers()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier}{Classifier}} \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+meta.\+D\+A\+C\+C.\+get\+Sub\+Classifiers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the classifiers of this ensemble. Returns null if this learner is a single learner.
+
+\begin{DoxyReturn}{Returns}
+an array of the learners of the ensemble 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a5d7c5aadeaf3465785aa6bb2efb615f2}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_a98e1d9e368b0f8f97435e27bf4593083}\label{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_a98e1d9e368b0f8f97435e27bf4593083}} 
+\index{moa.classifiers.meta.DACC@{moa.classifiers.meta.DACC}!getVotesForInstance@{getVotesForInstance}}
+\index{getVotesForInstance@{getVotesForInstance}!moa.classifiers.meta.DACC@{moa.classifiers.meta.DACC}}
+\doxysubsubsection{\texorpdfstring{getVotesForInstance()}{getVotesForInstance()}}
+{\footnotesize\ttfamily double \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+meta.\+D\+A\+C\+C.\+get\+Votes\+For\+Instance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{inst }\end{DoxyParamCaption})}
+
+Predicts the class memberships for a given instance. If an instance is unclassified, the returned array elements must be all zero.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & the instance to be classified \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an array containing the estimated membership probabilities of the test instance in each class 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a0e3589c4fa6f088d82d64514afd9513c}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_a4b39c9394a35b77ff18011b2217e390e}\label{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_a4b39c9394a35b77ff18011b2217e390e}} 
+\index{moa.classifiers.meta.DACC@{moa.classifiers.meta.DACC}!getWVDIndexes@{getWVDIndexes}}
+\index{getWVDIndexes@{getWVDIndexes}!moa.classifiers.meta.DACC@{moa.classifiers.meta.DACC}}
+\doxysubsubsection{\texorpdfstring{getWVDIndexes()}{getWVDIndexes()}}
+{\footnotesize\ttfamily Array\+List$<$Integer$>$ moa.\+classifiers.\+meta.\+D\+A\+C\+C.\+get\+W\+V\+D\+Indexes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns the classifiers that vote for the final prediction when the W\+VD combination function is selected \begin{DoxyReturn}{Returns}
+the classifiers whose weights lie in the higher half of the ensemble\textquotesingle{}s weight interval. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_a4cbdd2984257008d48f01bd1d0e61a6a}\label{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_a4cbdd2984257008d48f01bd1d0e61a6a}} 
+\index{moa.classifiers.meta.DACC@{moa.classifiers.meta.DACC}!initVariables@{initVariables}}
+\index{initVariables@{initVariables}!moa.classifiers.meta.DACC@{moa.classifiers.meta.DACC}}
+\doxysubsubsection{\texorpdfstring{initVariables()}{initVariables()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+meta.\+D\+A\+C\+C.\+init\+Variables (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Initializes the method variables 
+
+Reimplemented in \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_a_d_a_c_c_ade941c409c1e3c01287c1c3d9de0c0dd}{moa.\+classifiers.\+meta.\+A\+D\+A\+CC}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_a553e77720bef4915e6b7d0b6cbe3c931}\label{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_a553e77720bef4915e6b7d0b6cbe3c931}} 
+\index{moa.classifiers.meta.DACC@{moa.classifiers.meta.DACC}!isRandomizable@{isRandomizable}}
+\index{isRandomizable@{isRandomizable}!moa.classifiers.meta.DACC@{moa.classifiers.meta.DACC}}
+\doxysubsubsection{\texorpdfstring{isRandomizable()}{isRandomizable()}}
+{\footnotesize\ttfamily boolean moa.\+classifiers.\+meta.\+D\+A\+C\+C.\+is\+Randomizable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets whether this learner needs a random seed. Examples of methods that needs a random seed are bagging and boosting.
+
+\begin{DoxyReturn}{Returns}
+true if the learner needs a random seed. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1learners_1_1_learner_a2f1ff9007b5eb5f53801f474b4d42a61}{moa.\+learners.\+Learner$<$ E extends Example $>$}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_a1e4b55f70f3fd47068747fb231dde4e8}\label{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_a1e4b55f70f3fd47068747fb231dde4e8}} 
+\index{moa.classifiers.meta.DACC@{moa.classifiers.meta.DACC}!resetLearningImpl@{resetLearningImpl}}
+\index{resetLearningImpl@{resetLearningImpl}!moa.classifiers.meta.DACC@{moa.classifiers.meta.DACC}}
+\doxysubsubsection{\texorpdfstring{resetLearningImpl()}{resetLearningImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+meta.\+D\+A\+C\+C.\+reset\+Learning\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Resets this classifier. It must be similar to starting a new classifier from scratch. ~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden. 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_a099ffcf2417abb919d10d697c0648f29}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_aeb1bb224682626d5c6b9b3812c269291}\label{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_aeb1bb224682626d5c6b9b3812c269291}} 
+\index{moa.classifiers.meta.DACC@{moa.classifiers.meta.DACC}!trainAndClassify@{trainAndClassify}}
+\index{trainAndClassify@{trainAndClassify}!moa.classifiers.meta.DACC@{moa.classifiers.meta.DACC}}
+\doxysubsubsection{\texorpdfstring{trainAndClassify()}{trainAndClassify()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+meta.\+D\+A\+C\+C.\+train\+And\+Classify (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{inst }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Receives a training instance from the stream and updates the adaptive classifiers accordingly 
+\begin{DoxyParams}{Parameters}
+{\em inst} & the instance from the stream \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_aaf6e169006f8f249b9cee1db427930ec}\label{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_aaf6e169006f8f249b9cee1db427930ec}} 
+\index{moa.classifiers.meta.DACC@{moa.classifiers.meta.DACC}!trainOnInstanceImpl@{trainOnInstanceImpl}}
+\index{trainOnInstanceImpl@{trainOnInstanceImpl}!moa.classifiers.meta.DACC@{moa.classifiers.meta.DACC}}
+\doxysubsubsection{\texorpdfstring{trainOnInstanceImpl()}{trainOnInstanceImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+meta.\+D\+A\+C\+C.\+train\+On\+Instance\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{inst }\end{DoxyParamCaption})}
+
+Trains this classifier incrementally using the given instance.~\newline
+~\newline
+
+
+The reason for ...Impl methods\+: ease programmer burden by not requiring them to remember calls to super in overridden methods. Note that this will produce compiler errors if not overridden.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & the instance to be used for training \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_aceb24d2ddeab386f2ecead6e3c0d3543}{moa.\+classifiers.\+Abstract\+Classifier}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_a_d_a_c_c_afac7020458c562ced7fb327021d15e92}{moa.\+classifiers.\+meta.\+A\+D\+A\+CC}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_a1d70365bb8e464d73a0c0c9f4b6e3706}\label{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_a1d70365bb8e464d73a0c0c9f4b6e3706}} 
+\index{moa.classifiers.meta.DACC@{moa.classifiers.meta.DACC}!updateEvaluationWindow@{updateEvaluationWindow}}
+\index{updateEvaluationWindow@{updateEvaluationWindow}!moa.classifiers.meta.DACC@{moa.classifiers.meta.DACC}}
+\doxysubsubsection{\texorpdfstring{updateEvaluationWindow()}{updateEvaluationWindow()}}
+{\footnotesize\ttfamily double moa.\+classifiers.\+meta.\+D\+A\+C\+C.\+update\+Evaluation\+Window (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Updates the evaluation window of a classifier and returns the updated weight value. 
+\begin{DoxyParams}{Parameters}
+{\em index} & the index of the classifier in the ensemble \\
+\hline
+{\em val} & the last evaluation record of the classifier \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the updated weight value of the classifier 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_acbafe92fe0781f3d91914f0002da332c}\label{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_acbafe92fe0781f3d91914f0002da332c}} 
+\index{moa.classifiers.meta.DACC@{moa.classifiers.meta.DACC}!combinationOption@{combinationOption}}
+\index{combinationOption@{combinationOption}!moa.classifiers.meta.DACC@{moa.classifiers.meta.DACC}}
+\doxysubsubsection{\texorpdfstring{combinationOption}{combinationOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_multi_choice_option}{Multi\+Choice\+Option}} moa.\+classifiers.\+meta.\+D\+A\+C\+C.\+combination\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} MultiChoiceOption(\textcolor{stringliteral}{"cmb"}, \textcolor{charliteral}{'c'}, \textcolor{stringliteral}{"The combination function."},}
+\DoxyCodeLine{            \textcolor{keyword}{new} String[]\{\textcolor{stringliteral}{"MAX"},\textcolor{stringliteral}{"WVD"}\} , \textcolor{keyword}{new} String[] \{\textcolor{stringliteral}{"Maximum"},\textcolor{stringliteral}{"Weighted Vote of the best"}\},}
+\DoxyCodeLine{            0)}
+
+\end{DoxyCode}
+Combination functions\+: M\+AX and W\+VD (M\+AX leads to a faster reactivity to the change, W\+VD is more robust to noise) \mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_a8440c2aea1d0f16cae106712d8646b0a}\label{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_a8440c2aea1d0f16cae106712d8646b0a}} 
+\index{moa.classifiers.meta.DACC@{moa.classifiers.meta.DACC}!ensemble@{ensemble}}
+\index{ensemble@{ensemble}!moa.classifiers.meta.DACC@{moa.classifiers.meta.DACC}}
+\doxysubsubsection{\texorpdfstring{ensemble}{ensemble}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier}{Classifier}} \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+meta.\+D\+A\+C\+C.\+ensemble\hspace{0.3cm}{\ttfamily [protected]}}
+
+Ensemble of classifiers \mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_ad14ecc44dc1eb294085b129f5731a0be}\label{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_ad14ecc44dc1eb294085b129f5731a0be}} 
+\index{moa.classifiers.meta.DACC@{moa.classifiers.meta.DACC}!ensembleAges@{ensembleAges}}
+\index{ensembleAges@{ensembleAges}!moa.classifiers.meta.DACC@{moa.classifiers.meta.DACC}}
+\doxysubsubsection{\texorpdfstring{ensembleAges}{ensembleAges}}
+{\footnotesize\ttfamily double \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+meta.\+D\+A\+C\+C.\+ensemble\+Ages\hspace{0.3cm}{\ttfamily [protected]}}
+
+Age of classifiers (to compare with maturity age) \mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_a3b9ced87ba3387be52f74dac68893c12}\label{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_a3b9ced87ba3387be52f74dac68893c12}} 
+\index{moa.classifiers.meta.DACC@{moa.classifiers.meta.DACC}!ensembleWeights@{ensembleWeights}}
+\index{ensembleWeights@{ensembleWeights}!moa.classifiers.meta.DACC@{moa.classifiers.meta.DACC}}
+\doxysubsubsection{\texorpdfstring{ensembleWeights}{ensembleWeights}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_1_1_pair}{Pair}} \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+meta.\+D\+A\+C\+C.\+ensemble\+Weights\hspace{0.3cm}{\ttfamily [protected]}}
+
+Weights of classifiers \mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_a94c7bbeaff099486c599fa52d68ddcaa}\label{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_a94c7bbeaff099486c599fa52d68ddcaa}} 
+\index{moa.classifiers.meta.DACC@{moa.classifiers.meta.DACC}!ensembleWindows@{ensembleWindows}}
+\index{ensembleWindows@{ensembleWindows}!moa.classifiers.meta.DACC@{moa.classifiers.meta.DACC}}
+\doxysubsubsection{\texorpdfstring{ensembleWindows}{ensembleWindows}}
+{\footnotesize\ttfamily int \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} moa.\+classifiers.\+meta.\+D\+A\+C\+C.\+ensemble\+Windows\hspace{0.3cm}{\ttfamily [protected]}}
+
+Evaluation windows (recent classification errors) \mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_a97573ea090708d39f60d4256254d8472}\label{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_a97573ea090708d39f60d4256254d8472}} 
+\index{moa.classifiers.meta.DACC@{moa.classifiers.meta.DACC}!evaluationSizeOption@{evaluationSizeOption}}
+\index{evaluationSizeOption@{evaluationSizeOption}!moa.classifiers.meta.DACC@{moa.classifiers.meta.DACC}}
+\doxysubsubsection{\texorpdfstring{evaluationSizeOption}{evaluationSizeOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} moa.\+classifiers.\+meta.\+D\+A\+C\+C.\+evaluation\+Size\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FloatOption(\textcolor{stringliteral}{"evalSize"}, \textcolor{charliteral}{'e'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"The size of the evaluation window."}, 20, 1, 1000)}
+
+\end{DoxyCode}
+Size of the evaluation window for weights computing \mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_a7cfebdfb171ff657e8fb9efe314ac981}\label{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_a7cfebdfb171ff657e8fb9efe314ac981}} 
+\index{moa.classifiers.meta.DACC@{moa.classifiers.meta.DACC}!learnerOption@{learnerOption}}
+\index{learnerOption@{learnerOption}!moa.classifiers.meta.DACC@{moa.classifiers.meta.DACC}}
+\doxysubsubsection{\texorpdfstring{learnerOption}{learnerOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} moa.\+classifiers.\+meta.\+D\+A\+C\+C.\+learner\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} ClassOption(\textcolor{stringliteral}{"baseLearner"}, \textcolor{charliteral}{'l'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Classifier to train."}, Classifier.class, \textcolor{stringliteral}{"bayes.NaiveBayes"})}
+
+\end{DoxyCode}
+Base classifier \mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_a613b5b3d4039fca08eb4962ec17af88b}\label{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_a613b5b3d4039fca08eb4962ec17af88b}} 
+\index{moa.classifiers.meta.DACC@{moa.classifiers.meta.DACC}!maturityOption@{maturityOption}}
+\index{maturityOption@{maturityOption}!moa.classifiers.meta.DACC@{moa.classifiers.meta.DACC}}
+\doxysubsubsection{\texorpdfstring{maturityOption}{maturityOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} moa.\+classifiers.\+meta.\+D\+A\+C\+C.\+maturity\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FloatOption(\textcolor{stringliteral}{"maturity"}, \textcolor{charliteral}{'a'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"The maturity age."}, 20, 0, 100)}
+
+\end{DoxyCode}
+Maturity age of classifiers \mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_a34c39976ec8025d766c7dae1da0d43fb}\label{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_a34c39976ec8025d766c7dae1da0d43fb}} 
+\index{moa.classifiers.meta.DACC@{moa.classifiers.meta.DACC}!memberCountOption@{memberCountOption}}
+\index{memberCountOption@{memberCountOption}!moa.classifiers.meta.DACC@{moa.classifiers.meta.DACC}}
+\doxysubsubsection{\texorpdfstring{memberCountOption}{memberCountOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}} moa.\+classifiers.\+meta.\+D\+A\+C\+C.\+member\+Count\+Option = new \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_float_option}{Float\+Option}}(\char`\"{}ensemble\+Size\char`\"{}, \textquotesingle{}n\textquotesingle{}, \char`\"{}The maximum number of classifiers in an ensemble.\char`\"{}, 20, 1, Integer.\+M\+A\+X\+\_\+\+V\+A\+L\+UE)}
+
+Ensemble size \mbox{\Hypertarget{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_a02b2354871ce5dc651d90c2ffeed9a38}\label{classmoa_1_1classifiers_1_1meta_1_1_d_a_c_c_a02b2354871ce5dc651d90c2ffeed9a38}} 
+\index{moa.classifiers.meta.DACC@{moa.classifiers.meta.DACC}!nbInstances@{nbInstances}}
+\index{nbInstances@{nbInstances}!moa.classifiers.meta.DACC@{moa.classifiers.meta.DACC}}
+\doxysubsubsection{\texorpdfstring{nbInstances}{nbInstances}}
+{\footnotesize\ttfamily int moa.\+classifiers.\+meta.\+D\+A\+C\+C.\+nb\+Instances = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+Number of instances from the stream 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/classifiers/meta/D\+A\+C\+C.\+java\end{DoxyCompactItemize}

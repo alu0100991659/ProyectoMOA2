@@ -1,0 +1,140 @@
+\hypertarget{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1attributeclassobservers_1_1_multi_label_nominal_attribute_observer}{}\doxysection{moa.\+classifiers.\+rules.\+multilabel.\+attributeclassobservers.\+Multi\+Label\+Nominal\+Attribute\+Observer Class Reference}
+\label{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1attributeclassobservers_1_1_multi_label_nominal_attribute_observer}\index{moa.classifiers.rules.multilabel.attributeclassobservers.MultiLabelNominalAttributeObserver@{moa.classifiers.rules.multilabel.attributeclassobservers.MultiLabelNominalAttributeObserver}}
+
+
+Inheritance diagram for moa.\+classifiers.\+rules.\+multilabel.\+attributeclassobservers.\+Multi\+Label\+Nominal\+Attribute\+Observer\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+classifiers.\+rules.\+multilabel.\+attributeclassobservers.\+Multi\+Label\+Nominal\+Attribute\+Observer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1attributeclassobservers_1_1_multi_label_nominal_attribute_observer_a15d73565f7db45102810a1656bce070f}{observe\+Attribute}} (double input\+Attribute\+Value, \mbox{\hyperlink{classmoa_1_1core_1_1_double_vector}{Double\+Vector}}\mbox{[}$\,$\mbox{]} observed\+Statistics)
+\item 
+\mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1core_1_1_attribute_expansion_suggestion}{Attribute\+Expansion\+Suggestion}} \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1attributeclassobservers_1_1_multi_label_nominal_attribute_observer_a307a6ceb0ea4717a362f9268b133bd46}{get\+Best\+Evaluated\+Split\+Suggestion}} (\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1rules_1_1multilabel_1_1core_1_1splitcriteria_1_1_multi_label_split_criterion}{Multi\+Label\+Split\+Criterion}} criterion, \mbox{\hyperlink{classmoa_1_1core_1_1_double_vector}{Double\+Vector}}\mbox{[}$\,$\mbox{]} pre\+Split\+Statistics, int input\+Attribute\+Index)
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1attributeclassobservers_1_1_multi_label_nominal_attribute_observer_a37db96ff755eac5c3a6f4a7d38ce257f}{get\+Description}} (String\+Builder sb, int indent)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1attributeclassobservers_1_1_multi_label_nominal_attribute_observer_a700935932844a7a028475a05e3e01e9e}{prepare\+For\+Use\+Impl}} (\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}} monitor, \mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}} repository)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_flag_option}{Flag\+Option}} {\bfseries add\+Undeclared\+Values\+Option}
+\item 
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1attributeclassobservers_1_1_multi_label_nominal_attribute_observer_a92373f08725b08bdf850ce3321ee03e9}\label{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1attributeclassobservers_1_1_multi_label_nominal_attribute_observer_a92373f08725b08bdf850ce3321ee03e9}} 
+Hash\+Map$<$ Integer, \mbox{\hyperlink{classmoa_1_1core_1_1_double_vector}{Double\+Vector}}\mbox{[}$\,$\mbox{]}$>$ {\bfseries statistics\+By\+Nominal\+Value}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Function for determination of splitting points for nominal variables 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1attributeclassobservers_1_1_multi_label_nominal_attribute_observer_a307a6ceb0ea4717a362f9268b133bd46}\label{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1attributeclassobservers_1_1_multi_label_nominal_attribute_observer_a307a6ceb0ea4717a362f9268b133bd46}} 
+\index{moa.classifiers.rules.multilabel.attributeclassobservers.MultiLabelNominalAttributeObserver@{moa.classifiers.rules.multilabel.attributeclassobservers.MultiLabelNominalAttributeObserver}!getBestEvaluatedSplitSuggestion@{getBestEvaluatedSplitSuggestion}}
+\index{getBestEvaluatedSplitSuggestion@{getBestEvaluatedSplitSuggestion}!moa.classifiers.rules.multilabel.attributeclassobservers.MultiLabelNominalAttributeObserver@{moa.classifiers.rules.multilabel.attributeclassobservers.MultiLabelNominalAttributeObserver}}
+\doxysubsubsection{\texorpdfstring{getBestEvaluatedSplitSuggestion()}{getBestEvaluatedSplitSuggestion()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1core_1_1_attribute_expansion_suggestion}{Attribute\+Expansion\+Suggestion}} moa.\+classifiers.\+rules.\+multilabel.\+attributeclassobservers.\+Multi\+Label\+Nominal\+Attribute\+Observer.\+get\+Best\+Evaluated\+Split\+Suggestion (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1rules_1_1multilabel_1_1core_1_1splitcriteria_1_1_multi_label_split_criterion}{Multi\+Label\+Split\+Criterion}}}]{criterion,  }\item[{\mbox{\hyperlink{classmoa_1_1core_1_1_double_vector}{Double\+Vector}}\mbox{[}$\,$\mbox{]}}]{pre\+Split\+Statistics,  }\item[{int}]{input\+Attribute\+Index }\end{DoxyParamCaption})}
+
+Gets the best split suggestion given a criterion and a class distribution
+
+
+\begin{DoxyParams}{Parameters}
+{\em criterion} & the split criterion to use \\
+\hline
+{\em pre\+Split\+Dist} & the class distribution before the split \\
+\hline
+{\em att\+Index} & the input attribute index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+suggestion of best attribute split 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1classifiers_1_1rules_1_1multilabel_1_1attributeclassobservers_1_1_attribute_statistics_observer_ad7a8309943c398580be4248cd16e533e}{moa.\+classifiers.\+rules.\+multilabel.\+attributeclassobservers.\+Attribute\+Statistics\+Observer}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1attributeclassobservers_1_1_multi_label_nominal_attribute_observer_a37db96ff755eac5c3a6f4a7d38ce257f}\label{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1attributeclassobservers_1_1_multi_label_nominal_attribute_observer_a37db96ff755eac5c3a6f4a7d38ce257f}} 
+\index{moa.classifiers.rules.multilabel.attributeclassobservers.MultiLabelNominalAttributeObserver@{moa.classifiers.rules.multilabel.attributeclassobservers.MultiLabelNominalAttributeObserver}!getDescription@{getDescription}}
+\index{getDescription@{getDescription}!moa.classifiers.rules.multilabel.attributeclassobservers.MultiLabelNominalAttributeObserver@{moa.classifiers.rules.multilabel.attributeclassobservers.MultiLabelNominalAttributeObserver}}
+\doxysubsubsection{\texorpdfstring{getDescription()}{getDescription()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+rules.\+multilabel.\+attributeclassobservers.\+Multi\+Label\+Nominal\+Attribute\+Observer.\+get\+Description (\begin{DoxyParamCaption}\item[{String\+Builder}]{sb,  }\item[{int}]{indent }\end{DoxyParamCaption})}
+
+Returns a string representation of this object. Used in {\ttfamily \mbox{\hyperlink{classmoa_1_1_abstract_m_o_a_object_ac686fd3b07c734cf21f1894376fe402d}{Abstract\+M\+O\+A\+Object.\+to\+String}}} to give a string representation of the object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sb} & the stringbuilder to add the description \\
+\hline
+{\em indent} & the number of characters to indent \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1_m_o_a_object_afdaf5098f1fe6c852018ce64c28e17f5}{moa.\+M\+O\+A\+Object}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1attributeclassobservers_1_1_multi_label_nominal_attribute_observer_a15d73565f7db45102810a1656bce070f}\label{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1attributeclassobservers_1_1_multi_label_nominal_attribute_observer_a15d73565f7db45102810a1656bce070f}} 
+\index{moa.classifiers.rules.multilabel.attributeclassobservers.MultiLabelNominalAttributeObserver@{moa.classifiers.rules.multilabel.attributeclassobservers.MultiLabelNominalAttributeObserver}!observeAttribute@{observeAttribute}}
+\index{observeAttribute@{observeAttribute}!moa.classifiers.rules.multilabel.attributeclassobservers.MultiLabelNominalAttributeObserver@{moa.classifiers.rules.multilabel.attributeclassobservers.MultiLabelNominalAttributeObserver}}
+\doxysubsubsection{\texorpdfstring{observeAttribute()}{observeAttribute()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+rules.\+multilabel.\+attributeclassobservers.\+Multi\+Label\+Nominal\+Attribute\+Observer.\+observe\+Attribute (\begin{DoxyParamCaption}\item[{double}]{input\+Attribute\+Value,  }\item[{\mbox{\hyperlink{classmoa_1_1core_1_1_double_vector}{Double\+Vector}}\mbox{[}$\,$\mbox{]}}]{statistics }\end{DoxyParamCaption})}
+
+Updates statistics of this observer given an attribute value, the index of the statistic and the weight of the instance observed
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Attribute\+Value} & the value for the attribute attribute \\
+\hline
+{\em statistics} & num\+Outputs x num\+Statistics the index of the statistic to store \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1classifiers_1_1rules_1_1multilabel_1_1attributeclassobservers_1_1_attribute_statistics_observer_a26e87f5b0980a209380c9423c21f6988}{moa.\+classifiers.\+rules.\+multilabel.\+attributeclassobservers.\+Attribute\+Statistics\+Observer}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1attributeclassobservers_1_1_multi_label_nominal_attribute_observer_a700935932844a7a028475a05e3e01e9e}\label{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1attributeclassobservers_1_1_multi_label_nominal_attribute_observer_a700935932844a7a028475a05e3e01e9e}} 
+\index{moa.classifiers.rules.multilabel.attributeclassobservers.MultiLabelNominalAttributeObserver@{moa.classifiers.rules.multilabel.attributeclassobservers.MultiLabelNominalAttributeObserver}!prepareForUseImpl@{prepareForUseImpl}}
+\index{prepareForUseImpl@{prepareForUseImpl}!moa.classifiers.rules.multilabel.attributeclassobservers.MultiLabelNominalAttributeObserver@{moa.classifiers.rules.multilabel.attributeclassobservers.MultiLabelNominalAttributeObserver}}
+\doxysubsubsection{\texorpdfstring{prepareForUseImpl()}{prepareForUseImpl()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+rules.\+multilabel.\+attributeclassobservers.\+Multi\+Label\+Nominal\+Attribute\+Observer.\+prepare\+For\+Use\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}}}]{monitor,  }\item[{\mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}}}]{repository }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+This method describes the implementation of how to prepare this object for use. All classes that extends this class have to implement {\ttfamily prepare\+For\+Use\+Impl} and not {\ttfamily prepare\+For\+Use} since {\ttfamily prepare\+For\+Use} calls {\ttfamily prepare\+For\+Use\+Impl}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em monitor} & the Task\+Monitor to use \\
+\hline
+{\em repository} & the Object\+Repository to use \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1options_1_1_abstract_option_handler_ad0e9c7d4b0e2b185749f36ce28540efb}{moa.\+options.\+Abstract\+Option\+Handler}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1attributeclassobservers_1_1_multi_label_nominal_attribute_observer_ae37832af1a94e39c944b3d1b3eb11162}\label{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1attributeclassobservers_1_1_multi_label_nominal_attribute_observer_ae37832af1a94e39c944b3d1b3eb11162}} 
+\index{moa.classifiers.rules.multilabel.attributeclassobservers.MultiLabelNominalAttributeObserver@{moa.classifiers.rules.multilabel.attributeclassobservers.MultiLabelNominalAttributeObserver}!addUndeclaredValuesOption@{addUndeclaredValuesOption}}
+\index{addUndeclaredValuesOption@{addUndeclaredValuesOption}!moa.classifiers.rules.multilabel.attributeclassobservers.MultiLabelNominalAttributeObserver@{moa.classifiers.rules.multilabel.attributeclassobservers.MultiLabelNominalAttributeObserver}}
+\doxysubsubsection{\texorpdfstring{addUndeclaredValuesOption}{addUndeclaredValuesOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_flag_option}{Flag\+Option}} moa.\+classifiers.\+rules.\+multilabel.\+attributeclassobservers.\+Multi\+Label\+Nominal\+Attribute\+Observer.\+add\+Undeclared\+Values\+Option\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FlagOption(\textcolor{stringliteral}{"addUndeclaredValues"}, \textcolor{charliteral}{'a'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Add to the domain values not declared? If false, the value is not used."})}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/classifiers/rules/multilabel/attributeclassobservers/Multi\+Label\+Nominal\+Attribute\+Observer.\+java\end{DoxyCompactItemize}

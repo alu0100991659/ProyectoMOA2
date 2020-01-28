@@ -1,0 +1,114 @@
+\hypertarget{classmoa_1_1test_1_1_utils}{}\doxysection{moa.\+test.\+Utils Class Reference}
+\label{classmoa_1_1test_1_1_utils}\index{moa.test.Utils@{moa.test.Utils}}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Class \mbox{\hyperlink{classmoa_1_1test_1_1_utils_a16843f403c09b49a90d85cad282e9634}{get\+Array\+Class}} (Class c)
+\item 
+static int \mbox{\hyperlink{classmoa_1_1test_1_1_utils_a6dda96f42259c77b97c64488b3bbdbd9}{get\+Array\+Dimensions}} (Class array)
+\item 
+static int \mbox{\hyperlink{classmoa_1_1test_1_1_utils_a4190b75ac50f6deb8b17db6e8bab81b4}{get\+Array\+Dimensions}} (Object array)
+\item 
+static String \mbox{\hyperlink{classmoa_1_1test_1_1_utils_a80d6296e88c8d5441320b194051f3af5}{array\+To\+String}} (Object array, boolean output\+Class)
+\item 
+static String \mbox{\hyperlink{classmoa_1_1test_1_1_utils_aa986e620ae95106f24ddafebc17d0c44}{array\+To\+String}} (Object array)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class with useful methods.
+
+\begin{DoxyAuthor}{Author}
+fracpete (fracpete at waikato dot ac dot nz) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+\$\+Revision\$ 
+\end{DoxyVersion}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1test_1_1_utils_aa986e620ae95106f24ddafebc17d0c44}\label{classmoa_1_1test_1_1_utils_aa986e620ae95106f24ddafebc17d0c44}} 
+\index{moa.test.Utils@{moa.test.Utils}!arrayToString@{arrayToString}}
+\index{arrayToString@{arrayToString}!moa.test.Utils@{moa.test.Utils}}
+\doxysubsubsection{\texorpdfstring{arrayToString()}{arrayToString()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static String moa.\+test.\+Utils.\+array\+To\+String (\begin{DoxyParamCaption}\item[{Object}]{array }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the given Array in a string representation. Even though the parameter is of type \char`\"{}\+Object\char`\"{} one can hand over primitve arrays, e.\+g. int\mbox{[}3\mbox{]} or double\mbox{[}2\mbox{]}\mbox{[}4\mbox{]}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & the array to return in a string representation \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the array as string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmoa_1_1test_1_1_utils_a80d6296e88c8d5441320b194051f3af5}\label{classmoa_1_1test_1_1_utils_a80d6296e88c8d5441320b194051f3af5}} 
+\index{moa.test.Utils@{moa.test.Utils}!arrayToString@{arrayToString}}
+\index{arrayToString@{arrayToString}!moa.test.Utils@{moa.test.Utils}}
+\doxysubsubsection{\texorpdfstring{arrayToString()}{arrayToString()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static String moa.\+test.\+Utils.\+array\+To\+String (\begin{DoxyParamCaption}\item[{Object}]{array,  }\item[{boolean}]{output\+Class }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the given Array in a string representation. Even though the parameter is of type \char`\"{}\+Object\char`\"{} one can hand over primitve arrays, e.\+g. int\mbox{[}3\mbox{]} or double\mbox{[}2\mbox{]}\mbox{[}4\mbox{]}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & the array to return in a string representation \\
+\hline
+{\em output\+Class} & whether to output the class name instead of calling the object\textquotesingle{}s \char`\"{}to\+String()\char`\"{} method \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the array as string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmoa_1_1test_1_1_utils_a16843f403c09b49a90d85cad282e9634}\label{classmoa_1_1test_1_1_utils_a16843f403c09b49a90d85cad282e9634}} 
+\index{moa.test.Utils@{moa.test.Utils}!getArrayClass@{getArrayClass}}
+\index{getArrayClass@{getArrayClass}!moa.test.Utils@{moa.test.Utils}}
+\doxysubsubsection{\texorpdfstring{getArrayClass()}{getArrayClass()}}
+{\footnotesize\ttfamily static Class moa.\+test.\+Utils.\+get\+Array\+Class (\begin{DoxyParamCaption}\item[{Class}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the basic class of an array class (handles multi-\/dimensional arrays). 
+\begin{DoxyParams}{Parameters}
+{\em c} & the array to inspect \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the class of the innermost elements 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmoa_1_1test_1_1_utils_a6dda96f42259c77b97c64488b3bbdbd9}\label{classmoa_1_1test_1_1_utils_a6dda96f42259c77b97c64488b3bbdbd9}} 
+\index{moa.test.Utils@{moa.test.Utils}!getArrayDimensions@{getArrayDimensions}}
+\index{getArrayDimensions@{getArrayDimensions}!moa.test.Utils@{moa.test.Utils}}
+\doxysubsubsection{\texorpdfstring{getArrayDimensions()}{getArrayDimensions()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static int moa.\+test.\+Utils.\+get\+Array\+Dimensions (\begin{DoxyParamCaption}\item[{Class}]{array }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the dimensions of the given array. Even though the parameter is of type \char`\"{}\+Object\char`\"{} one can hand over primitve arrays, e.\+g. int\mbox{[}3\mbox{]} or double\mbox{[}2\mbox{]}\mbox{[}4\mbox{]}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & the array to determine the dimensions for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the dimensions of the array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmoa_1_1test_1_1_utils_a4190b75ac50f6deb8b17db6e8bab81b4}\label{classmoa_1_1test_1_1_utils_a4190b75ac50f6deb8b17db6e8bab81b4}} 
+\index{moa.test.Utils@{moa.test.Utils}!getArrayDimensions@{getArrayDimensions}}
+\index{getArrayDimensions@{getArrayDimensions}!moa.test.Utils@{moa.test.Utils}}
+\doxysubsubsection{\texorpdfstring{getArrayDimensions()}{getArrayDimensions()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static int moa.\+test.\+Utils.\+get\+Array\+Dimensions (\begin{DoxyParamCaption}\item[{Object}]{array }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the dimensions of the given array. Even though the parameter is of type \char`\"{}\+Object\char`\"{} one can hand over primitve arrays, e.\+g. int\mbox{[}3\mbox{]} or double\mbox{[}2\mbox{]}\mbox{[}4\mbox{]}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & the array to determine the dimensions for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the dimensions of the array 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/test/java/moa/test/Utils.\+java\end{DoxyCompactItemize}

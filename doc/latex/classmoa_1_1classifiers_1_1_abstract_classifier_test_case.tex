@@ -1,0 +1,256 @@
+\hypertarget{classmoa_1_1classifiers_1_1_abstract_classifier_test_case}{}\doxysection{moa.\+classifiers.\+Abstract\+Classifier\+Test\+Case Class Reference}
+\label{classmoa_1_1classifiers_1_1_abstract_classifier_test_case}\index{moa.classifiers.AbstractClassifierTestCase@{moa.classifiers.AbstractClassifierTestCase}}
+
+
+Inheritance diagram for moa.\+classifiers.\+Abstract\+Classifier\+Test\+Case\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+classifiers.\+Abstract\+Classifier\+Test\+Case\+:
+% FIG 1
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Inspection\+Data}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_test_case_af7c23e9fbd9d8339845146749c510cc2}{Abstract\+Classifier\+Test\+Case}} (String name)
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_test_case_acfbfa6fc0953dab7fd01c4e016b159a9}{test\+Regression}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1test_1_1_abstract_test_helper}{Abstract\+Test\+Helper}} \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_test_case_ac41843b1bafddc6a5b3319580a953642}{new\+Test\+Helper}} ()
+\item 
+\mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instances}{Instances}} \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_test_case_a23017496182d57d65a8a675555313285}{load}} (String filename, int class\+Index)
+\item 
+Inspection\+Data\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_test_case_af04792d4593658af4343eac7e084b711}{inspect}} (\mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instances}{Instances}} data, int\mbox{[}$\,$\mbox{]} inspection\+Points, \mbox{\hyperlink{interfacemoa_1_1evaluation_1_1_learning_performance_evaluator}{Learning\+Performance\+Evaluator}}$<$ \mbox{\hyperlink{interfacemoa_1_1core_1_1_example}{Example}}$<$ \mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} $>$$>$ evaluator, \mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier}{Classifier}} scheme)
+\item 
+boolean \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_test_case_a37ad98068ff7cbf7b162b937f0eaa73d}{save}} (\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier}{Classifier}} cls, Inspection\+Data\mbox{[}$\,$\mbox{]} data, String filename)
+\item 
+abstract String\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_test_case_a99e7ce23923bfbdbd89493ca49c20dd0}{get\+Regression\+Input\+Files}} ()
+\item 
+abstract int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_test_case_a16247afefb42612b3db9fb665e84f8fc}{get\+Regression\+Input\+Class\+Index}} ()
+\item 
+abstract int\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_test_case_a09be1cb71f33ba4fb80cba38bad00017}{get\+Regression\+Inspection\+Points}} ()
+\item 
+abstract \mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier}{Classifier}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_test_case_a6c6d5f83aabc6db19c940dbe34450c52}{get\+Regression\+Classifier\+Setups}} ()
+\item 
+abstract \mbox{\hyperlink{interfacemoa_1_1evaluation_1_1_learning_performance_evaluator}{Learning\+Performance\+Evaluator}}$<$ \mbox{\hyperlink{interfacemoa_1_1core_1_1_example}{Example}}$<$ \mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} $>$ $>$\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_test_case_ad336f6e6e4c7b05779d6e05c74e8322b}{get\+Regression\+Evaluator\+Setups}} ()
+\item 
+String \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_classifier_test_case_a90a80055ed6b82698ea8fa3bd066b03d}{create\+Output\+Filename}} (String input, int no)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Ancestor for all classifier test cases.
+
+\begin{DoxyAuthor}{Author}
+fracpete (fracpete at waikato dot ac dot nz) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+\$\+Revision\$ 
+\end{DoxyVersion}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1_abstract_classifier_test_case_af7c23e9fbd9d8339845146749c510cc2}\label{classmoa_1_1classifiers_1_1_abstract_classifier_test_case_af7c23e9fbd9d8339845146749c510cc2}} 
+\index{moa.classifiers.AbstractClassifierTestCase@{moa.classifiers.AbstractClassifierTestCase}!AbstractClassifierTestCase@{AbstractClassifierTestCase}}
+\index{AbstractClassifierTestCase@{AbstractClassifierTestCase}!moa.classifiers.AbstractClassifierTestCase@{moa.classifiers.AbstractClassifierTestCase}}
+\doxysubsubsection{\texorpdfstring{AbstractClassifierTestCase()}{AbstractClassifierTestCase()}}
+{\footnotesize\ttfamily moa.\+classifiers.\+Abstract\+Classifier\+Test\+Case.\+Abstract\+Classifier\+Test\+Case (\begin{DoxyParamCaption}\item[{String}]{name }\end{DoxyParamCaption})}
+
+Constructs the test case. Called by subclasses.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & the name of the test \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1_abstract_classifier_test_case_a90a80055ed6b82698ea8fa3bd066b03d}\label{classmoa_1_1classifiers_1_1_abstract_classifier_test_case_a90a80055ed6b82698ea8fa3bd066b03d}} 
+\index{moa.classifiers.AbstractClassifierTestCase@{moa.classifiers.AbstractClassifierTestCase}!createOutputFilename@{createOutputFilename}}
+\index{createOutputFilename@{createOutputFilename}!moa.classifiers.AbstractClassifierTestCase@{moa.classifiers.AbstractClassifierTestCase}}
+\doxysubsubsection{\texorpdfstring{createOutputFilename()}{createOutputFilename()}}
+{\footnotesize\ttfamily String moa.\+classifiers.\+Abstract\+Classifier\+Test\+Case.\+create\+Output\+Filename (\begin{DoxyParamCaption}\item[{String}]{input,  }\item[{int}]{no }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Creates an output filename based on the input filename.
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & the input filename (no path) \\
+\hline
+{\em no} & the number of the test \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the generated output filename (no path) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1_abstract_classifier_test_case_a6c6d5f83aabc6db19c940dbe34450c52}\label{classmoa_1_1classifiers_1_1_abstract_classifier_test_case_a6c6d5f83aabc6db19c940dbe34450c52}} 
+\index{moa.classifiers.AbstractClassifierTestCase@{moa.classifiers.AbstractClassifierTestCase}!getRegressionClassifierSetups@{getRegressionClassifierSetups}}
+\index{getRegressionClassifierSetups@{getRegressionClassifierSetups}!moa.classifiers.AbstractClassifierTestCase@{moa.classifiers.AbstractClassifierTestCase}}
+\doxysubsubsection{\texorpdfstring{getRegressionClassifierSetups()}{getRegressionClassifierSetups()}}
+{\footnotesize\ttfamily abstract \mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier}{Classifier}} \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+Abstract\+Classifier\+Test\+Case.\+get\+Regression\+Classifier\+Setups (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}, {\ttfamily [protected]}}
+
+Returns the classifier setups to use in the regression test.
+
+\begin{DoxyReturn}{Returns}
+the setups 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_multiple_classifier_test_case_a6d4ba90a9349c29be32fbc990e7c31b2}{moa.\+classifiers.\+Abstract\+Multiple\+Classifier\+Test\+Case}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_multiple_regressor_test_case_a4200f401810fc4cdf03d709454686df3}{moa.\+classifiers.\+Abstract\+Multiple\+Regressor\+Test\+Case}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1_a_m_rules_multi_target_regressor_semi_super_test_afc7c5081ddcf49a6a3fb577783e47094}{moa.\+classifiers.\+rules.\+multilabel.\+A\+M\+Rules\+Multi\+Target\+Regressor\+Semi\+Super\+Test}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1drift_1_1_single_classifier_drift_test_ab950363053230cbea9dcbf061af4edaa}{moa.\+classifiers.\+drift.\+Single\+Classifier\+Drift\+Test}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1functions_1_1_no_change_test_af82defb8bb53576b2091240ede2da9da}{moa.\+classifiers.\+functions.\+No\+Change\+Test}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_adaptive_random_forest_test_a4850e452233ff9efbde98a493c022c97}{moa.\+classifiers.\+meta.\+Adaptive\+Random\+Forest\+Test}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_oza_bag_a_s_h_t_test_a1e082689c4776ded59ed90c6df7d4167}{moa.\+classifiers.\+meta.\+Oza\+Bag\+A\+S\+H\+T\+Test}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1functions_1_1_majority_class_test_ae53955aabe7bf55d3b094b119ec5448e}{moa.\+classifiers.\+functions.\+Majority\+Class\+Test}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1functions_1_1_perceptron_test_a79f1d0abc6686ff7f58650d3e117d350}{moa.\+classifiers.\+functions.\+Perceptron\+Test}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1functions_1_1_s_g_d_test_ad38ad979c344ac888e67f8dece4c75ce}{moa.\+classifiers.\+functions.\+S\+G\+D\+Test}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1functions_1_1_s_pegasos_test_ae2efe649e7df0ea209614e81d1222a0f}{moa.\+classifiers.\+functions.\+S\+Pegasos\+Test}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_accuracy_updated_ensemble_test_a7c2948298e5cfb2beb6fa5fd029da5bc}{moa.\+classifiers.\+meta.\+Accuracy\+Updated\+Ensemble\+Test}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_accuracy_weighted_ensemble_test_a84e1143a8bfd831b3701be5b17a3dd25}{moa.\+classifiers.\+meta.\+Accuracy\+Weighted\+Ensemble\+Test}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_leveraging_bag_test_aa59d4b48486cef39e60f102ff0362038}{moa.\+classifiers.\+meta.\+Leveraging\+Bag\+Test}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_lim_att_classifier_test_ae7915fc579e6c2193549539641c8fdb1}{moa.\+classifiers.\+meta.\+Lim\+Att\+Classifier\+Test}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_o_c_boost_test_a793fe88193f9ef57d3c08a5677a27431}{moa.\+classifiers.\+meta.\+O\+C\+Boost\+Test}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_online_accuracy_updated_ensemble_test_ae10f5573bc197fd83b443f3ad43c8067}{moa.\+classifiers.\+meta.\+Online\+Accuracy\+Updated\+Ensemble\+Test}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_oza_bag_adwin_test_a647a7a1d2128c9775a7e795b59bf3000}{moa.\+classifiers.\+meta.\+Oza\+Bag\+Adwin\+Test}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_oza_bag_test_a30d9cd440dfc55c7a6550768c01d88d9}{moa.\+classifiers.\+meta.\+Oza\+Bag\+Test}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_oza_boost_adwin_test_a9ffdffedfbffb467bb25172bea412e88}{moa.\+classifiers.\+meta.\+Oza\+Boost\+Adwin\+Test}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_oza_boost_test_ad33e1b511b9028b0acfb795c5cf5cd95}{moa.\+classifiers.\+meta.\+Oza\+Boost\+Test}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_temporally_augmented_classifier_test_a4f497007354cbe44fe32b91b06e778a8}{moa.\+classifiers.\+meta.\+Temporally\+Augmented\+Classifier\+Test}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_weighted_majority_algorithm_test_a95e55d1d903cd368c6f6ac3ff29cc18a}{moa.\+classifiers.\+meta.\+Weighted\+Majority\+Algorithm\+Test}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_w_e_k_a_classifier_test_abf3875aa42eb7cf5b113414a2bff6a33}{moa.\+classifiers.\+meta.\+W\+E\+K\+A\+Classifier\+Test}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1_a_m_rules_regressor_test_a18782bfc7ff1869e5c4623f691973db0}{moa.\+classifiers.\+rules.\+A\+M\+Rules\+Regressor\+Test}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1_rule_classifier_n_bayes_test_a3048c441d6792e515a6993d1471d65a6}{moa.\+classifiers.\+rules.\+Rule\+Classifier\+N\+Bayes\+Test}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1rules_1_1_rule_classifier_test_ab2ce1f19f9bc40e59a8bd2b4b087b791}{moa.\+classifiers.\+rules.\+Rule\+Classifier\+Test}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1_ada_hoeffding_option_tree_test_aa82358ca1c53e0895a2949436170d0ec}{moa.\+classifiers.\+trees.\+Ada\+Hoeffding\+Option\+Tree\+Test}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1_a_s_hoeffding_tree_test_a64f0330ff07a6c0fd3810c52d73e951a}{moa.\+classifiers.\+trees.\+A\+S\+Hoeffding\+Tree\+Test}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1_decision_stump_test_a261b90dd931acc6e33c793b90ae4a2db}{moa.\+classifiers.\+trees.\+Decision\+Stump\+Test}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1_e_f_d_t_test_aa8211cdf4234ef4db30222a0c0152b9e}{moa.\+classifiers.\+trees.\+E\+F\+D\+T\+Test}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1_f_i_m_t_d_d_test_a3a95c70e587dbf8aba5ea34661148933}{moa.\+classifiers.\+trees.\+F\+I\+M\+T\+D\+D\+Test}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_adaptive_tree_test_aef0b071954349a193e425da9fab05026}{moa.\+classifiers.\+trees.\+Hoeffding\+Adaptive\+Tree\+Test}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_option_tree_test_a2b4e684afb10f8fa0497cbac5e9222da}{moa.\+classifiers.\+trees.\+Hoeffding\+Option\+Tree\+Test}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1_hoeffding_tree_test_ace91fdea4f4a49d056615c73eac7dca9}{moa.\+classifiers.\+trees.\+Hoeffding\+Tree\+Test}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1_lim_att_hoeffding_tree_test_a07dcf028a7888b4136d0f283c0f5a9c6}{moa.\+classifiers.\+trees.\+Lim\+Att\+Hoeffding\+Tree\+Test}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1_o_r_t_o_test_adc679f0c5eaab9cecbac483fa7294515}{moa.\+classifiers.\+trees.\+O\+R\+T\+O\+Test}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1trees_1_1_random_hoeffding_tree_test_adf37ac80bf90cd9423ba03f6a48c3820}{moa.\+classifiers.\+trees.\+Random\+Hoeffding\+Tree\+Test}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1active_1_1_a_l_uncertainty_test_ac150d925207444ac846d38170c1826a8}{moa.\+classifiers.\+active.\+A\+L\+Uncertainty\+Test}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1bayes_1_1_naive_bayes_multinomial_test_a6c9d81d1d62546e44bea32311c72969c}{moa.\+classifiers.\+bayes.\+Naive\+Bayes\+Multinomial\+Test}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1bayes_1_1_naive_bayes_test_a5cf0cb248eac3d08eee763ef7fae5a88}{moa.\+classifiers.\+bayes.\+Naive\+Bayes\+Test}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1drift_1_1_drift_detection_method_classifier_test_aa05e5d175e598ecbc815e51853a857ec}{moa.\+classifiers.\+drift.\+Drift\+Detection\+Method\+Classifier\+Test}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_a_d_o_b_test_ab991f7d8af01818ae9578ac3a4d94053}{moa.\+classifiers.\+meta.\+A\+D\+O\+B\+Test}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_b_o_l_e_test_a1542f101645f8bd8e3bbc8df400cdba3}{moa.\+classifiers.\+meta.\+B\+O\+L\+E\+Test}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_dynamic_weighted_majority_test_a1ff2f1fa5cca395c38a0ccf024c23041}{moa.\+classifiers.\+meta.\+Dynamic\+Weighted\+Majority\+Test}}, \mbox{\hyperlink{classmoa_1_1classifiers_1_1active_1_1_a_l_random_test_a35c0f29b013b068478953d17e455f436}{moa.\+classifiers.\+active.\+A\+L\+Random\+Test}}, and \mbox{\hyperlink{classmoa_1_1classifiers_1_1meta_1_1_heterogeneous_ensemble_blast_test_aa4be4f027f948ec59875b3f745642f49}{moa.\+classifiers.\+meta.\+Heterogeneous\+Ensemble\+Blast\+Test}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1_abstract_classifier_test_case_ad336f6e6e4c7b05779d6e05c74e8322b}\label{classmoa_1_1classifiers_1_1_abstract_classifier_test_case_ad336f6e6e4c7b05779d6e05c74e8322b}} 
+\index{moa.classifiers.AbstractClassifierTestCase@{moa.classifiers.AbstractClassifierTestCase}!getRegressionEvaluatorSetups@{getRegressionEvaluatorSetups}}
+\index{getRegressionEvaluatorSetups@{getRegressionEvaluatorSetups}!moa.classifiers.AbstractClassifierTestCase@{moa.classifiers.AbstractClassifierTestCase}}
+\doxysubsubsection{\texorpdfstring{getRegressionEvaluatorSetups()}{getRegressionEvaluatorSetups()}}
+{\footnotesize\ttfamily abstract \mbox{\hyperlink{interfacemoa_1_1evaluation_1_1_learning_performance_evaluator}{Learning\+Performance\+Evaluator}}$<$\mbox{\hyperlink{interfacemoa_1_1core_1_1_example}{Example}}$<$\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}$>$ $>$ \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+Abstract\+Classifier\+Test\+Case.\+get\+Regression\+Evaluator\+Setups (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}, {\ttfamily [protected]}}
+
+Returns the evaluator setups to use in the regression test.
+
+\begin{DoxyReturn}{Returns}
+the setups 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_multiple_classifier_test_case_acf33a667d228e3e4c7d39e1ac1fca174}{moa.\+classifiers.\+Abstract\+Multiple\+Classifier\+Test\+Case}}, and \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_multiple_regressor_test_case_a00aa91f0c19e62758a801d3bfd40939d}{moa.\+classifiers.\+Abstract\+Multiple\+Regressor\+Test\+Case}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1_abstract_classifier_test_case_a16247afefb42612b3db9fb665e84f8fc}\label{classmoa_1_1classifiers_1_1_abstract_classifier_test_case_a16247afefb42612b3db9fb665e84f8fc}} 
+\index{moa.classifiers.AbstractClassifierTestCase@{moa.classifiers.AbstractClassifierTestCase}!getRegressionInputClassIndex@{getRegressionInputClassIndex}}
+\index{getRegressionInputClassIndex@{getRegressionInputClassIndex}!moa.classifiers.AbstractClassifierTestCase@{moa.classifiers.AbstractClassifierTestCase}}
+\doxysubsubsection{\texorpdfstring{getRegressionInputClassIndex()}{getRegressionInputClassIndex()}}
+{\footnotesize\ttfamily abstract int \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+Abstract\+Classifier\+Test\+Case.\+get\+Regression\+Input\+Class\+Index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}, {\ttfamily [protected]}}
+
+Returns the class index for the datasets.
+
+\begin{DoxyReturn}{Returns}
+the class indices (0-\/based) 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_multiple_classifier_test_case_a69260971e77ea14f60a2d87efb8f47c1}{moa.\+classifiers.\+Abstract\+Multiple\+Classifier\+Test\+Case}}, and \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_multiple_regressor_test_case_a8e10386232cf6af75f52eba651ffb3b7}{moa.\+classifiers.\+Abstract\+Multiple\+Regressor\+Test\+Case}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1_abstract_classifier_test_case_a99e7ce23923bfbdbd89493ca49c20dd0}\label{classmoa_1_1classifiers_1_1_abstract_classifier_test_case_a99e7ce23923bfbdbd89493ca49c20dd0}} 
+\index{moa.classifiers.AbstractClassifierTestCase@{moa.classifiers.AbstractClassifierTestCase}!getRegressionInputFiles@{getRegressionInputFiles}}
+\index{getRegressionInputFiles@{getRegressionInputFiles}!moa.classifiers.AbstractClassifierTestCase@{moa.classifiers.AbstractClassifierTestCase}}
+\doxysubsubsection{\texorpdfstring{getRegressionInputFiles()}{getRegressionInputFiles()}}
+{\footnotesize\ttfamily abstract String \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+Abstract\+Classifier\+Test\+Case.\+get\+Regression\+Input\+Files (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}, {\ttfamily [protected]}}
+
+Returns the filenames (without path) of the input data files to use in the regression test.
+
+\begin{DoxyReturn}{Returns}
+the filenames 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_multiple_classifier_test_case_abb0b70b5e986da0499277c840208de31}{moa.\+classifiers.\+Abstract\+Multiple\+Classifier\+Test\+Case}}, and \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_multiple_regressor_test_case_ad450a402970c4bdadcd619f5cc6f13b8}{moa.\+classifiers.\+Abstract\+Multiple\+Regressor\+Test\+Case}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1_abstract_classifier_test_case_a09be1cb71f33ba4fb80cba38bad00017}\label{classmoa_1_1classifiers_1_1_abstract_classifier_test_case_a09be1cb71f33ba4fb80cba38bad00017}} 
+\index{moa.classifiers.AbstractClassifierTestCase@{moa.classifiers.AbstractClassifierTestCase}!getRegressionInspectionPoints@{getRegressionInspectionPoints}}
+\index{getRegressionInspectionPoints@{getRegressionInspectionPoints}!moa.classifiers.AbstractClassifierTestCase@{moa.classifiers.AbstractClassifierTestCase}}
+\doxysubsubsection{\texorpdfstring{getRegressionInspectionPoints()}{getRegressionInspectionPoints()}}
+{\footnotesize\ttfamily abstract int \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} moa.\+classifiers.\+Abstract\+Classifier\+Test\+Case.\+get\+Regression\+Inspection\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}, {\ttfamily [protected]}}
+
+Returns the index of the instances in the stream to inspect the performance/classification output of the classifiers.
+
+\begin{DoxyReturn}{Returns}
+the inspection indices 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_multiple_classifier_test_case_a3649bef07a31353018956c874844320a}{moa.\+classifiers.\+Abstract\+Multiple\+Classifier\+Test\+Case}}, and \mbox{\hyperlink{classmoa_1_1classifiers_1_1_abstract_multiple_regressor_test_case_af7e833d0680ce3b501b00ee0e3a797cd}{moa.\+classifiers.\+Abstract\+Multiple\+Regressor\+Test\+Case}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1_abstract_classifier_test_case_af04792d4593658af4343eac7e084b711}\label{classmoa_1_1classifiers_1_1_abstract_classifier_test_case_af04792d4593658af4343eac7e084b711}} 
+\index{moa.classifiers.AbstractClassifierTestCase@{moa.classifiers.AbstractClassifierTestCase}!inspect@{inspect}}
+\index{inspect@{inspect}!moa.classifiers.AbstractClassifierTestCase@{moa.classifiers.AbstractClassifierTestCase}}
+\doxysubsubsection{\texorpdfstring{inspect()}{inspect()}}
+{\footnotesize\ttfamily Inspection\+Data \mbox{[}$\,$\mbox{]} moa.\+classifiers.\+Abstract\+Classifier\+Test\+Case.\+inspect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instances}{Instances}}}]{data,  }\item[{int\mbox{[}$\,$\mbox{]}}]{inspection\+Points,  }\item[{\mbox{\hyperlink{interfacemoa_1_1evaluation_1_1_learning_performance_evaluator}{Learning\+Performance\+Evaluator}}$<$ \mbox{\hyperlink{interfacemoa_1_1core_1_1_example}{Example}}$<$ \mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} $>$$>$}]{evaluator,  }\item[{\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier}{Classifier}}}]{scheme }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Processes the input data and returns the inspection data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & the data to work on \\
+\hline
+{\em inspection\+Points} & the inspection points \\
+\hline
+{\em evaluator} & the evaluator to use \\
+\hline
+{\em scheme} & the scheme to process the data with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the processed data 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1_abstract_classifier_test_case_a23017496182d57d65a8a675555313285}\label{classmoa_1_1classifiers_1_1_abstract_classifier_test_case_a23017496182d57d65a8a675555313285}} 
+\index{moa.classifiers.AbstractClassifierTestCase@{moa.classifiers.AbstractClassifierTestCase}!load@{load}}
+\index{load@{load}!moa.classifiers.AbstractClassifierTestCase@{moa.classifiers.AbstractClassifierTestCase}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instances}{Instances}} moa.\+classifiers.\+Abstract\+Classifier\+Test\+Case.\+load (\begin{DoxyParamCaption}\item[{String}]{filename,  }\item[{int}]{class\+Index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Loads the data to process.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & the filename to load (without path) \\
+\hline
+{\em class\+Index} & the class index to use \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the data, null if it could not be loaded 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\#get\+Data\+Directory() 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1_abstract_classifier_test_case_ac41843b1bafddc6a5b3319580a953642}\label{classmoa_1_1classifiers_1_1_abstract_classifier_test_case_ac41843b1bafddc6a5b3319580a953642}} 
+\index{moa.classifiers.AbstractClassifierTestCase@{moa.classifiers.AbstractClassifierTestCase}!newTestHelper@{newTestHelper}}
+\index{newTestHelper@{newTestHelper}!moa.classifiers.AbstractClassifierTestCase@{moa.classifiers.AbstractClassifierTestCase}}
+\doxysubsubsection{\texorpdfstring{newTestHelper()}{newTestHelper()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1test_1_1_abstract_test_helper}{Abstract\+Test\+Helper}} moa.\+classifiers.\+Abstract\+Classifier\+Test\+Case.\+new\+Test\+Helper (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns the test helper class to use.
+
+\begin{DoxyReturn}{Returns}
+the helper class instance 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1test_1_1_moa_test_case_adb9028f2e24759c519fd1a2daeb46fa3}{moa.\+test.\+Moa\+Test\+Case}}.
+
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1_abstract_classifier_test_case_a37ad98068ff7cbf7b162b937f0eaa73d}\label{classmoa_1_1classifiers_1_1_abstract_classifier_test_case_a37ad98068ff7cbf7b162b937f0eaa73d}} 
+\index{moa.classifiers.AbstractClassifierTestCase@{moa.classifiers.AbstractClassifierTestCase}!save@{save}}
+\index{save@{save}!moa.classifiers.AbstractClassifierTestCase@{moa.classifiers.AbstractClassifierTestCase}}
+\doxysubsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily boolean moa.\+classifiers.\+Abstract\+Classifier\+Test\+Case.\+save (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacemoa_1_1classifiers_1_1_classifier}{Classifier}}}]{cls,  }\item[{Inspection\+Data\mbox{[}$\,$\mbox{]}}]{data,  }\item[{String}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Saves the data in the tmp directory.
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & the data to save \\
+\hline
+{\em filename} & the filename to save to (without path) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if successfully saved 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1_abstract_classifier_test_case_acfbfa6fc0953dab7fd01c4e016b159a9}\label{classmoa_1_1classifiers_1_1_abstract_classifier_test_case_acfbfa6fc0953dab7fd01c4e016b159a9}} 
+\index{moa.classifiers.AbstractClassifierTestCase@{moa.classifiers.AbstractClassifierTestCase}!testRegression@{testRegression}}
+\index{testRegression@{testRegression}!moa.classifiers.AbstractClassifierTestCase@{moa.classifiers.AbstractClassifierTestCase}}
+\doxysubsubsection{\texorpdfstring{testRegression()}{testRegression()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+Abstract\+Classifier\+Test\+Case.\+test\+Regression (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Compares the processed data against previously saved output data. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/test/java/moa/classifiers/Abstract\+Classifier\+Test\+Case.\+java\end{DoxyCompactItemize}

@@ -1,0 +1,171 @@
+\hypertarget{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_neighbor_list}{}\doxysection{moa.\+classifiers.\+lazy.\+neighboursearch.\+Nearest\+Neighbour\+Search.\+Neighbor\+List Class Reference}
+\label{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_neighbor_list}\index{moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.NeighborList@{moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.NeighborList}}
+
+
+Collaboration diagram for moa.\+classifiers.\+lazy.\+neighboursearch.\+Nearest\+Neighbour\+Search.\+Neighbor\+List\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_neighbor_list_a4ab2d09d40b8861d4c3ba67ffa11b32c}{Neighbor\+List}} (int length)
+\item 
+boolean \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_neighbor_list_ad060b617248d97cad1700e2fc8583322}{is\+Empty}} ()
+\item 
+int \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_neighbor_list_aaea667bf58e1c13302bd1f94abc23d22}{current\+Length}} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_neighbor_list_a5d731f7cfb2cfb3dda64d21e7f27b4f2}{insert\+Sorted}} (double distance, \mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}} instance)
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_neighbor_list_a277868d1d384c512c1165aabd51e5a7d}{prune\+ToK}} (int k)
+\item 
+void \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_neighbor_list_a8844f0baa4670a6d17d90c2775804995}{print\+List}} ()
+\item 
+\mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_neighbor_node}{Neighbor\+Node}} \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_neighbor_list_a6fc2aafbc1a22753240628468aaffe4e}{get\+First}} ()
+\item 
+\mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_neighbor_node}{Neighbor\+Node}} \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_neighbor_list_af3247680eeb129e9645cef9a09b746bb}{get\+Last}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_neighbor_node}{Neighbor\+Node}} \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_neighbor_list_a3da6602e50e438370a0c7a1c2f0048b8}{m\+\_\+\+First}}
+\item 
+\mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_neighbor_node}{Neighbor\+Node}} \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_neighbor_list_a52e832ec82f1dcc446ceec3b60dcb232}{m\+\_\+\+Last}}
+\item 
+int \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_neighbor_list_a74f7b0743fb84bb1e2bdc5335567cd6c}{m\+\_\+\+Length}} = 1
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class for a linked list to store the nearest k neighbours to an instance. We use a list so that we can take care of cases where multiple neighbours are the same distance away. i.\+e. the minimum length of the list is k.
+
+\begin{DoxyAuthor}{Author}
+Ashraf M. Kibriya (amk14\mbox{[}at-\/the-\/rate\mbox{]}cs\mbox{[}dot\mbox{]}waikato\mbox{[}dot\mbox{]}ac\mbox{[}dot\mbox{]}nz) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+8034 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_neighbor_list_a4ab2d09d40b8861d4c3ba67ffa11b32c}\label{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_neighbor_list_a4ab2d09d40b8861d4c3ba67ffa11b32c}} 
+\index{moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.NeighborList@{moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.NeighborList}!NeighborList@{NeighborList}}
+\index{NeighborList@{NeighborList}!moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.NeighborList@{moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.NeighborList}}
+\doxysubsubsection{\texorpdfstring{NeighborList()}{NeighborList()}}
+{\footnotesize\ttfamily moa.\+classifiers.\+lazy.\+neighboursearch.\+Nearest\+Neighbour\+Search.\+Neighbor\+List.\+Neighbor\+List (\begin{DoxyParamCaption}\item[{int}]{length }\end{DoxyParamCaption})}
+
+Creates the neighborlist with a desired length.
+
+
+\begin{DoxyParams}{Parameters}
+{\em length} & the length of list to attempt to maintain \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_neighbor_list_aaea667bf58e1c13302bd1f94abc23d22}\label{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_neighbor_list_aaea667bf58e1c13302bd1f94abc23d22}} 
+\index{moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.NeighborList@{moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.NeighborList}!currentLength@{currentLength}}
+\index{currentLength@{currentLength}!moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.NeighborList@{moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.NeighborList}}
+\doxysubsubsection{\texorpdfstring{currentLength()}{currentLength()}}
+{\footnotesize\ttfamily int moa.\+classifiers.\+lazy.\+neighboursearch.\+Nearest\+Neighbour\+Search.\+Neighbor\+List.\+current\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the current length of the list.
+
+\begin{DoxyReturn}{Returns}
+the current length of the list 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_neighbor_list_a6fc2aafbc1a22753240628468aaffe4e}\label{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_neighbor_list_a6fc2aafbc1a22753240628468aaffe4e}} 
+\index{moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.NeighborList@{moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.NeighborList}!getFirst@{getFirst}}
+\index{getFirst@{getFirst}!moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.NeighborList@{moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.NeighborList}}
+\doxysubsubsection{\texorpdfstring{getFirst()}{getFirst()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_neighbor_node}{Neighbor\+Node}} moa.\+classifiers.\+lazy.\+neighboursearch.\+Nearest\+Neighbour\+Search.\+Neighbor\+List.\+get\+First (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+returns the first element in the list.
+
+\begin{DoxyReturn}{Returns}
+the first element 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_neighbor_list_af3247680eeb129e9645cef9a09b746bb}\label{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_neighbor_list_af3247680eeb129e9645cef9a09b746bb}} 
+\index{moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.NeighborList@{moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.NeighborList}!getLast@{getLast}}
+\index{getLast@{getLast}!moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.NeighborList@{moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.NeighborList}}
+\doxysubsubsection{\texorpdfstring{getLast()}{getLast()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_neighbor_node}{Neighbor\+Node}} moa.\+classifiers.\+lazy.\+neighboursearch.\+Nearest\+Neighbour\+Search.\+Neighbor\+List.\+get\+Last (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+returns the last element in the list.
+
+\begin{DoxyReturn}{Returns}
+the last element 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_neighbor_list_a5d731f7cfb2cfb3dda64d21e7f27b4f2}\label{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_neighbor_list_a5d731f7cfb2cfb3dda64d21e7f27b4f2}} 
+\index{moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.NeighborList@{moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.NeighborList}!insertSorted@{insertSorted}}
+\index{insertSorted@{insertSorted}!moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.NeighborList@{moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.NeighborList}}
+\doxysubsubsection{\texorpdfstring{insertSorted()}{insertSorted()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+lazy.\+neighboursearch.\+Nearest\+Neighbour\+Search.\+Neighbor\+List.\+insert\+Sorted (\begin{DoxyParamCaption}\item[{double}]{distance,  }\item[{\mbox{\hyperlink{interfacecom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instance}{Instance}}}]{instance }\end{DoxyParamCaption})}
+
+Inserts an instance neighbor into the list, maintaining the list sorted by distance.
+
+
+\begin{DoxyParams}{Parameters}
+{\em distance} & the distance to the instance \\
+\hline
+{\em instance} & the neighboring instance \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_neighbor_list_ad060b617248d97cad1700e2fc8583322}\label{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_neighbor_list_ad060b617248d97cad1700e2fc8583322}} 
+\index{moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.NeighborList@{moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.NeighborList}!isEmpty@{isEmpty}}
+\index{isEmpty@{isEmpty}!moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.NeighborList@{moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.NeighborList}}
+\doxysubsubsection{\texorpdfstring{isEmpty()}{isEmpty()}}
+{\footnotesize\ttfamily boolean moa.\+classifiers.\+lazy.\+neighboursearch.\+Nearest\+Neighbour\+Search.\+Neighbor\+List.\+is\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets whether the list is empty.
+
+\begin{DoxyReturn}{Returns}
+true if list is empty 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_neighbor_list_a8844f0baa4670a6d17d90c2775804995}\label{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_neighbor_list_a8844f0baa4670a6d17d90c2775804995}} 
+\index{moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.NeighborList@{moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.NeighborList}!printList@{printList}}
+\index{printList@{printList}!moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.NeighborList@{moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.NeighborList}}
+\doxysubsubsection{\texorpdfstring{printList()}{printList()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+lazy.\+neighboursearch.\+Nearest\+Neighbour\+Search.\+Neighbor\+List.\+print\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Prints out the contents of the neighborlist. \mbox{\Hypertarget{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_neighbor_list_a277868d1d384c512c1165aabd51e5a7d}\label{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_neighbor_list_a277868d1d384c512c1165aabd51e5a7d}} 
+\index{moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.NeighborList@{moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.NeighborList}!pruneToK@{pruneToK}}
+\index{pruneToK@{pruneToK}!moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.NeighborList@{moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.NeighborList}}
+\doxysubsubsection{\texorpdfstring{pruneToK()}{pruneToK()}}
+{\footnotesize\ttfamily void moa.\+classifiers.\+lazy.\+neighboursearch.\+Nearest\+Neighbour\+Search.\+Neighbor\+List.\+prune\+ToK (\begin{DoxyParamCaption}\item[{int}]{k }\end{DoxyParamCaption})}
+
+Prunes the list to contain the k nearest neighbors. If there are multiple neighbors at the k\textquotesingle{}th distance, all will be kept.
+
+
+\begin{DoxyParams}{Parameters}
+{\em k} & the number of neighbors to keep in the list. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_neighbor_list_a3da6602e50e438370a0c7a1c2f0048b8}\label{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_neighbor_list_a3da6602e50e438370a0c7a1c2f0048b8}} 
+\index{moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.NeighborList@{moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.NeighborList}!m\_First@{m\_First}}
+\index{m\_First@{m\_First}!moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.NeighborList@{moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.NeighborList}}
+\doxysubsubsection{\texorpdfstring{m\_First}{m\_First}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_neighbor_node}{Neighbor\+Node}} moa.\+classifiers.\+lazy.\+neighboursearch.\+Nearest\+Neighbour\+Search.\+Neighbor\+List.\+m\+\_\+\+First\hspace{0.3cm}{\ttfamily [protected]}}
+
+The first node in the list. \mbox{\Hypertarget{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_neighbor_list_a52e832ec82f1dcc446ceec3b60dcb232}\label{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_neighbor_list_a52e832ec82f1dcc446ceec3b60dcb232}} 
+\index{moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.NeighborList@{moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.NeighborList}!m\_Last@{m\_Last}}
+\index{m\_Last@{m\_Last}!moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.NeighborList@{moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.NeighborList}}
+\doxysubsubsection{\texorpdfstring{m\_Last}{m\_Last}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_neighbor_node}{Neighbor\+Node}} moa.\+classifiers.\+lazy.\+neighboursearch.\+Nearest\+Neighbour\+Search.\+Neighbor\+List.\+m\+\_\+\+Last\hspace{0.3cm}{\ttfamily [protected]}}
+
+The last node in the list. \mbox{\Hypertarget{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_neighbor_list_a74f7b0743fb84bb1e2bdc5335567cd6c}\label{classmoa_1_1classifiers_1_1lazy_1_1neighboursearch_1_1_nearest_neighbour_search_1_1_neighbor_list_a74f7b0743fb84bb1e2bdc5335567cd6c}} 
+\index{moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.NeighborList@{moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.NeighborList}!m\_Length@{m\_Length}}
+\index{m\_Length@{m\_Length}!moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.NeighborList@{moa.classifiers.lazy.neighboursearch.NearestNeighbourSearch.NeighborList}}
+\doxysubsubsection{\texorpdfstring{m\_Length}{m\_Length}}
+{\footnotesize\ttfamily int moa.\+classifiers.\+lazy.\+neighboursearch.\+Nearest\+Neighbour\+Search.\+Neighbor\+List.\+m\+\_\+\+Length = 1\hspace{0.3cm}{\ttfamily [protected]}}
+
+The number of nodes to attempt to maintain in the list. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/classifiers/lazy/neighboursearch/Nearest\+Neighbour\+Search.\+java\end{DoxyCompactItemize}

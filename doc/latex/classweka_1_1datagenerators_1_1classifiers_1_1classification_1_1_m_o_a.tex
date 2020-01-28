@@ -1,0 +1,376 @@
+\hypertarget{classweka_1_1datagenerators_1_1classifiers_1_1classification_1_1_m_o_a}{}\doxysection{weka.\+datagenerators.\+classifiers.\+classification.\+M\+OA Class Reference}
+\label{classweka_1_1datagenerators_1_1classifiers_1_1classification_1_1_m_o_a}\index{weka.datagenerators.classifiers.classification.MOA@{weka.datagenerators.classifiers.classification.MOA}}
+
+
+Inheritance diagram for weka.\+datagenerators.\+classifiers.\+classification.\+M\+OA\+:
+% FIG 0
+
+
+Collaboration diagram for weka.\+datagenerators.\+classifiers.\+classification.\+M\+OA\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classweka_1_1datagenerators_1_1classifiers_1_1classification_1_1_m_o_a_a3362a822cfeb7a18e79c23e6f84d4e1e}{global\+Info}} ()
+\item 
+Enumeration \mbox{\hyperlink{classweka_1_1datagenerators_1_1classifiers_1_1classification_1_1_m_o_a_a4ef4ceed17acd935c8eacfe029a4c0c0}{list\+Options}} ()
+\item 
+void \mbox{\hyperlink{classweka_1_1datagenerators_1_1classifiers_1_1classification_1_1_m_o_a_aacb1dcc964f01df70721719ca9cab897}{set\+Options}} (String\mbox{[}$\,$\mbox{]} options)  throws Exception 
+\item 
+String\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classweka_1_1datagenerators_1_1classifiers_1_1classification_1_1_m_o_a_a191e69debd826df03fab643b4ae074d8}{get\+Options}} ()
+\item 
+void \mbox{\hyperlink{classweka_1_1datagenerators_1_1classifiers_1_1classification_1_1_m_o_a_a16cf021f4bfff31b1c44f12b967238f1}{set\+Generator}} (\mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} value)
+\item 
+\mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} \mbox{\hyperlink{classweka_1_1datagenerators_1_1classifiers_1_1classification_1_1_m_o_a_aa9ccf904c2579f84265a6ff074ea3cf2}{get\+Generator}} ()
+\item 
+String \mbox{\hyperlink{classweka_1_1datagenerators_1_1classifiers_1_1classification_1_1_m_o_a_a797bc0e7d643f2426e2757fa648fb84b}{generator\+Tip\+Text}} ()
+\item 
+boolean \mbox{\hyperlink{classweka_1_1datagenerators_1_1classifiers_1_1classification_1_1_m_o_a_aac2f6ec7fdfb1c14c49551a92e47c0c4}{get\+Single\+Mode\+Flag}} ()  throws Exception 
+\item 
+Instances \mbox{\hyperlink{classweka_1_1datagenerators_1_1classifiers_1_1classification_1_1_m_o_a_a9bac09af31d6cf50b6b6bfe846ed93a9}{define\+Data\+Format}} ()  throws Exception 
+\item 
+Instance \mbox{\hyperlink{classweka_1_1datagenerators_1_1classifiers_1_1classification_1_1_m_o_a_a2c872cf0edbb586eac5f1400fcf10eea}{generate\+Example}} ()  throws Exception 
+\item 
+Instances \mbox{\hyperlink{classweka_1_1datagenerators_1_1classifiers_1_1classification_1_1_m_o_a_a9e8d5ed5058e1b5e822d2b2e6fc16781}{generate\+Examples}} ()  throws Exception 
+\item 
+String \mbox{\hyperlink{classweka_1_1datagenerators_1_1classifiers_1_1classification_1_1_m_o_a_a5c8226878ec6558576e9d60bbdeda12d}{generate\+Start}} ()
+\item 
+String \mbox{\hyperlink{classweka_1_1datagenerators_1_1classifiers_1_1classification_1_1_m_o_a_af69acd012f83b8ccd30017d0271ac594}{generate\+Finished}} ()  throws Exception 
+\item 
+String \mbox{\hyperlink{classweka_1_1datagenerators_1_1classifiers_1_1classification_1_1_m_o_a_a941c5bf6e03be0fc074b6fa5b4820654}{get\+Revision}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classweka_1_1datagenerators_1_1classifiers_1_1classification_1_1_m_o_a_aecaadf7831dd0e66d75b58ef40f3b4d5}{main}} (String\mbox{[}$\,$\mbox{]} args)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interfacemoa_1_1streams_1_1_instance_stream}{Instance\+Stream}} \mbox{\hyperlink{classweka_1_1datagenerators_1_1classifiers_1_1classification_1_1_m_o_a_aadbbfc4780e49de67b0b8dbbe8007ef0}{m\+\_\+\+Actual\+Generator}} = new \mbox{\hyperlink{classmoa_1_1streams_1_1generators_1_1_l_e_d_generator}{L\+E\+D\+Generator}}()
+\item 
+\mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} \mbox{\hyperlink{classweka_1_1datagenerators_1_1classifiers_1_1classification_1_1_m_o_a_af64b65fecb829c3544973e3943c33604}{m\+\_\+\+Generator}} = new \mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}}(\char`\"{}Instance\+Stream\char`\"{}, \textquotesingle{}B\textquotesingle{}, \char`\"{}The \mbox{\hyperlink{classweka_1_1datagenerators_1_1classifiers_1_1classification_1_1_m_o_a}{M\+OA}} instance stream generator to use from within W\+E\+K\+A.\char`\"{}, Instance\+Stream.\+class, m\+\_\+\+Actual\+Generator.\+get\+Class().get\+Name())
+\item 
+\mbox{\Hypertarget{classweka_1_1datagenerators_1_1classifiers_1_1classification_1_1_m_o_a_a4c7b140b7125eeef8f3b1af64485cd26}\label{classweka_1_1datagenerators_1_1classifiers_1_1classification_1_1_m_o_a_a4c7b140b7125eeef8f3b1af64485cd26}} 
+\mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_samoa_to_weka_instance_converter}{Samoa\+To\+Weka\+Instance\+Converter}} {\bfseries instance\+Converter}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A wrapper around \mbox{\hyperlink{classweka_1_1datagenerators_1_1classifiers_1_1classification_1_1_m_o_a}{M\+OA}} instance streams. 
+
+Valid options are\+: 
+
+
+\begin{DoxyPre} -\/h
+   Prints this help.\end{DoxyPre}
+
+
+
+\begin{DoxyPre} -\/o <file>
+   The name of the output file, otherwise the generated data is
+   printed to stdout.\end{DoxyPre}
+
+
+
+\begin{DoxyPre} -\/r <name>
+   The name of the relation.\end{DoxyPre}
+
+
+
+\begin{DoxyPre} -\/d
+   Whether to print debug informations.\end{DoxyPre}
+
+
+
+\begin{DoxyPre} -\/S
+   The seed for random function (default 1)\end{DoxyPre}
+
+
+
+\begin{DoxyPre} -\/n <num>
+   The number of examples to generate (default 100)\end{DoxyPre}
+
+
+
+\begin{DoxyPre} -\/B <classname + options>
+   The \mbox{\hyperlink{classweka_1_1datagenerators_1_1classifiers_1_1classification_1_1_m_o_a}{MOA}} stream generator.
+   (default: \mbox{\hyperlink{classmoa_1_1streams_1_1generators_1_1_l_e_d_generator}{moa.streams.generators.LEDGenerator}})\end{DoxyPre}
+
+
+\begin{DoxyAuthor}{Author}
+Frac\+Pete (fracpete at waikato dot ac dot nz) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+\$\+Revision\$ 
+\end{DoxyVersion}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classweka_1_1datagenerators_1_1classifiers_1_1classification_1_1_m_o_a_a9bac09af31d6cf50b6b6bfe846ed93a9}\label{classweka_1_1datagenerators_1_1classifiers_1_1classification_1_1_m_o_a_a9bac09af31d6cf50b6b6bfe846ed93a9}} 
+\index{weka.datagenerators.classifiers.classification.MOA@{weka.datagenerators.classifiers.classification.MOA}!defineDataFormat@{defineDataFormat}}
+\index{defineDataFormat@{defineDataFormat}!weka.datagenerators.classifiers.classification.MOA@{weka.datagenerators.classifiers.classification.MOA}}
+\doxysubsubsection{\texorpdfstring{defineDataFormat()}{defineDataFormat()}}
+{\footnotesize\ttfamily Instances weka.\+datagenerators.\+classifiers.\+classification.\+M\+O\+A.\+define\+Data\+Format (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Exception}
+
+Initializes the format for the dataset produced.
+
+\begin{DoxyReturn}{Returns}
+the format for the dataset 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & if the generating of the format failed \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classweka_1_1datagenerators_1_1classifiers_1_1classification_1_1_m_o_a_a2c872cf0edbb586eac5f1400fcf10eea}\label{classweka_1_1datagenerators_1_1classifiers_1_1classification_1_1_m_o_a_a2c872cf0edbb586eac5f1400fcf10eea}} 
+\index{weka.datagenerators.classifiers.classification.MOA@{weka.datagenerators.classifiers.classification.MOA}!generateExample@{generateExample}}
+\index{generateExample@{generateExample}!weka.datagenerators.classifiers.classification.MOA@{weka.datagenerators.classifiers.classification.MOA}}
+\doxysubsubsection{\texorpdfstring{generateExample()}{generateExample()}}
+{\footnotesize\ttfamily Instance weka.\+datagenerators.\+classifiers.\+classification.\+M\+O\+A.\+generate\+Example (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Exception}
+
+Generates one example of the dataset.
+
+\begin{DoxyReturn}{Returns}
+the generated example, null if no further example available 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & if the format of the dataset is not yet defined \\
+\hline
+{\em Exception} & if the generator only works with generate\+Examples which means in non single mode \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classweka_1_1datagenerators_1_1classifiers_1_1classification_1_1_m_o_a_a9e8d5ed5058e1b5e822d2b2e6fc16781}\label{classweka_1_1datagenerators_1_1classifiers_1_1classification_1_1_m_o_a_a9e8d5ed5058e1b5e822d2b2e6fc16781}} 
+\index{weka.datagenerators.classifiers.classification.MOA@{weka.datagenerators.classifiers.classification.MOA}!generateExamples@{generateExamples}}
+\index{generateExamples@{generateExamples}!weka.datagenerators.classifiers.classification.MOA@{weka.datagenerators.classifiers.classification.MOA}}
+\doxysubsubsection{\texorpdfstring{generateExamples()}{generateExamples()}}
+{\footnotesize\ttfamily Instances weka.\+datagenerators.\+classifiers.\+classification.\+M\+O\+A.\+generate\+Examples (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Exception}
+
+Generates all examples of the dataset. Re-\/initializes the random number generator with the given seed, before generating instances.
+
+\begin{DoxyReturn}{Returns}
+the generated dataset 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & if the format of the dataset is not yet defined \\
+\hline
+{\em Exception} & if the generator only works with generate\+Example, which means in single mode \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySeeAlso}{See also}
+\#get\+Seed() 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classweka_1_1datagenerators_1_1classifiers_1_1classification_1_1_m_o_a_af69acd012f83b8ccd30017d0271ac594}\label{classweka_1_1datagenerators_1_1classifiers_1_1classification_1_1_m_o_a_af69acd012f83b8ccd30017d0271ac594}} 
+\index{weka.datagenerators.classifiers.classification.MOA@{weka.datagenerators.classifiers.classification.MOA}!generateFinished@{generateFinished}}
+\index{generateFinished@{generateFinished}!weka.datagenerators.classifiers.classification.MOA@{weka.datagenerators.classifiers.classification.MOA}}
+\doxysubsubsection{\texorpdfstring{generateFinished()}{generateFinished()}}
+{\footnotesize\ttfamily String weka.\+datagenerators.\+classifiers.\+classification.\+M\+O\+A.\+generate\+Finished (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Exception}
+
+Generates a comment string that documentats the data generator. By default this string is added at the end of theproduces output as A\+R\+FF file type.
+
+\begin{DoxyReturn}{Returns}
+string contains info about the generated rules 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & if the generating of the documentaion fails \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classweka_1_1datagenerators_1_1classifiers_1_1classification_1_1_m_o_a_a5c8226878ec6558576e9d60bbdeda12d}\label{classweka_1_1datagenerators_1_1classifiers_1_1classification_1_1_m_o_a_a5c8226878ec6558576e9d60bbdeda12d}} 
+\index{weka.datagenerators.classifiers.classification.MOA@{weka.datagenerators.classifiers.classification.MOA}!generateStart@{generateStart}}
+\index{generateStart@{generateStart}!weka.datagenerators.classifiers.classification.MOA@{weka.datagenerators.classifiers.classification.MOA}}
+\doxysubsubsection{\texorpdfstring{generateStart()}{generateStart()}}
+{\footnotesize\ttfamily String weka.\+datagenerators.\+classifiers.\+classification.\+M\+O\+A.\+generate\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Generates a comment string that documentates the data generator. By default this string is added at the beginning of the produced output as A\+R\+FF file type, next after the options.
+
+\begin{DoxyReturn}{Returns}
+string contains info about the generated rules 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classweka_1_1datagenerators_1_1classifiers_1_1classification_1_1_m_o_a_a797bc0e7d643f2426e2757fa648fb84b}\label{classweka_1_1datagenerators_1_1classifiers_1_1classification_1_1_m_o_a_a797bc0e7d643f2426e2757fa648fb84b}} 
+\index{weka.datagenerators.classifiers.classification.MOA@{weka.datagenerators.classifiers.classification.MOA}!generatorTipText@{generatorTipText}}
+\index{generatorTipText@{generatorTipText}!weka.datagenerators.classifiers.classification.MOA@{weka.datagenerators.classifiers.classification.MOA}}
+\doxysubsubsection{\texorpdfstring{generatorTipText()}{generatorTipText()}}
+{\footnotesize\ttfamily String weka.\+datagenerators.\+classifiers.\+classification.\+M\+O\+A.\+generator\+Tip\+Text (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the tooltip displayed in the G\+UI.
+
+\begin{DoxyReturn}{Returns}
+the tooltip 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classweka_1_1datagenerators_1_1classifiers_1_1classification_1_1_m_o_a_aa9ccf904c2579f84265a6ff074ea3cf2}\label{classweka_1_1datagenerators_1_1classifiers_1_1classification_1_1_m_o_a_aa9ccf904c2579f84265a6ff074ea3cf2}} 
+\index{weka.datagenerators.classifiers.classification.MOA@{weka.datagenerators.classifiers.classification.MOA}!getGenerator@{getGenerator}}
+\index{getGenerator@{getGenerator}!weka.datagenerators.classifiers.classification.MOA@{weka.datagenerators.classifiers.classification.MOA}}
+\doxysubsubsection{\texorpdfstring{getGenerator()}{getGenerator()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} weka.\+datagenerators.\+classifiers.\+classification.\+M\+O\+A.\+get\+Generator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the current \mbox{\hyperlink{classweka_1_1datagenerators_1_1classifiers_1_1classification_1_1_m_o_a}{M\+OA}} stream generator in use.
+
+\begin{DoxyReturn}{Returns}
+the stream generator in use 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classweka_1_1datagenerators_1_1classifiers_1_1classification_1_1_m_o_a_a191e69debd826df03fab643b4ae074d8}\label{classweka_1_1datagenerators_1_1classifiers_1_1classification_1_1_m_o_a_a191e69debd826df03fab643b4ae074d8}} 
+\index{weka.datagenerators.classifiers.classification.MOA@{weka.datagenerators.classifiers.classification.MOA}!getOptions@{getOptions}}
+\index{getOptions@{getOptions}!weka.datagenerators.classifiers.classification.MOA@{weka.datagenerators.classifiers.classification.MOA}}
+\doxysubsubsection{\texorpdfstring{getOptions()}{getOptions()}}
+{\footnotesize\ttfamily String \mbox{[}$\,$\mbox{]} weka.\+datagenerators.\+classifiers.\+classification.\+M\+O\+A.\+get\+Options (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the current settings of the datagenerator.
+
+\begin{DoxyReturn}{Returns}
+an array of strings suitable for passing to set\+Options 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classweka_1_1datagenerators_1_1classifiers_1_1classification_1_1_m_o_a_a941c5bf6e03be0fc074b6fa5b4820654}\label{classweka_1_1datagenerators_1_1classifiers_1_1classification_1_1_m_o_a_a941c5bf6e03be0fc074b6fa5b4820654}} 
+\index{weka.datagenerators.classifiers.classification.MOA@{weka.datagenerators.classifiers.classification.MOA}!getRevision@{getRevision}}
+\index{getRevision@{getRevision}!weka.datagenerators.classifiers.classification.MOA@{weka.datagenerators.classifiers.classification.MOA}}
+\doxysubsubsection{\texorpdfstring{getRevision()}{getRevision()}}
+{\footnotesize\ttfamily String weka.\+datagenerators.\+classifiers.\+classification.\+M\+O\+A.\+get\+Revision (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the revision string.
+
+\begin{DoxyReturn}{Returns}
+the revision 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classweka_1_1datagenerators_1_1classifiers_1_1classification_1_1_m_o_a_aac2f6ec7fdfb1c14c49551a92e47c0c4}\label{classweka_1_1datagenerators_1_1classifiers_1_1classification_1_1_m_o_a_aac2f6ec7fdfb1c14c49551a92e47c0c4}} 
+\index{weka.datagenerators.classifiers.classification.MOA@{weka.datagenerators.classifiers.classification.MOA}!getSingleModeFlag@{getSingleModeFlag}}
+\index{getSingleModeFlag@{getSingleModeFlag}!weka.datagenerators.classifiers.classification.MOA@{weka.datagenerators.classifiers.classification.MOA}}
+\doxysubsubsection{\texorpdfstring{getSingleModeFlag()}{getSingleModeFlag()}}
+{\footnotesize\ttfamily boolean weka.\+datagenerators.\+classifiers.\+classification.\+M\+O\+A.\+get\+Single\+Mode\+Flag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Exception}
+
+Return if single mode is set for the given data generator mode depends on option setting and or generator type.
+
+\begin{DoxyReturn}{Returns}
+single mode flag, always true 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & if mode is not set yet \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classweka_1_1datagenerators_1_1classifiers_1_1classification_1_1_m_o_a_a3362a822cfeb7a18e79c23e6f84d4e1e}\label{classweka_1_1datagenerators_1_1classifiers_1_1classification_1_1_m_o_a_a3362a822cfeb7a18e79c23e6f84d4e1e}} 
+\index{weka.datagenerators.classifiers.classification.MOA@{weka.datagenerators.classifiers.classification.MOA}!globalInfo@{globalInfo}}
+\index{globalInfo@{globalInfo}!weka.datagenerators.classifiers.classification.MOA@{weka.datagenerators.classifiers.classification.MOA}}
+\doxysubsubsection{\texorpdfstring{globalInfo()}{globalInfo()}}
+{\footnotesize\ttfamily String weka.\+datagenerators.\+classifiers.\+classification.\+M\+O\+A.\+global\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns a string describing this data generator.
+
+\begin{DoxyReturn}{Returns}
+a description of the data generator suitable for displaying in the explorer/experimenter gui 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classweka_1_1datagenerators_1_1classifiers_1_1classification_1_1_m_o_a_a4ef4ceed17acd935c8eacfe029a4c0c0}\label{classweka_1_1datagenerators_1_1classifiers_1_1classification_1_1_m_o_a_a4ef4ceed17acd935c8eacfe029a4c0c0}} 
+\index{weka.datagenerators.classifiers.classification.MOA@{weka.datagenerators.classifiers.classification.MOA}!listOptions@{listOptions}}
+\index{listOptions@{listOptions}!weka.datagenerators.classifiers.classification.MOA@{weka.datagenerators.classifiers.classification.MOA}}
+\doxysubsubsection{\texorpdfstring{listOptions()}{listOptions()}}
+{\footnotesize\ttfamily Enumeration weka.\+datagenerators.\+classifiers.\+classification.\+M\+O\+A.\+list\+Options (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns an enumeration describing the available options.
+
+\begin{DoxyReturn}{Returns}
+an enumeration of all the available options 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classweka_1_1datagenerators_1_1classifiers_1_1classification_1_1_m_o_a_aecaadf7831dd0e66d75b58ef40f3b4d5}\label{classweka_1_1datagenerators_1_1classifiers_1_1classification_1_1_m_o_a_aecaadf7831dd0e66d75b58ef40f3b4d5}} 
+\index{weka.datagenerators.classifiers.classification.MOA@{weka.datagenerators.classifiers.classification.MOA}!main@{main}}
+\index{main@{main}!weka.datagenerators.classifiers.classification.MOA@{weka.datagenerators.classifiers.classification.MOA}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void weka.\+datagenerators.\+classifiers.\+classification.\+M\+O\+A.\+main (\begin{DoxyParamCaption}\item[{String\mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Main method for executing this class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & should contain arguments for the data producer\+: \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classweka_1_1datagenerators_1_1classifiers_1_1classification_1_1_m_o_a_a16cf021f4bfff31b1c44f12b967238f1}\label{classweka_1_1datagenerators_1_1classifiers_1_1classification_1_1_m_o_a_a16cf021f4bfff31b1c44f12b967238f1}} 
+\index{weka.datagenerators.classifiers.classification.MOA@{weka.datagenerators.classifiers.classification.MOA}!setGenerator@{setGenerator}}
+\index{setGenerator@{setGenerator}!weka.datagenerators.classifiers.classification.MOA@{weka.datagenerators.classifiers.classification.MOA}}
+\doxysubsubsection{\texorpdfstring{setGenerator()}{setGenerator()}}
+{\footnotesize\ttfamily void weka.\+datagenerators.\+classifiers.\+classification.\+M\+O\+A.\+set\+Generator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}}}]{value }\end{DoxyParamCaption})}
+
+Sets the \mbox{\hyperlink{classweka_1_1datagenerators_1_1classifiers_1_1classification_1_1_m_o_a}{M\+OA}} stream generator to use.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & the stream generator to use \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classweka_1_1datagenerators_1_1classifiers_1_1classification_1_1_m_o_a_aacb1dcc964f01df70721719ca9cab897}\label{classweka_1_1datagenerators_1_1classifiers_1_1classification_1_1_m_o_a_aacb1dcc964f01df70721719ca9cab897}} 
+\index{weka.datagenerators.classifiers.classification.MOA@{weka.datagenerators.classifiers.classification.MOA}!setOptions@{setOptions}}
+\index{setOptions@{setOptions}!weka.datagenerators.classifiers.classification.MOA@{weka.datagenerators.classifiers.classification.MOA}}
+\doxysubsubsection{\texorpdfstring{setOptions()}{setOptions()}}
+{\footnotesize\ttfamily void weka.\+datagenerators.\+classifiers.\+classification.\+M\+O\+A.\+set\+Options (\begin{DoxyParamCaption}\item[{String\mbox{[}$\,$\mbox{]}}]{options }\end{DoxyParamCaption}) throws Exception}
+
+Parses a list of options for this object. 
+
+Valid options are\+: 
+
+
+\begin{DoxyPre} -\/h
+   Prints this help.\end{DoxyPre}
+
+
+
+\begin{DoxyPre} -\/o <file>
+   The name of the output file, otherwise the generated data is
+   printed to stdout.\end{DoxyPre}
+
+
+
+\begin{DoxyPre} -\/r <name>
+   The name of the relation.\end{DoxyPre}
+
+
+
+\begin{DoxyPre} -\/d
+   Whether to print debug informations.\end{DoxyPre}
+
+
+
+\begin{DoxyPre} -\/S
+   The seed for random function (default 1)\end{DoxyPre}
+
+
+
+\begin{DoxyPre} -\/n <num>
+   The number of examples to generate (default 100)\end{DoxyPre}
+
+
+
+\begin{DoxyPre} -\/B <classname + options>
+   The \mbox{\hyperlink{classweka_1_1datagenerators_1_1classifiers_1_1classification_1_1_m_o_a}{MOA}} stream generator.
+   (default: \mbox{\hyperlink{classmoa_1_1streams_1_1generators_1_1_l_e_d_generator}{moa.streams.generators.LEDGenerator}})\end{DoxyPre}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em options} & the list of options as an array of strings \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & if an option is not supported \\
+\hline
+\end{DoxyExceptions}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classweka_1_1datagenerators_1_1classifiers_1_1classification_1_1_m_o_a_aadbbfc4780e49de67b0b8dbbe8007ef0}\label{classweka_1_1datagenerators_1_1classifiers_1_1classification_1_1_m_o_a_aadbbfc4780e49de67b0b8dbbe8007ef0}} 
+\index{weka.datagenerators.classifiers.classification.MOA@{weka.datagenerators.classifiers.classification.MOA}!m\_ActualGenerator@{m\_ActualGenerator}}
+\index{m\_ActualGenerator@{m\_ActualGenerator}!weka.datagenerators.classifiers.classification.MOA@{weka.datagenerators.classifiers.classification.MOA}}
+\doxysubsubsection{\texorpdfstring{m\_ActualGenerator}{m\_ActualGenerator}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacemoa_1_1streams_1_1_instance_stream}{Instance\+Stream}} weka.\+datagenerators.\+classifiers.\+classification.\+M\+O\+A.\+m\+\_\+\+Actual\+Generator = new \mbox{\hyperlink{classmoa_1_1streams_1_1generators_1_1_l_e_d_generator}{L\+E\+D\+Generator}}()\hspace{0.3cm}{\ttfamily [protected]}}
+
+the actual data generator. \mbox{\Hypertarget{classweka_1_1datagenerators_1_1classifiers_1_1classification_1_1_m_o_a_af64b65fecb829c3544973e3943c33604}\label{classweka_1_1datagenerators_1_1classifiers_1_1classification_1_1_m_o_a_af64b65fecb829c3544973e3943c33604}} 
+\index{weka.datagenerators.classifiers.classification.MOA@{weka.datagenerators.classifiers.classification.MOA}!m\_Generator@{m\_Generator}}
+\index{m\_Generator@{m\_Generator}!weka.datagenerators.classifiers.classification.MOA@{weka.datagenerators.classifiers.classification.MOA}}
+\doxysubsubsection{\texorpdfstring{m\_Generator}{m\_Generator}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}} weka.\+datagenerators.\+classifiers.\+classification.\+M\+O\+A.\+m\+\_\+\+Generator = new \mbox{\hyperlink{classmoa_1_1options_1_1_class_option}{Class\+Option}}(\char`\"{}Instance\+Stream\char`\"{}, \textquotesingle{}B\textquotesingle{}, \char`\"{}The \mbox{\hyperlink{classweka_1_1datagenerators_1_1classifiers_1_1classification_1_1_m_o_a}{M\+OA}} instance stream generator to use from within W\+E\+K\+A.\char`\"{}, Instance\+Stream.\+class, m\+\_\+\+Actual\+Generator.\+get\+Class().get\+Name())\hspace{0.3cm}{\ttfamily [protected]}}
+
+for manipulating the generator through the G\+UI. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/weka/datagenerators/classifiers/classification/M\+O\+A.\+java\end{DoxyCompactItemize}

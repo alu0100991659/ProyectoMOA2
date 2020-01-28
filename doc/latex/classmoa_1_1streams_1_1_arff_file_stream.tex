@@ -1,0 +1,202 @@
+\hypertarget{classmoa_1_1streams_1_1_arff_file_stream}{}\doxysection{moa.\+streams.\+Arff\+File\+Stream Class Reference}
+\label{classmoa_1_1streams_1_1_arff_file_stream}\index{moa.streams.ArffFileStream@{moa.streams.ArffFileStream}}
+
+
+Inheritance diagram for moa.\+streams.\+Arff\+File\+Stream\+:
+% FIG 0
+
+
+Collaboration diagram for moa.\+streams.\+Arff\+File\+Stream\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classmoa_1_1streams_1_1_arff_file_stream_a2baaf94d1225ba257dab0d7a43481d4f}{get\+Purpose\+String}} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_arff_file_stream_aa29709e1c4faff611d85b6e420a0b59f}\label{classmoa_1_1streams_1_1_arff_file_stream_aa29709e1c4faff611d85b6e420a0b59f}} 
+{\bfseries Arff\+File\+Stream} (String arff\+File\+Name, int class\+Index)
+\item 
+void \mbox{\hyperlink{classmoa_1_1streams_1_1_arff_file_stream_a8eea023a8057b9487861dd5bc2904802}{prepare\+For\+Use\+Impl}} (\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}} monitor, \mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}} repository)
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_arff_file_stream_a6bd7a369cd231c2eef2e74ea0156d866}\label{classmoa_1_1streams_1_1_arff_file_stream_a6bd7a369cd231c2eef2e74ea0156d866}} 
+\mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instances_header}{Instances\+Header}} {\bfseries get\+Header} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_arff_file_stream_a583e46dbd0257151c766c4126f0a8634}\label{classmoa_1_1streams_1_1_arff_file_stream_a583e46dbd0257151c766c4126f0a8634}} 
+long {\bfseries estimated\+Remaining\+Instances} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_arff_file_stream_a1278d69666f7bd0b8da53943d97a18d8}\label{classmoa_1_1streams_1_1_arff_file_stream_a1278d69666f7bd0b8da53943d97a18d8}} 
+boolean {\bfseries has\+More\+Instances} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_arff_file_stream_af87db7c2ec59a19c1db35f2698e41f95}\label{classmoa_1_1streams_1_1_arff_file_stream_af87db7c2ec59a19c1db35f2698e41f95}} 
+\mbox{\hyperlink{classmoa_1_1core_1_1_instance_example}{Instance\+Example}} {\bfseries next\+Instance} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_arff_file_stream_a9d659453dcc025bc3809cb7a6c443b7d}\label{classmoa_1_1streams_1_1_arff_file_stream_a9d659453dcc025bc3809cb7a6c443b7d}} 
+boolean {\bfseries is\+Restartable} ()
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_arff_file_stream_a21cb216bc7d7353e5631e5036ef74a4f}\label{classmoa_1_1streams_1_1_arff_file_stream_a21cb216bc7d7353e5631e5036ef74a4f}} 
+void {\bfseries restart} ()
+\item 
+void \mbox{\hyperlink{classmoa_1_1streams_1_1_arff_file_stream_acf689212c1989d8da3a62adf5a4ef330}{get\+Description}} (String\+Builder sb, int indent)
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_arff_file_stream_a66d5c20bcd102dc6558976f8c966cbe2}\label{classmoa_1_1streams_1_1_arff_file_stream_a66d5c20bcd102dc6558976f8c966cbe2}} 
+Array\+List$<$ \mbox{\hyperlink{classmoa_1_1streams_1_1clustering_1_1_cluster_event}{Cluster\+Event}} $>$ {\bfseries get\+Events\+List} ()
+\item 
+\mbox{\hyperlink{classmoa_1_1capabilities_1_1_immutable_capabilities}{Immutable\+Capabilities}} \mbox{\hyperlink{classmoa_1_1streams_1_1_arff_file_stream_a766a2a3219f9ad879de77db9aab37997}{define\+Immutable\+Capabilities}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_file_option}{File\+Option}} {\bfseries arff\+File\+Option}
+\item 
+\mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} {\bfseries class\+Index\+Option}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_arff_file_stream_a920cbd4ee4d36db7855be786e18c75ed}\label{classmoa_1_1streams_1_1_arff_file_stream_a920cbd4ee4d36db7855be786e18c75ed}} 
+boolean {\bfseries read\+Next\+Instance\+From\+File} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_arff_file_stream_a6f39a7e867c6c9f03ae8aa7ee798cb3b}\label{classmoa_1_1streams_1_1_arff_file_stream_a6f39a7e867c6c9f03ae8aa7ee798cb3b}} 
+\mbox{\hyperlink{classcom_1_1yahoo_1_1labs_1_1samoa_1_1instances_1_1_instances}{Instances}} {\bfseries instances}
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_arff_file_stream_a8ff494bd4492f4cf56865e7c0baf2437}\label{classmoa_1_1streams_1_1_arff_file_stream_a8ff494bd4492f4cf56865e7c0baf2437}} 
+Reader {\bfseries file\+Reader}
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_arff_file_stream_af1d71aef0310eaafa07b412a8ff80263}\label{classmoa_1_1streams_1_1_arff_file_stream_af1d71aef0310eaafa07b412a8ff80263}} 
+boolean {\bfseries hit\+End\+Of\+File}
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_arff_file_stream_a3a42ba30b47a83a82480ada5fc82b870}\label{classmoa_1_1streams_1_1_arff_file_stream_a3a42ba30b47a83a82480ada5fc82b870}} 
+\mbox{\hyperlink{classmoa_1_1core_1_1_instance_example}{Instance\+Example}} {\bfseries last\+Instance\+Read}
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_arff_file_stream_a759d22c4fdcae15e77ffbc4e3297003f}\label{classmoa_1_1streams_1_1_arff_file_stream_a759d22c4fdcae15e77ffbc4e3297003f}} 
+int {\bfseries num\+Instances\+Read}
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_arff_file_stream_a9f741d0518ea0c5dc5c9060450a7fc58}\label{classmoa_1_1streams_1_1_arff_file_stream_a9f741d0518ea0c5dc5c9060450a7fc58}} 
+\mbox{\hyperlink{classmoa_1_1core_1_1_input_stream_progress_monitor}{Input\+Stream\+Progress\+Monitor}} {\bfseries file\+Progress\+Monitor}
+\item 
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_arff_file_stream_a874adf193e8fe3a6d1355d9c66449108}\label{classmoa_1_1streams_1_1_arff_file_stream_a874adf193e8fe3a6d1355d9c66449108}} 
+Array\+List$<$ \mbox{\hyperlink{classmoa_1_1streams_1_1clustering_1_1_cluster_event}{Cluster\+Event}} $>$ {\bfseries cluster\+Events}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Stream reader of A\+R\+FF files.
+
+\begin{DoxyAuthor}{Author}
+Richard Kirkby (\href{mailto:rkirkby@cs.waikato.ac.nz}{\texttt{ rkirkby@cs.\+waikato.\+ac.\+nz}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+7 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_arff_file_stream_a766a2a3219f9ad879de77db9aab37997}\label{classmoa_1_1streams_1_1_arff_file_stream_a766a2a3219f9ad879de77db9aab37997}} 
+\index{moa.streams.ArffFileStream@{moa.streams.ArffFileStream}!defineImmutableCapabilities@{defineImmutableCapabilities}}
+\index{defineImmutableCapabilities@{defineImmutableCapabilities}!moa.streams.ArffFileStream@{moa.streams.ArffFileStream}}
+\doxysubsubsection{\texorpdfstring{defineImmutableCapabilities()}{defineImmutableCapabilities()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmoa_1_1capabilities_1_1_immutable_capabilities}{Immutable\+Capabilities}} moa.\+streams.\+Arff\+File\+Stream.\+define\+Immutable\+Capabilities (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Defines the set of capabilities the object has. Should be overridden if the object\textquotesingle{}s capabilities do not change.
+
+\begin{DoxyReturn}{Returns}
+The capabilities of the object. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1capabilities_1_1_capabilities_handler_aa82d1befd5dbb958c9787b5304c9a82a}{moa.\+capabilities.\+Capabilities\+Handler}}.
+
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_arff_file_stream_acf689212c1989d8da3a62adf5a4ef330}\label{classmoa_1_1streams_1_1_arff_file_stream_acf689212c1989d8da3a62adf5a4ef330}} 
+\index{moa.streams.ArffFileStream@{moa.streams.ArffFileStream}!getDescription@{getDescription}}
+\index{getDescription@{getDescription}!moa.streams.ArffFileStream@{moa.streams.ArffFileStream}}
+\doxysubsubsection{\texorpdfstring{getDescription()}{getDescription()}}
+{\footnotesize\ttfamily void moa.\+streams.\+Arff\+File\+Stream.\+get\+Description (\begin{DoxyParamCaption}\item[{String\+Builder}]{sb,  }\item[{int}]{indent }\end{DoxyParamCaption})}
+
+Returns a string representation of this object. Used in {\ttfamily \mbox{\hyperlink{classmoa_1_1_abstract_m_o_a_object_ac686fd3b07c734cf21f1894376fe402d}{Abstract\+M\+O\+A\+Object.\+to\+String}}} to give a string representation of the object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sb} & the stringbuilder to add the description \\
+\hline
+{\em indent} & the number of characters to indent \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacemoa_1_1_m_o_a_object_afdaf5098f1fe6c852018ce64c28e17f5}{moa.\+M\+O\+A\+Object}}.
+
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_arff_file_stream_a2baaf94d1225ba257dab0d7a43481d4f}\label{classmoa_1_1streams_1_1_arff_file_stream_a2baaf94d1225ba257dab0d7a43481d4f}} 
+\index{moa.streams.ArffFileStream@{moa.streams.ArffFileStream}!getPurposeString@{getPurposeString}}
+\index{getPurposeString@{getPurposeString}!moa.streams.ArffFileStream@{moa.streams.ArffFileStream}}
+\doxysubsubsection{\texorpdfstring{getPurposeString()}{getPurposeString()}}
+{\footnotesize\ttfamily String moa.\+streams.\+Arff\+File\+Stream.\+get\+Purpose\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Options to handle Dictionary with option texts and objects 
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1options_1_1_abstract_option_handler_abc8df69aea27ef85060557a9e918b2ca}{moa.\+options.\+Abstract\+Option\+Handler}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classmoa_1_1streams_1_1generators_1_1multilabel_1_1_multilabel_arff_file_stream_a6ca693472b202f36f8524711983c81d4}{moa.\+streams.\+generators.\+multilabel.\+Multilabel\+Arff\+File\+Stream}}.
+
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_arff_file_stream_a8eea023a8057b9487861dd5bc2904802}\label{classmoa_1_1streams_1_1_arff_file_stream_a8eea023a8057b9487861dd5bc2904802}} 
+\index{moa.streams.ArffFileStream@{moa.streams.ArffFileStream}!prepareForUseImpl@{prepareForUseImpl}}
+\index{prepareForUseImpl@{prepareForUseImpl}!moa.streams.ArffFileStream@{moa.streams.ArffFileStream}}
+\doxysubsubsection{\texorpdfstring{prepareForUseImpl()}{prepareForUseImpl()}}
+{\footnotesize\ttfamily void moa.\+streams.\+Arff\+File\+Stream.\+prepare\+For\+Use\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacemoa_1_1tasks_1_1_task_monitor}{Task\+Monitor}}}]{monitor,  }\item[{\mbox{\hyperlink{interfacemoa_1_1core_1_1_object_repository}{Object\+Repository}}}]{repository }\end{DoxyParamCaption})}
+
+This method describes the implementation of how to prepare this object for use. All classes that extends this class have to implement {\ttfamily prepare\+For\+Use\+Impl} and not {\ttfamily prepare\+For\+Use} since {\ttfamily prepare\+For\+Use} calls {\ttfamily prepare\+For\+Use\+Impl}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em monitor} & the Task\+Monitor to use \\
+\hline
+{\em repository} & the Object\+Repository to use \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classmoa_1_1options_1_1_abstract_option_handler_ad0e9c7d4b0e2b185749f36ce28540efb}{moa.\+options.\+Abstract\+Option\+Handler}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_arff_file_stream_a4233288db62c1cbd22adce32e19f989c}\label{classmoa_1_1streams_1_1_arff_file_stream_a4233288db62c1cbd22adce32e19f989c}} 
+\index{moa.streams.ArffFileStream@{moa.streams.ArffFileStream}!arffFileOption@{arffFileOption}}
+\index{arffFileOption@{arffFileOption}!moa.streams.ArffFileStream@{moa.streams.ArffFileStream}}
+\doxysubsubsection{\texorpdfstring{arffFileOption}{arffFileOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_file_option}{File\+Option}} moa.\+streams.\+Arff\+File\+Stream.\+arff\+File\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} FileOption(\textcolor{stringliteral}{"arffFile"}, \textcolor{charliteral}{'f'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"ARFF file to load."}, \textcolor{keyword}{null}, \textcolor{stringliteral}{"arff"}, \textcolor{keyword}{false})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmoa_1_1streams_1_1_arff_file_stream_af27e6a7695d9ea23f45b635348955b84}\label{classmoa_1_1streams_1_1_arff_file_stream_af27e6a7695d9ea23f45b635348955b84}} 
+\index{moa.streams.ArffFileStream@{moa.streams.ArffFileStream}!classIndexOption@{classIndexOption}}
+\index{classIndexOption@{classIndexOption}!moa.streams.ArffFileStream@{moa.streams.ArffFileStream}}
+\doxysubsubsection{\texorpdfstring{classIndexOption}{classIndexOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1github_1_1javacliparser_1_1_int_option}{Int\+Option}} moa.\+streams.\+Arff\+File\+Stream.\+class\+Index\+Option}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} IntOption(}
+\DoxyCodeLine{            \textcolor{stringliteral}{"classIndex"},}
+\DoxyCodeLine{            \textcolor{charliteral}{'c'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Class index of data. 0 for none or -\/1 for last attribute in file."},}
+\DoxyCodeLine{            -\/1, -\/1, Integer.MAX\_VALUE)}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edbard/eclipse-\/java-\/workspace/\+Proyecto\+M\+O\+A/moa/src/main/java/moa/streams/Arff\+File\+Stream.\+java\end{DoxyCompactItemize}
