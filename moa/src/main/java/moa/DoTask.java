@@ -154,6 +154,9 @@ public class DoTask {
                     statusUpdateFrequencyOption};
                 // build a single string by concatenating cli options
                 StringBuilder cliString = new StringBuilder();
+                // Codigo agregado, el programa lee todas las opciones pasadas como argumentos
+                // excepto la ultima que hace referencia al fichero de salida y será procesada
+                // mas tarde
                 for (int i = 0; i < args.length-1; i++) {
                     cliString.append(" ").append(args[i]);
                 }
@@ -169,6 +172,7 @@ public class DoTask {
             				cliString.toString(), MetaMainTask.class, extraOptions);
                 }
                 task.prepareForUse();
+                //Codigo agregado, se declara el fichero de salida
                 try {
                 	outputStream = new FileOutputStream(args[args.length-1]);
                 } catch(Exception e){
@@ -250,6 +254,8 @@ public class DoTask {
                             System.out.println(sb.toString());
                         } else {
                             System.out.println(result);
+                            // Codigo agregado, se imprime el resultado de la evaluacion del modelo
+                        	// en el fichero de salida
                             byte[] strToBytes = (result.toString()).getBytes();
                             outputStream.write(strToBytes);
                             outputStream.close();
