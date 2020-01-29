@@ -1,8 +1,0 @@
-digraph "Graphical Class Hierarchy"
-{
- // LATEX_PDF_SIZE
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  rankdir="LR";
-  Node0 [label="moa.classifiers.rules.multilabel.errormeasurers.\lRelativeRootMeanSquaredErrorMTTest",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classmoa_1_1classifiers_1_1rules_1_1multilabel_1_1errormeasurers_1_1_relative_root_mean_squared_error_m_t_test.html",tooltip=" "];
-}
